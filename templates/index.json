@@ -24,18 +24,11 @@
             "text": "Built to Endure. Designed to Dominate.",
             "heading_tag": "h1"
           }
-        },
-        "richtext_64hxxt": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
         }
       },
       "block_order": [
         "subheading_4LeA9c",
-        "heading_iAcrnt",
-        "richtext_64hxxt"
+        "heading_iAcrnt"
       ],
       "name": "Image with text overlay",
       "settings": {
@@ -101,36 +94,23 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
-        },
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
         }
       },
       "block_order": [
         "1664424046b00c932c-0",
         "1664424046b00c932c-1",
         "1664424046b00c932c-2",
-        "1664424046b00c932c-3",
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac"
+        "1664424046b00c932c-3"
       ],
       "settings": {
-        "full_width": false,
-        "block_size": "medium",
+        "full_width": true,
+        "block_size": "large",
         "subheading": "",
         "title": "",
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
