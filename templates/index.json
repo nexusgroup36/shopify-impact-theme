@@ -24,11 +24,23 @@
             "text": "Built to Endure. Designed to Dominate.",
             "heading_tag": "h1"
           }
+        },
+        "button_HGVmHk": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "SHOP NU",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
         "subheading_4LeA9c",
-        "heading_iAcrnt"
+        "heading_iAcrnt",
+        "button_HGVmHk"
       ],
       "name": "Image with text overlay",
       "settings": {
@@ -106,7 +118,7 @@
         "full_width": true,
         "block_size": "large",
         "subheading": "",
-        "title": "",
+        "title": "BETSELLERS",
         "content": "",
         "link_url": "",
         "link_text": "",
