@@ -15,20 +15,20 @@
         "subheading_4LeA9c": {
           "type": "subheading",
           "settings": {
-            "text": "Subheading"
+            "text": "Ferrum Core"
           }
         },
         "heading_iAcrnt": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "Built to Endure. Designed to Dominate.",
             "heading_tag": "h1"
           }
         },
         "richtext_64hxxt": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": ""
           }
         }
       },
@@ -43,6 +43,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/final_4428b7a1-c6d6-4ebc-8871-671342398821.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
