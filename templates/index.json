@@ -12,21 +12,6 @@
     "image_with_text_overlay_fMmVLy": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_4LeA9c": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "Ferrum Core"
-          }
-        },
-        "heading_iAcrnt": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "Built to Endure. Designed to Dominate.",
-            "heading_tag": "h1"
-          }
-        },
         "button_HGVmHk": {
           "type": "button",
           "settings": {
@@ -40,8 +25,6 @@
         }
       },
       "block_order": [
-        "subheading_4LeA9c",
-        "heading_iAcrnt",
         "button_HGVmHk"
       ],
       "name": "Image with text overlay",
