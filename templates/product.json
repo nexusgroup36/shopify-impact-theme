@@ -98,6 +98,12 @@
           "settings": {
             "liquid": "<div data-test1-variant-hidden-mobile-only=\"\">\n    <div class=\"stock-date\">\n        <div class=\"circle-pulse\"></div>\n        <span class=\"stock-text\">In stock - order today, shipped tomorrow</span>\n    </div>\n\n    <style>\n        :root {\n            --width-height: 10px;\n            --stock-color: #53ac34; /* Pas de kleur hier aan */\n        }\n\n        .stock-date {\n            display: flex;\n            align-items: center;\n            justify-content: flex-start;\n            gap: 8px;\n            padding: 8px 0px; /* Verminder padding voor minder ruimte */\n            margin-bottom: 5px; /* Verminder marge onder de sectie */\n        }\n\n        .stock-text {\n            font-size: 15px;\n            font-weight: 400;\n            line-height: 130%;\n            color: var(--stock-color);\n        }\n\n        .circle-pulse {\n            width: var(--width-height);\n            height: var(--width-height);\n            background-color: var(--stock-color);\n            border-radius: 50%;\n            position: relative;\n        }\n\n        .circle-pulse:after, .circle-pulse:before {\n            content: \"\";\n            width: var(--width-height);\n            height: var(--width-height);\n            background: var(--stock-color);\n            border-radius: 50%;\n            animation: grow 1.5s ease-in-out infinite;\n        }\n\n        .circle-pulse:after {\n            position: absolute;\n            top: 0;\n        }\n\n        @keyframes grow {\n            0% {\n                transform: scale(1, 1);\n                opacity: 1;\n            }\n            100% {\n                transform: scale(1.75, 1.75);\n                opacity: 0;\n            }\n        }\n\n        @media(max-width: 767px) {\n            .stock-text {\n                font-size: 14px;\n            }\n        }\n    </style>\n</div>"
           }
+        },
+        "liquid_fYCN9X": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 15px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0869/1174/6392/files/Schermafbeelding_2025-01-09_020609_1_1.jpg?v=1736385403\">\n  </div>\n</div>"
+          }
         }
       },
       "block_order": [
@@ -114,7 +120,8 @@
         "liquid_KfQga7",
         "buy_buttons",
         "liquid_pWLQBh",
-        "liquid_8K7TR6"
+        "liquid_8K7TR6",
+        "liquid_fYCN9X"
       ],
       "settings": {
         "full_width": true,
