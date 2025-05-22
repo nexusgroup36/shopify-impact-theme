@@ -16,7 +16,7 @@
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "base",
+            "size": "lg",
             "text": "SHOP NOW",
             "url": "shopify://products/loop-one",
             "background": "#ffffff",
