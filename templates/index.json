@@ -250,6 +250,39 @@
         "full_width": true,
         "spacing": "none"
       }
+    },
+    "rich_text_zzxNDE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9i6LUK": {
+          "type": "heading",
+          "settings": {
+            "text": "OUR MISSION",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_M7eaNn": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9i6LUK",
+        "richtext_M7eaNn"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -257,6 +290,7 @@
     "image-link-blocks",
     "collection-list",
     "media_with_text_En39W8",
-    "media_with_text_d4wjgz"
+    "media_with_text_d4wjgz",
+    "rich_text_zzxNDE"
   ]
 }
