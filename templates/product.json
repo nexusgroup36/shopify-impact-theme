@@ -70,6 +70,12 @@
             "size_chart_page": ""
           }
         },
+        "liquid_pWLQBh": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -93,6 +99,7 @@
         "separator",
         "description",
         "variant_picker",
+        "liquid_pWLQBh",
         "buy_buttons"
       ],
       "settings": {
