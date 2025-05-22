@@ -23,7 +23,7 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "WORDLWIDE SHIPPING",
+            "title": "LIFETIME WARRANTY",
             "content": "<p>Quality products are available at your door step</p>"
           }
         },
@@ -73,6 +73,7 @@
         "discount",
         "payment"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
