@@ -100,6 +100,34 @@
             "alignment": "center",
             "max_width": 500
           }
+        },
+        "collapsible_text_DwAeq6": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "BENEFITS",
+            "content": "<p>Share some content to your customers about your products.</p>"
+          }
+        },
+        "collapsible_text_WwBkVq": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "WHAT'S IN THE BOX?",
+            "content": "<p>Share some content to your customers about your products.</p>"
+          }
+        },
+        "collapsible_text_Rgj4JB": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "SHIPPING",
+            "content": "<p>Share some content to your customers about your products.</p>"
+          }
+        },
+        "collapsible_text_qreJ9J": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "WARRANTY & RETURNS",
+            "content": "<p>Share some content to your customers about your products.</p>"
+          }
         }
       },
       "block_order": [
@@ -116,7 +144,11 @@
         "liquid_KfQga7",
         "buy_buttons",
         "liquid_fYCN9X",
-        "image_BGxTTA"
+        "image_BGxTTA",
+        "collapsible_text_DwAeq6",
+        "collapsible_text_WwBkVq",
+        "collapsible_text_Rgj4JB",
+        "collapsible_text_qreJ9J"
       ],
       "settings": {
         "full_width": true,
@@ -201,69 +233,10 @@
         "padding_horizontal_mobile": 0,
         "border_thickness": 0
       }
-    },
-    "accordion_content_UzMmUp": {
-      "type": "accordion-content",
-      "blocks": {
-        "item_LY3Jbf": {
-          "type": "item",
-          "settings": {
-            "title": "BENEFITS",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
-          }
-        },
-        "item_68c9f9": {
-          "type": "item",
-          "settings": {
-            "title": "WHAT'S IN THE BOX?",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
-          }
-        },
-        "item_CPh68p": {
-          "type": "item",
-          "settings": {
-            "title": "SHIPPING",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
-          }
-        },
-        "item_3zWUT7": {
-          "type": "item",
-          "settings": {
-            "title": "WARRANTY & RETURNS",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_LY3Jbf",
-        "item_68c9f9",
-        "item_CPh68p",
-        "item_3zWUT7"
-      ],
-      "name": "Accordion content",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "#ffffff",
-        "accordion_text_color": ""
-      }
     }
   },
   "order": [
     "main",
-    "trust_badges_L7QLMF",
-    "accordion_content_UzMmUp"
+    "trust_badges_L7QLMF"
   ]
 }
