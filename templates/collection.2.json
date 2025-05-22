@@ -19,7 +19,7 @@
         "show_collection_description": true,
         "show_collection_image": true,
         "collection_title_size": "h2",
-        "image_size": "auto",
+        "image_size": "sm",
         "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_15_58_30_4e6d03dd-c472-4ae0-a04a-38895e5cd2a9.png",
         "mobile_image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_15_58_30.png",
         "mobile_text_position": "place-self-center text-center",
