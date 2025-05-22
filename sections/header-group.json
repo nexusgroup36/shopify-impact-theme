@@ -27,11 +27,19 @@
             "text": "FREE SHIPPING",
             "url": ""
           }
+        },
+        "message_Y7gM7C": {
+          "type": "message",
+          "settings": {
+            "text": "LIFETIME GUARANTEE",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "message",
-        "message_brw9L6"
+        "message_brw9L6",
+        "message_Y7gM7C"
       ],
       "settings": {
         "enable_sticky": false,
