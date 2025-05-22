@@ -92,6 +92,12 @@
           "settings": {
             "liquid": "<div style=\"\n              margin-top: 0 px;\n              margin-bottom: 15px\n            \" class=\"product-form__image product-form__image--center\"><img loading=\"lazy\" class=\"lazyload\" width=\"100%\" height=\"100%\" style=\"max-width: 100%\" src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/eng-badge-under-cart-_new__optimized_650x.avif?v=1747883224\">\n          </div>"
           }
+        },
+        "liquid_8K7TR6": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div data-test1-variant-hidden-mobile-only=\"\">\n    <div class=\"stock-date\">\n        <div class=\"circle-pulse\"></div>\n        <span class=\"stock-text\">In stock - order today, shipped tomorrow</span>\n    </div>\n\n    <style>\n        :root {\n            --width-height: 10px;\n            --stock-color: #53ac34; /* Pas de kleur hier aan */\n        }\n\n        .stock-date {\n            display: flex;\n            align-items: center;\n            justify-content: flex-start;\n            gap: 8px;\n            padding: 8px 0px; /* Verminder padding voor minder ruimte */\n            margin-bottom: 5px; /* Verminder marge onder de sectie */\n        }\n\n        .stock-text {\n            font-size: 15px;\n            font-weight: 400;\n            line-height: 130%;\n            color: var(--stock-color);\n        }\n\n        .circle-pulse {\n            width: var(--width-height);\n            height: var(--width-height);\n            background-color: var(--stock-color);\n            border-radius: 50%;\n            position: relative;\n        }\n\n        .circle-pulse:after, .circle-pulse:before {\n            content: \"\";\n            width: var(--width-height);\n            height: var(--width-height);\n            background: var(--stock-color);\n            border-radius: 50%;\n            animation: grow 1.5s ease-in-out infinite;\n        }\n\n        .circle-pulse:after {\n            position: absolute;\n            top: 0;\n        }\n\n        @keyframes grow {\n            0% {\n                transform: scale(1, 1);\n                opacity: 1;\n            }\n            100% {\n                transform: scale(1.75, 1.75);\n                opacity: 0;\n            }\n        }\n\n        @media(max-width: 767px) {\n            .stock-text {\n                font-size: 14px;\n            }\n        }\n    </style>\n</div>"
+          }
         }
       },
       "block_order": [
@@ -107,7 +113,8 @@
         "variant_picker",
         "liquid_KfQga7",
         "buy_buttons",
-        "liquid_pWLQBh"
+        "liquid_pWLQBh",
+        "liquid_8K7TR6"
       ],
       "settings": {
         "full_width": true,
