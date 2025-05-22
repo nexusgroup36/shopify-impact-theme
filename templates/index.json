@@ -14,12 +14,14 @@
       "blocks": {
         "subheading_4LeA9c": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Ferrum Core"
           }
         },
         "heading_iAcrnt": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "Built to Endure. Designed to Dominate.",
             "heading_tag": "h1"
@@ -29,8 +31,8 @@
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "lg",
-            "text": "SHOP NU",
+            "size": "base",
+            "text": "WAKE UP",
             "url": "",
             "background": "",
             "text_color": ""
@@ -48,12 +50,13 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/final_4428b7a1-c6d6-4ebc-8871-671342398821.png",
-        "mobile_text_position": "place-self-center text-center",
+        "image": "shopify://shop_images/Zonder_titel_654_x_833_px_55.png",
+        "mobile_image": "shopify://shop_images/Zonder_titel_654_x_833_px_55.png",
+        "mobile_text_position": "place-self-end-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 5
       }
     },
     "image-link-blocks": {
