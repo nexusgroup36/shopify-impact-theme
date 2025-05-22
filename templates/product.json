@@ -208,21 +208,28 @@
         "item_LY3Jbf": {
           "type": "item",
           "settings": {
-            "title": "Question 1",
+            "title": "BENEFITS",
             "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
           }
         },
         "item_68c9f9": {
           "type": "item",
           "settings": {
-            "title": "Question 2",
+            "title": "WHAT'S IN THE BOX?",
             "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
           }
         },
         "item_CPh68p": {
           "type": "item",
           "settings": {
-            "title": "Question 3",
+            "title": "SHIPPING",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "item_3zWUT7": {
+          "type": "item",
+          "settings": {
+            "title": "WARRANTY & RETURNS",
             "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
           }
         }
@@ -230,7 +237,8 @@
       "block_order": [
         "item_LY3Jbf",
         "item_68c9f9",
-        "item_CPh68p"
+        "item_CPh68p",
+        "item_3zWUT7"
       ],
       "name": "Accordion content",
       "settings": {
