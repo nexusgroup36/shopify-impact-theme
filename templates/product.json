@@ -96,7 +96,7 @@
         "liquid_fYCN9X": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 0px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0869/1174/6392/files/Schermafbeelding_2025-01-09_020609_1_1.jpg?v=1736385403\">\n  </div>\n</div>"
+            "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 5px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0869/1174/6392/files/Schermafbeelding_2025-01-09_020609_1_1.jpg?v=1736385403\">\n  </div>\n</div>"
           }
         }
       },
