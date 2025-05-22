@@ -61,8 +61,9 @@
         "1664424046b00c932c-1": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_22_26.png",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "THE UV GLASSES",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
