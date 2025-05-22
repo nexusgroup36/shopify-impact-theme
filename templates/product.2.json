@@ -419,7 +419,11 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "loop-one",
+          "the-case",
+          "gift-set"
+        ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
