@@ -88,8 +88,8 @@
           "type": "item",
           "settings": {
             "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
+            "link_text": "THE CASE",
+            "link_url": "shopify://products/the-case",
             "background": "",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
