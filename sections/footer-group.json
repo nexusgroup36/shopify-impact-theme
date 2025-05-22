@@ -109,12 +109,23 @@
             "menu": "our-policies",
             "show_menu_title": true
           }
+        },
+        "newsletter_fw6NDV": {
+          "type": "newsletter",
+          "settings": {
+            "image": "shopify://shop_images/lianura_1000_x_200_px_5.png",
+            "image_width": 300,
+            "heading_size": "h3",
+            "title": "Sign up for early discounts",
+            "content": ""
+          }
         }
       },
       "block_order": [
         "text_AnUfaj",
         "links",
-        "links_Ly64rj"
+        "links_Ly64rj",
+        "newsletter_fw6NDV"
       ],
       "settings": {
         "show_social_media": true,
