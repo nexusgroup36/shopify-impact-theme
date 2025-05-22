@@ -522,11 +522,11 @@
           "settings": {
             "media_width": 40,
             "media_position": "start",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-center-end text-end",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Heading",
+            "title": "FREE TRAVEL CASE WITH EVERY ORDER",
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
             "link_text": "",
             "link_url": "",
