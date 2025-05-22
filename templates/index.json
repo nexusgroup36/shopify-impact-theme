@@ -19,8 +19,8 @@
             "size": "base",
             "text": "SHOP NOW",
             "url": "shopify://products/loop-one",
-            "background": "",
-            "text_color": ""
+            "background": "#ffffff",
+            "text_color": "#000000"
           }
         }
       },
@@ -32,8 +32,8 @@
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "sm",
-        "image": "shopify://shop_images/Wake_loop_9.png",
+        "image_size": "auto",
+        "image": "shopify://shop_images/Wake_loop_3200_x_1600_px_1.png",
         "mobile_image": "shopify://shop_images/Zonder_titel_654_x_833_px_55.png",
         "mobile_text_position": "place-self-end-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
