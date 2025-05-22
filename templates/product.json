@@ -479,6 +479,74 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "media_with_text_WPkVK7": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_EBdKg9": {
+          "type": "image",
+          "settings": {
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_EBdKg9"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_LtprTE": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_b83jfB": {
+          "type": "image",
+          "settings": {
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_b83jfB"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
     }
   },
   "order": [
@@ -486,6 +554,8 @@
     "trust_badges_L7QLMF",
     "product_vids_QHCtJC",
     "featured_collection_jizWxD",
-    "impact_text_4r9Pem"
+    "impact_text_4r9Pem",
+    "media_with_text_WPkVK7",
+    "media_with_text_LtprTE"
   ]
 }
