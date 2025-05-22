@@ -548,6 +548,40 @@
         "spacing": "small"
       }
     },
+    "media_with_text_AwCX3C": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_BeRG6y": {
+          "type": "image",
+          "settings": {
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "60 DAYS MONEY BACK GUARANTEE",
+            "content": "<p>Try Loop One risk-free. If you’re not completely satisfied within 60 days, contact our lovely support team for a full compensation. Your sleep, your terms.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_BeRG6y"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "image_with_text_overlay_UKfeC3": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -591,6 +625,7 @@
     "impact_text_4r9Pem",
     "media_with_text_WPkVK7",
     "media_with_text_LtprTE",
+    "media_with_text_AwCX3C",
     "image_with_text_overlay_UKfeC3"
   ]
 }
