@@ -321,10 +321,10 @@
           "type": "quote",
           "settings": {
             "logo_width": 100,
-            "author": "",
-            "content": "Write some content about what they says about your store.",
+            "author": "Daniel K.",
+            "content": "I was skeptical at first, but this little device exceeded my expectations. It’s minimal, effective, and blends seamlessly into my lifestyle. It even helped me establish a better sleep routine. Highly recommend to anyone who values quiet mornings.",
             "show_rating": true,
-            "rating": 4
+            "rating": 5
           }
         }
       },
