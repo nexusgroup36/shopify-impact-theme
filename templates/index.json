@@ -32,7 +32,7 @@
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "auto",
+        "image_size": "lg",
         "image": "shopify://shop_images/Zonder_titel_654_x_833_px_55.png",
         "mobile_image": "shopify://shop_images/Zonder_titel_654_x_833_px_55.png",
         "mobile_text_position": "place-self-end-center text-center",
