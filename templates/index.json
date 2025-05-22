@@ -346,6 +346,50 @@
         "logo_item_background": "",
         "logo_item_border": ""
       }
+    },
+    "1747880975c3c59209": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_bWtwyP": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_bWtwyP"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "newsletter_7HcfaX": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "full_width": true,
+        "show_icon": true,
+        "title": "BECOME A MEMBER OF THE CLUB",
+        "content": "<p>Subscribe to get notified for the first discounts sitewide</p>",
+        "button_text": "JOIN NOW",
+        "subtext": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -355,6 +399,8 @@
     "media_with_text_En39W8",
     "media_with_text_d4wjgz",
     "rich_text_zzxNDE",
-    "press_iGngpA"
+    "press_iGngpA",
+    "1747880975c3c59209",
+    "newsletter_7HcfaX"
   ]
 }
