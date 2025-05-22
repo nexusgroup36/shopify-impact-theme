@@ -404,11 +404,38 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "featured_collection_jizWxD": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 5,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "YOU MAY ALSO LIKE",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "trust_badges_L7QLMF",
-    "product_vids_QHCtJC"
+    "product_vids_QHCtJC",
+    "featured_collection_jizWxD"
   ]
 }
