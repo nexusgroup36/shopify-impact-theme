@@ -137,6 +137,13 @@
             "content": "<p>Share some content to your customers about your products.</p>"
           }
         },
+        "collapsible_text_rnJ3yq": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "REVIEWS",
+            "content": "<p>Share some content to your customers about your products.</p>"
+          }
+        },
         "liquid_98kTpb": {
           "type": "liquid",
           "settings": {
@@ -164,6 +171,7 @@
         "collapsible_text_Rgj4JB",
         "collapsible_text_qreJ9J",
         "collapsible_text_8Ykkwf",
+        "collapsible_text_rnJ3yq",
         "liquid_98kTpb"
       ],
       "settings": {
