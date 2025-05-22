@@ -283,6 +283,69 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "press_iGngpA": {
+      "type": "press",
+      "blocks": {
+        "quote_zwM9QU": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "I used to dread waking up early because my alarm would wake up my partner too. Since switching to the Loop One, mornings have become peaceful. It’s comfortable, stylish, and does exactly what it promises. Can’t imagine going back to regular alarms.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_8dwX4i": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
+          }
+        },
+        "quote_PP6qxh": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
+          }
+        },
+        "quote_QrhMtk": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_zwM9QU",
+        "quote_8dwX4i",
+        "quote_PP6qxh",
+        "quote_QrhMtk"
+      ],
+      "name": "Press",
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#1a1a1a",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
     }
   },
   "order": [
@@ -291,6 +354,7 @@
     "collection-list",
     "media_with_text_En39W8",
     "media_with_text_d4wjgz",
-    "rich_text_zzxNDE"
+    "rich_text_zzxNDE",
+    "press_iGngpA"
   ]
 }
