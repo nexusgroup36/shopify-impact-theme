@@ -209,6 +209,7 @@
         "image_VGbH4i": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
