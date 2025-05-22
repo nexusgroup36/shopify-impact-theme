@@ -631,52 +631,52 @@
           "type": "item",
           "settings": {
             "title": "How does the Loop One wake me up?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "content": "<p>Loop One uses gentle vibrations on your wrist to wake you silently. It’s ideal for light sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</p>"
+          }
+        },
+        "item_iRJA9i": {
+          "type": "item",
+          "settings": {
+            "title": "Can I wear it all night comfortably?",
+            "content": "<p>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</p>"
           }
         },
         "item_DtQ8eq": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "How long does the battery last?",
+            "content": "<p>The battery lasts up to 7 days on a single charge, depending on usage. It fully recharges in under 2 hours using the included USB-C cable.</p>"
           }
         },
         "item_U6KDJp": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Is it compatible with my phone or alarm app?",
+            "content": "<p>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</p>"
           }
         },
         "item_JUMQzY": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "What if I sleep through the vibration?",
+            "content": "<p>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</p>"
           }
         },
         "item_ztDECz": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
-          }
-        },
-        "item_BMXXUF": {
-          "type": "item",
-          "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "What’s your return policy?",
+            "content": "<p>We offer a 60-day money-back guarantee. If Loop One isn’t right for you, return it—no questions asked. Plus, you’re covered with our lifetime warranty.</p>"
           }
         }
       },
       "block_order": [
         "item_U6DEYw",
+        "item_iRJA9i",
         "item_DtQ8eq",
         "item_U6KDJp",
         "item_JUMQzY",
-        "item_ztDECz",
-        "item_BMXXUF"
+        "item_ztDECz"
       ],
       "name": "FAQ",
       "settings": {
