@@ -170,9 +170,9 @@
             "collection": "accesoires",
             "subheading": "",
             "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "url": "shopify://collections/accesoires",
+            "heading_tag": "h3",
+            "text_position": "place-self-start-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
