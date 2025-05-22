@@ -74,8 +74,9 @@
         "1664424046b00c932c-2": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Wake_loop_7.png",
             "stretch_image": true,
-            "link_text": "",
+            "link_text": "THE GIFT",
             "link_url": "",
             "background": "",
             "text_color": "#ffffff",
