@@ -88,13 +88,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "newsletter": {
-          "type": "newsletter",
+        "text_AnUfaj": {
+          "type": "text",
           "settings": {
-            "image_width": 150,
-            "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
-            "content": ""
+            "title": "OUR MISSION",
+            "content": "<p>At WakeLoop, we provide you with an exceptional shopping experience because your satisfaction is our top priority. We offer a curated selection of innovative sleep-tech products—like our signature Loop One wristband—designed to improve your mornings and your well-being. Each item is crafted with care, combining premium quality and thoughtful functionality to meet your everyday needs.</p>",
+            "enable_follow_on_shop": false
           }
         },
         "links": {
@@ -114,7 +113,7 @@
         }
       },
       "block_order": [
-        "newsletter",
+        "text_AnUfaj",
         "links",
         "text"
       ],
