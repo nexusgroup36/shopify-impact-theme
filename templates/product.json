@@ -189,21 +189,21 @@
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Gentle Wake-Up Vibration</p>"
+            "text": "<p>Wake Up Without Waking Others</p>"
           }
         },
         "item_78yfjN": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Includes FREE Travel Case</p>"
+            "text": "<p>No More Startling Alarm Sounds</p>"
           }
         },
-        "item_gkeBNp": {
+        "item_3NPNyQ": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Backed by a Lifetime Warranty</p>"
+            "text": "<p>Wake Up Calm, Not Shocked.</p>"
           }
         },
         "item_QnH7zr": {
@@ -212,13 +212,21 @@
             "icon": "tick",
             "text": "<p>Up to 7 Days Battery Life</p>"
           }
+        },
+        "item_gkeBNp": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Backed by a Lifetime Warranty</p>"
+          }
         }
       },
       "block_order": [
         "item_8KFyJn",
         "item_78yfjN",
-        "item_gkeBNp",
-        "item_QnH7zr"
+        "item_3NPNyQ",
+        "item_QnH7zr",
+        "item_gkeBNp"
       ],
       "name": "SS - Trust badges #3",
       "settings": {
