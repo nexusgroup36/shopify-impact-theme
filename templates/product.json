@@ -547,6 +547,40 @@
         "full_width": false,
         "spacing": "small"
       }
+    },
+    "image_with_text_overlay_UKfeC3": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_8J66CN": {
+          "type": "heading",
+          "settings": {
+            "text": "LIFETIME WARRANTY",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_p3DdtX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We stand behind the quality of our products. Your Loop One is covered for life—because peace of mind should last as long as your sleep does. Durable, dependable, and guaranteed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8J66CN",
+        "richtext_p3DdtX"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
     }
   },
   "order": [
@@ -556,6 +590,7 @@
     "featured_collection_jizWxD",
     "impact_text_4r9Pem",
     "media_with_text_WPkVK7",
-    "media_with_text_LtprTE"
+    "media_with_text_LtprTE",
+    "image_with_text_overlay_UKfeC3"
   ]
 }
