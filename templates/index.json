@@ -230,15 +230,15 @@
             "icon_width": 48,
             "subheading": "",
             "title": "CONTACT US / FAQ",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "link_text": "",
-            "link_url": "",
+            "content": "<p>Do you have questions about our products, your order or our company in general? Don’t hesitate to contact our customer service.</p><p>We have also gathered answers to some of the most common questions in our FAQ, where you can find help around the clock.</p>",
+            "link_text": "CONTACT US HERE",
+            "link_url": "shopify://pages/contact",
             "background": "#000000",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
+            "button_background": "#ffffff",
+            "button_text_color": "#000000"
           }
         }
       },
