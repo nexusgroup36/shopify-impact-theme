@@ -201,10 +201,61 @@
         "padding_horizontal_mobile": 0,
         "border_thickness": 0
       }
+    },
+    "accordion_content_UzMmUp": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_LY3Jbf": {
+          "type": "item",
+          "settings": {
+            "title": "Question 1",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "item_68c9f9": {
+          "type": "item",
+          "settings": {
+            "title": "Question 2",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "item_CPh68p": {
+          "type": "item",
+          "settings": {
+            "title": "Question 3",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_LY3Jbf",
+        "item_68c9f9",
+        "item_CPh68p"
+      ],
+      "name": "Accordion content",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#ffffff",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "trust_badges_L7QLMF"
+    "trust_badges_L7QLMF",
+    "accordion_content_UzMmUp"
   ]
 }
