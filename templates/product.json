@@ -418,8 +418,7 @@
       "settings": {
         "collection": "",
         "products": [
-          "uv-glasses",
-          "gift-set"
+          "uv-glasses"
         ],
         "full_width": true,
         "stack_products": false,
@@ -431,7 +430,7 @@
         "title": "YOU MAY ALSO LIKE",
         "content": "",
         "link_url": "",
-        "link_text": "View all",
+        "link_text": "",
         "background": "",
         "background_gradient": "",
         "text_color": "",
