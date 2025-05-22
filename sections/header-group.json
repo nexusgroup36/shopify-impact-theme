@@ -17,18 +17,26 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
+            "text": "LIMITED OFFER: BUY 1 GET ONE FREE!",
+            "url": ""
+          }
+        },
+        "message_brw9L6": {
+          "type": "message",
+          "settings": {
+            "text": "FREE SHIPPING",
             "url": ""
           }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "message_brw9L6"
       ],
       "settings": {
         "enable_sticky": false,
         "text_size": "text-xs",
-        "navigation_mode": "scrolling",
+        "navigation_mode": "arrows",
         "scrolling_speed": 10,
         "background": "#f6ff1f",
         "background_gradient": "",
