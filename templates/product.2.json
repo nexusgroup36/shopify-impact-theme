@@ -559,7 +559,7 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_15_58_30_4e6d03dd-c472-4ae0-a04a-38895e5cd2a9.png",
             "media_width": 40,
-            "media_position": "end",
+            "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
