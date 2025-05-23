@@ -157,8 +157,8 @@
         {%- if section.settings.show_checkout_button -%}
           {%- render 'button', type: 'submit', content: checkout_label, icon: 'picto-lock', name: 'checkout', size: 'xl' -%}
         {%- endif -%}
-<div class="cart-payment-icons">
-  <img src="https://cdn.shopify.com/s/files/1/0938/4601/2235/files/payment_650x.avif?v=1747959799" alt="Payment methods" />
+<div class="cart-payment-wrapper">
+  <img src="https://cdn.shopify.com/s/files/1/0938/4601/2235/files/payment_650x.avif?v=1747959799" alt="Payment methods" class="cart-payment-icons" />
 </div>
       </form>
     </div>
