@@ -91,5 +91,19 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hideZoomButton = () => {
+      const zoomBtn = document.querySelector('button[is="product-zoom-button"]');
+      if (zoomBtn) {
+        zoomBtn.style.display = "none";
+      } else {
+        // Try again if it hasn't loaded yet
+        setTimeout(hideZoomButton, 300);
+      }
+    };
+    hideZoomButton();
+  });
+</script>
   </body>
 </html>
