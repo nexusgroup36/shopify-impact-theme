@@ -294,6 +294,7 @@
         "video_NfBRt6",
         "video_YcpAJD"
       ],
+      "disabled": true,
       "name": "SS - Product Videos",
       "settings": {
         "videos_position": "above_description",
