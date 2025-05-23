@@ -104,14 +104,14 @@
           "type": "collapsible_text",
           "settings": {
             "title": "BENEFITS",
-            "content": "<p>Share some content to your customers about your products.</p>"
+            "content": "<ul><li><strong>No more loud alarms</strong> — wake up without disturbing anyone else</li><li><strong>Perfect for couples</strong> — your partner stays asleep</li><li><strong>Better mornings</strong> — no more heart-racing wake-ups</li><li><strong>No phone needed</strong> — sleep without screens in your bedroom</li><li><strong>Works every time</strong> — vibration you can actually feel</li><li><strong>Improves sleep quality</strong> — fall asleep knowing you’ll wake gently</li><li><strong>Simple to use</strong> — no app, no syncing, no nonsense</li><li><strong>Great for shift workers</strong> — discreet and reliable</li><li><strong>Peace of mind</strong> — backed by a lifetime warranty</li></ul>"
           }
         },
         "collapsible_text_WwBkVq": {
           "type": "collapsible_text",
           "settings": {
             "title": "WHAT'S IN THE BOX?",
-            "content": "<p>Share some content to your customers about your products.</p>"
+            "content": "<p>We like to keep things simple. Every order of the Loop One contains the following:</p><ul><li>The Loop One Wristband</li><li>Free Travel Case</li><li>USB-C Charger</li><li>Lifetime Warranty Certificate</li></ul>"
           }
         },
         "collapsible_text_Rgj4JB": {
