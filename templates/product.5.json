@@ -111,32 +111,18 @@
             "content": "<p>Protects you Loop One During Travel</p>"
           }
         },
-        "collapsible_text_WwBkVq": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "WHAT'S IN THE BOX?",
-            "content": "<p>Share some content to your customers about your products.</p>"
-          }
-        },
         "collapsible_text_Rgj4JB": {
           "type": "collapsible_text",
           "settings": {
             "title": "SHIPPING",
-            "content": "<p>Share some content to your customers about your products.</p>"
+            "content": "<p>All orders processed and dispatched within 24-48 hours.</p><p>An email with your tracking information will be sent to you once your order has been processed.</p>"
           }
         },
         "collapsible_text_qreJ9J": {
           "type": "collapsible_text",
           "settings": {
             "title": "WARRANTY & RETURNS",
-            "content": "<p>Share some content to your customers about your products.</p>"
-          }
-        },
-        "collapsible_text_8Ykkwf": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "FAQ",
-            "content": "<p>Share some content to your customers about your products.</p>"
+            "content": "<p><strong>Lifetime Warranty</strong> We stand behind the exceptional quality of every Wake Loop product. Our commitment is simple: if your product ever fails to function as designed, we'll make it right. No fine print, no complications – just our unwavering dedication to your satisfaction.</p><p><strong>Hassle-Free Returns</strong> • 60-Day Money-Back Guarantee • Full refund provided • No questions asked • Simple email process</p><p>Not completely satisfied? Simply email us at info@wakeloop.com within 60 days of purchase</p>"
           }
         },
         "liquid_98kTpb": {
@@ -162,10 +148,8 @@
         "liquid_fYCN9X",
         "image_BGxTTA",
         "collapsible_text_DwAeq6",
-        "collapsible_text_WwBkVq",
         "collapsible_text_Rgj4JB",
         "collapsible_text_qreJ9J",
-        "collapsible_text_8Ykkwf",
         "liquid_98kTpb"
       ],
       "settings": {
