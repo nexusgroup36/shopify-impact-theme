@@ -9881,6 +9881,3 @@ split-lines {
 .header-wrapper {
   background-color: #FFFFFF !important;
 }
-button[aria-label="Zoom"] {
-    display: none !important;
-}
