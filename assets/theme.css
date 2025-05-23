@@ -9881,3 +9881,12 @@ split-lines {
 .header-wrapper {
   background-color: #FFFFFF !important;
 }
+.shopify-product-media__zoom,
+.product__media-icon,
+.media__zoom,
+.media-modal__toggle,
+button[aria-label="Zoom"],
+button[data-media-id] {
+    display: none !important;
+    pointer-events: none !important;
+}
