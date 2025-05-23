@@ -126,13 +126,6 @@
             "content": "<p><strong>Lifetime Warranty</strong> We stand behind the exceptional quality of every Wake Loop product. Our commitment is simple: if your product ever fails to function as designed, we'll make it right. No fine print, no complications – just our unwavering dedication to your satisfaction.</p><p><strong>Hassle-Free Returns</strong> • 60-Day Money-Back Guarantee • Full refund provided • No questions asked • Simple email process</p><p>Not completely satisfied? Simply email us at info@wakeloop.com within 60 days of purchase.</p>"
           }
         },
-        "collapsible_text_8Ykkwf": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "FAQ",
-            "content": "<p>Share some content to your customers about your products.</p>"
-          }
-        },
         "liquid_98kTpb": {
           "type": "liquid",
           "settings": {
@@ -158,7 +151,6 @@
         "collapsible_text_WwBkVq",
         "collapsible_text_Rgj4JB",
         "collapsible_text_qreJ9J",
-        "collapsible_text_8Ykkwf",
         "liquid_98kTpb"
       ],
       "settings": {
@@ -495,6 +487,7 @@
         "image_EBdKg9": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_22_26_35748491-f0f4-45a5-a0f5-de936c7a5081.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -551,6 +544,7 @@
       "block_order": [
         "image_b83jfB"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -563,6 +557,7 @@
         "image_BeRG6y": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_15_58_30_4e6d03dd-c472-4ae0-a04a-38895e5cd2a9.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
