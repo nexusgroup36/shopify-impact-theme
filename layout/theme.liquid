@@ -91,15 +91,15 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
-   <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
-    function hideZoomButtonAndBindImage() {
-      const zoomBtn = document.querySelector('button[is="product-zoom-button"]');
-      const image = document.querySelector('.product__media img');
+    function initZoomTrigger() {
+      const zoomButton = document.querySelector('button[is="product-zoom-button"]');
+      const mediaListWrapper = document.querySelector('.product-gallery__media-list-wrapper');
 
-      if (zoomBtn && image) {
-        // Hide the zoom button visually
-        zoomBtn.style.cssText = `
+      if (zoomButton && mediaListWrapper) {
+        // Visually hide the zoom button, but keep it in DOM
+        zoomButton.style.cssText = `
           opacity: 0 !important;
           pointer-events: none !important;
           position: absolute !important;
@@ -108,16 +108,25 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
           overflow: hidden !important;
         `;
 
-        // Bind click on image to simulate zoom
-        image.onclick = () => zoomBtn.click();
+        // Remove any existing listener to avoid stacking
+        mediaListWrapper.onclick = null;
+
+        // When user clicks on image area, trigger zoom
+        mediaListWrapper.addEventListener("click", function () {
+          zoomButton.click();
+        });
       }
     }
 
-    // Run immediately and also watch for late-loaded content
-    const observer = new MutationObserver(hideZoomButtonAndBindImage);
+    // Handle themes that load content dynamically
+    const observer = new MutationObserver(() => {
+      initZoomTrigger();
+    });
+
     observer.observe(document.body, { childList: true, subtree: true });
 
-    hideZoomButtonAndBindImage();
+    // Initial run
+    initZoomTrigger();
   });
 </script>
   </body>
