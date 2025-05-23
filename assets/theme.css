@@ -9893,4 +9893,7 @@ split-lines {
   height: auto;
   display: inline-block;
 }
+.cart__footer, .cart-drawer__footer {
+  flex-direction: column !important;
+}
 
