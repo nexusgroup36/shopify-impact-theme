@@ -9880,7 +9880,4 @@ split-lines {
 }
 .header-wrapper {
   background-color: #FFFFFF !important;
-button[is="product-zoom-button"] {
-    display: none !important;
 }
-
