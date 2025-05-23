@@ -9881,8 +9881,12 @@ split-lines {
 .header-wrapper {
   background-color: #FFFFFF !important;
 }
-.payment-badges {
-  margin-top: 12px;
+.cart-payment-icons {
   text-align: center;
-  opacity: 0.85;
+  margin-top: 12px;
+}
+.cart-payment-icons img {
+  max-width: 250px;
+  height: auto;
+  opacity: 0.9;
 }
