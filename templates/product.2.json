@@ -28,6 +28,12 @@
             "show_taxes_notice": false
           }
         },
+        "liquid_p7Bxfh": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
+          }
+        },
         "rating": {
           "type": "rating",
           "disabled": true,
@@ -136,6 +142,7 @@
         "title",
         "badges",
         "price",
+        "liquid_p7Bxfh",
         "rating",
         "payment_terms",
         "separator",
@@ -177,14 +184,14 @@
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Reduces Eye Strain from Screens</p>"
+            "text": "<p>Gentle Wake-Up Vibration</p>"
           }
         },
         "item_78yfjN": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<h6>Prevents Long-Term Eye Damage</h6><p></p>"
+            "text": "<p>Includes FREE Travel Case</p>"
           }
         },
         "item_gkeBNp": {
