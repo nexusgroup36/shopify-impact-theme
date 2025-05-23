@@ -109,7 +109,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "WHAT'S IN THE BOX?",
-            "content": "<p>Share some content to your customers about your products.</p>"
+            "content": "<ul><li>UV Glasses</li><li>Protective Case</li></ul>"
           }
         },
         "collapsible_text_Rgj4JB": {
