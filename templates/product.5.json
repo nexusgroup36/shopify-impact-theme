@@ -336,6 +336,7 @@
         "image_EBdKg9": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_43_36_2435a64c-f0f4-455a-a45e-0a7dce1246eb.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -370,6 +371,7 @@
         "image_b83jfB": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_39_45_eddf4f09-f4ff-49d7-a04e-8efb4b2c2dc0.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-end text-end",
@@ -404,6 +406,7 @@
         "image_BeRG6y": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Wake_loop_10.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -459,6 +462,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/Wake_loop_3200_x_1600_px_3.png",
+        "mobile_image": "shopify://shop_images/Wake_loop_13.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -520,6 +525,7 @@
         "item_JUMQzY",
         "item_ztDECz"
       ],
+      "disabled": true,
       "name": "FAQ",
       "settings": {
         "full_width": true,
@@ -554,6 +560,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_wqhP7N"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
