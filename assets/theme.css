@@ -9881,12 +9881,16 @@ split-lines {
 .header-wrapper {
   background-color: #FFFFFF !important;
 }
-.cart-payment-icons {
+.cart-payment-wrapper {
+  width: 100%;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 16px;
 }
-.cart-payment-icons img {
-  max-width: 250px;
+
+.cart-payment-icons {
+  max-width: 260px;
+  width: 100%;
   height: auto;
-  opacity: 0.9;
+  display: inline-block;
 }
+
