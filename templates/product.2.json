@@ -676,6 +676,7 @@
         "item_JUMQzY",
         "item_ztDECz"
       ],
+      "disabled": true,
       "name": "FAQ",
       "settings": {
         "full_width": true,
@@ -710,6 +711,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_wqhP7N"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
