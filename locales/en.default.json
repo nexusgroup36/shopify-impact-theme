@@ -423,5 +423,12 @@
         "other": "It has received {{ count }} reviews."
       }
     }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "pay_now_button_label": "CONTINUE TO PAYMENT"
+      }
+    }
   }
 }
