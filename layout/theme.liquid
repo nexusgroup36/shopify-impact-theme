@@ -93,23 +93,38 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     </main>
    <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const zoomButton = document.querySelector('button[is="product-zoom-button"]');
-    const productImage = document.querySelector('.product-gallery__zoom')?.closest('.product__media'); // or use your specific image container class
+    const applyZoomOverride = () => {
+      const zoomButton = document.querySelector('button[is="product-zoom-button"]');
+      const productImage = document.querySelector('.product__media img');
 
-    if (zoomButton && productImage) {
-      // Hide the zoom button visually
-      zoomButton.style.opacity = '0';
-      zoomButton.style.pointerEvents = 'none';
-      zoomButton.style.position = 'absolute';
-      zoomButton.style.width = '0';
-      zoomButton.style.height = '0';
-      zoomButton.style.overflow = 'hidden';
+      if (zoomButton && productImage) {
+        // Hide the zoom button but keep it active
+        zoomButton.style.opacity = '0';
+        zoomButton.style.pointerEvents = 'none';
+        zoomButton.style.position = 'absolute';
+        zoomButton.style.width = '0';
+        zoomButton.style.height = '0';
+        zoomButton.style.overflow = 'hidden';
 
-      // Add click-to-zoom trigger to image container
-      productImage.addEventListener('click', function () {
-        zoomButton.click();
-      });
-    }
+        // Prevent duplicate event listeners
+        productImage.removeEventListener('click', triggerZoom);
+        productImage.addEventListener('click', triggerZoom);
+
+        function triggerZoom() {
+          zoomButton.click();
+        }
+      }
+    };
+
+    // Watch for DOM changes (in case theme adds zoom button later)
+    const observer = new MutationObserver(() => {
+      applyZoomOverride();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Initial run
+    applyZoomOverride();
   });
 </script>
   </body>
