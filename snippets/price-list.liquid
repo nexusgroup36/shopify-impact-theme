@@ -49,7 +49,8 @@ Supported variables
         {{- variant.price | money -}}
       {%- endif -%}
     </sale-price>
-   <compare-at-price {% if form_id %}form="{{ form_id }}"{% endif %} {% unless variant.compare_at_price > variant.price %}hidden{% endunless %}>
+
+    <compare-at-price {% if form_id %}form="{{ form_id }}"{% endif %} {% unless variant.compare_at_price > variant.price %}hidden{% endunless %} class="{{ compare_at_price_classes }}">
       <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
