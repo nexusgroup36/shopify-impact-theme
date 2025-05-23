@@ -418,13 +418,15 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "uv-glasses"
+        ],
         "full_width": true,
-        "stack_products": false,
+        "stack_products": true,
         "show_progress_bar": false,
-        "products_count": 4,
+        "products_count": 2,
         "products_per_row_mobile": "1",
-        "products_per_row_desktop": 4,
+        "products_per_row_desktop": 2,
         "subheading": "",
         "title": "YOU MAY ALSO LIKE",
         "content": "",
