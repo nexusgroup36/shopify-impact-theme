@@ -202,6 +202,13 @@
             "text": "<p>High Quality Materials</p>"
           }
         },
+        "item_yckENW": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Fits In Every Bag</p>"
+          }
+        },
         "item_gkeBNp": {
           "type": "item",
           "settings": {
@@ -213,6 +220,7 @@
       "block_order": [
         "item_8KFyJn",
         "item_78yfjN",
+        "item_yckENW",
         "item_gkeBNp"
       ],
       "name": "SS - Trust badges #3",
