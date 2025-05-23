@@ -93,38 +93,31 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     </main>
    <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const applyZoomOverride = () => {
-      const zoomButton = document.querySelector('button[is="product-zoom-button"]');
-      const productImage = document.querySelector('.product__media img');
+    function hideZoomButtonAndBindImage() {
+      const zoomBtn = document.querySelector('button[is="product-zoom-button"]');
+      const image = document.querySelector('.product__media img');
 
-      if (zoomButton && productImage) {
-        // Hide the zoom button but keep it active
-        zoomButton.style.opacity = '0';
-        zoomButton.style.pointerEvents = 'none';
-        zoomButton.style.position = 'absolute';
-        zoomButton.style.width = '0';
-        zoomButton.style.height = '0';
-        zoomButton.style.overflow = 'hidden';
+      if (zoomBtn && image) {
+        // Hide the zoom button visually
+        zoomBtn.style.cssText = `
+          opacity: 0 !important;
+          pointer-events: none !important;
+          position: absolute !important;
+          width: 0 !important;
+          height: 0 !important;
+          overflow: hidden !important;
+        `;
 
-        // Prevent duplicate event listeners
-        productImage.removeEventListener('click', triggerZoom);
-        productImage.addEventListener('click', triggerZoom);
-
-        function triggerZoom() {
-          zoomButton.click();
-        }
+        // Bind click on image to simulate zoom
+        image.onclick = () => zoomBtn.click();
       }
-    };
+    }
 
-    // Watch for DOM changes (in case theme adds zoom button later)
-    const observer = new MutationObserver(() => {
-      applyZoomOverride();
-    });
-
+    // Run immediately and also watch for late-loaded content
+    const observer = new MutationObserver(hideZoomButtonAndBindImage);
     observer.observe(document.body, { childList: true, subtree: true });
 
-    // Initial run
-    applyZoomOverride();
+    hideZoomButtonAndBindImage();
   });
 </script>
   </body>
