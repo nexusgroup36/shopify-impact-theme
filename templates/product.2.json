@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "liquid_8nNhKb": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<style>\n  html {\n    scroll-behavior: smooth;\n  }\n  .reviews-stars {\n    display: flex;\n    align-items: center;\n    text-decoration: none;\n  }\n  .reviews-stars svg {\n    fill: #3CB371;\n    width: 20px;\n    height: auto;\n  }\n  .review-scroll {\n    margin-left: 6px;\n    font-size: 14px;\n    color: #121212;\n  }\n</style>\n\n<div class=\"product-block\">\n  <a href=\"#judge_me_reviews_review_widget\" class=\"reviews-stars\">\n    <span style=\"display: flex; gap: 1.35px;\"> \n      {% for i in (1..4) %}\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.332 1.212-6.035 5.884 1.425 8.305L12 18.896l-7.39 3.523 1.425-8.305L.41 9.23l8.332-1.212L12 .587z\"/></svg>\n      {% endfor %}\n    </span>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" style=\"fill: url(#half-fill); width: 20px; height: auto;\">\n      <defs>\n        <linearGradient id=\"half-fill\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n          <stop offset=\"50%\" style=\"stop-color: #3CB371; stop-opacity: 1\" />\n          <stop offset=\"50%\" style=\"stop-color: #dadada; stop-opacity: 1\" />\n        </linearGradient>\n      </defs>\n      <path d=\"M12 .587l3.668 7.431 8.332 1.212-6.035 5.884 1.425 8.305L12 18.896l-7.39 3.523 1.425-8.305L.41 9.23l8.332-1.212L12 .587z\"/>\n    </svg>\n    <span class=\"review-scroll\">\n      4.5/5 GREAT – 31.215 REVIEWS\n    </span>\n  </a>\n</div>"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -32,12 +26,6 @@
           "type": "price",
           "settings": {
             "show_taxes_notice": false
-          }
-        },
-        "liquid_p7Bxfh": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
           }
         },
         "rating": {
@@ -145,11 +133,9 @@
         }
       },
       "block_order": [
-        "liquid_8nNhKb",
         "title",
         "badges",
         "price",
-        "liquid_p7Bxfh",
         "rating",
         "payment_terms",
         "separator",
@@ -191,14 +177,14 @@
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Gentle Wake-Up Vibration</p>"
+            "text": "<p>Reduces Eye Strain from Screens</p>"
           }
         },
         "item_78yfjN": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Includes FREE Travel Case</p>"
+            "text": "<h6>Prevents Long-Term Eye Damage</h6><p></p>"
           }
         },
         "item_gkeBNp": {
