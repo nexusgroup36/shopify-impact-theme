@@ -133,6 +133,7 @@
         },
         "collapsible_text_8Ykkwf": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "FAQ",
             "content": "<p>Share some content to your customers about your products.</p>"
@@ -302,6 +303,7 @@
         "video_NfBRt6",
         "video_YcpAJD"
       ],
+      "disabled": true,
       "name": "SS - Product Videos",
       "settings": {
         "videos_position": "above_description",
@@ -420,7 +422,11 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "loop-one",
+          "the-case",
+          "uv-glasses"
+        ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
