@@ -9881,3 +9881,8 @@ split-lines {
 .header-wrapper {
   background-color: #FFFFFF !important;
 }
+.payment-badges {
+  margin-top: 12px;
+  text-align: center;
+  opacity: 0.85;
+}
