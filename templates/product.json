@@ -12,9 +12,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "judge_me_reviews_preview_badge_BTXyyf": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+        "liquid_8nNhKb": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  html {\n    scroll-behavior: smooth;\n  }\n  .reviews-stars {\n    display: flex;\n    align-items: center;\n    text-decoration: none;\n  }\n  .reviews-stars svg {\n    fill: #3CB371;\n    width: 20px;\n    height: auto;\n  }\n  .review-scroll {\n    margin-left: 6px;\n    font-size: 14px;\n    color: #121212;\n  }\n</style>\n\n<div class=\"product-block\">\n  <a href=\"#judge-reviews\" class=\"reviews-stars\">\n    <span style=\"display: flex; gap: 1.35px;\"> \n      {% for i in (1..4) %}\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.332 1.212-6.035 5.884 1.425 8.305L12 18.896l-7.39 3.523 1.425-8.305L.41 9.23l8.332-1.212L12 .587z\"/></svg>\n      {% endfor %}\n    </span>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" style=\"fill: url(#half-fill); width: 20px; height: auto;\">\n      <defs>\n        <linearGradient id=\"half-fill\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n          <stop offset=\"50%\" style=\"stop-color: #3CB371; stop-opacity: 1\" />\n          <stop offset=\"50%\" style=\"stop-color: #dadada; stop-opacity: 1\" />\n        </linearGradient>\n      </defs>\n      <path d=\"M12 .587l3.668 7.431 8.332 1.212-6.035 5.884 1.425 8.305L12 18.896l-7.39 3.523 1.425-8.305L.41 9.23l8.332-1.212L12 .587z\"/>\n    </svg>\n    <span class=\"review-scroll\">\n      4.5/5 GREAT – 31.215 REVIEWS\n    </span>\n  </a>\n</div>"
+          }
         },
         "title": {
           "type": "title",
@@ -65,14 +67,14 @@
             "hide_sold_out_variants": false,
             "stack_blocks": true,
             "selector_mode": "block",
-            "color_mode": "variant",
+            "color_mode": "color",
             "size_chart_page": ""
           }
         },
-        "liquid_8aHQcY": {
+        "liquid_KfQga7": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');\n\n  .bogo-banner {\n    border: 1px solid #000;\n    background-color: #f9fbfc;\n    padding: 12px 16px;\n    border-radius: 8px;\n    font-family: 'Quantico', sans-serif;\n    text-align: center;\n    max-width: 600px;\n    margin: 20px auto;\n  }\n\n  .bogo-banner h2 {\n    font-size: 24px;\n    margin: 0;\n    color: #000;\n  }\n\n  .bogo-banner p {\n    font-size: 16px;\n    margin-top: 6px;\n    color: #333;\n  }\n</style>\n\n<div class=\"bogo-banner\">\n  <h2>BUY ONE GET ONE FREE</h2>\n  <p>ONLY FOR THE NEXT 100 ORDERS</p>\n  <p>Add the colors of your choice to your cart -  the offer applies automatically.</p>\n</div>"
+            "liquid": "<style>\n    .stock-update-banner {\n        background-color: #000;\n        border: 1.5px dashed #fff;\n        border-radius: 12px;\n        padding: 8px 16px; /* Reduced padding for smaller height */\n        color: #fff;\n        font-family: QUANTICO;\n        font-size: 13px;\n        max-width: 100%;\n        box-sizing: border-box;\n        text-align: center;\n    }\n\n    .stock-update-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 8px;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n\n    .stock-update-bullet {\n        color: #fff;\n        font-size: 10px; /* Smaller dot */\n    }\n\n    .stock-update-text {\n        margin: 0;\n        color: #fff;\n        font-weight: 400;\n    }\n\n    .stock-update-progress-container {\n        background-color: #333;\n        height: 5px; /* Smaller bar height */\n        margin-top: 6px; /* Less spacing */\n        border-radius: 4px;\n        overflow: hidden;\n    }\n\n    .stock-update-progress-bar {\n        background-color: #fff;\n        height: 100%;\n        transition: width 0.4s ease;\n    }\n\n    @media (max-width: 480px) {\n        .stock-update-banner {\n            font-size: 12px;\n        }\n        .stock-update-content {\n            flex-wrap: nowrap;\n        }\n    }\n</style>\n\n<section class=\"stock-update-banner\">\n    <div class=\"stock-update-content\">\n        <span class=\"stock-update-bullet\" aria-hidden=\"true\">●</span>\n        <p class=\"stock-update-text\">LIVE STOCK UPDATES: <span id=\"stock-count\">78</span> units left in stock</p>\n    </div>\n    <div class=\"stock-update-progress-container\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n        <div class=\"stock-update-progress-bar\" id=\"progress-bar\" style=\"width: 80%;\"></div>\n    </div>\n</section>\n\n<script>\n    let voorraad = 78;\n    let maxVoorraad = 78;\n    let progressPercentage = 80;\n\n    function updateStock() {\n        voorraad -= 6;\n        if (voorraad < 0) voorraad = 0;\n        document.getElementById(\"stock-count\").textContent = voorraad;\n        progressPercentage = (voorraad / maxVoorraad) * 80;\n        document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n        document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n    }\n\n    setInterval(updateStock, 10000);\n    document.getElementById(\"stock-count\").textContent = voorraad;\n    document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n    document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n</script>"
           }
         },
         "buy_buttons": {
@@ -86,16 +88,10 @@
             "payment_button_text_color": ""
           }
         },
-        "liquid_KfQga7": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<style>\n    .stock-update-banner {\n        background-color: #000;\n        border: 1.5px dashed #fff;\n        border-radius: 12px;\n        padding: 8px 16px; /* Reduced padding for smaller height */\n        color: #fff;\n        font-family: QUANTICO;\n        font-size: 13px;\n        max-width: 100%;\n        box-sizing: border-box;\n        text-align: center;\n    }\n\n    .stock-update-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 8px;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n\n    .stock-update-bullet {\n        color: #fff;\n        font-size: 10px; /* Smaller dot */\n    }\n\n    .stock-update-text {\n        margin: 0;\n        color: #fff;\n        font-weight: 400;\n    }\n\n    .stock-update-progress-container {\n        background-color: #333;\n        height: 5px; /* Smaller bar height */\n        margin-top: 6px; /* Less spacing */\n        border-radius: 4px;\n        overflow: hidden;\n    }\n\n    .stock-update-progress-bar {\n        background-color: #fff;\n        height: 100%;\n        transition: width 0.4s ease;\n    }\n\n    @media (max-width: 480px) {\n        .stock-update-banner {\n            font-size: 12px;\n        }\n        .stock-update-content {\n            flex-wrap: nowrap;\n        }\n    }\n</style>\n\n<section class=\"stock-update-banner\">\n    <div class=\"stock-update-content\">\n        <span class=\"stock-update-bullet\" aria-hidden=\"true\">●</span>\n        <p class=\"stock-update-text\">LIVE STOCK UPDATES: <span id=\"stock-count\">78</span> units left in stock</p>\n    </div>\n    <div class=\"stock-update-progress-container\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n        <div class=\"stock-update-progress-bar\" id=\"progress-bar\" style=\"width: 80%;\"></div>\n    </div>\n</section>\n\n<script>\n    let voorraad = 78;\n    let maxVoorraad = 78;\n    let progressPercentage = 80;\n\n    function updateStock() {\n        voorraad -= 6;\n        if (voorraad < 0) voorraad = 0;\n        document.getElementById(\"stock-count\").textContent = voorraad;\n        progressPercentage = (voorraad / maxVoorraad) * 80;\n        document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n        document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n    }\n\n    setInterval(updateStock, 10000);\n    document.getElementById(\"stock-count\").textContent = voorraad;\n    document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n    document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n</script>"
-          }
-        },
         "liquid_fYCN9X": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 5px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/payment_650x.avif?v=1747959799\">\n  </div>\n</div>"
+            "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 5px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0869/1174/6392/files/Schermafbeelding_2025-01-09_020609_1_1.jpg?v=1736385403\">\n  </div>\n</div>"
           }
         },
         "image_BGxTTA": {
@@ -110,35 +106,35 @@
           "type": "collapsible_text",
           "settings": {
             "title": "BENEFITS",
-            "content": "<p>Vibrations are physical — and impossible to ignore. Unlike sound, which your brain can tune out, our wristband delivers a direct physical stimulus that instantly activates your body’s natural wake-up response.</p><p><strong>How does it work?</strong><br/>The vibrations stimulate nerve endings in your skin, sending a strong signal to your brain’s sensory system — waking you up instantly and naturally.</p><p><strong>Feel the wake-up — don’t just hear it.</strong><br/>Your ears can ignore sound, but your nervous system can’t ignore movement. The targeted vibrations trigger an immediate physical reaction, so you wake up every time.</p><p><strong>Never sleep through your alarm again.</strong><br/>Join 50,000+ users waking up refreshed and on time — risk-free for 60 nights.</p>"
+            "content": "<p>Share some content to your customers about your products.</p>"
           }
         },
         "collapsible_text_WwBkVq": {
           "type": "collapsible_text",
           "settings": {
             "title": "WHAT'S IN THE BOX?",
-            "content": "<p>Every order of the Loop One contains the following:</p><ul><li>The Loop One Wristband</li><li>USB-C Charging Cable</li><li>Lifetime Warranty Certificate</li></ul>"
+            "content": "<p>Share some content to your customers about your products.</p>"
           }
         },
         "collapsible_text_Rgj4JB": {
           "type": "collapsible_text",
           "settings": {
             "title": "SHIPPING",
-            "content": "<p>All orders are processed and dispatched within 24-48 hours. You will receive a Track and Trace code. Every shipment is insured by default.</p>"
+            "content": "<p>Share some content to your customers about your products.</p>"
           }
         },
         "collapsible_text_qreJ9J": {
           "type": "collapsible_text",
           "settings": {
             "title": "WARRANTY & RETURNS",
-            "content": "<p><strong>Lifetime Warranty</strong> We stand behind the exceptional quality of every Aurum Vault product. Our commitment is simple: if your product ever fails to function as designed, we'll make it right. No fine print, no complications – just our unwavering dedication to your satisfaction.</p><p><strong>Hassle-Free Returns</strong> • 60-Day Money-Back Guarantee • Full refund provided • No questions asked • Simple email process</p><p>Not completely satisfied? Simply email us at info@wakeloop.com within 60 days of purchase.</p>"
+            "content": "<p>Share some content to your customers about your products.</p>"
           }
         },
         "collapsible_text_8Ykkwf": {
           "type": "collapsible_text",
           "settings": {
             "title": "FAQ",
-            "content": "<p><strong>How does the Loop One wake me up?</strong></p><ul><li>Loop One uses gentle vibrations on your wrist to wake you silently. It’s ideal for light sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</li></ul><p><strong>Can I wear it all night comfortably?</strong></p><ul><li>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</li></ul><p><strong>How long does the battery last?</strong></p><ul><li>The battery lasts up to 7 days on a single charge, depending on usage. It fully recharges in under 2 hours using the included USB-C cable.</li></ul><p><strong>What if I sleep through the vibration?</strong></p><ul><li>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</li></ul>"
+            "content": "<p>Share some content to your customers about your products.</p>"
           }
         },
         "liquid_98kTpb": {
@@ -149,7 +145,7 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_preview_badge_BTXyyf",
+        "liquid_8nNhKb",
         "title",
         "badges",
         "price",
@@ -159,9 +155,8 @@
         "separator",
         "description",
         "variant_picker",
-        "liquid_8aHQcY",
-        "buy_buttons",
         "liquid_KfQga7",
+        "buy_buttons",
         "liquid_fYCN9X",
         "image_BGxTTA",
         "collapsible_text_DwAeq6",
@@ -196,28 +191,14 @@
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Wake Up Without Waking Others</p>"
+            "text": "<p>Gentle Wake-Up Vibration</p>"
           }
         },
         "item_78yfjN": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>No More Startling Alarm Sounds</p>"
-          }
-        },
-        "item_3NPNyQ": {
-          "type": "item",
-          "settings": {
-            "icon": "tick",
-            "text": "<p>Wake Up Calm, Not Shocked.</p>"
-          }
-        },
-        "item_QnH7zr": {
-          "type": "item",
-          "settings": {
-            "icon": "tick",
-            "text": "<p>14+ Days Battery Life</p>"
+            "text": "<p>Includes FREE Travel Case</p>"
           }
         },
         "item_gkeBNp": {
@@ -226,14 +207,20 @@
             "icon": "tick",
             "text": "<p>Backed by a Lifetime Warranty</p>"
           }
+        },
+        "item_QnH7zr": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Up to 7 Days Battery Life</p>"
+          }
         }
       },
       "block_order": [
         "item_8KFyJn",
         "item_78yfjN",
-        "item_3NPNyQ",
-        "item_QnH7zr",
-        "item_gkeBNp"
+        "item_gkeBNp",
+        "item_QnH7zr"
       ],
       "name": "SS - Trust badges #3",
       "settings": {
@@ -269,6 +256,7 @@
         "video_rVbTqz": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/Zonder titel (654 x 833 px) (10).mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "modal_heading": "<h4>Modal Heading</h4>",
             "modal_text": "<p>Modal Text</p>"
@@ -432,20 +420,18 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [
-          "uv-glasses"
-        ],
+        "products": [],
         "full_width": true,
-        "stack_products": true,
+        "stack_products": false,
         "show_progress_bar": false,
-        "products_count": 2,
+        "products_count": 4,
         "products_per_row_mobile": "1",
-        "products_per_row_desktop": 2,
+        "products_per_row_desktop": 4,
         "subheading": "",
         "title": "YOU MAY ALSO LIKE",
         "content": "",
         "link_url": "",
-        "link_text": "",
+        "link_text": "View all",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -510,7 +496,6 @@
         "image_EBdKg9": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34_091a7a77-f0c8-4616-9453-cd8bea25ce0e.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -518,7 +503,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "WHERE LUXURY MEETS COMFORT",
-            "content": "<p>From our discreet Loop One wristband to our evolving range of sleep-tech essentials, every product offers: Silent vibration alarms for undisturbed mornings, Secure and comfortable wear, Sleek premium materials — all backed by a lifetime warranty.</p>",
+            "content": "<p>From our discreet Loop One wristband to our evolving range of sleep-tech essentials, every product offers: Silent vibration alarms for undisturbed mornings, Secure and comfortable wear, Sleek premium materials — all backed by a 2-year warranty.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -545,7 +530,6 @@
         "image_b83jfB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_43_36.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-end text-end",
@@ -580,7 +564,6 @@
         "image_BeRG6y": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -636,8 +619,6 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Wake_loop_3200_x_1600_px_3.png",
-        "mobile_image": "shopify://shop_images/Wake_loop_13.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -741,7 +722,7 @@
         "background_gradient": "",
         "text_color": "",
         "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
