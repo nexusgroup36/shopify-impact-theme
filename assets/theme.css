@@ -9887,13 +9887,20 @@ split-lines {
   margin-top: 16px;
 }
 
-.cart-payment-icons {
+.cart-drawer-payment-icons {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.cart-drawer-payment-icons img {
   max-width: 260px;
   width: 100%;
   height: auto;
   display: inline-block;
+  opacity: 0.95;
 }
-.cart__footer, .cart-drawer__footer {
-  flex-direction: column !important;
+
 }
 
