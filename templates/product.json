@@ -496,6 +496,7 @@
         "image_EBdKg9": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34_091a7a77-f0c8-4616-9453-cd8bea25ce0e.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -530,6 +531,7 @@
         "image_b83jfB": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_43_36_2435a64c-f0f4-455a-a45e-0a7dce1246eb.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-end text-end",
@@ -564,6 +566,7 @@
         "image_BeRG6y": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -615,10 +618,12 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/Wake_loop_3200_x_1600_px_3.png",
+        "mobile_image": "shopify://shop_images/Wake_loop_13.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
