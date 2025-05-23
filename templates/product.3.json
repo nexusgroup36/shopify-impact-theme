@@ -502,6 +502,7 @@
         "image_EBdKg9": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Wake_loop_19.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -536,6 +537,7 @@
         "image_b83jfB": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-end text-end",
@@ -570,6 +572,7 @@
         "image_BeRG6y": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Wake_loop_10.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -625,6 +628,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/Wake_loop_3200_x_1600_px_3.png",
+        "mobile_image": "shopify://shop_images/Wake_loop_13.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
