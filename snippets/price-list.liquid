@@ -50,7 +50,7 @@ Supported variables
       {%- endif -%}
     </sale-price>
 
-    <compare-at-price {% if form_id %}form="{{ form_id }}"{% endif %} <compare-at-price {% if form_id %}form="{{ form_id }}"{% endif %}>class="{{ compare_at_price_classes }}">
+    <compare-at-price {% if form_id %}form="{{ form_id }}"{% endif %}>
       <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
