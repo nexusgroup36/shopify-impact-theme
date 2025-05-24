@@ -269,7 +269,6 @@
         "video_rVbTqz": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Zonder titel (654 x 833 px) (10).mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "modal_heading": "<h4>Modal Heading</h4>",
             "modal_text": "<p>Modal Text</p>"
@@ -426,6 +425,21 @@
         "padding_horizontal_mobile": 0,
         "border_thickness": 0,
         "lazy": true
+      }
+    },
+    "video_M8X7BP": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": true,
+        "video_size": "md",
+        "video": "shopify://files/videos/Zonder titel (654 x 833 px) (10).mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "featured_collection_jizWxD": {
@@ -753,6 +767,7 @@
     "main",
     "trust_badges_L7QLMF",
     "product_vids_QHCtJC",
+    "video_M8X7BP",
     "featured_collection_jizWxD",
     "impact_text_4r9Pem",
     "media_with_text_WPkVK7",
