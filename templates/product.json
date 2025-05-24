@@ -140,12 +140,6 @@
             "title": "FAQ",
             "content": "<ul><li><strong>How does the Loop One wake me up? </strong>Loop One uses gentle vibrations on your wrist to wake you silently. It’s ideal for light sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</li><li><strong>Can I wear it all night comfortably?</strong>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</li><li><strong>How long does the battery last? </strong>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the included USB-C cable.</li><li><strong>Is it compatible with my phone or alarm app? </strong>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</li><li><strong>What if I sleep through the vibration?</strong>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</li></ul>"
           }
-        },
-        "liquid_98kTpb": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-product-videos'></div>"
-          }
         }
       },
       "block_order": [
@@ -168,8 +162,7 @@
         "collapsible_text_WwBkVq",
         "collapsible_text_Rgj4JB",
         "collapsible_text_qreJ9J",
-        "collapsible_text_8Ykkwf",
-        "liquid_98kTpb"
+        "collapsible_text_8Ykkwf"
       ],
       "settings": {
         "full_width": false,
@@ -187,6 +180,112 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "image_link_blocks_Ne6xbk": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_c7jGaW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/67eb955d-355f-48b5-a3ac-2c946d38ec0f.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_hrz9cM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Wake_loop_20.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Ty8AMJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/7811d604-2add-458b-a7d9-8a9105865620.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_F3XRBi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_7976_2.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_74UQYW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/f2a4f936-24ab-479a-a4e2-7f61f52c9a24.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_hE9izx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/a24fceb0-41ba-4b9f-be5b-2041aef030bd.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_c7jGaW",
+        "item_hrz9cM",
+        "item_Ty8AMJ",
+        "item_F3XRBi",
+        "item_74UQYW",
+        "item_hE9izx"
+      ],
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": false,
+        "block_size": "medium",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "trust_badges_L7QLMF": {
@@ -261,170 +360,6 @@
         "padding_horizontal": 0,
         "padding_horizontal_mobile": 0,
         "border_thickness": 0
-      }
-    },
-    "product_vids_QHCtJC": {
-      "type": "product-vids",
-      "blocks": {
-        "video_rVbTqz": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "modal_heading": "<h4>Modal Heading</h4>",
-            "modal_text": "<p>Modal Text</p>"
-          }
-        },
-        "video_LaLaFx": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "modal_heading": "<h4>Modal Heading</h4>",
-            "modal_text": "<p>Modal Text</p>"
-          }
-        },
-        "video_mj3Lik": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "modal_heading": "<h4>Modal Heading</h4>",
-            "modal_text": "<p>Modal Text</p>"
-          }
-        },
-        "video_NfBRt6": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "modal_heading": "<h4>Modal Heading</h4>",
-            "modal_text": "<p>Modal Text</p>"
-          }
-        },
-        "video_YcpAJD": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "modal_heading": "<h4>Modal Heading</h4>",
-            "modal_text": "<p>Modal Text</p>"
-          }
-        }
-      },
-      "block_order": [
-        "video_rVbTqz",
-        "video_LaLaFx",
-        "video_mj3Lik",
-        "video_NfBRt6",
-        "video_YcpAJD"
-      ],
-      "name": "SS - Product Videos",
-      "settings": {
-        "videos_position": "above_description",
-        "use_metafield": false,
-        "heading": "",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 18,
-        "heading_size_mobile": 18,
-        "heading_height": 130,
-        "heading_align": "center",
-        "heading_align_mobile": "center",
-        "slider_view": 3,
-        "slider_view_mobile": 3,
-        "slider_gap": 16,
-        "slider_gap_mobile": 16,
-        "slider_mt": 20,
-        "card_radius": 10,
-        "card_border_thickness": 0,
-        "card_shadow": true,
-        "video_ratio": "portrait",
-        "video_ratio_mobile": "portrait",
-        "video_overlay": 0.3,
-        "icon_size": 34,
-        "icon_size_mobile": 34,
-        "icon_border_thickness": 1,
-        "icon_position_mobile": "bottom_left",
-        "icon_position": "bottom_left",
-        "hide_icon": false,
-        "arrow_size": 35,
-        "arrow_size_mobile": 35,
-        "arrow_radius": 5,
-        "arrow_border_thickness": 0,
-        "arrow_hover_shadow": true,
-        "arrow_show_desktop": true,
-        "arrow_show_mobile": true,
-        "show_content": false,
-        "modal_width": 30,
-        "modal_width_mobile": 95,
-        "modal_padding_vertical": 0,
-        "modal_padding_vertical_mobile": 0,
-        "modal_padding_horizontal": 0,
-        "modal_padding_horizontal_mobile": 0,
-        "modal_radius": 16,
-        "modal_border_thickness": 0,
-        "modal_overlay": 50,
-        "close_size": 42,
-        "close_size_mobile": 42,
-        "close_radius": 8,
-        "close_border_thickness": 0,
-        "buttons_size": 48,
-        "buttons_size_mobile": 48,
-        "buttons_radius": 8,
-        "buttons_border_thickness": 0,
-        "modal_video_radius": 0,
-        "modal_video_border_thickness": 0,
-        "modal_video_ratio": "portrait",
-        "modal_video_ratio_mobile": "portrait",
-        "modal_heading_custom": false,
-        "modal_heading_font": "josefin_sans_n4",
-        "modal_heading_size": 28,
-        "modal_heading_size_mobile": 28,
-        "modal_heading_height": 130,
-        "modal_heading_align": "center",
-        "modal_heading_align_mobile": "center",
-        "modal_text_custom": false,
-        "modal_text_font": "josefin_sans_n4",
-        "modal_text_size": 16,
-        "modal_text_size_mobile": 16,
-        "modal_text_height": 130,
-        "modal_text_align": "center",
-        "modal_text_align_mobile": "center",
-        "modal_text_mt": 16,
-        "card_bg_color": "#ffffff",
-        "card_border_color": "#000000",
-        "card_shadow_color": "#000000",
-        "video_overlay_color": "#000000",
-        "icon_bg_color": "#000000",
-        "icon_border_color": "#ffffff",
-        "icon_color": "#ffffff",
-        "arrow_bg_color": "#ffffff",
-        "arrow_bg_hover_color": "#ffffff",
-        "arrow_border_color": "#000000",
-        "arrow_border_hover_color": "#000000",
-        "arrow_icon_color": "#1c1c1c",
-        "arrow_icon_hover_color": "#1c1c1c",
-        "modal_bg_color": "#ffffff",
-        "modal_border_color": "#000000",
-        "close_bg_color": "#ffffff",
-        "close_border_color": "#000000",
-        "close_icon_color": "#ffffff",
-        "buttons_bg_color": "#ffffff",
-        "buttons_border_color": "#000000",
-        "buttons_icon_color": "#ffffff",
-        "modal_video_border_color": "#000000",
-        "modal_content_bg_color": "#ffffff",
-        "modal_content_border_color": "#000000",
-        "modal_heading_color": "#000000",
-        "modal_text_color": "#000000",
-        "heading_color": "#000000",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "border_thickness": 0,
-        "lazy": true
       }
     },
     "video_M8X7BP": {
@@ -765,8 +700,8 @@
   },
   "order": [
     "main",
+    "image_link_blocks_Ne6xbk",
     "trust_badges_L7QLMF",
-    "product_vids_QHCtJC",
     "video_M8X7BP",
     "featured_collection_jizWxD",
     "impact_text_4r9Pem",
