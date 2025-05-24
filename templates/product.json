@@ -231,6 +231,19 @@
             "overlay_opacity": 0
           }
         },
+        "item_bKWtRC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-05-24_at_03.18.40.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "item_F3XRBi": {
           "type": "item",
           "settings": {
@@ -269,29 +282,16 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
-        },
-        "item_bKWtRC": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-05-24_at_03.18.40.jpg",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
         }
       },
       "block_order": [
         "item_c7jGaW",
         "item_hrz9cM",
         "item_Ty8AMJ",
+        "item_bKWtRC",
         "item_F3XRBi",
         "item_74UQYW",
-        "item_hE9izx",
-        "item_bKWtRC"
+        "item_hE9izx"
       ],
       "name": "Image link blocks",
       "settings": {
