@@ -316,35 +316,35 @@
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Never oversleep again — guaranteed</p>"
+            "text": "<p>Never oversleep again — <strong>guaranteed</strong></p>"
           }
         },
         "item_PghVGq": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>No More Startling Alarm Sounds</p>"
+            "text": "<p>Always wake up <strong>on time</strong></p>"
           }
         },
         "item_78yfjN": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Includes FREE Protection Case</p>"
+            "text": "<p>Includes <strong>FREE Protection Case</strong></p>"
           }
         },
         "item_QnH7zr": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>14+ Days Battery Life</p>"
+            "text": "<p><strong>14+ Days</strong> Battery Life</p>"
           }
         },
         "item_gkeBNp": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Backed by a Lifetime Warranty</p>"
+            "text": "<p>Backed by a <strong>Lifetime Warranty</strong></p>"
           }
         }
       },
