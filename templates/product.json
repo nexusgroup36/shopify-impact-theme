@@ -72,7 +72,7 @@
         "liquid_gf9BP7": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');\n\n  .bogo-banner {\n    border: 1px solid #000;\n    background-color: #f9fbfc;\n    padding: 6px 16px; /* reduced top/bottom padding only */\n    border-radius: 8px;\n    font-family: 'Quantico', sans-serif;\n    text-align: center;\n    max-width: 600px;\n    margin: 10px auto; /* reduced top margin */\n  }\n\n  .bogo-banner h2 {\n    font-size: 24px;\n    margin: 0;\n    color: #000;\n  }\n\n  .bogo-banner p {\n    font-size: 16px;\n    margin-top: 2px; /* less vertical space between lines */\n    color: #333;\n  }\n</style>\n\n<div class=\"bogo-banner\">\n  <h2>FREE PROTECTION CASE</h2>\n  <p>ONLY FOR THE NEXT 100 ORDERS</p>\n  <p>Applies automatically in your cart.</p>\n</div>"
+            "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');\n\n  .bogo-banner {\n    border: 1px solid #000;\n    background-color: #f9fbfc;\n    padding: 6px 16px; /* reduced top/bottom padding only */\n    border-radius: 8px;\n    font-family: 'Quantico', sans-serif;\n    text-align: center;\n    max-width: 600px;\n    margin: 10px auto; /* reduced top margin */\n  }\n\n  .bogo-banner h2 {\n    font-size: 24px;\n    margin: 0;\n    color: #000;\n  }\n\n  .bogo-banner p {\n    font-size: 16px;\n    margin-top: 2px; /* less vertical space between lines */\n    color: #333;\n  }\n</style>\n\n<div class=\"bogo-banner\">\n  <h2>FREE PREMIUM TRAVEL CASE</h2>\n  <p>ONLY FOR THE NEXT 100 ORDERS</p>\n  <p>Applies automatically in your cart.</p>\n</div>"
           }
         },
         "buy_buttons": {
