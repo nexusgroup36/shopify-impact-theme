@@ -80,6 +80,10 @@ Supported variables
     {{ line_item.variant.compare_at_price | money }}
   </span>
 {% endif %}
+
+<span class="sale-price" style="color: #e3342f; font-weight: 600; margin-left: 6px;">
+  {{ line_item.final_line_price | money }}
+</span>
   {%- else -%}
     {%- comment -%}
     --------------------------------------------------------------------------------------------------------------------
