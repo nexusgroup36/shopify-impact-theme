@@ -9903,4 +9903,7 @@ split-lines {
 }
 
 }
+compare-at-price {
+  display: inline !important;
+}
 
