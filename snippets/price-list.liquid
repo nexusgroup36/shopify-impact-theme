@@ -65,9 +65,8 @@ Supported variables
     LINE ITEM CASE (used on cart, order page...)
     --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
-  <sale-price class="text-subdued" style="color: #e3342f; font-weight: 600;">
-  {{ line_item.final_line_price | money }}
-</sale-price>
+    <sale-price class="{% if line_item.original_line_price > line_item.final_line_price %}{{ on_sale_price_classes }}{% else %}{{ regular_price_classes }}{% endif %}">
+      <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
         {{- line_item.final_line_price | money_with_currency -}}
@@ -76,18 +75,17 @@ Supported variables
       {%- endif -%}
     </sale-price>
 
-   {% if line_item.variant.compare_at_price > line_item.variant.price %}
-  <sale-price style="color: #e3342f; font-weight: 600;">
-    {{ line_item.final_line_price | money }}
-  </sale-price>
-  <compare-at-price style="text-decoration: line-through; color: #888; font-size: 0.85em; margin-left: 6px;">
-    {{ line_item.variant.compare_at_price | money }}
-  </compare-at-price>
-{% else %}
-  <sale-price style="color: #000;">
-    {{ line_item.final_line_price | money }}
-  </sale-price>
-{% endif %}
+    {%- if line_item.original_line_price > line_item.final_line_price -%}
+      <compare-at-price class="{{ compare_at_price_classes }}">
+        <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
+
+        {%- if settings.currency_code_enabled -%}
+          {{- line_item.original_line_price | money_with_currency -}}
+        {%- else -%}
+          {{- line_item.original_line_price | money -}}
+        {%- endif -%}
+      </compare-at-price>
+    {%- endif -%}
   {%- else -%}
     {%- comment -%}
     --------------------------------------------------------------------------------------------------------------------
