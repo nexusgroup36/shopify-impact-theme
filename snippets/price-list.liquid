@@ -76,7 +76,7 @@ Supported variables
     </sale-price>
 
     {%- if line_item.original_line_price > line_item.final_line_price -%}
-      <compare-at-price class="{{ compare_at_price_classes }}">
+      <compare-at-price class="compare-at-price" style="text-decoration: line-through; color: #888; font-size: 0.85em; margin-left: 6px;">
         <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
 
         {%- if settings.currency_code_enabled -%}
