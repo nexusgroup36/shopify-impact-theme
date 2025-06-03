@@ -76,10 +76,17 @@ Supported variables
       {%- endif -%}
     </sale-price>
 
-    {% if line_item.variant.compare_at_price > line_item.variant.price %}
-  <span class="compare-at-price" style="text-decoration: line-through; color: #888; font-size: 0.85em; margin-left: 6px;">
+   {% if line_item.variant.compare_at_price > line_item.variant.price %}
+  <sale-price style="color: #e3342f; font-weight: 600;">
+    {{ line_item.final_line_price | money }}
+  </sale-price>
+  <compare-at-price style="text-decoration: line-through; color: #888; font-size: 0.85em; margin-left: 6px;">
     {{ line_item.variant.compare_at_price | money }}
-  </span>
+  </compare-at-price>
+{% else %}
+  <sale-price style="color: #000;">
+    {{ line_item.final_line_price | money }}
+  </sale-price>
 {% endif %}
   {%- else -%}
     {%- comment -%}
