@@ -75,9 +75,16 @@ Supported variables
       {%- endif -%}
     </sale-price>
 
-    {% if line_item.variant.compare_at_price > line_item.variant.price %}
-  <span class="compare-at-price" style="text-decoration: line-through; color: #888; font-size: 0.85em; margin-left: 6px;">
+   {% if line_item.variant.compare_at_price > line_item.variant.price %}
+  {% assign discount = line_item.variant.compare_at_price | minus: line_item.variant.price %}
+  {% assign discount_percentage = discount | times: 100 | divided_by: line_item.variant.compare_at_price | round %}
+
+  <span class="compare-at-price" style="color: #e3342f; text-decoration: line-through; font-size: 0.9em; margin-right: 8px;">
     {{ line_item.variant.compare_at_price | money }}
+  </span>
+
+  <span class="discount-badge" style="color: #e3342f; font-weight: 600; font-size: 0.9em;">
+    Save {{ discount_percentage }}%
   </span>
 {% endif %}
   {%- else -%}
