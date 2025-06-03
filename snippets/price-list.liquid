@@ -79,12 +79,24 @@ Supported variables
   {% assign discount = line_item.variant.compare_at_price | minus: line_item.variant.price %}
   {% assign discount_percentage = discount | times: 100 | divided_by: line_item.variant.compare_at_price | round %}
 
-  <span class="compare-at-price" style="color: #e3342f; text-decoration: line-through; font-size: 0.9em; margin-right: 8px;">
+  <!-- Compare-at Price (gray, strikethrough) -->
+  <span class="compare-at-price" style="text-decoration: line-through; color: #888; font-size: 0.9em; margin-right: 8px;">
     {{ line_item.variant.compare_at_price | money }}
   </span>
 
-  <span class="discount-badge" style="color: #e3342f; font-weight: 600; font-size: 0.9em;">
+  <!-- Discounted Price (red) -->
+  <span class="sale-price" style="color: #e3342f; font-weight: 600; font-size: 0.95em; margin-right: 6px;">
+    {{ line_item.final_line_price | money }}
+  </span>
+
+  <!-- Save % -->
+  <span class="discount-badge" style="color: #e3342f; font-size: 0.85em;">
     Save {{ discount_percentage }}%
+  </span>
+{% else %}
+  <!-- Regular Price (if no discount) -->
+  <span class="sale-price" style="font-size: 0.95em;">
+    {{ line_item.final_line_price | money }}
   </span>
 {% endif %}
   {%- else -%}
