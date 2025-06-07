@@ -38,10 +38,8 @@
         "show_shipping_text": false,
         "show_view_cart_button": false,
         "show_checkout_button": true,
-        "recommendations_title": "88% Of Customers Also Bought!",
-        "products": [
-          "uv-glasses"
-        ],
+        "recommendations_title": "",
+        "products": [],
         "product_card_background": "#f2f2f2",
         "product_card_text_color": ""
       }
