@@ -14,7 +14,6 @@
       "blocks": {
         "judge_me_reviews_preview_badge_cwjVnx": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
           "settings": {}
         },
         "title": {
@@ -695,6 +694,31 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "174949137792a9b513": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Ny3he8": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Ny3he8"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -708,6 +732,7 @@
     "media_with_text_LtprTE",
     "media_with_text_AwCX3C",
     "image_with_text_overlay_UKfeC3",
-    "faq_B3Ytat"
+    "faq_B3Ytat",
+    "174949137792a9b513"
   ]
 }
