@@ -61,6 +61,7 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "hide_sold_out_variants": false,
             "stack_blocks": true,
@@ -71,6 +72,7 @@
         },
         "liquid_gf9BP7": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');\n\n  .bogo-banner {\n    border: 1px solid #000;\n    background-color: #f9fbfc;\n    padding: 4px 12px;\n    border-radius: 6px;\n    font-family: 'Quantico', sans-serif;\n    text-align: center;\n    max-width: 500px;\n    margin: 6px auto;\n  }\n\n  .bogo-banner h2 {\n    font-size: 20px;\n    margin: 0;\n    color: #000;\n  }\n\n  .bogo-banner p {\n    font-size: 14px;\n    margin: 1px 0;\n    color: #333;\n  }\n</style>\n\n<div class=\"bogo-banner\">\n  <h2>FREE PREMIUM TRAVEL CASE</h2>\n  <p>ONLY FOR THE NEXT 100 ORDERS</p>\n  <p>Applies automatically in your cart.</p>\n</div>"
           }
