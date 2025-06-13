@@ -397,6 +397,7 @@
     },
     "featured_collection_jizWxD": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "",
         "products": [
