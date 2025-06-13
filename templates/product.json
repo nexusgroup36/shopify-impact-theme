@@ -72,7 +72,7 @@
         "liquid_gf9BP7": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');\n\n  .bogo-banner {\n    border: 1px solid #000;\n    background-color: #f9fbfc;\n    padding: 4px 12px;\n    border-radius: 6px;\n    font-family: 'Quantico', sans-serif;\n    text-align: center;\n    max-width: 500px;\n    margin: 6px auto;\n  }\n\n  .bogo-banner h2 {\n    font-size: 20px;\n    margin: 0;\n    color: #000;\n  }\n\n  .bogo-banner p {\n    font-size: 14px;\n    margin: 1px 0;\n    color: #333;\n  }\n</style>\n\n<div class=\"bogo-banner\">\n  <h2>FREE PREMIUM TRAVEL CASE</h2>\n  <p>ONLY FOR THE NEXT 100 ORDERS</p>\n  <p>Applies automatically in your cart.</p>\n</div>"
+            "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');\n\n  .bogo-banner {\n    border: 1px solid #000;\n    background-color: #f9fbfc;\n    padding: 4px 12px;\n    border-radius: 6px;\n    font-family: 'Quantico', sans-serif;\n    text-align: center;\n    max-width: 500px;\n    margin: 6px auto;\n  }\n\n  .bogo-banner h2 {\n    font-size: 19px;\n    margin: 0;\n    color: #000;\n  }\n\n  .bogo-banner p {\n    font-size: 14px;\n    margin: 1px 0;\n    color: #333;\n  }\n</style>\n\n<div class=\"bogo-banner\">\n  <h2>FREE Blue Light Blocking Glasses</h2>\n  <p>ONLY FOR THE NEXT 100 ORDERS</p>\n  <p>Applies automatically in your cart.</p>\n</div>"
           }
         },
         "buy_buttons": {
@@ -293,7 +293,6 @@
         "item_74UQYW",
         "item_hE9izx"
       ],
-      "name": "Image link blocks",
       "settings": {
         "full_width": false,
         "block_size": "large",
@@ -355,7 +354,6 @@
         "item_QnH7zr",
         "item_gkeBNp"
       ],
-      "name": "SS - Trust badges #3",
       "settings": {
         "trust_position": "below_title",
         "item_gap": 10,
@@ -385,7 +383,6 @@
     },
     "video_M8X7BP": {
       "type": "video",
-      "name": "Video",
       "settings": {
         "full_width": false,
         "allow_transparent_header": false,
@@ -400,7 +397,6 @@
     },
     "featured_collection_jizWxD": {
       "type": "featured-collection",
-      "name": "Featured collection",
       "settings": {
         "collection": "",
         "products": [
@@ -458,7 +454,6 @@
         "item_39dQtL",
         "item_DQgqnw"
       ],
-      "name": "Impact text",
       "settings": {
         "full_width": true,
         "stack_mobile": true,
@@ -504,7 +499,6 @@
       "block_order": [
         "image_EBdKg9"
       ],
-      "name": "Media with text",
       "settings": {
         "full_width": false,
         "spacing": "small"
@@ -539,7 +533,6 @@
       "block_order": [
         "image_b83jfB"
       ],
-      "name": "Media with text",
       "settings": {
         "full_width": false,
         "spacing": "small"
@@ -574,7 +567,6 @@
       "block_order": [
         "image_BeRG6y"
       ],
-      "name": "Media with text",
       "settings": {
         "full_width": false,
         "spacing": "small"
@@ -601,7 +593,6 @@
         "heading_8J66CN",
         "richtext_p3DdtX"
       ],
-      "name": "Image with text overlay",
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -670,7 +661,6 @@
         "item_JUMQzY",
         "item_ztDECz"
       ],
-      "name": "FAQ",
       "settings": {
         "full_width": true,
         "subheading": "",
