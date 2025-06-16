@@ -429,6 +429,9 @@
       "general": {
         "pay_now_button_label": "CONTINUE TO PAYMENT",
         "autocomplete_powered_by_google": " "
+      },
+      "payment_gateway": {
+        "credit_card_label": "Credit / Debit Card"
       }
     },
     "links": {
