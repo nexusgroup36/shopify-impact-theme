@@ -431,7 +431,7 @@
         "autocomplete_powered_by_google": " "
       },
       "payment_gateway": {
-        "credit_card_label": "Credit / Debit Card"
+        "credit_card_label": "Credit or Debit Card"
       }
     },
     "links": {
