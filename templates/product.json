@@ -88,8 +88,15 @@
             "payment_button_text_color": ""
           }
         },
+        "liquid_E8GGN4": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin-top: 12px;\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0726/8165/2548/files/left-and-right-arrows.svg?v=1709739432\" alt=\"Return Icon\" style=\"width: 20px; height: 20px;\" />\n  <span>60 day hassle-free returns</span>\n</div>"
+          }
+        },
         "image_BGxTTA": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1.webp",
             "alignment": "center",
@@ -176,6 +183,7 @@
         "liquid_LGGtrV",
         "liquid_gf9BP7",
         "buy_buttons",
+        "liquid_E8GGN4",
         "image_BGxTTA",
         "liquid_KfQga7",
         "text_q6yyHR",
