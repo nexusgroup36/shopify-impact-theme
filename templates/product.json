@@ -88,24 +88,31 @@
             "payment_button_text_color": ""
           }
         },
-        "liquid_KfQga7": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<style>\n    .stock-update-banner {\n        background-color: #000;\n        border: 1.5px dashed #fff;\n        border-radius: 12px;\n        padding: 8px 16px; /* Reduced padding for smaller height */\n        color: #fff;\n        font-family: QUANTICO;\n        font-size: 13px;\n        max-width: 100%;\n        box-sizing: border-box;\n        text-align: center;\n    }\n\n    .stock-update-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 8px;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n\n    .stock-update-bullet {\n        color: #fff;\n        font-size: 10px; /* Smaller dot */\n    }\n\n    .stock-update-text {\n        margin: 0;\n        color: #fff;\n        font-weight: 400;\n    }\n\n    .stock-update-progress-container {\n        background-color: #333;\n        height: 5px; /* Smaller bar height */\n        margin-top: 6px; /* Less spacing */\n        border-radius: 4px;\n        overflow: hidden;\n    }\n\n    .stock-update-progress-bar {\n        background-color: #fff;\n        height: 100%;\n        transition: width 0.4s ease;\n    }\n\n    @media (max-width: 480px) {\n        .stock-update-banner {\n            font-size: 12px;\n        }\n        .stock-update-content {\n            flex-wrap: nowrap;\n        }\n    }\n</style>\n\n<section class=\"stock-update-banner\">\n    <div class=\"stock-update-content\">\n        <span class=\"stock-update-bullet\" aria-hidden=\"true\">●</span>\n        <p class=\"stock-update-text\">LIVE STOCK UPDATES: <span id=\"stock-count\">78</span> units left in stock</p>\n    </div>\n    <div class=\"stock-update-progress-container\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n        <div class=\"stock-update-progress-bar\" id=\"progress-bar\" style=\"width: 80%;\"></div>\n    </div>\n</section>\n\n<script>\n    let voorraad = 78;\n    let maxVoorraad = 78;\n    let progressPercentage = 80;\n\n    function updateStock() {\n        voorraad -= 6;\n        if (voorraad < 0) voorraad = 0;\n        document.getElementById(\"stock-count\").textContent = voorraad;\n        progressPercentage = (voorraad / maxVoorraad) * 80;\n        document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n        document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n    }\n\n    setInterval(updateStock, 10000);\n    document.getElementById(\"stock-count\").textContent = voorraad;\n    document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n    document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n</script>"
-          }
-        },
-        "liquid_p7Bxfh": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
-          }
-        },
         "image_BGxTTA": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/1.webp",
             "alignment": "center",
             "max_width": 500
+          }
+        },
+        "liquid_KfQga7": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<style>\n    .stock-update-banner {\n        background-color: #000;\n        border: 1.5px dashed #fff;\n        border-radius: 12px;\n        padding: 8px 16px; /* Reduced padding for smaller height */\n        color: #fff;\n        font-family: QUANTICO;\n        font-size: 13px;\n        max-width: 100%;\n        box-sizing: border-box;\n        text-align: center;\n    }\n\n    .stock-update-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 8px;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n\n    .stock-update-bullet {\n        color: #fff;\n        font-size: 10px; /* Smaller dot */\n    }\n\n    .stock-update-text {\n        margin: 0;\n        color: #fff;\n        font-weight: 400;\n    }\n\n    .stock-update-progress-container {\n        background-color: #333;\n        height: 5px; /* Smaller bar height */\n        margin-top: 6px; /* Less spacing */\n        border-radius: 4px;\n        overflow: hidden;\n    }\n\n    .stock-update-progress-bar {\n        background-color: #fff;\n        height: 100%;\n        transition: width 0.4s ease;\n    }\n\n    @media (max-width: 480px) {\n        .stock-update-banner {\n            font-size: 12px;\n        }\n        .stock-update-content {\n            flex-wrap: nowrap;\n        }\n    }\n</style>\n\n<section class=\"stock-update-banner\">\n    <div class=\"stock-update-content\">\n        <span class=\"stock-update-bullet\" aria-hidden=\"true\">●</span>\n        <p class=\"stock-update-text\">LIVE STOCK UPDATES: <span id=\"stock-count\">78</span> units left in stock</p>\n    </div>\n    <div class=\"stock-update-progress-container\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n        <div class=\"stock-update-progress-bar\" id=\"progress-bar\" style=\"width: 80%;\"></div>\n    </div>\n</section>\n\n<script>\n    let voorraad = 78;\n    let maxVoorraad = 78;\n    let progressPercentage = 80;\n\n    function updateStock() {\n        voorraad -= 6;\n        if (voorraad < 0) voorraad = 0;\n        document.getElementById(\"stock-count\").textContent = voorraad;\n        progressPercentage = (voorraad / maxVoorraad) * 80;\n        document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n        document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n    }\n\n    setInterval(updateStock, 10000);\n    document.getElementById(\"stock-count\").textContent = voorraad;\n    document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n    document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n</script>"
+          }
+        },
+        "text_q6yyHR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Join thousands taking control of their mornings—without the noise.</strong><br/>The Loop One wakes you with gentle wrist vibrations, not chaos. Built for deep sleepers, early risers, and anyone done with snoozing. Wake up calm, focused, and finally on time.</p>"
+          }
+        },
+        "liquid_p7Bxfh": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
           }
         },
         "liquid_fYCN9X": {
@@ -169,9 +176,10 @@
         "liquid_LGGtrV",
         "liquid_gf9BP7",
         "buy_buttons",
-        "liquid_KfQga7",
-        "liquid_p7Bxfh",
         "image_BGxTTA",
+        "liquid_KfQga7",
+        "text_q6yyHR",
+        "liquid_p7Bxfh",
         "liquid_fYCN9X",
         "collapsible_text_DwAeq6",
         "collapsible_text_WwBkVq",
