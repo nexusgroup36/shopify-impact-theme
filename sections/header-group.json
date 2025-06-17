@@ -17,29 +17,13 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "LIMITED OFFER: GET FREE BLUE LIGHT BLOCKING GLASSES",
-            "url": ""
-          }
-        },
-        "message_brw9L6": {
-          "type": "message",
-          "settings": {
-            "text": "FREE SHIPPING",
-            "url": ""
-          }
-        },
-        "message_Y7gM7C": {
-          "type": "message",
-          "settings": {
-            "text": "LIFETIME GUARANTEE",
+            "text": "SUMMER SALE: UP TO 30% OFF",
             "url": ""
           }
         }
       },
       "block_order": [
-        "message",
-        "message_brw9L6",
-        "message_Y7gM7C"
+        "message"
       ],
       "settings": {
         "enable_sticky": false,
