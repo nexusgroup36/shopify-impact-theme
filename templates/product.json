@@ -342,6 +342,7 @@
         },
         "item_gkeBNp": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "tick",
             "text": "<p>Backed by a <strong>Lifetime Warranty</strong></p>"
