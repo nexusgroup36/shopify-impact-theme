@@ -91,7 +91,7 @@
         "liquid_E8GGN4": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin-top: 12px;\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0726/8165/2548/files/left-and-right-arrows.svg?v=1709739432\" alt=\"Return Icon\" style=\"width: 20px; height: 20px;\" />\n  <span>60 day hassle-free returns</span>\n</div>"
+            "liquid": "<div style=\"margin: 0 !important; padding: 0 !important;\">\n  <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin: 0 !important; padding: 0 !important;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0726/8165/2548/files/left-and-right-arrows.svg?v=1709739432\" alt=\"Return Icon\" style=\"width: 20px; height: 20px; margin: 0 !important; padding: 0 !important;\" />\n    <span style=\"margin: 0 !important; padding: 0 !important;\">60 day hassle-free returns</span>\n  </div>\n</div>"
           }
         },
         "image_BGxTTA": {
