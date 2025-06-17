@@ -333,13 +333,6 @@
             "text": "<p>No more missed alarms, no snoozing, just <strong>smooth wake-ups, every time.</strong></p>"
           }
         },
-        "item_78yfjN": {
-          "type": "item",
-          "settings": {
-            "icon": "tick",
-            "text": "<p>Includes <strong>FREE Blue Light Blocking Glasses</strong></p>"
-          }
-        },
         "item_QnH7zr": {
           "type": "item",
           "settings": {
@@ -358,7 +351,6 @@
       "block_order": [
         "item_8KFyJn",
         "item_PghVGq",
-        "item_78yfjN",
         "item_QnH7zr",
         "item_gkeBNp"
       ],
