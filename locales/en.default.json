@@ -332,7 +332,7 @@
       "remove": "Remove"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Spend {{ remaining_amount }} more and get free shipping!",
+      "limit_unreached_html": "You’re {{ remaining_amount }} away from free shipping.",
       "limit_reached_html": "You are eligible for free shipping."
     },
     "shipping_estimator": {
