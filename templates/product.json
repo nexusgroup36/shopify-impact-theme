@@ -146,7 +146,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "SHIPPING",
-            "content": "<p>All orders processed and dispatched within 24-48 hours.</p><p>An email with your tracking information will be sent to you once your order has been processed.</p>"
+            "content": "<p>All orders processed and dispatched within 24-48 hours.</p><p><strong>Free Shipping on orders over $70 </strong>Duties and taxes are included.</p>"
           }
         },
         "collapsible_text_qreJ9J": {
