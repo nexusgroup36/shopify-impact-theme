@@ -214,6 +214,32 @@
         "input_text_color": ""
       }
     },
+    "rich_text_qEWyed": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fwWHJV": {
+          "type": "heading",
+          "settings": {
+            "text": "LOVED BY 100.000+ HAPPY CUSTOMERS.",
+            "heading_tag": "h6",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_fwWHJV"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "image_link_blocks_Ne6xbk": {
       "type": "image-link-blocks",
       "blocks": {
@@ -730,6 +756,7 @@
   },
   "order": [
     "main",
+    "rich_text_qEWyed",
     "image_link_blocks_Ne6xbk",
     "trust_badges_L7QLMF",
     "video_M8X7BP",
