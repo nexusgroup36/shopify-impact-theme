@@ -555,15 +555,15 @@
         "image_b83jfB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_22_26_35748491-f0f4-45a5-a0f5-de936c7a5081.png",
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_15_45_50.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-end text-end",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "BLUE LIGHT GLASSES",
-            "content": "<p>Protect your eyes from screen exposure at night and fall asleep faster.<br/>A perfect bonus to upgrade your sleep, only for a limited time.</p>",
+            "title": "Tired of waking up late?",
+            "content": "<p>Oversleeping doesn’t make you lazy — your alarm just isn’t working.<br/><br/>Loop One wakes you through powerful, silent vibration right on your wrist — no more noise, no more snoozing, no more missed mornings.<br/><br/>Finally get up on time — even if you’re a deep sleeper</p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
