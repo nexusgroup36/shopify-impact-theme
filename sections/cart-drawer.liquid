@@ -96,10 +96,30 @@
           </div>
         {% endfor %}
 
-<p style="font-family: 'Quantico', sans-serif; font-size: 16px;">
-  <span style="color: black;">Shipping</span>
-  <span style="color: #28a745; font-weight: bold;">FREE</span>
-</p>
+<style>
+  .shipping-line {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Quantico', sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .shipping-label {
+    color: #000000;
+  }
+
+  .shipping-value {
+    color: #28a745; /* green */
+    font-weight: bold;
+  }
+</style>
+
+<div class="shipping-line">
+  <div class="shipping-label">Shipping</div>
+  <div class="shipping-value">FREE</div>
+</div>
+
 
         <div class="h-stack gap-4 justify-between">
           <span class="h5">{{ 'cart.general.total' | t }}</span>
