@@ -437,5 +437,10 @@
     "links": {
       "powered_by_shopify": " "
     }
+  },
+  "customer_accounts": {
+    "payment_method_brands": {
+      "applepay": "Apple Pay"
+    }
   }
 }
