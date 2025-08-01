@@ -22,7 +22,7 @@
         "heading_RhYGHG": {
           "type": "heading",
           "settings": {
-            "text": "HOW TO USE?",
+            "text": "Welcome to Wake Loop",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -31,7 +31,7 @@
         "richtext_qW3XfM": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Excited to s=use your new Loop One? Check the video below to see how to set it up!</p>"
+            "content": "<p>You’ve just unlocked a smarter way to wake up.<br/><br/>Watch this quick video to get started with your Loop One and experience mornings the way they were meant to be: calm, clear, and completely phone-free.</p>"
           }
         }
       },
@@ -74,6 +74,7 @@
         "allow_transparent_header": false,
         "autoplay": false,
         "video_size": "auto",
+        "video": "shopify://files/videos/0801.mp4",
         "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
