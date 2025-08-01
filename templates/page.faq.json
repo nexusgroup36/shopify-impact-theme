@@ -55,25 +55,17 @@
         "play_EpByJE": {
           "type": "play",
           "settings": {}
-        },
-        "heading_TGMUeV": {
-          "type": "heading",
-          "settings": {
-            "text": "Video",
-            "heading_tag": "h1"
-          }
         }
       },
       "block_order": [
-        "play_EpByJE",
-        "heading_TGMUeV"
+        "play_EpByJE"
       ],
       "name": "Video",
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "autoplay": false,
-        "video_size": "auto",
+        "video_size": "lg",
         "video": "shopify://files/videos/0801.mp4",
         "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "text_color": "#ffffff",
