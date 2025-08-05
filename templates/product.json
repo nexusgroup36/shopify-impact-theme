@@ -160,7 +160,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "FAQ",
-            "content": "<ul><li><strong>How does the Loop One wake me up? </strong>Loop One uses vibrations on your wrist to wake you. It’s ideal for deep sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</li><li><strong>How many alarms can I set?             </strong>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</li><li><strong>Can I wear it all night comfortably?</strong>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</li><li><strong>How long does the battery last? </strong>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the USB charger.</li><li><strong>Is it compatible with my phone or alarm app? </strong>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</li><li><strong>What if I sleep through the vibration?</strong>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</li></ul>"
+            "content": "<ul><li><strong>How does the Loop One wake me up? </strong>Loop One uses vibrations on your wrist to wake you. It’s ideal for deep sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</li><li><strong>How many alarms can I set?             </strong>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</li><li><strong>Can I wear it all night comfortably?</strong>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</li><li><strong>How long does the battery last? </strong>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the USB charger.</li><li><strong>Is it compatible with my phone or alarm app? </strong>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</li><li><strong>What if I sleep through the vibration?</strong>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</li><li><strong>Will it fit my wrist?   </strong>                                  Yes! We made sure that the Loop One is adjustable for every wrist size.</li></ul>"
           }
         },
         "liquid_c9t3mH": {
@@ -662,11 +662,25 @@
             "content": "<p>Loop One uses vibrations on your wrist to wake you silently. It’s ideal for <strong>deep</strong> sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</p>"
           }
         },
+        "item_rM6fJG": {
+          "type": "item",
+          "settings": {
+            "title": "How many alarms can i set?",
+            "content": "<p>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</p>"
+          }
+        },
         "item_iRJA9i": {
           "type": "item",
           "settings": {
             "title": "Can I wear it all night comfortably?",
             "content": "<p>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</p>"
+          }
+        },
+        "item_zWWkrA": {
+          "type": "item",
+          "settings": {
+            "title": "Will it fit my wrist?",
+            "content": "<p>Yes! We made sure that the Loop One is adjustable for every wrist size.</p>"
           }
         },
         "item_DtQ8eq": {
@@ -700,7 +714,9 @@
       },
       "block_order": [
         "item_U6DEYw",
+        "item_rM6fJG",
         "item_iRJA9i",
+        "item_zWWkrA",
         "item_DtQ8eq",
         "item_U6KDJp",
         "item_JUMQzY",
