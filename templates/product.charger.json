@@ -120,11 +120,12 @@
         "text_q6yyHR": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Join thousands taking control of their mornings—without the noise.</strong><br/>The Loop One wakes you with wrist vibrations, not chaos. Built for deep sleepers, early risers, and anyone done with snoozing. Wake up calm, focused, and finally on time.</p>"
+            "text": "<p><strong>Power your Wake Loop the right way anywhere, anytime.</strong><br/>The Wake Loop USB Wall Charger is designed for quick, reliable charging so you’re always ready for a peaceful, on-time wake-up. Compact, travel-friendly, and built for everyday use, it’s the perfect companion for your Loop One. Plug in, power up, and keep your mornings running smoothly.</p>"
           }
         },
         "liquid_p7Bxfh": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div id='ss-trust-badges-3'></div>"
           }
@@ -139,7 +140,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "BENEFITS",
-            "content": "<ul><li><strong>No more oversleeping</strong> — finally wake up on time, even if you’re a deep sleeper</li><li><strong>Your alarm, not theirs</strong> — vibration wakes only you, not your partner</li><li><strong>Stress-free mornings</strong> — no more jolts, panic, or racing heart</li><li><strong>Phone-free wake-up</strong> — detox from screens and still get up reliably</li><li><strong>Works every time</strong> — powerful vibration designed for deep sleepers</li><li><strong>Sleep easier</strong> — fall asleep knowing you’ll wake up on time</li><li><strong>Zero hassle</strong> — no apps, no syncing, just simple and effective</li><li><strong>Shift-proof</strong> — quiet enough for night shifts, strong enough for heavy sleepers</li><li><strong>Backed for life</strong> — lifetime warranty means no alarm stress, ever again</li></ul>"
+            "content": "<ul><li><strong>Fast power</strong> — get a full 14 days of Loop One battery in just 1 hour<br/><br/></li><li><strong>Travel-ready </strong>— compact design fits in any bag, perfect for home or trips<br/><br/></li><li><strong>Universal use</strong> — works with any standard USB port or adapter<br/><br/></li><li><strong>Wake Loop perfect fit</strong> — designed to match and power your Loop One seamlessly<br/><br/></li><li><strong>No downtime</strong> — quick recharge means your mornings never skip a beat<br/><br/></li><li><strong>Built to last</strong> — durable construction for years of reliable charging</li></ul>"
           }
         },
         "collapsible_text_WwBkVq": {
