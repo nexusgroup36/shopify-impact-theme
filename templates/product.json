@@ -94,6 +94,12 @@
             "liquid": "<div style=\"margin: 0 !important; padding: 0 !important;\">\n  <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin: 0 !important; padding: 0 !important;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0726/8165/2548/files/left-and-right-arrows.svg?v=1709739432\" alt=\"Return Icon\" style=\"width: 20px; height: 20px; margin: 0 !important; padding: 0 !important;\" />\n    <span style=\"margin: 0 !important; padding: 0 !important;\">60 day hassle-free returns</span>\n  </div>\n</div>"
           }
         },
+        "liquid_AYf8qa": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{%- comment -%}\n  === B2G1 Promo Banner — drop-in Custom liquid ===\n  Exact visual match to the screenshot:\n  • Soft gray card, 12px radius\n  • Centered bold uppercase heading\n  • Body copy at comfortable line-length\n  • Precise spacing & responsiveness\n{%- endcomment -%}\n\n{%- assign b2g1_heading = 'BUY 2, GET 1 FREE' -%}\n{%- capture b2g1_body -%}\nTo take advantage of our temporary Buy 2, Get 1 FREE sale, add at least 3 Loop One wristbands to your cart and the discount will be applied automatically.\n{%- endcapture -%}\n\n<div class=\"b2g1x\" role=\"region\" aria-label=\"{{ b2g1_heading | escape }}\">\n  <div class=\"b2g1x__wrap\">\n    <div class=\"b2g1x__card\">\n      <h2 class=\"b2g1x__title\">{{ b2g1_heading }}</h2>\n      <p class=\"b2g1x__copy\">{{ b2g1_body }}</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  /* ===== B2G1 banner (scoped classes) ===== */\n  .b2g1x { margin: 20px 0 28px; }\n  .b2g1x__wrap {\n    display: flex;\n    justify-content: center;\n    padding-left: 18px;   /* keep edges off the screen on mobile */\n    padding-right: 18px;\n  }\n  .b2g1x__card {\n    /* exact look from screenshot */\n    background: #F2F2F2;             /* soft gray */\n    color: #111111;                   /* nearly black text */\n    border-radius: 12px;              /* rounded corners */\n    padding: 28px 28px;               /* breathing room */\n    max-width: 680px;                 /* keeps line-length tight */\n    width: 100%;\n  }\n\n  /* Typography:\n     - inherit the store's font family for consistency\n     - explicit sizes to match visual weight of screenshot\n  */\n  .b2g1x__title {\n    margin: 0 0 12px 0;\n    text-align: center;\n    font-weight: 800;                 /* strong, like the image */\n    text-transform: uppercase;\n    letter-spacing: 0.01em;           /* tiny tracking for uppercase */\n    line-height: 1.2;\n    font-size: 22px;                  /* desktop base */\n  }\n  .b2g1x__copy {\n    margin: 0;\n    text-align: center;\n    line-height: 1.55;\n    font-size: 17px;                  /* reads identical to screenshot */\n    max-width: 56ch;                  /* keeps multi-line balance */\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  /* Responsive polish */\n  @media (max-width: 740px) {\n    .b2g1x__card { padding: 24px 22px; max-width: 640px; }\n    .b2g1x__title { font-size: 20px; }\n    .b2g1x__copy { font-size: 16.5px; }\n  }\n  @media (max-width: 420px) {\n    .b2g1x__card { padding: 20px 18px; border-radius: 10px; }\n    .b2g1x__title { font-size: 18.5px; }\n    .b2g1x__copy { font-size: 16px; }\n  }\n</style>"
+          }
+        },
         "image_BGxTTA": {
           "type": "image",
           "disabled": true,
@@ -184,6 +190,7 @@
         "liquid_gf9BP7",
         "buy_buttons",
         "liquid_E8GGN4",
+        "liquid_AYf8qa",
         "image_BGxTTA",
         "liquid_KfQga7",
         "text_q6yyHR",
