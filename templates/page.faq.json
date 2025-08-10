@@ -22,7 +22,7 @@
         "heading_RhYGHG": {
           "type": "heading",
           "settings": {
-            "text": "Welcome to Wake Loop",
+            "text": "HOW IT WORKS",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -31,7 +31,7 @@
         "richtext_qW3XfM": {
           "type": "richtext",
           "settings": {
-            "content": "<p>You’ve just unlocked a smarter way to wake up.<br/><br/>Watch this quick video to get started with your Loop One and experience mornings the way they were meant to be: calm, clear, and completely phone-free.</p>"
+            "content": "<p>Welcome to <strong>Wake Loop</strong>! On this page, you’ll find everything you need to get your silent vibrating alarm up and running quickly and easily!<br/><br/><br/>Our goal? To help you start your day the way you want.</p><p>The silent vibrating alarm helps you wake up gently and optimize your morning routine, so you can start every day feeling fresh and full of energy. In the video below, we’ll show you how the band works and how it can help you make the most of your mornings.</p>"
           }
         }
       },

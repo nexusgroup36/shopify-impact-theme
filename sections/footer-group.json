@@ -11,6 +11,64 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
+    "accordion_content_NL3dGn": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_gchgLC": {
+          "type": "item",
+          "settings": {
+            "title": "IMPORTANT INFORMATION",
+            "content": "<p>If you don’t take any action for more than 4.5 seconds while setting up the alarm, <strong>The Loop One</strong> will automatically return to the time display. Make sure to take action within 4.5 seconds to continue installing the alarm.</p><p><strong>Confirming actions:</strong> To confirm any setting (such as switching from hours to minutes or saving the set time), press and hold the button for 3 seconds.</p><p>Didn’t manage to do everything in one go? No worries — you can simply restart by pressing and holding the button again for 3 seconds when you’re on the time screen. The hour will start flashing again.</p>"
+          }
+        },
+        "item_fiFGM9": {
+          "type": "item",
+          "settings": {
+            "title": "Question 1",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "item_Yh6TwD": {
+          "type": "item",
+          "settings": {
+            "title": "Question 2",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "item_LktpJx": {
+          "type": "item",
+          "settings": {
+            "title": "Question 3",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_gchgLC",
+        "item_fiFGM9",
+        "item_Yh6TwD",
+        "item_LktpJx"
+      ],
+      "name": "Accordion content",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Heading",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -138,6 +196,7 @@
     }
   },
   "order": [
+    "accordion_content_NL3dGn",
     "text-with-icons",
     "footer"
   ]
