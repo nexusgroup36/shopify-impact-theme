@@ -24,8 +24,8 @@
         "item_fiFGM9": {
           "type": "item",
           "settings": {
-            "title": "Question 1",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+            "title": "1. Setting Time and Personal Information",
+            "content": "<p>Turn on <strong>The Loop One</strong> by pressing the button once. You will now see the time you want to adjust. Press and hold the button for 3 seconds to start the adjustment process — the “hour” indicator will begin flashing first. Use the button to set the hour, then press and hold the button again for 3 seconds to move to the “minutes.” Repeat this process to set the minutes, month, day, and year. You can also choose between a 12-hour or 24-hour clock format.</p><p>After setting the time and date, the device will prompt you to enter your height and weight. Hold the button until the corresponding indicator flashes, then use the button to adjust these values.</p><p>Once all settings are complete, do not press any button for 8 seconds. <strong>The Loop One</strong> will save your data and return to standby mode. Your device is now fully set up and ready to use!</p>"
           }
         },
         "item_Yh6TwD": {
