@@ -69,6 +69,50 @@
         "accordion_text_color": ""
       }
     },
+    "hot_spots_YPmzjr": {
+      "type": "hot-spots",
+      "blocks": {
+        "item_AB4hqR": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "horizontal_position": 83,
+            "vertical_position": 75,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_AB4hqR"
+      ],
+      "name": "Hot spots",
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/WWW.WAKELOOP.COM_Presentatie.png",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -197,6 +241,7 @@
   },
   "order": [
     "accordion_content_NL3dGn",
+    "hot_spots_YPmzjr",
     "text-with-icons",
     "footer"
   ]
