@@ -142,6 +142,13 @@
             "content": "<ul><li><strong>No more oversleeping</strong> — finally wake up on time, even if you’re a deep sleeper</li><li><strong>Your alarm, not theirs</strong> — vibration wakes only you, not your partner</li><li><strong>Stress-free mornings</strong> — no more jolts, panic, or racing heart</li><li><strong>Phone-free wake-up</strong> — detox from screens and still get up reliably</li><li><strong>Works every time</strong> — powerful vibration designed for deep sleepers</li><li><strong>Sleep easier</strong> — fall asleep knowing you’ll wake up on time</li><li><strong>Zero hassle</strong> — no apps, no syncing, just simple and effective</li><li><strong>Shift-proof</strong> — quiet enough for night shifts, strong enough for heavy sleepers</li><li><strong>Backed for life</strong> — lifetime warranty means no alarm stress, ever again</li></ul>"
           }
         },
+        "collapsible_text_EHrPjY": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "HOW DOES IT WORK?",
+            "content": "<p><strong>How to Set Up & Use Your Loop One</strong></p><ol><li>Press the button once to turn on. Hold for 3 seconds to adjust time and date. Use short presses to change values and hold again to confirm.<br/></li><li>Press the button 5 times to access Alarm 1. Hold 3 seconds to edit, set hours/minutes, then hold again to save. The alarm repeats daily until you turn it off.<br/></li><li>Press 6 or 7 times for other alarm groups, same process as above.<br/></li><li>From standby, hold 3 seconds to see battery %.<br/></li></ol><p><strong>Tip: </strong>We created a video instruction where we demonstrate it for you. You can check it here: <a href=\"/pages/quick-start\" title=\"Quick Start\">Instruction Video</a><br/></p>"
+          }
+        },
         "collapsible_text_WwBkVq": {
           "type": "collapsible_text",
           "settings": {
@@ -198,6 +205,7 @@
         "liquid_p7Bxfh",
         "liquid_fYCN9X",
         "collapsible_text_DwAeq6",
+        "collapsible_text_EHrPjY",
         "collapsible_text_WwBkVq",
         "collapsible_text_Rgj4JB",
         "collapsible_text_qreJ9J",
