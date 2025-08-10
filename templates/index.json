@@ -15,12 +15,12 @@
         "button_HGVmHk": {
           "type": "button",
           "settings": {
-            "style": "outline",
-            "size": "base",
+            "style": "fill",
+            "size": "sm",
             "text": "SHOP NOW",
             "url": "shopify://products/loop-one",
             "background": "#000000",
-            "text_color": "#f5e9dc"
+            "text_color": "#ffffff"
           }
         }
       },
@@ -34,7 +34,7 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify://shop_images/Save_your_sleep_2.png",
-        "mobile_image": "shopify://shop_images/Save_your_sleep_5.png",
+        "mobile_image": "shopify://shop_images/WWW.WAKELOOP.COM_8.png",
         "mobile_text_position": "place-self-end-center text-center",
         "desktop_text_position": "sm:place-self-end-start sm:text-start",
         "text_color": "#ffffff",
