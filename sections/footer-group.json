@@ -38,8 +38,8 @@
         "item_LktpJx": {
           "type": "item",
           "settings": {
-            "title": "Question 3",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>"
+            "title": "3. Charging Instructions – Battery Level",
+            "content": "<p>To check the battery level of <strong>The Loop One</strong>, press and hold the button for 3 seconds while the device is in standby mode. The battery percentage will then be displayed. For more information on charging, scroll up for the charging instructions and watch Samuel’s video.</p>"
           }
         }
       },
