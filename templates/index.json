@@ -16,7 +16,7 @@
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "base",
+            "size": "sm",
             "text": "SHOP NOW",
             "url": "shopify://products/loop-one",
             "background": "#000000",
@@ -34,7 +34,7 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify://shop_images/Save_your_sleep_2.png",
-        "mobile_image": "shopify://shop_images/WWW.WAKELOOP.COM_8.png",
+        "mobile_image": "shopify://shop_images/WWW.WAKELOOP.COM_11.png",
         "mobile_text_position": "place-self-end-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
