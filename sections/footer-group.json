@@ -11,66 +11,6 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
-    "accordion_content_NL3dGn": {
-      "type": "accordion-content",
-      "blocks": {
-        "item_gchgLC": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "title": "IMPORTANT INFORMATION",
-            "content": "<p>If you don’t take any action for more than 4.5 seconds while setting up the alarm, <strong>The Loop One</strong> will automatically return to the time display. Make sure to take action within 4.5 seconds to continue installing the alarm.</p><p><strong>Confirming actions:</strong> To confirm any setting (such as switching from hours to minutes or saving the set time), press and hold the button for 3 seconds.</p><p>Didn’t manage to do everything in one go? No worries — you can simply restart by pressing and holding the button again for 3 seconds when you’re on the time screen. The hour will start flashing again.</p>"
-          }
-        },
-        "item_fiFGM9": {
-          "type": "item",
-          "settings": {
-            "title": "1. Setting Time and Personal Information",
-            "content": "<p>Turn on <strong>The Loop One</strong> by pressing the button once. You will now see the time you want to adjust. Press and hold the button for 3 seconds to start the adjustment process — the “hour” indicator will begin flashing first. Use the button to set the hour, then press and hold the button again for 3 seconds to move to the “minutes.” Repeat this process to set the minutes, month, day, and year. You can also choose between a 12-hour or 24-hour clock format.</p><p>After setting the time and date, the device will prompt you to enter your height and weight. Hold the button until the corresponding indicator flashes, then use the button to adjust these values.</p><p>Once all settings are complete, do not press any button for 8 seconds. <strong>The Loop One</strong> will save your data and return to standby mode. Your device is now fully set up and ready to use!</p>"
-          }
-        },
-        "item_Yh6TwD": {
-          "type": "item",
-          "settings": {
-            "title": "2. Setting Up the Alarm Function",
-            "content": "<p>To set the alarm, press the button 5 times to display the first alarm group. If “A1 OF” appears, it means the alarm is turned off by default. To turn it on, press and hold the button for 3 seconds. The hour will start flashing — press the button to set the hour. Once the hour is set, press and hold the button again to move to the minutes. After setting the minutes, press and hold the button once more for 3 seconds to save the alarm. The alarm is now activated.</p><p><strong>Note:</strong> Once you set the alarm, it will go off at the same time every day until you turn it off or adjust it. This is useful if you have a fixed wake-up time, as you only need to set it once.</p><p>To set additional alarms, press the button 6 or 7 times to access the other alarm groups and follow the same procedure.</p><p><strong>Turning Off the Alarm:</strong><br/><br/>To turn off the alarm, navigate to the set alarm by pressing the button the correct number of times. Once the alarm is displayed, press and hold the button for 3 seconds, then press the button again until “A1 OF” appears. Finally, press and hold the button for 3 seconds to confirm turning the alarm off.</p>"
-          }
-        },
-        "item_LktpJx": {
-          "type": "item",
-          "settings": {
-            "title": "3. Charging Instructions – Battery Level",
-            "content": "<p>To check the battery level of <strong>The Loop One</strong>, press and hold the button for 3 seconds while the device is in standby mode. The battery percentage will then be displayed. For more information on charging, scroll up for the charging instructions and watch Samuel’s video.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_gchgLC",
-        "item_fiFGM9",
-        "item_Yh6TwD",
-        "item_LktpJx"
-      ],
-      "disabled": true,
-      "name": "Accordion content",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "User Manual",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
-      }
-    },
     "rich_text_hnGyBR": {
       "type": "rich-text",
       "blocks": {
@@ -111,6 +51,73 @@
         "text_color": ""
       }
     },
+    "media_with_text_RRR4D8": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_eWUHRz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-08-11_at_00.17.44.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "The Mission",
+            "content": "<p>WakeLoop isn’t just a workplace — it’s a mission. Every product we design helps people sleep deeper and wake up in control. From our vibration wristbands to our next generation of sleep tech, you’ll be part of a team where ideas become products, and products improve lives.</p><p>We move fast, focus on results, and build with intention. If you’re passionate about wellness, innovation, and making a real‑world impact, you’ll feel at home here.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_eWUHRz"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "video_Tt4E3H": {
+      "type": "video",
+      "blocks": {
+        "play_wVMghj": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_Ax6dnL": {
+          "type": "heading",
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "play_wVMghj",
+        "heading_Ax6dnL"
+      ],
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "rich_text_pbXK6P": {
       "type": "rich-text",
       "blocks": {
@@ -142,250 +149,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "hot_spots_YPmzjr": {
-      "type": "hot-spots",
-      "blocks": {
-        "item_AB4hqR": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "horizontal_position": 83,
-            "vertical_position": 75,
-            "horizontal_position_mobile": 83,
-            "vertical_position_mobile": 75,
-            "icon_width": 32,
-            "title": "Feature name",
-            "content": "<p>Share useful information about your product features.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_AB4hqR"
-      ],
-      "disabled": true,
-      "name": "Hot spots",
-      "settings": {
-        "full_width": true,
-        "image": "shopify://shop_images/WWW.WAKELOOP.COM_Presentatie.png",
-        "mobile_image": "shopify://shop_images/WWW.WAKELOOP.COM_Presentatie.png",
-        "title": "",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
-        "desktop_text_position": "place-self-start text-start",
-        "image_background": "",
-        "image_background_gradient": "",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "overlay_text_color": "#ffffff",
-        "overlay_button_background": "",
-        "overlay_button_text_color": "",
-        "hot_spot_dot_background": "#ffffff",
-        "hot_spot_dot_text_color": "#000000",
-        "hot_spot_content_background": "#ffffff",
-        "hot_spot_content_text_color": "#000000",
-        "hot_spot_content_opacity": 90,
-        "hot_spot_content_blur_radius": 3
-      }
-    },
-    "image_link_blocks_NXMjfx": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "item_NQ9XRr": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_7976_2.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_JWdxbJ": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/a24fceb0-41ba-4b9f-be5b-2041aef030bd.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_Ybkmxd": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/67eb955d-355f-48b5-a3ac-2c946d38ec0f.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_R6yPHp": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/7811d604-2add-458b-a7d9-8a9105865620.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_nFEpjY": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/f2a4f936-24ab-479a-a4e2-7f61f52c9a24.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item_NQ9XRr",
-        "item_JWdxbJ",
-        "item_Ybkmxd",
-        "item_R6yPHp",
-        "item_nFEpjY"
-      ],
-      "disabled": true,
-      "name": "Image link blocks",
-      "settings": {
-        "full_width": false,
-        "block_size": "medium",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "featured_product_jT7qqH": {
-      "type": "featured-product",
-      "blocks": {
-        "vendor_KeGCRY": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {}
-        },
-        "title_TkCRmB": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h3"
-          }
-        },
-        "badges_QpDEhc": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price_9cxq7L": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating_tQH6TT": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator_jpNUm6": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description_4rctAf": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
-          }
-        },
-        "variant_picker_pGmnCD": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "variant",
-            "size_chart_page": ""
-          }
-        },
-        "quantity_selector_7p8hhh": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
-        "buy_buttons_JTiEFE": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "pickup_availability_3whyC7": {
-          "type": "pickup_availability",
-          "disabled": true,
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "vendor_KeGCRY",
-        "title_TkCRmB",
-        "badges_QpDEhc",
-        "price_9cxq7L",
-        "rating_tQH6TT",
-        "separator_jpNUm6",
-        "description_4rctAf",
-        "variant_picker_pGmnCD",
-        "quantity_selector_7p8hhh",
-        "buy_buttons_JTiEFE",
-        "pickup_availability_3whyC7"
-      ],
-      "disabled": true,
-      "name": "Featured product",
-      "settings": {
-        "full_width": true,
-        "product": "uv-glasses",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
       }
     },
     "text-with-icons": {
@@ -515,12 +278,10 @@
     }
   },
   "order": [
-    "accordion_content_NL3dGn",
     "rich_text_hnGyBR",
+    "media_with_text_RRR4D8",
+    "video_Tt4E3H",
     "rich_text_pbXK6P",
-    "hot_spots_YPmzjr",
-    "image_link_blocks_NXMjfx",
-    "featured_product_jT7qqH",
     "text-with-icons",
     "footer"
   ]
