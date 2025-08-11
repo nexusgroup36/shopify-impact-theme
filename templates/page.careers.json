@@ -1,0 +1,82 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_xXMztp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RhYGHG": {
+          "type": "heading",
+          "settings": {
+            "text": "HOW IT WORKS",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qW3XfM": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Welcome to <strong>Wake Loop</strong>! On this page, you’ll find everything you need to get your silent vibrating alarm up and running quickly and easily!<br/><br/><br/>Our goal? To help you start your day the way you want.</p><p>The silent vibrating alarm helps you wake up gently and optimize your morning routine, so you can start every day feeling fresh and full of energy. In the video below, we’ll show you how the band works and how it can help you make the most of your mornings.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RhYGHG",
+        "richtext_qW3XfM"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "video_naAQpk": {
+      "type": "video",
+      "blocks": {
+        "play_EpByJE": {
+          "type": "play",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "play_EpByJE"
+      ],
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "lg",
+        "video": "shopify://files/videos/0801.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_xXMztp",
+    "video_naAQpk"
+  ]
+}
