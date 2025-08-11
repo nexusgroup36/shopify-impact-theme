@@ -120,7 +120,7 @@
         "text_q6yyHR": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Join thousands taking control of their mornings—without the noise.</strong><br/>The Loop One wakes you with wrist vibrations, not chaos. Built for deep sleepers, early risers, and anyone done with snoozing. Wake up calm, focused, and finally on time.</p>"
+            "text": "<p><strong>Join thousands taking control of their mornings—without the noise.</strong><br/>The Loop One wakes you with wrist vibrations, not chaos. Built for heavy sleepers, early risers, and anyone done with snoozing. Wake up calm, focused, and finally on time.</p>"
           }
         },
         "liquid_p7Bxfh": {
@@ -139,7 +139,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "BENEFITS",
-            "content": "<ul><li><strong>No more oversleeping</strong> — finally wake up on time, even if you’re a deep sleeper</li><li><strong>Your alarm, not theirs</strong> — vibration wakes only you, not your partner</li><li><strong>Stress-free mornings</strong> — no more jolts, panic, or racing heart</li><li><strong>Phone-free wake-up</strong> — detox from screens and still get up reliably</li><li><strong>Works every time</strong> — powerful vibration designed for deep sleepers</li><li><strong>Sleep easier</strong> — fall asleep knowing you’ll wake up on time</li><li><strong>Zero hassle</strong> — no apps, no syncing, just simple and effective</li><li><strong>Shift-proof</strong> — quiet enough for night shifts, strong enough for heavy sleepers</li><li><strong>Backed for life</strong> — lifetime warranty means no alarm stress, ever again</li></ul>"
+            "content": "<ul><li><strong>No more oversleeping</strong> — finally wake up on time, even if you’re a heavy sleeper</li><li><strong>Your alarm, not theirs</strong> — vibration wakes only you, not your partner</li><li><strong>Stress-free mornings</strong> — no more jolts, panic, or racing heart</li><li><strong>Phone-free wake-up</strong> — detox from screens and still get up reliably</li><li><strong>Works every time</strong> — powerful vibration designed for deep sleepers</li><li><strong>Sleep easier</strong> — fall asleep knowing you’ll wake up on time</li><li><strong>Zero hassle</strong> — no apps, no syncing, just simple and effective</li><li><strong>Shift-proof</strong> — quiet enough for night shifts, strong enough for heavy sleepers</li><li><strong>Backed for life</strong> — lifetime warranty means no alarm stress, ever again</li></ul>"
           }
         },
         "collapsible_text_EHrPjY": {
@@ -382,7 +382,7 @@
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Wakes you up <strong>reliably, </strong>even if you're a <strong>deep</strong> sleeper, <strong>without</strong> noise or chaos.</p>"
+            "text": "<p>Wakes you up <strong>reliably, </strong>even if you're a <strong>heavy</strong> sleeper, <strong>without</strong> noise or chaos.</p>"
           }
         },
         "item_PghVGq": {
@@ -544,7 +544,7 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Made for deep sleepers. Built for real life.",
+            "title": "Made for heavy sleepers. Built for real life.",
             "content": "<p>Loop One was designed for one mission: wake you up, without chaos.<br/>It works silently, without disturbing your partner or shocking your system.<br/>No screen. No sound. No nonsense. Just clean, reliable wake-ups, every time. All backed by a Lifetime warranty.</p>",
             "link_text": "",
             "link_url": "",
@@ -579,7 +579,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Tired of waking up late?",
-            "content": "<p>Oversleeping doesn’t make you lazy — your alarm just isn’t working.<br/><br/>Loop One wakes you through powerful, silent vibration right on your wrist — no more noise, no more snoozing, no more missed mornings.<br/><br/>Finally get up on time — even if you’re a deep sleeper</p>",
+            "content": "<p>Oversleeping doesn’t make you lazy, your alarm just isn’t working.<br/><br/>Loop One wakes you through powerful, silent vibration right on your wrist. No more noise, no more snoozing, no more missed mornings.<br/><br/>Finally get up on time, even if you’re a heavy sleeper</p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -675,7 +675,7 @@
           "type": "item",
           "settings": {
             "title": "How does the Loop One wake me up?",
-            "content": "<p>Loop One uses vibrations on your wrist to wake you silently. It’s ideal for <strong>deep</strong> sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</p>"
+            "content": "<p>Loop One uses vibrations on your wrist to wake you silently. It’s ideal for <strong>heavy</strong> sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</p>"
           }
         },
         "item_rM6fJG": {
