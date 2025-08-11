@@ -16,6 +16,7 @@
       "blocks": {
         "item_gchgLC": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "title": "IMPORTANT INFORMATION",
             "content": "<p>If you don’t take any action for more than 4.5 seconds while setting up the alarm, <strong>The Loop One</strong> will automatically return to the time display. Make sure to take action within 4.5 seconds to continue installing the alarm.</p><p><strong>Confirming actions:</strong> To confirm any setting (such as switching from hours to minutes or saving the set time), press and hold the button for 3 seconds.</p><p>Didn’t manage to do everything in one go? No worries — you can simply restart by pressing and holding the button again for 3 seconds when you’re on the time screen. The hour will start flashing again.</p>"
@@ -49,6 +50,7 @@
         "item_Yh6TwD",
         "item_LktpJx"
       ],
+      "disabled": true,
       "name": "Accordion content",
       "settings": {
         "full_width": true,
@@ -67,6 +69,79 @@
         "button_text_color": "",
         "accordion_background": "",
         "accordion_text_color": ""
+      }
+    },
+    "rich_text_hnGyBR": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_qQNJAA": {
+          "type": "subheading",
+          "settings": {
+            "text": "Build mornings that matter."
+          }
+        },
+        "heading_3374VX": {
+          "type": "heading",
+          "settings": {
+            "text": "Join the WakeLoop Mission",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_7nGbkB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We’re redefining how the world wakes up — silent, stress‑free, and in control. Join a fast‑moving team where clarity, craft, and momentum lead the way.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qQNJAA",
+        "heading_3374VX",
+        "richtext_7nGbkB"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_pbXK6P": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xYJiKn": {
+          "type": "heading",
+          "settings": {
+            "text": "Why WakeLoop?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_VAi4xc": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li><strong>Fast Growth</strong> — Scale with us from startup to global brand. Ship work that touches real users every morning.</li><li><strong>High Impact</strong> — Your craft directly improves people’s sleep and mornings.</li></ul><p></p><ul><li><strong>Modern Culture</strong> — Remote‑friendly, outcome‑driven, low‑ego. Clear goals, fast execution.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xYJiKn",
+        "richtext_VAi4xc"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "hot_spots_YPmzjr": {
@@ -89,6 +164,7 @@
       "block_order": [
         "item_AB4hqR"
       ],
+      "disabled": true,
       "name": "Hot spots",
       "settings": {
         "full_width": true,
@@ -190,6 +266,7 @@
         "item_R6yPHp",
         "item_nFEpjY"
       ],
+      "disabled": true,
       "name": "Image link blocks",
       "settings": {
         "full_width": false,
@@ -439,6 +516,8 @@
   },
   "order": [
     "accordion_content_NL3dGn",
+    "rich_text_hnGyBR",
+    "rich_text_pbXK6P",
     "hot_spots_YPmzjr",
     "image_link_blocks_NXMjfx",
     "featured_product_jT7qqH",
