@@ -41,6 +41,7 @@
         "heading_3374VX",
         "richtext_7nGbkB"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -80,6 +81,7 @@
       "block_order": [
         "image_eWUHRz"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -141,6 +143,7 @@
         "heading_xYJiKn",
         "richtext_VAi4xc"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
