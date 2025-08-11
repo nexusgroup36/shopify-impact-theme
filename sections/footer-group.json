@@ -117,19 +117,6 @@
     "image_link_blocks_NXMjfx": {
       "type": "image-link-blocks",
       "blocks": {
-        "item_NzAYbF": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Wake_loop_20.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "item_NQ9XRr": {
           "type": "item",
           "settings": {
@@ -197,7 +184,6 @@
         }
       },
       "block_order": [
-        "item_NzAYbF",
         "item_NQ9XRr",
         "item_JWdxbJ",
         "item_Ybkmxd",
@@ -305,10 +291,11 @@
         "buy_buttons_JTiEFE",
         "pickup_availability_3whyC7"
       ],
+      "disabled": true,
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "loop-one",
+        "product": "uv-glasses",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
