@@ -49,6 +49,41 @@
         "text_color": ""
       }
     },
+    "media_with_text_yd8GpL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_aJnDYf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-08-11_at_00.17.44.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "The Mission",
+            "content": "<p>WakeLoop isn’t just a workplace — it’s a mission. Every product we design helps people sleep deeper and wake up in control. From our vibration wristbands to our next generation of sleep tech, you’ll be part of a team where ideas become products, and products improve lives.</p><p>We move fast, focus on results, and build with intention. If you’re passionate about wellness, innovation, and making a real‑world impact, you’ll feel at home here.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_aJnDYf"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "rich_text_jUjhYD": {
       "type": "rich-text",
       "blocks": {
@@ -89,41 +124,6 @@
         "text_color": ""
       }
     },
-    "media_with_text_yd8GpL": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_aJnDYf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-08-11_at_00.17.44.jpg",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "The Mission",
-            "content": "<p>WakeLoop isn’t just a workplace — it’s a mission. Every product we design helps people sleep deeper and wake up in control. From our vibration wristbands to our next generation of sleep tech, you’ll be part of a team where ideas become products, and products improve lives.</p><p>We move fast, focus on results, and build with intention. If you’re passionate about wellness, innovation, and making a real‑world impact, you’ll feel at home here.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_aJnDYf"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
-      }
-    },
     "video_naAQpk": {
       "type": "video",
       "blocks": {
@@ -153,8 +153,8 @@
   "order": [
     "main",
     "rich_text_GgitTf",
-    "rich_text_jUjhYD",
     "media_with_text_yd8GpL",
+    "rich_text_jUjhYD",
     "video_naAQpk"
   ]
 }
