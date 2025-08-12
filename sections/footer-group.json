@@ -52,6 +52,85 @@
         "text_color": ""
       }
     },
+    "image_link_blocks_eLFCPL": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_PM8k3E": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/883824cd-2d17-44cf-b173-e4f55ed76b96.png",
+            "stretch_image": true,
+            "link_text": "Head of Product Innovation",
+            "link_url": "",
+            "background": "#ffffff",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 17
+          }
+        },
+        "item_BXm6h9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/cc23cae8-1e95-471e-89e8-318206dfc7e9.png",
+            "stretch_image": true,
+            "link_text": "Inventory Coordinator",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 17
+          }
+        },
+        "item_UVHXiq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/46952c42-7901-4993-a77c-3b97d76074b2.png",
+            "stretch_image": true,
+            "link_text": "Customer Experience Manager",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 17
+          }
+        },
+        "item_WbrFrq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/9decff00-09f3-4997-ab75-5ca18721ca13.png",
+            "stretch_image": true,
+            "link_text": "Social Media Content Assistant",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 17
+          }
+        }
+      },
+      "block_order": [
+        "item_PM8k3E",
+        "item_BXm6h9",
+        "item_UVHXiq",
+        "item_WbrFrq"
+      ],
+      "disabled": true,
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": false,
+        "block_size": "medium",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "media_with_text_RRR4D8": {
       "type": "media-with-text",
       "blocks": {
@@ -282,6 +361,7 @@
   },
   "order": [
     "rich_text_hnGyBR",
+    "image_link_blocks_eLFCPL",
     "media_with_text_RRR4D8",
     "video_Tt4E3H",
     "rich_text_pbXK6P",

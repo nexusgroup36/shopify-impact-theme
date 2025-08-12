@@ -49,39 +49,96 @@
         "text_color": ""
       }
     },
-    "media_with_text_yd8GpL": {
-      "type": "media-with-text",
+    "image_link_blocks_qrYNmX": {
+      "type": "image-link-blocks",
       "blocks": {
-        "image_aJnDYf": {
-          "type": "image",
+        "item_fapJCr": {
+          "type": "item",
           "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-08-11_at_00.17.44.jpg",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "The Mission",
-            "content": "<p>WakeLoop isn’t just a workplace — it’s a mission. Every product we design helps people sleep deeper and wake up in control. From our vibration wristbands to our next generation of sleep tech, you’ll be part of a team where ideas become products, and products improve lives.</p><p>We move fast, focus on results, and build with intention. If you’re passionate about wellness, innovation, and making a real‑world impact, you’ll feel at home here.</p>",
-            "link_text": "",
+            "image": "shopify://shop_images/883824cd-2d17-44cf-b173-e4f55ed76b96.png",
+            "stretch_image": true,
+            "link_text": "HEAD OF PRODUCT INNOVATION",
             "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
+            "background": "",
             "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
+            "overlay_color": "#000000",
+            "overlay_opacity": 17
+          }
+        },
+        "item_KYxrBe": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/cc23cae8-1e95-471e-89e8-318206dfc7e9.png",
+            "stretch_image": true,
+            "link_text": "INVENTORY COORDINATOR",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 17
+          }
+        },
+        "item_bmQQXq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/46952c42-7901-4993-a77c-3b97d76074b2.png",
+            "stretch_image": true,
+            "link_text": "CUSTOMER EXPERIENCE MANAGER",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 17
+          }
+        },
+        "item_xmWxyT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/1413ff33-8416-456d-885c-9ed47f281c29.png",
+            "stretch_image": true,
+            "link_text": "SOCIAL MEDIA CONTENT ASSISTANT",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 17
+          }
+        },
+        "item_ebAkjU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/9decff00-09f3-4997-ab75-5ca18721ca13.png",
+            "stretch_image": true,
+            "link_text": "CUSTOMER SUPPORT SPECIALIST",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 17
           }
         }
       },
       "block_order": [
-        "image_aJnDYf"
+        "item_fapJCr",
+        "item_KYxrBe",
+        "item_bmQQXq",
+        "item_xmWxyT",
+        "item_ebAkjU"
       ],
-      "name": "Media with text",
+      "name": "Image link blocks",
       "settings": {
         "full_width": false,
-        "spacing": "small"
+        "block_size": "medium",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "rich_text_jUjhYD": {
@@ -124,6 +181,41 @@
         "text_color": ""
       }
     },
+    "media_with_text_yd8GpL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_aJnDYf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-08-11_at_00.17.44.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "The Mission",
+            "content": "<p>WakeLoop isn’t just a workplace — it’s a mission. Every product we design helps people sleep deeper and wake up in control. From our vibration wristbands to our next generation of sleep tech, you’ll be part of a team where ideas become products, and products improve lives.</p><p>We move fast, focus on results, and build with intention. If you’re passionate about wellness, innovation, and making a real‑world impact, you’ll feel at home here.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_aJnDYf"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "video_naAQpk": {
       "type": "video",
       "blocks": {
@@ -153,8 +245,9 @@
   "order": [
     "main",
     "rich_text_GgitTf",
-    "media_with_text_yd8GpL",
+    "image_link_blocks_qrYNmX",
     "rich_text_jUjhYD",
+    "media_with_text_yd8GpL",
     "video_naAQpk"
   ]
 }
