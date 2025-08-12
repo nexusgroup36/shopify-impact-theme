@@ -401,6 +401,7 @@
         },
         "item_QnH7zr": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "tick",
             "text": "<p><strong>All-night comfort,</strong> so light, you’ll forget you’re wearing it until it wakes you.</p>"
