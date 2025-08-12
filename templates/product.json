@@ -382,37 +382,36 @@
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Wakes you up <strong>reliably, </strong>even if you're a <strong>heavy</strong> sleeper, <strong>without</strong> noise or chaos.</p>"
+            "text": "<p><strong>Finally wake up on time,</strong> even if you’ve slept through every alarm you’ve <strong>ever</strong> set.</p>"
           }
         },
         "item_PghVGq": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>No more missed alarms, no snoozing, just <strong>smooth wake-ups, every time.</strong></p>"
+            "text": "<p><strong>No more “sorry I’m late” texts,</strong> stop snoozing and start owning your mornings.</p>"
+          }
+        },
+        "item_gkeBNp": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p><strong>Silent, partner-friendly,</strong> powerful vibrations that wake you, not the whole house.</p>"
           }
         },
         "item_QnH7zr": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p><strong>Designed</strong> for <strong>comfort</strong>, wear it all night <strong>without</strong> <strong>noticing</strong> it’s there.</p>"
-          }
-        },
-        "item_gkeBNp": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "icon": "tick",
-            "text": "<p>Backed by a <strong>Lifetime Warranty</strong></p>"
+            "text": "<p><strong>All-night comfort,</strong> so light, you’ll forget you’re wearing it until it wakes you.</p>"
           }
         }
       },
       "block_order": [
         "item_8KFyJn",
         "item_PghVGq",
-        "item_QnH7zr",
-        "item_gkeBNp"
+        "item_gkeBNp",
+        "item_QnH7zr"
       ],
       "settings": {
         "trust_position": "below_title",
