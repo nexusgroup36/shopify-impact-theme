@@ -16,6 +16,39 @@
         "content_width": "80ch"
       }
     },
+    "rich_text_GgitTf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mDaQiF": {
+          "type": "heading",
+          "settings": {
+            "text": "Why WakeLoop?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_Jg7i7t": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li><strong>Fast Growth</strong> — Scale with us from startup to global brand. Ship work that touches real users every morning.</li><li><strong>High Impact</strong> — Your craft directly improves people’s sleep and mornings.</li></ul><p></p><ul><li><strong>Modern Culture</strong> — Remote‑friendly, outcome‑driven, low‑ego. Clear goals, fast execution.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mDaQiF",
+        "richtext_Jg7i7t"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_jUjhYD": {
       "type": "rich-text",
       "blocks": {
@@ -91,39 +124,6 @@
         "spacing": "small"
       }
     },
-    "rich_text_GgitTf": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_mDaQiF": {
-          "type": "heading",
-          "settings": {
-            "text": "Why WakeLoop?",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_Jg7i7t": {
-          "type": "richtext",
-          "settings": {
-            "content": "<ul><li><strong>Fast Growth</strong> — Scale with us from startup to global brand. Ship work that touches real users every morning.</li><li><strong>High Impact</strong> — Your craft directly improves people’s sleep and mornings.</li></ul><p></p><ul><li><strong>Modern Culture</strong> — Remote‑friendly, outcome‑driven, low‑ego. Clear goals, fast execution.</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_mDaQiF",
-        "richtext_Jg7i7t"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "video_naAQpk": {
       "type": "video",
       "blocks": {
@@ -152,9 +152,9 @@
   },
   "order": [
     "main",
+    "rich_text_GgitTf",
     "rich_text_jUjhYD",
     "media_with_text_yd8GpL",
-    "rich_text_GgitTf",
     "video_naAQpk"
   ]
 }
