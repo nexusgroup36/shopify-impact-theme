@@ -111,6 +111,7 @@
         "item_xmWxyT",
         "item_ebAkjU"
       ],
+      "disabled": true,
       "name": "Image link blocks",
       "settings": {
         "full_width": false,
