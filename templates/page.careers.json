@@ -65,19 +65,6 @@
             "overlay_opacity": 17
           }
         },
-        "item_KYxrBe": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/cc23cae8-1e95-471e-89e8-318206dfc7e9.png",
-            "stretch_image": true,
-            "link_text": "INVENTORY COORDINATOR",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 17
-          }
-        },
         "item_bmQQXq": {
           "type": "item",
           "settings": {
@@ -120,11 +107,11 @@
       },
       "block_order": [
         "item_fapJCr",
-        "item_KYxrBe",
         "item_bmQQXq",
         "item_xmWxyT",
         "item_ebAkjU"
       ],
+      "disabled": true,
       "name": "Image link blocks",
       "settings": {
         "full_width": false,
