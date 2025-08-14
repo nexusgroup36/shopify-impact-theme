@@ -49,79 +49,120 @@
         "text_color": ""
       }
     },
-    "image_link_blocks_qrYNmX": {
-      "type": "image-link-blocks",
+    "collection_list_J3HKez": {
+      "type": "collection-list",
       "blocks": {
-        "item_fapJCr": {
-          "type": "item",
+        "collection_LYkgex": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/883824cd-2d17-44cf-b173-e4f55ed76b96.png",
-            "stretch_image": true,
-            "link_text": "HEAD OF PRODUCT INNOVATION",
-            "link_url": "",
-            "background": "",
+            "collection": "",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_5.png",
+            "subheading": "",
+            "title": "CO-FOUNDER",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 17
+            "overlay_opacity": 37
           }
         },
-        "item_bmQQXq": {
-          "type": "item",
+        "collection_QECm9G": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/46952c42-7901-4993-a77c-3b97d76074b2.png",
-            "stretch_image": true,
-            "link_text": "CUSTOMER EXPERIENCE MANAGER",
-            "link_url": "",
-            "background": "",
+            "collection": "",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_4.png",
+            "subheading": "",
+            "title": "PRODUCT DEVELOPMENT MANAGER",
+            "url": "",
+            "heading_tag": "h5",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 17
+            "overlay_opacity": 37
           }
         },
-        "item_xmWxyT": {
-          "type": "item",
+        "collection_TqKzMb": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/1413ff33-8416-456d-885c-9ed47f281c29.png",
-            "stretch_image": true,
-            "link_text": "SOCIAL MEDIA CONTENT ASSISTANT",
-            "link_url": "",
-            "background": "",
+            "collection": "",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_3.png",
+            "subheading": "",
+            "title": "BRAND DIRECTOR",
+            "url": "",
+            "heading_tag": "h5",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 17
+            "overlay_opacity": 37
           }
         },
-        "item_ebAkjU": {
-          "type": "item",
+        "collection_M4ikM6": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/9decff00-09f3-4997-ab75-5ca18721ca13.png",
-            "stretch_image": true,
-            "link_text": "CUSTOMER SUPPORT SPECIALIST",
-            "link_url": "",
-            "background": "",
+            "collection": "",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_6.png",
+            "subheading": "",
+            "title": "CUSTOMER SERVICE",
+            "url": "",
+            "heading_tag": "h5",
+            "text_position": "place-self-end-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 17
+            "overlay_opacity": 36
+          }
+        },
+        "collection_8G6ByU": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_7.png",
+            "subheading": "",
+            "title": "SOCIAL MEDIA MARKETING EXPERT",
+            "url": "",
+            "heading_tag": "h5",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 37
+          }
+        },
+        "collection_i3fD8x": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_8.png",
+            "subheading": "",
+            "title": "CUSTOMERS SOLUTIONS EXPERT",
+            "url": "",
+            "heading_tag": "h5",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 36
           }
         }
       },
       "block_order": [
-        "item_fapJCr",
-        "item_bmQQXq",
-        "item_xmWxyT",
-        "item_ebAkjU"
+        "collection_LYkgex",
+        "collection_QECm9G",
+        "collection_TqKzMb",
+        "collection_M4ikM6",
+        "collection_8G6ByU",
+        "collection_i3fD8x"
       ],
-      "disabled": true,
-      "name": "Image link blocks",
+      "name": "Collection list",
       "settings": {
-        "full_width": false,
-        "block_size": "medium",
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row": 3,
+        "show_progress_bar": false,
         "subheading": "",
-        "title": "",
+        "title": "OUR TEAM",
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -232,7 +273,7 @@
   "order": [
     "main",
     "rich_text_GgitTf",
-    "image_link_blocks_qrYNmX",
+    "collection_list_J3HKez",
     "rich_text_jUjhYD",
     "media_with_text_yd8GpL",
     "video_naAQpk"
