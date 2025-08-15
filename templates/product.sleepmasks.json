@@ -119,9 +119,8 @@
         },
         "text_q6yyHR": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p><strong>Join thousands taking control of their mornings—without the noise.</strong><br/>Heavy sleeper? Chronic snoozer? Partner tired of your alarms? Loop One’s silent wrist vibrations cut through even the deepest sleep—without waking anyone else.</p>"
+            "text": "<p><strong>Fall asleep faster & wake up refreshed</strong><br/><br/>Experience the latest in sleep innovation with <strong>The Cooling Sleep-Mask from Wake Loop</strong>. Made from breathable cooling fabric enriched with silver ions.</p><ul><li>It delivers an <strong>instant cool feel</strong> </li><li><strong>Blocks 100% of light</strong></li><li>Designed to ease <strong>facial tension</strong></li></ul>"
           }
         },
         "liquid_p7Bxfh": {
@@ -133,7 +132,6 @@
         },
         "liquid_fYCN9X": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
             "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 5px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/payment.webp?v=1747967871\">\n  </div>\n</div>"
           }
