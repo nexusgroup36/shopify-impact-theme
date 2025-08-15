@@ -32,6 +32,13 @@
             "show_taxes_notice": false
           }
         },
+        "liquid_ByBhrC": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": ""
+          }
+        },
         "rating": {
           "type": "rating",
           "disabled": true,
@@ -120,7 +127,7 @@
         "text_q6yyHR": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Fall asleep faster & wake up refreshed</strong><br/><br/>Experience the latest in sleep innovation with <strong>The Cooling Sleep-Mask from Wake Loop</strong>. Made from breathable cooling fabric enriched with silver ions.</p><ul><li>It delivers an <strong>instant cool feel</strong> </li><li><strong>Blocks 100% of light</strong></li><li>Designed to ease <strong>facial tension</strong></li></ul>"
+            "text": "<p><strong>Fall asleep faster & wake up refreshed</strong><br/><br/>Experience the latest in sleep innovation with <strong>The Cooling Sleep-Mask from Wake Loop</strong>. Made from breathable cooling fabric enriched with silver ions.</p><ul><li>It delivers an <strong>instant cool feel</strong> </li><li>Blocks <strong>100% of light</strong></li><li>Designed to ease <strong>facial tension</strong></li></ul>"
           }
         },
         "liquid_p7Bxfh": {
@@ -138,26 +145,23 @@
         },
         "collapsible_text_DwAeq6": {
           "type": "collapsible_text",
-          "disabled": true,
           "settings": {
-            "title": "BENEFITS",
-            "content": "<ul><li><strong>Never oversleep again</strong> — beat snoozing for good and wake up in control.</li><li><strong>Wake without waking others</strong> — your alarm, your peace.</li><li><strong>Zero hassle</strong> — no apps, no syncing, just simple and effective.</li><li><strong>Stress-free mornings</strong> — no jolts, panic, or racing heart.</li><li><strong>Failsafe for heavy sleepers</strong> — vibration strong enough to break through the heaviest sleep.</li><li><strong>Lifetime peace of mind</strong> — backed forever, no alarm stress again.</li></ul><p></p>"
+            "title": "DETAILS",
+            "content": "<p><strong>Suitable for:</strong> All skin types – gentle on sensitive skin, helps prevent irritation</p><p><strong>Size:</strong> Adjustable (70 cm) – adapts to any head circumference and stays in place all night</p><p><strong>Weight:</strong> 40 g – lightweight, no pressure on eyes or face</p><p><strong>Treatment:</strong> Antibacterial silver ion treatment, 99.7% effective in reducing bacteria and supporting clear skin</p><p><strong>Fabric:</strong> Cooling Fabric – breathable, cool to the touch, moisture-wicking, and ultra-soft</p><p><strong>Ethical certification:</strong> OEKO-TEX® – responsibly produced and free from harmful substances</p><p><strong>Animal testing:</strong> None – 100% cruelty-free and ethically sourced</p><p><strong>Added chemicals:</strong> None – no additives or artificial coolants, naturally high-performing</p><p><strong>Packaging:</strong> Beautifully packaged in an individual box, perfect for gifting</p><p><strong>Designed in the USA:</strong> Premium design and functionality in one</p>"
           }
         },
         "collapsible_text_EHrPjY": {
           "type": "collapsible_text",
-          "disabled": true,
           "settings": {
-            "title": "HOW DOES IT WORK?",
-            "content": "<p><strong>How to Set Up Your Loop One (In Under 2 Minutes)</strong></p><p><strong>1. Turn it on</strong><br/>Press the button once. That’s it.</p><p><strong>2. Set Alarm 1</strong><br/>Press 5 times → hold 3 seconds to edit → set hours/minutes with short presses → hold again to save.<br/><br/><em>Your alarm repeats daily until you turn it off.</em></p><p><strong>3. Add more alarms</strong><br/>Press 6 or 7 times for other alarm groups — same quick steps as Alarm 1.</p><p><strong>4. Check your battery</strong><br/>From standby, hold 3 seconds.</p><p><strong>Bonus:</strong> Prefer watching instead of reading? </p><p>[<a href=\"/pages/quick-start\" title=\"Quick Start\">Watch the 60-second setup video here</a>]</p>"
+            "title": "MATERIAL",
+            "content": "<p>The Cooling Sleep-Mask is made from an ultra-breathable, temperature-regulating fabric infused with silver ions for antibacterial protection, providing a refreshingly cool sensation all night long.</p>"
           }
         },
         "collapsible_text_WwBkVq": {
           "type": "collapsible_text",
-          "disabled": true,
           "settings": {
-            "title": "WHAT'S IN THE BOX?",
-            "content": "<p>We like to keep things simple. Every order of the Loop One contains the following:</p><ul><li><strong>The Loop One Wristband</strong></li><li><strong>Lifetime Warranty</strong></li></ul>"
+            "title": "CARE INSTRUCTIONS",
+            "content": "<p>Caring for your <strong>Cooling Sleep-Mask</strong> is incredibly easy! Simply machine wash it on a delicate cycle or hand wash at <strong>30°C</strong>. There’s no need for tumble drying – just hang it up to air dry. For that soft, luxurious feel, you can lightly iron it once it’s dry.</p>"
           }
         },
         "collapsible_text_Rgj4JB": {
@@ -196,6 +200,7 @@
         "title",
         "badges",
         "price",
+        "liquid_ByBhrC",
         "rating",
         "payment_terms",
         "separator",
@@ -220,7 +225,7 @@
         "liquid_c9t3mH"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "show_fixed_add_to_cart": true,
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
