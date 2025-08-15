@@ -119,24 +119,28 @@
         },
         "text_q6yyHR": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p><strong>Join thousands taking control of their mornings—without the noise.</strong><br/>Heavy sleeper? Chronic snoozer? Partner tired of your alarms? Loop One’s silent wrist vibrations cut through even the deepest sleep—without waking anyone else.</p>"
           }
         },
         "liquid_p7Bxfh": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div id='ss-trust-badges-3'></div>"
           }
         },
         "liquid_fYCN9X": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 5px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/payment.webp?v=1747967871\">\n  </div>\n</div>"
           }
         },
         "collapsible_text_DwAeq6": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "BENEFITS",
             "content": "<ul><li><strong>Never oversleep again</strong> — beat snoozing for good and wake up in control.</li><li><strong>Wake without waking others</strong> — your alarm, your peace.</li><li><strong>Zero hassle</strong> — no apps, no syncing, just simple and effective.</li><li><strong>Stress-free mornings</strong> — no jolts, panic, or racing heart.</li><li><strong>Failsafe for heavy sleepers</strong> — vibration strong enough to break through the heaviest sleep.</li><li><strong>Lifetime peace of mind</strong> — backed forever, no alarm stress again.</li></ul><p></p>"
@@ -144,6 +148,7 @@
         },
         "collapsible_text_EHrPjY": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "HOW DOES IT WORK?",
             "content": "<p><strong>How to Set Up Your Loop One (In Under 2 Minutes)</strong></p><p><strong>1. Turn it on</strong><br/>Press the button once. That’s it.</p><p><strong>2. Set Alarm 1</strong><br/>Press 5 times → hold 3 seconds to edit → set hours/minutes with short presses → hold again to save.<br/><br/><em>Your alarm repeats daily until you turn it off.</em></p><p><strong>3. Add more alarms</strong><br/>Press 6 or 7 times for other alarm groups — same quick steps as Alarm 1.</p><p><strong>4. Check your battery</strong><br/>From standby, hold 3 seconds.</p><p><strong>Bonus:</strong> Prefer watching instead of reading? </p><p>[<a href=\"/pages/quick-start\" title=\"Quick Start\">Watch the 60-second setup video here</a>]</p>"
@@ -151,6 +156,7 @@
         },
         "collapsible_text_WwBkVq": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "WHAT'S IN THE BOX?",
             "content": "<p>We like to keep things simple. Every order of the Loop One contains the following:</p><ul><li><strong>The Loop One Wristband</strong></li><li><strong>Lifetime Warranty</strong></li></ul>"
@@ -158,6 +164,7 @@
         },
         "collapsible_text_Rgj4JB": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "SHIPPING",
             "content": "<p>All orders processed and dispatched within 24-48 hours.</p><p><strong>Free Shipping on orders over $50 </strong>Duties and taxes are included.</p>"
@@ -165,6 +172,7 @@
         },
         "collapsible_text_qreJ9J": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "WARRANTY & RETURNS",
             "content": "<p><strong>Lifetime Warranty</strong> We stand behind the exceptional quality of every Wake Loop product. Our commitment is simple: if your product ever fails to function as designed, we'll make it right. No fine print, no complications – just our unwavering dedication to your satisfaction.</p><p><strong>Hassle-Free Returns</strong> • 60-Day Money-Back Guarantee • Full refund provided • No questions asked • Simple email process</p><p>Not completely satisfied? Simply email us at info@wakeloop.com within 60 days of purchase.</p>"
@@ -172,6 +180,7 @@
         },
         "collapsible_text_8Ykkwf": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "FAQ",
             "content": "<ul><li><strong>How does the Loop One wake me up? </strong>Loop One uses vibrations on your wrist to wake you. It’s ideal for deep sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</li><li><strong>How many alarms can I set?             </strong>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</li><li><strong>Can I wear it all night comfortably?</strong>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</li><li><strong>How long does the battery last? </strong>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the USB charger.</li><li><strong>Is it compatible with my phone or alarm app? </strong>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</li><li><strong>What if I sleep through the vibration?</strong>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</li><li><strong>Will it fit my wrist?   </strong>                                  Yes! We made sure that the Loop One is adjustable for every wrist size.</li></ul>"
@@ -180,7 +189,7 @@
         "liquid_c9t3mH": {
           "type": "liquid",
           "settings": {
-            "liquid": "<!-- Wake Loop Reviews -->\n<div id=\"review1\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Waking up has never felt this natural</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to snooze like 5 alarms and still wake up late. This thing legit got me back on track.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Samantha L, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review2\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Finally, I don't wake up my partner</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to oversleep at least 3 times a week. Since switching to this, not once.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">James D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review3\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">I wake up feeling clear and calm</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My phone alarm just wasn’t cutting it. I’d sleep through it or hit snooze. This changed everything.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Elena V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review4\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">No more groggy mornings</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Loop One actually helped me stop oversleeping — and I’ve tried everything before this.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Marcus T, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review5\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My sleep anxiety is gone</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to stay up worrying I’d miss my alarm. Now I just relax. I trust the Loop to wake me, and it always does.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Grace B, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n<div id=\"review6\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">The Loop just works</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Oversleeping made me late for work more times than I can count. Haven’t been late once since using Loop One.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Toby W, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review7\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Feels like the future</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">For real, I don’t know how it works so well, but I don’t oversleep anymore. At all.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Nina V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review8\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Great for shared bedrooms</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Every morning used to be chaos — late, stressed, rushing. Now I wake up on time, no problem.”</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ben H, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review9\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Gentle but reliable</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">It’s amazing how I can wake up with just a soft vibration. Never thought I’d prefer this to my phone alarm, but here we are.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lena M, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review10\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Best gift I gave myself</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I’ve always had trouble hearing alarms. I thought I just had bad sleep habits — turns out I needed this.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Olivia R, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n<div id=\"review11\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Peaceful mornings again</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">This is the first thing that actually got me out of bed consistently. Oversleeping was ruining my mornings.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Laura P, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review12\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Saves my relationship 😂</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My partner used to hate my alarms. With Loop One, I wake up and he sleeps in. We both win.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Chloe M, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review13\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Subtle but powerful</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I’ve overslept through every alarm app, sunrise clock, you name it. Loop One is the only thing that works.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Noah F, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review14\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Wakes me every time</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Was oversleeping so bad I set 6 alarms. Now I just use Loop One and wake up instantly.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Isabel R, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review15\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Sleep quality improved</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">It felt weird wearing it at first but now it’s the reason I haven’t overslept in weeks.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ethan S, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review16\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My kids stay asleep!</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I don’t worry about waking the baby anymore. That alone is worth every cent of this thing.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Hannah G, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review17\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">I actually feel rested</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Used to sleep right through the loudest iPhone alarm. This little wristband wakes me up every time.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Sophie D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review18\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Silent but effective</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Oversleeping made me feel lazy and behind. Now I’m up, focused, and on time.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">William N, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review19\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Tiny product, big impact</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Didn’t believe vibration could actually wake me. But it does. And I haven’t overslept once.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Amelia J, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review20\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">This actually changed my life</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Even after 4 hours of sleep, this still wakes me up. I don’t oversleep anymore, period.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lucas K, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<script>\n  let currentReview = 1;\n  const totalReviews = 20;\n\n  function showReview(index) {\n    for (let i = 1; i <= totalReviews; i++) {\n      const el = document.getElementById('review' + i);\n      if (el) el.style.display = 'none';\n    }\n    const showEl = document.getElementById('review' + index);\n    if (showEl) showEl.style.display = 'flex';\n    currentReview = index;\n  }\n\n  function showNextReview() {\n    const nextReview = currentReview === totalReviews ? 1 : currentReview + 1;\n    showReview(nextReview);\n  }\n\n  function showPreviousReview() {\n    const prevReview = currentReview === 1 ? totalReviews : currentReview - 1;\n    showReview(prevReview);\n  }\n\n  showReview(currentReview);\n</script>\n<script>\n  setInterval(() => {\n    showNextReview();\n  }, 5000); // 7000 ms = 3 seconden, pas aan indien nodig\n</script>"
+            "liquid": "<!-- Wake Loop Reviews — Cooling Sleep Mask -->\n<div id=\"review1\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Instant cool-down, zero light</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I pop it in the fridge for 10 mins and it stays cool way longer than expected. Total blackout too.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Samantha L, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review2\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">No more puffy morning eyes</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Cooling gel + soft fabric = I wake up looking and feeling fresher. Partner sleeps right through.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">James D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review3\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Helps me unwind fast</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">The gentle cool feels amazing after screens all day. I’m calm and asleep in minutes.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Elena V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review4\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Comfy, breathable, effective</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Blocks every bit of light and doesn’t press on my eyes. Stays cool longer than my old mask.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Marcus T, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review5\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Goodbye bedtime anxiety</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to toss around. Cooling effect + blackout makes it easy to drift off.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Grace B, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review6\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Cooling that actually lasts</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Doesn’t sweat or feel sticky. I fall back asleep quickly if I wake up at night.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Toby W, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review7\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Spa feel at home</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Feels luxurious, like a cold compress but comfy. New nightly ritual.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Nina V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review8\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Great for shared rooms</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Dark, quiet, cool. Doesn’t slip when I turn. Exactly what I needed.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ben H, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review9\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Gentle relief after long days</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">The cool pressure helps me decompress. I prefer it over my old gel packs.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lena M, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review10\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Best self-care buy</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Soft strap, no pressure on my eyes, and the cooling insert is genius.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Olivia R, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review11\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Back to peaceful nights</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Blackout design stops me from waking up at dawn. Cooling helps me fall back asleep.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Laura P, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review12\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Partner-approved 😄</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">He likes the room cool and dark; I like gentle cooling on my eyes. Win-win with this mask.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Chloe M, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review13\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Subtle, cooling, perfect</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I’ve tried heated and weighted masks—this cooling one is the only thing I stick with.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Noah F, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review14\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Stays put all night</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Adjustable strap is soft but secure. I wake up without lines on my face.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Isabel R, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review15\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Better sleep, simple fix</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Didn’t think a cooling mask would matter this much. Now I use it every night.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ethan S, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review16\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Great for hot sleepers</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">The light, cool feel stops me overheating and I sleep through the night.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Hannah G, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review17\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Wake up refreshed</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I fall asleep faster and wake up without that puffy-eye feeling. Love the Wake Loop mask.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Sophie D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review18\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Quiet, cool, bliss</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">If you want darkness and a gentle cool touch, this is it. Simple and effective.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">William N, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review19\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Small upgrade, big difference</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Didn’t expect much—now I won’t sleep without it. Cooling insert is clutch.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Amelia J, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review20\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Game changer for sleep</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Cooling Sleep Mask by Wake Loop turned my light, broken sleep into deep rest. Couldn’t recommend more.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lucas K, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<script>\n  let currentReview = 1;\n  const totalReviews = 20;\n\n  function showReview(index) {\n    for (let i = 1; i <= totalReviews; i++) {\n      const el = document.getElementById('review' + i);\n      if (el) el.style.display = 'none';\n    }\n    const showEl = document.getElementById('review' + index);\n    if (showEl) showEl.style.display = 'flex';\n    currentReview = index;\n  }\n\n  function showNextReview() {\n    const nextReview = currentReview === totalReviews ? 1 : currentReview + 1;\n    showReview(nextReview);\n  }\n\n  function showPreviousReview() {\n    const prevReview = currentReview === 1 ? totalReviews : currentReview - 1;\n    showReview(prevReview);\n  }\n\n  showReview(currentReview);\n</script>\n<script>\n  // Auto-rotate every 5 seconds\n  setInterval(() => {\n    showNextReview();\n  }, 5000);\n</script>"
           }
         }
       },
@@ -246,6 +255,7 @@
       "block_order": [
         "heading_fwWHJV"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -360,6 +370,7 @@
         "item_74UQYW",
         "item_hE9izx"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "block_size": "large",
@@ -443,6 +454,7 @@
     },
     "video_M8X7BP": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "allow_transparent_header": false,
@@ -537,20 +549,20 @@
         "image_EBdKg9": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34_091a7a77-f0c8-4616-9453-cd8bea25ce0e.png",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_9.png",
             "media_width": 40,
-            "media_position": "end",
+            "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Made for heavy sleepers. Built for real life.",
-            "content": "<p>Loop One was designed for one mission: wake you up, without chaos.<br/>It works silently, without disturbing your partner or shocking your system.<br/>No screen. No sound. No nonsense. Just clean, reliable wake-ups, every time. All backed by a Lifetime warranty.</p>",
+            "title": "Why do you need a Cooling Sleep-Mask?",
+            "content": "<p>Wake up fresh and well-rested with our cooling sleep mask that instantly reduces puffy eyes, blocks out all light, and prevents overheating — for a cooler, healthier night’s sleep and a radiant morning.</p><p><strong>87% </strong>of customers said the sleep mask improved their sleep</p><p>Healthier sleep means waking up every day refreshed and energized, with better focus, a brighter mood, and a stronger immune system.</p><p><strong>Deeper sleep</strong><br/><br/>Experience deeper sleep for better recovery, sharper memory, and a truly rejuvenating awakening.</p><p><strong>Beautiful skin</strong><br/><br/>Cooler sleep prevents night sweats and friction, reducing puffiness, breakouts, and sleep lines for fresher skin in the morning.</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#000000",
+            "background": "#f2f2f2",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#1a1a1a",
             "text_gradient": "",
             "button_background": "",
             "button_text_color": ""
@@ -565,11 +577,80 @@
         "spacing": "small"
       }
     },
+    "impact_text_WxCJPF": {
+      "type": "impact-text",
+      "blocks": {
+        "item_pBcVDA": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "subheading": "Developed for True Cooling",
+            "content": "<p>Fall asleep faster and wake up refreshed with the Cooling Sleep-Mask. Its breathable, smart design keeps you cool while blocking out all light for a deeper, more restorative sleep. Enriched with silver ions – reduces 99.7% of bacteria Ultra-light and breathable – soothes the skin and reduces friction</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_pBcVDA"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "video_PcfPpT": {
+      "type": "video",
+      "blocks": {
+        "play_V9EjB3": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_FGaq88": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h6"
+          }
+        }
+      },
+      "block_order": [
+        "play_V9EjB3",
+        "heading_FGaq88"
+      ],
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": true,
+        "video_size": "auto",
+        "video": "shopify://files/videos/0815.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#1a1a1a",
+        "overlay_color": "#000000",
+        "overlay_opacity": 1
+      }
+    },
     "media_with_text_LtprTE": {
       "type": "media-with-text",
       "blocks": {
         "image_b83jfB": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_15_45_50.png",
             "media_width": 40,
@@ -594,6 +675,7 @@
       "block_order": [
         "image_b83jfB"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "spacing": "small"
@@ -628,6 +710,7 @@
       "block_order": [
         "image_BeRG6y"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "spacing": "small"
@@ -654,6 +737,7 @@
         "heading_8J66CN",
         "richtext_p3DdtX"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -674,57 +758,43 @@
         "item_U6DEYw": {
           "type": "item",
           "settings": {
-            "title": "How does the Loop One wake me up?",
-            "content": "<p>Loop One uses vibrations on your wrist to wake you silently. It’s ideal for <strong>heavy</strong> sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</p>"
+            "title": "Is the mask too warm at night?",
+            "content": "<p>Not at all. The Cooling Sleep-Mask from Wake Loop is made from <strong>cooling fabric</strong>, specially designed to feel cool and remain breathable. It <strong>regulates temperature</strong> and wicks away heat, helping to reduce night sweats and discomfort.</p>"
           }
         },
         "item_rM6fJG": {
           "type": "item",
           "settings": {
-            "title": "How many alarms can i set?",
-            "content": "<p>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</p>"
+            "title": "How do I wash it?",
+            "content": "<p>Hand wash in cold water with a mild detergent and lay flat to dry to maintain softness and shape. For best results, use our Gentle Care Laundry Wash Strips.</p>"
           }
         },
         "item_iRJA9i": {
           "type": "item",
           "settings": {
-            "title": "Can I wear it all night comfortably?",
-            "content": "<p>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</p>"
+            "title": "How does The Cooling Sleep-Mask from Wake Loop improve my sleep?",
+            "content": "<p>The mask blocks 100% of light so you fall asleep faster and stay asleep longer. The cooling fabric soothes tired eyes, reduces puffiness, and creates a calming sensation that supports deeper sleep.</p>"
           }
         },
         "item_zWWkrA": {
           "type": "item",
           "settings": {
-            "title": "Will it fit my wrist?",
-            "content": "<p>Yes! We made sure that the Loop One is adjustable for every wrist size.</p>"
+            "title": "What is it made of?",
+            "content": "<p>It’s made from <strong>cooling fabric</strong>, a proprietary material enriched with <strong>silver ions</strong> for antibacterial protection. It’s hypoallergenic, ultra-breathable, and gentle on sensitive skin.</p>"
           }
         },
         "item_DtQ8eq": {
           "type": "item",
           "settings": {
-            "title": "How long does the battery last?",
-            "content": "<p>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the included USB-C cable.</p>"
+            "title": "Is it suitable for all sleeping positions?",
+            "content": "<p>Yes. The Cooling Sleep-Mask from Wake Loop fits securely and comfortably whether you sleep <strong>on your side, back, or stomach</strong>.</p>"
           }
         },
         "item_U6KDJp": {
           "type": "item",
           "settings": {
-            "title": "Is it compatible with my phone or alarm app?",
-            "content": "<p>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</p>"
-          }
-        },
-        "item_JUMQzY": {
-          "type": "item",
-          "settings": {
-            "title": "What if I sleep through the vibration?",
-            "content": "<p>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</p>"
-          }
-        },
-        "item_ztDECz": {
-          "type": "item",
-          "settings": {
-            "title": "What’s your return policy?",
-            "content": "<p>We offer a 60-day money-back guarantee. If Loop One isn’t right for you, return it—no questions asked. Plus, you’re covered with our lifetime warranty.</p>"
+            "title": "How is it different from your normal sleep Mask?",
+            "content": "<p>A normal sleep mask is made from 100% mulberry silk and focuses on softness and wrinkle prevention. The Cooling Sleep-Mask from Wake Loop, on the other hand, is <strong>designed for active cooling</strong>. The temperature-regulating fabric and smart design provide a refreshing, cool feeling.</p>"
           }
         }
       },
@@ -734,9 +804,7 @@
         "item_iRJA9i",
         "item_zWWkrA",
         "item_DtQ8eq",
-        "item_U6KDJp",
-        "item_JUMQzY",
-        "item_ztDECz"
+        "item_U6KDJp"
       ],
       "settings": {
         "full_width": true,
@@ -782,7 +850,7 @@
         "background_gradient": "",
         "text_color": "",
         "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
@@ -798,6 +866,8 @@
     "featured_collection_jizWxD",
     "impact_text_4r9Pem",
     "media_with_text_WPkVK7",
+    "impact_text_WxCJPF",
+    "video_PcfPpT",
     "media_with_text_LtprTE",
     "media_with_text_AwCX3C",
     "image_with_text_overlay_UKfeC3",
