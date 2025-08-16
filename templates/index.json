@@ -61,14 +61,14 @@
         "item_hJCJNE": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Kopie_van_4319_Loop_15.png",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_16.png",
             "stretch_image": true,
-            "link_text": "COOLING SLEEP-MASK",
+            "link_text": "THE COOLING SLEEP-MASK",
             "link_url": "shopify://products/cooling-sleep-mask-wake-loop",
             "background": "",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 15
+            "overlay_opacity": 0
           }
         },
         "1664424046b00c932c-1": {
