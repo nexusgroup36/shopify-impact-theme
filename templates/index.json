@@ -58,19 +58,6 @@
             "overlay_opacity": 0
           }
         },
-        "item_hJCJNE": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/2c1eb3e8-902c-4d0b-b088-ce0930dbe837.png",
-            "stretch_image": true,
-            "link_text": "THE COOLING SLEEP-MASK",
-            "link_url": "shopify://products/cooling-sleep-mask-wake-loop",
-            "background": "#f5e9dc",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 8
-          }
-        },
         "1664424046b00c932c-1": {
           "type": "item",
           "settings": {
@@ -82,6 +69,19 @@
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
+          }
+        },
+        "item_hJCJNE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2c1eb3e8-902c-4d0b-b088-ce0930dbe837.png",
+            "stretch_image": true,
+            "link_text": "THE COOLING SLEEP-MASK",
+            "link_url": "shopify://products/cooling-sleep-mask-wake-loop",
+            "background": "#f5e9dc",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 8
           }
         },
         "1664424046b00c932c-2": {
@@ -113,8 +113,8 @@
       },
       "block_order": [
         "1664424046b00c932c-0",
-        "item_hJCJNE",
         "1664424046b00c932c-1",
+        "item_hJCJNE",
         "1664424046b00c932c-2",
         "1664424046b00c932c-3"
       ],
