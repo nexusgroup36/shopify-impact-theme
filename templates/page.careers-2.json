@@ -44,6 +44,16 @@
             "content": "<p><br/>Snoozers lose. We’re building the most effective alarm you’ll never hear — a silent, vibrating wearable that helps people wake up calm, on time, and in control. If you love shipping clean, thoughtful tech that actually improves mornings, you’ll feel at home here<br/><br/>.</p>"
           }
         },
+        "icon_UR8FiJ": {
+          "type": "icon",
+          "settings": {
+            "icon": "picto-star",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
         "heading_he9Ygn": {
           "type": "heading",
           "settings": {
@@ -57,6 +67,16 @@
           "type": "richtext",
           "settings": {
             "content": "<p><br/>Help people start strong. Every day. We turn noisy, stressful wake‑ups into calm, reliable mornings — so students, founders, shift‑workers, partners, and high performers can show up on time and at their best<br/><br/></p>"
+          }
+        },
+        "icon_QPVrhJ": {
+          "type": "icon",
+          "settings": {
+            "icon": "picto-building",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": ""
           }
         },
         "heading_RWigCT": {
@@ -74,16 +94,35 @@
             "content": "<p>The Loop is a <strong>minimal, modern</strong> wrist‑worn silent alarm: a <strong>vibrating wearable</strong> designed for deep sleepers and anyone who’s done with blaring phones and failed alarms. It wakes you — not the room. Think focus, discipline, and sleep tech that just works. </p>"
           }
         },
+        "icon_a9yMhN": {
+          "type": "icon",
+          "settings": {
+            "icon": "picto-love",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
+        "heading_dmB6WN": {
+          "type": "heading",
+          "settings": {
+            "text": "What We Value",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
         "richtext_4wE6fR": {
           "type": "richtext",
           "settings": {
             "content": "<ul><li>Own the outcome, every morning.<br/></li><li>Cut the clutter, ship what matters.<br/></li><li>Progress daily, no snooze mindset.<br/></li><li>Wake one person, not the whole room.<br/></li></ul>"
           }
         },
-        "icon_a9yMhN": {
+        "icon_jbeTaU": {
           "type": "icon",
           "settings": {
-            "icon": "picto-love",
+            "icon": "picto-happy",
             "icon_width": 32,
             "icon_background_type": "circle",
             "icon_background": "",
@@ -158,12 +197,16 @@
         "icon_aeJdab",
         "heading_e3z4X9",
         "richtext_tjQxGg",
+        "icon_UR8FiJ",
         "heading_he9Ygn",
         "richtext_bQBytm",
+        "icon_QPVrhJ",
         "heading_RWigCT",
         "richtext_cB4acJ",
-        "richtext_4wE6fR",
         "icon_a9yMhN",
+        "heading_dmB6WN",
+        "richtext_4wE6fR",
+        "icon_jbeTaU",
         "richtext_CiN6Dc",
         "icon_PJzgQ3",
         "heading_XrzBLq",
