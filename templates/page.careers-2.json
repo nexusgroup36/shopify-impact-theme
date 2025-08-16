@@ -11,10 +11,105 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_wHyEFr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_e3z4X9": {
+          "type": "heading",
+          "settings": {
+            "text": "Why Wake Loop?",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "heading_Xn3Mct": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "CAREERS AT WAKE LOOP",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_tjQxGg": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><br/>Snoozers lose. We’re building the most effective alarm you’ll never hear — a silent, vibrating wearable that helps people wake up calm, on time, and in control. If you love shipping clean, thoughtful tech that actually improves mornings, you’ll feel at home here<br/><br/>.</p>"
+          }
+        },
+        "heading_he9Ygn": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Mission",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_bQBytm": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><br/>Help people start strong. Every day. We turn noisy, stressful wake‑ups into calm, reliable mornings — so students, founders, shift‑workers, partners, and high performers can show up on time and at their best<br/><br/></p>"
+          }
+        },
+        "heading_RWigCT": {
+          "type": "heading",
+          "settings": {
+            "text": "What We Build",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_cB4acJ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The Loop is a <strong>minimal, modern</strong> wrist‑worn silent alarm: a <strong>vibrating wearable</strong> designed for deep sleepers and anyone who’s done with blaring phones and failed alarms. It wakes you — not the room. Think focus, discipline, and sleep tech that just works. </p>"
+          }
+        },
+        "richtext_4wE6fR": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2>What we value</h2><ul><li> own the outcome, every morning.<br/></li><li>cut the clutter, ship what matters.<br/></li><li>progress daily, no snooze mindset.<br/></li><li>wake one person, not the whole room.<br/></li></ul>"
+          }
+        },
+        "richtext_CiN6Dc": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2>Life at Wake Loop</h2><p>We’re a small, sharp team. You’ll get autonomy, clear goals, and the chance to ship work that reaches people fast. Our customers aren’t just buying a gadget — they’re changing their mornings, and you’ll be part of that transformation.</p><p><strong>What you can expect:</strong></p><ul><li>Remote-friendly setup with<strong> flexible hours</strong></li><li><strong>Gear & tools</strong> to do your best work</li><li>Room <strong>to grow</strong> and learn fast</li><li><strong>Fair pay</strong> with <strong>performance </strong>upside<br/><br/><br/><br/></li></ul><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_e3z4X9",
+        "heading_Xn3Mct",
+        "richtext_tjQxGg",
+        "heading_he9Ygn",
+        "richtext_bQBytm",
+        "heading_RWigCT",
+        "richtext_cB4acJ",
+        "richtext_4wE6fR",
+        "richtext_CiN6Dc"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_wHyEFr"
   ]
 }
