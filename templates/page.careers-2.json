@@ -77,7 +77,17 @@
         "richtext_4wE6fR": {
           "type": "richtext",
           "settings": {
-            "content": "<h2>What we value</h2><ul><li>Own the outcome, every morning.<br/></li><li>Cut the clutter, ship what matters.<br/></li><li>Progress daily, no snooze mindset.<br/></li><li>Wake one person, not the whole room.<br/></li></ul>"
+            "content": "<ul><li>Own the outcome, every morning.<br/></li><li>Cut the clutter, ship what matters.<br/></li><li>Progress daily, no snooze mindset.<br/></li><li>Wake one person, not the whole room.<br/></li></ul>"
+          }
+        },
+        "icon_a9yMhN": {
+          "type": "icon",
+          "settings": {
+            "icon": "picto-love",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": ""
           }
         },
         "richtext_CiN6Dc": {
@@ -114,7 +124,7 @@
         "icon_dwgVdq": {
           "type": "icon",
           "settings": {
-            "icon": "picto-document",
+            "icon": "picto-secure-profile",
             "icon_width": 32,
             "icon_background_type": "circle",
             "icon_background": "",
@@ -124,7 +134,23 @@
         "richtext_VwzwNb": {
           "type": "richtext",
           "settings": {
-            "content": "<h2>How we hire:</h2><p>1. Apply with CV/LinkedIn + short note</p><p>2. Quick intro call</p><p>3. Small practical task</p><p>4. Meet the team</p><p>5. Clear offer</p><p></p><p>-</p><h2>Ready to join?</h2><p>Bring your craft. Bring your discipline.<br/><br/><strong>Let’s build calmer, stronger mornings — together.</strong></p><p>👉 Apply now at <strong>info@wakeloop.com</strong></p>"
+            "content": "<h2>How we hire:</h2><p>1. Apply with CV/LinkedIn + short note</p><p>2. Quick intro call</p><p>3. Small practical task</p><p>4. Meet the team</p><p>5. Clear offer</p>"
+          }
+        },
+        "icon_hB3Hm7": {
+          "type": "icon",
+          "settings": {
+            "icon": "picto-send",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
+        "richtext_W7DHnr": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2>Ready to join?</h2><p>Bring your craft. Bring your discipline.<br/><br/><strong>Let’s build calmer, stronger mornings — together.</strong></p><p>👉 Apply now at <strong>info@wakeloop.com</strong></p>"
           }
         }
       },
@@ -137,12 +163,15 @@
         "heading_RWigCT",
         "richtext_cB4acJ",
         "richtext_4wE6fR",
+        "icon_a9yMhN",
         "richtext_CiN6Dc",
         "icon_PJzgQ3",
         "heading_XrzBLq",
         "richtext_VUQDiQ",
         "icon_dwgVdq",
-        "richtext_VwzwNb"
+        "richtext_VwzwNb",
+        "icon_hB3Hm7",
+        "richtext_W7DHnr"
       ],
       "name": "Rich text",
       "settings": {
