@@ -168,11 +168,11 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Kopie_van_4319_Loop_12.png",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_16.png",
             "subheading": "",
             "title": "SLEEP MASKS",
             "url": "",
-            "heading_tag": "h4",
+            "heading_tag": "h3",
             "text_position": "place-self-start-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
