@@ -52,7 +52,7 @@
             "stretch_image": true,
             "link_text": "THE LOOP ONE",
             "link_url": "shopify://products/loop-one",
-            "background": "",
+            "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -65,7 +65,7 @@
             "stretch_image": true,
             "link_text": "THE COOLING SLEEP-MASK",
             "link_url": "shopify://products/cooling-sleep-mask-wake-loop",
-            "background": "",
+            "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 8
@@ -78,7 +78,7 @@
             "stretch_image": true,
             "link_text": "THE UV GLASSES",
             "link_url": "shopify://products/uv-glasses",
-            "background": "",
+            "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -91,7 +91,7 @@
             "stretch_image": true,
             "link_text": "THE GIFT",
             "link_url": "shopify://products/gift-set",
-            "background": "",
+            "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -104,7 +104,7 @@
             "stretch_image": true,
             "link_text": "THE CASE",
             "link_url": "shopify://products/the-case",
-            "background": "",
+            "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
