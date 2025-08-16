@@ -58,6 +58,19 @@
             "overlay_opacity": 0
           }
         },
+        "item_hJCJNE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_15.png",
+            "stretch_image": true,
+            "link_text": "COOLING SLEEP-MASK",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        },
         "1664424046b00c932c-1": {
           "type": "item",
           "settings": {
@@ -100,6 +113,7 @@
       },
       "block_order": [
         "1664424046b00c932c-0",
+        "item_hJCJNE",
         "1664424046b00c932c-1",
         "1664424046b00c932c-2",
         "1664424046b00c932c-3"
@@ -150,6 +164,21 @@
             "overlay_opacity": 30
           }
         },
+        "collection_PmF6Gp": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_12.png",
+            "subheading": "",
+            "title": "SLEEP MASKS",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-start-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
         "collection-3": {
           "type": "collection",
           "settings": {
@@ -166,6 +195,7 @@
         },
         "collection_eQGEAF": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "accesoires",
             "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_43_36.png",
@@ -183,6 +213,7 @@
       "block_order": [
         "collection-1",
         "collection-2",
+        "collection_PmF6Gp",
         "collection-3",
         "collection_eQGEAF"
       ],
