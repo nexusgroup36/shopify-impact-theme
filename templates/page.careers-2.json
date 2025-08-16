@@ -19,21 +19,21 @@
     "rich_text_wHyEFr": {
       "type": "rich-text",
       "blocks": {
+        "icon_aeJdab": {
+          "type": "icon",
+          "settings": {
+            "icon": "picto-happy",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
         "heading_e3z4X9": {
           "type": "heading",
           "settings": {
             "text": "Why Wake Loop?",
             "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "heading_Xn3Mct": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "CAREERS AT WAKE LOOP",
-            "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
           }
@@ -86,6 +86,16 @@
             "content": "<h2>Life at Wake Loop</h2><p>We’re a small, sharp team. You’ll get autonomy, clear goals, and the chance to ship work that reaches people fast. Our customers aren’t just buying a gadget — they’re changing their mornings, and you’ll be part of that transformation.</p><p><strong>What you can expect:</strong></p><ul><li>Remote-friendly setup with<strong> flexible hours</strong></li><li><strong>Gear & tools</strong> to do your best work</li><li>Room <strong>to grow</strong> and learn fast</li><li><strong>Fair pay</strong> with <strong>performance </strong>upside<br/><br/><br/><br/></li></ul><p></p>"
           }
         },
+        "icon_PJzgQ3": {
+          "type": "icon",
+          "settings": {
+            "icon": "picto-validation",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
         "heading_XrzBLq": {
           "type": "heading",
           "settings": {
@@ -101,6 +111,16 @@
             "content": "<h2></h2><ul><li><strong>Marketing & Growth Specialist</strong></li></ul><p>Scale campaigns, test creatives, and drive efficient growth across social and search.<br/></p><ul><li><strong>Customer support specialist</strong></li></ul><p>Be the calm, helpful voice for our users and turn questions into loyalty.<br/></p><ul><li><strong>Firmware / Hardware Engineer<br/></strong>Build reliable, low-power wearable tech that never misses a morning.<br/></li></ul><p><em>(Don’t see your role? Pitch us anyway. We hire talent, not only titles.)</em></p>"
           }
         },
+        "icon_dwgVdq": {
+          "type": "icon",
+          "settings": {
+            "icon": "picto-document",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
         "richtext_VwzwNb": {
           "type": "richtext",
           "settings": {
@@ -109,8 +129,8 @@
         }
       },
       "block_order": [
+        "icon_aeJdab",
         "heading_e3z4X9",
-        "heading_Xn3Mct",
         "richtext_tjQxGg",
         "heading_he9Ygn",
         "richtext_bQBytm",
@@ -118,8 +138,10 @@
         "richtext_cB4acJ",
         "richtext_4wE6fR",
         "richtext_CiN6Dc",
+        "icon_PJzgQ3",
         "heading_XrzBLq",
         "richtext_VUQDiQ",
+        "icon_dwgVdq",
         "richtext_VwzwNb"
       ],
       "name": "Rich text",
