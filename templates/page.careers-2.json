@@ -76,13 +76,28 @@
         "richtext_4wE6fR": {
           "type": "richtext",
           "settings": {
-            "content": "<h2>What we value</h2><ul><li> own the outcome, every morning.<br/></li><li>cut the clutter, ship what matters.<br/></li><li>progress daily, no snooze mindset.<br/></li><li>wake one person, not the whole room.<br/></li></ul>"
+            "content": "<h2>What we value</h2><ul><li>Own the outcome, every morning.<br/></li><li>Cut the clutter, ship what matters.<br/></li><li>Progress daily, no snooze mindset.<br/></li><li>Wake one person, not the whole room.<br/></li></ul>"
           }
         },
         "richtext_CiN6Dc": {
           "type": "richtext",
           "settings": {
             "content": "<h2>Life at Wake Loop</h2><p>We’re a small, sharp team. You’ll get autonomy, clear goals, and the chance to ship work that reaches people fast. Our customers aren’t just buying a gadget — they’re changing their mornings, and you’ll be part of that transformation.</p><p><strong>What you can expect:</strong></p><ul><li>Remote-friendly setup with<strong> flexible hours</strong></li><li><strong>Gear & tools</strong> to do your best work</li><li>Room <strong>to grow</strong> and learn fast</li><li><strong>Fair pay</strong> with <strong>performance </strong>upside<br/><br/><br/><br/></li></ul><p></p>"
+          }
+        },
+        "heading_XrzBLq": {
+          "type": "heading",
+          "settings": {
+            "text": "Open Roles:",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_VUQDiQ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2></h2><ul><li><strong>Marketing & Growth Specialist</strong></li></ul><p>Scale campaigns, test creatives, and drive efficient growth across social and search.<br/></p><ul><li><strong>Customer support specialist</strong></li></ul><p>Be the calm, helpful voice for our users and turn questions into loyalty.<br/></p><ul><li><strong>Firmware / Hardware Engineer<br/></strong>Build reliable, low-power wearable tech that never misses a morning.<br/></li></ul><p><em>(Don’t see your role? Pitch us anyway. We hire talent, not only titles.)</em></p>"
           }
         }
       },
@@ -95,7 +110,9 @@
         "heading_RWigCT",
         "richtext_cB4acJ",
         "richtext_4wE6fR",
-        "richtext_CiN6Dc"
+        "richtext_CiN6Dc",
+        "heading_XrzBLq",
+        "richtext_VUQDiQ"
       ],
       "name": "Rich text",
       "settings": {
