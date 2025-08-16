@@ -99,6 +99,12 @@
           "settings": {
             "content": "<h2></h2><ul><li><strong>Marketing & Growth Specialist</strong></li></ul><p>Scale campaigns, test creatives, and drive efficient growth across social and search.<br/></p><ul><li><strong>Customer support specialist</strong></li></ul><p>Be the calm, helpful voice for our users and turn questions into loyalty.<br/></p><ul><li><strong>Firmware / Hardware Engineer<br/></strong>Build reliable, low-power wearable tech that never misses a morning.<br/></li></ul><p><em>(Don’t see your role? Pitch us anyway. We hire talent, not only titles.)</em></p>"
           }
+        },
+        "richtext_VwzwNb": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2>How we hire:</h2><p>1. Apply with CV/LinkedIn + short note</p><p>2. Quick intro call</p><p>3. Small practical task</p><p>4. Meet the team</p><p>5. Clear offer</p><p></p><p>-</p><h2>Ready to join?</h2><p>Bring your craft. Bring your discipline.<br/><br/><strong>Let’s build calmer, stronger mornings — together.</strong></p><p>👉 Apply now at <strong>info@wakeloop.com</strong></p>"
+          }
         }
       },
       "block_order": [
@@ -112,7 +118,8 @@
         "richtext_4wE6fR",
         "richtext_CiN6Dc",
         "heading_XrzBLq",
-        "richtext_VUQDiQ"
+        "richtext_VUQDiQ",
+        "richtext_VwzwNb"
       ],
       "name": "Rich text",
       "settings": {
