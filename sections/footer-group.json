@@ -318,6 +318,13 @@
             "enable_follow_on_shop": false
           }
         },
+        "links_h4GApD": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true
+          }
+        },
         "links": {
           "type": "links",
           "settings": {
@@ -345,6 +352,7 @@
       },
       "block_order": [
         "text_AnUfaj",
+        "links_h4GApD",
         "links",
         "links_Ly64rj",
         "newsletter_fw6NDV"
