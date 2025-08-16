@@ -33,10 +33,10 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Kopie_van_4321_Nood_1.png",
+        "image": "shopify://shop_images/Kopie_van_4321_Nood_3.png",
         "mobile_image": "shopify://shop_images/Kopie_van_4321_Nood_1.png",
         "mobile_text_position": "place-self-end-center text-center",
-        "desktop_text_position": "sm:place-self-end sm:text-end",
+        "desktop_text_position": "sm:place-self-end-start sm:text-start",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 4
