@@ -242,6 +242,48 @@
         "input_text_color": ""
       }
     },
+    "slideshow_tAyjmD": {
+      "type": "slideshow",
+      "blocks": {
+        "image_iHCKzF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_14.png",
+            "mobile_image": "shopify://shop_images/Kopie_van_4319_Loop_14.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_iHCKzF"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
     "rich_text_qEWyed": {
       "type": "rich-text",
       "blocks": {
@@ -862,6 +904,7 @@
   },
   "order": [
     "main",
+    "slideshow_tAyjmD",
     "rich_text_qEWyed",
     "image_link_blocks_Ne6xbk",
     "trust_badges_L7QLMF",
