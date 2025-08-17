@@ -248,8 +248,8 @@
         "image_iHCKzF": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Kopie_van_4319_Loop_14.png",
-            "mobile_image": "shopify://shop_images/Kopie_van_4319_Loop_14.png",
+            "image": "shopify://shop_images/4ebb203c-e864-4971-b405-fbf9369f4b8a.png",
+            "mobile_image": "shopify://shop_images/4ebb203c-e864-4971-b405-fbf9369f4b8a.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -280,7 +280,7 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
