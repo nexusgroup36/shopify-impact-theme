@@ -72,11 +72,237 @@
         "overlay_color": "#000000",
         "overlay_opacity": 30
       }
+    },
+    "accordion_content_QEtNHH": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_V74pUA": {
+          "type": "item",
+          "settings": {
+            "title": "IMPORTANT INFORMATION",
+            "content": ""
+          }
+        },
+        "item_WgLdwJ": {
+          "type": "item",
+          "settings": {
+            "title": "1. Setting Time and Personal Information",
+            "content": "<p>Turn on <strong>The Loop One</strong> by pressing the button once. You will now see the time you want to adjust. Press and hold the button for 3 seconds to start the adjustment process — the “hour” indicator will begin flashing first. Use the button to set the hour, then press and hold the button again for 3 seconds to move to the “minutes.” Repeat this process to set the minutes, month, day, and year. You can also choose between a 12-hour or 24-hour clock format.</p><p>After setting the time and date, the device will prompt you to enter your height and weight. Hold the button until the corresponding indicator flashes, then use the button to adjust these values.</p><p>Once all settings are complete, do not press any button for 8 seconds. <strong>The Loop One</strong> will save your data and return to standby mode. Your device is now fully set up and ready to use!</p>"
+          }
+        },
+        "item_AUbx3Y": {
+          "type": "item",
+          "settings": {
+            "title": "2. Setting the Alarm",
+            "content": "<p>To set the alarm, press the button 5 times to display the first alarm group. If “A1 OF” appears, it means the alarm is turned off by default. To turn it on, press and hold the button for 3 seconds. The hour will start flashing — press the button to set the hour. Once the hour is set, press and hold the button again to move to the minutes. After setting the minutes, press and hold the button once more for 3 seconds to save the alarm. The alarm is now activated.</p><p><strong>Note:</strong> Once you set the alarm, it will go off at the same time every day until you turn it off or adjust it. This is useful if you have a fixed wake-up time, as you only need to set it once.</p><p>To set additional alarms, press the button 6 or 7 times to access the other alarm groups and follow the same procedure.</p><p><strong>Turning Off the Alarm:</strong><br/><br/>To turn off the alarm, navigate to the set alarm by pressing the button the correct number of times. Once the alarm is displayed, press and hold the button for 3 seconds, then press the button again until “A1 OF” appears. Finally, press and hold the button for 3 seconds to confirm turning the alarm off.</p>"
+          }
+        },
+        "item_JEcfRV": {
+          "type": "item",
+          "settings": {
+            "title": "3. Charging Instructions – Battery Level",
+            "content": "<p>To check the battery level of <strong>The Loop One</strong>, press and hold the button for 3 seconds while the device is in standby mode. The battery percentage will then be displayed. For more information on charging, scroll up for the charging instructions and watch <strong>Samuel’s</strong> video.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_V74pUA",
+        "item_WgLdwJ",
+        "item_AUbx3Y",
+        "item_JEcfRV"
+      ],
+      "name": "Accordion content",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "USER MANUAL",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "hot_spots_FVatEa": {
+      "type": "hot-spots",
+      "blocks": {
+        "item_FDtTRr": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "horizontal_position": 24,
+            "vertical_position": 70,
+            "horizontal_position_mobile": 24,
+            "vertical_position_mobile": 70,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.</p>"
+          }
+        },
+        "item_A9EpRX": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "horizontal_position": 62,
+            "vertical_position": 14,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 14,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.</p>"
+          }
+        },
+        "item_yjMeat": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "horizontal_position": 83,
+            "vertical_position": 75,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_FDtTRr",
+        "item_A9EpRX",
+        "item_yjMeat"
+      ],
+      "name": "Hot spots",
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/WWW.WAKELOOP.COM_Presentatie.png",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "custom_liquid_BXVryL": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p style=\"text-align: center\"></p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "featured_product_3FfcYJ": {
+      "type": "featured-product",
+      "blocks": {
+        "title_gie8T8": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges_Wb6mCM": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_cB4NE4": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "separator_hX69Rq": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_EJ67MX": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_jT6YqB": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "variant",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_4KAe9x": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_gie8T8",
+        "badges_Wb6mCM",
+        "price_cB4NE4",
+        "separator_hX69Rq",
+        "description_EJ67MX",
+        "variant_picker_jT6YqB",
+        "buy_buttons_4KAe9x"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": false,
+        "product": "loop-one",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "grid_highlight",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "rich_text_xXMztp",
-    "video_naAQpk"
+    "video_naAQpk",
+    "accordion_content_QEtNHH",
+    "hot_spots_FVatEa",
+    "custom_liquid_BXVryL",
+    "featured_product_3FfcYJ"
   ]
 }
