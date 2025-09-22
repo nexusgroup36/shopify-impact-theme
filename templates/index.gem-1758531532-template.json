@@ -18,7 +18,7 @@
             "style": "fill",
             "size": "base",
             "text": "SHOP NOW",
-            "url": "shopify://products/loop-one1",
+            "url": "shopify://products/loop-one",
             "background": "#ffffff",
             "text_color": "#000000"
           }
@@ -51,7 +51,7 @@
             "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34.png",
             "stretch_image": true,
             "link_text": "THE LOOP ONE",
-            "link_url": "shopify://products/loop-one1",
+            "link_url": "shopify://products/loop-one",
             "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -406,7 +406,7 @@
         "judge_me_reviews_review_widget_homepage_bWtwyP": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "product": "loop-one1",
+            "product": "loop-one",
             "review_data": "sample_data",
             "max_width": 1200
           }
