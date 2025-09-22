@@ -18,7 +18,7 @@
             "style": "fill",
             "size": "base",
             "text": "SHOP NOW",
-            "url": "shopify://products/loop-one",
+            "url": "shopify://products/loop-one1",
             "background": "#ffffff",
             "text_color": "#000000"
           }
@@ -51,7 +51,7 @@
             "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34.png",
             "stretch_image": true,
             "link_text": "THE LOOP ONE",
-            "link_url": "shopify://products/loop-one",
+            "link_url": "shopify://products/loop-one1",
             "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
