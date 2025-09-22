@@ -279,7 +279,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": false,
-        "product": "loop-one",
+        "product": "loop-one1",
         "desktop_media_width": 55,
         "desktop_media_layout": "grid_highlight",
         "mobile_media_size": "expanded",

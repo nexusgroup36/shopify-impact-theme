@@ -18,7 +18,7 @@
             "style": "fill",
             "size": "base",
             "text": "SHOP NOW",
-            "url": "shopify:\/\/products\/loop-one",
+            "url": "shopify://products/loop-one1",
             "background": "#ffffff",
             "text_color": "#000000"
           }
@@ -33,8 +33,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/Kopie_van_4321_Nood_6.png",
-        "mobile_image": "shopify:\/\/shop_images\/Kopie_van_4321_Nood_5.png",
+        "image": "shopify://shop_images/Kopie_van_4321_Nood_6.png",
+        "mobile_image": "shopify://shop_images/Kopie_van_4321_Nood_5.png",
         "mobile_text_position": "place-self-end-center text-center",
         "desktop_text_position": "sm:place-self-end-start sm:text-start",
         "text_color": "#ffffff",
@@ -48,10 +48,10 @@
         "1664424046b00c932c-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ChatGPT_Image_22_mei_2025_16_18_34.png",
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34.png",
             "stretch_image": true,
             "link_text": "THE LOOP ONE",
-            "link_url": "shopify:\/\/products\/loop-one",
+            "link_url": "shopify://products/loop-one1",
             "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -61,10 +61,10 @@
         "1664424046b00c932c-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ChatGPT_Image_22_mei_2025_16_22_26.png",
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_22_26.png",
             "stretch_image": true,
             "link_text": "THE UV GLASSES",
-            "link_url": "shopify:\/\/products\/uv-glasses",
+            "link_url": "shopify://products/uv-glasses",
             "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -74,10 +74,10 @@
         "item_hJCJNE": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2c1eb3e8-902c-4d0b-b088-ce0930dbe837.png",
+            "image": "shopify://shop_images/2c1eb3e8-902c-4d0b-b088-ce0930dbe837.png",
             "stretch_image": true,
             "link_text": "THE COOLING SLEEP-MASK",
-            "link_url": "shopify:\/\/products\/cooling-sleep-mask-wake-loop",
+            "link_url": "shopify://products/cooling-sleep-mask-wake-loop",
             "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -87,10 +87,10 @@
         "1664424046b00c932c-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wake_loop_7.png",
+            "image": "shopify://shop_images/Wake_loop_7.png",
             "stretch_image": true,
             "link_text": "THE GIFT",
-            "link_url": "shopify:\/\/products\/gift-set",
+            "link_url": "shopify://products/gift-set",
             "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -100,10 +100,10 @@
         "1664424046b00c932c-3": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ChatGPT_Image_22_mei_2025_16_39_45.png",
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_39_45.png",
             "stretch_image": true,
             "link_text": "THE CASE",
-            "link_url": "shopify:\/\/products\/the-case",
+            "link_url": "shopify://products/the-case",
             "background": "#f5e9dc",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -168,10 +168,10 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Kopie_van_4319_Loop_18.png",
+            "image": "shopify://shop_images/Kopie_van_4319_Loop_18.png",
             "subheading": "",
             "title": "SLEEP MASKS",
-            "url": "shopify:\/\/collections\/sleep-masks",
+            "url": "shopify://collections/sleep-masks",
             "heading_tag": "h3",
             "text_position": "place-self-start-center text-center",
             "text_color": "#ffffff",
@@ -198,10 +198,10 @@
           "disabled": true,
           "settings": {
             "collection": "accesoires",
-            "image": "shopify:\/\/shop_images\/ChatGPT_Image_22_mei_2025_16_43_36.png",
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_43_36.png",
             "subheading": "",
             "title": "",
-            "url": "shopify:\/\/collections\/accesoires",
+            "url": "shopify://collections/accesoires",
             "heading_tag": "h3",
             "text_position": "place-self-start-center text-center",
             "text_color": "#ffffff",
@@ -240,7 +240,7 @@
         "image_VGbH4i": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ChatGPT_Image_22_mei_2025_17_00_26.png",
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -248,7 +248,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "ABOUT WAKE LOOP",
-            "content": "<p>Our journey began with a single goal: to make waking up a more personal, peaceful experience. At WakeLoop, we create sleep-tech solutions like the Loop One—designed to wake you silently and gently, without disturbing those around you. Every product we offer blends function with emotion, crafted to elevate your rest and your space with clean design and premium quality.<\/p>",
+            "content": "<p>Our journey began with a single goal: to make waking up a more personal, peaceful experience. At WakeLoop, we create sleep-tech solutions like the Loop One—designed to wake you silently and gently, without disturbing those around you. Every product we offer blends function with emotion, crafted to elevate your rest and your space with clean design and premium quality.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -275,17 +275,17 @@
         "image_YYKfbf": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wake_loop_10.png",
+            "image": "shopify://shop_images/Wake_loop_10.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "CONTACT US \/ FAQ",
-            "content": "<p>Do you have questions about our products, your order or our company in general? Don’t hesitate to contact our customer service.<\/p><p>We have also gathered answers to some of the most common questions in our FAQ, where you can find help around the clock.<\/p>",
+            "title": "CONTACT US / FAQ",
+            "content": "<p>Do you have questions about our products, your order or our company in general? Don’t hesitate to contact our customer service.</p><p>We have also gathered answers to some of the most common questions in our FAQ, where you can find help around the clock.</p>",
             "link_text": "CONTACT US HERE",
-            "link_url": "shopify:\/\/pages\/contact",
+            "link_url": "shopify://pages/contact",
             "background": "#000000",
             "background_gradient": "",
             "text_color": "#ffffff",
@@ -319,7 +319,7 @@
         "richtext_M7eaNn": {
           "type": "richtext",
           "settings": {
-            "content": "<h5>At Wake Loop, our mission is to redefine the way people wake up by offering premium, technology-driven sleep solutions that combine elegance, comfort, and innovation. We believe that everyone deserves a peaceful start to their day—without compromise, without noise.<\/h5>"
+            "content": "<h5>At Wake Loop, our mission is to redefine the way people wake up by offering premium, technology-driven sleep solutions that combine elegance, comfort, and innovation. We believe that everyone deserves a peaceful start to their day—without compromise, without noise.</h5>"
           }
         }
       },
@@ -404,9 +404,9 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_homepage_bWtwyP": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "product": "loop-one",
+            "product": "loop-one1",
             "review_data": "sample_data",
             "max_width": 1200
           }
@@ -436,7 +436,7 @@
         "full_width": true,
         "show_icon": true,
         "title": "BECOME A MEMBER OF THE CLUB",
-        "content": "<p>Subscribe to get notified for the first discounts sitewide<\/p>",
+        "content": "<p>Subscribe to get notified for the first discounts sitewide</p>",
         "button_text": "JOIN NOW",
         "subtext": "By completing this form you are signing up to receive our deals & discounts. You can unsubscribe at any time.",
         "background": "",
