@@ -41,90 +41,20 @@
         "overlay_opacity": 0
       }
     },
-    "image-link-blocks": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "1664424046b00c932c-0": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "THE LOOP ONE",
-            "link_url": "shopify://products/loop-one",
-            "background": "#f5e9dc",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-1": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "THE UV GLASSES",
-            "link_url": "shopify://products/uv-glasses",
-            "background": "#f5e9dc",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_hJCJNE": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "THE COOLING SLEEP-MASK",
-            "link_url": "shopify://products/cooling-sleep-mask-wake-loop",
-            "background": "#f5e9dc",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 8
-          }
-        },
-        "1664424046b00c932c-2": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "THE GIFT",
-            "link_url": "shopify://products/gift-set",
-            "background": "#f5e9dc",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-3": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "THE CASE",
-            "link_url": "shopify://products/the-case",
-            "background": "#f5e9dc",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "1664424046b00c932c-0",
-        "1664424046b00c932c-1",
-        "item_hJCJNE",
-        "1664424046b00c932c-2",
-        "1664424046b00c932c-3"
-      ],
+    "image_with_text_overlay_ympcNA": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
       "settings": {
         "full_width": true,
-        "block_size": "large",
-        "subheading": "",
-        "title": "THE BESTSELLERS",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._4.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "collection-list": {
@@ -215,7 +145,7 @@
         "collections_per_row": 3,
         "show_progress_bar": false,
         "subheading": "",
-        "title": "SHOP BY COLLECTION",
+        "title": "SHOP OUR BUNDLES",
         "content": "",
         "link_url": "",
         "link_text": "",
@@ -426,7 +356,7 @@
   },
   "order": [
     "image_with_text_overlay_fMmVLy",
-    "image-link-blocks",
+    "image_with_text_overlay_ympcNA",
     "collection-list",
     "media_with_text_En39W8",
     "media_with_text_d4wjgz",
