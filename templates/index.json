@@ -15,12 +15,12 @@
         "button_HGVmHk": {
           "type": "button",
           "settings": {
-            "style": "fill",
+            "style": "outline",
             "size": "sm",
             "text": "SHOP NOW",
             "url": "shopify://products/loop-one",
             "background": "#000000",
-            "text_color": "#ffffff"
+            "text_color": "#000000"
           }
         }
       },
@@ -32,10 +32,9 @@
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/Kopie_van_4321_Nood_6.png",
-        "mobile_image": "shopify://shop_images/Jouw_alineatekst_5.png",
-        "mobile_text_position": "place-self-end-center text-center",
+        "image_size": "md",
+        "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._2_8e165680-2eab-4d24-b4d0-abb0d9a0a392.png",
+        "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-end-start sm:text-start",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
@@ -48,7 +47,6 @@
         "1664424046b00c932c-0": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34.png",
             "stretch_image": true,
             "link_text": "THE LOOP ONE",
             "link_url": "shopify://products/loop-one",
@@ -61,7 +59,6 @@
         "1664424046b00c932c-1": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_22_26.png",
             "stretch_image": true,
             "link_text": "THE UV GLASSES",
             "link_url": "shopify://products/uv-glasses",
@@ -74,7 +71,6 @@
         "item_hJCJNE": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/2c1eb3e8-902c-4d0b-b088-ce0930dbe837.png",
             "stretch_image": true,
             "link_text": "THE COOLING SLEEP-MASK",
             "link_url": "shopify://products/cooling-sleep-mask-wake-loop",
@@ -87,7 +83,6 @@
         "1664424046b00c932c-2": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Wake_loop_7.png",
             "stretch_image": true,
             "link_text": "THE GIFT",
             "link_url": "shopify://products/gift-set",
@@ -100,7 +95,6 @@
         "1664424046b00c932c-3": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_39_45.png",
             "stretch_image": true,
             "link_text": "THE CASE",
             "link_url": "shopify://products/the-case",
@@ -168,7 +162,6 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Kopie_van_4319_Loop_18.png",
             "subheading": "",
             "title": "SLEEP MASKS",
             "url": "shopify://collections/sleep-masks",
@@ -198,7 +191,6 @@
           "disabled": true,
           "settings": {
             "collection": "accesoires",
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_43_36.png",
             "subheading": "",
             "title": "",
             "url": "shopify://collections/accesoires",
@@ -240,7 +232,6 @@
         "image_VGbH4i": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -275,7 +266,6 @@
         "image_YYKfbf": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Wake_loop_10.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -402,19 +392,6 @@
     },
     "1747880975c3c59209": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_homepage_bWtwyP": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "product": "loop-one",
-            "review_data": "sample_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_homepage_bWtwyP"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
