@@ -156,38 +156,20 @@
         "heading_gradient": ""
       }
     },
-    "media_with_text_En39W8": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_VGbH4i": {
-          "type": "image",
-          "settings": {
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "ABOUT WAKE LOOP",
-            "content": "<p>Our journey began with a single goal: to make waking up a more personal, peaceful experience. At WakeLoop, we create sleep-tech solutions like the Loop One—designed to wake you silently and gently, without disturbing those around you. Every product we offer blends function with emotion, crafted to elevate your rest and your space with clean design and premium quality.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_VGbH4i"
-      ],
-      "name": "Media with text",
+    "image_with_text_overlay_UzJREJ": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
       "settings": {
         "full_width": true,
-        "spacing": "none"
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._5.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "media_with_text_d4wjgz": {
@@ -218,6 +200,7 @@
       "block_order": [
         "image_YYKfbf"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": true,
@@ -247,6 +230,7 @@
         "heading_9i6LUK",
         "richtext_M7eaNn"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -358,7 +342,7 @@
     "image_with_text_overlay_fMmVLy",
     "image_with_text_overlay_ympcNA",
     "collection-list",
-    "media_with_text_En39W8",
+    "image_with_text_overlay_UzJREJ",
     "media_with_text_d4wjgz",
     "rich_text_zzxNDE",
     "press_iGngpA",
