@@ -17,8 +17,8 @@
     "block_shadow_vertical_offset": 18,
     "background": "#ffffff",
     "text_color": "#1a1a1a",
-    "header_background": "#000000",
-    "header_text_color": "#ffffff",
+    "header_background": "#f5f1eb",
+    "header_text_color": "#000000",
     "footer_background": "#000000",
     "footer_text_color": "#ffffff",
     "primary_button_background": "#1a1a1a",
@@ -43,29 +43,7 @@
     "favicon": "shopify://shop_images/Zonder_titel_654_x_833_px_69.png",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
-    "content_for_index": [],
-    "blocks": {
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "6478312753674380289": {
-        "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
-        "disabled": false,
-        "settings": {}
-      },
-      "7625205453299604178": {
-        "type": "shopify://apps/gemx-cro-a-b-testing/blocks/gemx-theme-helper/d5fea089-2b8e-4af7-a4da-76b975b021c7",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    "content_for_index": []
   },
   "presets": {
     "Sound": {
