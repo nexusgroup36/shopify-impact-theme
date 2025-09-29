@@ -17,13 +17,21 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "⭐⭐⭐⭐⭐ | Trusted by +100.000    happy customers! 📦 FREE SHIPPING on USA orders over $99",
+            "text": "⭐⭐⭐⭐⭐ | Trusted by +100.000    happy customers!",
+            "url": ""
+          }
+        },
+        "message_AjEyyG": {
+          "type": "message",
+          "settings": {
+            "text": "📦 FREE SHIPPING on USA orders over $99",
             "url": ""
           }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "message_AjEyyG"
       ],
       "settings": {
         "enable_sticky": false,
