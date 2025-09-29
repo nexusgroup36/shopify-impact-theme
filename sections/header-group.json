@@ -40,8 +40,9 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": true,
-        "logo_max_width": 255,
-        "logo_mobile_max_width": 170,
+        "logo": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._2.png",
+        "logo_max_width": 145,
+        "logo_mobile_max_width": 105,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
