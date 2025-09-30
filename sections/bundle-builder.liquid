@@ -47,90 +47,151 @@
   </button>
 </section>
 
-<!-- Fonts + Styling -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-
 <style>
-section.bbn.section-{{ section.id }} *{ font-family:'Poppins',sans-serif !important; }
+/* ===== Scope ===== */
 section.bbn.section-{{ section.id }}{
-  --bbn-blue:#2F53FF; --bbn-aqua:#D9F7FF;
-  --bbn-text:#111827; --bbn-muted:#6B7280; --bbn-border:#D2D6E0;
+  --bbn-blue: #2F53FF;
+  --bbn-blue-50: #F1F4FF;
+  --bbn-aqua: #D9F7FF;
+  --bbn-text: #111827;
+  --bbn-muted:#6B7280;
+  --bbn-border:#D2D6E0;
+  box-sizing: border-box;
+}
+section.bbn.section-{{ section.id }} *, 
+section.bbn.section-{{ section.id }} *::before, 
+section.bbn.section-{{ section.id }} *::after { box-sizing: inherit; }
+
+/* Step title */
+section.bbn.section-{{ section.id }} .bbn-step-title{
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  color: #30313D;
+  margin: 0 0 12px;
+  font-size: clamp(20px, 5.2vw, 28px);
+  line-height: 1.2;
 }
 
-/* Grid: 3 across always (2 on very tiny) */
+/* Grid: 3-across on phones without overflow */
 section.bbn.section-{{ section.id }} .bbn-bundles{
-  display:grid; gap:12px;
-  grid-template-columns:repeat(3,1fr);
+  display: grid;
+  width: 100%;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
 }
-@media(max-width:360px){
-  section.bbn.section-{{ section.id }} .bbn-bundles{ grid-template-columns:repeat(2,1fr); }
+@media (max-width: 360px){
+  section.bbn.section-{{ section.id }} .bbn-bundles{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* Card */
 section.bbn.section-{{ section.id }} .bbn-bundle{
-  border:1.5px solid var(--bbn-border);
-  border-radius:16px; background:#fff;
-  display:flex; flex-direction:column;
-  min-height:460px;
-  box-shadow:0 2px 0 rgba(0,0,0,.06);
+  border: 1.5px solid var(--bbn-border);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 0 rgba(0,0,0,.06);
+  display: flex; flex-direction: column;
+  min-height: 440px;
+  overflow: hidden;
 }
+@media (min-width: 990px){
+  section.bbn.section-{{ section.id }} .bbn-bundle{ min-height: 480px; }
+}
+
+/* Active state */
 section.bbn.section-{{ section.id }} .bbn-bundle.is-active{
   box-shadow: inset 0 0 0 3px var(--bbn-blue);
 }
 section.bbn.section-{{ section.id }} .bbn-bundle.is-active .bbn-bundle__body{
-  background:var(--bbn-aqua);
+  background: var(--bbn-aqua);
 }
 
 /* Top ribbon */
 section.bbn.section-{{ section.id }} .bbn-bundle__label-top{
-  background:var(--bbn-blue); color:#fff;
-  font-weight:800; text-align:center; font-size:13px;
-  padding:10px 8px; min-height:56px;
-  display:flex; align-items:center; justify-content:center;
+  background: var(--bbn-blue);
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.2;
+  padding: 10px 8px;
+  min-height: 56px;
+  display: flex; align-items: center; justify-content: center;
 }
 
-/* Body slots */
+/* Body & slots */
 section.bbn.section-{{ section.id }} .bbn-bundle__body{
-  flex:1 1 auto; display:flex; flex-direction:column;
-  padding:12px 12px 0;
+  padding: 12px 12px 0;
+  display: flex; flex-direction: column;
+  flex: 1 1 auto;
 }
 section.bbn.section-{{ section.id }} .bbn-bundle__image{
-  flex:0 0 160px; display:flex; align-items:center; justify-content:center;
+  min-height: 150px;
+  display: flex; align-items: center; justify-content: center;
 }
 section.bbn.section-{{ section.id }} .bbn-bundle__image img{
-  width:150px; height:150px; object-fit:contain;
+  width: 150px; height: 150px; object-fit: contain; display:block;
 }
+section.bbn.section-{{ section.id }} .bbn-bundle__image > *:not(img){ display:none !important; }
+
 section.bbn.section-{{ section.id }} .bbn-bundle__title{
-  text-align:center; font-weight:800; font-size:18px; margin:6px 0 2px;
-  min-height:44px; display:flex; align-items:center; justify-content:center;
-}
-section.bbn.section-{{ section.id }} .bbn-bundle__prices{
-  display:flex; justify-content:center; gap:8px; min-height:28px;
-}
-section.bbn.section-{{ section.id }} .bbn-bundle__compare{
-  text-decoration:line-through; color:var(--bbn-muted); font-size:16px;
-}
-section.bbn.section-{{ section.id }} .bbn-bundle__real{
-  font-weight:800; font-size:18px; color:var(--bbn-text);
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700; color: var(--bbn-text);
+  text-align: center;
+  font-size: 18px; line-height: 1.25;
+  margin: 6px 0 2px;
+  min-height: 44px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
 }
 
-/* Bottom ribbon pinned */
+section.bbn.section-{{ section.id }} .bbn-bundle__prices{
+  display: flex; gap: 8px; justify-content: center; align-items: baseline;
+  margin: 6px 0 0;
+  min-height: 28px;
+}
+section.bbn.section-{{ section.id }} .bbn-bundle__compare{
+  color: var(--bbn-muted);
+  text-decoration: line-through;
+  font-weight: 600; font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+}
+section.bbn.section-{{ section.id }} .bbn-bundle__real{
+  color: var(--bbn-text);
+  font-weight: 700; font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/* Bottom SAVE ribbon pinned */
 section.bbn.section-{{ section.id }} .bbn-bundle__label-bottom{
-  background:var(--bbn-blue); color:#fff;
-  font-weight:800; font-size:14px; text-align:center;
-  padding:10px 12px; border-radius:12px;
-  margin:10px 12px 12px; margin-top:auto;
+  background: var(--bbn-blue);
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700; font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin: 10px 12px 12px;
+  margin-top: auto;
 }
 
 /* CTA */
 section.bbn.section-{{ section.id }} .bbn-btn{
-  border-radius:16px; border:2px solid var(--bbn-blue);
-  font-weight:800; padding:14px 16px; margin-top:20px;
+  border-radius: 16px;
+  border: 2px solid var(--bbn-blue);
+  background: var(--bbn-blue);
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  padding: 14px 16px;
+  width: 100%;
+  display: inline-flex; align-items: center; justify-content: center;
 }
-section.bbn.section-{{ section.id }} .bbn-btn--primary{ background:var(--bbn-blue); color:#fff; }
-section.bbn.section-{{ section.id }} .bbn-btn--full{ width:100%; }
 </style>
+
 
 {% schema %}
 {

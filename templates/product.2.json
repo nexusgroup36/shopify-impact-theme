@@ -726,6 +726,16 @@
             "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._3.png"
           }
         },
+        "pack_mW9JYn": {
+          "type": "pack",
+          "settings": {
+            "size": 1,
+            "label_top": "Standard Price",
+            "price_each": 34,
+            "compare_each": 38,
+            "label_bottom": "Save $3.8"
+          }
+        },
         "pack_MkUBHH": {
           "type": "pack",
           "settings": {
@@ -735,36 +745,16 @@
             "compare_each": 38,
             "label_bottom": "Save $3.8"
           }
-        },
-        "pack_mQ9nDg": {
-          "type": "pack",
-          "settings": {
-            "size": 5,
-            "label_top": "10% Off + $15 Gift (Designer Keychain worth $15)",
-            "price_each": 34,
-            "compare_each": 38,
-            "label_bottom": "Save $3.8"
-          }
         }
       },
       "block_order": [
         "pack_qmtKPQ",
-        "pack_MkUBHH",
-        "pack_mQ9nDg"
+        "pack_mW9JYn",
+        "pack_MkUBHH"
       ],
       "name": "Bundle Builder",
       "settings": {
-        "product_handle": "the-dovie",
-        "bundle_title": "The Dovie",
-        "show_warranty": true,
-        "warranty_heading": "Complete Care for Your Dovie",
-        "warranty_title": "Dovie Care Plan",
-        "warranty_price": 7,
-        "warranty_product": "",
-        "warranty_selling_plan_id": "",
-        "w_feat_1": "Hassle-Free Replacement",
-        "w_feat_2": "Battery Assurance",
-        "w_feat_3": "No Questions Asked"
+        "bundle_title": "The Dovie"
       }
     }
   },
