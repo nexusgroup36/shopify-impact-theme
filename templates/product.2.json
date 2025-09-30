@@ -581,46 +581,12 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._18_b79ba9e2-e496-4e61-81b2-79a820aee5f0.png",
-        "mobile_image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._17_aa788e7e-b5b0-48fd-b350-3857ebd3e3a6.png",
+        "mobile_image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._18_b79ba9e2-e496-4e61-81b2-79a820aee5f0.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0
-      }
-    },
-    "media_with_text_LtprTE": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_b83jfB": {
-          "type": "image",
-          "settings": {
-            "media_width": 40,
-            "media_position": "start",
-            "text_position": "place-self-center-end text-end",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "FREE TRAVEL CASE WITH EVERY ORDER",
-            "content": "<p>Take your Loop One anywhere. Every order includes a sleek, protective travel case—perfect for keeping your device safe and charged on the go. Compact, durable, and designed to match your lifestyle.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_b83jfB"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
       }
     },
     "media_with_text_AwCX3C": {
@@ -825,7 +791,6 @@
     "image_with_text_overlay_ifw33n",
     "custom_liquid_3wA9Jk",
     "image_with_text_overlay_Gpbg7J",
-    "media_with_text_LtprTE",
     "media_with_text_AwCX3C",
     "image_with_text_overlay_UKfeC3",
     "faq_B3Ytat",
