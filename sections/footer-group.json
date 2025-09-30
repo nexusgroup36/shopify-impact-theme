@@ -58,7 +58,6 @@
         "item_PM8k3E": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/883824cd-2d17-44cf-b173-e4f55ed76b96.png",
             "stretch_image": true,
             "link_text": "Head of Product Innovation",
             "link_url": "",
@@ -71,7 +70,6 @@
         "item_BXm6h9": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/cc23cae8-1e95-471e-89e8-318206dfc7e9.png",
             "stretch_image": true,
             "link_text": "Inventory Coordinator",
             "link_url": "",
@@ -84,7 +82,6 @@
         "item_UVHXiq": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/46952c42-7901-4993-a77c-3b97d76074b2.png",
             "stretch_image": true,
             "link_text": "Customer Experience Manager",
             "link_url": "",
@@ -97,7 +94,6 @@
         "item_WbrFrq": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/9decff00-09f3-4997-ab75-5ca18721ca13.png",
             "stretch_image": true,
             "link_text": "Social Media Content Assistant",
             "link_url": "",
@@ -137,7 +133,6 @@
         "image_eWUHRz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-08-11_at_00.17.44.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -314,7 +309,7 @@
           "type": "text",
           "settings": {
             "title": "OUR MISSION",
-            "content": "<p>At WakeLoop, we provide you with an exceptional shopping experience because your satisfaction is our top priority. We offer a curated selection of innovative sleep-tech products—like our signature Loop One wristband—designed to improve your mornings and your well-being. Each item is crafted with care, combining premium quality and thoughtful functionality to meet your everyday needs.</p>",
+            "content": "<p>At <strong>Dovie</strong>, your safety and peace of mind come first. We create simple, powerful tools—like our signature Dovie personal alarm—that give you confidence in moments when you need it most. Designed with care and built to last, every product combines sleek design with real protection, so you and your loved ones can feel secure anywhere, anytime.</p>",
             "enable_follow_on_shop": false
           }
         },
@@ -328,21 +323,20 @@
         "links": {
           "type": "links",
           "settings": {
-            "menu": "customer-care",
+            "menu": "",
             "show_menu_title": true
           }
         },
         "links_Ly64rj": {
           "type": "links",
           "settings": {
-            "menu": "our-policies",
+            "menu": "",
             "show_menu_title": true
           }
         },
         "newsletter_fw6NDV": {
           "type": "newsletter",
           "settings": {
-            "image": "shopify://shop_images/lianura_1000_x_200_px_7.png",
             "image_width": 300,
             "heading_size": "h3",
             "title": "Sign up for early discounts",
