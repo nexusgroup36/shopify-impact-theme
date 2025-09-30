@@ -1,22 +1,16 @@
 {% comment %}
-  sections/bundle-builder.liquid
-  Impact-compatible bundle builder + warranty toggle (original implementation).
-  How to use:
-  1) Add this section to your product template that sells single units in multiple colors (variants).
-  2) Configure bundle “packs” in the section settings (size, per-item price, compare price, labels, images).
-  3) Choose the product that supplies colors (variants). Variant images/titles auto-populate.
-  4) (Optional) Configure warranty card text/price. If you use a selling plan or separate SKU for warranty,
-     add it with "warranty_product" (product picker) and optionally a selling plan ID.
+  sections/bundle-builder.liquid  — Impact theme
+  Bundle builder + warranty toggle (original implementation).
 {% endcomment %}
 
 <section class="bbn section-{{ section.id }}" data-section-id="{{ section.id }}">
   {% assign p = all_products[section.settings.product_handle] %}
+
   {% if p == nil %}
-    <div class="page-width">
-      <p style="color:#b00">Select a product in the section settings.</p>
-    </div>
+    <div class="page-width"><p style="color:#b00">Select a product handle in the section settings.</p></div>
   {% else %}
   <div class="page-width">
+    <!-- STEP 1 -->
     <div class="bbn-step bbn-step-1" data-step="1">
       <div class="bbn-step-title">Step 1: Choose Your Bundle</div>
 
@@ -34,6 +28,7 @@
               {% if block.settings.label_top != blank %}
                 <div class="bbn-bundle__label-top">{{ block.settings.label_top }}</div>
               {% endif %}
+
               <div class="bbn-bundle__body">
                 <div class="bbn-bundle__image">
                   {% if block.settings.image %}
@@ -42,13 +37,16 @@
                     {{ p.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', width: 200, height: 200, alt: pack_size | append: ' Pack' }}
                   {% endif %}
                 </div>
+
                 <div class="bbn-bundle__title">{{ pack_size }} {{ section.settings.bundle_title | default: p.title }}</div>
+
                 <div class="bbn-bundle__prices">
                   {% if cmp_each > 0 %}
                     <span class="bbn-bundle__compare">{{ cmp_each | money }}</span>
                   {% endif %}
                   <span class="bbn-bundle__real">{{ price_each | money }} each</span>
                 </div>
+
                 {% if block.settings.label_bottom != blank %}
                   <div class="bbn-bundle__label-bottom">{{ block.settings.label_bottom }}</div>
                 {% endif %}
@@ -61,35 +59,31 @@
       <button class="bbn-btn bbn-btn--primary bbn-btn--full bbn-next">Next: Choose Your Colors</button>
     </div>
 
+    <!-- STEP 2 -->
     <div class="bbn-step bbn-step-2 is-hidden" data-step="2">
       <div class="bbn-step-title">Step 2: Choose Your Colors</div>
 
       <div class="bbn-colors">
-  {% for v in p.variants %}
-    {% assign media = v.featured_media | default: v.image | default: p.featured_image %}
-    <div class="bbn-color"
-         data-id="{{ v.id }}"
-         data-title="{{ v.title | escape }}"
-         data-img="{{ media | image_url: width: 200 }}">
-      <img src="{{ media | image_url: width: 200 }}"
-           width="100" height="100"
-           alt="{{ v.title | escape }}">
-      <button class="bbn-color__btn" type="button">Add</button>
-    </div>
-  {% endfor %}
-</div>
+        {% for v in p.variants %}
+          {% assign media = v.featured_media | default: v.image | default: p.featured_image %}
+          <div class="bbn-color"
+               data-id="{{ v.id }}"
+               data-title="{{ v.title | escape }}"
+               data-img="{{ media | image_url: width: 200 }}">
+            <img src="{{ media | image_url: width: 200 }}" width="100" height="100" alt="{{ v.title | escape }}">
+            <button class="bbn-color__btn" type="button">Add</button>
+          </div>
+        {% endfor %}
+      </div>
 
       <div class="bbn-selected">
         <div class="bbn-selected__header">
-          <div class="bbn-selected__title">
-            Your <span class="bbn-pack-size">0</span>-pack includes:
-          </div>
+          <div class="bbn-selected__title">Your <span class="bbn-pack-size">0</span>-pack includes:</div>
           <div class="bbn-selected__prices">
             <div class="bbn-compare bbn-money"></div>
             <div class="bbn-real bbn-money"></div>
           </div>
         </div>
-
         <div class="bbn-selected__list" aria-live="polite"></div>
       </div>
 
@@ -100,46 +94,45 @@
     </div>
 
     {% if section.settings.show_warranty %}
+    <!-- WARRANTY -->
     <div class="bbn-warranty" data-warranty-enabled="false">
       <div class="bbn-warranty__header">
         <div class="bbn-warranty__text">{{ section.settings.warranty_heading }}</div>
         <div class="bbn-warranty__toggle">
           <div class="bbn-toggle" role="switch" aria-checked="false" tabindex="0"></div>
           <div class="bbn-warranty__title">{{ section.settings.warranty_title }}</div>
-          <div class="bbn-warranty__price">{{ section.settings.warranty_price | times: 100 | round | money }}</div>
+          <div class="bbn-warranty__price">{{ section.settings.warranty_price | times: 100 | money }}</div>
         </div>
       </div>
       <div class="bbn-warranty__features">
-  {% for f in (1..3) %}
-    {% assign feat_key = 'w_feat_'  | append: f %}
-    {% assign icon_key = 'w_icon_'  | append: f %}
-    {% assign txt      = section.settings[feat_key] %}
-    {% assign ico      = section.settings[icon_key] %}
-
-    {% if txt != blank %}
-      <div class="bbn-warranty__feature">
-        {% if ico %}
-          {{ ico | image_url: width: 24 | image_tag: width: 24, height: 24, loading: 'lazy' }}
-        {% endif %}
-        <span>{{ txt }}</span>
+        {% for f in (1..3) %}
+          {% assign feat_key = 'w_feat_'  | append: f %}
+          {% assign icon_key = 'w_icon_'  | append: f %}
+          {% assign txt      = section.settings[feat_key] %}
+          {% assign ico      = section.settings[icon_key] %}
+          {% if txt != blank %}
+            <div class="bbn-warranty__feature">
+              {% if ico %}{{ ico | image_url: width: 24 | image_tag: width: 24, height: 24, loading: 'lazy' }}{% endif %}
+              <span>{{ txt }}</span>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
-    {% endif %}
-  {% endfor %}
-</div>
     </div>
     {% endif %}
   </div>
   {% endif %}
 
+  <!-- BASE STYLES -->
   <style>
-    .section-{{ section.id }} { --bbn-blue:#2351ff; --bbn-blue-200:#dfe7ff; --bbn-blue-50:#f1f4ff; --bbn-gray:#e6e6e6; --bbn-radius:12px; --bbn-shadow:0 2px 0 rgba(0,0,0,.08);}
+    .section-{{ section.id }} { --bbn-blue:#2351ff; --bbn-blue-50:#f1f4ff; --bbn-radius:16px; --bbn-shadow:0 2px 0 rgba(0,0,0,.08);}
     .section-{{ section.id }} .page-width{max-width:1100px;margin:0 auto;padding:16px;}
     .bbn-step-title{font-weight:700;font-size:clamp(20px,2.2vw,28px);color:#222;margin:12px 0 16px;}
     .bbn-bundles{display:grid;gap:14px;grid-template-columns:repeat(1,minmax(0,1fr));}
-    @media(min-width:750px){.bbn-bundles{grid-template-columns:repeat(3,minmax(0,1fr));}}
-    .bbn-bundle{border:1px solid #d6d6d6;border-radius:14px;overflow:hidden;box-shadow:var(--bbn-shadow);background:#fff;cursor:pointer;display:flex;flex-direction:column;}
+    @media(min-width:990px){.bbn-bundles{grid-template-columns:repeat(3,minmax(0,1fr));}}
+    .bbn-bundle{border:1px solid #d6d6d6;border-radius:16px;overflow:hidden;box-shadow:var(--bbn-shadow);background:#fff;cursor:pointer;display:flex;flex-direction:column;}
     .bbn-bundle__label-top{background:var(--bbn-blue);color:#fff;text-align:center;padding:10px 8px;font-weight:700}
-    .bbn-bundle__label-bottom{background:var(--bbn-blue);color:#fff;text-align:center;padding:8px 8px;font-weight:700;border-radius:10px;margin:10px; }
+    .bbn-bundle__label-bottom{background:var(--bbn-blue);color:#fff;text-align:center;padding:8px 8px;font-weight:700;border-radius:12px;margin:10px;}
     .bbn-bundle.is-active{outline:3px solid var(--bbn-blue);}
     .bbn-bundle__body{padding:12px;}
     .bbn-bundle__image img{display:block;margin:0 auto;width:200px;height:200px;object-fit:contain}
@@ -147,7 +140,7 @@
     .bbn-bundle__prices{display:flex;gap:10px;justify-content:center;align-items:baseline;margin-bottom:4px}
     .bbn-bundle__compare{text-decoration:line-through;color:#6b7280}
     .bbn-bundle__real{font-weight:800}
-    .bbn-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--bbn-blue);padding:12px 16px;border-radius:12px;font-weight:800}
+    .bbn-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--bbn-blue);padding:12px 16px;border-radius:16px;font-weight:800}
     .bbn-btn--primary{background:var(--bbn-blue);color:#fff}
     .bbn-btn--ghost{background:#fff;color:var(--bbn-blue)}
     .bbn-btn[disabled]{opacity:.45;cursor:not-allowed}
@@ -180,75 +173,44 @@
     .bbn-toggle.is-on::after{left:25px}
     .bbn-warranty__features{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
     .bbn-warranty__feature{display:flex;align-items:center;gap:8px}
-    <style>
-/* ===== Mobile: 3-up bundle grid (competitor-style) ===== */
-@media (max-width: 749px) {
-  .section-{{ section.id }} .bbn-bundles{
-    display:grid;
-    gap:8px;
-    grid-template-columns:repeat(3,1fr) !important; /* force 3 columns on phones */
-    align-items:stretch;
-  }
-  .section-{{ section.id }} .bbn-bundle{
-    height:100%;
-    border-radius:16px;
-    overflow:hidden;
-  }
-  .section-{{ section.id }} .bbn-bundle__body{ padding:10px 8px; }
-
-  /* Top ribbon */
-  .section-{{ section.id }} .bbn-bundle__label-top{
-    padding:8px 6px;
-    font-size:12px;
-    line-height:1.2;
-    min-height:44px;                 /* keep two-line badges same height */
-    display:flex; align-items:center; justify-content:center;
-    text-align:center;
-    border-top-left-radius:16px; border-top-right-radius:16px;
-  }
-
-  /* Pack image */
-  .section-{{ section.id }} .bbn-bundle__image img{
-    width:100px; height:100px; object-fit:contain; margin:6px auto 0;
-  }
-
-  /* Title + prices */
-  .section-{{ section.id }} .bbn-bundle__title{
-    font-size:13px; font-weight:700; text-align:center; margin:6px 0 2px;
-  }
-  .section-{{ section.id }} .bbn-bundle__prices{
-    gap:6px; justify-content:center; align-items:baseline; margin-bottom:4px;
-  }
-  .section-{{ section.id }} .bbn-bundle__compare{ font-size:12px; }
-  .section-{{ section.id }} .bbn-bundle__real{ font-size:13px; font-weight:800; }
-
-  /* Bottom ribbon */
-  .section-{{ section.id }} .bbn-bundle__label-bottom{
-    margin:8px 8px 10px;
-    padding:6px 8px;
-    font-size:12px;
-    border-radius:10px;
-    text-align:center;
-  }
-}
-</style>
   </style>
 
+  <!-- **MOBILE 3-IN-A-ROW OVERRIDE** -->
+  <style>
+    /* Force three cards side-by-side even on phones */
+    .section-{{ section.id }} [data-step="1"] .bbn-bundles{
+      display:grid !important;
+      gap:8px !important;
+      grid-template-columns:repeat(3, minmax(0,1fr)) !important;
+      align-items:stretch !important;
+    }
+    .section-{{ section.id }} [data-step="1"] .bbn-bundle{ height:100% !important; }
+    .section-{{ section.id }} [data-step="1"] .bbn-bundle__label-top{
+      padding:8px 6px !important; font-size:12px !important; line-height:1.2 !important;
+      min-height:44px !important; display:flex !important; align-items:center !important; justify-content:center !important;
+    }
+    .section-{{ section.id }} [data-step="1"] .bbn-bundle__image img{
+      width:100px !important; height:100px !important; object-fit:contain !important; margin:6px auto 0 !important;
+    }
+    .section-{{ section.id }} [data-step="1"] .bbn-bundle__title{ font-size:13px !important; margin:6px 0 2px !important; }
+    .section-{{ section.id }} [data-step="1"] .bbn-bundle__prices{ gap:6px !important; margin-bottom:4px !important; }
+    .section-{{ section.id }} [data-step="1"] .bbn-bundle__compare{ font-size:12px !important; }
+    .section-{{ section.id }} [data-step="1"] .bbn-bundle__real{ font-size:13px !important; font-weight:800 !important; }
+    .section-{{ section.id }} [data-step="1"] .bbn-bundle__label-bottom{ margin:8px 8px 10px !important; padding:6px 8px !important; font-size:12px !important; }
+    /* Optional: fall back to 2 columns on ultra-small screens */
+    @media(max-width:360px){
+      .section-{{ section.id }} [data-step="1"] .bbn-bundles{ grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+    }
+  </style>
+
+  <!-- JS -->
   <script>
   document.addEventListener('DOMContentLoaded', () => {
     const root = document.querySelector('.section-{{ section.id }}');
     if (!root) return;
 
-    // --- State
-    const state = {
-      packSize: 0,
-      priceEach: 0,     // in cents
-      compareEach: 0,   // in cents
-      selected: [],     // {id, title, img}
-      warrantyOn: false
-    };
+    const state = { packSize: 0, priceEach: 0, compareEach: 0, selected: [], warrantyOn: false };
 
-    // --- Elements
     const step1 = root.querySelector('.bbn-step-1');
     const step2 = root.querySelector('.bbn-step-2');
     const bundles = [...root.querySelectorAll('.bbn-bundle')];
@@ -265,7 +227,6 @@
     const warranty = root.querySelector('.bbn-warranty');
     const toggle = warranty ? warranty.querySelector('.bbn-toggle') : null;
 
-    // --- Utilities
     const fmtMoney = (cents) => {
       try { return new Intl.NumberFormat('{{ shop.locale }}', { style: 'currency', currency: '{{ shop.currency }}'}).format(cents/100); }
       catch(e){ return '$' + (cents/100).toFixed(2); }
@@ -317,14 +278,12 @@
       state.packSize   = parseInt(el.dataset.size, 10);
       state.priceEach  = parseInt(el.dataset.priceEach, 10);
       state.compareEach= parseInt(el.dataset.compareEach || '0', 10);
-      state.selected   = []; // reset
+      state.selected   = [];
       renderSlots();
     };
 
-    // Init default (second card active by design; fallback to first)
     selectBundle(bundles.find(b => b.classList.contains('is-active')) || bundles[0]);
 
-    // Listeners
     bundles.forEach(b => b.addEventListener('click', () => selectBundle(b)));
     nextBtn.addEventListener('click', () => setStep(2));
     backBtn.addEventListener('click', () => setStep(1));
@@ -332,11 +291,7 @@
     colors.forEach(c => {
       c.querySelector('.bbn-color__btn').addEventListener('click', () => {
         if (state.selected.length >= state.packSize) return;
-        state.selected.push({
-          id:   c.dataset.id,
-          title:c.dataset.title,
-          img:  c.dataset.img
-        });
+        state.selected.push({ id: Number(c.dataset.id), title: c.dataset.title, img: c.dataset.img });
         renderSlots();
       });
     });
@@ -362,21 +317,15 @@
       });
     }
 
-    // Add to cart (AJAX)
     addBtn.addEventListener('click', async () => {
       if (state.selected.length !== state.packSize) return;
 
-      const items = state.selected.map(s => ({ id: Number(s.id), quantity: 1 }));
+      const items = state.selected.map(s => ({ id: s.id, quantity: 1 }));
 
-      // Optional: add warranty SKU or selling plan
       {% if section.settings.warranty_product != blank %}
         {% assign wprod = all_products[section.settings.warranty_product] %}
         {% if wprod and wprod.variants.first %}
-          items.push({
-            id: {{ wprod.variants.first.id }},
-            quantity: state.warrantyOn ? 1 : 0
-            {% if section.settings.warranty_selling_plan_id != blank %}, selling_plan: {{ section.settings.warranty_selling_plan_id | json }} {% endif %}
-          });
+          items.push({ id: {{ wprod.variants.first.id }}, quantity: state.warrantyOn ? 1 : 0 {% if section.settings.warranty_selling_plan_id != blank %}, selling_plan: {{ section.settings.warranty_selling_plan_id | json }} {% endif %} });
         {% endif %}
       {% endif %}
 
@@ -387,8 +336,7 @@
           body: JSON.stringify({ items: items.filter(i => i.quantity > 0) })
         });
         if (!res.ok) throw new Error('Cart add failed');
-        // Option: open drawer if your theme supports it
-        document.dispatchEvent(new CustomEvent('cart:refresh')); // Impact listens for events in many setups
+        document.dispatchEvent(new CustomEvent('cart:refresh'));
         window.location.href = '{{ routes.cart_url }}';
       } catch(err) {
         alert('Sorry, something went wrong adding your bundle. Please try again.');
@@ -396,59 +344,57 @@
       }
     });
 
-    // First render
     renderSlots();
   });
   </script>
-
-  {% schema %}
-  {
-    "name": "Bundle Builder",
-    "class": "bundle-builder",
-    "settings": [
-      { "type": "text", "id": "product_handle", "label": "Product handle (for colors)" },
-      { "type": "text", "id": "bundle_title", "label": "Bundle item name (shown after size)", "default": "Birdie 3.0" },
-
-      { "type": "header", "content": "Warranty (Care Plan)" },
-      { "type": "checkbox", "id": "show_warranty", "label": "Show care plan", "default": true },
-      { "type": "text", "id": "warranty_heading", "label": "Header", "default": "Complete Care for Your Birdie" },
-      { "type": "text", "id": "warranty_title", "label": "Toggle label", "default": "Birdie Care Plan" },
-      { "type": "number", "id": "warranty_price", "label": "Care plan price (per order)", "default": 7 },
-      { "type": "product", "id": "warranty_product", "label": "Warranty product (optional)" },
-      { "type": "text", "id": "warranty_selling_plan_id", "label": "Selling plan ID (optional)", "info": "If your warranty uses a subscription selling plan, paste its numeric ID." },
-
-      { "type": "image_picker", "id": "w_icon_1", "label": "Feature 1 icon" },
-      { "type": "text", "id": "w_feat_1", "label": "Feature 1 text", "default": "Hassle-Free Replacement" },
-      { "type": "image_picker", "id": "w_icon_2", "label": "Feature 2 icon" },
-      { "type": "text", "id": "w_feat_2", "label": "Feature 2 text", "default": "Battery Assurance" },
-      { "type": "image_picker", "id": "w_icon_3", "label": "Feature 3 icon" },
-      { "type": "text", "id": "w_feat_3", "label": "Feature 3 text", "default": "No Questions Asked" }
-    ],
-    "blocks": [
-      {
-        "type": "pack",
-        "name": "Bundle pack",
-        "settings": [
-          { "type": "number", "id": "size", "label": "Pack size", "default": 3 },
-          { "type": "text", "id": "label_top", "label": "Top label (HTML allowed)", "default": "10% Off + $15 Gift (Designer Keychain worth $15)" },
-          { "type": "number", "id": "price_each", "label": "Price per item", "default": 34 },
-          { "type": "number", "id": "compare_each", "label": "Compare at per item (optional)", "default": 38 },
-          { "type": "text", "id": "label_bottom", "label": "Bottom label (e.g., Save $3.8)", "default": "Save $3.8" },
-          { "type": "image_picker", "id": "image", "label": "Pack image" }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Bundle Builder + Care Plan",
-        "blocks": [
-          { "type": "pack" },
-          { "type": "pack" },
-          { "type": "pack" }
-        ]
-      }
-    ]
-  }
-
-  {% endschema %}
 </section>
+
+{% schema %}
+{
+  "name": "Bundle Builder",
+  "class": "bundle-builder",
+  "settings": [
+    { "type": "text", "id": "product_handle", "label": "Product handle (for colors)" },
+    { "type": "text", "id": "bundle_title", "label": "Bundle item name", "default": "Birdie 3.0" },
+
+    { "type": "header", "content": "Warranty" },
+    { "type": "checkbox", "id": "show_warranty", "label": "Show care plan", "default": true },
+    { "type": "text", "id": "warranty_heading", "label": "Header", "default": "Complete Care for Your Birdie" },
+    { "type": "text", "id": "warranty_title", "label": "Toggle label", "default": "Birdie Care Plan" },
+    { "type": "number", "id": "warranty_price", "label": "Care plan price (whole dollars)", "default": 7 },
+    { "type": "product", "id": "warranty_product", "label": "Warranty product" },
+    { "type": "text", "id": "warranty_selling_plan_id", "label": "Selling plan ID" },
+
+    { "type": "image_picker", "id": "w_icon_1", "label": "Feature 1 icon" },
+    { "type": "text", "id": "w_feat_1", "label": "Feature 1 text", "default": "Hassle-Free Replacement" },
+    { "type": "image_picker", "id": "w_icon_2", "label": "Feature 2 icon" },
+    { "type": "text", "id": "w_feat_2", "label": "Feature 2 text", "default": "Battery Assurance" },
+    { "type": "image_picker", "id": "w_icon_3", "label": "Feature 3 icon" },
+    { "type": "text", "id": "w_feat_3", "label": "Feature 3 text", "default": "No Questions Asked" }
+  ],
+  "blocks": [
+    {
+      "type": "pack",
+      "name": "Bundle pack",
+      "settings": [
+        { "type": "number", "id": "size", "label": "Pack size", "default": 3 },
+        { "type": "text", "id": "label_top", "label": "Top label (HTML allowed)", "default": "10% Off + $15 Gift (Designer Keychain worth $15)" },
+        { "type": "number", "id": "price_each", "label": "Price per item", "default": 34 },
+        { "type": "number", "id": "compare_each", "label": "Compare at per item", "default": 38 },
+        { "type": "text", "id": "label_bottom", "label": "Bottom label", "default": "Save $3.8" },
+        { "type": "image_picker", "id": "image", "label": "Pack image" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle Builder",
+      "blocks": [
+        { "type": "pack" },
+        { "type": "pack" },
+        { "type": "pack" }
+      ]
+    }
+  ]
+}
+{% endschema %}
