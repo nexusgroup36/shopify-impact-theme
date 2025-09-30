@@ -180,6 +180,58 @@
     .bbn-toggle.is-on::after{left:25px}
     .bbn-warranty__features{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
     .bbn-warranty__feature{display:flex;align-items:center;gap:8px}
+    <style>
+/* ===== Mobile: 3-up bundle grid (competitor-style) ===== */
+@media (max-width: 749px) {
+  .section-{{ section.id }} .bbn-bundles{
+    display:grid;
+    gap:8px;
+    grid-template-columns:repeat(3,1fr) !important; /* force 3 columns on phones */
+    align-items:stretch;
+  }
+  .section-{{ section.id }} .bbn-bundle{
+    height:100%;
+    border-radius:16px;
+    overflow:hidden;
+  }
+  .section-{{ section.id }} .bbn-bundle__body{ padding:10px 8px; }
+
+  /* Top ribbon */
+  .section-{{ section.id }} .bbn-bundle__label-top{
+    padding:8px 6px;
+    font-size:12px;
+    line-height:1.2;
+    min-height:44px;                 /* keep two-line badges same height */
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    border-top-left-radius:16px; border-top-right-radius:16px;
+  }
+
+  /* Pack image */
+  .section-{{ section.id }} .bbn-bundle__image img{
+    width:100px; height:100px; object-fit:contain; margin:6px auto 0;
+  }
+
+  /* Title + prices */
+  .section-{{ section.id }} .bbn-bundle__title{
+    font-size:13px; font-weight:700; text-align:center; margin:6px 0 2px;
+  }
+  .section-{{ section.id }} .bbn-bundle__prices{
+    gap:6px; justify-content:center; align-items:baseline; margin-bottom:4px;
+  }
+  .section-{{ section.id }} .bbn-bundle__compare{ font-size:12px; }
+  .section-{{ section.id }} .bbn-bundle__real{ font-size:13px; font-weight:800; }
+
+  /* Bottom ribbon */
+  .section-{{ section.id }} .bbn-bundle__label-bottom{
+    margin:8px 8px 10px;
+    padding:6px 8px;
+    font-size:12px;
+    border-radius:10px;
+    text-align:center;
+  }
+}
+</style>
   </style>
 
   <script>
