@@ -449,6 +449,19 @@
         "border_thickness": 0
       }
     },
+    "custom_liquid_fbMzTq": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "video_t4M4gd": {
       "type": "video",
       "blocks": {
@@ -793,6 +806,7 @@
     "image_link_blocks_Adbfjr",
     "rich_text_NY6UUE",
     "trust_badges_F3Pmam",
+    "custom_liquid_fbMzTq",
     "video_t4M4gd",
     "impact_text_4r9Pem",
     "media_with_text_WPkVK7",
