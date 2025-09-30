@@ -718,7 +718,7 @@
         "pack_qmtKPQ": {
           "type": "pack",
           "settings": {
-            "size": 3,
+            "size": 1,
             "label_top": "Standard Price",
             "price_each": 34,
             "compare_each": 38,
@@ -739,7 +739,7 @@
         "pack_mQ9nDg": {
           "type": "pack",
           "settings": {
-            "size": 3,
+            "size": 5,
             "label_top": "10% Off + $15 Gift (Designer Keychain worth $15)",
             "price_each": 34,
             "compare_each": 38,
