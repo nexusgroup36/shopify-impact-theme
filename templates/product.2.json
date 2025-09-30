@@ -698,6 +698,13 @@
             "content": "<p>Yes. Unlike pepper spray or tasers, Dovie is <strong>non-violent and legal</strong> in most places — even airports and planes.</p>"
           }
         },
+        "item_KDM6Et": {
+          "type": "item",
+          "settings": {
+            "title": "Is it heavy or bulky?",
+            "content": "<p>Not at all. Dovie is <strong>lightweight and compact</strong>, clips onto your keys or bag, and looks like a small accessory.</p>"
+          }
+        },
         "item_ztDECz": {
           "type": "item",
           "settings": {
@@ -712,6 +719,7 @@
         "item_DtQ8eq",
         "item_U6KDJp",
         "item_JUMQzY",
+        "item_KDM6Et",
         "item_ztDECz"
       ],
       "name": "FAQ",
