@@ -637,7 +637,7 @@
         "richtext_p3DdtX": {
           "type": "richtext",
           "settings": {
-            "content": "<p>We stand behind the quality of our products. Your Loop One is covered for life—because peace of mind should last as long as your sleep does. Durable, dependable, and guaranteed.</p>"
+            "content": "<p>We stand behind the quality of our products. Your <strong>dovie</strong> is covered for life—because peace of mind should last as long as your safety does. Durable, dependable, and guaranteed.</p>"
           }
         }
       },
