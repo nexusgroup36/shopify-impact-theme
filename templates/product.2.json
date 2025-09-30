@@ -542,38 +542,21 @@
         "button_text_color": ""
       }
     },
-    "media_with_text_WPkVK7": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_EBdKg9": {
-          "type": "image",
-          "settings": {
-            "media_width": 40,
-            "media_position": "end",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "WHERE LUXURY MEETS COMFORT",
-            "content": "<p>From our discreet Loop One wristband to our evolving range of sleep-tech essentials, every product offers: Silent vibration alarms for undisturbed mornings, Secure and comfortable wear, Sleek premium materials — all backed by a 2-year warranty.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_EBdKg9"
-      ],
-      "name": "Media with text",
+    "image_with_text_overlay_ifw33n": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
       "settings": {
-        "full_width": false,
-        "spacing": "small"
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._17_aa788e7e-b5b0-48fd-b350-3857ebd3e3a6.png",
+        "mobile_image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._17_aa788e7e-b5b0-48fd-b350-3857ebd3e3a6.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "media_with_text_LtprTE": {
@@ -809,7 +792,7 @@
     "custom_liquid_fbMzTq",
     "video_t4M4gd",
     "impact_text_4r9Pem",
-    "media_with_text_WPkVK7",
+    "image_with_text_overlay_ifw33n",
     "media_with_text_LtprTE",
     "media_with_text_AwCX3C",
     "image_with_text_overlay_UKfeC3",
