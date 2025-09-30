@@ -132,6 +132,13 @@
             "content": "<ul><li><strong>Feel safe anywhere</strong> — walking home, on a run, or traveling.</li><li><strong>Scare off threats fast</strong> — 130dB siren + flashing strobe.</li><li><strong>Zero stress use</strong> — simple pull-pin, no fumbling.</li><li><strong>Always ready</strong> — false-alarm resistant, long battery life.</li><li><strong>Peace of mind</strong> — if you ever use it in danger, we replace it free.</li></ul>"
           }
         },
+        "collapsible_text_7BbRma": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "HOW DOES IT WORK?",
+            "content": "<p>When you feel unsafe, every second matters. That’s why Dovie works with <strong>one simple pull</strong>.</p><p></p><ol><li><strong>Pull the pin</strong> → a 130dB siren blasts, louder than a jet engine.</li><li><strong>Flashing strobe</strong> → grabs attention instantly, even at night.</li><li><strong>Scares off threats</strong> → startles attackers and alerts people around you.</li></ol><p></p><p>No apps. No setup. No fumbling.<br/>Just <strong>pull and protect yourself</strong>.</p>"
+          }
+        },
         "collapsible_text_WwBkVq": {
           "type": "collapsible_text",
           "settings": {
@@ -180,6 +187,7 @@
         "liquid_fYCN9X",
         "image_BGxTTA",
         "collapsible_text_DwAeq6",
+        "collapsible_text_7BbRma",
         "collapsible_text_WwBkVq",
         "collapsible_text_Rgj4JB",
         "collapsible_text_qreJ9J",
