@@ -59,17 +59,6 @@
             "collapse_content": false
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "color",
-            "size_chart_page": ""
-          }
-        },
         "liquid_KfQga7": {
           "type": "liquid",
           "disabled": true,
@@ -190,7 +179,6 @@
         "payment_terms",
         "separator",
         "description",
-        "variant_picker",
         "liquid_KfQga7",
         "buy_buttons",
         "liquid_BjTzJC",
