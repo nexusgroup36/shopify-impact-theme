@@ -715,7 +715,19 @@
     "bundle_builder_EfqAt4": {
       "type": "bundle-builder",
       "name": "Bundle Builder",
-      "settings": {}
+      "settings": {
+        "product_handle": "the-dovie",
+        "bundle_title": "Birdie 3.0",
+        "show_warranty": true,
+        "warranty_heading": "Complete Care for Your Birdie",
+        "warranty_title": "Birdie Care Plan",
+        "warranty_price": 7,
+        "warranty_product": "",
+        "warranty_selling_plan_id": "",
+        "w_feat_1": "Hassle-Free Replacement",
+        "w_feat_2": "Battery Assurance",
+        "w_feat_3": "No Questions Asked"
+      }
     }
   },
   "order": [
