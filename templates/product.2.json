@@ -143,14 +143,14 @@
           "type": "collapsible_text",
           "settings": {
             "title": "WHAT'S IN THE BOX?",
-            "content": "<ul><li>UV Glasses</li><li>Protective Case</li></ul>"
+            "content": "<p>We like to keep things simple. Every order of the <strong>Dovie</strong> contains the following:</p><ul><li>Dovie Alarm</li><li>Brass Keychain</li><li>USB-C Charging Cable</li></ul>"
           }
         },
         "collapsible_text_Rgj4JB": {
           "type": "collapsible_text",
           "settings": {
             "title": "SHIPPING",
-            "content": "<p>All orders processed and dispatched within 24-48 hours.</p><p>An email with your tracking information will be sent to you once your order has been processed.</p>"
+            "content": "<p><strong>All orders processed and dispatched within 24-48 hours.</strong></p><p>An email with your tracking information will be sent to you once your order has been processed.</p>"
           }
         },
         "collapsible_text_qreJ9J": {
