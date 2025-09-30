@@ -38,12 +38,6 @@
             "liquid": "<style>\n  .info-wrapper {\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n    font-family: inherit;\n  }\n\n  .info-row {\n    display: flex;\n    align-items: center;\n    font-size: 15px;\n    font-weight: 400;\n    line-height: 1.2;\n  }\n\n  .info-icon {\n    width: 16px;\n    height: 16px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-right: 6px;\n    flex-shrink: 0;\n  }\n\n  .stock-dot {\n    width: 10px;\n    height: 10px;\n    background-color: orange;\n    border-radius: 50%;\n    box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15);\n    animation: pulse 2s infinite;\n  }\n\n  @keyframes pulse {\n    0% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n    50% { box-shadow: 0 0 0 6px rgba(255, 165, 0, 0.1); }\n    100% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n  }\n</style>\n\n<div class=\"info-wrapper\">\n  <div class=\"info-row\">\n    <div class=\"info-icon\"><div class=\"stock-dot\"></div></div>\n    <span id=\"stock-text\" style=\"color: orange;\">Almost out of stock</span>\n  </div>\n  <div class=\"info-row\">\n    <div class=\"info-icon\">\n      <svg width=\"14\" height=\"14\" viewBox=\"0 0 640 512\" fill=\"black\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z\"/>\n      </svg>\n    </div>\n    <span>Free shipping from $50</span>\n  </div>\n</div>\n\n<script>\n  const stockText = document.getElementById(\"stock-text\");\n\n  function updateStock() {\n    stockText.textContent = `Almost out of stock`;\n  }\n\n  updateStock();\n</script>"
           }
         },
-        "liquid_p7Bxfh": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
-          }
-        },
         "rating": {
           "type": "rating",
           "disabled": true,
@@ -100,6 +94,24 @@
             "liquid": "<div style=\"margin: 0 !important; padding: 0 !important;\">\n  <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin: 0 !important; padding: 0 !important;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0726/8165/2548/files/left-and-right-arrows.svg?v=1709739432\" alt=\"Return Icon\" style=\"width: 20px; height: 20px; margin: 0 !important; padding: 0 !important;\" />\n    <span style=\"margin: 0 !important; padding: 0 !important;\">60 day hassle-free returns</span>\n  </div>\n</div>"
           }
         },
+        "text_tijwfc": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Join thousands of women who refuse to walk in fear.</strong><br/>Dovie was built to silence that fear with a piercing alarm and flashing strobe that makes you impossible to ignore, while buying you the precious seconds to get to safety.</p>"
+          }
+        },
+        "liquid_p7Bxfh": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
+          }
+        },
+        "liquid_6QxAJf": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
+          }
+        },
         "liquid_fYCN9X": {
           "type": "liquid",
           "settings": {
@@ -154,7 +166,6 @@
         "badges",
         "price",
         "liquid_4gJ8eN",
-        "liquid_p7Bxfh",
         "rating",
         "payment_terms",
         "separator",
@@ -163,6 +174,9 @@
         "liquid_KfQga7",
         "buy_buttons",
         "liquid_BjTzJC",
+        "text_tijwfc",
+        "liquid_p7Bxfh",
+        "liquid_6QxAJf",
         "liquid_fYCN9X",
         "image_BGxTTA",
         "collapsible_text_DwAeq6",
@@ -187,6 +201,72 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "trust_badges_F3Pmam": {
+      "type": "trust-badges",
+      "blocks": {
+        "item_nTP6qk": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Secure checkout, your data protected.</p>"
+          }
+        },
+        "item_WdtyaW": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Quality assured, satisfaction guaranteed.</p>"
+          }
+        },
+        "item_hrYCkA": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Hassle-free returns, shop with confidence.</p>"
+          }
+        },
+        "item_8GpY3G": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Real reviews, verified customer feedback.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_nTP6qk",
+        "item_WdtyaW",
+        "item_hrYCkA",
+        "item_8GpY3G"
+      ],
+      "name": "SS - Trust badges #3",
+      "settings": {
+        "trust_position": "below_title",
+        "item_gap": 10,
+        "item_gap_mobile": 10,
+        "item_mt": 16,
+        "item_mt_mobile": 16,
+        "image_icon_size": 22,
+        "image_icon_size_mobile": 20,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 150,
+        "icon_color": "#121212",
+        "text_color": "#121212",
+        "background_color": "",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0
       }
     },
     "featured_collection_jizWxD": {
@@ -530,6 +610,7 @@
   },
   "order": [
     "main",
+    "trust_badges_F3Pmam",
     "featured_collection_jizWxD",
     "impact_text_4r9Pem",
     "media_with_text_WPkVK7",
