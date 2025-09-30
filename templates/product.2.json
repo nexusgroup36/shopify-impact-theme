@@ -94,16 +94,6 @@
             "payment_button_text_color": ""
           }
         },
-        "associated_products_jpxFXK": {
-          "type": "associated_products",
-          "settings": {
-            "title": "Buy it with",
-            "stack_products": true,
-            "products_count": 1,
-            "background": "",
-            "text_color": ""
-          }
-        },
         "liquid_fYCN9X": {
           "type": "liquid",
           "settings": {
@@ -166,7 +156,6 @@
         "variant_picker",
         "liquid_KfQga7",
         "buy_buttons",
-        "associated_products_jpxFXK",
         "liquid_fYCN9X",
         "image_BGxTTA",
         "collapsible_text_DwAeq6",
