@@ -210,28 +210,28 @@
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Secure checkout, your data protected.</p>"
+            "text": "<p><strong>Finally feel safe</strong>, whether you’re walking home, running, or waiting for a ride.</p>"
           }
         },
         "item_WdtyaW": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Quality assured, satisfaction guaranteed.</p>"
+            "text": "<p><strong>Scare off creeps fast</strong> with a siren so loud it turns every head.</p>"
           }
         },
         "item_hrYCkA": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Hassle-free returns, shop with confidence.</p>"
+            "text": "<p><strong>Easy pull-pin,</strong> no fumbling, even if your hands are shaking.</p>"
           }
         },
         "item_8GpY3G": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p>Real reviews, verified customer feedback.</p>"
+            "text": "<p><strong>Carry it anywhere,</strong> light, small, and looks like an accessory.</p>"
           }
         }
       },
