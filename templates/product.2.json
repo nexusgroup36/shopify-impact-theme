@@ -343,6 +343,46 @@
         "heading_gradient": ""
       }
     },
+    "rich_text_NY6UUE": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_XJ8TJE": {
+          "type": "subheading",
+          "settings": {
+            "text": "Did You Know?"
+          }
+        },
+        "heading_ETFmpb": {
+          "type": "heading",
+          "settings": {
+            "text": "1 in 3 women in the U.S. is assaulted in her lifetime",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_mdgChf": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>This is personal because it includes 1 in 3 of our daughters, sisters, and friends.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_XJ8TJE",
+        "heading_ETFmpb",
+        "richtext_mdgChf"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#c9b6e4",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "trust_badges_F3Pmam": {
       "type": "trust-badges",
       "blocks": {
@@ -751,6 +791,7 @@
     "main",
     "rich_text_anmCU9",
     "image_link_blocks_Adbfjr",
+    "rich_text_NY6UUE",
     "trust_badges_F3Pmam",
     "video_t4M4gd",
     "impact_text_4r9Pem",
