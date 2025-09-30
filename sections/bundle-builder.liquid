@@ -1,328 +1,395 @@
 {% comment %}
-  Bundle Builder Section
-  - Step 1: Choose Bundle (1 / 3 / 5 or whatever you set)
-  - Step 2: Choose Colors (renders N color selectors, one per unit)
-  - Optional: Care Plan toggle adds another product to cart
-  - Optional: Bundle gift adds another product to cart
-
-  Notes:
-  • Per-pack % discounts should be created as Automatic Discounts in Shopify Admin.
-  • Gifts: set gift map values to a product variant ID to auto-add the gift item; or just leave text to show a label only.
-  • Base product variants should include an option named "Color" (or match the setting below).
-
+  sections/bundle-builder.liquid
+  Impact-compatible bundle builder + warranty toggle (original implementation).
   How to use:
-  1) Add this section to your product template.
-  2) In section settings, set the base product handle, pack sizes, discounts, gift map, and care plan variant.
+  1) Add this section to your product template that sells single units in multiple colors (variants).
+  2) Configure bundle “packs” in the section settings (size, per-item price, compare price, labels, images).
+  3) Choose the product that supplies colors (variants). Variant images/titles auto-populate.
+  4) (Optional) Configure warranty card text/price. If you use a selling plan or separate SKU for warranty,
+     add it with "warranty_product" (product picker) and optionally a selling plan ID.
 {% endcomment %}
 
-<section class="bbundle" data-section-id="{{ section.id }}">
-  <div class="bbundle__inner">
-    {% assign base_product = all_products[section.settings.base_product_handle] %}
-    {% if base_product == nil %}
-      <p style="color:#c00;font-weight:600;">Bundle Builder: Please set a valid base product handle in the section settings.</p>
-    {% else %}
-      <div class="bbundle__header">
-        <h2 class="bbundle__title">{{ section.settings.headline }}</h2>
-        <p class="bbundle__subhead">{{ section.settings.subhead }}</p>
-      </div>
+<section class="bbn section-{{ section.id }}" data-section-id="{{ section.id }}">
+  {% assign p = all_products[section.settings.product_handle] %}
+  {% if p == nil %}
+    <div class="page-width">
+      <p style="color:#b00">Select a product in the section settings.</p>
+    </div>
+  {% else %}
+  <div class="page-width">
+    <div class="bbn-step bbn-step-1" data-step="1">
+      <div class="bbn-step-title">Step 1: Choose Your Bundle</div>
 
-      {%- assign pack_sizes_str = section.settings.pack_sizes -%}
-      {%- assign pack_sizes = pack_sizes_str | split: ',' | map: 'strip' -%}
-      {%- assign discount_map = section.settings.discount_percentages -%}
-      {%- assign gift_map = section.settings.gift_variant_ids -%}
-
-      <div class="bbundle__packs" role="list" aria-label="Bundle options"
-           data-base-price="{{ base_product.price }}"
-           data-currency-symbol="{{ cart.currency.symbol }}"
-           data-money-format="{{ shop.money_format | escape }}"
-           data-option-name="{{ section.settings.variant_option_name }}"
-           data-pack-sizes="{{ pack_sizes_str }}"
-           data-discount-map="{{ discount_map }}"
-           data-gift-map="{{ gift_map }}"
-           data-care-variant-id="{{ section.settings.care_plan_variant_id }}"
-           data-care-price-label="{{ section.settings.care_price_label }}"
-           data-replace-existing="{{ section.settings.replace_existing }}">
-        {% for p in pack_sizes %}
-          {% assign p_int = p | plus: 0 %}
-          {% assign disc = 0 %}
-          {% assign gift_label = '' %}
-          {% assign dparts = discount_map | split: ',' %}
-          {% for pair in dparts %}
-            {% assign bits = pair | split: ':' %}
-            {% if bits[0] == p %}
-              {% assign disc = bits[1] | plus: 0 %}
-            {% endif %}
-          {% endfor %}
-          {% assign gparts = gift_map | split: ',' %}
-          {% for pair in gparts %}
-            {% assign bits = pair | split: ':' %}
-            {% if bits[0] == p %}
-              {% assign gift_label = bits[1] %}
-            {% endif %}
-          {% endfor %}
-
-          <button class="bbundle__card" role="listitem" data-pack="{{ p_int }}" data-discount="{{ disc }}" aria-pressed="false">
-            <div class="bbundle__card-top">
-              {% if disc > 0 %}
-                <div class="bbundle__badge">{{ disc }}% Off</div>
+      <div class="bbn-bundles" id="bbn-bundles-{{ section.id }}">
+        {% for block in section.blocks %}
+          {% if block.type == 'pack' %}
+            {% assign pack_size = block.settings.size | default: 1 %}
+            {% assign price_each = block.settings.price_each | times: 100 | round %}
+            {% assign cmp_each   = block.settings.compare_each | times: 100 | round %}
+            <div class="bbn-bundle{% if forloop.index == 2 %} is-active{% endif %}"
+                 data-size="{{ pack_size }}"
+                 data-price-each="{{ price_each }}"
+                 data-compare-each="{{ cmp_each }}"
+                 {{ block.shopify_attributes }}>
+              {% if block.settings.label_top != blank %}
+                <div class="bbn-bundle__label-top">{{ block.settings.label_top }}</div>
               {% endif %}
-              {% if section.settings.show_gift_badge and gift_label != blank %}
-                <div class="bbundle__gift-badge">+ Gift</div>
-              {% endif %}
-            </div>
-            <div class="bbundle__card-body">
-              <div class="bbundle__card-title">{{ p_int }} {{ section.settings.bundle_unit_label }}</div>
-              <div class="bbundle__price-row">
-                {% assign unit_price = base_product.price %}
-                {% assign per_unit_discount = unit_price | times: disc | divided_by: 100 %}
-                {% assign per_unit_price_after = unit_price | minus: per_unit_discount %}
-                {% assign compare_each = unit_price %}
-                <div class="bbundle__prices">
-                  {% if disc > 0 %}
-                    <div class="bbundle__compare"><s>{{ compare_each | money }}</s></div>
+              <div class="bbn-bundle__body">
+                <div class="bbn-bundle__image">
+                  {% if block.settings.image %}
+                    {{ block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy', width: 200, height: 200, alt: pack_size | append: ' Pack' }}
+                  {% else %}
+                    {{ p.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', width: 200, height: 200, alt: pack_size | append: ' Pack' }}
                   {% endif %}
-                  <div class="bbundle__each">{{ per_unit_price_after | money }} <span class="bbundle__each-label">each</span></div>
                 </div>
-                {% if disc > 0 %}
-                  <div class="bbundle__save">SAVE {{ per_unit_discount | money }}</div>
+                <div class="bbn-bundle__title">{{ pack_size }} {{ section.settings.bundle_title | default: p.title }}</div>
+                <div class="bbn-bundle__prices">
+                  {% if cmp_each > 0 %}
+                    <span class="bbn-bundle__compare">{{ cmp_each | money }}</span>
+                  {% endif %}
+                  <span class="bbn-bundle__real">{{ price_each | money }} each</span>
+                </div>
+                {% if block.settings.label_bottom != blank %}
+                  <div class="bbn-bundle__label-bottom">{{ block.settings.label_bottom }}</div>
                 {% endif %}
               </div>
-
-              {% if gift_label != blank %}
-                <div class="bbundle__gift-note">{{ gift_label }}</div>
-              {% endif %}
             </div>
-          </button>
+          {% endif %}
         {% endfor %}
       </div>
 
-      <div class="bbundle__step-2" aria-hidden="true">
-        <h3 class="bbundle__title bbundle__title--step2">{{ section.settings.step2_headline }}</h3>
+      <button class="bbn-btn bbn-btn--primary bbn-btn--full bbn-next">Next: Choose Your Colors</button>
+    </div>
 
-        {%- assign option_index = 0 -%}
-        {%- for opt in base_product.options -%}
-          {%- if opt.name == section.settings.variant_option_name -%}
-            {%- assign option_index = forloop.index0 -%}
-          {%- endif -%}
-        {%- endfor -%}
+    <div class="bbn-step bbn-step-2 is-hidden" data-step="2">
+      <div class="bbn-step-title">Step 2: Choose Your Colors</div>
 
-        <div class="bbundle__color-grid" data-option-index="{{ option_index }}">
-          <template id="bbundle-variant-data">
-            [
-              {% for v in base_product.variants %}
-                {
-                  "id": {{ v.id }},
-                  "title": {{ v.title | json }},
-                  "available": {{ v.available | json }},
-                  "price": {{ v.price }},
-                  "options": {{ v.options | json }}
-                }{% unless forloop.last %},{% endunless %}
-              {% endfor %}
-            ]
-          </template>
-
-          <div class="bbundle__pickers" data-pickers></div>
-
-          {% if section.settings.enable_care_plan %}
-            <label class="bbundle__care">
-              <input type="checkbox" id="bbundle-care" />
-              <span class="bbundle__care-label">{{ section.settings.care_label }} <strong>{{ section.settings.care_price_label }}</strong></span>
-              <span class="bbundle__care-sub">{{ section.settings.care_subcopy }}</span>
-            </label>
-          {% endif %}
-
-          <button class="bbundle__cta" data-add-to-cart>{{ section.settings.cta_label }}</button>
-          <div class="bbundle__assure">{{ section.settings.assure_copy }}</div>
-          <div class="bbundle__msg" aria-live="polite" role="status"></div>
-        </div>
+      <div class="bbn-colors">
+        {% for v in p.variants %}
+          {% assign img = v.image | default: p.featured_image %}
+          <div class="bbn-color" data-id="{{ v.id }}" data-title="{{ v.title | escape }}" data-img="{{ img | image_url: width: 100 }}">
+            <img src="{{ img | image_url: width: 100 }}" width="100" height="100" alt="{{ v.title | escape }}">
+            <button class="bbn-color__btn" type="button">Add</button>
+          </div>
+        {% endfor %}
       </div>
 
-      <style>
-        .bbundle { --c1:#1f2a37; --c2:#fff; --c3:#e5e7eb; --accent:#5a67d8; }
-        .bbundle__inner{max-width:980px;margin:0 auto;padding:24px;}
-        .bbundle__title{font-size:22px;font-weight:800;margin:0 0 6px;}
-        .bbundle__subhead{color:#4b5563;margin-bottom:14px;}
-        .bbundle__packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0;}
-        .bbundle__card{border:2px solid var(--c3);background:#fff;border-radius:12px;padding:14px;cursor:pointer;text-align:left;position:relative;transition:box-shadow .2s,border-color .2s}
-        .bbundle__card[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 3px rgba(90,103,216,.15)}
-        .bbundle__badge,.bbundle__gift-badge{position:absolute;top:10px;left:10px;background:#f1f5f9;color:#111827;border-radius:999px;padding:4px 8px;font-size:12px;font-weight:700}
-        .bbundle__gift-badge{left:auto;right:10px;background:#fde68a}
-        .bbundle__card-title{font-weight:800;margin:18px 0 6px;font-size:18px}
-        .bbundle__price-row{display:flex;align-items:center;justify-content:space-between;gap:8px}
-        .bbundle__compare{color:#6b7280;font-size:13px}
-        .bbundle__each{font-weight:800;font-size:18px}
-        .bbundle__each-label{font-weight:600;color:#6b7280;font-size:12px;margin-left:4px}
-        .bbundle__save{font-size:12px;color:#0f766e;background:#d1fae5;border-radius:8px;padding:4px 8px}
-        .bbundle__gift-note{margin-top:8px;font-size:13px;color:#374151}
-        .bbundle__step-2{margin-top:18px}
-        .bbundle__title--step2{margin-top:6px}
-        .bbundle__pickers{display:grid;gap:10px;margin:10px 0 14px}
-        .bbundle__picker{display:flex;gap:8px;align-items:center}
-        .bbundle__picker label{min-width:72px;font-weight:700}
-        .bbundle__select{width:100%;padding:10px;border:1px solid var(--c3);border-radius:10px}
-        .bbundle__care{display:block;border:1px solid var(--c3);border-radius:12px;padding:10px 12px;background:#fafafa;margin:8px 0 14px}
-        .bbundle__care-label{display:block;font-weight:800}
-        .bbundle__care-sub{display:block;color:#4b5563;font-size:12px;margin-top:4px}
-        .bbundle__cta{width:100%;padding:14px 16px;border-radius:999px;background:var(--accent);color:#fff;font-weight:900;border:none;font-size:16px;cursor:pointer}
-        .bbundle__assure{margin-top:8px;color:#4b5563;font-size:12px;text-align:center}
-        .bbundle__msg{margin-top:8px;font-size:13px}
-        @media (min-width:720px){ .bbundle__pickers{grid-template-columns:repeat(2,1fr)} }
-      </style>
+      <div class="bbn-selected">
+        <div class="bbn-selected__header">
+          <div class="bbn-selected__title">
+            Your <span class="bbn-pack-size">0</span>-pack includes:
+          </div>
+          <div class="bbn-selected__prices">
+            <div class="bbn-compare bbn-money"></div>
+            <div class="bbn-real bbn-money"></div>
+          </div>
+        </div>
 
-      <script>
-      (function(){
-        const root = document.currentScript.closest('.bbundle');
-        if(!root) return;
+        <div class="bbn-selected__list" aria-live="polite"></div>
+      </div>
 
-        const packsEl = root.querySelector('.bbundle__packs');
-        const step2 = root.querySelector('.bbundle__step-2');
-        const pickersWrap = root.querySelector('[data-pickers]');
-        const cta = root.querySelector('[data-add-to-cart]');
-        const msg = root.querySelector('.bbundle__msg');
-        const careToggle = root.querySelector('#bbundle-care');
+      <div class="bbn-actions">
+        <button class="bbn-btn bbn-btn--ghost bbn-back">Back</button>
+        <button class="bbn-btn bbn-btn--primary bbn-add" disabled>Add Bundle To Cart</button>
+      </div>
+    </div>
 
-        const variantData = JSON.parse(root.querySelector('#bbundle-variant-data').innerHTML.trim());
-        const optionIndex = parseInt(root.querySelector('.bbundle__color-grid').dataset.optionIndex || '0', 10);
+    {% if section.settings.show_warranty %}
+    <div class="bbn-warranty" data-warranty-enabled="false">
+      <div class="bbn-warranty__header">
+        <div class="bbn-warranty__text">{{ section.settings.warranty_heading }}</div>
+        <div class="bbn-warranty__toggle">
+          <div class="bbn-toggle" role="switch" aria-checked="false" tabindex="0"></div>
+          <div class="bbn-warranty__title">{{ section.settings.warranty_title }}</div>
+          <div class="bbn-warranty__price">{{ section.settings.warranty_price | times: 100 | round | money }}</div>
+        </div>
+      </div>
+      <div class="bbn-warranty__features">
+  {% for f in (1..3) %}
+    {% assign feat_key = 'w_feat_'  | append: f %}
+    {% assign icon_key = 'w_icon_'  | append: f %}
+    {% assign txt      = section.settings[feat_key] %}
+    {% assign ico      = section.settings[icon_key] %}
 
-        const packSizes = packsEl.dataset.packSizes.split(',').map(s=>parseInt(s.trim(),10));
-        const discountMap = parseMap(packsEl.dataset.discountMap);
-        const giftMap = parseMap(packsEl.dataset.giftMap);
-        const careVariantId = packsEl.dataset.careVariantId || '';
-        const replaceExisting = (packsEl.dataset.replaceExisting === 'true');
-
-        let currentPack = null;
-
-        packsEl.querySelectorAll('.bbundle__card').forEach(btn=>{
-          btn.addEventListener('click', ()=>{
-            packsEl.querySelectorAll('.bbundle__card').forEach(b=>b.setAttribute('aria-pressed','false'));
-            btn.setAttribute('aria-pressed','true');
-            currentPack = parseInt(btn.dataset.pack,10);
-            renderPickers(currentPack);
-            step2.setAttribute('aria-hidden','false');
-            step2.scrollIntoView({behavior:'smooth',block:'start'});
-          });
-        });
-
-        function renderPickers(n){
-          pickersWrap.innerHTML = '';
-          for(let i=1;i<=n;i++){
-            const picker = el(`
-              <div class="bbundle__picker">
-                <label>Unit ${i}</label>
-                <select class="bbundle__select" data-variant-select>
-                  ${variantData.map(v=>{
-                    const opt = escapeHtml(v.options[optionIndex] || v.title);
-                    return `<option value="${v.id}" ${!v.available?'disabled':''}>${opt}${!v.available?' — (Sold out)':''}</option>`;
-                  }).join('')}
-                </select>
-              </div>
-            `);
-            pickersWrap.appendChild(picker);
-          }
-        }
-
-        function getSelectedVariantIds(){
-          return Array.from(pickersWrap.querySelectorAll('[data-variant-select]'))
-            .map(s => parseInt(s.value,10))
-            .filter(Boolean);
-        }
-
-        async function addToCart(items){
-          const res = await fetch('/cart/add.js', {
-            method:'POST',
-            headers:{'Content-Type':'application/json','Accept':'application/json'},
-            body: JSON.stringify({ items })
-          });
-          if(!res.ok){ throw new Error('Cart add failed'); }
-          return res.json();
-        }
-
-        cta && cta.addEventListener('click', async ()=>{
-          msg.textContent = '';
-          if(!currentPack){ msg.textContent = 'Please choose a bundle first.'; return; }
-          const ids = getSelectedVariantIds();
-          if(ids.length !== currentPack){ msg.textContent = `Please select ${currentPack} color${currentPack>1?'s':''}.`; return; }
-
-          const disc = discountMap[currentPack] || 0;
-
-          const items = ids.map(id => ({
-            id,
-            quantity: 1,
-            properties: { '_bundle': `${currentPack}-pack`, '_bundle_discount_pct': String(disc) }
-          }));
-
-          if(careToggle && careToggle.checked && /^\d+$/.test(careVariantId)){
-            items.push({ id: parseInt(careVariantId,10), quantity: 1, properties: { '_bundle_care': 'true' } });
-          }
-
-          const giftValue = (giftMap[currentPack] || '').trim();
-          if(/^\d+$/.test(giftValue)){
-            items.push({ id: parseInt(giftValue,10), quantity: 1, properties: { '_bundle_gift': 'true' } });
-          }
-
-          try{
-            if(replaceExisting){
-              await fetch('/cart/clear.js', { method:'POST' });
-            }
-            await addToCart(items);
-            msg.style.color = '#0f766e';
-            msg.textContent = 'Added to cart. Redirecting…';
-            window.location.href = '/cart';
-          } catch(e){
-            msg.style.color = '#c81e1e';
-            msg.textContent = 'Something went wrong adding your bundle. Please try again.';
-          }
-        });
-
-        function parseMap(str){
-          const out = {};
-          (str||'').split(',').forEach(pair=>{
-            const [k,...rest] = pair.split(':');
-            if(!k) return;
-            const key = parseInt(k,10);
-            out[key] = rest.join(':').trim();
-          });
-          return out;
-        }
-        function el(html){ const d=document.createElement('div'); d.innerHTML=html.trim(); return d.firstElementChild; }
-        function escapeHtml(s){ return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
-      })();
-      </script>
+    {% if txt != blank %}
+      <div class="bbn-warranty__feature">
+        {% if ico %}
+          {{ ico | image_url: width: 24 | image_tag: width: 24, height: 24, loading: 'lazy' }}
+        {% endif %}
+        <span>{{ txt }}</span>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+    </div>
     {% endif %}
   </div>
+  {% endif %}
+
+  <style>
+    .section-{{ section.id }} { --bbn-blue:#2351ff; --bbn-blue-200:#dfe7ff; --bbn-blue-50:#f1f4ff; --bbn-gray:#e6e6e6; --bbn-radius:12px; --bbn-shadow:0 2px 0 rgba(0,0,0,.08);}
+    .section-{{ section.id }} .page-width{max-width:1100px;margin:0 auto;padding:16px;}
+    .bbn-step-title{font-weight:700;font-size:clamp(20px,2.2vw,28px);color:#222;margin:12px 0 16px;}
+    .bbn-bundles{display:grid;gap:14px;grid-template-columns:repeat(1,minmax(0,1fr));}
+    @media(min-width:750px){.bbn-bundles{grid-template-columns:repeat(3,minmax(0,1fr));}}
+    .bbn-bundle{border:1px solid #d6d6d6;border-radius:14px;overflow:hidden;box-shadow:var(--bbn-shadow);background:#fff;cursor:pointer;display:flex;flex-direction:column;}
+    .bbn-bundle__label-top{background:var(--bbn-blue);color:#fff;text-align:center;padding:10px 8px;font-weight:700}
+    .bbn-bundle__label-bottom{background:var(--bbn-blue);color:#fff;text-align:center;padding:8px 8px;font-weight:700;border-radius:10px;margin:10px; }
+    .bbn-bundle.is-active{outline:3px solid var(--bbn-blue);}
+    .bbn-bundle__body{padding:12px;}
+    .bbn-bundle__image img{display:block;margin:0 auto;width:200px;height:200px;object-fit:contain}
+    .bbn-bundle__title{font-weight:700;text-align:center;margin:8px 0}
+    .bbn-bundle__prices{display:flex;gap:10px;justify-content:center;align-items:baseline;margin-bottom:4px}
+    .bbn-bundle__compare{text-decoration:line-through;color:#6b7280}
+    .bbn-bundle__real{font-weight:800}
+    .bbn-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--bbn-blue);padding:12px 16px;border-radius:12px;font-weight:800}
+    .bbn-btn--primary{background:var(--bbn-blue);color:#fff}
+    .bbn-btn--ghost{background:#fff;color:var(--bbn-blue)}
+    .bbn-btn[disabled]{opacity:.45;cursor:not-allowed}
+    .bbn-btn--full{width:100%;margin-top:14px}
+    .is-hidden{display:none}
+    /* Step 2 */
+    .bbn-colors{display:flex;gap:10px;flex-wrap:wrap}
+    .bbn-color{border:1px solid #d6d6d6;border-radius:12px;padding:8px;width:106px;text-align:center}
+    .bbn-color img{display:block;margin:0 auto 6px;border-radius:8px}
+    .bbn-color__btn{background:var(--bbn-blue);color:#fff;border:none;border-radius:10px;padding:8px 0;width:100%;font-weight:700;cursor:pointer}
+    .bbn-selected{border:2px solid #1e293b24;border-radius:14px;padding:14px;margin-top:12px}
+    .bbn-selected__header{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+    .bbn-selected__title{font-weight:700}
+    .bbn-selected__prices{display:flex;gap:12px;align-items:baseline}
+    .bbn-compare{text-decoration:line-through;color:#6b7280}
+    .bbn-selected__list{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .bbn-chip{border:1px dashed #9ca3af;border-radius:12px;padding:8px 10px;display:flex;align-items:center;gap:8px}
+    .bbn-chip__img img{width:50px;height:50px;border-radius:10px}
+    .bbn-chip__remove{background:var(--bbn-blue);color:#fff;border:none;border-radius:999px;width:22px;height:22px;line-height:22px;text-align:center;font-size:12px;cursor:pointer}
+    .bbn-actions{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
+    @media(min-width:600px){.bbn-actions{grid-template-columns:auto 1fr}}
+    /* Warranty */
+    .bbn-warranty{border:2px solid #1e293b24;border-radius:14px;padding:16px;margin-top:18px;background:var(--bbn-blue-50)}
+    .bbn-warranty__header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .bbn-warranty__text{font-weight:700}
+    .bbn-warranty__toggle{display:flex;align-items:center;gap:8px}
+    .bbn-toggle{width:50px;height:28px;border-radius:999px;background:#cbd5e1;position:relative;box-shadow:inset 0 0 0 2px #94a3b8;transition:.2s}
+    .bbn-toggle::after{content:'';position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:.2s}
+    .bbn-toggle.is-on{background:var(--bbn-blue)}
+    .bbn-toggle.is-on::after{left:25px}
+    .bbn-warranty__features{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
+    .bbn-warranty__feature{display:flex;align-items:center;gap:8px}
+  </style>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const root = document.querySelector('.section-{{ section.id }}');
+    if (!root) return;
+
+    // --- State
+    const state = {
+      packSize: 0,
+      priceEach: 0,     // in cents
+      compareEach: 0,   // in cents
+      selected: [],     // {id, title, img}
+      warrantyOn: false
+    };
+
+    // --- Elements
+    const step1 = root.querySelector('.bbn-step-1');
+    const step2 = root.querySelector('.bbn-step-2');
+    const bundles = [...root.querySelectorAll('.bbn-bundle')];
+    const nextBtn = root.querySelector('.bbn-next');
+    const backBtn = root.querySelector('.bbn-back');
+    const addBtn = root.querySelector('.bbn-add');
+
+    const colors = [...root.querySelectorAll('.bbn-color')];
+    const selectedWrap = root.querySelector('.bbn-selected__list');
+    const packSizeEl = root.querySelector('.bbn-pack-size');
+    const compareEl = root.querySelector('.bbn-compare');
+    const realEl = root.querySelector('.bbn-real');
+
+    const warranty = root.querySelector('.bbn-warranty');
+    const toggle = warranty ? warranty.querySelector('.bbn-toggle') : null;
+
+    // --- Utilities
+    const fmtMoney = (cents) => {
+      try { return new Intl.NumberFormat('{{ shop.locale }}', { style: 'currency', currency: '{{ shop.currency }}'}).format(cents/100); }
+      catch(e){ return '$' + (cents/100).toFixed(2); }
+    };
+
+    const setStep = (n) => {
+      if (n === 1) { step1.classList.remove('is-hidden'); step2.classList.add('is-hidden'); }
+      if (n === 2) { step2.classList.remove('is-hidden'); step1.classList.add('is-hidden'); }
+    };
+
+    const renderPrices = () => {
+      const totalCompare = state.compareEach > 0 ? state.compareEach * state.packSize : 0;
+      const totalReal = state.priceEach * state.packSize;
+      compareEl.textContent = totalCompare ? fmtMoney(totalCompare) : '';
+      realEl.textContent    = fmtMoney(totalReal);
+    };
+
+    const renderSlots = () => {
+      selectedWrap.innerHTML = '';
+      const filled = state.selected.length;
+      const needed = Math.max(state.packSize - filled, 0);
+
+      state.selected.forEach((item, idx) => {
+        const chip = document.createElement('div');
+        chip.className = 'bbn-chip';
+        chip.innerHTML = `
+          <button class="bbn-chip__remove" aria-label="Remove" data-idx="${idx}">X</button>
+          <div class="bbn-chip__img"><img src="${item.img}" alt="${item.title}"></div>
+          <div>${item.title}</div>
+        `;
+        selectedWrap.appendChild(chip);
+      });
+
+      for (let i = 0; i < needed; i++) {
+        const chip = document.createElement('div');
+        chip.className = 'bbn-chip';
+        chip.innerHTML = `<div class="bbn-chip__img"><img src="{{ 'placeholder-image.png' | asset_url }}" alt=""></div><div>Birdie #${state.selected.length + i + 1}</div>`;
+        selectedWrap.appendChild(chip);
+      }
+
+      addBtn.disabled = (state.selected.length !== state.packSize);
+      packSizeEl.textContent = state.packSize;
+      renderPrices();
+    };
+
+    const selectBundle = (el) => {
+      bundles.forEach(b => b.classList.remove('is-active'));
+      el.classList.add('is-active');
+      state.packSize   = parseInt(el.dataset.size, 10);
+      state.priceEach  = parseInt(el.dataset.priceEach, 10);
+      state.compareEach= parseInt(el.dataset.compareEach || '0', 10);
+      state.selected   = []; // reset
+      renderSlots();
+    };
+
+    // Init default (second card active by design; fallback to first)
+    selectBundle(bundles.find(b => b.classList.contains('is-active')) || bundles[0]);
+
+    // Listeners
+    bundles.forEach(b => b.addEventListener('click', () => selectBundle(b)));
+    nextBtn.addEventListener('click', () => setStep(2));
+    backBtn.addEventListener('click', () => setStep(1));
+
+    colors.forEach(c => {
+      c.querySelector('.bbn-color__btn').addEventListener('click', () => {
+        if (state.selected.length >= state.packSize) return;
+        state.selected.push({
+          id:   c.dataset.id,
+          title:c.dataset.title,
+          img:  c.dataset.img
+        });
+        renderSlots();
+      });
+    });
+
+    selectedWrap.addEventListener('click', (e) => {
+      const btn = e.target.closest('.bbn-chip__remove');
+      if (!btn) return;
+      const idx = parseInt(btn.dataset.idx, 10);
+      state.selected.splice(idx, 1);
+      renderSlots();
+    });
+
+    if (toggle) {
+      const setToggle = (on) => {
+        state.warrantyOn = on;
+        toggle.classList.toggle('is-on', on);
+        toggle.setAttribute('aria-checked', on ? 'true' : 'false');
+        warranty.dataset.warrantyEnabled = on ? 'true' : 'false';
+      };
+      toggle.addEventListener('click', () => setToggle(!state.warrantyOn));
+      toggle.addEventListener('keydown', (e) => {
+        if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); setToggle(!state.warrantyOn); }
+      });
+    }
+
+    // Add to cart (AJAX)
+    addBtn.addEventListener('click', async () => {
+      if (state.selected.length !== state.packSize) return;
+
+      const items = state.selected.map(s => ({ id: Number(s.id), quantity: 1 }));
+
+      // Optional: add warranty SKU or selling plan
+      {% if section.settings.warranty_product != blank %}
+        {% assign wprod = all_products[section.settings.warranty_product] %}
+        {% if wprod and wprod.variants.first %}
+          items.push({
+            id: {{ wprod.variants.first.id }},
+            quantity: state.warrantyOn ? 1 : 0
+            {% if section.settings.warranty_selling_plan_id != blank %}, selling_plan: {{ section.settings.warranty_selling_plan_id | json }} {% endif %}
+          });
+        {% endif %}
+      {% endif %}
+
+      try {
+        const res = await fetch('{{ routes.cart_add_url }}.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ items: items.filter(i => i.quantity > 0) })
+        });
+        if (!res.ok) throw new Error('Cart add failed');
+        // Option: open drawer if your theme supports it
+        document.dispatchEvent(new CustomEvent('cart:refresh')); // Impact listens for events in many setups
+        window.location.href = '{{ routes.cart_url }}';
+      } catch(err) {
+        alert('Sorry, something went wrong adding your bundle. Please try again.');
+        console.error(err);
+      }
+    });
+
+    // First render
+    renderSlots();
+  });
+  </script>
 
   {% schema %}
   {
     "name": "Bundle Builder",
+    "class": "bundle-builder",
     "settings": [
-      { "type": "text", "id": "headline", "label": "Step 1 Headline", "default": "Step 1: Choose Your Bundle" },
-      { "type": "text", "id": "subhead", "label": "Step 1 Subhead", "default": "Pick a pack to unlock savings & gifts" },
+      { "type": "text", "id": "product_handle", "label": "Product handle (for colors)" },
+      { "type": "text", "id": "bundle_title", "label": "Bundle item name (shown after size)", "default": "Birdie 3.0" },
 
-      { "type": "text", "id": "base_product_handle", "label": "Base Product Handle", "default": "guardian-siren-130" },
-      { "type": "text", "id": "variant_option_name", "label": "Variant Option Name (e.g., Color)", "default": "Color" },
+      { "type": "header", "content": "Warranty (Care Plan)" },
+      { "type": "checkbox", "id": "show_warranty", "label": "Show care plan", "default": true },
+      { "type": "text", "id": "warranty_heading", "label": "Header", "default": "Complete Care for Your Birdie" },
+      { "type": "text", "id": "warranty_title", "label": "Toggle label", "default": "Birdie Care Plan" },
+      { "type": "number", "id": "warranty_price", "label": "Care plan price (per order)", "default": 7 },
+      { "type": "product", "id": "warranty_product", "label": "Warranty product (optional)" },
+      { "type": "text", "id": "warranty_selling_plan_id", "label": "Selling plan ID (optional)", "info": "If your warranty uses a subscription selling plan, paste its numeric ID." },
 
-      { "type": "text", "id": "pack_sizes", "label": "Pack Sizes (comma-separated)", "default": "1,3,5" },
-      { "type": "text", "id": "discount_percentages", "label": "Discount Map (size:percent, ...)", "default": "1:0,3:10,5:15" },
-      { "type": "text", "id": "gift_variant_ids", "label": "Gift Map (size:label or size:giftVariantId)", "default": "1:,3:Designer Keychain worth $15,5:Mystery Gift worth $35" },
-      { "type": "checkbox", "id": "show_gift_badge", "label": "Show Gift badge on bundle cards", "default": true },
-
-      { "type": "text", "id": "bundle_unit_label", "label": "Unit Label (defaults to product title)", "default": "Guardian Siren 130" },
-
-      { "type": "text", "id": "step2_headline", "label": "Step 2 Headline", "default": "Next: Choose Your Colors" },
-
-      { "type": "checkbox", "id": "enable_care_plan", "label": "Enable Care Plan toggle", "default": true },
-      { "type": "text", "id": "care_plan_variant_id", "label": "Care Plan Variant ID", "default": "0" },
-      { "type": "text", "id": "care_label", "label": "Care Plan Label", "default": "Add Care Plan" },
-      { "type": "text", "id": "care_price_label", "label": "Care Price Label", "default": "$6.99" },
-      { "type": "text", "id": "care_subcopy", "label": "Care Subcopy", "default": "Hassle-free replacement • Battery assurance • No questions asked" },
-
-      { "type": "text", "id": "cta_label", "label": "CTA Label", "default": "Add Bundle to Cart" },
-      { "type": "textarea", "id": "assure_copy", "label": "Assurance Copy", "default": "Backed by our Peace of Mind Guarantee — if you ever use it in a real incident, we replace it free." },
-
-      { "type": "checkbox", "id": "replace_existing", "label": "Clear cart before adding (guided flow)", "default": false }
+      { "type": "image_picker", "id": "w_icon_1", "label": "Feature 1 icon" },
+      { "type": "text", "id": "w_feat_1", "label": "Feature 1 text", "default": "Hassle-Free Replacement" },
+      { "type": "image_picker", "id": "w_icon_2", "label": "Feature 2 icon" },
+      { "type": "text", "id": "w_feat_2", "label": "Feature 2 text", "default": "Battery Assurance" },
+      { "type": "image_picker", "id": "w_icon_3", "label": "Feature 3 icon" },
+      { "type": "text", "id": "w_feat_3", "label": "Feature 3 text", "default": "No Questions Asked" }
+    ],
+    "blocks": [
+      {
+        "type": "pack",
+        "name": "Bundle pack",
+        "settings": [
+          { "type": "number", "id": "size", "label": "Pack size", "default": 3 },
+          { "type": "text", "id": "label_top", "label": "Top label (HTML allowed)", "default": "10% Off + $15 Gift (Designer Keychain worth $15)" },
+          { "type": "number", "id": "price_each", "label": "Price per item", "default": 34 },
+          { "type": "number", "id": "compare_each", "label": "Compare at per item (optional)", "default": 38 },
+          { "type": "text", "id": "label_bottom", "label": "Bottom label (e.g., Save $3.8)", "default": "Save $3.8" },
+          { "type": "image_picker", "id": "image", "label": "Pack image" }
+        ]
+      }
     ],
     "presets": [
-      { "name": "Bundle Builder", "category": "Product" }
+      {
+        "name": "Bundle Builder + Care Plan",
+        "blocks": [
+          { "type": "pack" },
+          { "type": "pack" },
+          { "type": "pack" }
+        ]
+      }
     ]
   }
   {% endschema %}
