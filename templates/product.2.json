@@ -420,32 +420,6 @@
         "overlay_opacity": 30
       }
     },
-    "featured_collection_jizWxD": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "collection": "",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 4,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "YOU MAY ALSO LIKE",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "impact_text_4r9Pem": {
       "type": "impact-text",
       "blocks": {
@@ -557,7 +531,6 @@
       "block_order": [
         "image_b83jfB"
       ],
-      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -686,7 +659,6 @@
         "item_JUMQzY",
         "item_ztDECz"
       ],
-      "disabled": true,
       "name": "FAQ",
       "settings": {
         "full_width": true,
@@ -761,7 +733,6 @@
     "image_link_blocks_Adbfjr",
     "trust_badges_F3Pmam",
     "video_t4M4gd",
-    "featured_collection_jizWxD",
     "impact_text_4r9Pem",
     "media_with_text_WPkVK7",
     "media_with_text_LtprTE",
