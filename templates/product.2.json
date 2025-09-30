@@ -705,6 +705,13 @@
             "content": "<p>Not at all. Dovie is <strong>lightweight and compact</strong>, clips onto your keys or bag, and looks like a small accessory.</p>"
           }
         },
+        "item_yqmxVU": {
+          "type": "item",
+          "settings": {
+            "title": "Who is Dovie for?",
+            "content": "<p>Anyone who wants peace of mind:</p><ul><li>Women walking alone</li><li>Students heading to class</li><li>Runners and commuters</li><li>Teens traveling to school</li><li>Anyone you love and want to keep safe</li></ul>"
+          }
+        },
         "item_ztDECz": {
           "type": "item",
           "settings": {
@@ -720,6 +727,7 @@
         "item_U6KDJp",
         "item_JUMQzY",
         "item_KDM6Et",
+        "item_yqmxVU",
         "item_ztDECz"
       ],
       "name": "FAQ",
