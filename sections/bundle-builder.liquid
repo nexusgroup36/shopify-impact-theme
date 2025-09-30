@@ -175,35 +175,6 @@
     .bbn-warranty__feature{display:flex;align-items:center;gap:8px}
   </style>
 
-  <!-- **MOBILE 3-IN-A-ROW OVERRIDE** -->
-  <style>
-    /* Force three cards side-by-side even on phones */
-    .section-{{ section.id }} [data-step="1"] .bbn-bundles{
-      display:grid !important;
-      gap:8px !important;
-      grid-template-columns:repeat(3, minmax(0,1fr)) !important;
-      align-items:stretch !important;
-    }
-    .section-{{ section.id }} [data-step="1"] .bbn-bundle{ height:100% !important; }
-    .section-{{ section.id }} [data-step="1"] .bbn-bundle__label-top{
-      padding:8px 6px !important; font-size:12px !important; line-height:1.2 !important;
-      min-height:44px !important; display:flex !important; align-items:center !important; justify-content:center !important;
-    }
-    .section-{{ section.id }} [data-step="1"] .bbn-bundle__image img{
-      width:100px !important; height:100px !important; object-fit:contain !important; margin:6px auto 0 !important;
-    }
-    .section-{{ section.id }} [data-step="1"] .bbn-bundle__title{ font-size:13px !important; margin:6px 0 2px !important; }
-    .section-{{ section.id }} [data-step="1"] .bbn-bundle__prices{ gap:6px !important; margin-bottom:4px !important; }
-    .section-{{ section.id }} [data-step="1"] .bbn-bundle__compare{ font-size:12px !important; }
-    .section-{{ section.id }} [data-step="1"] .bbn-bundle__real{ font-size:13px !important; font-weight:800 !important; }
-    .section-{{ section.id }} [data-step="1"] .bbn-bundle__label-bottom{ margin:8px 8px 10px !important; padding:6px 8px !important; font-size:12px !important; }
-    /* Optional: fall back to 2 columns on ultra-small screens */
-    @media(max-width:360px){
-      .section-{{ section.id }} [data-step="1"] .bbn-bundles{ grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
-    }
-  </style>
-
-  <!-- JS -->
   <script>
   document.addEventListener('DOMContentLoaded', () => {
     const root = document.querySelector('.section-{{ section.id }}');
