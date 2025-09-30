@@ -606,9 +606,9 @@
             "content": "<p>Try <strong>dovie</strong> risk-free. If you’re not completely satisfied within 60 days, contact our lovely support team for a full compensation. Your sleep, your terms.</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#000000",
+            "background": "#f5f1eb",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "text_gradient": "",
             "button_background": "",
             "button_text_color": ""
