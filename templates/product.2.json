@@ -666,15 +666,15 @@
         "item_U6DEYw": {
           "type": "item",
           "settings": {
-            "title": "How does the Loop One wake me up?",
-            "content": "<p>Loop One uses gentle vibrations on your wrist to wake you silently. It’s ideal for light sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</p>"
+            "title": "How loud is Dovie?",
+            "content": "<p>Dovie blasts at <strong>130 decibels</strong>. Loud enough to shock, scare, and get attention fast.</p>"
           }
         },
         "item_iRJA9i": {
           "type": "item",
           "settings": {
-            "title": "Can I wear it all night comfortably?",
-            "content": "<p>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</p>"
+            "title": "How do I turn it off after pulling the pin?",
+            "content": "<p>Simple — just put the pin back in. The alarm stops immediately and is ready to use again.</p>"
           }
         },
         "item_DtQ8eq": {
