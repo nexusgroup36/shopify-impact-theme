@@ -714,6 +714,43 @@
     },
     "bundle_builder_EfqAt4": {
       "type": "bundle-builder",
+      "blocks": {
+        "pack_qmtKPQ": {
+          "type": "pack",
+          "settings": {
+            "size": 3,
+            "label_top": "10% Off + $15 Gift (Designer Keychain worth $15)",
+            "price_each": 34,
+            "compare_each": 38,
+            "label_bottom": "Save $3.8"
+          }
+        },
+        "pack_adybtk": {
+          "type": "pack",
+          "settings": {
+            "size": 3,
+            "label_top": "10% Off + $15 Gift (Designer Keychain worth $15)",
+            "price_each": 34,
+            "compare_each": 38,
+            "label_bottom": "Save $3.8"
+          }
+        },
+        "pack_LUTc6n": {
+          "type": "pack",
+          "settings": {
+            "size": 3,
+            "label_top": "10% Off + $15 Gift (Designer Keychain worth $15)",
+            "price_each": 34,
+            "compare_each": 38,
+            "label_bottom": "Save $3.8"
+          }
+        }
+      },
+      "block_order": [
+        "pack_qmtKPQ",
+        "pack_adybtk",
+        "pack_LUTc6n"
+      ],
       "name": "Bundle Builder",
       "settings": {
         "product_handle": "the-dovie",
