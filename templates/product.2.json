@@ -711,6 +711,11 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "bundle_builder_EfqAt4": {
+      "type": "bundle-builder",
+      "name": "Bundle Builder",
+      "settings": {}
     }
   },
   "order": [
@@ -724,6 +729,7 @@
     "media_with_text_AwCX3C",
     "image_with_text_overlay_UKfeC3",
     "faq_B3Ytat",
-    "1747885505688c5a92"
+    "1747885505688c5a92",
+    "bundle_builder_EfqAt4"
   ]
 }
