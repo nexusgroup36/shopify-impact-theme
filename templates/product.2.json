@@ -680,15 +680,15 @@
         "item_DtQ8eq": {
           "type": "item",
           "settings": {
-            "title": "How long does the battery last?",
-            "content": "<p>The battery lasts up to 7 days on a single charge, depending on usage. It fully recharges in under 2 hours using the included USB-C cable.</p>"
+            "title": "Is the battery replaceable?",
+            "content": "<p>No need — Dovie is <strong>USB-rechargeable</strong>. One charge gives you months of standby power.</p>"
           }
         },
         "item_U6KDJp": {
           "type": "item",
           "settings": {
-            "title": "Is it compatible with my phone or alarm app?",
-            "content": "<p>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</p>"
+            "title": "Can it go off by accident in my bag?",
+            "content": "<p>No. The pin is secure, so it only activates if you pull it out on purpose.</p>"
           }
         },
         "item_JUMQzY": {
