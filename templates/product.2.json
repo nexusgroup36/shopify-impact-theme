@@ -595,6 +595,7 @@
         "image_BeRG6y": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/13.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -602,7 +603,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "60 DAYS MONEY BACK GUARANTEE",
-            "content": "<p>Try Wake Loop risk-free. If you’re not completely satisfied within 60 days, contact our lovely support team for a full compensation. Your sleep, your terms.</p>",
+            "content": "<p>Try <strong>dovie</strong> risk-free. If you’re not completely satisfied within 60 days, contact our lovely support team for a full compensation. Your sleep, your terms.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
