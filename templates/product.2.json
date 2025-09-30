@@ -389,6 +389,37 @@
         "border_thickness": 0
       }
     },
+    "video_t4M4gd": {
+      "type": "video",
+      "blocks": {
+        "play_YHnETi": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_nPGC6L": {
+          "type": "heading",
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "play_YHnETi",
+        "heading_nPGC6L"
+      ],
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "sm",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "featured_collection_jizWxD": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -729,6 +760,7 @@
     "rich_text_anmCU9",
     "image_link_blocks_Adbfjr",
     "trust_badges_F3Pmam",
+    "video_t4M4gd",
     "featured_collection_jizWxD",
     "impact_text_4r9Pem",
     "media_with_text_WPkVK7",
