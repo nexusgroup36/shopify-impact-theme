@@ -719,7 +719,7 @@
           "type": "pack",
           "settings": {
             "size": 1,
-            "label_top": "Standard Price",
+            "label_top": "",
             "price_each": 34,
             "compare_each": 38,
             "label_bottom": "Save $3.8",
