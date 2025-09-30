@@ -725,32 +725,10 @@
             "label_bottom": "Save $3.8",
             "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._3.png"
           }
-        },
-        "pack_adybtk": {
-          "type": "pack",
-          "settings": {
-            "size": 3,
-            "label_top": "10% Off + $15 Gift (Designer Keychain worth $15)",
-            "price_each": 34,
-            "compare_each": 38,
-            "label_bottom": "Save $3.8"
-          }
-        },
-        "pack_LUTc6n": {
-          "type": "pack",
-          "settings": {
-            "size": 3,
-            "label_top": "10% Off + $15 Gift (Designer Keychain worth $15)",
-            "price_each": 34,
-            "compare_each": 38,
-            "label_bottom": "Save $3.8"
-          }
         }
       },
       "block_order": [
-        "pack_qmtKPQ",
-        "pack_adybtk",
-        "pack_LUTc6n"
+        "pack_qmtKPQ"
       ],
       "name": "Bundle Builder",
       "settings": {
