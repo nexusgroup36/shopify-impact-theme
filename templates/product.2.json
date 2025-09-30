@@ -719,7 +719,7 @@
           "type": "pack",
           "settings": {
             "size": 3,
-            "label_top": "10% Off + $15 Gift (Designer Keychain worth $15)",
+            "label_top": "Standard Price",
             "price_each": 34,
             "compare_each": 38,
             "label_bottom": "Save $3.8",
