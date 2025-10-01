@@ -337,9 +337,10 @@
         "newsletter_fw6NDV": {
           "type": "newsletter",
           "settings": {
-            "image_width": 300,
+            "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._26.png",
+            "image_width": 180,
             "heading_size": "h3",
-            "title": "Sign up for early discounts",
+            "title": "Join Our #itsdovie Community And Get The Earliest Discounts",
             "content": ""
           }
         }
