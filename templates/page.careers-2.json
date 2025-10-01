@@ -79,10 +79,58 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "tabs_Miy77Q": {
+      "type": "tabs",
+      "blocks": {
+        "tab_AnUGt9": {
+          "type": "tab",
+          "settings": {
+            "title": "Is it legal to carry everywhere?",
+            "content": "<p>Yes. Unlike pepper spray or tasers, Dovie is <strong>non-violent and legal</strong> in most places — even airports and planes.</p>",
+            "page": ""
+          }
+        },
+        "tab_dD6QJH": {
+          "type": "tab",
+          "settings": {
+            "title": "Is it heavy or bulky?",
+            "content": "<p>Not at all. Dovie is <strong>lightweight and compact</strong>, clips onto your keys or bag, and looks like a small accessory.</p>",
+            "page": ""
+          }
+        },
+        "tab_pi8Fyi": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is Dovie for?",
+            "content": "<p>Anyone who wants peace of mind:</p><ul><li>Women walking alone</li><li>Students heading to class</li><li>Runners and commuters</li><li>Teens traveling to school</li><li>Anyone you love and want to keep safe</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_AnUGt9",
+        "tab_dD6QJH",
+        "tab_pi8Fyi"
+      ],
+      "name": "Tabs",
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "subheading": "",
+        "title": "",
+        "first_tab_open": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
     }
   },
   "order": [
     "main",
-    "tabs_bEbeqm"
+    "tabs_bEbeqm",
+    "tabs_Miy77Q"
   ]
 }
