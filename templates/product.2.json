@@ -504,19 +504,6 @@
         "button_text_color": ""
       }
     },
-    "custom_liquid_jJTQeV": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<div id='ss-product-videos'></div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "product_vids_TriUWX": {
       "type": "product-vids",
       "blocks": {
@@ -930,7 +917,6 @@
     "rich_text_NY6UUE",
     "trust_badges_F3Pmam",
     "impact_text_4r9Pem",
-    "custom_liquid_jJTQeV",
     "product_vids_TriUWX",
     "image_with_text_overlay_ifw33n",
     "custom_liquid_3wA9Jk",
