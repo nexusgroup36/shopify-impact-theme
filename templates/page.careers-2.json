@@ -11,224 +11,78 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "content_width": "80ch"
       }
     },
-    "rich_text_wHyEFr": {
-      "type": "rich-text",
+    "tabs_bEbeqm": {
+      "type": "tabs",
       "blocks": {
-        "icon_aeJdab": {
-          "type": "icon",
+        "tab_fBbwEd": {
+          "type": "tab",
           "settings": {
-            "icon": "picto-happy",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#f5e9dc",
-            "icon_color": ""
+            "title": "How loud is Dovie?",
+            "content": "<p>Dovie blasts at <strong>130 decibels</strong>. Loud enough to shock, scare, and get attention fast.</p>",
+            "page": ""
           }
         },
-        "heading_e3z4X9": {
-          "type": "heading",
+        "tab_M33Dcj": {
+          "type": "tab",
           "settings": {
-            "text": "Why Wake Loop?",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
+            "title": "How do I turn it off after pulling the pin?",
+            "content": "<p>Simple — just put the pin back in. The alarm stops immediately and is ready to use again.</p>",
+            "page": ""
           }
         },
-        "richtext_tjQxGg": {
-          "type": "richtext",
+        "tab_4HPQ7K": {
+          "type": "tab",
           "settings": {
-            "content": "<p><br/>Snoozers lose. We’re building the most effective alarm you’ll never hear — a silent, vibrating wearable that helps people wake up calm, on time, and in control. If you love shipping clean, thoughtful tech that actually improves mornings, you’ll feel at home here.<br/><br/></p>"
+            "title": "Is the battery replaceable?",
+            "content": "<p>No need — Dovie is <strong>USB-rechargeable</strong>. One charge gives you months of standby power.</p>",
+            "page": ""
           }
         },
-        "icon_UR8FiJ": {
-          "type": "icon",
+        "tab_3Mi8hq": {
+          "type": "tab",
           "settings": {
-            "icon": "picto-star",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#f5e9dc",
-            "icon_color": ""
+            "title": "Can it go off by accident in my bag?",
+            "content": "<p>No. The pin is secure, so it only activates if you pull it out on purpose.</p>",
+            "page": ""
           }
         },
-        "heading_he9Ygn": {
-          "type": "heading",
+        "tab_XMLetJ": {
+          "type": "tab",
           "settings": {
-            "text": "Our Mission",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_bQBytm": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p><br/>Help people start strong. Every day. We turn noisy, stressful wake‑ups into calm, reliable mornings — so students, founders, shift‑workers, partners, and high performers can show up on time and at their best<br/><br/></p>"
-          }
-        },
-        "icon_QPVrhJ": {
-          "type": "icon",
-          "settings": {
-            "icon": "picto-building",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#f5e9dc",
-            "icon_color": ""
-          }
-        },
-        "heading_RWigCT": {
-          "type": "heading",
-          "settings": {
-            "text": "What We Build",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_cB4acJ": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>The Loop is a <strong>minimal, modern</strong> wrist‑worn silent alarm: a <strong>vibrating wearable</strong> designed for deep sleepers and anyone who’s done with blaring phones and failed alarms. It wakes you — not the room. Think focus, discipline, and sleep tech that just works. </p><p></p>"
-          }
-        },
-        "icon_a9yMhN": {
-          "type": "icon",
-          "settings": {
-            "icon": "picto-love",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#f5e9dc",
-            "icon_color": ""
-          }
-        },
-        "heading_dmB6WN": {
-          "type": "heading",
-          "settings": {
-            "text": "What We Value",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_4wE6fR": {
-          "type": "richtext",
-          "settings": {
-            "content": "<ul><li>Own the outcome, every morning.<br/></li><li>Cut the clutter, ship what matters.<br/></li><li>Progress daily, no snooze mindset.<br/></li><li>Wake one person, not the whole room.<br/></li></ul><p></p><p></p><p></p><p></p><p></p><p></p>"
-          }
-        },
-        "icon_jbeTaU": {
-          "type": "icon",
-          "settings": {
-            "icon": "picto-happy",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#f5e9dc",
-            "icon_color": ""
-          }
-        },
-        "richtext_CiN6Dc": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h2>Life at Wake Loop</h2><p>We’re a small, sharp team. You’ll get autonomy, clear goals, and the chance to ship work that reaches people fast. Our customers aren’t just buying a gadget — they’re changing their mornings, and you’ll be part of that transformation.</p><p><strong>What you can expect:</strong></p><ul><li>Remote-friendly setup with<strong> flexible hours</strong></li><li><strong>Gear & tools</strong> to do your best work</li><li>Room <strong>to grow</strong> and learn fast</li><li><strong>Fair pay</strong> with <strong>performance </strong>upside<br/><br/><br/><br/></li></ul><p></p>"
-          }
-        },
-        "icon_PJzgQ3": {
-          "type": "icon",
-          "settings": {
-            "icon": "picto-validation",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#f5e9dc",
-            "icon_color": ""
-          }
-        },
-        "heading_XrzBLq": {
-          "type": "heading",
-          "settings": {
-            "text": "Open Roles:",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_VUQDiQ": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h2></h2><ul><li><strong>Marketing & Growth Specialist</strong></li></ul><p>Scale campaigns, test creatives, and drive efficient growth across social and search.<br/></p><ul><li><strong>Customer support specialist</strong></li></ul><p>Be the calm, helpful voice for our users and turn questions into loyalty.<br/></p><ul><li><strong>Firmware / Hardware Engineer<br/></strong>Build reliable, low-power wearable tech that never misses a morning.<br/></li></ul><p><em><strong>(Don’t see your role? Pitch us anyway. We hire talent, not only titles.)</strong></em></p><p></p><p></p>"
-          }
-        },
-        "icon_dwgVdq": {
-          "type": "icon",
-          "settings": {
-            "icon": "picto-secure-profile",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#f5e9dc",
-            "icon_color": ""
-          }
-        },
-        "richtext_VwzwNb": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h2>How we hire:</h2><p>1. Apply with CV/LinkedIn + short note</p><p>2. Quick intro call</p><p>3. Small practical task</p><p>4. Meet the team</p><p>5. Clear offer</p><p></p><p></p><p></p>"
-          }
-        },
-        "icon_hB3Hm7": {
-          "type": "icon",
-          "settings": {
-            "icon": "picto-send",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#f5e9dc",
-            "icon_color": ""
-          }
-        },
-        "richtext_W7DHnr": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h2>Ready to join?</h2><p>Bring your craft. Bring your discipline.<br/><br/><strong>Let’s build calmer, stronger mornings — together.</strong></p><p>👉 Apply now at <strong>careers@wakeloop.com</strong></p>"
+            "title": "What’s your return policy?",
+            "content": "<p>We offer a 60-day money-back guarantee. If Dovie isn’t right for you, return it—no questions asked. Plus, you’re covered with our lifetime warranty.</p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "icon_aeJdab",
-        "heading_e3z4X9",
-        "richtext_tjQxGg",
-        "icon_UR8FiJ",
-        "heading_he9Ygn",
-        "richtext_bQBytm",
-        "icon_QPVrhJ",
-        "heading_RWigCT",
-        "richtext_cB4acJ",
-        "icon_a9yMhN",
-        "heading_dmB6WN",
-        "richtext_4wE6fR",
-        "icon_jbeTaU",
-        "richtext_CiN6Dc",
-        "icon_PJzgQ3",
-        "heading_XrzBLq",
-        "richtext_VUQDiQ",
-        "icon_dwgVdq",
-        "richtext_VwzwNb",
-        "icon_hB3Hm7",
-        "richtext_W7DHnr"
+        "tab_fBbwEd",
+        "tab_M33Dcj",
+        "tab_4HPQ7K",
+        "tab_3Mi8hq",
+        "tab_XMLetJ"
       ],
-      "name": "Rich text",
+      "name": "Tabs",
       "settings": {
         "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
+        "content_size": "medium",
+        "subheading": "",
+        "title": "Frequently Asked Questions",
+        "first_tab_open": false,
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     }
   },
   "order": [
     "main",
-    "rich_text_wHyEFr"
+    "tabs_bEbeqm"
   ]
 }
