@@ -62,88 +62,27 @@
     "collection-list": {
       "type": "collection-list",
       "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "wristbands",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h3",
-            "text_position": "place-self-start-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "glasses",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h3",
-            "text_position": "place-self-start-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_PmF6Gp": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "SLEEP MASKS",
-            "url": "shopify://collections/sleep-masks",
-            "heading_tag": "h3",
-            "text_position": "place-self-start-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "gift-sets",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h3",
-            "text_position": "place-self-start-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "collection_eQGEAF": {
           "type": "collection",
-          "disabled": true,
           "settings": {
-            "collection": "accesoires",
+            "collection": "personal-safety-alarms",
             "subheading": "",
             "title": "",
             "url": "shopify://collections/accesoires",
             "heading_tag": "h3",
-            "text_position": "place-self-start-center text-center",
-            "text_color": "#ffffff",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection_PmF6Gp",
-        "collection-3",
         "collection_eQGEAF"
       ],
       "settings": {
         "full_width": true,
-        "stack_collections": false,
+        "stack_collections": true,
         "collections_per_row": 3,
         "show_progress_bar": false,
         "subheading": "",
