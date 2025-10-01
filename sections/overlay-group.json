@@ -39,11 +39,7 @@
         "show_view_cart_button": false,
         "show_checkout_button": true,
         "recommendations_title": "Customers Also Bought",
-        "products": [
-          "uv-glasses",
-          "wake-loop-power-adapter",
-          "the-case"
-        ],
+        "products": [],
         "product_card_background": "#f2f2f2",
         "product_card_text_color": ""
       }
