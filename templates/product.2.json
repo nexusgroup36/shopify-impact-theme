@@ -523,14 +523,7 @@
         "video_ptn4Rm": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "modal_heading": "<h4>Modal Heading</h4>",
-            "modal_text": "<p>Modal Text</p>"
-          }
-        },
-        "video_DMKEbr": {
-          "type": "video",
-          "settings": {
+            "video": "shopify://files/videos/1001(3).mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "modal_heading": "<h4>Modal Heading</h4>",
             "modal_text": "<p>Modal Text</p>"
@@ -539,22 +532,16 @@
         "video_hmdVWJ": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/1001(1).mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "modal_heading": "<h4>Modal Heading</h4>",
             "modal_text": "<p>Modal Text</p>"
           }
         },
-        "video_p4ykQ8": {
+        "video_DMKEbr": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "modal_heading": "<h4>Modal Heading</h4>",
-            "modal_text": "<p>Modal Text</p>"
-          }
-        },
-        "video_z6QkWw": {
-          "type": "video",
-          "settings": {
+            "video": "shopify://files/videos/1001.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "modal_heading": "<h4>Modal Heading</h4>",
             "modal_text": "<p>Modal Text</p>"
@@ -563,16 +550,14 @@
       },
       "block_order": [
         "video_ptn4Rm",
-        "video_DMKEbr",
         "video_hmdVWJ",
-        "video_p4ykQ8",
-        "video_z6QkWw"
+        "video_DMKEbr"
       ],
       "name": "SS - Product Videos",
       "settings": {
         "videos_position": "above_description",
         "use_metafield": false,
-        "heading": "<h2>WHAT OUR FELLOWS SAY</h2>",
+        "heading": "<h2>WHAT THEY SAY</h2>",
         "heading_custom": false,
         "heading_font": "josefin_sans_n4",
         "heading_size": 18,
