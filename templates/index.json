@@ -295,7 +295,7 @@
       "name": "Wake Loop Reviews",
       "settings": {
         "title": "What our customers say",
-        "marquee_speed": 4
+        "marquee_speed": 2
       }
     }
   },
