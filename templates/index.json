@@ -228,7 +228,7 @@
       "name": "Bundle Card",
       "settings": {
         "top_label": "Dr. Odoro's Bundle",
-        "bg_color": "#f2f2f2",
+        "bg_color": "#2e3a29",
         "card_bg": "#ffffff",
         "text_color": "#2a2220",
         "muted_color": "#000000",
