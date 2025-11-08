@@ -83,6 +83,7 @@
         "stat_jLaRQn": {
           "type": "stat",
           "settings": {
+            "icon": "shopify://shop_images/shoes-9-svgrepo-com_1.svg",
             "stat": "500000",
             "label": "Shoes saved from odor"
           }
@@ -90,6 +91,7 @@
         "stat_DLGqax": {
           "type": "stat",
           "settings": {
+            "icon": "shopify://shop_images/clock-circle-svgrepo-com.svg",
             "stat": "180000",
             "label": "Hours of freshness restored"
           }
@@ -97,6 +99,7 @@
         "stat_rLVeQn": {
           "type": "stat",
           "settings": {
+            "icon": "shopify://shop_images/eco-friendly-svgrepo-com_1.svg",
             "stat": "220000",
             "label": "Plastic spray bottles avoided"
           }
