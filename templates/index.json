@@ -12,6 +12,19 @@
     "image_with_text_overlay_fMmVLy": {
       "type": "image-with-text-overlay",
       "blocks": {
+        "heading_RRh9yL": {
+          "type": "heading",
+          "settings": {
+            "text": "Fresh shoes. Clear mind. Total confidence.",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_KyP3zd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Keep every step odor-free with natural, long-lasting freshness; no sprays, no gimmicks, just science that works.</p>"
+          }
+        },
         "button_HGVmHk": {
           "type": "button",
           "settings": {
@@ -25,6 +38,8 @@
         }
       },
       "block_order": [
+        "heading_RRh9yL",
+        "richtext_KyP3zd",
         "button_HGVmHk"
       ],
       "name": "Image with text overlay",
