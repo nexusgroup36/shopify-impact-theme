@@ -1,11 +1,22 @@
 {% comment %}
 Wake Loop Reviews section
 - Desktop: infinite smooth ticker
-- Mobile: jump every 3s, swipeable, pauses on tap
-- No progressbar or scrollbar
+- Mobile: snap + swipe; auto-steps every 3s; pauses on interaction
+- Mobile also shows a horizontal scroll indicator under the cards
 {% endcomment %}
 
-<section id="reviews-{{ section.id }}" class="reviews-section" data-speed="{{ section.settings.marquee_speed }}">
+<section id="reviews-{{ section.id }}" class="reviews-section"
+  data-speed="{{ section.settings.marquee_speed }}"
+  style="
+    --bg: {{ section.settings.bg_color }};
+    --text: {{ section.settings.text_color }};
+    --card:#fff;
+    --border:#e8e8e8;
+    --shadow:0 6px 22px rgba(0,0,0,.08);
+    --gold:#FFC107;
+    --slider-track: {{ section.settings.slider_track }};
+    --slider-thumb: {{ section.settings.slider_thumb }};
+  ">
   <div class="section">
     {% if section.settings.title != blank %}
       <div class="header">
@@ -49,50 +60,54 @@ Wake Loop Reviews section
         {% endfor %}
       </div>
     </div>
+
+    <!-- Mobile scroll indicator -->
+    <div class="slider-indicator" aria-hidden="true">
+      <div class="slider-thumb"></div>
+    </div>
   </div>
 </section>
 
 <style>
-  #reviews-{{ section.id }}{--card:#fff;--border:#e8e8e8;--shadow:0 6px 22px rgba(0,0,0,.08);--gold:#FFC107}
-  #reviews-{{ section.id }} *{box-sizing:border-box}
-  #reviews-{{ section.id }} .section{max-width:1200px;margin:40px auto;padding:0 16px}
-  #reviews-{{ section.id }} .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-  #reviews-{{ section.id }} .title{font-size:clamp(20px,3vw,28px);font-weight:700;margin:0}
-  #reviews-{{ section.id }} .viewport{overflow:hidden;position:relative}
-  #reviews-{{ section.id }} .track{display:flex;gap:16px;will-change:transform}
-  #reviews-{{ section.id }} .card{flex:0 0 min(85vw,360px);background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
-  #reviews-{{ section.id }} .media{aspect-ratio:4/3;background:#0f0f10}
-  #reviews-{{ section.id }} .media img{width:100%;height:100%;object-fit:cover}
-  #reviews-{{ section.id }} .content{padding:16px}
-  #reviews-{{ section.id }} .user_row{display:flex;align-items:center;gap:10px}
-  #reviews-{{ section.id }} .avatar{width:28px;height:28px;border-radius:50%;background:#edf2f7;display:grid;place-items:center;font-weight:600;color:#999}
-  #reviews-{{ section.id }} .avatar-img{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid #eee}
-  #reviews-{{ section.id }} .name{font-weight:600}
-  #reviews-{{ section.id }} .stars{display:flex;gap:2px;margin:4px 0}
-  #reviews-{{ section.id }} .stars .star{width:16px;height:16px;fill:#e5e7eb}
-  #reviews-{{ section.id }} .stars .star.fill{fill:var(--gold)}
-  #reviews-{{ section.id }} .review{margin-top:8px;color:#666;line-height:1.5}
+  #reviews-{{ section.id }}{ background:var(--bg); color:var(--text); }
+  #reviews-{{ section.id }} *{ box-sizing:border-box }
+
+  #reviews-{{ section.id }} .section{ max-width:1200px; margin:40px auto; padding:0 16px }
+  #reviews-{{ section.id }} .header{ display:flex; align-items:center; justify-content:space-between; margin-bottom:12px }
+  #reviews-{{ section.id }} .title{ font-size:clamp(20px,3vw,28px); font-weight:700; margin:0; color:var(--text) }
+
+  #reviews-{{ section.id }} .viewport{ overflow:hidden; position:relative; margin-bottom:10px }
+  #reviews-{{ section.id }} .track{ display:flex; gap:16px; will-change:transform }
+
+  #reviews-{{ section.id }} .card{ flex:0 0 min(85vw,360px); background:var(--card); border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow); overflow:hidden; display:flex; flex-direction:column; color:var(--text) }
+  #reviews-{{ section.id }} .media{ aspect-ratio:4/3; background:#0f0f10 }
+  #reviews-{{ section.id }} .media img{ width:100%; height:100%; object-fit:cover }
+
+  #reviews-{{ section.id }} .content{ padding:16px }
+  #reviews-{{ section.id }} .user_row{ display:flex; align-items:center; gap:10px }
+  #reviews-{{ section.id }} .avatar{ width:28px; height:28px; border-radius:50%; background:#edf2f7; display:grid; place-items:center; font-weight:600; color:var(--text) }
+  #reviews-{{ section.id }} .avatar-img{ width:28px; height:28px; border-radius:50%; object-fit:cover; border:1px solid #eee }
+  #reviews-{{ section.id }} .name{ font-weight:600; color:var(--text) }
+
+  #reviews-{{ section.id }} .stars{ display:flex; gap:2px; margin:4px 0 }
+  #reviews-{{ section.id }} .stars .star{ width:16px; height:16px; fill:#e5e7eb }
+  #reviews-{{ section.id }} .stars .star.fill{ fill:var(--gold) }
+
+  #reviews-{{ section.id }} .review{ margin-top:8px; color: color-mix(in oklab, var(--text) 70%, transparent); line-height:1.5 }
 
   /* Mobile: snap, swipe, no scrollbar */
   @media (max-width:767px){
-    #reviews-{{ section.id }} .viewport{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-    #reviews-{{ section.id }} .viewport::-webkit-scrollbar{display:none}
-    #reviews-{{ section.id }} .card{scroll-snap-align:center}
+    #reviews-{{ section.id }} .viewport{ overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; scrollbar-width:none }
+    #reviews-{{ section.id }} .viewport::-webkit-scrollbar{ display:none }
+    #reviews-{{ section.id }} .card{ scroll-snap-align:center }
   }
-  /* Make all review text black */
-#reviews-{{ section.id }}{
-  color:#000;                       /* default text color inside section */
-}
-#reviews-{{ section.id }} .title,
-#reviews-{{ section.id }} .name,
-#reviews-{{ section.id }} .review{
-  color:#000 !important;            /* force black for these elements */
-}
-/* (optional) avatar initial letter to black too */
-#reviews-{{ section.id }} .avatar{
-  color:#000 !important;
-}
 
+  /* Scroll indicator (mobile only) */
+  #reviews-{{ section.id }} .slider-indicator{ display:none; height:6px; background:var(--slider-track); border-radius:999px; overflow:hidden }
+  #reviews-{{ section.id }} .slider-indicator .slider-thumb{ height:100%; width:25%; background:var(--slider-thumb); border-radius:inherit; transform:translateX(0) }
+  @media (max-width:767px){
+    #reviews-{{ section.id }} .slider-indicator{ display:block }
+  }
 </style>
 
 {% javascript %}
@@ -100,14 +115,32 @@ Wake Loop Reviews section
   function initSection(section){
     const viewport = section.querySelector('.viewport');
     const track = section.querySelector('.track');
+    const indicator = section.querySelector('.slider-indicator');
+    const thumb = section.querySelector('.slider-thumb');
     if(!viewport || !track) return;
 
     let mode = null, rafId, offset = 0, running = false, timer;
+
     const speedSetting = Number(section.dataset.speed || 4);
     const desktopSpeed = 0.5 + speedSetting * 0.25;
 
+    // sync slider thumb (mobile)
+    function updateThumb(){
+      if(!indicator || !thumb) return;
+      const total = track.scrollWidth;
+      const view = viewport.clientWidth;
+      const maxScroll = Math.max(total - view, 1);
+      const widthPct = Math.max(Math.min((view / total) * 100, 100), 10); // min width guard
+      const ratio = Math.max(Math.min(viewport.scrollLeft / maxScroll, 1), 0);
+      const translatePct = (100 - widthPct) * ratio;
+
+      thumb.style.width = widthPct + '%';
+      thumb.style.transform = 'translateX(' + translatePct + '%)';
+    }
+
     // Desktop: continuous ticker (clone once)
     function startDesktop(){
+      if(indicator) indicator.style.display = 'none';
       cancelAnimationFrame(rafId);
       running = true;
       const originals = Array.from(track.children);
@@ -128,8 +161,9 @@ Wake Loop Reviews section
       tick();
     }
 
-    // Mobile: step every 3s, pause on touch/scroll
+    // Mobile: step every 3s, pause on touch/scroll, show indicator
     function startMobile(){
+      if(indicator) indicator.style.display = 'block';
       cancelAnimationFrame(rafId);
       track.style.transform = 'translate3d(0,0,0)';
       const step = ()=> (track.children[0]?.getBoundingClientRect().width || 300) + 16;
@@ -159,8 +193,10 @@ Wake Loop Reviews section
 
       viewport.addEventListener('touchstart', pauseTemp, { passive:true });
       viewport.addEventListener('mousedown', pauseTemp);
-      viewport.addEventListener('scroll', pauseTemp, { passive:true });
+      viewport.addEventListener('scroll', function(){ pauseTemp(); updateThumb(); }, { passive:true });
 
+      // initial thumb position
+      updateThumb();
       startTimer();
     }
 
@@ -171,10 +207,12 @@ Wake Loop Reviews section
         running = false;
         cancelAnimationFrame(rafId);
         startMobile();
+        window.addEventListener('resize', updateThumb);
       } else if(!isMobile && mode !== 'desktop'){
         mode = 'desktop';
         clearInterval(timer);
         startDesktop();
+        window.removeEventListener('resize', updateThumb);
       }
     }
 
@@ -193,7 +231,12 @@ Wake Loop Reviews section
   "name": "Wake Loop Reviews",
   "settings": [
     { "type": "text", "id": "title", "label": "Title", "default": "What our customers say" },
-    { "type": "range", "id": "marquee_speed", "label": "Loop speed", "min": 1, "max": 10, "step": 1, "default": 4 }
+    { "type": "range", "id": "marquee_speed", "label": "Loop speed", "min": 1, "max": 10, "step": 1, "default": 4 },
+
+    { "type": "color", "id": "bg_color", "label": "Background color", "default": "#FFFFFF" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#1A1A1A" },
+    { "type": "color", "id": "slider_track", "label": "Slider track color (mobile)", "default": "#E9E9E9" },
+    { "type": "color", "id": "slider_thumb", "label": "Slider thumb color (mobile)", "default": "#BDBDBD" }
   ],
   "blocks": [
     {
