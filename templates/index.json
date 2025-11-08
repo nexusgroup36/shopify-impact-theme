@@ -157,6 +157,65 @@
         "heading_gradient": ""
       }
     },
+    "how_we_help_NrU4qk": {
+      "type": "how-we-help",
+      "blocks": {
+        "tab_gGgznx": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Shower",
+            "content_title": "Better Water, Better Skin & Hair",
+            "bullets": "Removes chlorine, limescale, and metals | before they touch your skin.\nKeeps your skin barrier calm | irritation fades and softness lasts.\nSeals hair cuticles | for smoother texture and lasting shine.",
+            "cta_label": "Learn More",
+            "cta_link": ""
+          }
+        },
+        "tab_mJrVxK": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Sleep",
+            "content_title": "Better Water, Better Skin & Hair",
+            "bullets": "",
+            "cta_label": "Learn More",
+            "cta_link": ""
+          }
+        },
+        "tab_QhPczY": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Home",
+            "content_title": "Better Water, Better Skin & Hair",
+            "bullets": "Removes chlorine, limescale, and metals | before they touch your skin.\nKeeps your skin barrier calm | irritation fades and softness lasts.\nSeals hair cuticles | for smoother texture and lasting shine.",
+            "cta_label": "Learn More",
+            "cta_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_gGgznx",
+        "tab_mJrVxK",
+        "tab_QhPczY"
+      ],
+      "name": "How We Help",
+      "settings": {
+        "heading": "How We Help",
+        "subheading": "We fix the hidden causes behind odor, moisture, and shoe frustration, so your life (and your shoes) finally feel fresh again.",
+        "bg_color": "#FFFFFF",
+        "text_color": "#1C1C1C",
+        "title_size": 36,
+        "subtitle_size": 16,
+        "content_title_size": 20,
+        "bullet_size": 16,
+        "chip_border": "#E5E5E5",
+        "chip_active_bg": "#F2F2F2",
+        "chip_active_text": "#1C1C1C",
+        "chip_radius": 20,
+        "image_ratio": "16-9",
+        "image_radius": 16,
+        "pad_top": 48,
+        "pad_bottom": 48
+      }
+    },
     "image_with_text_overlay_UzJREJ": {
       "type": "image-with-text-overlay",
       "name": "Image with text overlay",
@@ -337,65 +396,6 @@
         "button_background": "",
         "button_text_color": ""
       }
-    },
-    "how_we_help_NrU4qk": {
-      "type": "how-we-help",
-      "blocks": {
-        "tab_gGgznx": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Shower",
-            "content_title": "Better Water, Better Skin & Hair",
-            "bullets": "Removes chlorine, limescale, and metals | before they touch your skin.\nKeeps your skin barrier calm | irritation fades and softness lasts.\nSeals hair cuticles | for smoother texture and lasting shine.",
-            "cta_label": "Learn More",
-            "cta_link": ""
-          }
-        },
-        "tab_mJrVxK": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Sleep",
-            "content_title": "Better Water, Better Skin & Hair",
-            "bullets": "",
-            "cta_label": "Learn More",
-            "cta_link": ""
-          }
-        },
-        "tab_QhPczY": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Home",
-            "content_title": "Better Water, Better Skin & Hair",
-            "bullets": "Removes chlorine, limescale, and metals | before they touch your skin.\nKeeps your skin barrier calm | irritation fades and softness lasts.\nSeals hair cuticles | for smoother texture and lasting shine.",
-            "cta_label": "Learn More",
-            "cta_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "tab_gGgznx",
-        "tab_mJrVxK",
-        "tab_QhPczY"
-      ],
-      "name": "How We Help",
-      "settings": {
-        "heading": "How We Help",
-        "subheading": "We fix the hidden causes behind skin, sleep, and home frustrations—so your routines feel effortless.",
-        "bg_color": "#FFFFFF",
-        "text_color": "#1C1C1C",
-        "title_size": 36,
-        "subtitle_size": 16,
-        "content_title_size": 20,
-        "bullet_size": 16,
-        "chip_border": "#E5E5E5",
-        "chip_active_bg": "#F2F2F2",
-        "chip_active_text": "#1C1C1C",
-        "chip_radius": 20,
-        "image_ratio": "16-9",
-        "image_radius": 16,
-        "pad_top": 48,
-        "pad_bottom": 48
-      }
     }
   },
   "order": [
@@ -403,12 +403,12 @@
     "custom_liquid_MzYDnf",
     "stats_iCRNxx",
     "collection-list",
+    "how_we_help_NrU4qk",
     "image_with_text_overlay_UzJREJ",
     "media_with_text_d4wjgz",
     "rich_text_zzxNDE",
     "press_iGngpA",
     "1747880975c3c59209",
-    "newsletter_7HcfaX",
-    "how_we_help_NrU4qk"
+    "newsletter_7HcfaX"
   ]
 }
