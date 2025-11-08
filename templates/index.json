@@ -64,6 +64,19 @@
         "overlay_opacity": 20
       }
     },
+    "custom_liquid_MzYDnf": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "stats_iCRNxx": {
       "type": "stats",
       "blocks": {
@@ -325,6 +338,7 @@
   },
   "order": [
     "image_with_text_overlay_fMmVLy",
+    "custom_liquid_MzYDnf",
     "stats_iCRNxx",
     "collection-list",
     "image_with_text_overlay_UzJREJ",
