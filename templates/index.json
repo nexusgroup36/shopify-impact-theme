@@ -258,6 +258,119 @@
         "p2_compare_at": "€76,00",
         "p2_desc": "Made for your closet: removes trapped air odors, absorbs excess moisture, and keeps your closets and rooms naturally fresh 24/7."
       }
+    },
+    "movement_jmqx3g": {
+      "type": "movement",
+      "blocks": {
+        "stat_E8TMKR": {
+          "type": "stat",
+          "settings": {
+            "number": "22482",
+            "caption": "people joined"
+          }
+        },
+        "stat_PnzdPt": {
+          "type": "stat",
+          "settings": {
+            "number": "436",
+            "caption": "experience stories"
+          }
+        },
+        "stat_EQwdRw": {
+          "type": "stat",
+          "settings": {
+            "number": "365",
+            "caption": "days active"
+          }
+        },
+        "avatar_fjjkRi": {
+          "type": "avatar",
+          "settings": {}
+        },
+        "avatar_d4BDmk": {
+          "type": "avatar",
+          "settings": {}
+        },
+        "avatar_aLFyRF": {
+          "type": "avatar",
+          "settings": {}
+        },
+        "avatar_YBmhJV": {
+          "type": "avatar",
+          "settings": {}
+        },
+        "avatar_TrjPdB": {
+          "type": "avatar",
+          "settings": {}
+        },
+        "testimonial_4w84F6": {
+          "type": "testimonial",
+          "settings": {
+            "meta_top": "2 weeks in the community",
+            "name": "Amelia • 24 years old",
+            "recognition": "flat at the roots",
+            "quote": "my hair’s super fine + always flat at the roots. after like 3 washes this gave a tiny lift without making it crunchy. minty but not harsh.",
+            "outcome": "roots look less flat, day-2 feels lighter."
+          }
+        },
+        "testimonial_ztNckf": {
+          "type": "testimonial",
+          "settings": {
+            "meta_top": "2 weeks in the community",
+            "name": "Amelia • 24 years old",
+            "recognition": "flat at the roots",
+            "quote": "my hair’s super fine + always flat at the roots. after like 3 washes this gave a tiny lift without making it crunchy. minty but not harsh.",
+            "outcome": "roots look less flat, day-2 feels lighter."
+          }
+        },
+        "testimonial_xz9rMD": {
+          "type": "testimonial",
+          "settings": {
+            "meta_top": "2 weeks in the community",
+            "name": "Amelia • 24 years old",
+            "recognition": "flat at the roots",
+            "quote": "my hair’s super fine + always flat at the roots. after like 3 washes this gave a tiny lift without making it crunchy. minty but not harsh.",
+            "outcome": "roots look less flat, day-2 feels lighter."
+          }
+        }
+      },
+      "block_order": [
+        "stat_E8TMKR",
+        "stat_PnzdPt",
+        "stat_EQwdRw",
+        "avatar_fjjkRi",
+        "avatar_d4BDmk",
+        "avatar_aLFyRF",
+        "avatar_YBmhJV",
+        "avatar_TrjPdB",
+        "testimonial_4w84F6",
+        "testimonial_ztNckf",
+        "testimonial_xz9rMD"
+      ],
+      "name": "Movement",
+      "settings": {
+        "kicker": "SOLVE IT TOGETHER",
+        "title": "The Mommys Homes Movement",
+        "subtitle": "We bring together real experiences around everyday hair and skin struggles (like flat hair, sensitive scalp, delicate or dry skin) and share what truly helps — without empty claims.",
+        "chips": "Flat hair\nSensitive scalp\nDelicate skin\nDry skin\nLack of shine\nScalp buildup",
+        "bg": "#F7EFE8",
+        "text": "#201A17",
+        "muted": "#8E8178",
+        "card": "#FFFFFF",
+        "chip_bg": "#F5F1EC",
+        "chip_border": "#E7E0D9",
+        "primary": "#000000",
+        "radius": 18,
+        "h1": 52,
+        "h2": 18,
+        "body": 14,
+        "stat": 32,
+        "stat_sub": 13,
+        "autoplay": false,
+        "autoplay_ms": 4000,
+        "pad_top": 56,
+        "pad_bottom": 56
+      }
     }
   },
   "order": [
@@ -266,6 +379,7 @@
     "stats_iCRNxx",
     "collection-list",
     "how_we_help_NrU4qk",
-    "bundle_card_V7CgHe"
+    "bundle_card_V7CgHe",
+    "movement_jmqx3g"
   ]
 }
