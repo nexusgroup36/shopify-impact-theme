@@ -239,7 +239,7 @@
         "body_size": 14,
         "btn_radius": 24,
         "bundle_title": "The Ultimate Freshness Bundle",
-        "bundle_price": "€79,99",
+        "bundle_price": "$35,94",
         "bundle_compare_at": "",
         "stars": 5,
         "review_count": "18274",
@@ -254,8 +254,8 @@
         "p1_desc": "Removes 99% of odor and moisture, restores lasting freshness, and keeps your shoes clean, dry, and ready for anything.",
         "p2_image": "shopify://shop_images/TERRAIFOURAS_7eaa3595-3495-49b2-ad2d-f4e09c15273e.png",
         "p2_title": "The Closet Fresh Bag",
-        "p2_price": "€15,99",
-        "p2_compare_at": "€76,00",
+        "p2_price": "$15,99",
+        "p2_compare_at": "",
         "p2_desc": "Made for your closet: removes trapped air odors, absorbs excess moisture, and keeps your closets and rooms naturally fresh 24/7."
       }
     },
