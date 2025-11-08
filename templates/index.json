@@ -223,6 +223,40 @@
         "pad_bottom": 48
       }
     },
+    "bundle_card_V7CgHe": {
+      "type": "bundle-card",
+      "name": "Bundle Card",
+      "settings": {
+        "top_label": "Shower Bundle",
+        "bg_color": "#F5F2EE",
+        "card_bg": "#FFFFFF",
+        "text_color": "#2A2220",
+        "muted_color": "#8A7E78",
+        "accent_color": "#E9DFD6",
+        "radius": 18,
+        "title_size": 20,
+        "price_size": 18,
+        "body_size": 14,
+        "btn_radius": 24,
+        "bundle_title": "Shower Filter Bundle 2.0",
+        "bundle_price": "€79,99",
+        "bundle_compare_at": "",
+        "stars": 5,
+        "review_count": "18274",
+        "bundle_description": "<p>Write a short description of the bundle contents and benefits.</p>",
+        "bundle_product": "the-neutralizer",
+        "view_label": "View Bundle",
+        "get_label": "Get This Bundle",
+        "p1_title": "Shower Head",
+        "p1_price": "€112,00",
+        "p1_compare_at": "",
+        "p1_desc": "Removes 90% of chlorine & metals, doubles water pressure, and gives instantly softer skin & hair.",
+        "p2_title": "Pure Cotton Towel",
+        "p2_price": "€15,99",
+        "p2_compare_at": "€76,00",
+        "p2_desc": "100% cotton, ultra-soft and highly absorbent for the perfect post-shower comfort."
+      }
+    },
     "image_with_text_overlay_UzJREJ": {
       "type": "image-with-text-overlay",
       "name": "Image with text overlay",
@@ -411,6 +445,7 @@
     "stats_iCRNxx",
     "collection-list",
     "how_we_help_NrU4qk",
+    "bundle_card_V7CgHe",
     "image_with_text_overlay_UzJREJ",
     "media_with_text_d4wjgz",
     "rich_text_zzxNDE",
