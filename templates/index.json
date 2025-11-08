@@ -385,6 +385,74 @@
         "pad_top": 80,
         "pad_bottom": 80
       }
+    },
+    "experts_DhVnW6": {
+      "type": "experts",
+      "blocks": {
+        "expert_NQ7PXJ": {
+          "type": "expert",
+          "settings": {
+            "name": "Dr. Elena Marquez",
+            "role": "Hydration & Dermatology Expert",
+            "quote": "Removing chlorine and hard minerals from your daily water reduces skin dryness, irritation, and helps preserve natural hydration.",
+            "text": "Dr. Elena shares medical insight on how water quality impacts skin and overall wellness — and why filtered water plays a key role in protecting your skin barrier and hair health.",
+            "cta_label": "Shop Shower",
+            "cta_link": ""
+          }
+        },
+        "expert_KjNcw6": {
+          "type": "expert",
+          "settings": {
+            "name": "Dr. Elena Marquez",
+            "role": "Hydration & Dermatology Expert",
+            "quote": "Removing chlorine and hard minerals from your daily water reduces skin dryness, irritation, and helps preserve natural hydration.",
+            "text": "Dr. Elena shares medical insight on how water quality impacts skin and overall wellness — and why filtered water plays a key role in protecting your skin barrier and hair health.",
+            "cta_label": "Shop Shower",
+            "cta_link": ""
+          }
+        },
+        "expert_hRGtft": {
+          "type": "expert",
+          "settings": {
+            "name": "Dr. Elena Marquez",
+            "role": "Hydration & Dermatology Expert",
+            "quote": "Removing chlorine and hard minerals from your daily water reduces skin dryness, irritation, and helps preserve natural hydration.",
+            "text": "Dr. Elena shares medical insight on how water quality impacts skin and overall wellness — and why filtered water plays a key role in protecting your skin barrier and hair health.",
+            "cta_label": "Shop Shower",
+            "cta_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "expert_NQ7PXJ",
+        "expert_KjNcw6",
+        "expert_hRGtft"
+      ],
+      "name": "Experts",
+      "settings": {
+        "kicker": "EVIDENCE-INFORMED GUIDANCE",
+        "title": "Expert Insights on Freshness, Comfort & Confidence",
+        "subtitle": "Carefully researched guidance from everyday experts who understand what real-life odor, moisture, and comfort challenges feel like. Educational content only; individual results may vary.",
+        "bg": "#F7F3EE",
+        "text": "#1D1B19",
+        "muted": "#8A8079",
+        "card": "#FFFFFF",
+        "shadow_opacity": 18,
+        "image_ratio": "4-5",
+        "radius": 18,
+        "img_radius": 18,
+        "title_size": 34,
+        "subtitle_size": 14,
+        "name_size": 18,
+        "role_size": 12,
+        "body_size": 14,
+        "button_size": 14,
+        "btn_bg": "#0F0F10",
+        "btn_text": "#FFFFFF",
+        "disclaimer": "Educational information only and not a substitute for professional medical advice. If you have a specific concern, consult your physician.",
+        "pad_top": 48,
+        "pad_bottom": 48
+      }
     }
   },
   "order": [
@@ -395,6 +463,7 @@
     "how_we_help_NrU4qk",
     "bundle_card_V7CgHe",
     "loop_reviews_aVW8Jy",
-    "email_collector_eKreVy"
+    "email_collector_eKreVy",
+    "experts_DhVnW6"
   ]
 }

@@ -134,6 +134,23 @@
     .xp__title{ font-size: clamp(22px, 7vw, var(--h1)); }
     .xp__subtitle{ font-size: clamp(14px, 4vw, var(--h2)); }
   }
+  /* --- Mobile: horizontal scroller instead of stacked --- */
+@media (max-width: 749px){
+  #experts-{{ section.id }} .xp__grid{
+    display:flex !important;
+    gap:16px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:8px;
+  }
+  #experts-{{ section.id }} .xp__grid::-webkit-scrollbar{ display:none; }
+  #experts-{{ section.id }} .xp-card{
+    flex:0 0 82%;            /* visible width of each card */
+    scroll-snap-align:center;
+    min-width:280px;         /* safety for very small screens */
+  }
+}
   {% endstyle %}
 </section>
 
