@@ -395,19 +395,20 @@
             "image": "shopify://shop_images/woman-working-as-doctor_23-2148827830.avif",
             "name": "Dr. Sarah Lopez",
             "role": "Foot-Care & Wellness Specialist",
-            "quote": "“Foot odor isn’t about cleanliness. It’s about moisture. When sweat and synthetic fabrics trap bacteria inside shoes, odor builds up fast. The real fix is removing that moisture before it feeds the smell.”",
+            "quote": "Foot odor isn’t about cleanliness. It’s about moisture. When sweat and synthetic fabrics trap bacteria inside shoes, odor builds up fast. The real fix is removing that moisture before it feeds the smell.",
             "text": "Sarah shares practical insight into how airflow, natural materials, and moisture-absorbing technology like The Neutralizer restore balance and stop odor at the source.",
-            "cta_label": "Shop Shower",
+            "cta_label": "",
             "cta_link": ""
           }
         },
         "expert_KjNcw6": {
           "type": "expert",
           "settings": {
-            "name": "Dr. Elena Marquez",
-            "role": "Hydration & Dermatology Expert",
-            "quote": "Removing chlorine and hard minerals from your daily water reduces skin dryness, irritation, and helps preserve natural hydration.",
-            "text": "Dr. Elena shares medical insight on how water quality impacts skin and overall wellness — and why filtered water plays a key role in protecting your skin barrier and hair health.",
+            "image": "shopify://shop_images/istockphoto-1371009338-612x612.jpg",
+            "name": "Dr. Marcus Reed",
+            "role": "Occupational Health Advisor",
+            "quote": "Workers who spend 10 hours on their feet often end up throwing away perfectly good shoes just because of odor. It’s not the shoe’s fault: it’s trapped sweat and bacteria that never get a chance to dry.",
+            "text": "Marcus explains why proper shoe-care routines and absorbent materials dramatically extend footwear life and prevent odor recurrence.",
             "cta_label": "Shop Shower",
             "cta_link": ""
           }
