@@ -125,7 +125,7 @@
         "collection_eQGEAF": {
           "type": "collection",
           "settings": {
-            "collection": "personal-safety-alarms",
+            "collection": "",
             "subheading": "",
             "title": "",
             "url": "shopify://collections/accesoires",
@@ -135,10 +135,40 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "collection_gGmDFt": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_hLPfqc": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
-        "collection_eQGEAF"
+        "collection_eQGEAF",
+        "collection_gGmDFt",
+        "collection_hLPfqc"
       ],
       "settings": {
         "full_width": true,
