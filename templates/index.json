@@ -227,8 +227,8 @@
       "type": "bundle-card",
       "name": "Bundle Card",
       "settings": {
-        "top_label": "Shower Bundle",
-        "bg_color": "#F5F2EE",
+        "top_label": "Odor Bundle",
+        "bg_color": "#2e3a29",
         "card_bg": "#FFFFFF",
         "text_color": "#2A2220",
         "muted_color": "#8A7E78",
@@ -258,187 +258,6 @@
         "p2_compare_at": "€76,00",
         "p2_desc": "100% cotton, ultra-soft and highly absorbent for the perfect post-shower comfort."
       }
-    },
-    "image_with_text_overlay_UzJREJ": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-end-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "media_with_text_d4wjgz": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_YYKfbf": {
-          "type": "image",
-          "settings": {
-            "media_width": 50,
-            "media_position": "end",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "CONTACT US / FAQ",
-            "content": "<p>Do you have questions about our products, your order or our company in general? Don’t hesitate to contact our customer service.</p><p>We have also gathered answers to some of the most common questions in our FAQ, where you can find help around the clock.</p>",
-            "link_text": "CONTACT US HERE",
-            "link_url": "shopify://pages/contact",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "image_YYKfbf"
-      ],
-      "disabled": true,
-      "name": "Media with text",
-      "settings": {
-        "full_width": true,
-        "spacing": "none"
-      }
-    },
-    "rich_text_zzxNDE": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_9i6LUK": {
-          "type": "heading",
-          "settings": {
-            "text": "OUR MISSION",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_M7eaNn": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h5>At Wake Loop, our mission is to redefine the way people wake up by offering premium, technology-driven sleep solutions that combine elegance, comfort, and innovation. We believe that everyone deserves a peaceful start to their day—without compromise, without noise.</h5>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9i6LUK",
-        "richtext_M7eaNn"
-      ],
-      "disabled": true,
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "press_iGngpA": {
-      "type": "press",
-      "blocks": {
-        "quote_zwM9QU": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "Thomas P. - Verified Customer",
-            "content": "I used to dread waking up early because my alarm would wake up my partner too. Since switching to the Loop One, mornings have become peaceful. It’s comfortable, stylish, and does exactly what it promises. Can’t imagine going back to regular alarms.",
-            "show_rating": true,
-            "rating": 5
-          }
-        },
-        "quote_8dwX4i": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "James R. - Verified Customer",
-            "content": "As a light sleeper and a tech lover, this is hands down the best gadget I’ve bought in years. The silent vibration is strong enough to wake me up but gentle enough that I don’t feel jolted. It looks good and feels premium—100% worth it.",
-            "show_rating": true,
-            "rating": 5
-          }
-        },
-        "quote_PP6qxh": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "Sarah M. - Verified Customer",
-            "content": "Working night shifts, I needed something that wouldn’t disturb my flatmates during the day. The Loop One is perfect. It wakes me up on time, every time, without a sound. Plus, the battery lasts for days.",
-            "show_rating": true,
-            "rating": 4
-          }
-        },
-        "quote_QrhMtk": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "Daniel K. - Verified Customer",
-            "content": "I was skeptical at first, but this little device exceeded my expectations. It’s minimal, effective, and blends seamlessly into my lifestyle. It even helped me establish a better sleep routine. Highly recommend to anyone who values quiet mornings.",
-            "show_rating": true,
-            "rating": 5
-          }
-        }
-      },
-      "block_order": [
-        "quote_zwM9QU",
-        "quote_8dwX4i",
-        "quote_PP6qxh",
-        "quote_QrhMtk"
-      ],
-      "disabled": true,
-      "name": "Press",
-      "settings": {
-        "full_width": false,
-        "content_size": "medium",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "#1a1a1a",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
-    },
-    "1747880975c3c59209": {
-      "type": "apps",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
-    },
-    "newsletter_7HcfaX": {
-      "type": "newsletter",
-      "name": "Newsletter",
-      "settings": {
-        "full_width": true,
-        "show_icon": true,
-        "title": "BECOME A MEMBER OF THE CLUB",
-        "content": "<p>Subscribe to get notified for the first discounts sitewide</p>",
-        "button_text": "JOIN NOW",
-        "subtext": "By completing this form you are signing up to receive our deals & discounts. You can unsubscribe at any time.",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     }
   },
   "order": [
@@ -447,12 +266,6 @@
     "stats_iCRNxx",
     "collection-list",
     "how_we_help_NrU4qk",
-    "bundle_card_V7CgHe",
-    "image_with_text_overlay_UzJREJ",
-    "media_with_text_d4wjgz",
-    "rich_text_zzxNDE",
-    "press_iGngpA",
-    "1747880975c3c59209",
-    "newsletter_7HcfaX"
+    "bundle_card_V7CgHe"
   ]
 }
