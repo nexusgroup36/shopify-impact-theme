@@ -64,6 +64,44 @@
         "overlay_opacity": 20
       }
     },
+    "stats_iCRNxx": {
+      "type": "stats",
+      "blocks": {
+        "stat_jLaRQn": {
+          "type": "stat",
+          "settings": {
+            "stat": "25000",
+            "label": "Shoes saved from odor"
+          }
+        },
+        "stat_DLGqax": {
+          "type": "stat",
+          "settings": {
+            "stat": "180000",
+            "label": "Hours of freshness restored"
+          }
+        },
+        "stat_rLVeQn": {
+          "type": "stat",
+          "settings": {
+            "stat": "220000",
+            "label": "Customers ditched sprays for good"
+          }
+        }
+      },
+      "block_order": [
+        "stat_jLaRQn",
+        "stat_DLGqax",
+        "stat_rLVeQn"
+      ],
+      "name": "Stats",
+      "settings": {
+        "bg_color": "#2e3a29",
+        "icon_size": 40,
+        "number_size": 24,
+        "label_size": 14
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -286,6 +324,7 @@
   },
   "order": [
     "image_with_text_overlay_fMmVLy",
+    "stats_iCRNxx",
     "collection-list",
     "image_with_text_overlay_UzJREJ",
     "media_with_text_d4wjgz",
