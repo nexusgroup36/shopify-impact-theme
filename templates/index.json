@@ -33,12 +33,13 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/TERRA_IFOURAS_1400_x_1750_px_3200_x_1600_px.png",
         "mobile_image": "shopify://shop_images/TERRA_IFOURAS_1400_x_1750_px.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-end-start sm:text-start",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_opacity": 20
       }
     },
     "collection-list": {
