@@ -1,0 +1,215 @@
+{% comment %}
+Wake Loop Reviews section
+- Desktop: infinite smooth ticker
+- Mobile: jump every 3s, swipeable, pauses on tap
+- No progressbar or scrollbar
+{% endcomment %}
+
+<section id="reviews-{{ section.id }}" class="reviews-section" data-speed="{{ section.settings.marquee_speed }}">
+  <div class="section">
+    {% if section.settings.title != blank %}
+      <div class="header">
+        <h2 class="title">{{ section.settings.title }}</h2>
+      </div>
+    {% endif %}
+
+    <div class="viewport">
+      <div class="track">
+        {% for block in section.blocks %}
+          {% assign name = block.settings.name | default: 'Customer' %}
+          {% assign initials = name | split: ' ' %}
+          {% assign first = initials | first | slice: 0 %}
+          <article class="card" {{ block.shopify_attributes }}>
+            <figure class="media">
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ name | escape }} review image" loading="lazy">
+              {% else %}
+                <div class="media-placeholder"></div>
+              {% endif %}
+            </figure>
+            <div class="content">
+              <div class="user_row">
+                {% if block.settings.avatar != blank %}
+                  <img class="avatar-img" src="{{ block.settings.avatar | image_url: width: 64 }}" alt="{{ name | escape }} avatar" loading="lazy" width="28" height="28">
+                {% else %}
+                  <div class="avatar">{{ first | upcase }}</div>
+                {% endif %}
+                <div class="name">{{ name }}</div>
+              </div>
+              <div class="stars">
+                {% for i in (1..5) %}
+                  <svg viewBox="0 0 24 24" class="star {% if i <= block.settings.rating %}fill{% endif %}">
+                    <path d="M12 3l2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 18.8 6.2 20.8l1.1-6.4L2.6 9.8l6.5-.9L12 3z"/>
+                  </svg>
+                {% endfor %}
+              </div>
+              <p class="review">{{ block.settings.review_text }}</p>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #reviews-{{ section.id }}{--card:#fff;--border:#e8e8e8;--shadow:0 6px 22px rgba(0,0,0,.08);--gold:#FFC107}
+  #reviews-{{ section.id }} *{box-sizing:border-box}
+  #reviews-{{ section.id }} .section{max-width:1200px;margin:40px auto;padding:0 16px}
+  #reviews-{{ section.id }} .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  #reviews-{{ section.id }} .title{font-size:clamp(20px,3vw,28px);font-weight:700;margin:0}
+  #reviews-{{ section.id }} .viewport{overflow:hidden;position:relative}
+  #reviews-{{ section.id }} .track{display:flex;gap:16px;will-change:transform}
+  #reviews-{{ section.id }} .card{flex:0 0 min(85vw,360px);background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+  #reviews-{{ section.id }} .media{aspect-ratio:4/3;background:#0f0f10}
+  #reviews-{{ section.id }} .media img{width:100%;height:100%;object-fit:cover}
+  #reviews-{{ section.id }} .content{padding:16px}
+  #reviews-{{ section.id }} .user_row{display:flex;align-items:center;gap:10px}
+  #reviews-{{ section.id }} .avatar{width:28px;height:28px;border-radius:50%;background:#edf2f7;display:grid;place-items:center;font-weight:600;color:#999}
+  #reviews-{{ section.id }} .avatar-img{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid #eee}
+  #reviews-{{ section.id }} .name{font-weight:600}
+  #reviews-{{ section.id }} .stars{display:flex;gap:2px;margin:4px 0}
+  #reviews-{{ section.id }} .stars .star{width:16px;height:16px;fill:#e5e7eb}
+  #reviews-{{ section.id }} .stars .star.fill{fill:var(--gold)}
+  #reviews-{{ section.id }} .review{margin-top:8px;color:#666;line-height:1.5}
+
+  /* Mobile: snap, swipe, no scrollbar */
+  @media (max-width:767px){
+    #reviews-{{ section.id }} .viewport{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    #reviews-{{ section.id }} .viewport::-webkit-scrollbar{display:none}
+    #reviews-{{ section.id }} .card{scroll-snap-align:center}
+  }
+  /* Make all review text black */
+#reviews-{{ section.id }}{
+  color:#000;                       /* default text color inside section */
+}
+#reviews-{{ section.id }} .title,
+#reviews-{{ section.id }} .name,
+#reviews-{{ section.id }} .review{
+  color:#000 !important;            /* force black for these elements */
+}
+/* (optional) avatar initial letter to black too */
+#reviews-{{ section.id }} .avatar{
+  color:#000 !important;
+}
+
+</style>
+
+{% javascript %}
+(function(){
+  function initSection(section){
+    const viewport = section.querySelector('.viewport');
+    const track = section.querySelector('.track');
+    if(!viewport || !track) return;
+
+    let mode = null, rafId, offset = 0, running = false, timer;
+    const speedSetting = Number(section.dataset.speed || 4);
+    const desktopSpeed = 0.5 + speedSetting * 0.25;
+
+    // Desktop: continuous ticker (clone once)
+    function startDesktop(){
+      cancelAnimationFrame(rafId);
+      running = true;
+      const originals = Array.from(track.children);
+      if(!section.__cloned){
+        const frag = document.createDocumentFragment();
+        originals.forEach(el => frag.appendChild(el.cloneNode(true)));
+        track.appendChild(frag);
+        section.__cloned = true;
+      }
+      let width = originals.reduce((acc, el)=> acc + el.getBoundingClientRect().width + 16, 0);
+      function tick(){
+        if(!running) return;
+        offset += desktopSpeed;
+        if(offset >= width) offset -= width;
+        track.style.transform = 'translate3d(' + (-offset) + 'px,0,0)';
+        rafId = requestAnimationFrame(tick);
+      }
+      tick();
+    }
+
+    // Mobile: step every 3s, pause on touch/scroll
+    function startMobile(){
+      cancelAnimationFrame(rafId);
+      track.style.transform = 'translate3d(0,0,0)';
+      const step = ()=> (track.children[0]?.getBoundingClientRect().width || 300) + 16;
+      const intervalMs = 3000;
+      let paused = false;
+
+      function atEnd(){
+        const max = track.scrollWidth - viewport.clientWidth;
+        return viewport.scrollLeft >= max - 2;
+      }
+
+      function clearTimer(){ if(timer){ clearInterval(timer); timer = null; } }
+      function startTimer(){
+        clearTimer();
+        timer = setInterval(function(){
+          if(paused) return;
+          if(atEnd()) viewport.scrollTo({left:0, behavior:'auto'});
+          else viewport.scrollBy({left:step(), behavior:'smooth'});
+        }, intervalMs);
+      }
+
+      function pauseTemp(){
+        paused = true;
+        clearTimer();
+        setTimeout(function(){ paused = false; startTimer(); }, 6000);
+      }
+
+      viewport.addEventListener('touchstart', pauseTemp, { passive:true });
+      viewport.addEventListener('mousedown', pauseTemp);
+      viewport.addEventListener('scroll', pauseTemp, { passive:true });
+
+      startTimer();
+    }
+
+    function applyMode(){
+      const isMobile = window.matchMedia('(max-width: 767px)').matches;
+      if(isMobile && mode !== 'mobile'){
+        mode = 'mobile';
+        running = false;
+        cancelAnimationFrame(rafId);
+        startMobile();
+      } else if(!isMobile && mode !== 'desktop'){
+        mode = 'desktop';
+        clearInterval(timer);
+        startDesktop();
+      }
+    }
+
+    applyMode();
+    window.addEventListener('resize', applyMode);
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.reviews-section').forEach(initSection);
+  });
+})();
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Wake Loop Reviews",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "What our customers say" },
+    { "type": "range", "id": "marquee_speed", "label": "Loop speed", "min": 1, "max": 10, "step": 1, "default": 4 }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Customer name", "default": "Alejandra" },
+        { "type": "image_picker", "id": "avatar", "label": "Avatar image" },
+        { "type": "image_picker", "id": "image", "label": "Review image" },
+        { "type": "range", "id": "rating", "label": "Rating", "min": 1, "max": 5, "step": 1, "default": 5 },
+        { "type": "textarea", "id": "review_text", "label": "Review text", "default": "I previously used other earplugs, and I really liked them. However, when I tried these, they were a whole other level. More noise reduction, a much more pleasant frequency..." }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Wake Loop Reviews" }
+  ]
+}
+{% endschema %}
