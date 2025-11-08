@@ -262,16 +262,6 @@
     "loop_reviews_aVW8Jy": {
       "type": "loop-reviews",
       "blocks": {
-        "review_epmKxJ": {
-          "type": "review",
-          "settings": {
-            "name": "Heather P.",
-            "avatar": "shopify://shop_images/360_F_443711688_LCPcTeda2wlKFJNTPjTLPVFmuf0nnP1F.jpg",
-            "image": "shopify://shop_images/TERRA_IFOURAS_1.png",
-            "rating": 5,
-            "review_text": "I’m not even being the slightest bit dramatic when I say these things are the best purchase I’ve ever made! I didn’t care if it was 30degrees outside if my son dared to take his cleats off in the car on the way home from practice, I was putting the windows down because the smell from his cleats would make me nauseous. It smelt like cat pee. And we tried Everything to take the smell away and nothing worked until this product! I recommend these to everyone I talk to that has an athlete or is one."
-          }
-        },
         "review_UGJVbi": {
           "type": "review",
           "settings": {
@@ -280,6 +270,16 @@
             "image": "shopify://shop_images/TERRA_IFOURAS_2.png",
             "rating": 5,
             "review_text": "These are so amazing I cannot rave enough about them! I use them for my work shoes every day and I am on my feet for 10hr shifts. My feet sweat a lot! My shoes do not stink at all! I’ve bought these for the past 3 years and right at a year I notice they start to lose their stink blocking abilities. But at less than $20 per year for a new pair I am not complaining!! I will keep buying them forever!"
+          }
+        },
+        "review_epmKxJ": {
+          "type": "review",
+          "settings": {
+            "name": "Heather P.",
+            "avatar": "shopify://shop_images/360_F_443711688_LCPcTeda2wlKFJNTPjTLPVFmuf0nnP1F.jpg",
+            "image": "shopify://shop_images/TERRA_IFOURAS_1.png",
+            "rating": 5,
+            "review_text": "I’m not even being the slightest bit dramatic when I say these things are the best purchase I’ve ever made! I didn’t care if it was 30degrees outside if my son dared to take his cleats off in the car on the way home from practice, I was putting the windows down because the smell from his cleats would make me nauseous. It smelt like cat pee. And we tried Everything to take the smell away and nothing worked until this product! I recommend these to everyone I talk to that has an athlete or is one."
           }
         },
         "review_PXYrHM": {
@@ -291,12 +291,32 @@
             "rating": 5,
             "review_text": "I am an older female and recently got puppies that I walk often. I have been battling smelly shoe syndrome for months. I have bought sprays and the little shoe scent balls, I’ve stuffed dryer sheets in my shoes. None of that worked until now….These are a decent size to take up a good amount of the shoe. The have almost a pool/chlorine smell, but not overpowering, it just smells fresh. Buying my second pair now because I want them in all my shoes regardless of how much I use the use the shoes!!!!"
           }
+        },
+        "review_PhD6zC": {
+          "type": "review",
+          "settings": {
+            "name": "Jim K.",
+            "avatar": "shopify://shop_images/98c86590ecbd01b8eeba712290595ff7.jpg",
+            "image": "shopify://shop_images/61hmHgVNONL.jpg",
+            "rating": 5,
+            "review_text": "My bicycling shoes reeked after a few weeks of wet fall riding. These eliminated the odor over night. Would highly recommend."
+          }
+        },
+        "review_aAHzkP": {
+          "type": "review",
+          "settings": {
+            "name": "Alejandra",
+            "rating": 5,
+            "review_text": "I previously used other earplugs, and I really liked them. However, when I tried these, they were a whole other level. More noise reduction, a much more pleasant frequency..."
+          }
         }
       },
       "block_order": [
-        "review_epmKxJ",
         "review_UGJVbi",
-        "review_PXYrHM"
+        "review_epmKxJ",
+        "review_PXYrHM",
+        "review_PhD6zC",
+        "review_aAHzkP"
       ],
       "name": "Wake Loop Reviews",
       "settings": {
