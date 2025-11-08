@@ -223,42 +223,6 @@
         "pad_bottom": 48
       }
     },
-    "bundle_card_V7CgHe": {
-      "type": "bundle-card",
-      "name": "Bundle Card",
-      "settings": {
-        "top_label": "Dr. Odoro's Bundle",
-        "bg_color": "#f2f2f2",
-        "card_bg": "#ffffff",
-        "text_color": "#2a2220",
-        "muted_color": "#000000",
-        "accent_color": "#e9dfd6",
-        "radius": 18,
-        "title_size": 17,
-        "price_size": 18,
-        "body_size": 14,
-        "btn_radius": 24,
-        "bundle_title": "The Ultimate Freshness Bundle",
-        "bundle_price": "€79,99",
-        "bundle_compare_at": "",
-        "stars": 5,
-        "review_count": "18274",
-        "bundle_description": "<p>Everything you need to destroy odor, absorb moisture, and keep every pair fresh, all in one smart bundle.</p>",
-        "bundle_product": "the-ultimate-freshness-bundle",
-        "view_label": "View Bundle",
-        "get_label": "Get This Bundle",
-        "p1_image": "shopify://shop_images/TERRAIFOURAS_e72b68e8-e66c-4ef9-8d1c-35589a45b106.png",
-        "p1_title": "The Neutralizer (2-Pack)",
-        "p1_price": "$19,95",
-        "p1_compare_at": "",
-        "p1_desc": "Removes 99% of odor and moisture, restores lasting freshness, and keeps your shoes clean, dry, and ready for anything.",
-        "p2_image": "shopify://shop_images/TERRAIFOURAS_7eaa3595-3495-49b2-ad2d-f4e09c15273e.png",
-        "p2_title": "The Closet Fresh Bag",
-        "p2_price": "€15,99",
-        "p2_compare_at": "€76,00",
-        "p2_desc": "Made for your closet: removes trapped air odors, absorbs excess moisture, and keeps your closets and rooms naturally fresh 24/7."
-      }
-    },
     "loop_reviews_aVW8Jy": {
       "type": "loop-reviews",
       "blocks": {
@@ -295,7 +259,47 @@
       "name": "Wake Loop Reviews",
       "settings": {
         "title": "What our customers say",
-        "marquee_speed": 2
+        "marquee_speed": 2,
+        "bg_color": "#ffffff",
+        "text_color": "#1a1a1a",
+        "slider_track": "#e9e9e9",
+        "slider_thumb": "#bdbdbd"
+      }
+    },
+    "bundle_card_V7CgHe": {
+      "type": "bundle-card",
+      "name": "Bundle Card",
+      "settings": {
+        "top_label": "Dr. Odoro's Bundle",
+        "bg_color": "#f2f2f2",
+        "card_bg": "#ffffff",
+        "text_color": "#2a2220",
+        "muted_color": "#000000",
+        "accent_color": "#e9dfd6",
+        "radius": 18,
+        "title_size": 17,
+        "price_size": 18,
+        "body_size": 14,
+        "btn_radius": 24,
+        "bundle_title": "The Ultimate Freshness Bundle",
+        "bundle_price": "€79,99",
+        "bundle_compare_at": "",
+        "stars": 5,
+        "review_count": "18274",
+        "bundle_description": "<p>Everything you need to destroy odor, absorb moisture, and keep every pair fresh, all in one smart bundle.</p>",
+        "bundle_product": "the-ultimate-freshness-bundle",
+        "view_label": "View Bundle",
+        "get_label": "Get This Bundle",
+        "p1_image": "shopify://shop_images/TERRAIFOURAS_e72b68e8-e66c-4ef9-8d1c-35589a45b106.png",
+        "p1_title": "The Neutralizer (2-Pack)",
+        "p1_price": "$19,95",
+        "p1_compare_at": "",
+        "p1_desc": "Removes 99% of odor and moisture, restores lasting freshness, and keeps your shoes clean, dry, and ready for anything.",
+        "p2_image": "shopify://shop_images/TERRAIFOURAS_7eaa3595-3495-49b2-ad2d-f4e09c15273e.png",
+        "p2_title": "The Closet Fresh Bag",
+        "p2_price": "€15,99",
+        "p2_compare_at": "€76,00",
+        "p2_desc": "Made for your closet: removes trapped air odors, absorbs excess moisture, and keeps your closets and rooms naturally fresh 24/7."
       }
     }
   },
