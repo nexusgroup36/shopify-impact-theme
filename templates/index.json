@@ -97,6 +97,7 @@
       "name": "Stats",
       "settings": {
         "bg_color": "#2e3a29",
+        "text_color": "#ffffff",
         "icon_size": 40,
         "number_size": 24,
         "label_size": 14
