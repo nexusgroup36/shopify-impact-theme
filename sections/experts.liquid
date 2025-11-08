@@ -1,0 +1,206 @@
+<section id="experts-{{ section.id }}" class="xp"
+  style="
+    --bg: {{ section.settings.bg }};
+    --text: {{ section.settings.text }};
+    --muted: {{ section.settings.muted }};
+    --card: {{ section.settings.card }};
+    --btn-bg: {{ section.settings.btn_bg }};
+    --btn-text: {{ section.settings.btn_text }};
+    --radius: {{ section.settings.radius }}px;
+    --img-radius: {{ section.settings.img_radius }}px;
+    --shadow: 0 10px 28px rgba(0,0,0, {{ section.settings.shadow_opacity | divided_by: 100.0 }});
+    --h1: {{ section.settings.title_size }}px;
+    --h2: {{ section.settings.subtitle_size }}px;
+    --name: {{ section.settings.name_size }}px;
+    --role: {{ section.settings.role_size }}px;
+    --body: {{ section.settings.body_size }}px;
+    --btn: {{ section.settings.button_size }}px;
+    --pad-top: {{ section.settings.pad_top }}px;
+    --pad-bottom: {{ section.settings.pad_bottom }}px;
+  ">
+  <div class="xp__container">
+    {% if section.settings.kicker != blank %}
+      <div class="xp__kicker">{{ section.settings.kicker }}</div>
+    {% endif %}
+
+    {% if section.settings.title != blank %}
+      <h2 class="xp__title">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    {% if section.settings.subtitle != blank %}
+      <p class="xp__subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+
+    <div class="xp__grid">
+      {% assign cards = section.blocks | where: 'type', 'expert' %}
+      {% for block in cards %}
+        <article class="xp-card" {{ block.shopify_attributes }}>
+          {% assign ratio = section.settings.image_ratio %}
+          {% case ratio %}
+            {% when '4-5' %}{% assign pad = 125 %}
+            {% when '3-4' %}{% assign pad = 133.33 %}
+            {% when '2-3' %}{% assign pad = 150 %}
+            {% else %}{% assign pad = 125 %}
+          {% endcase %}
+          {% if block.settings.image != blank %}
+            <figure class="xp-media" style="padding-top: {{ pad }}%;">
+              {{ block.settings.image
+                | image_url: width: 1200
+                | image_tag:
+                  class: 'xp-img',
+                  loading: 'lazy',
+                  alt: block.settings.name | escape
+              }}
+            </figure>
+          {% endif %}
+
+          <div class="xp-body">
+            {% if block.settings.name != blank %}
+              <h3 class="xp-name">{{ block.settings.name }}</h3>
+            {% endif %}
+
+            {% if block.settings.role != blank %}
+              <div class="xp-role">{{ block.settings.role }}</div>
+            {% endif %}
+
+            {% if block.settings.quote != blank %}
+              <blockquote class="xp-quote">“{{ block.settings.quote }}”</blockquote>
+            {% endif %}
+
+            {% if block.settings.text != blank %}
+              <p class="xp-text">{{ block.settings.text }}</p>
+            {% endif %}
+
+            {% if block.settings.cta_label != blank and block.settings.cta_link != blank %}
+              <a class="xp-btn" href="{{ block.settings.cta_link }}">{{ block.settings.cta_label }}</a>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.disclaimer != blank %}
+      <p class="xp__disc">{{ section.settings.disclaimer }}</p>
+    {% endif %}
+  </div>
+
+  {% style %}
+  #experts-{{ section.id }}{ background:var(--bg); color:var(--text); padding:var(--pad-top) 16px var(--pad-bottom); }
+  #experts-{{ section.id }} .xp__container{ max-width:1200px; margin:0 auto; text-align:center; }
+
+  .xp__kicker{
+    display:inline-block; padding:6px 12px; border-radius:999px;
+    background: color-mix(in oklab, var(--card) 85%, var(--bg) 15%);
+    border:1px solid color-mix(in oklab, var(--text) 10%, transparent);
+    color: var(--muted); font-weight:700; font-size:12px; letter-spacing:.06em; margin-bottom:8px;
+  }
+  .xp__title{ font-size:var(--h1); line-height:1.1; margin:0 0 8px; font-weight:800; letter-spacing:-.01em; }
+  .xp__subtitle{ font-size:var(--h2); color:var(--muted); margin:0 0 18px; }
+
+  .xp__grid{
+    display:grid; gap:22px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .xp-card{
+    background: var(--card); border-radius: calc(var(--radius) + 6px);
+    box-shadow: var(--shadow); overflow:hidden; text-align:left;
+  }
+  .xp-media{ position:relative; width:100%; overflow:hidden; }
+  .xp-media::before{ content:""; position:absolute; inset:0; border-top-left-radius:var(--img-radius); border-top-right-radius:var(--img-radius); box-shadow: inset 0 0 0 1px rgba(0,0,0,.04); pointer-events:none; }
+  .xp-img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-top-left-radius:var(--img-radius); border-top-right-radius:var(--img-radius); }
+
+  .xp-body{ padding:16px 18px 18px; }
+  .xp-name{ font-size:var(--name); margin:2px 0 4px; font-weight:800; }
+  .xp-role{ font-size:var(--role); color:var(--muted); margin:0 0 10px; }
+  .xp-quote{ font-size:var(--body); color:var(--text); margin:0 0 10px; line-height:1.55; }
+  .xp-text{ font-size:var(--body); color:var(--muted); line-height:1.6; margin:0 0 14px; }
+
+  .xp-btn{
+    display:inline-block; padding:12px 16px; font-size:var(--btn); font-weight:700;
+    background: var(--btn-bg); color: var(--btn-text); border-radius:999px; text-decoration:none;
+    border:1px solid color-mix(in oklab, var(--text) 12%, transparent);
+  }
+
+  .xp__disc{
+    margin: 18px auto 0; color:var(--muted); font-size:12px; max-width:1000px;
+  }
+
+  @media (max-width: 1023px){
+    .xp__grid{ grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 749px){
+    .xp__grid{ grid-template-columns: 1fr; }
+    .xp__title{ font-size: clamp(22px, 7vw, var(--h1)); }
+    .xp__subtitle{ font-size: clamp(14px, 4vw, var(--h2)); }
+  }
+  {% endstyle %}
+</section>
+
+{% schema %}
+{
+  "name": "Experts",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker boven titel", "default": "EVIDENCE-INFORMED GUIDANCE" },
+    { "type": "text", "id": "title", "label": "Titel", "default": "Expert Insights for Skin, Sleep & Home" },
+    { "type": "textarea", "id": "subtitle", "label": "Subtitel", "default": "Carefully curated research notes from independent experts. Educational content only; individual results may vary." },
+
+    { "type": "color", "id": "bg", "label": "Achtergrondkleur", "default": "#F7F3EE" },
+    { "type": "color", "id": "text", "label": "Tekstkleur", "default": "#1D1B19" },
+    { "type": "color", "id": "muted", "label": "Secundaire tekstkleur", "default": "#8A8079" },
+    { "type": "color", "id": "card", "label": "Kaart achtergrond", "default": "#FFFFFF" },
+    { "type": "range", "id": "shadow_opacity", "label": "Schaduw intensiteit (%)", "min": 0, "max": 40, "step": 2, "default": 18 },
+
+    { "type": "select", "id": "image_ratio", "label": "Afbeelding verhouding", "default": "4-5",
+      "options": [
+        { "value": "4-5", "label": "4:5 (aanbevolen)" },
+        { "value": "3-4", "label": "3:4" },
+        { "value": "2-3", "label": "2:3" }
+      ]
+    },
+
+    { "type": "range", "id": "radius", "label": "Kaart radius (px)", "min": 6, "max": 30, "step": 1, "default": 18 },
+    { "type": "range", "id": "img_radius", "label": "Afbeelding top-radius (px)", "min": 6, "max": 30, "step": 1, "default": 18 },
+
+    { "type": "range", "id": "title_size", "label": "Titel grootte (px)", "min": 20, "max": 56, "step": 1, "default": 34 },
+    { "type": "range", "id": "subtitle_size", "label": "Subtitel grootte (px)", "min": 12, "max": 22, "step": 1, "default": 14 },
+    { "type": "range", "id": "name_size", "label": "Naam grootte (px)", "min": 14, "max": 26, "step": 1, "default": 18 },
+    { "type": "range", "id": "role_size", "label": "Functie/titel grootte (px)", "min": 11, "max": 18, "step": 1, "default": 12 },
+    { "type": "range", "id": "body_size", "label": "Tekstgrootte (px)", "min": 12, "max": 18, "step": 1, "default": 14 },
+    { "type": "range", "id": "button_size", "label": "Knop tekstgrootte (px)", "min": 12, "max": 18, "step": 1, "default": 14 },
+
+    { "type": "color", "id": "btn_bg", "label": "Knop achtergrond", "default": "#0F0F10" },
+    { "type": "color", "id": "btn_text", "label": "Knop tekstkleur", "default": "#FFFFFF" },
+
+    { "type": "textarea", "id": "disclaimer", "label": "Disclaimer onderaan", "default": "Educational information only and not a substitute for professional medical advice. If you have a specific concern, consult your physician." },
+
+    { "type": "range", "id": "pad_top", "label": "Padding boven (px)", "min": 0, "max": 120, "step": 2, "default": 48 },
+    { "type": "range", "id": "pad_bottom", "label": "Padding onder (px)", "min": 0, "max": 120, "step": 2, "default": 48 }
+  ],
+  "blocks": [
+    {
+      "type": "expert",
+      "name": "Expert",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Afbeelding" },
+        { "type": "text", "id": "name", "label": "Naam", "default": "Dr. Elena Marquez" },
+        { "type": "text", "id": "role", "label": "Functie/titel", "default": "Hydration & Dermatology Expert" },
+        { "type": "textarea", "id": "quote", "label": "Quote/kernboodschap", "default": "Removing chlorine and hard minerals from your daily water reduces skin dryness, irritation, and helps preserve natural hydration." },
+        { "type": "textarea", "id": "text", "label": "Korte uitleg (optioneel)", "default": "Dr. Elena shares medical insight on how water quality impacts skin and overall wellness — and why filtered water plays a key role in protecting your skin barrier and hair health." },
+        { "type": "text", "id": "cta_label", "label": "Knop label", "default": "Shop Shower" },
+        { "type": "url", "id": "cta_link", "label": "Knop link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Experts",
+      "blocks": [
+        { "type": "expert" },
+        { "type": "expert" },
+        { "type": "expert" }
+      ]
+    }
+  ]
+}
+{% endschema %}
