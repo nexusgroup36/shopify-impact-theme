@@ -1,0 +1,279 @@
+<section id="bundle-card-{{ section.id }}" class="bundle-card"
+  style="
+    --bg: {{ section.settings.bg_color }};
+    --card-bg: {{ section.settings.card_bg }};
+    --text: {{ section.settings.text_color }};
+    --muted: {{ section.settings.muted_color }};
+    --accent: {{ section.settings.accent_color }};
+    --radius: {{ section.settings.radius }}px;
+    --shadow: 0 8px 24px rgba(0,0,0,.06);
+    --title-size: {{ section.settings.title_size }}px;
+    --body-size: {{ section.settings.body_size }}px;
+    --price-size: {{ section.settings.price_size }}px;
+    --btn-radius: {{ section.settings.btn_radius }}px;
+  ">
+  <div class="bc-wrap">
+    {% if section.settings.top_label != blank %}
+      <div class="bc-pill">{{ section.settings.top_label }}</div>
+    {% endif %}
+
+    <div class="bc-card">
+      <!-- Product 1 -->
+      <div class="bc-row">
+        {% if section.settings.p1_image %}
+          {{ section.settings.p1_image | image_url: width: 220 | image_tag: class: 'bc-img', loading: 'lazy', alt: section.settings.p1_title }}
+        {% endif %}
+        <div class="bc-info">
+          {% if section.settings.p1_title != blank %}
+            <h3 class="bc-title">{{ section.settings.p1_title }}</h3>
+          {% endif %}
+          {% if section.settings.p1_price != blank %}
+            <div class="bc-price">
+              <span class="bc-price-current">{{ section.settings.p1_price }}</span>
+              {% if section.settings.p1_compare_at != blank %}
+                <span class="bc-price-compare">{{ section.settings.p1_compare_at }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if section.settings.p1_desc != blank %}
+            <p class="bc-desc">{{ section.settings.p1_desc }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <hr class="bc-divider">
+      <div class="bc-plus">+</div>
+      <hr class="bc-divider">
+
+      <!-- Product 2 -->
+      <div class="bc-row">
+        {% if section.settings.p2_image %}
+          {{ section.settings.p2_image | image_url: width: 220 | image_tag: class: 'bc-img', loading: 'lazy', alt: section.settings.p2_title }}
+        {% endif %}
+        <div class="bc-info">
+          {% if section.settings.p2_title != blank %}
+            <h3 class="bc-title">{{ section.settings.p2_title }}</h3>
+          {% endif %}
+          {% if section.settings.p2_price != blank %}
+            <div class="bc-price">
+              <span class="bc-price-current">{{ section.settings.p2_price }}</span>
+              {% if section.settings.p2_compare_at != blank %}
+                <span class="bc-price-compare">{{ section.settings.p2_compare_at }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if section.settings.p2_desc != blank %}
+            <p class="bc-desc">{{ section.settings.p2_desc }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Bundle summary -->
+      <div class="bc-summary">
+        {% if section.settings.bundle_title != blank %}
+          <div class="bc-bundle-title">{{ section.settings.bundle_title }}</div>
+        {% endif %}
+
+        {% if section.settings.bundle_price != blank %}
+          <div class="bc-bundle-price">
+            <span class="bc-price-current">{{ section.settings.bundle_price }}</span>
+            {% if section.settings.bundle_compare_at != blank %}
+              <span class="bc-price-compare">{{ section.settings.bundle_compare_at }}</span>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if section.settings.review_count != blank %}
+          <div class="bc-reviews">
+            <span class="bc-stars">
+              {% assign rating = section.settings.stars | plus: 0 %}
+              {% for i in (1..5) %}
+                {% if i <= rating %}★{% else %}☆{% endif %}
+              {% endfor %}
+            </span>
+            <span class="bc-review-count">({{ section.settings.review_count }})</span>
+          </div>
+        {% endif %}
+      </div>
+
+      <!-- Accordion -->
+      <details class="bc-accordion">
+        <summary>
+          <span>Description</span>
+          <span class="bc-acc-icon">+</span>
+        </summary>
+        {% if section.settings.bundle_description != blank %}
+          <div class="bc-acc-body">
+            {{ section.settings.bundle_description }}
+          </div>
+        {% endif %}
+      </details>
+
+      <!-- Buttons -->
+      <div class="bc-actions">
+        <a
+          {% if section.settings.bundle_product != blank %}
+            href="{{ section.settings.bundle_product.url }}"
+          {% else %}
+            href="#"
+          {% endif %}
+          class="bc-btn bc-btn--ghost"
+          aria-disabled="{% if section.settings.bundle_product == blank %}true{% else %}false{% endif %}">
+          {{ section.settings.view_label }}
+        </a>
+
+        <button class="bc-btn bc-btn--solid" data-bundle-add
+          {% if section.settings.bundle_product == blank %}disabled{% endif %}>
+          {{ section.settings.get_label }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  {% style %}
+  #bundle-card-{{ section.id }}{ background:var(--bg); color:var(--text); padding:32px 16px; }
+  #bundle-card-{{ section.id }} .bc-wrap{ max-width:760px; margin:0 auto; }
+
+  .bc-pill{
+    display:inline-block; margin:0 auto 18px; padding:12px 28px;
+    background: color-mix(in oklab, var(--accent) 16%, white);
+    color: color-mix(in oklab, var(--text) 70%, black);
+    border-radius: 999px; box-shadow: var(--shadow); font-weight:600; text-align:center;
+  }
+
+  .bc-card{
+    background:var(--card-bg); border-radius: calc(var(--radius) + 6px);
+    box-shadow: var(--shadow); padding:18px; overflow:hidden;
+  }
+
+  .bc-row{ display:grid; grid-template-columns: 96px 1fr; gap:14px; align-items:start; }
+  .bc-img{ width:96px; height:96px; object-fit:cover; border-radius:12px; }
+  .bc-info{ min-width:0; }
+  .bc-title{ font-size:var(--title-size); margin:0 0 6px; font-weight:700; }
+  .bc-price{ font-size:var(--price-size); margin:0 0 6px; }
+  .bc-price-current{ font-weight:700; }
+  .bc-price-compare{ margin-left:8px; text-decoration:line-through; color:var(--muted); }
+  .bc-desc{ font-size:var(--body-size); color:var(--muted); margin:0; line-height:1.5; }
+
+  .bc-divider{ border:none; border-top:1px solid color-mix(in oklab, var(--text) 12%, transparent); margin:14px 0; }
+  .bc-plus{ text-align:center; font-weight:700; margin:-8px 0; }
+
+  .bc-summary{ padding:12px 2px 8px; }
+  .bc-bundle-title{ font-size:calc(var(--title-size) + 2px); font-weight:700; margin:0 0 4px; }
+  .bc-bundle-price{ font-size:var(--price-size); margin-bottom:6px; }
+  .bc-reviews{ display:flex; align-items:center; gap:6px; font-size:14px; }
+  .bc-stars{ color: #00B67A; letter-spacing:2px; font-size:18px; }
+  .bc-review-count{ color:var(--muted); }
+
+  .bc-accordion{
+    border-top:1px solid color-mix(in oklab, var(--text) 12%, transparent);
+    border-bottom:1px solid color-mix(in oklab, var(--text) 12%, transparent);
+    margin:10px 0 16px;
+  }
+  .bc-accordion summary{
+    list-style:none; display:flex; justify-content:space-between; align-items:center;
+    cursor:pointer; padding:12px 0; font-weight:600;
+  }
+  .bc-accordion summary::-webkit-details-marker{ display:none; }
+  .bc-acc-icon{ font-size:20px; }
+  .bc-accordion[open] .bc-acc-icon{ transform:rotate(45deg); }
+  .bc-acc-body{ padding:0 0 12px; color:var(--muted); font-size:var(--body-size); line-height:1.6; }
+
+  .bc-actions{ display:flex; gap:12px; }
+  .bc-btn{
+    flex:1; padding:12px 18px; border-radius: var(--btn-radius);
+    font-weight:700; text-decoration:none; text-align:center; cursor:pointer; border:1px solid transparent;
+  }
+  .bc-btn[aria-disabled="true"], .bc-btn:disabled{ opacity:.5; pointer-events:none; }
+  .bc-btn--ghost{
+    background: transparent; color: var(--text);
+    border-color: color-mix(in oklab, var(--text) 30%, transparent);
+  }
+  .bc-btn--solid{
+    background: var(--text); color: #fff;
+  }
+
+  @media (max-width: 749px){
+    .bc-row{ grid-template-columns: 80px 1fr; }
+    .bc-img{ width:80px; height:80px; }
+    .bc-actions{ flex-direction:column; }
+  }
+  {% endstyle %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var root = document.getElementById('bundle-card-{{ section.id }}');
+      if(!root) return;
+
+      var addBtn = root.querySelector('[data-bundle-add]');
+      {% if section.settings.bundle_product %}
+        var firstVariant = {{ section.settings.bundle_product.first_available_variant.id | default: section.settings.bundle_product.variants.first.id | json }};
+      {% else %}
+        var firstVariant = null;
+      {% endif %}
+
+      if(addBtn && firstVariant){
+        addBtn.addEventListener('click', function(){
+          addBtn.disabled = true;
+          fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: firstVariant, quantity: 1 })
+          })
+          .then(function(r){ return r.json(); })
+          .then(function(){ addBtn.disabled = false; document.dispatchEvent(new CustomEvent('cart:refresh')); })
+          .catch(function(){ addBtn.disabled = false; });
+        });
+      }
+    });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Bundle Card",
+  "settings": [
+    { "type": "text", "id": "top_label", "label": "Bovenste label", "default": "Shower Bundle" },
+
+    { "type": "color", "id": "bg_color", "label": "Achtergrond", "default": "#F5F2EE" },
+    { "type": "color", "id": "card_bg", "label": "Kaart achtergrond", "default": "#FFFFFF" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#2A2220" },
+    { "type": "color", "id": "muted_color", "label": "Secundaire tekstkleur", "default": "#8A7E78" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur (pill)", "default": "#E9DFD6" },
+
+    { "type": "range", "id": "radius", "label": "Kaart radius (px)", "min": 8, "max": 36, "step": 1, "default": 18 },
+    { "type": "range", "id": "title_size", "label": "Titelgrootte (px)", "min": 14, "max": 28, "step": 1, "default": 20 },
+    { "type": "range", "id": "price_size", "label": "Prijs grootte (px)", "min": 14, "max": 26, "step": 1, "default": 18 },
+    { "type": "range", "id": "body_size", "label": "Tekstgrootte (px)", "min": 12, "max": 20, "step": 1, "default": 14 },
+    { "type": "range", "id": "btn_radius", "label": "Knop radius (px)", "min": 4, "max": 40, "step": 1, "default": 24 },
+
+    { "type": "text", "id": "bundle_title", "label": "Bundeltitel", "default": "Shower Filter Bundle 2.0" },
+    { "type": "text", "id": "bundle_price", "label": "Bundelprijs", "default": "€79,99" },
+    { "type": "text", "id": "bundle_compare_at", "label": "Bundel compare-at prijs" },
+
+    { "type": "range", "id": "stars", "label": "Sterren (0-5)", "min": 0, "max": 5, "step": 1, "default": 5 },
+    { "type": "text", "id": "review_count", "label": "Aantal reviews", "default": "18274" },
+
+    { "type": "richtext", "id": "bundle_description", "label": "Uitklapbare beschrijving", "default": "<p>Write a short description of the bundle contents and benefits.</p>" },
+
+    { "type": "product", "id": "bundle_product", "label": "Bundle product (voor knoppen)" },
+    { "type": "text", "id": "view_label", "label": "View Bundle knoplabel", "default": "View Bundle" },
+    { "type": "text", "id": "get_label", "label": "Get This Bundle knoplabel", "default": "Get This Bundle" },
+
+    { "type": "image_picker", "id": "p1_image", "label": "Product 1 - foto" },
+    { "type": "text", "id": "p1_title", "label": "Product 1 - titel", "default": "Shower Head" },
+    { "type": "text", "id": "p1_price", "label": "Product 1 - prijs", "default": "€112,00" },
+    { "type": "text", "id": "p1_compare_at", "label": "Product 1 - compare-at prijs" },
+    { "type": "textarea", "id": "p1_desc", "label": "Product 1 - korte beschrijving", "default": "Removes 90% of chlorine & metals, doubles water pressure, and gives instantly softer skin & hair." },
+
+    { "type": "image_picker", "id": "p2_image", "label": "Product 2 - foto" },
+    { "type": "text", "id": "p2_title", "label": "Product 2 - titel", "default": "Pure Cotton Towel" },
+    { "type": "text", "id": "p2_price", "label": "Product 2 - prijs", "default": "€15,99" },
+    { "type": "text", "id": "p2_compare_at", "label": "Product 2 - compare-at prijs", "default": "€76,00" },
+    { "type": "textarea", "id": "p2_desc", "label": "Product 2 - korte beschrijving", "default": "100% cotton, ultra-soft and highly absorbent for the perfect post-shower comfort." }
+  ],
+  "presets": [
+    { "name": "Bundle Card" }
+  ]
+}
+{% endschema %}
