@@ -1,0 +1,318 @@
+<section id="movement-{{ section.id }}" class="mv"
+  style="
+    --bg: {{ section.settings.bg }};
+    --text: {{ section.settings.text }};
+    --muted: {{ section.settings.muted }};
+    --card: {{ section.settings.card }};
+    --chip-bg: {{ section.settings.chip_bg }};
+    --chip-border: {{ section.settings.chip_border }};
+    --primary: {{ section.settings.primary }};
+    --radius: {{ section.settings.radius }}px;
+    --shadow: 0 10px 30px rgba(0,0,0,.08);
+    --h1: {{ section.settings.h1 }}px;
+    --h2: {{ section.settings.h2 }}px;
+    --body: {{ section.settings.body }}px;
+    --stat: {{ section.settings.stat }}px;
+    --stat-sub: {{ section.settings.stat_sub }}px;
+    --pad-top: {{ section.settings.pad_top }}px;
+    --pad-bottom: {{ section.settings.pad_bottom }}px;
+  ">
+  <div class="mv__container">
+    {% if section.settings.kicker != blank %}
+      <div class="mv__kicker">{{ section.settings.kicker }}</div>
+    {% endif %}
+
+    {% if section.settings.title != blank %}
+      <h2 class="mv__title">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    {% if section.settings.subtitle != blank %}
+      <p class="mv__subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+
+    {% assign chips = section.settings.chips | newline_to_br | split: '<br />' %}
+    {% if chips.size > 0 and chips[0] != blank %}
+      <div class="mv__chips">
+        {% for chip in chips %}
+          <span class="mv-chip">{{ chip | strip }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% assign stat_blocks = section.blocks | where: 'type', 'stat' %}
+    {% if stat_blocks.size > 0 %}
+      <div class="mv__stats">
+        {% for block in stat_blocks %}
+          <div class="mv-stat" {{ block.shopify_attributes }}>
+            <div class="mv-stat__num" data-target="{{ block.settings.number | replace: ',', '' | strip }}">0</div>
+            <div class="mv-stat__sub">{{ block.settings.caption }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="mv__ctas">
+      {% if section.settings.primary_label != blank and section.settings.primary_link != blank %}
+        <a class="mv-btn mv-btn--primary" href="{{ section.settings.primary_link }}">{{ section.settings.primary_label }}</a>
+      {% endif %}
+      {% if section.settings.secondary_label != blank and section.settings.secondary_link != blank %}
+        <a class="mv-btn mv-btn--ghost" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label }}</a>
+      {% endif %}
+
+      {% assign avatar_blocks = section.blocks | where: 'type', 'avatar' %}
+      {% if avatar_blocks.size > 0 %}
+        <div class="mv-avatars">
+          {% for block in avatar_blocks %}
+            {% if block.settings.photo != blank %}
+              {{ block.settings.photo | image_url: width: 64 | image_tag: class: 'mv-avatar', loading: 'lazy', alt: 'avatar' }}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    {% assign testimonial_blocks = section.blocks | where: 'type', 'testimonial' %}
+    {% if testimonial_blocks.size > 0 %}
+      <div class="mv__slider-wrap">
+        <button class="mv-arrow mv-arrow--prev" aria-label="Previous">‹</button>
+        <div class="mv__slider" data-slider>
+          {% for block in testimonial_blocks %}
+            <article class="mv-card" {{ block.shopify_attributes }}>
+              {% if block.settings.meta_top != blank %}
+                <div class="mv-card__top">{{ block.settings.meta_top }}</div>
+              {% endif %}
+
+              <div class="mv-card__id">
+                {% if block.settings.avatar != blank %}
+                  {{ block.settings.avatar | image_url: width: 44 | image_tag: class: 'mv-card__avatar', loading: 'lazy', alt: block.settings.name }}
+                {% endif %}
+                <div>
+                  <div class="mv-card__name">{{ block.settings.name }}</div>
+                  {% if block.settings.recognition != blank %}
+                    <div class="mv-card__rec">Recognition: {{ block.settings.recognition }}</div>
+                  {% endif %}
+                </div>
+              </div>
+
+              {% if block.settings.quote != blank %}
+                <blockquote class="mv-card__quote">“{{ block.settings.quote }}”</blockquote>
+              {% endif %}
+
+              {% if block.settings.outcome != blank %}
+                <div class="mv-pill">Outcome</div>
+                <div class="mv-card__outcome">{{ block.settings.outcome }}</div>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+        <button class="mv-arrow mv-arrow--next" aria-label="Next">›</button>
+      </div>
+    {% endif %}
+  </div>
+
+  {% style %}
+  #movement-{{ section.id }}{ background:var(--bg); color:var(--text); padding:var(--pad-top) 16px var(--pad-bottom); }
+  #movement-{{ section.id }} .mv__container{ max-width:1200px; margin:0 auto; }
+
+  .mv__kicker{
+    display:inline-block; padding:8px 14px; border-radius:999px;
+    background: var(--chip-bg);
+    border:1px solid var(--chip-border); box-shadow: var(--shadow);
+    font-weight:600; font-size:13px; margin-bottom:10px;
+  }
+  .mv__title{ font-size:var(--h1); line-height:1.1; margin:0 0 10px; font-weight:800; letter-spacing:-.02em; }
+  .mv__subtitle{ font-size:var(--h2); color:var(--muted); margin:0 0 14px; }
+
+  .mv__chips{ display:flex; flex-wrap:wrap; gap:8px; margin: 6px 0 18px; }
+  .mv-chip{
+    background: var(--chip-bg); border:1px solid var(--chip-border); color:var(--text);
+    padding:8px 12px; border-radius:999px; font-size:13px;
+  }
+
+  .mv__stats{
+    display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; margin:16px 0 18px;
+  }
+  .mv-stat{
+    background: var(--card); border-radius: calc(var(--radius) + 6px);
+    box-shadow: var(--shadow); padding:18px; text-align:center;
+  }
+  .mv-stat__num{ font-size:var(--stat); font-weight:800; letter-spacing:.5px; }
+  .mv-stat__sub{ font-size:var(--stat-sub); color:var(--muted); margin-top:4px; }
+
+  .mv__ctas{ display:flex; align-items:center; gap:12px; margin: 10px 0 18px; flex-wrap:wrap; }
+  .mv-btn{
+    border-radius:999px; padding:12px 22px; font-weight:700; text-decoration:none; display:inline-block;
+    border:1px solid transparent;
+  }
+  .mv-btn--primary{ background:#000; color:#fff; }
+  .mv-btn--ghost{ background: transparent; color: var(--text); border-color: color-mix(in oklab, var(--text) 25%, transparent); }
+  .mv-avatars{ display:flex; align-items:center; gap:0; margin-left:auto; }
+  .mv-avatar{ width:40px; height:40px; border-radius:999px; border:3px solid var(--bg); margin-left:-10px; }
+
+  .mv__slider-wrap{ position:relative; }
+  .mv__slider{
+    display:grid; grid-auto-flow:column; grid-auto-columns: minmax(280px, 1fr);
+    gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding: 6px 2px;
+  }
+  .mv-card{
+    background: var(--card); border-radius: calc(var(--radius) + 6px); box-shadow: var(--shadow);
+    padding:18px; scroll-snap-align:start; min-height: 230px;
+  }
+  .mv-card__top{ color:var(--muted); font-size:12px; margin-bottom:8px; }
+  .mv-card__id{ display:flex; gap:10px; align-items:center; margin-bottom:8px; }
+  .mv-card__avatar{ width:44px; height:44px; border-radius:999px; object-fit:cover; }
+  .mv-card__name{ font-weight:700; }
+  .mv-card__rec{ color:var(--muted); font-size:12px; }
+  .mv-card__quote{ font-size:var(--body); margin:6px 0 8px; color:var(--text); }
+  .mv-pill{ display:inline-block; padding:6px 10px; border-radius:999px; background: var(--chip-bg); border:1px solid var(--chip-border); font-size:12px; color:var(--text); }
+  .mv-card__outcome{ color:var(--muted); font-size:13px; display:inline-block; margin-left:8px; }
+
+  .mv-arrow{
+    position:absolute; top:50%; transform:translateY(-50%); width:36px; height:36px; border-radius:999px;
+    border:none; background:#fff; box-shadow: var(--shadow); cursor:pointer;
+  }
+  .mv-arrow--prev{ left:-6px; }
+  .mv-arrow--next{ right:-6px; }
+
+  @media (max-width: 989px){
+    .mv__stats{ grid-template-columns: 1fr; }
+    .mv-avatars{ margin-left:0; }
+  }
+  {% endstyle %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var root = document.getElementById('movement-{{ section.id }}');
+      if(!root) return;
+
+      /* Counting animation */
+      var stats = root.querySelectorAll('.mv-stat__num');
+      var done = false;
+      function animate(){
+        if(done) return; done = true;
+        stats.forEach(function(el){
+          var target = parseFloat(el.getAttribute('data-target'));
+          if(isNaN(target)) return;
+          var start = null, dur = 1500;
+          function step(t){
+            if(!start) start = t;
+            var p = Math.min((t - start)/dur, 1);
+            var val = Math.floor(p * target);
+            el.textContent = val.toLocaleString();
+            if(p < 1) requestAnimationFrame(step);
+            else el.textContent = target.toLocaleString();
+          }
+          requestAnimationFrame(step);
+        });
+      }
+      var statsWrap = root.querySelector('.mv__stats');
+      if(statsWrap && 'IntersectionObserver' in window){
+        var io = new IntersectionObserver(function(es){
+          es.forEach(function(e){ if(e.isIntersecting){ animate(); io.disconnect(); } });
+        }, { threshold: .25 });
+        io.observe(statsWrap);
+      } else { animate(); }
+
+      /* Slider arrows */
+      var track = root.querySelector('[data-slider]');
+      if(track){
+        var prev = root.querySelector('.mv-arrow--prev');
+        var next = root.querySelector('.mv-arrow--next');
+        prev.addEventListener('click', function(){ track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' }); });
+        next.addEventListener('click', function(){ track.scrollBy({ left: track.clientWidth, behavior: 'smooth' }); });
+
+        {% if section.settings.autoplay %}
+        var timer = setInterval(function(){ track.scrollBy({ left: track.clientWidth, behavior: 'smooth' }); }, {{ section.settings.autoplay_ms }});
+        root.addEventListener('mouseenter', function(){ clearInterval(timer); });
+        root.addEventListener('mouseleave', function(){ timer = setInterval(function(){ track.scrollBy({ left: track.clientWidth, behavior: 'smooth' }); }, {{ section.settings.autoplay_ms }}); });
+        {% endif %}
+      }
+    });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Movement",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Pill label", "default": "SOLVE IT TOGETHER" },
+    { "type": "text", "id": "title", "label": "Titel", "default": "The Mommys Homes Movement" },
+    { "type": "textarea", "id": "subtitle", "label": "Subtitel", "default": "We bring together real experiences around everyday hair and skin struggles (like flat hair, sensitive scalp, delicate or dry skin) and share what truly helps — without empty claims." },
+
+    { "type": "textarea", "id": "chips", "label": "Chips (1 per regel)", "default": "Flat hair\nSensitive scalp\nDelicate skin\nDry skin\nLack of shine\nScalp buildup" },
+
+    { "type": "color", "id": "bg", "label": "Achtergrondkleur", "default": "#F7EFE8" },
+    { "type": "color", "id": "text", "label": "Tekstkleur", "default": "#201A17" },
+    { "type": "color", "id": "muted", "label": "Secundaire tekst", "default": "#8E8178" },
+    { "type": "color", "id": "card", "label": "Kaart achtergrond", "default": "#FFFFFF" },
+    { "type": "color", "id": "chip_bg", "label": "Chip achtergrond", "default": "#F5F1EC" },
+    { "type": "color", "id": "chip_border", "label": "Chip border", "default": "#E7E0D9" },
+    { "type": "color", "id": "primary", "label": "Primaire kleur (knoppen)", "default": "#000000" },
+
+    { "type": "range", "id": "radius", "label": "Radius (px)", "min": 6, "max": 30, "step": 1, "default": 18 },
+    { "type": "range", "id": "h1", "label": "Titelgrootte (px)", "min": 22, "max": 64, "step": 1, "default": 52 },
+    { "type": "range", "id": "h2", "label": "Subtitelgrootte (px)", "min": 12, "max": 28, "step": 1, "default": 18 },
+    { "type": "range", "id": "body", "label": "Body tekst (px)", "min": 12, "max": 20, "step": 1, "default": 14 },
+    { "type": "range", "id": "stat", "label": "Stat getal (px)", "min": 18, "max": 48, "step": 1, "default": 32 },
+    { "type": "range", "id": "stat_sub", "label": "Stat ondertekst (px)", "min": 10, "max": 18, "step": 1, "default": 13 },
+
+    { "type": "checkbox", "id": "autoplay", "label": "Testimonials autoplay", "default": false },
+    { "type": "range", "id": "autoplay_ms", "label": "Autoplay interval (ms)", "min": 2000, "max": 9000, "step": 500, "default": 4000 },
+
+    { "type": "range", "id": "pad_top", "label": "Padding boven (px)", "min": 0, "max": 120, "step": 2, "default": 56 },
+    { "type": "range", "id": "pad_bottom", "label": "Padding onder (px)", "min": 0, "max": 120, "step": 2, "default": 56 }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat kaart",
+      "limit": 6,
+      "settings": [
+        { "type": "text", "id": "number", "label": "Getal (alleen cijfers)", "default": "22482" },
+        { "type": "text", "id": "caption", "label": "Onderschrift", "default": "people joined" }
+      ]
+    },
+    {
+      "type": "avatar",
+      "name": "Avatar",
+      "limit": 8,
+      "settings": [
+        { "type": "image_picker", "id": "photo", "label": "Avatar afbeelding" }
+      ]
+    },
+    {
+      "type": "testimonial",
+      "name": "Testimonial kaart",
+      "limit": 12,
+      "settings": [
+        { "type": "text", "id": "meta_top", "label": "Bovenregel", "default": "2 weeks in the community" },
+        { "type": "image_picker", "id": "avatar", "label": "Avatar" },
+        { "type": "text", "id": "name", "label": "Naam + leeftijd", "default": "Amelia • 24 years old" },
+        { "type": "text", "id": "recognition", "label": "Recognition", "default": "flat at the roots" },
+        { "type": "textarea", "id": "quote", "label": "Citaat", "default": "my hair’s super fine + always flat at the roots. after like 3 washes this gave a tiny lift without making it crunchy. minty but not harsh." },
+        { "type": "textarea", "id": "outcome", "label": "Outcome", "default": "roots look less flat, day-2 feels lighter." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Movement",
+      "blocks": [
+        { "type": "stat", "settings": { "number": "22482", "caption": "people joined" } },
+        { "type": "stat", "settings": { "number": "436", "caption": "experience stories" } },
+        { "type": "stat", "settings": { "number": "365", "caption": "days active" } },
+
+        { "type": "avatar" },
+        { "type": "avatar" },
+        { "type": "avatar" },
+        { "type": "avatar" },
+        { "type": "avatar" },
+
+        { "type": "testimonial" },
+        { "type": "testimonial" },
+        { "type": "testimonial" }
+      ]
+    }
+  ]
+}
+{% endschema %}
