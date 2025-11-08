@@ -1,0 +1,210 @@
+<section id="stats-{{ section.id }}" class="stats-section">
+  <div class="stats-section__inner">
+    {% for block in section.blocks %}
+      <div class="stats-section__item" {{ block.shopify_attributes }}>
+        {% if block.settings.icon != blank %}
+          {{ block.settings.icon
+            | image_url: width: section.settings.icon_size
+            | image_tag: class: 'stats-section__icon', loading: 'lazy'
+          }}
+        {% endif %}
+
+        {% if block.settings.stat != blank %}
+          <div
+            class="stats-section__number"
+            data-target="{{ block.settings.stat | replace: ',', '' }}"
+          >
+            0
+          </div>
+        {% endif %}
+
+        {% if block.settings.label != blank %}
+          <div class="stats-section__label">
+            {{ block.settings.label }}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% style %}
+    #stats-{{ section.id }} {
+      background-color: {{ section.settings.bg_color }};
+    }
+
+    #stats-{{ section.id }} .stats-section__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 16px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 32px;
+    }
+
+    #stats-{{ section.id }} .stats-section__item {
+      text-align: center;
+    }
+
+    #stats-{{ section.id }} .stats-section__icon {
+      display: block;
+      margin: 0 auto 8px;
+      width: {{ section.settings.icon_size }}px;
+      height: auto;
+    }
+
+    #stats-{{ section.id }} .stats-section__number {
+      font-weight: 700;
+      font-size: {{ section.settings.number_size }}px;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    #stats-{{ section.id }} .stats-section__label {
+      font-size: {{ section.settings.label_size }}px;
+      line-height: 1.4;
+      opacity: 0.8;
+    }
+
+    @media screen and (max-width: 749px) {
+      #stats-{{ section.id }} .stats-section__inner {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+        padding: 28px 16px;
+        gap: 20px;
+      }
+    }
+  {% endstyle %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var section = document.getElementById('stats-{{ section.id }}');
+      if (!section) return;
+
+      var numbers = section.querySelectorAll('.stats-section__number');
+      if (!numbers.length) return;
+
+      var hasAnimated = false;
+
+      function animateNumbers() {
+        if (hasAnimated) return;
+        hasAnimated = true;
+
+        numbers.forEach(function(el) {
+          var target = parseFloat(el.getAttribute('data-target'));
+          if (isNaN(target)) return;
+
+          var duration = 1500;
+          var startTimestamp = null;
+
+          function step(timestamp) {
+            if (!startTimestamp) startTimestamp = timestamp;
+            var progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            var current = Math.floor(progress * target);
+            el.textContent = current.toLocaleString();
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
+            } else {
+              el.textContent = target.toLocaleString();
+            }
+          }
+
+          window.requestAnimationFrame(step);
+        });
+      }
+
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              animateNumbers();
+              observer.disconnect();
+            }
+          });
+        }, { threshold: 0.3 });
+
+        observer.observe(section);
+      } else {
+        // Fallback: animate immediately
+        animateNumbers();
+      }
+    });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Stats",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#F6F1E9"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 20,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "number_size",
+      "label": "Number font size",
+      "min": 14,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Label font size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "stat",
+          "label": "Number (for counting)",
+          "default": "25000"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Short text",
+          "default": "Liters of water purified"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stats",
+      "blocks": [
+        { "type": "stat" },
+        { "type": "stat" },
+        { "type": "stat" }
+      ]
+    }
+  ]
+}
+{% endschema %}
