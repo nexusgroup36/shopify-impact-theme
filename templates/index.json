@@ -39,7 +39,7 @@
         "liquid_G9FtHx": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:Inter, sans-serif; color:#FFFFFF; text-align:center;\">\n  <!-- Stars -->\n  <div style=\"color:#00B67A; font-size:18px; letter-spacing:2px; margin-bottom:-15px;\">\n    ★★★★★\n  </div>\n\n  <!-- Text -->\n  <div style=\"font-size:14px;\">\n    Loved by thousands who finally beat the funk\n  </div>\n</div>"
+            "liquid": "<div style=\"\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: flex-start;\n  font-family: Inter, sans-serif;\n  color: #FFFFFF;\n  text-align: left;\n  width: 100%;\n\">\n  <!-- Stars -->\n  <div style=\"color: #00B67A; font-size: 18px; letter-spacing: 2px; margin-bottom: -10px;\">\n    ★★★★★\n  </div>\n\n  <!-- Text -->\n  <div style=\"font-size: 14px;\">\n    Loved by thousands who finally beat the funk\n  </div>\n</div>\n\n<style>\n  @media screen and (max-width: 749px) {\n    div[style*=\"display: flex\"][style*=\"flex-direction: column\"] {\n      align-items: center !important;\n      text-align: center !important;\n    }\n  }\n</style>"
           }
         }
       },
