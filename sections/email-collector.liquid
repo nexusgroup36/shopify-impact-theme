@@ -1,0 +1,182 @@
+<section id="email-collector-{{ section.id }}" class="ec"
+  style="
+    --bg: {{ section.settings.bg_color }};
+    --text: {{ section.settings.text_color }};
+    --overlay: {{ section.settings.overlay_color }};
+    --overlay-op: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+    --pill-bg: {{ section.settings.pill_bg }};
+    --pill-text: {{ section.settings.pill_text }};
+    --btn-bg: {{ section.settings.button_bg }};
+    --btn-text: {{ section.settings.button_text }};
+    --radius: 999px;
+    --h1: {{ section.settings.title_size }}px;
+    --h2: {{ section.settings.subtitle_size }}px;
+    --pad-top: {{ section.settings.pad_top }}px;
+    --pad-bottom: {{ section.settings.pad_bottom }}px;
+  ">
+  <div class="ec__media">
+    {% if section.settings.bg_image != blank %}
+      {{ section.settings.bg_image
+        | image_url: width: 2400
+        | image_tag: class: 'ec__img', loading: 'lazy', alt: section.settings.title | escape }}
+    {% endif %}
+    <div class="ec__overlay"></div>
+  </div>
+
+  <div class="ec__container">
+    {% if section.settings.kicker != blank %}
+      <div class="ec__kicker">{{ section.settings.kicker }}</div>
+    {% endif %}
+
+    {% if section.settings.title != blank %}
+      <h2 class="ec__title">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    {% if section.settings.subtitle != blank %}
+      <p class="ec__subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+
+    {% form 'customer', id: 'EmailCollectorForm-{{ section.id }}' %}
+      {% if form.posted_successfully? %}
+        <div class="ec__success" role="status">{{ section.settings.success_text }}</div>
+      {% else %}
+        {% if form.errors %}
+          <div class="ec__error" role="alert">
+            {{ form.errors | default_errors }}
+          </div>
+        {% endif %}
+
+        <div class="ec__form">
+          <label class="sr-only" for="ec-email-{{ section.id }}">Email</label>
+          <input
+            id="ec-email-{{ section.id }}"
+            class="ec__input"
+            type="email"
+            name="contact[email]"
+            autocomplete="email"
+            placeholder="{{ section.settings.email_placeholder }}"
+            required
+          >
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <input type="hidden" name="customer[accepts_marketing]" value="true">
+
+          <button class="ec__btn" type="submit">
+            {{ section.settings.button_label }}
+          </button>
+        </div>
+
+        {% if section.settings.note != blank %}
+          <p class="ec__note">{{ section.settings.note }}</p>
+        {% endif %}
+      {% endif %}
+    {% endform %}
+  </div>
+
+  <style>
+    #email-collector-{{ section.id }}{
+      position:relative; isolation:isolate; color:var(--text); background:var(--bg);
+      padding:var(--pad-top) 16px var(--pad-bottom);
+    }
+    #email-collector-{{ section.id }} .ec__media{
+      position:absolute; inset:0; overflow:hidden; z-index:-2;
+    }
+    #email-collector-{{ section.id }} .ec__img{
+      position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+      transform:scale(1.02);
+    }
+    #email-collector-{{ section.id }} .ec__overlay{
+      position:absolute; inset:0; background:var(--overlay); opacity:var(--overlay-op); z-index:-1;
+    }
+    #email-collector-{{ section.id }} .ec__container{
+      max-width:1100px; margin:0 auto; text-align:center;
+    }
+
+    .ec__kicker{
+      display:inline-block; padding:8px 14px; border-radius:var(--radius);
+      background:var(--pill-bg); color:var(--pill-text); font-weight:700; letter-spacing:.06em;
+      margin-bottom:10px; font-size:13px;
+    }
+    .ec__title{
+      font-size:var(--h1); line-height:1.05; margin:0 0 10px; font-weight:800; color:#fff;
+      letter-spacing:-.02em;
+    }
+    .ec__subtitle{
+      font-size:var(--h2); margin:0 auto 18px; color:rgba(255,255,255,.9); max-width:900px;
+    }
+
+    .ec__form{
+      display:flex; gap:12px; justify-content:center; align-items:center; margin: 8px auto 10px;
+      max-width:760px;
+    }
+    .ec__input{
+      flex:1; min-width:0; padding:14px 18px; border-radius:var(--radius);
+      border:1px solid rgba(255,255,255,.3);
+      background:rgba(255,255,255,.25); backdrop-filter: blur(6px);
+      color:#fff; outline:none; font-weight:600;
+    }
+    .ec__input::placeholder{ color:rgba(255,255,255,.85); }
+    .ec__btn{
+      white-space:nowrap; padding:14px 22px; border-radius:var(--radius);
+      background:var(--btn-bg); color:var(--btn-text); border:1px solid transparent;
+      font-weight:700; cursor:pointer; transition:transform .08s ease, opacity .2s ease;
+    }
+    .ec__btn:active{ transform:translateY(1px); }
+
+    .ec__note{ color:rgba(255,255,255,.85); margin:8px 0 0; font-size:14px }
+
+    .ec__success{
+      display:inline-block; background:rgba(255,255,255,.2); color:#fff; padding:12px 16px;
+      border-radius:12px; backdrop-filter: blur(6px);
+    }
+    .ec__error{ color:#fff; background:rgba(200,0,0,.35); padding:10px 12px; border-radius:10px; margin: 0 auto 10px; max-width:760px; }
+
+    @media (max-width: 749px){
+      .ec__form{ flex-direction:column; gap:10px; }
+      .ec__input,.ec__btn{ width:100%; }
+      .ec__title{ font-size: clamp(28px, 10vw, var(--h1)); }
+      .ec__subtitle{ font-size: clamp(14px, 4.3vw, var(--h2)); }
+    }
+
+    /* Screen reader only */
+    #email-collector-{{ section.id }} .sr-only{
+      position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+      clip:rect(0,0,0,0); white-space:nowrap; border:0;
+    }
+  </style>
+</section>
+
+{% schema %}
+{
+  "name": "Email Collector",
+  "settings": [
+    { "type": "image_picker", "id": "bg_image", "label": "Achtergrondafbeelding" },
+    { "type": "color", "id": "bg_color", "label": "Fallback achtergrondkleur", "default": "#000000" },
+    { "type": "color", "id": "overlay_color", "label": "Overlay kleur", "default": "#000000" },
+    { "type": "range", "id": "overlay_opacity", "label": "Overlay dekking (%)", "min": 0, "max": 90, "step": 1, "default": 35 },
+
+    { "type": "text", "id": "kicker", "label": "Klein label (pill)", "default": "MOMMYSHOMES" },
+    { "type": "text", "id": "title", "label": "Titel", "default": "Wellness Starts at Home" },
+    { "type": "textarea", "id": "subtitle", "label": "Subtitel / omschrijving", "default": "Join our community and discover how to create a healthier, happier home environment for you and your family." },
+
+    { "type": "range", "id": "title_size", "label": "Titel grootte (px)", "min": 24, "max": 96, "step": 1, "default": 72 },
+    { "type": "range", "id": "subtitle_size", "label": "Subtitel grootte (px)", "min": 12, "max": 28, "step": 1, "default": 18 },
+
+    { "type": "text", "id": "email_placeholder", "label": "Placeholder", "default": "Email" },
+    { "type": "text", "id": "button_label", "label": "Knoptekst", "default": "Join the movement" },
+    { "type": "text", "id": "success_text", "label": "Succesbericht", "default": "Thanks! Please check your inbox to confirm." },
+    { "type": "textarea", "id": "note", "label": "Korte tekstregel onder knop", "default": "Members get exclusive discounts and early access to new products." },
+
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (buiten knoppen)", "default": "#FFFFFF" },
+    { "type": "color", "id": "pill_bg", "label": "Pill achtergrond", "default": "rgba(255,255,255,0.25)" },
+    { "type": "color", "id": "pill_text", "label": "Pill tekstkleur", "default": "#FFFFFF" },
+    { "type": "color", "id": "button_bg", "label": "Knop achtergrond", "default": "#FFFFFF" },
+    { "type": "color", "id": "button_text", "label": "Knop tekstkleur", "default": "#000000" },
+
+    { "type": "range", "id": "pad_top", "label": "Padding boven (px)", "min": 0, "max": 160, "step": 4, "default": 80 },
+    { "type": "range", "id": "pad_bottom", "label": "Padding onder (px)", "min": 0, "max": 160, "step": 4, "default": 80 }
+  ],
+  "presets": [
+    { "name": "Email Collector" }
+  ]
+}
+{% endschema %}
