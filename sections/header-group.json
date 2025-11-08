@@ -48,9 +48,9 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": true,
-        "logo": "shopify://shop_images/Jouw_alineatekst.svg",
-        "logo_max_width": 145,
-        "logo_mobile_max_width": 105,
+        "logo": "shopify://shop_images/Jouw_alineatekst.png",
+        "logo_max_width": 210,
+        "logo_mobile_max_width": 140,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
