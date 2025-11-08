@@ -366,7 +366,7 @@
         "body": 14,
         "stat": 32,
         "stat_sub": 13,
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_ms": 4000,
         "pad_top": 56,
         "pad_bottom": 56
