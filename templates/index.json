@@ -329,6 +329,32 @@
         "slider_track": "#e9e9e9",
         "slider_thumb": "#bdbdbd"
       }
+    },
+    "email_collector_eKreVy": {
+      "type": "email-collector",
+      "name": "Email Collector",
+      "settings": {
+        "bg_image": "shopify://shop_images/hipster-boyfriend-tying-shoes-to-his-girls-while-go-the-relaxing-in-holiday-couple-in-love-concept-free-photo.jpg",
+        "bg_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "kicker": "MOMMYSHOMES",
+        "title": "Wellness Starts at Home",
+        "subtitle": "Join our community and discover how to create a healthier, happier home environment for you and your family.",
+        "title_size": 72,
+        "subtitle_size": 18,
+        "email_placeholder": "Email",
+        "button_label": "Join the movement",
+        "success_text": "Thanks! Please check your inbox to confirm.",
+        "note": "Members get exclusive discounts and early access to new products.",
+        "text_color": "#FFFFFF",
+        "pill_bg": "rgba(255,255,255,0.25)",
+        "pill_text": "#FFFFFF",
+        "button_bg": "#FFFFFF",
+        "button_text": "#000000",
+        "pad_top": 80,
+        "pad_bottom": 80
+      }
     }
   },
   "order": [
@@ -338,6 +364,7 @@
     "collection-list",
     "how_we_help_NrU4qk",
     "bundle_card_V7CgHe",
-    "loop_reviews_aVW8Jy"
+    "loop_reviews_aVW8Jy",
+    "email_collector_eKreVy"
   ]
 }
