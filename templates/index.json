@@ -29,7 +29,7 @@
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "sm",
+            "size": "base",
             "text": "SHOP NOW",
             "url": "shopify://products/the-dovie",
             "background": "#2e3a29",
