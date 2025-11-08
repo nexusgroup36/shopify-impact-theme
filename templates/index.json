@@ -437,7 +437,7 @@
         "text": "#1D1B19",
         "muted": "#8A8079",
         "card": "#FFFFFF",
-        "shadow_opacity": 18,
+        "shadow_opacity": 0,
         "image_ratio": "4-5",
         "radius": 18,
         "img_radius": 18,
