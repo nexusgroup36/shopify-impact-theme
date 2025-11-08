@@ -1,0 +1,296 @@
+<section id="how-we-help-{{ section.id }}" class="hwh-section" style="
+  --hwh-bg: {{ section.settings.bg_color }};
+  --hwh-text: {{ section.settings.text_color }};
+  --hwh-chip-border: {{ section.settings.chip_border }};
+  --hwh-chip-active-bg: {{ section.settings.chip_active_bg }};
+  --hwh-chip-active-text: {{ section.settings.chip_active_text }};
+  --hwh-chip-radius: {{ section.settings.chip_radius }}px;
+  --hwh-img-radius: {{ section.settings.image_radius }}px;
+  --hwh-title-size: {{ section.settings.title_size }}px;
+  --hwh-subtitle-size: {{ section.settings.subtitle_size }}px;
+  --hwh-ctitle-size: {{ section.settings.content_title_size }}px;
+  --hwh-bullet-size: {{ section.settings.bullet_size }}px;
+  --hwh-pad-top: {{ section.settings.pad_top }}px;
+  --hwh-pad-bottom: {{ section.settings.pad_bottom }}px;
+">
+  <div class="hwh-container">
+    {% if section.settings.heading != blank %}
+      <h2 class="hwh-heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.subheading != blank %}
+      <p class="hwh-subheading">{{ section.settings.subheading }}</p>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <div class="hwh-chips" role="tablist" aria-label="How We Help tabs">
+        {% for block in section.blocks %}
+          <button
+            class="hwh-chip{% if forloop.first %} is-active{% endif %}"
+            role="tab"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            aria-controls="hwh-panel-{{ section.id }}-{{ forloop.index }}"
+            id="hwh-tab-{{ section.id }}-{{ forloop.index }}"
+            data-target="#hwh-panel-{{ section.id }}-{{ forloop.index }}"
+            {{ block.shopify_attributes }}
+          >
+            {{ block.settings.tab_label | escape }}
+          </button>
+        {% endfor %}
+      </div>
+
+      {% for block in section.blocks %}
+        {% assign ratio = section.settings.image_ratio %}
+        {% case ratio %}
+          {% when '16-9' %}{% assign padding = 56.25 %}
+          {% when '4-3' %}{% assign padding = 75 %}
+          {% when '3-2' %}{% assign padding = 66.66 %}
+          {% when '1-1' %}{% assign padding = 100 %}
+          {% else %}{% assign padding = 56.25 %}
+        {% endcase %}
+
+        <div
+          class="hwh-panel{% unless forloop.first %} is-hidden{% endunless %}"
+          id="hwh-panel-{{ section.id }}-{{ forloop.index }}"
+          role="tabpanel"
+          aria-labelledby="hwh-tab-{{ section.id }}-{{ forloop.index }}"
+        >
+          {% if block.settings.image != blank %}
+            <div class="hwh-media" style="padding-top: {{ padding }}%;">
+              {{ block.settings.image
+                | image_url: width: 1600
+                | image_tag:
+                  class: 'hwh-img',
+                  loading: 'lazy',
+                  alt: block.settings.content_title | escape
+              }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.content_title != blank %}
+            <h3 class="hwh-content-title">{{ block.settings.content_title }}</h3>
+          {% endif %}
+
+          {% if block.settings.bullets != blank %}
+            {% assign lines = block.settings.bullets | newline_to_br | split: '<br />' %}
+            <ul class="hwh-bullets">
+              {% for line in lines %}
+                {% assign parts = line | strip | split: '|' %}
+                {% if parts[0] != blank %}
+                  <li>
+                    <strong>{{ parts[0] | strip }}</strong>
+                    {% if parts.size > 1 %}
+                      <span class="hwh-bullet-muted"> {{ parts[1] | strip }}</span>
+                    {% endif %}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+          {% if block.settings.cta_label != blank and block.settings.cta_link != blank %}
+            <a href="{{ block.settings.cta_link }}" class="hwh-cta">{{ block.settings.cta_label }}</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  {% style %}
+  #how-we-help-{{ section.id }}{
+    background: var(--hwh-bg);
+    color: var(--hwh-text);
+    padding-top: var(--hwh-pad-top);
+    padding-bottom: var(--hwh-pad-bottom);
+  }
+  #how-we-help-{{ section.id }} .hwh-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: center;
+  }
+  .hwh-heading{
+    font-size: var(--hwh-title-size);
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+  .hwh-subheading{
+    font-size: var(--hwh-subtitle-size);
+    opacity: .8;
+    margin: 0 0 16px;
+  }
+
+  /* Chips */
+  .hwh-chips{
+    display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin: 10px 0 22px;
+  }
+  .hwh-chip{
+    border: 1px solid var(--hwh-chip-border);
+    background: transparent;
+    color: var(--hwh-text);
+    border-radius: var(--hwh-chip-radius);
+    padding: 8px 14px;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background .25s ease, color .25s ease, border-color .25s ease, opacity .25s ease;
+  }
+  .hwh-chip.is-active{
+    background: var(--hwh-chip-active-bg);
+    color: var(--hwh-chip-active-text);
+    border-color: var(--hwh-chip-active-bg);
+  }
+
+  /* Panels */
+  .hwh-panel{
+    max-width: 960px;
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity .35s ease;
+  }
+  .hwh-panel.is-hidden{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  /* Image wrapper keeps ratio */
+  .hwh-media{
+    position: relative;
+    width: 100%;
+    border-radius: var(--hwh-img-radius);
+    overflow: hidden;
+    margin: 0 auto 24px;
+  }
+  .hwh-img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit: cover;
+  }
+
+  .hwh-content-title{
+    font-size: var(--hwh-ctitle-size);
+    text-align: left;
+    margin: 8px 0 12px;
+  }
+
+  .hwh-bullets{
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0 0 18px;
+    font-size: var(--hwh-bullet-size);
+  }
+  .hwh-bullets li{ margin: 6px 0; }
+  .hwh-bullet-muted{ opacity: .7; }
+
+  .hwh-cta{
+    display:inline-block;
+    margin-top: 6px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: var(--hwh-chip-active-bg);
+    color: var(--hwh-chip-active-text);
+    text-decoration:none;
+    font-weight: 600;
+  }
+
+  /* Responsive */
+  @media (max-width: 749px){
+    .hwh-content-title{ text-align: center; }
+    .hwh-bullets{ padding-left: 18px; }
+  }
+  {% endstyle %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var root = document.getElementById('how-we-help-{{ section.id }}');
+      if(!root) return;
+
+      var chips = root.querySelectorAll('.hwh-chip');
+      var panels = root.querySelectorAll('.hwh-panel');
+
+      function showPanel(id){
+        panels.forEach(function(p){
+          if('#'+p.id === id){
+            p.classList.remove('is-hidden');
+          }else{
+            p.classList.add('is-hidden');
+          }
+        });
+      }
+
+      chips.forEach(function(btn){
+        btn.addEventListener('click', function(){
+          chips.forEach(function(c){ c.classList.remove('is-active'); c.setAttribute('aria-selected','false'); });
+          btn.classList.add('is-active');
+          btn.setAttribute('aria-selected','true');
+          showPanel(btn.getAttribute('data-target'));
+        });
+      });
+    });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "How We Help",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Titel", "default": "How We Help" },
+    { "type": "textarea", "id": "subheading", "label": "Subtitel", "default": "We fix the hidden causes behind skin, sleep, and home frustrations—so your routines feel effortless." },
+
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#FFFFFF" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#1C1C1C" },
+
+    { "type": "range", "id": "title_size", "label": "Titel grootte (px)", "min": 18, "max": 64, "step": 1, "default": 36 },
+    { "type": "range", "id": "subtitle_size", "label": "Subtitel grootte (px)", "min": 12, "max": 28, "step": 1, "default": 16 },
+    { "type": "range", "id": "content_title_size", "label": "Contenttitel grootte (px)", "min": 14, "max": 36, "step": 1, "default": 20 },
+    { "type": "range", "id": "bullet_size", "label": "Bullet tekstgrootte (px)", "min": 12, "max": 22, "step": 1, "default": 16 },
+
+    { "type": "color", "id": "chip_border", "label": "Chip randkleur", "default": "#E5E5E5" },
+    { "type": "color", "id": "chip_active_bg", "label": "Chip active achtergrond", "default": "#F2F2F2" },
+    { "type": "color", "id": "chip_active_text", "label": "Chip active tekstkleur", "default": "#1C1C1C" },
+    { "type": "range", "id": "chip_radius", "label": "Chip radius (px)", "min": 0, "max": 24, "step": 1, "default": 20 },
+
+    { "type": "select", "id": "image_ratio", "label": "Afbeelding aspect ratio", "default": "16-9",
+      "options": [
+        { "value": "16-9", "label": "16:9" },
+        { "value": "4-3", "label": "4:3" },
+        { "value": "3-2", "label": "3:2" },
+        { "value": "1-1", "label": "1:1" }
+      ]
+    },
+    { "type": "range", "id": "image_radius", "label": "Afbeelding radius (px)", "min": 0, "max": 40, "step": 1, "default": 16 },
+
+    { "type": "range", "id": "pad_top", "label": "Padding boven (px)", "min": 0, "max": 120, "step": 2, "default": 48 },
+    { "type": "range", "id": "pad_bottom", "label": "Padding onder (px)", "min": 0, "max": 120, "step": 2, "default": 48 }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        { "type": "text", "id": "tab_label", "label": "Tab label", "default": "Shower" },
+        { "type": "image_picker", "id": "image", "label": "Afbeelding" },
+        { "type": "text", "id": "content_title", "label": "Contenttitel", "default": "Better Water, Better Skin & Hair" },
+        {
+          "type": "textarea",
+          "id": "bullets",
+          "label": "Bullets (één per regel, gebruik \"Bold | toelichting\")",
+          "default": "Removes chlorine, limescale, and metals | before they touch your skin.\nKeeps your skin barrier calm | irritation fades and softness lasts.\nSeals hair cuticles | for smoother texture and lasting shine."
+        },
+        { "type": "text", "id": "cta_label", "label": "CTA label", "default": "Learn More" },
+        { "type": "url", "id": "cta_link", "label": "CTA link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How We Help",
+      "blocks": [
+        { "type": "tab", "settings": { "tab_label": "Shower" } },
+        { "type": "tab", "settings": { "tab_label": "Sleep" } },
+        { "type": "tab", "settings": { "tab_label": "Home" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
