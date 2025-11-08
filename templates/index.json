@@ -35,12 +35,19 @@
             "background": "#2e3a29",
             "text_color": "#ffffff"
           }
+        },
+        "liquid_G9FtHx": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:Inter, sans-serif; color:#FFFFFF; text-align:center;\">\n  <!-- Stars -->\n  <div style=\"color:#00B67A; font-size:18px; letter-spacing:2px; margin-bottom:-15px;\">\n    ★★★★★\n  </div>\n\n  <!-- Text -->\n  <div style=\"font-size:14px;\">\n    Loved by thousands who finally beat the funk\n  </div>\n</div>"
+          }
         }
       },
       "block_order": [
         "heading_RRh9yL",
         "richtext_KyP3zd",
-        "button_HGVmHk"
+        "button_HGVmHk",
+        "liquid_G9FtHx"
       ],
       "name": "Image with text overlay",
       "settings": {
