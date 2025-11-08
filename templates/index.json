@@ -227,8 +227,8 @@
       "type": "bundle-card",
       "name": "Bundle Card",
       "settings": {
-        "top_label": "Odor Bundle",
-        "bg_color": "#2e3a29",
+        "top_label": "The Ultimate Freshness Bundle",
+        "bg_color": "#f2f2f2",
         "card_bg": "#FFFFFF",
         "text_color": "#2A2220",
         "muted_color": "#8A7E78",
