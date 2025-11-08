@@ -9,6 +9,7 @@
   --hwh-title-size: {{ section.settings.title_size }}px;
   --hwh-subtitle-size: {{ section.settings.subtitle_size }}px;
   --hwh-ctitle-size: {{ section.settings.content_title_size }}px;
+  --hwh-paragraph-size: {{ section.settings.paragraph_size }}px;
   --hwh-bullet-size: {{ section.settings.bullet_size }}px;
   --hwh-pad-top: {{ section.settings.pad_top }}px;
   --hwh-pad-bottom: {{ section.settings.pad_bottom }}px;
@@ -68,6 +69,10 @@
 
           {% if block.settings.content_title != blank %}
             <h3 class="hwh-content-title">{{ block.settings.content_title }}</h3>
+          {% endif %}
+
+          {% if block.settings.content_paragraph != blank %}
+            <p class="hwh-content-paragraph">{{ block.settings.content_paragraph }}</p>
           {% endif %}
 
           {% if block.settings.bullets != blank %}
@@ -169,7 +174,15 @@
   .hwh-content-title{
     font-size: var(--hwh-ctitle-size);
     text-align: left;
-    margin: 8px 0 12px;
+    margin: 8px 0 8px;
+  }
+
+  .hwh-content-paragraph{
+    font-size: var(--hwh-paragraph-size);
+    line-height: 1.6;
+    opacity: .85;
+    margin: 0 0 12px;
+    text-align: left;
   }
 
   .hwh-bullets{
@@ -196,6 +209,7 @@
   /* Responsive */
   @media (max-width: 749px){
     .hwh-content-title{ text-align: center; }
+    .hwh-content-paragraph{ text-align: center; }
     .hwh-bullets{ padding-left: 18px; }
   }
   {% endstyle %}
@@ -243,6 +257,7 @@
     { "type": "range", "id": "title_size", "label": "Titel grootte (px)", "min": 18, "max": 64, "step": 1, "default": 36 },
     { "type": "range", "id": "subtitle_size", "label": "Subtitel grootte (px)", "min": 12, "max": 28, "step": 1, "default": 16 },
     { "type": "range", "id": "content_title_size", "label": "Contenttitel grootte (px)", "min": 14, "max": 36, "step": 1, "default": 20 },
+    { "type": "range", "id": "paragraph_size", "label": "Paragraaf tekstgrootte (px)", "min": 12, "max": 24, "step": 1, "default": 16 },
     { "type": "range", "id": "bullet_size", "label": "Bullet tekstgrootte (px)", "min": 12, "max": 22, "step": 1, "default": 16 },
 
     { "type": "color", "id": "chip_border", "label": "Chip randkleur", "default": "#E5E5E5" },
@@ -271,6 +286,12 @@
         { "type": "text", "id": "tab_label", "label": "Tab label", "default": "Shower" },
         { "type": "image_picker", "id": "image", "label": "Afbeelding" },
         { "type": "text", "id": "content_title", "label": "Contenttitel", "default": "Better Water, Better Skin & Hair" },
+        {
+          "type": "textarea",
+          "id": "content_paragraph",
+          "label": "Paragraaf (tussen titel en bullets)",
+          "default": "Write a short supporting paragraph that bridges the headline and bullets."
+        },
         {
           "type": "textarea",
           "id": "bullets",
