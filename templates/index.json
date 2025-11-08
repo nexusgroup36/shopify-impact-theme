@@ -163,8 +163,9 @@
         "tab_gGgznx": {
           "type": "tab",
           "settings": {
-            "tab_label": "Work Life",
+            "tab_label": "Work",
             "content_title": "For workers, nurses, chefs, delivery drivers, etc.",
+            "content_paragraph": "After 10-hour shifts, your feet and shoes trap sweat, heat, and bacteria, especially in work boots or sneakers.",
             "bullets": "Neutralizes odor-causing bacteria overnight\n\nKeeps shoes dry and breathable even after long shifts\n\nExtends shoe lifespan — no more throwing away $150 boots",
             "cta_label": "",
             "cta_link": ""
@@ -173,8 +174,9 @@
         "tab_mJrVxK": {
           "type": "tab",
           "settings": {
-            "tab_label": "Sleep",
-            "content_title": "Better Water, Better Skin & Hair",
+            "tab_label": "Active",
+            "content_title": "For athletes, gym-goers, and fitness enthusiasts.",
+            "content_paragraph": "Sweaty sneakers, gym bags, and cleats don’t just smell: they trap odor in the materials.",
             "bullets": "",
             "cta_label": "Learn More",
             "cta_link": ""
@@ -185,6 +187,7 @@
           "settings": {
             "tab_label": "Home",
             "content_title": "Better Water, Better Skin & Hair",
+            "content_paragraph": "Write a short supporting paragraph that bridges the headline and bullets.",
             "bullets": "Removes chlorine, limescale, and metals | before they touch your skin.\nKeeps your skin barrier calm | irritation fades and softness lasts.\nSeals hair cuticles | for smoother texture and lasting shine.",
             "cta_label": "Learn More",
             "cta_link": ""
@@ -200,15 +203,16 @@
       "settings": {
         "heading": "How We Help",
         "subheading": "We fix the hidden causes behind odor, moisture, and shoe frustration, so your life (and your shoes) finally feel fresh again.",
-        "bg_color": "#FFFFFF",
-        "text_color": "#1C1C1C",
+        "bg_color": "#ffffff",
+        "text_color": "#1c1c1c",
         "title_size": 36,
         "subtitle_size": 16,
         "content_title_size": 20,
+        "paragraph_size": 16,
         "bullet_size": 16,
-        "chip_border": "#E5E5E5",
-        "chip_active_bg": "#F2F2F2",
-        "chip_active_text": "#1C1C1C",
+        "chip_border": "#e5e5e5",
+        "chip_active_bg": "#f2f2f2",
+        "chip_active_text": "#1c1c1c",
         "chip_radius": 20,
         "image_ratio": "16-9",
         "image_radius": 16,
