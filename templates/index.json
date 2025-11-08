@@ -258,6 +258,45 @@
         "p2_compare_at": "€76,00",
         "p2_desc": "Made for your closet: removes trapped air odors, absorbs excess moisture, and keeps your closets and rooms naturally fresh 24/7."
       }
+    },
+    "loop_reviews_aVW8Jy": {
+      "type": "loop-reviews",
+      "blocks": {
+        "review_epmKxJ": {
+          "type": "review",
+          "settings": {
+            "name": "Alejandra",
+            "rating": 5,
+            "review_text": "I previously used other earplugs, and I really liked them. However, when I tried these, they were a whole other level. More noise reduction, a much more pleasant frequency..."
+          }
+        },
+        "review_UGJVbi": {
+          "type": "review",
+          "settings": {
+            "name": "Alejandra",
+            "rating": 5,
+            "review_text": "I previously used other earplugs, and I really liked them. However, when I tried these, they were a whole other level. More noise reduction, a much more pleasant frequency..."
+          }
+        },
+        "review_PXYrHM": {
+          "type": "review",
+          "settings": {
+            "name": "Alejandra",
+            "rating": 5,
+            "review_text": "I previously used other earplugs, and I really liked them. However, when I tried these, they were a whole other level. More noise reduction, a much more pleasant frequency..."
+          }
+        }
+      },
+      "block_order": [
+        "review_epmKxJ",
+        "review_UGJVbi",
+        "review_PXYrHM"
+      ],
+      "name": "Wake Loop Reviews",
+      "settings": {
+        "title": "What our customers say",
+        "marquee_speed": 4
+      }
     }
   },
   "order": [
@@ -266,6 +305,7 @@
     "stats_iCRNxx",
     "collection-list",
     "how_we_help_NrU4qk",
-    "bundle_card_V7CgHe"
+    "bundle_card_V7CgHe",
+    "loop_reviews_aVW8Jy"
   ]
 }
