@@ -164,6 +164,7 @@
           "type": "tab",
           "settings": {
             "tab_label": "Work",
+            "image": "shopify://shop_images/2023-work-america-report-hero_tcm7-318106.jpg",
             "content_title": "For workers, nurses, chefs, delivery drivers, etc.",
             "content_paragraph": "After 10-hour shifts, your feet and shoes trap sweat, heat, and bacteria, especially in work boots or sneakers.",
             "bullets": "Neutralizes odor-causing bacteria overnight\n\nKeeps shoes dry and breathable even after long shifts\n\nExtends shoe lifespan: no more throwing away $150 boots",
@@ -175,6 +176,7 @@
           "type": "tab",
           "settings": {
             "tab_label": "Active",
+            "image": "shopify://shop_images/Athlete-Well-Being-903x602.jpg",
             "content_title": "For athletes, gym-goers, and fitness enthusiasts.",
             "content_paragraph": "Sweaty sneakers, gym bags, and cleats don’t just smell: they trap odor in the materials.",
             "bullets": "Absorbs sweat and odor molecules trapped in foam\n\nPerfect for gym shoes, cleats, and lockers\n\nKeeps your gear fresh between workouts. No sprays, no effort",
