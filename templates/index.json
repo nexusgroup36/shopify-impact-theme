@@ -70,7 +70,7 @@
         "stat_jLaRQn": {
           "type": "stat",
           "settings": {
-            "stat": "25000",
+            "stat": "500000",
             "label": "Shoes saved from odor"
           }
         },
