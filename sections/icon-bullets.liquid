@@ -1,0 +1,144 @@
+<section id="ib-{{ section.id }}" class="ib"
+  style="
+    --ib-text: {{ section.settings.text_color }};
+    --ib-size: {{ section.settings.text_size }}px;
+    --ib-gap: {{ section.settings.row_gap }}px;
+    --ib-icon: {{ section.settings.icon_size }}px;
+    --ib-maxw: {{ section.settings.max_width }}px;
+    --ib-pad-top: {{ section.settings.pad_top }}px;
+    --ib-pad-bottom: {{ section.settings.pad_bottom }}px;
+  ">
+  <div class="ib__container">
+    {% if section.settings.heading != blank %}
+      <h3 class="ib__heading">{{ section.settings.heading }}</h3>
+    {% endif %}
+
+    <ul class="ib__list">
+      {% for block in section.blocks %}
+        {% if block.type == 'bullet' %}
+          {% assign circle = block.settings.circle_bg %}
+          <li class="ib__item" {{ block.shopify_attributes }}>
+            <span class="ib__icon{% if circle %} has-circle{% endif %}"
+                  style="
+                    {% if block.settings.circle_bg %}--ib-circle: {{ block.settings.circle_color }};{% endif %}
+                    {% if block.settings.icon_color != blank %}--ib-icon-color: {{ block.settings.icon_color }};{% endif %}
+                  ">
+              {% if block.settings.inline_svg != blank %}
+                <!-- Inline SVG (inherits currentColor) -->
+                <span class="ib__svg">{{ block.settings.inline_svg }}</span>
+              {% elsif block.settings.icon_img != blank %}
+                {{ block.settings.icon_img
+  | image_url: width: 128
+  | image_tag: class: 'ib__img', loading: 'lazy', alt: block.settings.text | escape }}
+
+              {% else %}
+                <!-- Fallback dot -->
+                <span class="ib__dot" aria-hidden="true"></span>
+              {% endif %}
+            </span>
+
+            <span class="ib__text">{{ block.settings.text }}</span>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <style>
+    #ib-{{ section.id }}{ padding:var(--ib-pad-top) 16px var(--ib-pad-bottom); color:var(--ib-text); }
+    #ib-{{ section.id }} .ib__container{ max-width:var(--ib-maxw); margin:0 auto; }
+    .ib__heading{ margin:0 0 8px; font-weight:700; }
+    .ib__list{ list-style:none; margin:0; padding:0; display:grid; gap:var(--ib-gap); }
+    .ib__item{ display:flex; align-items:center; gap:12px; }
+    .ib__text{ font-size:var(--ib-size); line-height:1.4; }
+
+    .ib__icon{
+      position:relative; display:inline-grid; place-items:center;
+      width:var(--ib-icon); height:var(--ib-icon); color:var(--ib-icon-color, currentColor);
+      flex:0 0 var(--ib-icon);
+    }
+    .ib__icon.has-circle::before{
+      content:""; position:absolute; inset:0; border-radius:50%;
+      background:var(--ib-circle, #4F6B3F); /* default green if enabled */
+    }
+    .ib__svg, .ib__img, .ib__dot{ position:relative; z-index:1; display:block; width:70%; height:70%; }
+    .ib__svg svg{ width:100%; height:100%; display:block; fill:currentColor; stroke:currentColor; }
+    .ib__img{ width:100%; height:100%; object-fit:contain; }
+    .ib__dot{ width:36%; height:36%; border-radius:50%; background:currentColor; }
+
+    /* Slightly larger touch target on mobile */
+    @media (max-width: 640px){
+      .ib__item{ gap:10px; }
+    }
+  </style>
+</section>
+
+{% schema %}
+{
+  "name": "Icon Bullets",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Optional heading" },
+
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#3A3A3A" },
+    { "type": "range", "id": "text_size", "label": "Text size (px)", "min": 12, "max": 28, "step": 1, "default": 20 },
+    { "type": "range", "id": "icon_size", "label": "Icon box size (px)", "min": 16, "max": 56, "step": 1, "default": 28 },
+    { "type": "range", "id": "row_gap", "label": "Row spacing (px)", "min": 4, "max": 28, "step": 1, "default": 12 },
+
+    { "type": "range", "id": "max_width", "label": "Max width (px)", "min": 500, "max": 1400, "step": 10, "default": 900 },
+    { "type": "range", "id": "pad_top", "label": "Padding top (px)", "min": 0, "max": 100, "step": 2, "default": 0 },
+    { "type": "range", "id": "pad_bottom", "label": "Padding bottom (px)", "min": 0, "max": 100, "step": 2, "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "bullet",
+      "name": "Bullet",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Text", "default": "Relieves pressure on feet and joints" },
+
+        { "type": "textarea", "id": "inline_svg", "label": "Inline SVG (paste code)", "info": "Prefer SVGs that use currentColor to inherit the color." },
+        { "type": "image_picker", "id": "icon_img", "label": "OR upload icon (PNG/SVG)" },
+
+        { "type": "color", "id": "icon_color", "label": "Icon color (for inline SVG)", "default": "#FFFFFF" },
+        { "type": "checkbox", "id": "circle_bg", "label": "Show colored circle behind icon", "default": true },
+        { "type": "color", "id": "circle_color", "label": "Circle color", "default": "#556641" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon Bullets",
+      "blocks": [
+        {
+          "type": "bullet",
+          "settings": {
+            "text": "Relieves pressure on feet and joints",
+            "inline_svg": "<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M20 6 9 17l-5-5' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+            "icon_color": "#FFFFFF",
+            "circle_bg": true,
+            "circle_color": "#556641"
+          }
+        },
+        {
+          "type": "bullet",
+          "settings": {
+            "text": "Developed with podiatrists",
+            "inline_svg": "<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M20 6 9 17l-5-5' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+            "icon_color": "#FFFFFF",
+            "circle_bg": true,
+            "circle_color": "#556641"
+          }
+        },
+        {
+          "type": "bullet",
+          "settings": {
+            "text": "Free shipping",
+            "inline_svg": "<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M3 7h12v8H3zM15 10h4l2 3v2h-6V10zM6 18a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm10 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z' fill='currentColor'/></svg>",
+            "icon_color": "#2A2A2A",
+            "circle_bg": false
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
