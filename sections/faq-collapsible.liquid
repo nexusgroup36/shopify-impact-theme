@@ -41,48 +41,43 @@
     {% endif %}
   </div>
 
-  {% style %}
-  #faq-{{ section.id }}{ background:var(--bg); color:var(--text); padding:var(--pad-top) 16px var(--pad-bottom); }
-  #faq-{{ section.id }} .faq__container{ max-width:1080px; margin:0 auto; }
+  <style>
+    #faq-{{ section.id }}{ background:var(--bg); color:var(--text); padding:var(--pad-top) 16px var(--pad-bottom); }
+    #faq-{{ section.id }} .faq__container{ max-width:1080px; margin:0 auto; }
 
-  /* Title like in reference */
-  .faq__title{
-    text-align:center; font-weight:800; letter-spacing:-.01em;
-    line-height:1.15; font-size:var(--h1); margin:0 0 18px;
-  }
+    .faq__title{
+      text-align:center; font-weight:800; letter-spacing:-.01em;
+      line-height:1.15; font-size:var(--h1); margin:0 0 18px;
+    }
 
-  /* List + rows */
-  .faq__list{ border-top:1px solid var(--border); }
-  .faq__item{ border-bottom:1px solid var(--border); }
+    .faq__list{ border-top:1px solid var(--border); }
+    .faq__item{ border-bottom:1px solid var(--border); }
 
-  .faq__trigger{
-    appearance:none; border:0; background:transparent; width:100%;
-    padding:18px 12px; text-align:left; display:flex; align-items:center; justify-content:space-between;
-    cursor:pointer; font: inherit; color: var(--text);
-  }
-  .faq__q{ font-weight:600; }
-  .faq__icon{
-    display:inline-flex; align-items:center; justify-content:center;
-    width:20px; height:20px; border-radius:50%;
-    color: var(--text); transition: transform .25s ease, opacity .25s ease;
-  }
-  .faq__trigger[aria-expanded="true"] .faq__icon{ transform: rotate(45deg); opacity:.7; } /* + -> x */
+    .faq__trigger{
+      -webkit-appearance:none; appearance:none; border:0; background:transparent; width:100%;
+      padding:18px 12px; text-align:left; display:flex; align-items:center; justify-content:space-between;
+      cursor:pointer; font: inherit; color: var(--text);
+    }
+    .faq__q{ font-weight:600; }
+    .faq__icon{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:20px; height:20px; border-radius:50%;
+      color: var(--text); transition: transform .25s ease, opacity .25s ease;
+    }
+    .faq__trigger[aria-expanded="true"] .faq__icon{ transform: rotate(45deg); opacity:.7; }
 
-  /* Smooth accordion (max-height animation) */
-  .faq__answer{ overflow:hidden; max-height:0; transition: max-height .35s ease; }
-  .faq__answer-inner{ padding:0 12px 18px; color:var(--muted); }
+    .faq__answer{ overflow:hidden; max-height:0; transition: max-height .35s ease; }
+    .faq__answer-inner{ padding:0 12px 18px; color:var(--muted); }
 
-  /* Bottom CTA: 60% width pill like screenshot */
-  .faq__cta-wrap{ display:flex; justify-content:center; margin-top:22px; }
-  .faq__cta{
-    width:60%; text-align:center; display:inline-block; padding:16px 20px; border-radius:999px;
-    background:var(--btn-bg); color:var(--btn-text); text-decoration:none; font-weight:800; letter-spacing:.02em;
-  }
-
-  @media (max-width: 749px){
-    .faq__cta{ width:90%; }
-  }
-  {% endstyle %}
+    .faq__cta-wrap{ display:flex; justify-content:center; margin-top:22px; }
+    .faq__cta{
+      width:60%; text-align:center; display:inline-block; padding:16px 20px; border-radius:999px;
+      background:var(--btn-bg); color:var(--btn-text); text-decoration:none; font-weight:800; letter-spacing:.02em;
+    }
+    @media (max-width: 749px){
+      .faq__cta{ width:90%; }
+    }
+  </style>
 
   <script>
     document.addEventListener('DOMContentLoaded', function(){
@@ -116,11 +111,6 @@
             panel.style.maxHeight = panel.scrollHeight + 'px';
           }
         });
-
-        // Allow smooth open on load if you pre-set an active item later
-        if(btn.getAttribute('aria-expanded') === 'true'){
-          panel.style.maxHeight = panel.scrollHeight + 'px';
-        }
       });
     });
   </script>
@@ -164,12 +154,7 @@
       "blocks": [
         { "type": "item", "settings": { "question": "Where are MommysHomes products made?" } },
         { "type": "item", "settings": { "question": "What payment methods do you accept?" } },
-        { "type": "item", "settings": { "question": "Can I change or cancel my order after placing it?" } },
-        { "type": "item", "settings": { "question": "How can I return or exchange an item?" } },
-        { "type": "item", "settings": { "question": "Which countries do you ship to and what are the shipping costs?" } },
-        { "type": "item", "settings": { "question": "How long does delivery take?" } },
-        { "type": "item", "settings": { "question": "How can I track my order?" } },
-        { "type": "item", "settings": { "question": "What should I do if my order arrives damaged or defective?" } }
+        { "type": "item", "settings": { "question": "Can I change or cancel my order after placing it?" } }
       ]
     }
   ]
