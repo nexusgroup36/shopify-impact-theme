@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "liquid_E7eJQV": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
-          }
-        },
         "liquid_rMgCr4": {
           "type": "liquid",
           "settings": {
@@ -28,6 +22,12 @@
           "type": "title",
           "settings": {
             "heading_tag": "h1"
+          }
+        },
+        "liquid_E7eJQV": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
           }
         },
         "liquid_BKpiFw": {
@@ -173,9 +173,9 @@
         }
       },
       "block_order": [
-        "liquid_E7eJQV",
         "liquid_rMgCr4",
         "title",
+        "liquid_E7eJQV",
         "liquid_BKpiFw",
         "liquid_iGWWXt",
         "badges",
