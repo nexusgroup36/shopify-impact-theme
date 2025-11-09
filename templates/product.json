@@ -813,14 +813,14 @@
             "media_width": 60,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
-            "icon": "picto-building",
+            "icon": "none",
             "icon_width": 48,
             "subheading": "",
             "title": "Made for heavy sleepers. Built for real life.",
             "content": "<p>Loop One was designed for one mission: wake you up, without chaos.<br/>It works silently, without disturbing your partner or shocking your system.<br/>No screen. No sound. No nonsense. Just clean, reliable wake-ups, every time. All backed by a Lifetime warranty.</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#000000",
+            "background": "#2e3a29",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
@@ -835,7 +835,7 @@
       "name": "Media with text",
       "settings": {
         "full_width": false,
-        "spacing": "none"
+        "spacing": "small"
       }
     },
     "media_with_text_gBNKCh": {
