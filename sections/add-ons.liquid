@@ -1,0 +1,349 @@
+{% comment %}
+Section: Popular Add-ons (toggle = add/remove to cart via AJAX)
+- Add as sections/add-ons.liquid
+- Configure title, subtitle, number of items shown before “All add-ons”
+- Add any number of “Add-on” blocks and pick a product (+ optional variant)
+- When a toggle is ON: POST /cart/add.js (quantity 1, property _addon:true)
+- When OFF: POST /cart/change.js to remove the exact line
+{% endcomment %}
+
+<section class="add-ons-section" data-add-ons-section>
+  <div class="add-ons-header">
+    {% if section.settings.title != blank %}
+      <h3 class="add-ons-title">{{ section.settings.title }}</h3>
+    {% endif %}
+    {% if section.settings.subtitle != blank %}
+      <p class="add-ons-subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+  </div>
+
+  {% assign visible_count = section.settings.visible_count | default: 1 %}
+
+  <div class="add-ons-list" data-add-ons-list>
+    {%- for block in section.blocks -%}
+      {%- assign p = all_products[block.settings.product] -%}
+      {%- if p == blank -%}{% continue %}{%- endif -%}
+
+      {%- assign v = nil -%}
+      {%- if block.settings.variant_id != blank -%}
+        {%- assign v_id = block.settings.variant_id | plus: 0 -%}
+        {%- for vv in p.variants -%}
+          {%- if vv.id == v_id -%}{%- assign v = vv -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if v == nil -%}{%- assign v = p.selected_or_first_available_variant -%}{%- endif -%}
+
+      {%- assign img = block.settings.image -%}
+      {%- if img == blank -%}{%- assign img = v.image | default: p.featured_image -%}{%- endif -%}
+
+      {%- capture item_markup -%}
+      <div class="add-on-item" data-add-on-item data-product-handle="{{ p.handle }}" data-product-id="{{ p.id }}" data-variant-id="{{ v.id }}">
+        <div class="add-on-content">
+          <div class="add-on-info">
+            <div class="add-on-image">
+              {% if img %}<img src="{{ img | image_url: width: 120 }}" alt="{{ block.settings.title | default: p.title | escape }}" loading="lazy" width="60" height="60">{% endif %}
+            </div>
+            <div class="add-on-details">
+              <h4 class="add-on-title">{{ block.settings.title | default: p.title }}</h4>
+
+              <div class="add-on-pricing">
+                {% assign cmp = block.settings.compare_price | default: v.compare_at_price %}
+                {% assign prc = block.settings.price | default: v.price %}
+                {% if cmp and prc and cmp > prc %}
+                  <span class="add-on-compare-price">{{ cmp | money }}</span>
+                {% endif %}
+                <span class="add-on-price">{{ prc | money }}</span>
+
+                {% assign badge = block.settings.badge_text %}
+                {% if badge == blank and cmp and prc and cmp > prc %}
+                  {% assign save = cmp | minus: prc %}
+                  {% assign pct = save | times: 100.0 | divided_by: cmp | round %}
+                  {% assign badge = pct | append: '% OFF' %}
+                {% endif %}
+                {% if badge != blank %}
+                  <span class="add-on-badge">{{ badge }}</span>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+          <div class="add-on-toggle">
+            <label class="add-on-toggle-label" for="addon-{{ p.id }}-{{ v.id }}">
+              <input type="checkbox" id="addon-{{ p.id }}-{{ v.id }}" class="add-on-checkbox" data-add-on-checkbox>
+              <span class="add-on-toggle-slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      {%- endcapture -%}
+
+      {% if forloop.index0 < visible_count %}
+        {{ item_markup }}
+      {% else %}
+        {% if forloop.index0 == visible_count %}
+          <div class="add-ons-remaining" data-add-ons-remaining style="display:none;">
+        {% endif %}
+          {{ item_markup }}
+        {% if forloop.last %}
+          </div>
+        {% endif %}
+      {% endif %}
+    {%- endfor -%}
+  </div>
+
+  {% if section.blocks.size > visible_count %}
+    <div class="add-ons-actions" data-add-ons-actions>
+      <button type="button" class="add-ons-show-all-button" data-show-all-button>
+        {{ section.settings.show_all_label | default: 'All add-ons' }}
+        <span class="add-ons-button-icon">+</span>
+      </button>
+      <button type="button" class="add-ons-show-less-button" data-show-less-button style="display:none;">
+        {{ section.settings.show_less_label | default: 'Show less' }}
+        <span class="add-ons-button-icon">-</span>
+      </button>
+    </div>
+  {% endif %}
+</section>
+
+<style>
+  .add-ons-section{margin:20px 0;padding:20px;background:#f8f9fa;border-radius:8px}
+  .add-ons-header{margin-bottom:15px}
+  .add-ons-title{font-size:18px;line-height:1.2;margin:0 0 8px;font-family:HearsTitle,inherit}
+  .add-ons-subtitle{font-size:14px;margin:0}
+
+  .add-ons-list,.add-ons-remaining{display:flex;flex-direction:column;gap:12px}
+  .add-ons-remaining{margin-top:12px}
+
+  .add-on-item{background:#fff;border-radius:8px;padding:15px;transition:.2s;position:relative;border:1px solid rgba(0,0,0,.06)}
+  .add-on-item.selected{background:#f8f9ff;border-color:#4dbc35}
+  .add-on-content{display:flex;align-items:center;justify-content:space-between;gap:15px}
+  .add-on-info{display:flex;align-items:center;gap:12px;flex:1}
+  .add-on-image{flex-shrink:0}
+  .add-on-image img{width:60px;height:60px;object-fit:cover;border-radius:6px}
+  .add-on-details{flex:1;min-width:0}
+  .add-on-title{font-size:16px;margin:0 0 2px}
+  .add-on-pricing{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .add-on-compare-price{text-decoration:line-through;color:#9f9f9f;font-size:14px}
+  .add-on-price{font-weight:600;font-size:14px}
+  .add-on-badge{background:#ee6f73;color:#fff;padding:2px 6px;border-radius:4px;font-size:12px;font-weight:700;text-transform:uppercase}
+
+  .add-on-toggle{flex-shrink:0}
+  .add-on-toggle-label{position:relative;display:inline-block;width:50px;height:24px;cursor:pointer}
+  .add-on-checkbox{opacity:0;width:0;height:0}
+  .add-on-toggle-slider{position:absolute;top:0;left:0;right:0;bottom:0;background:#ccc;transition:.2s;border-radius:24px}
+  .add-on-toggle-slider:before{position:absolute;content:"";height:18px;width:18px;left:3px;bottom:3px;background:#fff;transition:.2s;border-radius:50%}
+  .add-on-checkbox:checked + .add-on-toggle-slider{background:#CFDB02}
+  .add-on-checkbox:checked + .add-on-toggle-slider:before{transform:translateX(26px)}
+  .add-on-checkbox:disabled + .add-on-toggle-slider{opacity:.5;cursor:not-allowed}
+
+  .add-ons-actions{margin-top:15px;text-align:center}
+  .add-ons-show-all-button,.add-ons-show-less-button{
+    background:#fff;border-radius:4px;padding:12px 16px;cursor:pointer;font-size:14px;transition:.2s;display:inline-flex;align-items:center;gap:8px;width:100%;justify-content:center
+  }
+  .add-ons-show-all-button:hover,.add-ons-show-less-button:hover{background:#f0f0f0}
+  .add-ons-button-icon{font-weight:700;font-size:16px}
+
+  @media (max-width:768px){
+    .add-ons-section{margin:15px 0;padding:15px}
+    .add-on-item{padding:12px}
+    .add-on-content{gap:10px}
+    .add-on-image img{width:50px;height:50px}
+    .add-on-title{font-size:15px}
+  }
+</style>
+
+<style>
+@media (max-width: 768px){
+  .add-ons-section{
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Scope to THIS section instance (works even if you add it twice)
+    const section = document.currentScript?.previousElementSibling?.closest('[data-add-ons-section]') || document.querySelector('[data-add-ons-section]');
+    if (!section) return;
+
+    const ITEM_SEL = '[data-add-on-item]';
+    const CHECKBOX_SEL = '[data-add-on-checkbox]';
+
+    const busy = (el, on) => {
+      el.classList.toggle('is-busy', !!on);
+      el.querySelectorAll('input[type="checkbox"]').forEach(i => i.disabled = !!on);
+    };
+    const setCheckedUI = (card, checked) => {
+      const cb = card.querySelector(CHECKBOX_SEL);
+      if (cb) cb.checked = !!checked;
+      card.classList.toggle('selected', !!checked);
+    };
+
+    // ------- AJAX helpers (FormData = most compatible with Shopify) -------
+    async function cartAddVariant(variantId, props = {}) {
+      const fd = new FormData();
+      fd.append('id', String(variantId));
+      fd.append('quantity', '1');
+      Object.keys(props || {}).forEach(k => fd.append(`properties[${k}]`, String(props[k])));
+      const res = await fetch('/cart/add.js', {
+        method: 'POST',
+        body: fd,
+        credentials: 'same-origin'
+      });
+      if (!res.ok) throw new Error('add.js failed ' + res.status);
+      return res.json();
+    }
+
+    async function cartChangeKey(lineKey, qty) {
+      const fd = new FormData();
+      fd.append('id', lineKey);
+      fd.append('quantity', String(qty));
+      const res = await fetch('/cart/change.js', {
+        method: 'POST',
+        body: fd,
+        credentials: 'same-origin'
+      });
+      if (!res.ok) throw new Error('change.js failed ' + res.status);
+      return res.json();
+    }
+
+    async function cartUpdateVariantQty(variantId, qty) {
+      const fd = new FormData();
+      fd.append(`updates[${variantId}]`, String(qty));
+      const res = await fetch('/cart/update.js', {
+        method: 'POST',
+        body: fd,
+        credentials: 'same-origin'
+      });
+      if (!res.ok) throw new Error('update.js failed ' + res.status);
+      return res.json();
+    }
+
+    async function cartGet() {
+      const res = await fetch('/cart.js', { credentials:'same-origin' });
+      if (!res.ok) throw new Error('cart.js failed ' + res.status);
+      return res.json();
+    }
+    // ----------------------------------------------------------------------
+
+    async function addAddon(card){
+      const variantId = Number(card.dataset.variantId);
+      if (!variantId) return;
+      busy(card, true);
+      try {
+        const data = await cartAddVariant(variantId, { _addon: 'true' });
+        // When using FormData, Shopify returns a single item object
+        const added = data;
+        if (added?.key) card.dataset.lineKey = added.key;
+        setCheckedUI(card, true);
+      } catch (e) {
+        console.error('[Add-on] add error:', e);
+        setCheckedUI(card, false);
+      } finally {
+        busy(card, false);
+        document.dispatchEvent(new CustomEvent('cart:refresh'));
+      }
+    }
+
+    async function removeAddon(card){
+      busy(card, true);
+      try {
+        const key = card.dataset.lineKey;
+        if (key) {
+          await cartChangeKey(key, 0);
+        } else {
+          const variantId = Number(card.dataset.variantId);
+          await cartUpdateVariantQty(variantId, 0);
+        }
+        setCheckedUI(card, false);
+      } catch (e) {
+        console.error('[Add-on] remove error:', e);
+        setCheckedUI(card, true);
+      } finally {
+        busy(card, false);
+        document.dispatchEvent(new CustomEvent('cart:refresh'));
+      }
+    }
+
+    // Wire toggles
+    section.querySelectorAll(CHECKBOX_SEL).forEach(cb => {
+      cb.addEventListener('change', e => {
+        const card = e.target.closest(ITEM_SEL);
+        if (!card) return;
+        e.target.checked ? addAddon(card) : removeAddon(card);
+      });
+    });
+
+    // Pre-check already-added add-ons (those with properties._addon = true)
+    (async () => {
+      try {
+        const cart = await cartGet();
+        const byVariant = {};
+        (cart.items || []).forEach(it => {
+          const p = it.properties || {};
+          if (p._addon === 'true' || p._addon === true) byVariant[it.variant_id] = it.key;
+        });
+        section.querySelectorAll(ITEM_SEL).forEach(card => {
+          const vid = Number(card.dataset.variantId);
+          if (byVariant[vid]) {
+            card.dataset.lineKey = byVariant[vid];
+            setCheckedUI(card, true);
+          }
+        });
+      } catch (e) {
+        console.warn('[Add-on] cart sync warn:', e);
+      }
+    })();
+
+    // Show all / less
+    const remaining = section.querySelector('[data-add-ons-remaining]');
+    const btnMore  = section.querySelector('[data-show-all-button]');
+    const btnLess  = section.querySelector('[data-show-less-button]');
+    if (remaining && btnMore && btnLess) {
+      btnMore.addEventListener('click', () => {
+        remaining.style.display = 'flex';
+        btnMore.style.display = 'none';
+        btnLess.style.display = 'inline-flex';
+      });
+      btnLess.addEventListener('click', () => {
+        remaining.style.display = 'none';
+        btnLess.style.display = 'none';
+        btnMore.style.display = 'inline-flex';
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Popular add-ons",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "Popular add-ons" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Pair these essentials with the Jet Black and save more" },
+    { "type": "range", "id": "visible_count", "label": "Items shown before 'All add-ons'", "min": 0, "max": 10, "step": 1, "default": 1 },
+    { "type": "text", "id": "show_all_label", "label": "Show all button label", "default": "All add-ons" },
+    { "type": "text", "id": "show_less_label", "label": "Show less button label", "default": "Show less" }
+  ],
+  "blocks": [
+    {
+      "type": "add_on",
+      "name": "Add-on",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" },
+        { "type": "text", "id": "variant_id", "label": "Specific variant ID (optional)", "info": "Leave blank to use the first available variant." },
+        { "type": "text", "id": "title", "label": "Custom title (optional)" },
+        { "type": "image_picker", "id": "image", "label": "Custom image (optional)" },
+        { "type": "text", "id": "badge_text", "label": "Badge text (optional)", "info": "Example: 30% OFF. If blank, auto-calculated when compare-at > price." },
+        { "type": "number", "id": "price", "label": "Override price in cents (optional)", "info": "Example: 840 for €8.40. Leave blank to use variant price." },
+        { "type": "number", "id": "compare_price", "label": "Override compare-at price in cents (optional)", "info": "Example: 1200 for €12.00. Leave blank to use variant compare-at." }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Popular add-ons", "blocks": [ { "type": "add_on" }, { "type": "add_on" }, { "type": "add_on" } ] }
+  ]
+}
+{% endschema %}
