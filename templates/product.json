@@ -880,14 +880,15 @@
         "image_MtLdzt": {
           "type": "image",
           "settings": {
-            "media_width": 40,
+            "image": "shopify://shop_images/TERRA_IFOURAS_8.png",
+            "media_width": 45,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
             "title": "Pure Freshness – Every Step, Every Day",
-            "content": "<p>✔ <strong>Breathe Again</strong> – Slip your feet into shoes that <em>feel</em> fresh — not suffocated. The Neutralizer pulls out hidden moisture and odor overnight, leaving every pair dry, light, and clean by morning. No more embarrassment when you take your shoes off. Just quiet confidence that lasts all day.</p><p>✔ <strong>Stops Odor at the Source</strong> – Unlike sprays or powders that only hide the smell, Dr. Odoro destroys the bacteria that cause it. That means your shoes, bags, and closets stay genuinely clean — not perfumed, not sticky, just <em>fresh air and calm energy</em>.</p><p>✔ <strong>Safe, Natural & Effortless</strong> – Each Neutralizer is powered by natural Zeolite — a mineral trusted for water purification and home safety. It works silently while you rest, without harsh chemicals or artificial scents. You simply wake up to freshness that feels pure and real.</p><p>✔ <strong>Long-Term Freshness, Zero Effort</strong> – One small bag lasts up to 3 months. No spraying, scrubbing, or reapplying — just place, forget, and enjoy odor-free comfort every single day.</p><p>✔ <strong>Confidence You Can Feel</strong> – Whether it’s work boots, gym shoes, or your favorite sneakers — Dr. Odoro keeps every pair ready for whatever your day brings. You’ll never think twice about taking your shoes off again.</p>",
+            "content": "<p>✔ <strong>Breathe Again</strong> – Slip your feet into shoes that <em>feel</em> fresh — not suffocated. The Neutralizer pulls out hidden moisture and odor overnight, leaving every pair dry, clean, and ready by morning. No more embarrassment — just quiet confidence that lasts all day.</p><p>✔ <strong>Stops Odor at the Source</strong> – Unlike sprays or powders that hide the smell, Dr. Odoro destroys the bacteria that cause it. Your shoes, bags, and closets stay genuinely clean — not perfumed, not sticky, just fresh air and calm energy.</p><p>✔ <strong>Safe, Natural & Effortless</strong> – Powered by natural Zeolite, trusted for water purification and safety. It works silently while you rest — no harsh chemicals, no fake scents, just freshness that feels pure and real.</p><p>✔ <strong>Lasting Freshness, Zero Effort</strong> – One small bag lasts up to 3 months. No spraying or scrubbing — just place, forget, and enjoy odor-free comfort every single day.</p><p>✔ <strong>Confidence You Can Feel</strong> – Whether it’s work boots, gym shoes, or your favorite sneakers, Dr. Odoro keeps every pair fresh and ready. You’ll never think twice about taking your shoes off again.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#2e3a29",
