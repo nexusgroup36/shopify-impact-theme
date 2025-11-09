@@ -990,11 +990,134 @@
         "padding_horizontal_mobile": 0,
         "border_thickness": 0
       }
+    },
+    "ugc_continuous_slider_3GpwE8": {
+      "type": "ugc-continuous-slider",
+      "blocks": {
+        "image_3tQVFa": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/1.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_4txXpM": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/12.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_3XEKeW": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/9.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_D4YfQ7": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/11.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_k9Fjpx": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/14.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_MyFhFV": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/2.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_fNQAVd": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/8.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_T4CXLG": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/3.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_Qgritt": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/7.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_ecxrWj": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/15.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_H788aT": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/4.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_TL7XNX": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/23.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_RKRXWf": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/25.png",
+            "alt": "Customer photo"
+          }
+        }
+      },
+      "block_order": [
+        "image_3tQVFa",
+        "image_4txXpM",
+        "image_3XEKeW",
+        "image_D4YfQ7",
+        "image_k9Fjpx",
+        "image_MyFhFV",
+        "image_fNQAVd",
+        "image_T4CXLG",
+        "image_Qgritt",
+        "image_ecxrWj",
+        "image_H788aT",
+        "image_TL7XNX",
+        "image_RKRXWf"
+      ],
+      "name": "UGC Continuous Slider",
+      "settings": {
+        "headline": "Customers love Dr. Odoro!",
+        "headline_size": 20,
+        "bg": "#ffffff",
+        "img_height_desktop": 350,
+        "img_height_mobile": 260,
+        "img_radius": 8,
+        "gap": 16,
+        "speed": 6
+      }
     }
   },
   "order": [
     "main",
     "add_ons_7JfizX",
+    "ugc_continuous_slider_3GpwE8",
     "trust_badges_U4tFfA",
     "marquee_loop_xaMLUL",
     "wl_media_with_features_xCgfw9",
