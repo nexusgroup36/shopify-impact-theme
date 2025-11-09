@@ -883,7 +883,7 @@
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
-            "icon": "picto-coupon",
+            "icon": "none",
             "icon_width": 48,
             "subheading": "",
             "title": "60 DAYS MONEY BACK GUARANTEE",
@@ -905,7 +905,7 @@
       "name": "Media with text",
       "settings": {
         "full_width": false,
-        "spacing": "none"
+        "spacing": "small"
       }
     },
     "image_with_text_overlay_fQCCHJ": {
