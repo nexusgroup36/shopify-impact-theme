@@ -909,58 +909,6 @@
         "spacing": "small"
       }
     },
-    "image_with_text_overlay_fQCCHJ": {
-      "type": "image-with",
-      "blocks": {
-        "heading_LPNMpr": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "LIFETIME WARRANTY"
-          }
-        },
-        "richtext_RTbdf3": {
-          "type": "richtext",
-          "disabled": true,
-          "settings": {
-            "content": "<p>We stand behind the quality of our products. Your Loop One is covered for life, because peace of mind should last as long as your sleep does. Durable, dependable, and guaranteed.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LPNMpr",
-        "richtext_RTbdf3"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "allow_transparent_header": true,
-        "desktop_aspect_w": 14,
-        "desktop_aspect_h": 7,
-        "mobile_aspect_w": 21,
-        "mobile_aspect_h": 21,
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "text_color": "#ffffff",
-        "btn_align_desktop": "center",
-        "btn_align_mobile": "center",
-        "btn_bg_desktop": "#f2f2f2",
-        "btn_text_desktop": "#000000",
-        "btn_border_desktop": "#e6e6e6",
-        "btn_bg_mobile": "#000000",
-        "btn_text_mobile": "#ffffff",
-        "btn_border_mobile": "#000000",
-        "btn_radius": 10,
-        "btn_pad_y": 12,
-        "btn_pad_x": 18,
-        "btn_letter_spacing": 10,
-        "btn_weight": "600",
-        "h_align": "center",
-        "v_align": "flex-end",
-        "content_padding_desktop": 80,
-        "content_padding_mobile": 80,
-        "section_gap": 24
-      }
-    },
     "faq_Uafwhm": {
       "type": "faq",
       "blocks": {
@@ -1145,7 +1093,6 @@
     "media_with_text_iMy4BQ",
     "media_with_text_gBNKCh",
     "media_with_text_tAFiaj",
-    "image_with_text_overlay_fQCCHJ",
     "faq_Uafwhm",
     "175892445484482174",
     "ss_product_variant_RLRRgm"
