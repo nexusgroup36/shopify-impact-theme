@@ -455,7 +455,7 @@
       "settings": {
         "trust_position": "below_title",
         "item_gap": 10,
-        "item_gap_mobile": 10,
+        "item_gap_mobile": 6,
         "item_mt": 16,
         "item_mt_mobile": 16,
         "image_icon_size": 22,
