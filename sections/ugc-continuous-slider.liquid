@@ -5,38 +5,63 @@
     { "type": "text", "id": "headline", "label": "Headline", "default": "Customers love Dr. Odoro!" },
     { "type": "range", "id": "headline_size", "label": "Headline font size", "min": 16, "max": 56, "step": 1, "unit": "px", "default": 28 },
     { "type": "color", "id": "bg", "label": "Background color", "default": "#ffffff" },
-    { "type": "range", "id": "img_height_desktop", "label": "Image height desktop", "min": 160, "max": 480, "step": 10, "unit": "px", "default": 350 },
-    { "type": "range", "id": "img_height_mobile", "label": "Image height mobile", "min": 120, "max": 360, "step": 10, "unit": "px", "default": 250 },
+
+    { "type": "range", "id": "img_height_desktop", "label": "Image height (desktop)", "min": 160, "max": 480, "step": 10, "unit": "px", "default": 350 },
+    { "type": "range", "id": "img_height_mobile", "label": "Image height (mobile)", "min": 120, "max": 360, "step": 10, "unit": "px", "default": 250 },
     { "type": "range", "id": "img_radius", "label": "Image corner radius", "min": 0, "max": 36, "step": 2, "unit": "px", "default": 12 },
     { "type": "range", "id": "gap", "label": "Gap between images", "min": 6, "max": 28, "step": 2, "unit": "px", "default": 16 },
+
     { "type": "range", "id": "speed_px", "label": "Scroll speed (px/sec)", "min": 30, "max": 300, "step": 5, "default": 90 }
   ],
   "blocks": [
-    { "type": "image", "name": "Image", "settings": [
-      { "type": "image_picker", "id": "img", "label": "Image" },
-      { "type": "text", "id": "alt", "label": "Alt text", "default": "Customer photo" }
-    ]}
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        { "type": "image_picker", "id": "img", "label": "Image" },
+        { "type": "text", "id": "alt", "label": "Alt text", "default": "Customer photo" }
+      ]
+    }
   ],
   "presets": [{ "name": "UGC Continuous Slider", "category": "Media" }]
 }
 {% endschema %}
 
-<section id="ugc-{{ section.id }}" class="ugc" style="--bg: {{ section.settings.bg }}; --h: {{ section.settings.headline_size }}px; --gap: {{ section.settings.gap }}px; --r: {{ section.settings.img_radius }}px; --hd: {{ section.settings.img_height_desktop }}px; --hm: {{ section.settings.img_height_mobile }}px;">
+<section id="ugc-{{ section.id }}" class="ugc"
+  style="
+    --bg: {{ section.settings.bg }};
+    --h: {{ section.settings.headline_size }}px;
+    --gap: {{ section.settings.gap }}px;
+    --r: {{ section.settings.img_radius }}px;
+    --hd: {{ section.settings.img_height_desktop }}px;
+    --hm: {{ section.settings.img_height_mobile }}px;
+  "
+>
   <div class="ugc__inner">
     <h2 class="ugc__title">{{ section.settings.headline }}</h2>
 
-    <div class="ugc__viewport">
-      <div class="ugc__fade ugc__fade--l"></div>
-      <div class="ugc__fade ugc__fade--r"></div>
+    <div class="ugc-continuous__viewport">
+      <div class="ugc-continuous__fade ugc-continuous__fade--left"></div>
+      <div class="ugc-continuous__fade ugc-continuous__fade--right"></div>
 
-      <div class="ugc__track" data-speed="{{ section.settings.speed_px }}">
-        {% for block in section.blocks %}
-          {% if block.settings.img != blank %}
-            <figure class="ugc__card">
-              <img src="{{ block.settings.img | image_url: width: 800 }}" alt="{{ block.settings.alt | escape }}" loading="lazy">
-            </figure>
-          {% endif %}
-        {% endfor %}
+      <div class="ugc-continuous__track" data-speed="{{ section.settings.speed_px }}">
+        <!-- Group A -->
+        <div class="ugc__group ugc__group--a">
+          {% for block in section.blocks %}
+            {% if block.settings.img != blank %}
+              <figure class="ugc-continuous__card">
+                <img
+                  src="{{ block.settings.img | image_url: width: 800 }}"
+                  alt="{{ block.settings.alt | escape }}"
+                  loading="lazy"
+                >
+              </figure>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <!-- Group B (will be cloned from A in JS for pixel-perfect loop) -->
+        <div class="ugc__group ugc__group--b"></div>
       </div>
     </div>
   </div>
@@ -46,61 +71,91 @@
   .ugc { background: var(--bg); padding: 20px 0; }
   .ugc__inner { max-width: 1200px; margin: 0 auto; padding: 0 12px; text-align: center; }
   .ugc__title { font-size: var(--h); font-weight: 600; margin: 0 0 12px; color: #000; }
-  .ugc__viewport { position: relative; overflow: hidden; }
-  .ugc__track { display: inline-flex; align-items: center; gap: var(--gap); will-change: transform; animation-name: ugc-marquee; animation-timing-function: linear; animation-iteration-count: infinite; }
-  .ugc__card { flex: 0 0 auto; }
-  .ugc__card img { height: var(--hd); width: auto; border-radius: var(--r); object-fit: cover; display: block; }
-  @media (max-width: 768px){ .ugc__card img { height: var(--hm); } }
 
-  .ugc__fade { position: absolute; top: 0; bottom: 0; width: 48px; pointer-events: none; z-index: 2; }
-  .ugc__fade--l { left: 0;  background: linear-gradient(to right, var(--bg), rgba(255,255,255,0)); }
-  .ugc__fade--r { right: 0; background: linear-gradient(to left,  var(--bg), rgba(255,255,255,0)); }
+  .ugc-continuous__viewport { position: relative; overflow: hidden; }
+  .ugc-continuous__track {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    will-change: transform;
+    animation-name: ugc-marquee-x;      /* duration set via JS */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .ugc__group { display: inline-flex; align-items: center; gap: var(--gap); }
+  .ugc-continuous__card { flex: 0 0 auto; }
+  .ugc-continuous__card img {
+    height: var(--hd);
+    width: auto;
+    border-radius: var(--r);
+    object-fit: cover;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .ugc-continuous__card img { height: var(--hm); }
+  }
 
-  @keyframes ugc-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  /* Edge fades like Hike’s padding */
+  .ugc-continuous__fade {
+    position: absolute; top: 0; bottom: 0; width: 48px; pointer-events: none; z-index: 2;
+  }
+  .ugc-continuous__fade--left  { left: 0;  background: linear-gradient(to right, var(--bg), rgba(255,255,255,0)); }
+  .ugc-continuous__fade--right { right: 0; background: linear-gradient(to left,  var(--bg), rgba(255,255,255,0)); }
+
+  /* Animate by exact width of Group A (set via --d in JS) */
+  @keyframes ugc-marquee-x {
+    from { transform: translate3d(0,0,0); }
+    to   { transform: translate3d(calc(-1 * var(--d, 0px)), 0, 0); }
+  }
 </style>
 
 <script>
-(function() {
-  // Scope to THIS section only
+(function(){
   const root = document.getElementById('ugc-{{ section.id }}');
   if (!root) return;
 
-  const viewport = root.querySelector('.ugc__viewport');
-  const track = root.querySelector('.ugc__track');
-  if (!viewport || !track) return;
+  const viewport = root.querySelector('.ugc-continuous__viewport');
+  const track    = root.querySelector('.ugc-continuous__track');
+  const groupA   = root.querySelector('.ugc__group--a');
+  const groupB   = root.querySelector('.ugc__group--b');
+  if (!viewport || !track || !groupA || !groupB) return;
 
   const pxPerSec = Number(track.dataset.speed) || 90;
 
-  // Wait for all images to have intrinsic sizes
-  const imgs = Array.from(track.querySelectorAll('img'));
-  Promise.all(imgs.map(img => img.complete ? Promise.resolve() : new Promise(res => {
+  // Wait until all images in Group A have intrinsic sizes
+  const imgs = Array.from(groupA.querySelectorAll('img'));
+  Promise.all(imgs.map(img => img.complete ? 1 : new Promise(res => {
     img.addEventListener('load', res, { once: true });
     img.addEventListener('error', res, { once: true });
   }))).then(init);
 
   function init() {
-    // Duplicate children until the strip is long enough
-    const originals = Array.from(track.children);
-    const target = viewport.clientWidth * 4; // 4x viewport width
+    // Ensure Group A is at least a bit wider than the viewport
+    const minA = viewport.clientWidth * 1.25;
     let guard = 0;
-    while (track.scrollWidth < target && guard < 12) {
-      originals.forEach(el => track.appendChild(el.cloneNode(true)));
+    while (groupA.scrollWidth < minA && guard < 10) {
+      groupA.append(...Array.from(groupA.children).map(n => n.cloneNode(true)));
       guard++;
     }
 
-    // Animate half the track width (because content is repeated)
-    function setDuration() {
-      const distance = track.scrollWidth / 2; // px
-      const seconds = distance / pxPerSec;
+    // Clone A into B so A and B are pixel-identical
+    groupB.innerHTML = '';
+    groupB.append(...Array.from(groupA.children).map(n => n.cloneNode(true)));
+
+    // Distance is exact width of Group A
+    function setAnim() {
+      const distance = groupA.scrollWidth;        // px
+      const seconds  = distance / pxPerSec;       // px / (px/s) = s
+      track.style.setProperty('--d', distance + 'px');
       track.style.animationDuration = seconds + 's';
     }
-    setDuration();
+    setAnim();
 
-    // Recalc on resize (debounced)
+    // Recompute on resize (debounced)
     let t;
     window.addEventListener('resize', () => {
       clearTimeout(t);
-      t = setTimeout(setDuration, 150);
+      t = setTimeout(setAnim, 150);
     });
   }
 })();
