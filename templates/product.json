@@ -378,7 +378,7 @@
         "img_height_mobile": 280,
         "img_radius": 8,
         "gap": 16,
-        "speed": 6
+        "speed_px": 30
       }
     },
     "trust_badges_U4tFfA": {
