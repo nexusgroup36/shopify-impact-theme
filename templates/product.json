@@ -289,7 +289,6 @@
         "item_K6yqi8": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/67eb955d-355f-48b5-a3ac-2c946d38ec0f.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -302,7 +301,6 @@
         "item_r4a3P6": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Wake_loop_21.png",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -315,7 +313,6 @@
         "item_4RJn6z": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-18_at_22.34.53.jpg",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -328,7 +325,6 @@
         "item_ELgwrr": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/7811d604-2add-458b-a7d9-8a9105865620.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -341,7 +337,6 @@
         "item_3mQgXd": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-05-24_at_03.18.40.jpg",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -354,7 +349,6 @@
         "item_HctQDL": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/IMG_7976_2.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -367,7 +361,6 @@
         "item_KKcCGT": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/f2a4f936-24ab-479a-a4e2-7f61f52c9a24.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -380,7 +373,6 @@
         "item_TqTMdk": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/a24fceb0-41ba-4b9f-be5b-2041aef030bd.webp",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -490,7 +482,6 @@
           "type": "usp",
           "settings": {
             "text": "Lifetime Warranty",
-            "image": "shopify://shop_images/shield-check-svgrepo-com_2.svg",
             "svg_icon": "",
             "icon_width": 32
           }
@@ -499,7 +490,6 @@
           "type": "usp",
           "settings": {
             "text": "Free Shipping From $50",
-            "image": "shopify://shop_images/package_5_500x500_f7d1d7a5-47f7-43ee-b122-a066118e7a88.svg",
             "svg_icon": "",
             "icon_width": 32
           }
@@ -508,7 +498,6 @@
           "type": "usp",
           "settings": {
             "text": "60-Day Money Back Guarantee",
-            "image": "shopify://shop_images/money-back-business-warranty-satisfaction-marketing-guaranted-svgrepo-com.svg",
             "svg_icon": "",
             "icon_width": 32
           }
@@ -548,7 +537,6 @@
         "feature_FQFCzJ": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/sound-wave-svgrepo-com.svg",
             "title": "Powerful Vibration Technology",
             "text": "Engineered to wake even the heaviest sleepers through your body’s natural response system."
           }
@@ -556,7 +544,6 @@
         "feature_xQe9cm": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/mute-sound-music-audio-svgrepo-com.svg",
             "title": "Silent Wake-Up Design",
             "text": "No blaring sounds, no angry mornings. Wake up quietly while your partner keeps sleeping."
           }
@@ -564,7 +551,6 @@
         "feature_eh9CTy": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/certified-svgrepo-com.svg",
             "title": "Certified to Wake Heavy Sleepers",
             "text": "Proven performance and reliability, so you’ll never oversleep again."
           }
@@ -599,7 +585,6 @@
         "item_EAGpyG": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/nano-banana-2025-10-22T00-22-11.png",
             "column_size": "3",
             "title": "Heavy Sleepers",
             "heading_tag": "h3",
@@ -612,7 +597,6 @@
         "item_KiyTfD": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/nano-banana-2025-10-22T00-20-37.png",
             "column_size": "3",
             "title": "Couples",
             "heading_tag": "h3",
@@ -625,7 +609,6 @@
         "item_rB6pmL": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/nano-banana-2025-10-22T00-24-06.png",
             "column_size": "3",
             "title": "Early Work",
             "heading_tag": "h3",
@@ -740,10 +723,7 @@
         "subtitle": "The wearable alarm that wakes, without sound.",
         "title_size": 28,
         "title_size_mobile": 32,
-        "hears_logo": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._27.png",
-        "other_logo": "shopify://shop_images/Kopie_van_Winning_Ad_Templates_-_Edit_20.png",
         "other_label": "Smart Watch",
-        "foam_logo": "shopify://shop_images/Kopie_van_Winning_Ad_Templates_-_Edit_19.png",
         "foam_label": "Phone Alarm",
         "text_color": "#000000",
         "accent_color": "#d9e12c",
@@ -762,8 +742,6 @@
           "type": "review",
           "settings": {
             "name": "David J.",
-            "avatar": "shopify://shop_images/gempages_585528077073777499-36fb555b-0622-4e74-8b56-40b6d8f1c934.jpg",
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-18_at_22.34.53.jpg",
             "rating": 5,
             "review_text": "I’m a super heavy sleeper and have tried everything, Sonic Boom, bed shakers, five alarms, you name it. Loop One is the only thing that actually gets me up every morning. Worth every penny."
           }
@@ -772,8 +750,6 @@
           "type": "review",
           "settings": {
             "name": "Chris J. Wallace",
-            "avatar": "shopify://shop_images/depositphotos_471225760-stock-photo-selfie-handsome-guy-middle-aged.webp",
-            "image": "shopify://shop_images/Kopie_van_Winning_Ad_Templates_-_Edit_16.png",
             "rating": 4,
             "review_text": "I bought three of these as gifts for my wife and daughters, and they absolutely love them. They all said it’s the most peaceful way to wake up in the morning. After seeing how much they enjoy theirs, I ordered one for myself too."
           }
@@ -782,8 +758,6 @@
           "type": "review",
           "settings": {
             "name": "Laura H.",
-            "avatar": "shopify://shop_images/McWolfe-Family-2020.png",
-            "image": "shopify://shop_images/1.jpg",
             "rating": 5,
             "review_text": "This saved our mornings!! Bought this for my heavy sleeper partner and now also one for myself. It’s honestly the best purchase for our marriage I’ve made this year."
           }
@@ -792,8 +766,6 @@
           "type": "review",
           "settings": {
             "name": "Alexander V.",
-            "avatar": "shopify://shop_images/gempages_585528077073777499-d3091ab9-97d8-4d54-a2be-9c9462694e13.png",
-            "image": "shopify://shop_images/7811d604-2add-458b-a7d9-8a9105865620.webp",
             "rating": 4,
             "review_text": "I start my day at 5AM and my wife used to hate my loud phone alarm. This thing is perfect. No loud alarms anymore, just a gentle vibration that gets me up without disturbing my wife."
           }
@@ -802,8 +774,6 @@
           "type": "review",
           "settings": {
             "name": "Dave S.",
-            "avatar": "shopify://shop_images/handsome-caucasican-guy-taking-selfie-600nw-1802109742.webp",
-            "image": "shopify://shop_images/Kopie_van_Winning_Ad_Templates_-_Edit_17.png",
             "rating": 5,
             "review_text": "As someone who struggles with phone addiction, this helped me keep my phone out of the bedroom. Best habit change ever."
           }
@@ -812,8 +782,6 @@
           "type": "review",
           "settings": {
             "name": "Karim A.",
-            "avatar": "shopify://shop_images/images.jpg",
-            "image": "shopify://shop_images/1000019233.jpg",
             "rating": 4,
             "review_text": "I’m that person who sets five alarms and still sleeps through all of them. Loop One finally broke the habit. I’m shocked it actually works."
           }
@@ -822,8 +790,6 @@
           "type": "review",
           "settings": {
             "name": "Jessy B.",
-            "avatar": "shopify://shop_images/022b1ee40938ad8ef0ba60cc392dc698.jpg",
-            "image": "shopify://shop_images/Kopie_van_Winning_Ad_Templates_-_Edit_18.png",
             "rating": 5,
             "review_text": "I was so tired of yelling up the stairs every morning. Got my teenager the Loop One and it’s been peaceful ever since."
           }
@@ -832,8 +798,6 @@
           "type": "review",
           "settings": {
             "name": "Anne-mary Y.",
-            "avatar": "shopify://shop_images/gempages_585528077073777499-4f106d87-011c-4c6e-a001-3afa264a80ac.webp",
-            "image": "shopify://shop_images/f2a4f936-24ab-479a-a4e2-7f61f52c9a24.webp",
             "rating": 5,
             "review_text": "Took me a few minutes to set up, but after that it worked perfectly. The vibration is soft yet effective, and I love how simple and sleek the design looks."
           }
@@ -852,7 +816,11 @@
       "name": "Wake Loop Reviews",
       "settings": {
         "title": "",
-        "marquee_speed": 4
+        "marquee_speed": 4,
+        "bg_color": "#ffffff",
+        "text_color": "#1a1a1a",
+        "slider_track": "#e9e9e9",
+        "slider_thumb": "#bdbdbd"
       }
     },
     "media_with_text_iMy4BQ": {
@@ -861,7 +829,6 @@
         "image_Cq7BER": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34_091a7a77-f0c8-4616-9453-cd8bea25ce0e.png",
             "media_width": 60,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -896,7 +863,6 @@
         "image_t6cTcb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_15_45_50_269f0795-6dd3-46e4-8345-5cdb012bd7d8.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -931,7 +897,6 @@
         "image_MtLdzt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Kopie_van_Winning_Ad_Templates_-_Edit_5.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -985,8 +950,6 @@
       "name": "Image with text overlay",
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/Wake_loop_3200_x_1600_px_3.png",
-        "mobile_image": "shopify://shop_images/OUR_BIGGEST_SALE_OF_THE_YEAR_23.png",
         "desktop_aspect_w": 14,
         "desktop_aspect_h": 7,
         "mobile_aspect_w": 21,
@@ -1115,7 +1078,12 @@
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
       }
     },
     "ss_product_variant_RLRRgm": {
@@ -1124,14 +1092,12 @@
         "item_te3iMN": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/21.png",
             "url": "https://wakeloop.com/products/obsidian-black"
           }
         },
         "item_FnqbVM": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/20.png",
             "url": "https://wakeloop.com/products/artic-pearl"
           }
         },
@@ -1139,7 +1105,6 @@
           "type": "item",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/22.png",
             "url": "https://wakeloop.com/products/silver-night"
           }
         }
