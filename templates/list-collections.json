@@ -202,7 +202,12 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "dr-odoro-shoe-bag",
+          "shoe-care-brush",
+          "travel-pouch",
+          "mini-air-purifier-bag"
+        ],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
