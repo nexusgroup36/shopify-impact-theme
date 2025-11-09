@@ -71,6 +71,7 @@
         },
         "liquid_VTj3M9": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div id='ss-product-variants'></div>"
           }
