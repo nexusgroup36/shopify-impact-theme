@@ -494,11 +494,11 @@
         "text": "#111111",
         "muted": "#666666",
         "border": "#EAEAEA",
-        "btn_bg": "#111111",
+        "btn_bg": "#2e3a29",
         "btn_text": "#FFFFFF",
-        "title_size": 36,
+        "title_size": 22,
         "cta_label": "NEED HELP?",
-        "cta_link": "",
+        "cta_link": "shopify://pages/contact",
         "pad_top": 28,
         "pad_bottom": 28
       }
