@@ -375,7 +375,7 @@
         "headline_size": 20,
         "bg": "#ffffff",
         "img_height_desktop": 350,
-        "img_height_mobile": 260,
+        "img_height_mobile": 280,
         "img_radius": 8,
         "gap": 16,
         "speed": 6
