@@ -1142,6 +1142,29 @@
         "padding_horizontal_mobile": 0,
         "border_thickness": 0
       }
+    },
+    "ugc_slider_QDDdXg": {
+      "type": "ugc-slider",
+      "blocks": {
+        "image_JM6CfH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TERRA_IFOURAS_3.png",
+            "alt": "Customer photo"
+          }
+        }
+      },
+      "block_order": [
+        "image_JM6CfH"
+      ],
+      "name": "Customer Gallery Slider",
+      "settings": {
+        "headline": "Customers love Dr. Odoro!",
+        "headline_size": 19,
+        "background_color": "#ffffff",
+        "image_width": 330,
+        "image_radius": 4
+      }
     }
   },
   "order": [
@@ -1161,6 +1184,7 @@
     "image_with_text_overlay_fQCCHJ",
     "faq_Uafwhm",
     "175892445484482174",
-    "ss_product_variant_RLRRgm"
+    "ss_product_variant_RLRRgm",
+    "ugc_slider_QDDdXg"
   ]
 }
