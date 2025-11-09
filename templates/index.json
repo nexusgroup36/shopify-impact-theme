@@ -456,6 +456,52 @@
         "pad_top": 48,
         "pad_bottom": 48
       }
+    },
+    "faq_collapsible_xMFQpE": {
+      "type": "faq-collapsible",
+      "blocks": {
+        "item_qX9M6c": {
+          "type": "item",
+          "settings": {
+            "question": "Where are MommysHomes products made?",
+            "answer": "<p>Your answer text goes here.</p>"
+          }
+        },
+        "item_pqAbgJ": {
+          "type": "item",
+          "settings": {
+            "question": "What payment methods do you accept?",
+            "answer": "<p>Your answer text goes here.</p>"
+          }
+        },
+        "item_FaGhr8": {
+          "type": "item",
+          "settings": {
+            "question": "Can I change or cancel my order after placing it?",
+            "answer": "<p>Your answer text goes here.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_qX9M6c",
+        "item_pqAbgJ",
+        "item_FaGhr8"
+      ],
+      "name": "Veelgestelde Vragen",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "bg": "#FFFFFF",
+        "text": "#111111",
+        "muted": "#666666",
+        "border": "#EAEAEA",
+        "btn_bg": "#111111",
+        "btn_text": "#FFFFFF",
+        "title_size": 36,
+        "cta_label": "NEED HELP?",
+        "cta_link": "",
+        "pad_top": 28,
+        "pad_bottom": 28
+      }
     }
   },
   "order": [
@@ -467,6 +513,7 @@
     "bundle_card_V7CgHe",
     "loop_reviews_aVW8Jy",
     "email_collector_eKreVy",
-    "experts_DhVnW6"
+    "experts_DhVnW6",
+    "faq_collapsible_xMFQpE"
   ]
 }
