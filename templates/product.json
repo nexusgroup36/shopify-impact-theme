@@ -880,8 +880,8 @@
         "image_MtLdzt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TERRA_IFOURAS_11.png",
-            "media_width": 50,
+            "image": "shopify://shop_images/TERRA_IFOURAS_12.png",
+            "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
