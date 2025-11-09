@@ -433,21 +433,14 @@
           "type": "item",
           "settings": {
             "icon": "tick",
+            "image": "shopify://shop_images/Screenshot_2023-09-10_at_08.55.44_3dd651f4-c7eb-4f9e-9bb1-cba8b76413e0.webp",
             "text": "<p><strong>No more “sorry I’m late” texts,</strong> stop snoozing and start owning your mornings.</p>"
-          }
-        },
-        "item_zAxCHF": {
-          "type": "item",
-          "settings": {
-            "icon": "tick",
-            "text": "<p><strong>Silent, partner-friendly,</strong> powerful vibrations that wake you, not the whole house.</p>"
           }
         }
       },
       "block_order": [
         "item_r3eBai",
-        "item_BMrVgC",
-        "item_zAxCHF"
+        "item_BMrVgC"
       ],
       "name": "SS - Trust badges #3",
       "settings": {
