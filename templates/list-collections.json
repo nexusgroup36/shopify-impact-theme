@@ -138,7 +138,12 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "the-fresh-start-bundle",
+          "the-home-fresh-bundle",
+          "the-athlete-s-bundle",
+          "the-ultimate-freshness-bundle"
+        ],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
