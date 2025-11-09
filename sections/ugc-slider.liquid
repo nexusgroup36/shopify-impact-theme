@@ -1,0 +1,240 @@
+<!-- Sliding Image Section: Dr. Odoro UGC / Gallery -->
+<section
+  class="ugc-slider"
+  style="
+    --slider-bg: #f8fafc;          /* background color */
+    --headline-font-size: 28px;    /* headline font size */
+    --image-width: 220px;          /* image width on desktop */
+    --image-radius: 24px;          /* image corner radius */
+  "
+>
+  <div class="ugc-slider-inner">
+    <!-- Headline (change text as needed) -->
+    <h2 class="ugc-slider-heading">
+      Customers love The Neutralizer
+    </h2>
+
+    <!-- Slider wrapper -->
+    <div class="ugc-slider-frame">
+      <button class="ugc-slider-arrow ugc-prev" type="button" aria-label="Previous">
+        &#8249;
+      </button>
+
+      <div class="ugc-slider-viewport">
+        <div class="ugc-slider-track">
+          <!-- Slide 1 -->
+          <div class="ugc-slide">
+            <img
+              src="https://via.placeholder.com/400x500?text=Photo+1"
+              alt="Customer using The Neutralizer in their shoes"
+            />
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="ugc-slide">
+            <img
+              src="https://via.placeholder.com/400x500?text=Photo+2"
+              alt="Customer holding The Neutralizer bags"
+            />
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="ugc-slide">
+            <img
+              src="https://via.placeholder.com/400x500?text=Photo+3"
+              alt="The Neutralizer shown in a gym bag"
+            />
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="ugc-slide">
+            <img
+              src="https://via.placeholder.com/400x500?text=Photo+4"
+              alt="Before and after shoe freshness"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button class="ugc-slider-arrow ugc-next" type="button" aria-label="Next">
+        &#8250;
+      </button>
+    </div>
+
+    <!-- Dots (optional) -->
+    <div class="ugc-slider-dots">
+      <button class="ugc-dot is-active" type="button" aria-label="Slide 1"></button>
+      <button class="ugc-dot" type="button" aria-label="Slide 2"></button>
+      <button class="ugc-dot" type="button" aria-label="Slide 3"></button>
+      <button class="ugc-dot" type="button" aria-label="Slide 4"></button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ugc-slider {
+    background: var(--slider-bg);
+    padding: 32px 16px 40px;
+  }
+
+  .ugc-slider-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  .ugc-slider-heading {
+    font-size: var(--headline-font-size);
+    font-weight: 700;
+    margin: 0 0 24px;
+  }
+
+  .ugc-slider-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .ugc-slider-viewport {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .ugc-slider-track {
+    display: flex;
+    gap: 16px;
+    transition: transform 0.4s ease;
+  }
+
+  .ugc-slide {
+    flex: 0 0 auto;
+    width: var(--image-width);
+  }
+
+  .ugc-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--image-radius);
+    object-fit: cover;
+    display: block;
+  }
+
+  .ugc-slider-arrow {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 999px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 1;
+    color: #0f172a;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  }
+
+  .ugc-slider-arrow:hover {
+    background: #f1f5f9;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+  }
+
+  .ugc-slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .ugc-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #cbd5f5;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: width 0.2s ease, background 0.2s ease;
+  }
+
+  .ugc-dot.is-active {
+    width: 18px;
+    background: #0f172a;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .ugc-slider-heading {
+      font-size: calc(var(--headline-font-size) - 4px);
+    }
+
+    .ugc-slide {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .ugc-slide {
+      width: 80%;
+    }
+
+    .ugc-slider-frame {
+      gap: 4px;
+    }
+
+    .ugc-slider-arrow {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const track = document.querySelector(".ugc-slider-track");
+    const slides = Array.from(document.querySelectorAll(".ugc-slide"));
+    const prevBtn = document.querySelector(".ugc-prev");
+    const nextBtn = document.querySelector(".ugc-next");
+    const dots = Array.from(document.querySelectorAll(".ugc-dot"));
+
+    if (!track || slides.length === 0) return;
+
+    let currentIndex = 0;
+
+    function updateSlider(index) {
+      const slideWidth = slides[0].getBoundingClientRect().width + 16; // width + gap
+      track.style.transform = "translateX(" + index * -slideWidth + "px)";
+      currentIndex = index;
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("is-active", i === currentIndex);
+      });
+    }
+
+    function goNext() {
+      const next = currentIndex + 1 >= slides.length ? 0 : currentIndex + 1;
+      updateSlider(next);
+    }
+
+    function goPrev() {
+      const prev = currentIndex - 1 < 0 ? slides.length - 1 : currentIndex - 1;
+      updateSlider(prev);
+    }
+
+    nextBtn.addEventListener("click", goNext);
+    prevBtn.addEventListener("click", goPrev);
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => updateSlider(i));
+    });
+
+    // Auto-slide (optional)
+    setInterval(goNext, 6000);
+  })();
+</script>
