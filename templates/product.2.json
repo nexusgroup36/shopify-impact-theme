@@ -12,15 +12,17 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "liquid_8nNhKb": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  html {\n    scroll-behavior: smooth;\n  }\n  .reviews-stars {\n    display: flex;\n    align-items: center;\n    text-decoration: none;\n  }\n  .reviews-stars svg {\n    fill: #3CB371;\n    width: 20px;\n    height: auto;\n  }\n  .review-scroll {\n    margin-left: 6px;\n    font-size: 14px;\n    color: #121212;\n  }\n</style>\n\n<div class=\"product-block\">\n  <a href=\"#judge_me_reviews_review_widget\" class=\"reviews-stars\">\n    <span style=\"display: flex; gap: 1.35px;\"> \n      {% for i in (1..4) %}\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.332 1.212-6.035 5.884 1.425 8.305L12 18.896l-7.39 3.523 1.425-8.305L.41 9.23l8.332-1.212L12 .587z\"/></svg>\n      {% endfor %}\n    </span>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" style=\"fill: url(#half-fill); width: 20px; height: auto;\">\n      <defs>\n        <linearGradient id=\"half-fill\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n          <stop offset=\"50%\" style=\"stop-color: #3CB371; stop-opacity: 1\" />\n          <stop offset=\"50%\" style=\"stop-color: #dadada; stop-opacity: 1\" />\n        </linearGradient>\n      </defs>\n      <path d=\"M12 .587l3.668 7.431 8.332 1.212-6.035 5.884 1.425 8.305L12 18.896l-7.39 3.523 1.425-8.305L.41 9.23l8.332-1.212L12 .587z\"/>\n    </svg>\n    <span class=\"review-scroll\">\n      4.5/5 GREAT – 31.215 REVIEWS\n    </span>\n  </a>\n</div>"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
             "heading_tag": "h2"
           }
-        },
-        "judge_me_reviews_preview_badge_zUhHH8": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
         },
         "badges": {
           "type": "badges",
@@ -32,10 +34,10 @@
             "show_taxes_notice": false
           }
         },
-        "liquid_4gJ8eN": {
+        "liquid_p7Bxfh": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n  .info-wrapper {\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n    font-family: inherit;\n  }\n\n  .info-row {\n    display: flex;\n    align-items: center;\n    font-size: 15px;\n    font-weight: 400;\n    line-height: 1.2;\n  }\n\n  .info-icon {\n    width: 16px;\n    height: 16px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-right: 6px;\n    flex-shrink: 0;\n  }\n\n  .stock-dot {\n    width: 10px;\n    height: 10px;\n    background-color: orange;\n    border-radius: 50%;\n    box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15);\n    animation: pulse 2s infinite;\n  }\n\n  @keyframes pulse {\n    0% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n    50% { box-shadow: 0 0 0 6px rgba(255, 165, 0, 0.1); }\n    100% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n  }\n</style>\n\n<div class=\"info-wrapper\">\n  <div class=\"info-row\">\n    <div class=\"info-icon\"><div class=\"stock-dot\"></div></div>\n    <span id=\"stock-text\" style=\"color: orange;\">Live Stock Updates: 43 left in stock</span>\n  </div>\n  <div class=\"info-row\">\n    <div class=\"info-icon\">\n      <svg width=\"14\" height=\"14\" viewBox=\"0 0 640 512\" fill=\"black\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z\"/>\n      </svg>\n    </div>\n    <span>Free shipping from $50</span>\n  </div>\n</div>\n\n<script>\n  let stockCount = 43; // Starting stock number\n  const stockText = document.getElementById(\"stock-text\");\n\n  function updateStock() {\n    if (stockCount > 1) {\n      // Drop size: mostly 1, sometimes 2 or 3\n      let drop = Math.random() < 0.7 ? 1 : Math.floor(Math.random() * 3) + 1;\n      if (stockCount - drop < 1) drop = stockCount - 1;\n\n      stockCount -= drop;\n      stockText.textContent = `Live Stock Updates: ${stockCount} left in stock`;\n\n      scheduleNextUpdate();\n    }\n  }\n\n  function scheduleNextUpdate() {\n    let randomDelay;\n    if (stockCount > 5) {\n      randomDelay = Math.floor(Math.random() * (25000 - 5000 + 1)) + 5000;\n    } else {\n      randomDelay = Math.floor(Math.random() * (8000 - 2000 + 1)) + 2000;\n    }\n    setTimeout(updateStock, randomDelay);\n  }\n\n  // Ensure initial text matches the starting count\n  stockText.textContent = `Live Stock Updates: ${stockCount} left in stock`;\n\n  scheduleNextUpdate();\n</script>"
+            "liquid": "<div id='ss-trust-badges-3'></div>"
           }
         },
         "rating": {
@@ -59,6 +61,16 @@
             "collapse_content": false
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
         "liquid_KfQga7": {
           "type": "liquid",
           "disabled": true,
@@ -71,34 +83,10 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": false,
-            "atc_button_background": "#c9b6e4",
-            "atc_button_text_color": "#000000",
+            "atc_button_background": "",
+            "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
-          }
-        },
-        "liquid_BjTzJC": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"margin: 0 !important; padding: 0 !important;\">\n  <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin: 0 !important; padding: 0 !important;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0726/8165/2548/files/left-and-right-arrows.svg?v=1709739432\" alt=\"Return Icon\" style=\"width: 20px; height: 20px; margin: 0 !important; padding: 0 !important;\" />\n    <span style=\"margin: 0 !important; padding: 0 !important;\">60 day hassle-free returns</span>\n  </div>\n</div>"
-          }
-        },
-        "text_tijwfc": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Join thousands of women who refuse to walk in fear.</strong><br/>Dovie was built to silence that fear with a piercing alarm and flashing strobe that makes you impossible to ignore, while buying you the precious seconds to get to safety.</p>"
-          }
-        },
-        "liquid_p7Bxfh": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
-          }
-        },
-        "liquid_6QxAJf": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
           }
         },
         "liquid_fYCN9X": {
@@ -110,6 +98,7 @@
         "image_BGxTTA": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/1.webp",
             "alignment": "center",
             "max_width": 500
           }
@@ -118,76 +107,66 @@
           "type": "collapsible_text",
           "settings": {
             "title": "BENEFITS",
-            "content": "<ul><li><strong>Feel safe anywhere</strong> — walking home, on a run, or traveling.</li><li><strong>Scare off threats fast</strong> — 130dB siren + flashing strobe.</li><li><strong>Zero stress use</strong> — simple pull-pin, no fumbling.</li><li><strong>Always ready</strong> — false-alarm resistant, long battery life.</li><li><strong>Peace of mind</strong> — if you ever use it in danger, we replace it free.</li></ul>"
-          }
-        },
-        "collapsible_text_7BbRma": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "HOW DOES IT WORK?",
-            "content": "<p>When you feel unsafe, every second matters. That’s why Dovie works with <strong>one simple pull</strong>.</p><p></p><ol><li><strong>Pull the pin</strong> → a 130dB siren blasts, louder than a jet engine.</li><li><strong>Flashing strobe</strong> → grabs attention instantly, even at night.</li><li><strong>Scares off threats</strong> → startles attackers and alerts people around you.</li></ol><p></p><p>No apps. No setup. No fumbling.<br/>Just <strong>pull and protect yourself</strong>.</p>"
+            "content": "<p>The Perfect Gift For Your Loved Ones</p>"
           }
         },
         "collapsible_text_WwBkVq": {
           "type": "collapsible_text",
           "settings": {
             "title": "WHAT'S IN THE BOX?",
-            "content": "<p>We like to keep things simple. Every order of the <strong>Dovie</strong> contains the following:</p><ul><li>Dovie Alarm</li><li>Brass Keychain</li><li>USB-C Charging Cable</li></ul>"
+            "content": "<ul><li>The Loop One Alarm Wristband</li><li>UV Glasses</li><li>Protective Case</li></ul>"
           }
         },
         "collapsible_text_Rgj4JB": {
           "type": "collapsible_text",
           "settings": {
             "title": "SHIPPING",
-            "content": "<p><strong>All orders processed and dispatched within 24-48 hours.</strong></p><p>An email with your tracking information will be sent to you once your order has been processed.</p>"
+            "content": "<p>All orders processed and dispatched within 24-48 hours.</p><p>An email with your tracking information will be sent to you once your order has been processed.</p>"
           }
         },
         "collapsible_text_qreJ9J": {
           "type": "collapsible_text",
           "settings": {
             "title": "WARRANTY & RETURNS",
-            "content": "<p><strong>Lifetime Warranty</strong> We stand behind the exceptional quality of every It's Dovie product. Our commitment is simple: if your product ever fails to function as designed, we'll make it right. No fine print, no complications – just our unwavering dedication to your satisfaction.</p><p><strong>Hassle-Free Returns</strong> • 60-Day Money-Back Guarantee • Full refund provided • No questions asked • Simple email process</p><p>Not completely satisfied? Simply email us at support@itsdovie.com within 60 days of purchase.</p>"
+            "content": "<p><strong>Lifetime Warranty</strong> We stand behind the exceptional quality of every Wake Loop product. Our commitment is simple: if your product ever fails to function as designed, we'll make it right. No fine print, no complications – just our unwavering dedication to your satisfaction.</p><p><strong>Hassle-Free Returns</strong> • 60-Day Money-Back Guarantee • Full refund provided • No questions asked • Simple email process</p><p>Not completely satisfied? Simply email us at info@wakeloop.com within 60 days of purchase.</p>"
           }
         },
-        "collapsible_text_UfnyLR": {
+        "collapsible_text_8Ykkwf": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "FAQ",
-            "content": "<p><strong>1. How loud is Dovie?</strong><br/>Dovie blasts at <strong>130 decibels</strong>. Loud enough to shock, scare, and get attention fast.</p><p><strong>2. How do I turn it off after pulling the pin?</strong><br/>Just put the pin back in. The alarm stops immediately and is ready to use again.</p><p><strong>3. Is the battery replaceable?</strong><br/>No — Dovie is <strong>USB-rechargeable</strong>. One charge gives you months of standby power.</p><p><strong>4. Can it go off by accident in my bag?</strong><br/>No. The pin is secure and only activates if you pull it out on purpose.</p><p><strong>5. Is it legal to carry everywhere?</strong><br/>Yes. Unlike weapons, Dovie is <strong>non-violent and legal</strong> in most places, even on planes.</p><p><strong>6. Is it heavy or bulky?</strong><br/>No. Dovie is <strong>lightweight and compact</strong>. It clips easily to keys, bags, or belts.</p><p><strong>7. Who is Dovie for?</strong><br/>Anyone who wants peace of mind:</p><ul><li>Women walking alone</li><li>College students</li><li>Runners and commuters</li><li>Kids and teens traveling to school</li><li>Anyone you love and want to protect</li></ul>"
+            "content": "<p>Share some content to your customers about your products.</p>"
           }
         },
-        "liquid_mcyRpL": {
+        "liquid_98kTpb": {
           "type": "liquid",
           "settings": {
-            "liquid": "<!-- Dovie Reviews -->\n<div id=\"review1\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">I don’t walk in fear anymore</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Heard footsteps behind me, pulled the pin, siren blasted and the guy backed off. Dovie gave me my calm back.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Samantha L, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review2\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Gift for my daughter starting college</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I worry less now. She clips Dovie to her keys. It’s loud, easy, and makes her feel safe walking to night classes.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">James D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review3\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Small but mighty</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">It looks cute on my bag but that siren is no joke. One pull and everyone turns. Exactly what I need at night.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Elena V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review4\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Peace of mind for late shifts</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I leave work after midnight. With Dovie I feel in control. Pull pin to start, push it back to stop. Simple and strong.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Marcus T, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review5\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Bought 4 for my girls and niece</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Best gift I’ve given. They all carry it. Makes them feel safe on campus and walking to the bus stop early.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Grace B, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review6\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Makes creeps back off fast</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Guy wouldn’t leave me alone at the station. One pull, siren blasted, he walked away. I felt strong again.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Toby W, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review7\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Easy to use when scared</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My hands shake when I’m nervous. Dovie is just pull and go. No app, no codes. Thank you for keeping it simple.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Nina V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review8\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Perfect travel buddy</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Solo trip to a new city. Dovie lived on my bag and gave me confidence at night. Rechargeable and ready.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ben H, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review9\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Campus must-have</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">RA here. I tell my residents to carry Dovie at night. It’s loud and simple. Pull pin, people look, you walk away.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lena M, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review10\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Best gift I gave this year</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Got Dovie for my sister and mom. Both said they feel safer. That’s worth more than the price, honestly.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Olivia R, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review11\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Parking garages don’t scare me now</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to rush and panic. Now I keep Dovie in my hand. Knowing it’s there keeps me calm and alert.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Laura P, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review12\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My boyfriend got me this, I love it</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Sweetest gift. He worries less when I’m out late. I feel safer and honestly more confident with Dovie on my keys.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Chloe M, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review13\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Not a weapon. Exactly what I wanted.</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I didn’t want pepper spray. Dovie is non-violent but powerful. Siren + light = attention. That’s what helps me get away.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Noah F, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review14\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Running at dusk feels safe again</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Lightweight, clips to my shorts, and rechargeable. Nice knowing I can make noise if someone bothers me.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Isabel R, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review15\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Simple on/off with the pin</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Tested it at home. Pull to start, put the pin back to stop. Loud and clear. Now it lives on my keychain.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ethan S, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review16\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Mom approved for school runs</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I clip Dovie to the stroller and my daughter’s backpack. Makes me feel safer in parking lots and busy streets.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Hannah G, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review17\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">The siren changed my night walk</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to call a friend every time. Now I just hold Dovie. Knowing I can make noise calms me down a lot.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Sophie D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review18\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Good for teens too</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Got one for my 15-year-old. We practiced at home so she isn’t scared to use it. Makes both of us feel better.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">William N, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review19\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Keychain safety that actually works</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">It’s tiny, looks nice, and the light flashes bright. I feel safer walking from the train to my apartment now.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Amelia J, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review20\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Worth it for the peace alone</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to feel sick before walking home. Now I carry Dovie and breathe easier. Best thing I’ve bought this year.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lucas K, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<script>\n  let currentReview = 1;\n  const totalReviews = 20;\n\n  function showReview(index) {\n    for (let i = 1; i <= totalReviews; i++) {\n      const el = document.getElementById('review' + i);\n      if (el) el.style.display = 'none';\n    }\n    const showEl = document.getElementById('review' + index);\n    if (showEl) showEl.style.display = 'flex';\n    currentReview = index;\n  }\n\n  function showNextReview() {\n    const nextReview = currentReview === totalReviews ? 1 : currentReview + 1;\n    showReview(nextReview);\n  }\n\n  function showPreviousReview() {\n    const prevReview = currentReview === 1 ? totalReviews : currentReview - 1;\n    showReview(prevReview);\n  }\n\n  showReview(currentReview);\n</script>\n<script>\n  setInterval(() => {\n    showNextReview();\n  }, 5000); // rotates every 5 seconds\n</script>"
+            "liquid": "<div id='ss-product-videos'></div>"
           }
         }
       },
       "block_order": [
+        "liquid_8nNhKb",
         "title",
-        "judge_me_reviews_preview_badge_zUhHH8",
         "badges",
         "price",
-        "liquid_4gJ8eN",
+        "liquid_p7Bxfh",
         "rating",
         "payment_terms",
         "separator",
         "description",
+        "variant_picker",
         "liquid_KfQga7",
         "buy_buttons",
-        "liquid_BjTzJC",
-        "text_tijwfc",
-        "liquid_p7Bxfh",
-        "liquid_6QxAJf",
         "liquid_fYCN9X",
         "image_BGxTTA",
         "collapsible_text_DwAeq6",
-        "collapsible_text_7BbRma",
         "collapsible_text_WwBkVq",
         "collapsible_text_Rgj4JB",
         "collapsible_text_qreJ9J",
-        "collapsible_text_UfnyLR",
-        "liquid_mcyRpL"
+        "collapsible_text_8Ykkwf",
+        "liquid_98kTpb"
       ],
       "settings": {
         "full_width": false,
@@ -207,225 +186,43 @@
         "input_text_color": ""
       }
     },
-    "rich_text_anmCU9": {
-      "type": "rich-text",
-      "blocks": {
-        "richtext_YFMXz6": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>LOVED BY +50.000 HAPPY CUSTOMERS</p>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_YFMXz6"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "image_link_blocks_Adbfjr": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "item_399Eyr": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/14.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_QXPzCg": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/13.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_L7M96e": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/9.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_QXk77M": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/11.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_KLEggK": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/8.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_bpXjFW": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/12.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item_399Eyr",
-        "item_QXPzCg",
-        "item_L7M96e",
-        "item_QXk77M",
-        "item_KLEggK",
-        "item_bpXjFW"
-      ],
-      "name": "Image link blocks",
-      "settings": {
-        "full_width": false,
-        "block_size": "medium",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "custom_liquid_fbMzTq": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<div id='ss-product-videos'></div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "rich_text_NY6UUE": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_XJ8TJE": {
-          "type": "subheading",
-          "settings": {
-            "text": "Did You Know?"
-          }
-        },
-        "heading_ETFmpb": {
-          "type": "heading",
-          "settings": {
-            "text": "1 in 3 women in the U.S. is assaulted in her lifetime",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_mdgChf": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>This is personal because it includes 1 in 3 of our daughters, sisters, and friends.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_XJ8TJE",
-        "heading_ETFmpb",
-        "richtext_mdgChf"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#c9b6e4",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "trust_badges_F3Pmam": {
+    "trust_badges_L7QLMF": {
       "type": "trust-badges",
       "blocks": {
-        "item_nTP6qk": {
+        "item_8KFyJn": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p><strong>Finally feel safe</strong>, whether you’re walking home, running, or waiting for a ride.</p>"
+            "text": "<p>The Perfect Gift For Your Loved Ones</p>"
           }
         },
-        "item_WdtyaW": {
+        "item_QnH7zr": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p><strong>Scare off creeps fast</strong> with a siren so loud it turns every head.</p>"
+            "text": "<p>The Loop One Alarm Wristband</p>"
           }
         },
-        "item_hrYCkA": {
+        "item_78yfjN": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p><strong>Easy pull-pin,</strong> no fumbling, even if your hands are shaking.</p>"
+            "text": "<p>UV Glasses</p>"
           }
         },
-        "item_8GpY3G": {
+        "item_gkeBNp": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p><strong>Carry it anywhere,</strong> light, small, and looks like an accessory.</p>"
+            "text": "<p>Backed by a Lifetime Warranty</p>"
           }
         }
       },
       "block_order": [
-        "item_nTP6qk",
-        "item_WdtyaW",
-        "item_hrYCkA",
-        "item_8GpY3G"
+        "item_8KFyJn",
+        "item_QnH7zr",
+        "item_78yfjN",
+        "item_gkeBNp"
       ],
       "name": "SS - Trust badges #3",
       "settings": {
@@ -455,80 +252,44 @@
         "border_thickness": 0
       }
     },
-    "impact_text_4r9Pem": {
-      "type": "impact-text",
-      "blocks": {
-        "item_39dQtL": {
-          "type": "item",
-          "settings": {
-            "title": "50.000+",
-            "subheading": "HAPPY CUSTOMERS",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "item_DQgqnw": {
-          "type": "item",
-          "settings": {
-            "title": "30.000+",
-            "subheading": "5 STAR REVIEWS",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "item_39dQtL",
-        "item_DQgqnw"
-      ],
-      "name": "Impact text",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 0.8,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "product_vids_TriUWX": {
+    "product_vids_QHCtJC": {
       "type": "product-vids",
       "blocks": {
-        "video_ptn4Rm": {
+        "video_rVbTqz": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/1001(3).mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "modal_heading": "<h4>Modal Heading</h4>",
             "modal_text": "<p>Modal Text</p>"
           }
         },
-        "video_hmdVWJ": {
+        "video_LaLaFx": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/1001(1).mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "modal_heading": "<h4>Modal Heading</h4>",
             "modal_text": "<p>Modal Text</p>"
           }
         },
-        "video_DMKEbr": {
+        "video_mj3Lik": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/1001.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
+          }
+        },
+        "video_NfBRt6": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
+          }
+        },
+        "video_YcpAJD": {
+          "type": "video",
+          "settings": {
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "modal_heading": "<h4>Modal Heading</h4>",
             "modal_text": "<p>Modal Text</p>"
@@ -536,15 +297,18 @@
         }
       },
       "block_order": [
-        "video_ptn4Rm",
-        "video_hmdVWJ",
-        "video_DMKEbr"
+        "video_rVbTqz",
+        "video_LaLaFx",
+        "video_mj3Lik",
+        "video_NfBRt6",
+        "video_YcpAJD"
       ],
+      "disabled": true,
       "name": "SS - Product Videos",
       "settings": {
         "videos_position": "above_description",
         "use_metafield": false,
-        "heading": "<h2>WHAT THEY SAY</h2>",
+        "heading": "",
         "heading_custom": false,
         "heading_font": "josefin_sans_n4",
         "heading_size": 18,
@@ -653,51 +417,153 @@
         "lazy": true
       }
     },
-    "image_with_text_overlay_ifw33n": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
+    "featured_collection_jizWxD": {
+      "type": "featured-collection",
+      "name": "Featured collection",
       "settings": {
-        "full_width": false,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._19_960a3188-3aa6-4641-b84d-84be9d29fd31.png",
-        "mobile_image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._20_f2f31757-706c-4b5c-bb8f-5b10e4a2ed1a.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "custom_liquid_3wA9Jk": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
+        "collection": "",
+        "products": [
+          "loop-one",
+          "the-case",
+          "uv-glasses"
+        ],
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<p>",
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 4,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "YOU MAY ALSO LIKE",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     },
-    "image_with_text_overlay_Gpbg7J": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
+    "impact_text_4r9Pem": {
+      "type": "impact-text",
+      "blocks": {
+        "item_39dQtL": {
+          "type": "item",
+          "settings": {
+            "title": "50.000+",
+            "subheading": "HAPPY CUSTOMERS",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_DQgqnw": {
+          "type": "item",
+          "settings": {
+            "title": "30.000+",
+            "subheading": "5 STAR REVIEWS",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_39dQtL",
+        "item_DQgqnw"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 0.8,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "media_with_text_WPkVK7": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_EBdKg9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Wake_loop_19.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "WHERE LUXURY MEETS COMFORT",
+            "content": "<p>From our discreet Loop One wristband to our evolving range of sleep-tech essentials, every product offers: Silent vibration alarms for undisturbed mornings, Secure and comfortable wear, Sleek premium materials — all backed by a 2-year warranty.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_EBdKg9"
+      ],
+      "name": "Media with text",
       "settings": {
         "full_width": false,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._19.png",
-        "mobile_image": "shopify://shop_images/Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._18_b79ba9e2-e496-4e61-81b2-79a820aee5f0.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "spacing": "small"
+      }
+    },
+    "media_with_text_LtprTE": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_b83jfB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center-end text-end",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "FREE TRAVEL CASE WITH EVERY ORDER",
+            "content": "<p>Take your Loop One anywhere. Every order includes a sleek, protective travel case—perfect for keeping your device safe and charged on the go. Compact, durable, and designed to match your lifestyle.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_b83jfB"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
       }
     },
     "media_with_text_AwCX3C": {
@@ -706,20 +572,20 @@
         "image_BeRG6y": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/13.png",
+            "image": "shopify://shop_images/Wake_loop_10.png",
             "media_width": 40,
-            "media_position": "start",
+            "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
             "title": "60 DAYS MONEY BACK GUARANTEE",
-            "content": "<p>Try <strong>dovie</strong> risk-free. If you’re not completely satisfied within 60 days, contact our lovely support team for a full compensation. Your sleep, your terms.</p>",
+            "content": "<p>Try Loop One risk-free. If you’re not completely satisfied within 60 days, contact our lovely support team for a full compensation. Your sleep, your terms.</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#f5f1eb",
+            "background": "#000000",
             "background_gradient": "",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "text_gradient": "",
             "button_background": "",
             "button_text_color": ""
@@ -748,7 +614,7 @@
         "richtext_p3DdtX": {
           "type": "richtext",
           "settings": {
-            "content": "<p>We stand behind the quality of our products. Your <strong>dovie</strong> is covered for life—because peace of mind should last as long as your safety does. Durable, dependable, and guaranteed.</p>"
+            "content": "<p>We stand behind the quality of our products. Your Loop One is covered for life—because peace of mind should last as long as your sleep does. Durable, dependable, and guaranteed.</p>"
           }
         }
       },
@@ -762,8 +628,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Kaching-Bundles-Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._5.png",
-        "mobile_image": "shopify://shop_images/Kaching-Bundles-Kopie_van_NEVER_MISS_YOUR_ALARM_AGAIN._5.png",
+        "image": "shopify://shop_images/Wake_loop_3200_x_1600_px_3.png",
+        "mobile_image": "shopify://shop_images/Wake_loop_13.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -777,57 +643,43 @@
         "item_U6DEYw": {
           "type": "item",
           "settings": {
-            "title": "How loud is Dovie?",
-            "content": "<p>Dovie blasts at <strong>130 decibels</strong>. Loud enough to shock, scare, and get attention fast.</p>"
+            "title": "How does the Loop One wake me up?",
+            "content": "<p>Loop One uses gentle vibrations on your wrist to wake you silently. It’s ideal for light sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</p>"
           }
         },
         "item_iRJA9i": {
           "type": "item",
           "settings": {
-            "title": "How do I turn it off after pulling the pin?",
-            "content": "<p>Simple — just put the pin back in. The alarm stops immediately and is ready to use again.</p>"
+            "title": "Can I wear it all night comfortably?",
+            "content": "<p>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</p>"
           }
         },
         "item_DtQ8eq": {
           "type": "item",
           "settings": {
-            "title": "Is the battery replaceable?",
-            "content": "<p>No need — Dovie is <strong>USB-rechargeable</strong>. One charge gives you months of standby power.</p>"
+            "title": "How long does the battery last?",
+            "content": "<p>The battery lasts up to 7 days on a single charge, depending on usage. It fully recharges in under 2 hours using the included USB-C cable.</p>"
           }
         },
         "item_U6KDJp": {
           "type": "item",
           "settings": {
-            "title": "Can it go off by accident in my bag?",
-            "content": "<p>No. The pin is secure, so it only activates if you pull it out on purpose.</p>"
+            "title": "Is it compatible with my phone or alarm app?",
+            "content": "<p>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</p>"
           }
         },
         "item_JUMQzY": {
           "type": "item",
           "settings": {
-            "title": "Is it legal to carry everywhere?",
-            "content": "<p>Yes. Unlike pepper spray or tasers, Dovie is <strong>non-violent and legal</strong> in most places — even airports and planes.</p>"
-          }
-        },
-        "item_KDM6Et": {
-          "type": "item",
-          "settings": {
-            "title": "Is it heavy or bulky?",
-            "content": "<p>Not at all. Dovie is <strong>lightweight and compact</strong>, clips onto your keys or bag, and looks like a small accessory.</p>"
-          }
-        },
-        "item_yqmxVU": {
-          "type": "item",
-          "settings": {
-            "title": "Who is Dovie for?",
-            "content": "<p>Anyone who wants peace of mind:</p><ul><li>Women walking alone</li><li>Students heading to class</li><li>Runners and commuters</li><li>Teens traveling to school</li><li>Anyone you love and want to keep safe</li></ul>"
+            "title": "What if I sleep through the vibration?",
+            "content": "<p>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</p>"
           }
         },
         "item_ztDECz": {
           "type": "item",
           "settings": {
             "title": "What’s your return policy?",
-            "content": "<p>We offer a 60-day money-back guarantee. If Dovie isn’t right for you, return it—no questions asked. Plus, you’re covered with our lifetime warranty.</p>"
+            "content": "<p>We offer a 60-day money-back guarantee. If Loop One isn’t right for you, return it—no questions asked. Plus, you’re covered with our lifetime warranty.</p>"
           }
         }
       },
@@ -837,10 +689,9 @@
         "item_DtQ8eq",
         "item_U6KDJp",
         "item_JUMQzY",
-        "item_KDM6Et",
-        "item_yqmxVU",
         "item_ztDECz"
       ],
+      "disabled": true,
       "name": "FAQ",
       "settings": {
         "full_width": true,
@@ -866,34 +717,7 @@
     },
     "1747885505688c5a92": {
       "type": "apps",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
-    },
-    "1759250808f9acf94b": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_T78pTE": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "real_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_T78pTE"
-      ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -911,20 +735,15 @@
   },
   "order": [
     "main",
-    "rich_text_anmCU9",
-    "image_link_blocks_Adbfjr",
-    "custom_liquid_fbMzTq",
-    "rich_text_NY6UUE",
-    "trust_badges_F3Pmam",
+    "trust_badges_L7QLMF",
+    "product_vids_QHCtJC",
+    "featured_collection_jizWxD",
     "impact_text_4r9Pem",
-    "product_vids_TriUWX",
-    "image_with_text_overlay_ifw33n",
-    "custom_liquid_3wA9Jk",
-    "image_with_text_overlay_Gpbg7J",
+    "media_with_text_WPkVK7",
+    "media_with_text_LtprTE",
     "media_with_text_AwCX3C",
     "image_with_text_overlay_UKfeC3",
     "faq_B3Ytat",
-    "1747885505688c5a92",
-    "1759250808f9acf94b"
+    "1747885505688c5a92"
   ]
 }
