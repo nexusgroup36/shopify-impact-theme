@@ -142,7 +142,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "How It Works",
-            "content": "<p>Most deodorizers hide smell with perfume: mixing with sweat and making it worse. </p><p><strong>Dr. Odoro works differently.</strong> Its natural Zeolite core uses a unique crystalline structure to trap and destroy odor molecules while absorbing moisture from your shoes as you rest. No sprays, no perfume; just clean, lasting freshness that eliminates the cause, not the cover-up.</p><p><strong>How to Use Dr. Odoro:</strong><br/><strong>1. Insert:</strong> Put one bag in each shoe, glove, or bag after use.<br/><strong>2. Wait:</strong> Leave overnight so the Zeolite can absorb moisture and odor.<br/><strong>3.</strong> <strong>Refresh:</strong> Every few weeks, place the bags in sunlight for a few hours to recharge them.<br/><strong>4.</strong> <strong>Repeat:</strong> Reuse for up to 3 months.</p><p>No chemicals. No effort. No smell ever again.</p>"
+            "content": "<p>Most deodorizers hide smell with perfume: mixing with sweat and making it worse. </p><p><strong>Dr. Odoro works while you rest. </strong>Each bag pulls out sweat, moisture, and bad smells from your shoes overnight. No sprays, no fake scents - just real freshness that lasts. It doesn’t hide the stink. It removes it.</p><p><strong>How to Use Dr. Odoro:</strong><br/><strong>1. Insert:</strong> Put one bag in each shoe, glove, or bag after use.<br/><strong>2. Wait:</strong> Leave overnight so the Zeolite can absorb moisture and odor.<br/><strong>3.</strong> <strong>Refresh:</strong> Every few weeks, place the bags in sunlight for a few hours to recharge them.<br/><strong>4.</strong> <strong>Repeat:</strong> Reuse for up to 3 months.</p><p>No chemicals. No effort. No smell ever again.</p>"
           }
         },
         "collapsible_text_ziLp8p": {
@@ -974,12 +974,12 @@
       "name": "Veelgestelde Vragen",
       "settings": {
         "title": "QUESTIONS?",
-        "bg": "#FFFFFF",
+        "bg": "#ffffff",
         "text": "#111111",
         "muted": "#666666",
-        "border": "#EAEAEA",
+        "border": "#eaeaea",
         "btn_bg": "#111111",
-        "btn_text": "#FFFFFF",
+        "btn_text": "#ffffff",
         "title_size": 20,
         "cta_label": "NEED HELP?",
         "cta_link": "shopify://pages/contact",
