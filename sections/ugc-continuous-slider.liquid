@@ -119,6 +119,8 @@
     from { transform: translate3d(0,0,0); }
     to   { transform: translate3d(calc(-1 * var(--d, 0px)), 0, 0); }
   }
+  /* kill the side fade overlays */
+.ugc-continuous__fade { display: none !important; }
 </style>
 
 <script>
