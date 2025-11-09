@@ -498,6 +498,40 @@
         "pad_x_mobile": 16
       }
     },
+    "media_with_text_xw8qh8": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_xYngAW": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Put an end to stinky, bacteria-filled shoes!",
+            "content": "<p>Trapped sweat and poor airflow turn your shoes into the perfect breeding ground for odor-causing bacteria. Sprays and powders only hide the smell: they don’t stop what’s actually causing it. <strong>The most effective way to eliminate odor is to remove it at the source.</strong></p><p>The Neutralizer’s mineral-based Zeolite core captures odor molecules and moisture directly from your shoes, destroying the bacteria that create smell in the first place. This keeps your shoes dry, clean, and fresh; no chemicals, no fragrance, no effort.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_xYngAW"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "wl_media_with_features_xCgfw9": {
       "type": "wl-media-with-features",
       "blocks": {
@@ -528,6 +562,7 @@
         "feature_xQe9cm",
         "feature_eh9CTy"
       ],
+      "disabled": true,
       "name": "Media with Features",
       "settings": {
         "heading": "Wake Up Calm. Stay in Control.",
@@ -1120,6 +1155,7 @@
     "ugc_continuous_slider_3GpwE8",
     "trust_badges_U4tFfA",
     "marquee_loop_xaMLUL",
+    "media_with_text_xw8qh8",
     "wl_media_with_features_xCgfw9",
     "multi_column_pQJG6K",
     "hears_comparison_3DejWC",
