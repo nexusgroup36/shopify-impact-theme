@@ -588,6 +588,7 @@
         "item_EAGpyG": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_197904491.jpg",
             "column_size": "3",
             "title": "Workers",
             "heading_tag": "h3",
@@ -600,6 +601,7 @@
         "item_KiyTfD": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Athlete-Well-Being-903x602.jpg",
             "column_size": "3",
             "title": "Athletes & Gym-Goers",
             "heading_tag": "h3",
@@ -612,6 +614,7 @@
         "item_rB6pmL": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/family-plays-laughs-living-room.jpg",
             "column_size": "3",
             "title": "Parents & Families",
             "heading_tag": "h3",
