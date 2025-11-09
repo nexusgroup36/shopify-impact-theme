@@ -119,6 +119,7 @@
         },
         "liquid_E7eJQV": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div id='ss-trust-badges-3'></div>"
           }
