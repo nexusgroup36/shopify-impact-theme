@@ -484,22 +484,22 @@
         "item_HrtLQp": {
           "type": "item",
           "settings": {
-            "question": "Where are MommysHomes products made?",
-            "answer": "<p>Your answer text goes here.</p>"
+            "question": "Is it safe for kids and pets?",
+            "answer": "<p>Yes completely.<br/><br/>The Neutralizer is made from 100% natural bamboo charcoal, sealed in breathable linen.<br/><br/>It contains zero chemicals, synthetic fragrances, or toxins. Safe for every household.</p>"
           }
         },
         "item_qX9M6c": {
           "type": "item",
           "settings": {
-            "question": "Where are MommysHomes products made?",
-            "answer": "<p>Your answer text goes here.</p>"
+            "question": "How quickly will I notice results?",
+            "answer": "<p>Most users smell a difference within <strong>24 hours</strong>, and full freshness returns within <strong>48 hours</strong>.<br/><br/>For shoes with heavy odor buildup, leave The Neutralizer inside for two nights for maximum effect.</p>"
           }
         },
         "item_pqAbgJ": {
           "type": "item",
           "settings": {
-            "question": "What payment methods do you accept?",
-            "answer": "<p>Your answer text goes here.</p>"
+            "question": "Do I need to keep buying refills?",
+            "answer": "<p>Not often.<br/><br/>The Neutralizer itself is reusable for up to 3 months.</p>"
           }
         },
         "item_FaGhr8": {
