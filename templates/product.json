@@ -259,156 +259,27 @@
         "show_less_label": "Show less"
       }
     },
-    "rich_text_yeRynT": {
-      "type": "rich-text",
+    "ugc_slider_QDDdXg": {
+      "type": "ugc-slider",
       "blocks": {
-        "heading_Qr9J6C": {
-          "type": "heading",
+        "image_JM6CfH": {
+          "type": "image",
           "settings": {
-            "text": "LOVED BY 100.000+ HAPPY CUSTOMERS.",
-            "heading_tag": "h6",
-            "text_color": "",
-            "gradient": ""
+            "image": "shopify://shop_images/TERRA_IFOURAS_3.png",
+            "alt": "Customer photo"
           }
         }
       },
       "block_order": [
-        "heading_Qr9J6C"
+        "image_JM6CfH"
       ],
-      "name": "Rich text",
+      "name": "Customer Gallery Slider",
       "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "image_link_blocks_Ggajj9": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "item_K6yqi8": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_r4a3P6": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_4RJn6z": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_ELgwrr": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_3mQgXd": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_HctQDL": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_KKcCGT": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_TqTMdk": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item_K6yqi8",
-        "item_r4a3P6",
-        "item_4RJn6z",
-        "item_ELgwrr",
-        "item_3mQgXd",
-        "item_HctQDL",
-        "item_KKcCGT",
-        "item_TqTMdk"
-      ],
-      "name": "Image link blocks",
-      "settings": {
-        "full_width": false,
-        "block_size": "large",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
+        "headline": "Customers love Dr. Odoro!",
+        "headline_size": 19,
+        "background_color": "#ffffff",
+        "image_width": 330,
+        "image_radius": 4
       }
     },
     "trust_badges_U4tFfA": {
@@ -1142,36 +1013,12 @@
         "padding_horizontal_mobile": 0,
         "border_thickness": 0
       }
-    },
-    "ugc_slider_QDDdXg": {
-      "type": "ugc-slider",
-      "blocks": {
-        "image_JM6CfH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/TERRA_IFOURAS_3.png",
-            "alt": "Customer photo"
-          }
-        }
-      },
-      "block_order": [
-        "image_JM6CfH"
-      ],
-      "name": "Customer Gallery Slider",
-      "settings": {
-        "headline": "Customers love Dr. Odoro!",
-        "headline_size": 19,
-        "background_color": "#ffffff",
-        "image_width": 330,
-        "image_radius": 4
-      }
     }
   },
   "order": [
     "main",
     "add_ons_7JfizX",
-    "rich_text_yeRynT",
-    "image_link_blocks_Ggajj9",
+    "ugc_slider_QDDdXg",
     "trust_badges_U4tFfA",
     "marquee_loop_xaMLUL",
     "wl_media_with_features_xCgfw9",
@@ -1184,7 +1031,6 @@
     "image_with_text_overlay_fQCCHJ",
     "faq_Uafwhm",
     "175892445484482174",
-    "ss_product_variant_RLRRgm",
-    "ugc_slider_QDDdXg"
+    "ss_product_variant_RLRRgm"
   ]
 }
