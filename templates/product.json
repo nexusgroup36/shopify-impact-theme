@@ -650,7 +650,7 @@
         "row_zU8Mtj": {
           "type": "row",
           "settings": {
-            "feature": "Easy to Use Daily",
+            "feature": "Works instantly",
             "other_has": true,
             "foam_has": true
           }
@@ -658,7 +658,7 @@
         "row_4ECzMV": {
           "type": "row",
           "settings": {
-            "feature": "Simple One- Button Setup",
+            "feature": "Easy to use",
             "other_has": true,
             "foam_has": true
           }
@@ -666,7 +666,7 @@
         "row_3iW8ir": {
           "type": "row",
           "settings": {
-            "feature": "Silent Wake-Up, No Noise",
+            "feature": "Safe for daily use",
             "other_has": true,
             "foam_has": false
           }
@@ -674,15 +674,15 @@
         "row_YUqm7z": {
           "type": "row",
           "settings": {
-            "feature": "Wake Without Waking Partner",
-            "other_has": true,
+            "feature": "Long-lasting results",
+            "other_has": false,
             "foam_has": false
           }
         },
         "row_G3Nayk": {
           "type": "row",
           "settings": {
-            "feature": "Trusted by Heavy Sleepers",
+            "feature": "Eliminates odor at the source",
             "other_has": false,
             "foam_has": false
           }
@@ -690,7 +690,7 @@
         "row_cWYfYd": {
           "type": "row",
           "settings": {
-            "feature": "Comfortable All-Night Wear",
+            "feature": "Absorbs moisture & bacteria",
             "other_has": false,
             "foam_has": false
           }
@@ -698,15 +698,7 @@
         "row_8mKRLV": {
           "type": "row",
           "settings": {
-            "feature": "Gentle Wake-Ups",
-            "other_has": false,
-            "foam_has": false
-          }
-        },
-        "row_YcneRM": {
-          "type": "row",
-          "settings": {
-            "feature": "Use Without Apps or WiFi",
+            "feature": "Fragrance-free & non-toxic",
             "other_has": false,
             "foam_has": false
           }
@@ -719,8 +711,7 @@
         "row_YUqm7z",
         "row_G3Nayk",
         "row_cWYfYd",
-        "row_8mKRLV",
-        "row_YcneRM"
+        "row_8mKRLV"
       ],
       "name": "Hears – Comparison",
       "settings": {
