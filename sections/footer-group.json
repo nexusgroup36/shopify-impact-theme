@@ -96,24 +96,17 @@
             "enable_follow_on_shop": false
           }
         },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "customer-care",
+            "show_menu_title": true
+          }
+        },
         "links_h4GApD": {
           "type": "links",
           "settings": {
             "menu": "footer",
-            "show_menu_title": true
-          }
-        },
-        "links": {
-          "type": "links",
-          "settings": {
-            "menu": "",
-            "show_menu_title": true
-          }
-        },
-        "links_Ly64rj": {
-          "type": "links",
-          "settings": {
-            "menu": "",
             "show_menu_title": true
           }
         },
@@ -130,9 +123,8 @@
       },
       "block_order": [
         "text_AnUfaj",
-        "links_h4GApD",
         "links",
-        "links_Ly64rj",
+        "links_h4GApD",
         "newsletter_fw6NDV"
       ],
       "settings": {
