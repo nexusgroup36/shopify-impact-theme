@@ -505,8 +505,8 @@
         "item_FaGhr8": {
           "type": "item",
           "settings": {
-            "question": "Can I change or cancel my order after placing it?",
-            "answer": "<p>Your answer text goes here.</p>"
+            "question": "What makes Dr. Odoro different from sprays or powders?",
+            "answer": "<p>Sprays only mask odor with fragrance and often add moisture, making the problem worse.<br/><br/>Powders are messy and temporary.<br/><br/>Dr. Odoro solves odor physically, not chemically, by removing the moisture and compounds that cause it in the first place.</p>"
           }
         }
       },
