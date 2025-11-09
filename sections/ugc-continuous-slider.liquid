@@ -3,48 +3,35 @@
   "name": "UGC Continuous Slider",
   "settings": [
     { "type": "text", "id": "headline", "label": "Headline", "default": "Customers love Dr. Odoro!" },
-    {
-      "type": "range", "id": "headline_size", "label": "Headline font size",
-      "min": 16, "max": 56, "step": 1, "unit": "px", "default": 28
-    },
+    { "type": "range", "id": "headline_size", "label": "Headline font size", "min": 16, "max": 56, "step": 1, "unit": "px", "default": 28 },
     { "type": "color", "id": "bg", "label": "Background color", "default": "#ffffff" },
 
-    {
-      "type": "range", "id": "img_height_desktop", "label": "Image height desktop",
-      "min": 160, "max": 480, "step": 10, "unit": "px", "default": 350
-    },
-    {
-      "type": "range", "id": "img_height_mobile", "label": "Image height mobile",
-      "min": 120, "max": 360, "step": 10, "unit": "px", "default": 250
-    },
-    {
-      "type": "range", "id": "img_radius", "label": "Image corner radius",
-      "min": 0, "max": 36, "step": 2, "unit": "px", "default": 10
-    },
-    {
-      "type": "range", "id": "gap", "label": "Gap between images",
-      "min": 6, "max": 28, "step": 2, "unit": "px", "default": 16
-    },
-    {
-      "type": "range", "id": "speed", "label": "Scroll duration (lower = faster)",
-      "min": 6, "max": 60, "step": 1, "unit": "s", "default": 20
-    }
+    { "type": "range", "id": "img_height_desktop", "label": "Image height desktop", "min": 160, "max": 480, "step": 10, "unit": "px", "default": 350 },
+    { "type": "range", "id": "img_height_mobile", "label": "Image height mobile", "min": 120, "max": 360, "step": 10, "unit": "px", "default": 250 },
+    { "type": "range", "id": "img_radius", "label": "Image corner radius", "min": 0, "max": 36, "step": 2, "unit": "px", "default": 10 },
+    { "type": "range", "id": "gap", "label": "Gap between images", "min": 6, "max": 28, "step": 2, "unit": "px", "default": 16 },
+
+    { "type": "range", "id": "speed_px", "label": "Scroll speed (px/sec)", "min": 30, "max": 300, "step": 5, "default": 90 }
   ],
   "blocks": [
-    {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        { "type": "image_picker", "id": "img", "label": "Image" },
-        { "type": "text", "id": "alt", "label": "Alt text", "default": "Customer photo" }
-      ]
-    }
+    { "type": "image", "name": "Image", "settings": [
+      { "type": "image_picker", "id": "img", "label": "Image" },
+      { "type": "text", "id": "alt", "label": "Alt text", "default": "Customer photo" }
+    ]}
   ],
   "presets": [{ "name": "UGC Continuous Slider", "category": "Media" }]
 }
 {% endschema %}
 
-<section class="ugc-continuous" style="--bg: {{ section.settings.bg }}; --h-size: {{ section.settings.headline_size }}px; --gap: {{ section.settings.gap }}px; --r: {{ section.settings.img_radius }}px; --h-d: {{ section.settings.img_height_desktop }}px; --h-m: {{ section.settings.img_height_mobile }}px; --speed: {{ section.settings.speed }}s;">
+<section class="ugc-continuous"
+  style="
+    --bg: {{ section.settings.bg }};
+    --h-size: {{ section.settings.headline_size }}px;
+    --gap: {{ section.settings.gap }}px;
+    --r: {{ section.settings.img_radius }}px;
+    --h-d: {{ section.settings.img_height_desktop }}px;
+    --h-m: {{ section.settings.img_height_mobile }}px;
+  ">
   <div class="ugc-continuous__inner">
     <h2 class="ugc-continuous__title">{{ section.settings.headline }}</h2>
 
@@ -52,8 +39,7 @@
       <div class="ugc-continuous__fade ugc-continuous__fade--left"></div>
       <div class="ugc-continuous__fade ugc-continuous__fade--right"></div>
 
-      <!-- Track duplicated for seamless loop -->
-      <div class="ugc-continuous__track">
+      <div class="ugc-continuous__track" data-speed="{{ section.settings.speed_px }}">
         {% for block in section.blocks %}
           {% if block.settings.img != blank %}
             <figure class="ugc-continuous__card">
@@ -61,6 +47,9 @@
             </figure>
           {% endif %}
         {% endfor %}
+        {% comment %}
+          Initial duplicate set so there is always at least 2x content.
+        {% endcomment %}
         {% for block in section.blocks %}
           {% if block.settings.img != blank %}
             <figure class="ugc-continuous__card">
@@ -74,76 +63,76 @@
 </section>
 
 <style>
-  .ugc-continuous {
-    background: var(--bg);
-    padding: 20px 0;
-  }
-  .ugc-continuous__inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 12px;
-    text-align: center;
-  }
-  .ugc-continuous__title {
-    font-size: var(--h-size);
-    font-weight: 600;
-    margin: 0 0 12px;
-    color: #000;
-  }
+  .ugc-continuous { background: var(--bg); padding: 20px 0; }
+  .ugc-continuous__inner { max-width: 1200px; margin: 0 auto; padding: 0 12px; text-align: center; }
+  .ugc-continuous__title { font-size: var(--h-size); font-weight: 600; margin: 0 0 12px; color: #000; }
 
-  .ugc-continuous__viewport {
-    position: relative;
-    overflow: hidden;
-  }
-
+  .ugc-continuous__viewport { position: relative; overflow: hidden; }
   .ugc-continuous__track {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--gap);
-    /* Continuous movement */
-    animation: ugc-marquee var(--speed) linear infinite;
+    display: inline-flex; align-items: center; gap: var(--gap);
     will-change: transform;
+    /* duration set by JS; we keep the name to reuse keyframes */
+    animation-name: ugc-marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
-
-  .ugc-continuous__card {
-    flex: 0 0 auto;
-    width: auto;
-  }
+  .ugc-continuous__card { flex: 0 0 auto; }
   .ugc-continuous__card img {
-    height: var(--h-d);
-    width: auto;
-    border-radius: var(--r);
-    object-fit: cover;
-    display: block;
+    height: var(--h-d); width: auto; border-radius: var(--r);
+    object-fit: cover; display: block;
   }
-
-  /* Edge fades like Slick's side padding */
-  .ugc-continuous__fade {
-    position: absolute;
-    top: 0; bottom: 0; width: 48px; pointer-events: none;
-    z-index: 2;
-  }
-  .ugc-continuous__fade--left {
-    left: 0;
-    background: linear-gradient(to right, var(--bg), rgba(255,255,255,0));
-  }
-  .ugc-continuous__fade--right {
-    right: 0;
-    background: linear-gradient(to left, var(--bg), rgba(255,255,255,0));
-  }
-
-  /* Mobile sizing like your Hike example */
   @media (max-width: 768px) {
     .ugc-continuous__inner { padding: 0 8px; }
     .ugc-continuous__card img { height: var(--h-m); }
   }
 
-  /* Keyframes: move left by half the track since we duplicated items */
-  @keyframes ugc-marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  .ugc-continuous__fade {
+    position: absolute; top: 0; bottom: 0; width: 48px; pointer-events: none; z-index: 2;
   }
+  .ugc-continuous__fade--left  { left: 0;  background: linear-gradient(to right, var(--bg), rgba(255,255,255,0)); }
+  .ugc-continuous__fade--right { right: 0; background: linear-gradient(to left,  var(--bg), rgba(255,255,255,0)); }
 
-  /* Pause on hover (optional, remove if you want constant movement always) */
-  .ugc-continuous__viewport:hover .ugc-continuous__track { animation-play-state: paused; }
+  /* Move by half the track width (because content is duplicated) */
+  @keyframes ugc-marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const section = document.currentScript.closest('.ugc-continuous');
+    const viewport = section.querySelector('.ugc-continuous__viewport');
+    const track = section.querySelector('.ugc-continuous__track');
+    if (!viewport || !track) return;
+
+    // 1) Clone slides until track ≥ 3x viewport width
+    const minWidth = viewport.clientWidth * 3;
+    const original = Array.from(track.children);
+    function appendOnce() {
+      original.forEach(el => track.appendChild(el.cloneNode(true)));
+    }
+    let safety = 0;
+    while (track.scrollWidth < minWidth && safety < 10) {
+      appendOnce();
+      safety++;
+    }
+
+    // 2) Set animation duration based on actual distance (half the track width) and speed in px/sec
+    const pxPerSec = Number(track.dataset.speed) || 90; // px per second
+    const distance = track.scrollWidth / 2;             // we animate 0 -> -50%
+    const duration = distance / pxPerSec;               // seconds
+    track.style.animationDuration = duration + 's';
+
+    // 3) Recompute on resize (debounced)
+    let t;
+    window.addEventListener('resize', () => {
+      clearTimeout(t);
+      t = setTimeout(() => {
+        // reset duration with new measurements
+        const newDistance = track.scrollWidth / 2;
+        track.style.animationDuration = (newDistance / pxPerSec) + 's';
+      }, 150);
+    });
+  });
+</script>
