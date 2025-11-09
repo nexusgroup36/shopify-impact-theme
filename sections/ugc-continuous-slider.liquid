@@ -5,13 +5,11 @@
     { "type": "text", "id": "headline", "label": "Headline", "default": "Customers love Dr. Odoro!" },
     { "type": "range", "id": "headline_size", "label": "Headline font size", "min": 16, "max": 56, "step": 1, "unit": "px", "default": 28 },
     { "type": "color", "id": "bg", "label": "Background color", "default": "#ffffff" },
-
     { "type": "range", "id": "img_height_desktop", "label": "Image height desktop", "min": 160, "max": 480, "step": 10, "unit": "px", "default": 350 },
     { "type": "range", "id": "img_height_mobile", "label": "Image height mobile", "min": 120, "max": 360, "step": 10, "unit": "px", "default": 250 },
-    { "type": "range", "id": "img_radius", "label": "Image corner radius", "min": 0, "max": 36, "step": 2, "unit": "px", "default": 10 },
+    { "type": "range", "id": "img_radius", "label": "Image corner radius", "min": 0, "max": 36, "step": 2, "unit": "px", "default": 12 },
     { "type": "range", "id": "gap", "label": "Gap between images", "min": 6, "max": 28, "step": 2, "unit": "px", "default": 16 },
-
-    { "type": "range", "id": "speed_px", "label": "Scroll speed (px/sec)", "min": 5, "max": 300, "step": 5, "default": 90 }
+    { "type": "range", "id": "speed_px", "label": "Scroll speed (px/sec)", "min": 30, "max": 300, "step": 5, "default": 90 }
   ],
   "blocks": [
     { "type": "image", "name": "Image", "settings": [
@@ -23,36 +21,18 @@
 }
 {% endschema %}
 
-<section class="ugc-continuous"
-  style="
-    --bg: {{ section.settings.bg }};
-    --h-size: {{ section.settings.headline_size }}px;
-    --gap: {{ section.settings.gap }}px;
-    --r: {{ section.settings.img_radius }}px;
-    --h-d: {{ section.settings.img_height_desktop }}px;
-    --h-m: {{ section.settings.img_height_mobile }}px;
-  ">
-  <div class="ugc-continuous__inner">
-    <h2 class="ugc-continuous__title">{{ section.settings.headline }}</h2>
+<section id="ugc-{{ section.id }}" class="ugc" style="--bg: {{ section.settings.bg }}; --h: {{ section.settings.headline_size }}px; --gap: {{ section.settings.gap }}px; --r: {{ section.settings.img_radius }}px; --hd: {{ section.settings.img_height_desktop }}px; --hm: {{ section.settings.img_height_mobile }}px;">
+  <div class="ugc__inner">
+    <h2 class="ugc__title">{{ section.settings.headline }}</h2>
 
-    <div class="ugc-continuous__viewport">
-      <div class="ugc-continuous__fade ugc-continuous__fade--left"></div>
-      <div class="ugc-continuous__fade ugc-continuous__fade--right"></div>
+    <div class="ugc__viewport">
+      <div class="ugc__fade ugc__fade--l"></div>
+      <div class="ugc__fade ugc__fade--r"></div>
 
-      <div class="ugc-continuous__track" data-speed="{{ section.settings.speed_px }}">
+      <div class="ugc__track" data-speed="{{ section.settings.speed_px }}">
         {% for block in section.blocks %}
           {% if block.settings.img != blank %}
-            <figure class="ugc-continuous__card">
-              <img src="{{ block.settings.img | image_url: width: 800 }}" alt="{{ block.settings.alt | escape }}" loading="lazy">
-            </figure>
-          {% endif %}
-        {% endfor %}
-        {% comment %}
-          Initial duplicate set so there is always at least 2x content.
-        {% endcomment %}
-        {% for block in section.blocks %}
-          {% if block.settings.img != blank %}
-            <figure class="ugc-continuous__card">
+            <figure class="ugc__card">
               <img src="{{ block.settings.img | image_url: width: 800 }}" alt="{{ block.settings.alt | escape }}" loading="lazy">
             </figure>
           {% endif %}
@@ -63,76 +43,65 @@
 </section>
 
 <style>
-  .ugc-continuous { background: var(--bg); padding: 20px 0; }
-  .ugc-continuous__inner { max-width: 1200px; margin: 0 auto; padding: 0 12px; text-align: center; }
-  .ugc-continuous__title { font-size: var(--h-size); font-weight: 600; margin: 0 0 12px; color: #000; }
+  .ugc { background: var(--bg); padding: 20px 0; }
+  .ugc__inner { max-width: 1200px; margin: 0 auto; padding: 0 12px; text-align: center; }
+  .ugc__title { font-size: var(--h); font-weight: 600; margin: 0 0 12px; color: #000; }
+  .ugc__viewport { position: relative; overflow: hidden; }
+  .ugc__track { display: inline-flex; align-items: center; gap: var(--gap); will-change: transform; animation-name: ugc-marquee; animation-timing-function: linear; animation-iteration-count: infinite; }
+  .ugc__card { flex: 0 0 auto; }
+  .ugc__card img { height: var(--hd); width: auto; border-radius: var(--r); object-fit: cover; display: block; }
+  @media (max-width: 768px){ .ugc__card img { height: var(--hm); } }
 
-  .ugc-continuous__viewport { position: relative; overflow: hidden; }
-  .ugc-continuous__track {
-    display: inline-flex; align-items: center; gap: var(--gap);
-    will-change: transform;
-    /* duration set by JS; we keep the name to reuse keyframes */
-    animation-name: ugc-marquee;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  .ugc-continuous__card { flex: 0 0 auto; }
-  .ugc-continuous__card img {
-    height: var(--h-d); width: auto; border-radius: var(--r);
-    object-fit: cover; display: block;
-  }
-  @media (max-width: 768px) {
-    .ugc-continuous__inner { padding: 0 8px; }
-    .ugc-continuous__card img { height: var(--h-m); }
-  }
+  .ugc__fade { position: absolute; top: 0; bottom: 0; width: 48px; pointer-events: none; z-index: 2; }
+  .ugc__fade--l { left: 0;  background: linear-gradient(to right, var(--bg), rgba(255,255,255,0)); }
+  .ugc__fade--r { right: 0; background: linear-gradient(to left,  var(--bg), rgba(255,255,255,0)); }
 
-  .ugc-continuous__fade {
-    position: absolute; top: 0; bottom: 0; width: 48px; pointer-events: none; z-index: 2;
-  }
-  .ugc-continuous__fade--left  { left: 0;  background: linear-gradient(to right, var(--bg), rgba(255,255,255,0)); }
-  .ugc-continuous__fade--right { right: 0; background: linear-gradient(to left,  var(--bg), rgba(255,255,255,0)); }
-
-  /* Move by half the track width (because content is duplicated) */
-  @keyframes ugc-marquee {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
-  }
+  @keyframes ugc-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const section = document.currentScript.closest('.ugc-continuous');
-    const viewport = section.querySelector('.ugc-continuous__viewport');
-    const track = section.querySelector('.ugc-continuous__track');
-    if (!viewport || !track) return;
+(function() {
+  // Scope to THIS section only
+  const root = document.getElementById('ugc-{{ section.id }}');
+  if (!root) return;
 
-    // 1) Clone slides until track ≥ 3x viewport width
-    const minWidth = viewport.clientWidth * 3;
-    const original = Array.from(track.children);
-    function appendOnce() {
-      original.forEach(el => track.appendChild(el.cloneNode(true)));
+  const viewport = root.querySelector('.ugc__viewport');
+  const track = root.querySelector('.ugc__track');
+  if (!viewport || !track) return;
+
+  const pxPerSec = Number(track.dataset.speed) || 90;
+
+  // Wait for all images to have intrinsic sizes
+  const imgs = Array.from(track.querySelectorAll('img'));
+  Promise.all(imgs.map(img => img.complete ? Promise.resolve() : new Promise(res => {
+    img.addEventListener('load', res, { once: true });
+    img.addEventListener('error', res, { once: true });
+  }))).then(init);
+
+  function init() {
+    // Duplicate children until the strip is long enough
+    const originals = Array.from(track.children);
+    const target = viewport.clientWidth * 4; // 4x viewport width
+    let guard = 0;
+    while (track.scrollWidth < target && guard < 12) {
+      originals.forEach(el => track.appendChild(el.cloneNode(true)));
+      guard++;
     }
-    let safety = 0;
-    while (track.scrollWidth < minWidth && safety < 10) {
-      appendOnce();
-      safety++;
+
+    // Animate half the track width (because content is repeated)
+    function setDuration() {
+      const distance = track.scrollWidth / 2; // px
+      const seconds = distance / pxPerSec;
+      track.style.animationDuration = seconds + 's';
     }
+    setDuration();
 
-    // 2) Set animation duration based on actual distance (half the track width) and speed in px/sec
-    const pxPerSec = Number(track.dataset.speed) || 90; // px per second
-    const distance = track.scrollWidth / 2;             // we animate 0 -> -50%
-    const duration = distance / pxPerSec;               // seconds
-    track.style.animationDuration = duration + 's';
-
-    // 3) Recompute on resize (debounced)
+    // Recalc on resize (debounced)
     let t;
     window.addEventListener('resize', () => {
       clearTimeout(t);
-      t = setTimeout(() => {
-        // reset duration with new measurements
-        const newDistance = track.scrollWidth / 2;
-        track.style.animationDuration = (newDistance / pxPerSec) + 's';
-      }, 150);
+      t = setTimeout(setDuration, 150);
     });
-  });
+  }
+})();
 </script>
