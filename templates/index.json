@@ -523,7 +523,7 @@
       "settings": {
         "title": "Frequently Asked Questions",
         "bg": "#FFFFFF",
-        "text": "#111111",
+        "text": "#000000",
         "muted": "#666666",
         "border": "#EAEAEA",
         "btn_bg": "#2e3a29",
