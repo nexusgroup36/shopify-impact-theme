@@ -982,7 +982,7 @@
         "btn_text": "#FFFFFF",
         "title_size": 20,
         "cta_label": "NEED HELP?",
-        "cta_link": "",
+        "cta_link": "shopify://pages/contact",
         "pad_top": 28,
         "pad_bottom": 28
       }
