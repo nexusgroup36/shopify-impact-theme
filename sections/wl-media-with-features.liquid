@@ -1,0 +1,261 @@
+{% comment %}
+  Wake Loop – Media with Features (Hears-style)
+  Desktop: 2-column, content left, media right
+  Mobile: media first, then content
+{% endcomment %}
+
+<section id="wl-mwf-{{ section.id }}" class="wl-mwf"
+  style="
+    --wl-bg: {{ section.settings.bg | default: '#ffffff' }};
+    --wl-fg: {{ section.settings.fg | default: '#000000' }};
+    --wl-radius: {{ section.settings.radius | default: 20 }}px;
+    --wl-pad: {{ section.settings.pad | default: 28 }}px;
+    --wl-gap: {{ section.settings.gap | default: 28 }}px;
+    --wl-max: {{ section.settings.max_width | default: 1400 }}px;
+    --wl-inner-max: {{ section.settings.inner_max | default: 700 }}px;
+    --wl-icon: {{ section.settings.icon_size | default: 42 }}px;
+    --wl-border: {{ section.settings.border | default: 0 }}px;
+    --wl-shadow: {% if section.settings.shadow %}0 12px 40px rgb(0 0 0 / 0.08){% else %}none{% endif %};
+  "
+>
+  <div class="wl-mwf__container">
+    <div class="wl-mwf__wrap">
+
+      {%- comment -%} MEDIA {%- endcomment -%}
+      <div class="wl-mwf__media">
+        {% if section.settings.video_url != blank %}
+          <div class="wl-mwf__ratio" style="--ratio: {{ section.settings.media_ratio | default: 1.9 }}">
+            <video playsinline muted loop autoplay preload="metadata"
+              {% if section.settings.poster %}
+                poster="{{ section.settings.poster | image_url: width: 1600 }}"
+              {% endif %}
+            >
+              <source src="{{ section.settings.video_url }}" type="video/mp4">
+            </video>
+          </div>
+        {% elsif section.settings.image %}
+          <div class="wl-mwf__ratio" style="--ratio: {{ section.settings.media_ratio | default: 1.9 }}">
+            <img
+              src="{{ section.settings.image | image_url: width: 1600 }}"
+              alt="{{ section.settings.image.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.image.width }}"
+              height="{{ section.settings.image.height }}"
+            >
+          </div>
+        {% else %}
+          <div class="wl-mwf__placeholder wl-mwf__ratio" style="--ratio: {{ section.settings.media_ratio | default: 1.9 }}">
+            <div class="wl-mwf__ph"></div>
+          </div>
+        {% endif %}
+      </div>
+
+      {%- comment -%} CONTENT {%- endcomment -%}
+      <div class="wl-mwf__content">
+        {% if section.settings.heading != blank %}
+          <h2 class="wl-mwf__heading">{{ section.settings.heading }}</h2>
+        {% endif %}
+
+        {% if section.settings.body != blank %}
+          <div class="wl-mwf__lead rte">{{ section.settings.body }}</div>
+        {% endif %}
+
+        {% if section.blocks.size > 0 %}
+          <div class="wl-mwf__features">
+            {% for block in section.blocks %}
+              <div class="wl-mwf__feature" {{ block.shopify_attributes }}>
+                {% if block.settings.icon %}
+                  <img class="wl-mwf__feature-icon"
+                       src="{{ block.settings.icon | image_url: width: 160 }}"
+                       alt="{{ block.settings.title | escape }}"
+                       loading="lazy"
+                       width="{{ section.settings.icon_size | default: 42 }}"
+                       height="{{ section.settings.icon_size | default: 42 }}">
+                {% endif %}
+                <div class="wl-mwf__feature-texts">
+                  {% if block.settings.title != blank %}
+                    <h6 class="wl-mwf__feature-title">{{ block.settings.title }}</h6>
+                  {% endif %}
+                  {% if block.settings.text != blank %}
+                    <p class="wl-mwf__feature-desc">{{ block.settings.text }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ----- layout shell ----- */
+  #wl-mwf-{{ section.id }}.wl-mwf {
+    color: var(--wl-fg);
+    background: transparent;
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__container {
+    max-width: var(--wl-max);
+    margin-inline: auto;
+    padding-inline: clamp(16px, 4vw, 24px);
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__wrap {
+    display: grid;
+    gap: var(--wl-gap);
+    grid-template: "media" "content" / 1fr;
+    background: var(--wl-bg);
+    border-radius: var(--wl-radius);
+    border: var(--wl-border) solid rgb(0 0 0 / 0.06);
+    box-shadow: var(--wl-shadow);
+    overflow: hidden;
+  }
+
+  /* ----- media + ratio box ----- */
+  #wl-mwf-{{ section.id }} .wl-mwf__media {
+    grid-area: media;
+    padding: 0;
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__ratio {
+    position: relative;
+    width: 100%;
+    /* ratio = width / height, so height = width / ratio */
+    aspect-ratio: var(--ratio);
+    background: #f3f4f6;
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__ratio > video,
+  #wl-mwf-{{ section.id }} .wl-mwf__ratio > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__placeholder .wl-mwf__ph {
+    width: 100%; height: 100%;
+    background: linear-gradient(180deg,#f4f4f4,#ececec);
+  }
+
+  /* ----- content ----- */
+  #wl-mwf-{{ section.id }} .wl-mwf__content {
+    grid-area: content;
+    padding: var(--wl-pad);
+    padding-block: clamp(22px, 4vw, var(--wl-pad));
+    max-width: var(--wl-inner-max);
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__heading {
+    margin: 0 0 16px 0;
+    font-weight: 400;            /* non-bold like the reference */
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+    font-size: clamp(28px, 3.8vw, 56px);
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__lead {
+    font-size: clamp(16px, 2.1vw, 20px);
+    line-height: 1.65;
+    margin: 0 0 20px 0;
+  }
+
+  /* ----- features ----- */
+  #wl-mwf-{{ section.id }} .wl-mwf__features {
+    display: grid;
+    gap: 18px;
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__feature {
+    display: grid;
+    grid-template-columns: var(--wl-icon) 1fr;
+    align-items: start;
+    gap: 14px;
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__feature-icon {
+    width: var(--wl-icon);
+    height: var(--wl-icon);
+    object-fit: contain;
+    display: block;
+    border-radius: 6px;
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__feature-title {
+    margin: 0 0 6px 0;
+    font-weight: 400;            /* regular, like Hears */
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.35;
+  }
+  #wl-mwf-{{ section.id }} .wl-mwf__feature-desc {
+    margin: 0;
+    font-size: clamp(14px, 1.9vw, 16px);
+    line-height: 1.6;
+    color: rgb(0 0 0 / .75);
+  }
+
+  /* ----- desktop layout ----- */
+  @media (min-width: 992px) {
+    #wl-mwf-{{ section.id }} .wl-mwf__wrap {
+      grid-template:
+        "content media" / 1.05fr 1.35fr;  /* text left, media right */
+      align-items: stretch;
+    }
+    #wl-mwf-{{ section.id }} .wl-mwf__content {
+      padding: clamp(28px, 3.5vw, 56px);
+    }
+  }
+
+  /* keep letters like “g” from clipping */
+  #wl-mwf-{{ section.id }} .wl-mwf__heading,
+  #wl-mwf-{{ section.id }} .wl-mwf__lead,
+  #wl-mwf-{{ section.id }} .wl-mwf__feature-title,
+  #wl-mwf-{{ section.id }} .wl-mwf__feature-desc {
+    line-height: calc(1em + 10px);
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Media with Features",
+  "class": "section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Hear Clearly. Stay Protected." },
+    { "type": "richtext", "id": "body", "label": "Body", "default": "<p>Our patented acoustic filters use advanced microperforation to reduce harmful noise while preserving clear, natural sound. That means you can stay present, enjoy the moment and protect your hearing all at once.</p>" },
+
+    { "type": "url", "id": "video_url", "label": "Video URL (MP4)", "info": "Paste a direct .mp4 URL. If empty, the image below will be used." },
+    { "type": "image_picker", "id": "poster", "label": "Video poster (optional)" },
+    { "type": "image_picker", "id": "image", "label": "Image (fallback / alternative)" },
+    { "type": "range", "id": "media_ratio", "label": "Media aspect ratio (W/H)", "min": 1.2, "max": 2.2, "step": 0.1, "default": 1.9 },
+
+    { "type": "color", "id": "bg", "label": "Card background", "default": "#ffffff" },
+    { "type": "color", "id": "fg", "label": "Text color", "default": "#000000" },
+    { "type": "checkbox", "id": "shadow", "label": "Enable soft shadow", "default": true },
+    { "type": "range", "id": "radius", "label": "Corner radius (px)", "min": 0, "max": 36, "step": 2, "default": 20 },
+    { "type": "range", "id": "border", "label": "Border width (px)", "min": 0, "max": 2, "step": 1, "default": 0 },
+
+    { "type": "range", "id": "pad", "label": "Inner padding (px)", "min": 16, "max": 72, "step": 2, "default": 28 },
+    { "type": "range", "id": "gap", "label": "Gap between media & content (px)", "min": 12, "max": 48, "step": 2, "default": 28 },
+
+    { "type": "range", "id": "icon_size", "label": "Icon size (px)", "min": 24, "max": 64, "step": 2, "default": 42 },
+
+    { "type": "range", "id": "max_width", "label": "Section max width (px)", "min": 900, "max": 1600, "step": 10, "default": 1400 },
+    { "type": "range", "id": "inner_max", "label": "Text column max width (px)", "min": 520, "max": 820, "step": 10, "default": 700 }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Icon image" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Enhanced sound clarity" },
+        { "type": "textarea", "id": "text", "label": "Description", "default": "Advanced noise-filtering for superior hearing quality." }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Media with Features",
+      "blocks": [
+        { "type": "feature", "settings": { "title": "Enhanced sound clarity", "text": "Advanced noise-filtering for superior hearing quality." } },
+        { "type": "feature", "settings": { "title": "Voice-enhancing technology.", "text": "Maintains clarity in voices amidst loud environments." } },
+        { "type": "feature", "settings": { "title": "Certified hearing protection.", "text": "For ultimate protection against loud sounds." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
