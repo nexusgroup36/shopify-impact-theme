@@ -41,8 +41,7 @@
     <h2 class="ugc__title">{{ section.settings.headline }}</h2>
 
     <div class="ugc-continuous__viewport">
-      <div class="ugc-continuous__fade ugc-continuous__fade--left"></div>
-      <div class="ugc-continuous__fade ugc-continuous__fade--right"></div>
+      {# fades removed / disabled so no blur #}
 
       <div class="ugc-continuous__track" data-speed="{{ section.settings.speed_px }}">
         <!-- Group A -->
@@ -67,22 +66,36 @@
 </section>
 
 <style>
-  .ugc { background: var(--bg); padding: 20px 0; }
-  .ugc__inner { max-width: 1200px; margin: 0 auto; padding: 0 12px; text-align: center; }
-  .ugc__title { font-size: var(--h); font-weight: 600; margin: 0 0 12px; color: #000; }
+  .ugc {
+    background: var(--bg);
+    padding: 20px 0;
+  }
+  .ugc__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+    text-align: center;
+  }
+  .ugc__title {
+    font-size: var(--h);
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: #000;
+  }
 
-  .ugc-continuous__viewport { position: relative; overflow: hidden; }
+  .ugc-continuous__viewport {
+    position: relative;
+    overflow: hidden;
+  }
 
-  /* CRITICAL: no wrapping and no default figure margins */
+  /* Track + groups: pure flex row, no animation here */
   .ugc-continuous__track {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     gap: var(--gap);
     will-change: transform;
-    animation-name: ugc-marquee-x;  /* duration set via JS */
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    transform: translate3d(0,0,0);
   }
   .ugc__group {
     display: inline-flex;
@@ -90,37 +103,31 @@
     align-items: center;
     gap: var(--gap);
   }
+
   .ugc-continuous__card {
     flex: 0 0 auto;
-    margin: 0;                /* kill UA default figure margins */
+    margin: 0; /* kill default figure margins */
   }
   .ugc-continuous__card img {
     display: block;
     height: var(--hd);
     width: auto;
-    max-width: none;          /* ignore theme-wide img { max-width:100% } */
+    max-width: none;
     border-radius: var(--r);
     object-fit: cover;
     flex: 0 0 auto;
   }
+
   @media (max-width: 768px) {
-    .ugc-continuous__card img { height: var(--hm); }
+    .ugc-continuous__card img {
+      height: var(--hm);
+    }
   }
 
-  /* Edge fades */
+  /* If you ever re-enable fades, they are here but hidden */
   .ugc-continuous__fade {
-    position: absolute; top: 0; bottom: 0; width: 48px; pointer-events: none; z-index: 2;
+    display: none !important;
   }
-  .ugc-continuous__fade--left  { left: 0;  background: linear-gradient(to right, var(--bg), rgba(255,255,255,0)); }
-  .ugc-continuous__fade--right { right: 0; background: linear-gradient(to left,  var(--bg), rgba(255,255,255,0)); }
-
-  /* Animate by exact width of Group A (set via --d in JS) */
-  @keyframes ugc-marquee-x {
-    from { transform: translate3d(0,0,0); }
-    to   { transform: translate3d(calc(-1 * var(--d, 0px)), 0, 0); }
-  }
-  /* kill the side fade overlays */
-.ugc-continuous__fade { display: none !important; }
 </style>
 
 <script>
@@ -136,15 +143,18 @@
 
   const pxPerSec = Number(track.dataset.speed) || 90;
 
-  // Wait until all images in Group A have intrinsic sizes
   const imgs = Array.from(groupA.querySelectorAll('img'));
-  Promise.all(imgs.map(img => img.complete ? 1 : new Promise(res => {
-    img.addEventListener('load', res, { once: true });
-    img.addEventListener('error', res, { once: true });
-  }))).then(init);
+
+  // Wait for images so widths are correct
+  Promise
+    .all(imgs.map(img => img.complete ? 1 : new Promise(res => {
+      img.addEventListener('load', res, { once: true });
+      img.addEventListener('error', res, { once: true });
+    })))
+    .then(init);
 
   function init() {
-    // Ensure Group A is at least a bit wider than the viewport
+    // Ensure group A is at least a bit wider than viewport
     const minA = viewport.clientWidth * 1.25;
     let guard = 0;
     while (groupA.scrollWidth < minA && guard < 10) {
@@ -152,24 +162,42 @@
       guard++;
     }
 
-    // Clone A into B so A and B are pixel-identical
+    // Clone A into B so they are identical
     groupB.innerHTML = '';
     groupB.append(...Array.from(groupA.children).map(n => n.cloneNode(true)));
 
-    // Distance is exact width of Group A
-    function setAnim() {
-      const distance = groupA.scrollWidth;        // px
-      const seconds  = distance / pxPerSec;       // px / (px/s) = s
-      track.style.setProperty('--d', distance + 'px');
-      track.style.animationDuration = seconds + 's';
-    }
-    setAnim();
+    let distance = groupA.scrollWidth; // px
+    let offset = 0;
+    let lastTime;
 
-    // Recompute on resize (debounced)
-    let t;
+    function setDistance() {
+      distance = groupA.scrollWidth || distance;
+      // keep offset within [0, -distance]
+      if (offset <= -distance) offset += distance;
+    }
+
+    function step(timestamp) {
+      if (lastTime == null) lastTime = timestamp;
+      const dt = (timestamp - lastTime) / 1000; // seconds
+      lastTime = timestamp;
+
+      offset -= pxPerSec * dt;
+      if (offset <= -distance) offset += distance;
+
+      track.style.transform = 'translate3d(' + offset + 'px, 0, 0)';
+      requestAnimationFrame(step);
+    }
+
+    setDistance();
+    requestAnimationFrame(step);
+
+    // Recalculate on resize
+    let resizeTimer;
     window.addEventListener('resize', () => {
-      clearTimeout(t);
-      t = setTimeout(setAnim, 150);
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        setDistance();
+      }, 150);
     });
   }
 })();
