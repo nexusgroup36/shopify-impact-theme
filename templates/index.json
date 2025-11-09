@@ -460,6 +460,34 @@
     "faq_collapsible_xMFQpE": {
       "type": "faq-collapsible",
       "blocks": {
+        "item_bj9ert": {
+          "type": "item",
+          "settings": {
+            "question": "How does The Neutralizer actually work?",
+            "answer": "<p>The Neutralizer uses activated bamboo charcoal to absorb both odor molecules and moisture from inside your shoes.<br/><br/>No sprays, perfumes, or chemicals, just natural adsorption that eliminates odor at the source and keeps shoes dry and fresh.</p>"
+          }
+        },
+        "item_e83PGe": {
+          "type": "item",
+          "settings": {
+            "question": "Where are MommysHomes products made?",
+            "answer": "<p>Your answer text goes here.</p>"
+          }
+        },
+        "item_tmmEJE": {
+          "type": "item",
+          "settings": {
+            "question": "Where are MommysHomes products made?",
+            "answer": "<p>Your answer text goes here.</p>"
+          }
+        },
+        "item_HrtLQp": {
+          "type": "item",
+          "settings": {
+            "question": "Where are MommysHomes products made?",
+            "answer": "<p>Your answer text goes here.</p>"
+          }
+        },
         "item_qX9M6c": {
           "type": "item",
           "settings": {
@@ -483,6 +511,10 @@
         }
       },
       "block_order": [
+        "item_bj9ert",
+        "item_e83PGe",
+        "item_tmmEJE",
+        "item_HrtLQp",
         "item_qX9M6c",
         "item_pqAbgJ",
         "item_FaGhr8"
