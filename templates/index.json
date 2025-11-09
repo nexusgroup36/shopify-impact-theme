@@ -31,7 +31,7 @@
             "style": "fill",
             "size": "base",
             "text": "SHOP NOW",
-            "url": "shopify://products/the-dovie",
+            "url": "shopify://collections",
             "background": "#2e3a29",
             "text_color": "#ffffff"
           }
