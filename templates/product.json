@@ -909,97 +909,82 @@
         "spacing": "small"
       }
     },
-    "faq_Uafwhm": {
-      "type": "faq",
+    "faq_collapsible_Ph8rMB": {
+      "type": "faq-collapsible",
       "blocks": {
-        "item_EUXWQz": {
+        "item_XMmYJk": {
           "type": "item",
           "settings": {
-            "title": "How does the Loop One wake me up?",
-            "content": "<p>Loop One works by sending vibration signals directly through your wrist at your set wake-up time. Unlike sound, which your brain can learn to ignore, these physical impulses are processed by your nervous system and trigger your body to wake up automatically. That’s why vibration is far more reliable than noise-based alarms, especially for heavy sleepers.</p>"
+            "question": "How does The Neutralizer actually work?",
+            "answer": "<p>The Neutralizer uses activated Zeolite to absorb both odor molecules and moisture from inside your shoes.<br/><br/>No sprays, perfumes, or chemicals, just natural adsorption that eliminates odor at the source and keeps shoes dry and fresh.</p>"
           }
         },
-        "item_8nnRin": {
+        "item_zmt9zF": {
           "type": "item",
           "settings": {
-            "title": "How many alarms can i set?",
-            "content": "<p>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</p>"
+            "question": "How long does The Neutralizer last?",
+            "answer": "<p>Each Neutralizer lasts up to <strong>2 months</strong> with proper care.<br/><br/>Simply place them in direct sunlight once a month for 2–3 hours to “recharge” the Zeolite and restore full absorption power.</p>"
           }
         },
-        "item_kFWWpT": {
+        "item_P3LrJx": {
           "type": "item",
           "settings": {
-            "title": "Can I wear it all night comfortably?",
-            "content": "<p>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</p>"
+            "question": "Can I use The Neutralizer in more than just shoes?",
+            "answer": "<p>The Neutralizer is specifically designed for shoes; it targets deep, trapped odor and moisture where sprays and powders can’t reach.<br/><br/>If you’re looking to keep other spaces fresh, check out our Closet Fresh Bag and Fresh Capsule made for gym bags, closets, cars, and beyond.</p>"
           }
         },
-        "item_3XAAwC": {
+        "item_HTRKDa": {
           "type": "item",
           "settings": {
-            "title": "Will it fit my wrist?",
-            "content": "<p>Yes! We made sure that the Loop One is adjustable for every wrist size.</p>"
+            "question": "Is it safe for kids and pets?",
+            "answer": "<p>Yes completely.<br/><br/>The Neutralizer is made from 100% Zeolite, sealed in breathable linen.<br/><br/>It contains zero chemicals, synthetic fragrances, or toxins. Safe for every household.</p>"
           }
         },
-        "item_JncJJM": {
+        "item_Ykrhzn": {
           "type": "item",
           "settings": {
-            "title": "How long does the battery last?",
-            "content": "<p>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the USB connector.</p>"
+            "question": "How quickly will I notice results?",
+            "answer": "<p>Most users smell a difference within <strong>24 hours</strong>, and full freshness returns within <strong>48 hours</strong>.<br/><br/>For shoes with heavy odor buildup, leave The Neutralizer inside for two nights for maximum effect.</p>"
           }
         },
-        "item_HktyRF": {
+        "item_yCdDzD": {
           "type": "item",
           "settings": {
-            "title": "Is it compatible with my phone or alarm app?",
-            "content": "<p>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</p>"
+            "question": "Do I need to keep buying refills?",
+            "answer": "<p>Not often.<br/><br/>The Neutralizer itself is reusable for up to 3 months.</p>"
           }
         },
-        "item_RKePtw": {
+        "item_grpn9L": {
           "type": "item",
           "settings": {
-            "title": "What if I sleep through the vibration?",
-            "content": "<p>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</p>"
-          }
-        },
-        "item_aWtARc": {
-          "type": "item",
-          "settings": {
-            "title": "What’s your return policy?",
-            "content": "<p>We offer a 60-day money-back guarantee. If Loop One isn’t right for you, return it, no questions asked. Plus, you’re covered with our lifetime warranty.</p>"
+            "question": "What makes Dr. Odoro different from sprays or powders?",
+            "answer": "<p>Sprays only mask odor with fragrance and often add moisture, making the problem worse.<br/><br/>Powders are messy and temporary.<br/><br/>Dr. Odoro solves odor physically, not chemically, by removing the moisture and compounds that cause it in the first place.</p>"
           }
         }
       },
       "block_order": [
-        "item_EUXWQz",
-        "item_8nnRin",
-        "item_kFWWpT",
-        "item_3XAAwC",
-        "item_JncJJM",
-        "item_HktyRF",
-        "item_RKePtw",
-        "item_aWtARc"
+        "item_XMmYJk",
+        "item_zmt9zF",
+        "item_P3LrJx",
+        "item_HTRKDa",
+        "item_Ykrhzn",
+        "item_yCdDzD",
+        "item_grpn9L"
       ],
-      "name": "FAQ",
+      "name": "Veelgestelde Vragen",
       "settings": {
-        "full_width": true,
-        "subheading": "",
         "title": "QUESTIONS?",
-        "content": "<p>We've got the answers.</p>",
-        "team_avatar_width": 160,
-        "support_hours": "",
-        "answer_time": "",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
+        "bg": "#FFFFFF",
+        "text": "#111111",
+        "muted": "#666666",
+        "border": "#EAEAEA",
+        "btn_bg": "#111111",
+        "btn_text": "#FFFFFF",
+        "title_size": 20,
+        "cta_label": "NEED HELP?",
+        "cta_link": "",
+        "pad_top": 28,
+        "pad_bottom": 28
       }
     },
     "175892445484482174": {
@@ -1093,7 +1078,7 @@
     "media_with_text_iMy4BQ",
     "media_with_text_gBNKCh",
     "media_with_text_tAFiaj",
-    "faq_Uafwhm",
+    "faq_collapsible_Ph8rMB",
     "175892445484482174",
     "ss_product_variant_RLRRgm"
   ]
