@@ -101,7 +101,7 @@
         "heading_JPUNgD": {
           "type": "heading",
           "settings": {
-            "text": "Heading",
+            "text": "Bundles",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -110,7 +110,7 @@
         "richtext_3J9xqE": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>Everything you need for all-day freshness. The Neutralizer and its companions work together to eliminate odor, absorb moisture, and keep your shoes and space clean naturally.</p>"
           }
         }
       },
@@ -160,7 +160,7 @@
         "heading_Yr88kj": {
           "type": "heading",
           "settings": {
-            "text": "Heading",
+            "text": "Accessories",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -169,7 +169,7 @@
         "richtext_KHLmQd": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>Treat yourself and your shoes with Dr. Odoro's accessories.</p>"
           }
         }
       },
