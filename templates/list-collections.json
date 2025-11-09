@@ -73,8 +73,13 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "collection": "the-neutralizer",
-        "products": [],
+        "collection": "",
+        "products": [
+          "the-neutralizer",
+          "the-neutralizer-gym-bags",
+          "test",
+          "the-neutralizer-boxing-gloves"
+        ],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
