@@ -12,14 +12,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "judge_me_reviews_preview_badge_cwjVnx": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+        "liquid_8nNhKb": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  html {\n    scroll-behavior: smooth;\n  }\n  .reviews-stars {\n    display: flex;\n    align-items: center;\n    text-decoration: none;\n  }\n  .reviews-stars svg {\n    fill: #3CB371;\n    width: 20px;\n    height: auto;\n  }\n  .review-scroll {\n    margin-left: 6px;\n    font-size: 14px;\n    color: #121212;\n  }\n</style>\n\n<div class=\"product-block\">\n  <a href=\"#judge_me_reviews_review_widget\" class=\"reviews-stars\">\n    <span style=\"display: flex; gap: 1.35px;\"> \n      {% for i in (1..4) %}\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.332 1.212-6.035 5.884 1.425 8.305L12 18.896l-7.39 3.523 1.425-8.305L.41 9.23l8.332-1.212L12 .587z\"/></svg>\n      {% endfor %}\n    </span>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" style=\"fill: url(#half-fill); width: 20px; height: auto;\">\n      <defs>\n        <linearGradient id=\"half-fill\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n          <stop offset=\"50%\" style=\"stop-color: #3CB371; stop-opacity: 1\" />\n          <stop offset=\"50%\" style=\"stop-color: #dadada; stop-opacity: 1\" />\n        </linearGradient>\n      </defs>\n      <path d=\"M12 .587l3.668 7.431 8.332 1.212-6.035 5.884 1.425 8.305L12 18.896l-7.39 3.523 1.425-8.305L.41 9.23l8.332-1.212L12 .587z\"/>\n    </svg>\n    <span class=\"review-scroll\">\n      4.5/5 GREAT – 31.215 REVIEWS\n    </span>\n  </a>\n</div>"
+          }
         },
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h3"
+            "heading_tag": "h2"
           }
         },
         "badges": {
@@ -30,6 +32,12 @@
           "type": "price",
           "settings": {
             "show_taxes_notice": false
+          }
+        },
+        "liquid_p7Bxfh": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
           }
         },
         "rating": {
@@ -45,7 +53,6 @@
         },
         "separator": {
           "type": "separator",
-          "disabled": true,
           "settings": {}
         },
         "description": {
@@ -60,21 +67,15 @@
             "hide_sold_out_variants": false,
             "stack_blocks": true,
             "selector_mode": "block",
-            "color_mode": "variant",
+            "color_mode": "color",
             "size_chart_page": ""
           }
         },
-        "liquid_LGGtrV": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<style>\n  .info-wrapper {\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n    font-family: inherit;\n  }\n\n  .info-row {\n    display: flex;\n    align-items: center;\n    font-size: 15px;\n    font-weight: 400;\n    line-height: 1.2;\n  }\n\n  .info-icon {\n    width: 16px;\n    height: 16px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-right: 6px;\n    flex-shrink: 0;\n  }\n\n  .stock-dot {\n    width: 10px;\n    height: 10px;\n    background-color: orange;\n    border-radius: 50%;\n    box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15);\n    animation: pulse 2s infinite;\n  }\n\n  @keyframes pulse {\n    0% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n    50% { box-shadow: 0 0 0 6px rgba(255, 165, 0, 0.1); }\n    100% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n  }\n</style>\n\n<div class=\"info-wrapper\">\n  <div class=\"info-row\">\n    <div class=\"info-icon\"><div class=\"stock-dot\"></div></div>\n    <span id=\"stock-text\" style=\"color: orange;\">Live Stock Updates: 12 left in stock</span>\n  </div>\n  <div class=\"info-row\">\n    <div class=\"info-icon\">\n      <svg width=\"14\" height=\"14\" viewBox=\"0 0 640 512\" fill=\"black\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z\"/>\n      </svg>\n    </div>\n    <span>Free shipping from $50</span>\n  </div>\n</div>\n\n<script>\n  let stockCount = 12; // Starting stock number\n  const stockText = document.getElementById(\"stock-text\");\n\n  function updateStock() {\n    if (stockCount > 1) {\n      // Drop size: mostly 1, sometimes 2 or 3\n      let drop = Math.random() < 0.7 ? 1 : Math.floor(Math.random() * 3) + 1;\n      if (stockCount - drop < 1) drop = stockCount - 1;\n\n      stockCount -= drop;\n      stockText.textContent = `Live Stock Updates: ${stockCount} left in stock`;\n\n      scheduleNextUpdate();\n    }\n  }\n\n  function scheduleNextUpdate() {\n    let randomDelay;\n    if (stockCount > 5) {\n      randomDelay = Math.floor(Math.random() * (25000 - 5000 + 1)) + 5000;\n    } else {\n      randomDelay = Math.floor(Math.random() * (8000 - 2000 + 1)) + 2000;\n    }\n    setTimeout(updateStock, randomDelay);\n  }\n\n  scheduleNextUpdate();\n</script>"
-          }
-        },
-        "liquid_gf9BP7": {
+        "liquid_KfQga7": {
           "type": "liquid",
           "disabled": true,
           "settings": {
-            "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');\n\n  .bogo-banner {\n    display: flex;\n    align-items: center;\n    border: 1px dotted #000;\n    background-color: #f9fbfc;\n    padding: 8px 12px;\n    border-radius: 6px;\n    font-family: 'Quantico', sans-serif;\n    max-width: 540px;\n    margin: 10px auto;\n    gap: 12px;\n  }\n\n  .bogo-banner img {\n    max-width: 65px;\n    height: auto;\n    border-radius: 4px;\n  }\n\n  .bogo-text h2 {\n    font-size: 15px;\n    margin: 0 0 2px;\n    color: #000;\n  }\n\n  .price-line {\n    display: flex;\n    align-items: center;\n    font-size: 13px;\n    margin: 2px 0;\n  }\n\n  .original-price {\n    text-decoration: line-through;\n    color: #888;\n    margin-right: 6px;\n  }\n\n  .timer {\n    color: #0078F0;\n    font-weight: bold;\n  }\n\n  .bogo-text p {\n    font-size: 12px;\n    margin: 1px 0;\n    color: #333;\n  }\n</style>\n\n<div class=\"bogo-banner\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/Wakeloop_11_101c183a-d59c-4db4-ba52-58f35fa58ce3.png?v=1749941152\" alt=\"Free Blue Light Glasses\">\n  <div class=\"bogo-text\">\n    <h2>FREE Blue Light Blocking Glasses Included</h2>\n    <div class=\"price-line\">\n      <span class=\"original-price\">£30.00</span>\n      <span class=\"timer\" id=\"countdown\">FREE for 10:00</span>\n    </div>\n    <p>Applies automatically in your cart.</p>\n  </div>\n</div>\n\n<script>\n  let countdown = 600; // 10 minutes in seconds\n  const el = document.getElementById('countdown');\n\n  function updateTimer() {\n    if (countdown > 0) {\n      const minutes = Math.floor(countdown / 60);\n      const seconds = countdown % 60;\n      el.textContent = `FREE for ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;\n      countdown--;\n    } else {\n      el.textContent = \"Offer expired\";\n    }\n  }\n\n  updateTimer();\n  const timerInterval = setInterval(updateTimer, 1000);\n</script>"
+            "liquid": "<style>\n    .stock-update-banner {\n        background-color: #000;\n        border: 1.5px dashed #fff;\n        border-radius: 12px;\n        padding: 8px 16px; /* Reduced padding for smaller height */\n        color: #fff;\n        font-family: QUANTICO;\n        font-size: 13px;\n        max-width: 100%;\n        box-sizing: border-box;\n        text-align: center;\n    }\n\n    .stock-update-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 8px;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n\n    .stock-update-bullet {\n        color: #fff;\n        font-size: 10px; /* Smaller dot */\n    }\n\n    .stock-update-text {\n        margin: 0;\n        color: #fff;\n        font-weight: 400;\n    }\n\n    .stock-update-progress-container {\n        background-color: #333;\n        height: 5px; /* Smaller bar height */\n        margin-top: 6px; /* Less spacing */\n        border-radius: 4px;\n        overflow: hidden;\n    }\n\n    .stock-update-progress-bar {\n        background-color: #fff;\n        height: 100%;\n        transition: width 0.4s ease;\n    }\n\n    @media (max-width: 480px) {\n        .stock-update-banner {\n            font-size: 12px;\n        }\n        .stock-update-content {\n            flex-wrap: nowrap;\n        }\n    }\n</style>\n\n<section class=\"stock-update-banner\">\n    <div class=\"stock-update-content\">\n        <span class=\"stock-update-bullet\" aria-hidden=\"true\">●</span>\n        <p class=\"stock-update-text\">LIVE STOCK UPDATES: <span id=\"stock-count\">78</span> units left in stock</p>\n    </div>\n    <div class=\"stock-update-progress-container\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n        <div class=\"stock-update-progress-bar\" id=\"progress-bar\" style=\"width: 80%;\"></div>\n    </div>\n</section>\n\n<script>\n    let voorraad = 78;\n    let maxVoorraad = 78;\n    let progressPercentage = 80;\n\n    function updateStock() {\n        voorraad -= 6;\n        if (voorraad < 0) voorraad = 0;\n        document.getElementById(\"stock-count\").textContent = voorraad;\n        progressPercentage = (voorraad / maxVoorraad) * 80;\n        document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n        document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n    }\n\n    setInterval(updateStock, 10000);\n    document.getElementById(\"stock-count\").textContent = voorraad;\n    document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n    document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n</script>"
           }
         },
         "buy_buttons": {
@@ -88,79 +89,39 @@
             "payment_button_text_color": ""
           }
         },
-        "liquid_E8GGN4": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"margin: 0 !important; padding: 0 !important;\">\n  <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin: 0 !important; padding: 0 !important;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0726/8165/2548/files/left-and-right-arrows.svg?v=1709739432\" alt=\"Return Icon\" style=\"width: 20px; height: 20px; margin: 0 !important; padding: 0 !important;\" />\n    <span style=\"margin: 0 !important; padding: 0 !important;\">60 day hassle-free returns</span>\n  </div>\n</div>"
-          }
-        },
-        "liquid_AYf8qa": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "liquid": "<div class=\"offer\" style=\"--background: 242 242 242; --text-color: 0 0 0;\">\n  <div class=\"text-with-icon\">\n    <span class=\"offer-heading\">Buy 2 For $99.90 — Save $20 Today</span>\n  </div>\n  <div class=\"offer-body\">\n    </p><strong>Treat Your Loved Ones:</strong><p>\nTo take advantage of our <strong>temporary</strong> Buy 2, <strong>Save $20</strong> sale, add at least 2 Loop One wristbands to your cart and the discount will be applied <strong>automatically</strong>.\n</p> \n</div>\n</div>\n\n\n<style>\n  .offer {\n    box-sizing: border-box;\n    gap: 0.5rem; /* matches var(--spacing-2) */\n    padding: 1.25rem; /* matches var(--spacing-5) */\n    border-radius: 0.375rem; /* matches var(--rounded-sm) */\n    display: grid;\n    text-align: center;\n    justify-items: center;\n    margin-block-start: 1.5rem; /* matches var(--spacing-6) */\n    margin-block-end: 1.5rem; /* matches var(--spacing-6) */\n    color: rgb(var(--text-color));\n    background: rgb(var(--background));\n    width: 100%;\n  }\n\n  .offer-heading {\n    font-family: HearsBold, Helvetica, Arial, sans-serif !important;\n    font-weight: 700;\n    font-size: 1rem; /* matches var(--text-h6) */\n    line-height: 1.4;\n    display: block;\n  }\n\n  .offer-body {\n    font-family: Helvetica, Arial, sans-serif;\n    font-size: 0.875rem; /* matches var(--text-sm) */\n    line-height: 1.6;\n    max-width: 60ch;\n  }\n\n  .offer-body p {\n    margin: 0;\n  }\n</style>"
-          }
-        },
-        "image_BGxTTA": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/1.webp",
-            "alignment": "center",
-            "max_width": 500
-          }
-        },
-        "liquid_KfQga7": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "liquid": "<style>\n    .stock-update-banner {\n        background-color: #000;\n        border: 1.5px dashed #fff;\n        border-radius: 12px;\n        padding: 8px 16px; /* Reduced padding for smaller height */\n        color: #fff;\n        font-family: QUANTICO;\n        font-size: 13px;\n        max-width: 100%;\n        box-sizing: border-box;\n        text-align: center;\n    }\n\n    .stock-update-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 8px;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n\n    .stock-update-bullet {\n        color: #fff;\n        font-size: 10px; /* Smaller dot */\n    }\n\n    .stock-update-text {\n        margin: 0;\n        color: #fff;\n        font-weight: 400;\n    }\n\n    .stock-update-progress-container {\n        background-color: #333;\n        height: 5px; /* Smaller bar height */\n        margin-top: 6px; /* Less spacing */\n        border-radius: 4px;\n        overflow: hidden;\n    }\n\n    .stock-update-progress-bar {\n        background-color: #fff;\n        height: 100%;\n        transition: width 0.4s ease;\n    }\n\n    @media (max-width: 480px) {\n        .stock-update-banner {\n            font-size: 12px;\n        }\n        .stock-update-content {\n            flex-wrap: nowrap;\n        }\n    }\n</style>\n\n<section class=\"stock-update-banner\">\n    <div class=\"stock-update-content\">\n        <span class=\"stock-update-bullet\" aria-hidden=\"true\">●</span>\n        <p class=\"stock-update-text\">LIVE STOCK UPDATES: <span id=\"stock-count\">78</span> units left in stock</p>\n    </div>\n    <div class=\"stock-update-progress-container\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n        <div class=\"stock-update-progress-bar\" id=\"progress-bar\" style=\"width: 80%;\"></div>\n    </div>\n</section>\n\n<script>\n    let voorraad = 78;\n    let maxVoorraad = 78;\n    let progressPercentage = 80;\n\n    function updateStock() {\n        voorraad -= 6;\n        if (voorraad < 0) voorraad = 0;\n        document.getElementById(\"stock-count\").textContent = voorraad;\n        progressPercentage = (voorraad / maxVoorraad) * 80;\n        document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n        document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n    }\n\n    setInterval(updateStock, 10000);\n    document.getElementById(\"stock-count\").textContent = voorraad;\n    document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n    document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n</script>"
-          }
-        },
-        "text_q6yyHR": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Join thousands taking control of their mornings—without the noise.</strong><br/>Heavy sleeper? Chronic snoozer? Partner tired of your alarms? Loop One’s silent wrist vibrations cut through even the deepest sleep—without waking anyone else.</p>"
-          }
-        },
-        "liquid_p7Bxfh": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
-          }
-        },
         "liquid_fYCN9X": {
           "type": "liquid",
           "settings": {
             "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 5px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/payment.webp?v=1747967871\">\n  </div>\n</div>"
           }
         },
+        "image_BGxTTA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1.webp",
+            "alignment": "center",
+            "max_width": 500
+          }
+        },
         "collapsible_text_DwAeq6": {
           "type": "collapsible_text",
           "settings": {
             "title": "BENEFITS",
-            "content": "<ul><li><strong>Never oversleep again</strong> — beat snoozing for good and wake up in control.</li><li><strong>Wake without waking others</strong> — your alarm, your peace.</li><li><strong>Zero hassle</strong> — no apps, no syncing, just simple and effective.</li><li><strong>Stress-free mornings</strong> — no jolts, panic, or racing heart.</li><li><strong>Failsafe for heavy sleepers</strong> — vibration strong enough to break through the heaviest sleep.</li><li><strong>Lifetime peace of mind</strong> — backed forever, no alarm stress again.</li></ul><p></p>"
-          }
-        },
-        "collapsible_text_EHrPjY": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "HOW DOES IT WORK?",
-            "content": "<p>Loop One <strong>works</strong> by <strong>sending</strong> vibration <strong>signals</strong> directly through your wrist at your set wake-up time. Unlike sound, which your <strong>brain</strong> can learn to ignore, these <strong>physical</strong> impulses are <strong>processed</strong> by your nervous <strong>system</strong> and trigger your body to wake up <strong>automatically</strong>. That’s why <strong>vibration</strong> is far more <strong>reliable</strong> than noise-based alarms, <strong>especially</strong> for <strong>heavy</strong> sleepers.</p><p></p><p><strong>How to Set Up Your Loop One (In Under 2 Minutes)</strong></p><p><strong>1. Turn it on</strong><br/>Press the button once. That’s it.</p><p><strong>2. Set Alarm 1</strong><br/>Press 5 times → hold 3 seconds to edit → set hours/minutes with short presses → hold again to save.<br/><br/><em>Your alarm repeats daily until you turn it off.</em></p><p><strong>3. Add more alarms</strong><br/>Press 6 or 7 times for other alarm groups — same quick steps as Alarm 1.</p><p><strong>4. Check your battery</strong><br/>From standby, hold 3 seconds.</p><p><strong>Bonus:</strong> Prefer watching instead of reading? </p><p>[<a href=\"/pages/quick-start\" title=\"Quick Start\">Watch the 60-second setup video here</a>]</p>"
+            "content": "<p>The Perfect Gift For Your Loved Ones</p>"
           }
         },
         "collapsible_text_WwBkVq": {
           "type": "collapsible_text",
           "settings": {
             "title": "WHAT'S IN THE BOX?",
-            "content": "<p>We like to keep things simple. Every order of the Loop One contains the following:</p><ul><li><strong>The Loop One Wristband</strong></li><li><strong>Lifetime Warranty</strong></li></ul>"
+            "content": "<ul><li>The Loop One Alarm Wristband</li><li>UV Glasses</li><li>Protective Case</li></ul>"
           }
         },
         "collapsible_text_Rgj4JB": {
           "type": "collapsible_text",
           "settings": {
             "title": "SHIPPING",
-            "content": "<p>All orders processed and dispatched within 24-48 hours.</p><p><strong>Free Shipping on orders over $50 </strong>Duties and taxes are included.</p>"
+            "content": "<p>All orders processed and dispatched within 24-48 hours.</p><p>An email with your tracking information will be sent to you once your order has been processed.</p>"
           }
         },
         "collapsible_text_qreJ9J": {
@@ -172,45 +133,40 @@
         },
         "collapsible_text_8Ykkwf": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "FAQ",
-            "content": "<ul><li><strong>How does the Loop One wake me up? </strong>Loop One uses vibrations on your wrist to wake you. It’s ideal for deep sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</li><li><strong>How many alarms can I set?             </strong>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</li><li><strong>Can I wear it all night comfortably?</strong>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</li><li><strong>How long does the battery last? </strong>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the USB charger.</li><li><strong>Is it compatible with my phone or alarm app? </strong>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</li><li><strong>What if I sleep through the vibration?</strong>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</li><li><strong>Will it fit my wrist?   </strong>                                  Yes! We made sure that the Loop One is adjustable for every wrist size.</li></ul>"
+            "content": "<p>Share some content to your customers about your products.</p>"
           }
         },
-        "liquid_c9t3mH": {
+        "liquid_98kTpb": {
           "type": "liquid",
           "settings": {
-            "liquid": "<!-- Wake Loop Reviews -->\n<div id=\"review1\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Waking up has never felt this natural</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to snooze like 5 alarms and still wake up late. This thing legit got me back on track.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Samantha L, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review2\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Finally, I don't wake up my partner</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to oversleep at least 3 times a week. Since switching to this, not once.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">James D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review3\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">I wake up feeling clear and calm</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My phone alarm just wasn’t cutting it. I’d sleep through it or hit snooze. This changed everything.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Elena V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review4\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">No more groggy mornings</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Loop One actually helped me stop oversleeping — and I’ve tried everything before this.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Marcus T, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review5\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My sleep anxiety is gone</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to stay up worrying I’d miss my alarm. Now I just relax. I trust the Loop to wake me, and it always does.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Grace B, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n<div id=\"review6\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">The Loop just works</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Oversleeping made me late for work more times than I can count. Haven’t been late once since using Loop One.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Toby W, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review7\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Feels like the future</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">For real, I don’t know how it works so well, but I don’t oversleep anymore. At all.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Nina V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review8\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Great for shared bedrooms</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Every morning used to be chaos — late, stressed, rushing. Now I wake up on time, no problem.”</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ben H, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review9\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Gentle but reliable</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">It’s amazing how I can wake up with just a soft vibration. Never thought I’d prefer this to my phone alarm, but here we are.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lena M, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review10\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Best gift I gave myself</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I’ve always had trouble hearing alarms. I thought I just had bad sleep habits — turns out I needed this.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Olivia R, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n<div id=\"review11\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Peaceful mornings again</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">This is the first thing that actually got me out of bed consistently. Oversleeping was ruining my mornings.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Laura P, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review12\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Saves my relationship 😂</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My partner used to hate my alarms. With Loop One, I wake up and he sleeps in. We both win.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Chloe M, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review13\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Subtle but powerful</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I’ve overslept through every alarm app, sunrise clock, you name it. Loop One is the only thing that works.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Noah F, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review14\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Wakes me every time</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Was oversleeping so bad I set 6 alarms. Now I just use Loop One and wake up instantly.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Isabel R, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review15\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Sleep quality improved</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">It felt weird wearing it at first but now it’s the reason I haven’t overslept in weeks.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ethan S, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review16\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My kids stay asleep!</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I don’t worry about waking the baby anymore. That alone is worth every cent of this thing.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Hannah G, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review17\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">I actually feel rested</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Used to sleep right through the loudest iPhone alarm. This little wristband wakes me up every time.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Sophie D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review18\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Silent but effective</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Oversleeping made me feel lazy and behind. Now I’m up, focused, and on time.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">William N, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review19\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Tiny product, big impact</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Didn’t believe vibration could actually wake me. But it does. And I haven’t overslept once.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Amelia J, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review20\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">This actually changed my life</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Even after 4 hours of sleep, this still wakes me up. I don’t oversleep anymore, period.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lucas K, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<script>\n  let currentReview = 1;\n  const totalReviews = 20;\n\n  function showReview(index) {\n    for (let i = 1; i <= totalReviews; i++) {\n      const el = document.getElementById('review' + i);\n      if (el) el.style.display = 'none';\n    }\n    const showEl = document.getElementById('review' + index);\n    if (showEl) showEl.style.display = 'flex';\n    currentReview = index;\n  }\n\n  function showNextReview() {\n    const nextReview = currentReview === totalReviews ? 1 : currentReview + 1;\n    showReview(nextReview);\n  }\n\n  function showPreviousReview() {\n    const prevReview = currentReview === 1 ? totalReviews : currentReview - 1;\n    showReview(prevReview);\n  }\n\n  showReview(currentReview);\n</script>\n<script>\n  setInterval(() => {\n    showNextReview();\n  }, 5000); // 7000 ms = 3 seconden, pas aan indien nodig\n</script>"
+            "liquid": "<div id='ss-product-videos'></div>"
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_preview_badge_cwjVnx",
+        "liquid_8nNhKb",
         "title",
         "badges",
         "price",
+        "liquid_p7Bxfh",
         "rating",
         "payment_terms",
         "separator",
         "description",
         "variant_picker",
-        "liquid_LGGtrV",
-        "liquid_gf9BP7",
-        "buy_buttons",
-        "liquid_E8GGN4",
-        "liquid_AYf8qa",
-        "image_BGxTTA",
         "liquid_KfQga7",
-        "text_q6yyHR",
-        "liquid_p7Bxfh",
+        "buy_buttons",
         "liquid_fYCN9X",
+        "image_BGxTTA",
         "collapsible_text_DwAeq6",
-        "collapsible_text_EHrPjY",
         "collapsible_text_WwBkVq",
         "collapsible_text_Rgj4JB",
         "collapsible_text_qreJ9J",
         "collapsible_text_8Ykkwf",
-        "liquid_c9t3mH"
+        "liquid_98kTpb"
       ],
       "settings": {
         "full_width": false,
@@ -230,151 +186,6 @@
         "input_text_color": ""
       }
     },
-    "rich_text_qEWyed": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_fwWHJV": {
-          "type": "heading",
-          "settings": {
-            "text": "LOVED BY 100.000+ HAPPY CUSTOMERS.",
-            "heading_tag": "h6",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_fwWHJV"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "image_link_blocks_Ne6xbk": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "item_c7jGaW": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/67eb955d-355f-48b5-a3ac-2c946d38ec0f.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_hrz9cM": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Wake_loop_21.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_Ty8AMJ": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/7811d604-2add-458b-a7d9-8a9105865620.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_bKWtRC": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-05-24_at_03.18.40.jpg",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_F3XRBi": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_7976_2.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_74UQYW": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/f2a4f936-24ab-479a-a4e2-7f61f52c9a24.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_hE9izx": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/a24fceb0-41ba-4b9f-be5b-2041aef030bd.webp",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item_c7jGaW",
-        "item_hrz9cM",
-        "item_Ty8AMJ",
-        "item_bKWtRC",
-        "item_F3XRBi",
-        "item_74UQYW",
-        "item_hE9izx"
-      ],
-      "settings": {
-        "full_width": false,
-        "block_size": "large",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "trust_badges_L7QLMF": {
       "type": "trust-badges",
       "blocks": {
@@ -382,37 +193,38 @@
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p><strong>Finally wake up on time,</strong> even if you’ve slept through every alarm you’ve <strong>ever</strong> set.</p>"
-          }
-        },
-        "item_PghVGq": {
-          "type": "item",
-          "settings": {
-            "icon": "tick",
-            "text": "<p><strong>No more “sorry I’m late” texts,</strong> stop snoozing and start owning your mornings.</p>"
-          }
-        },
-        "item_gkeBNp": {
-          "type": "item",
-          "settings": {
-            "icon": "tick",
-            "text": "<p><strong>Silent, partner-friendly,</strong> powerful vibrations that wake you, not the whole house.</p>"
+            "text": "<p>The Perfect Gift For Your Loved Ones</p>"
           }
         },
         "item_QnH7zr": {
           "type": "item",
           "settings": {
             "icon": "tick",
-            "text": "<p><strong>All-night comfort,</strong> so light, you’ll forget you’re wearing it until it wakes you.</p>"
+            "text": "<p>The Loop One Alarm Wristband</p>"
+          }
+        },
+        "item_78yfjN": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>UV Glasses</p>"
+          }
+        },
+        "item_gkeBNp": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Backed by a Lifetime Warranty</p>"
           }
         }
       },
       "block_order": [
         "item_8KFyJn",
-        "item_PghVGq",
-        "item_gkeBNp",
-        "item_QnH7zr"
+        "item_QnH7zr",
+        "item_78yfjN",
+        "item_gkeBNp"
       ],
+      "name": "SS - Trust badges #3",
       "settings": {
         "trust_position": "below_title",
         "item_gap": 10,
@@ -440,39 +252,192 @@
         "border_thickness": 0
       }
     },
-    "video_M8X7BP": {
-      "type": "video",
+    "product_vids_QHCtJC": {
+      "type": "product-vids",
+      "blocks": {
+        "video_rVbTqz": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
+          }
+        },
+        "video_LaLaFx": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
+          }
+        },
+        "video_mj3Lik": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
+          }
+        },
+        "video_NfBRt6": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
+          }
+        },
+        "video_YcpAJD": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
+          }
+        }
+      },
+      "block_order": [
+        "video_rVbTqz",
+        "video_LaLaFx",
+        "video_mj3Lik",
+        "video_NfBRt6",
+        "video_YcpAJD"
+      ],
+      "disabled": true,
+      "name": "SS - Product Videos",
       "settings": {
-        "full_width": false,
-        "allow_transparent_header": false,
-        "autoplay": true,
-        "video_size": "md",
-        "video": "shopify://files/videos/instructie vid.mp4",
-        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "videos_position": "above_description",
+        "use_metafield": false,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "slider_view": 3,
+        "slider_view_mobile": 3,
+        "slider_gap": 16,
+        "slider_gap_mobile": 16,
+        "slider_mt": 20,
+        "card_radius": 10,
+        "card_border_thickness": 0,
+        "card_shadow": true,
+        "video_ratio": "portrait",
+        "video_ratio_mobile": "portrait",
+        "video_overlay": 0.3,
+        "icon_size": 34,
+        "icon_size_mobile": 34,
+        "icon_border_thickness": 1,
+        "icon_position_mobile": "bottom_left",
+        "icon_position": "bottom_left",
+        "hide_icon": false,
+        "arrow_size": 35,
+        "arrow_size_mobile": 35,
+        "arrow_radius": 5,
+        "arrow_border_thickness": 0,
+        "arrow_hover_shadow": true,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "show_content": false,
+        "modal_width": 30,
+        "modal_width_mobile": 95,
+        "modal_padding_vertical": 0,
+        "modal_padding_vertical_mobile": 0,
+        "modal_padding_horizontal": 0,
+        "modal_padding_horizontal_mobile": 0,
+        "modal_radius": 16,
+        "modal_border_thickness": 0,
+        "modal_overlay": 50,
+        "close_size": 42,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "buttons_size": 48,
+        "buttons_size_mobile": 48,
+        "buttons_radius": 8,
+        "buttons_border_thickness": 0,
+        "modal_video_radius": 0,
+        "modal_video_border_thickness": 0,
+        "modal_video_ratio": "portrait",
+        "modal_video_ratio_mobile": "portrait",
+        "modal_heading_custom": false,
+        "modal_heading_font": "josefin_sans_n4",
+        "modal_heading_size": 28,
+        "modal_heading_size_mobile": 28,
+        "modal_heading_height": 130,
+        "modal_heading_align": "center",
+        "modal_heading_align_mobile": "center",
+        "modal_text_custom": false,
+        "modal_text_font": "josefin_sans_n4",
+        "modal_text_size": 16,
+        "modal_text_size_mobile": 16,
+        "modal_text_height": 130,
+        "modal_text_align": "center",
+        "modal_text_align_mobile": "center",
+        "modal_text_mt": 16,
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "card_shadow_color": "#000000",
+        "video_overlay_color": "#000000",
+        "icon_bg_color": "#000000",
+        "icon_border_color": "#ffffff",
+        "icon_color": "#ffffff",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "arrow_icon_color": "#1c1c1c",
+        "arrow_icon_hover_color": "#1c1c1c",
+        "modal_bg_color": "#ffffff",
+        "modal_border_color": "#000000",
+        "close_bg_color": "#ffffff",
+        "close_border_color": "#000000",
+        "close_icon_color": "#ffffff",
+        "buttons_bg_color": "#ffffff",
+        "buttons_border_color": "#000000",
+        "buttons_icon_color": "#ffffff",
+        "modal_video_border_color": "#000000",
+        "modal_content_bg_color": "#ffffff",
+        "modal_content_border_color": "#000000",
+        "modal_heading_color": "#000000",
+        "modal_text_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
       }
     },
     "featured_collection_jizWxD": {
       "type": "featured-collection",
-      "disabled": true,
+      "name": "Featured collection",
       "settings": {
         "collection": "",
         "products": [
+          "loop-one",
+          "the-case",
           "uv-glasses"
         ],
         "full_width": true,
-        "stack_products": true,
+        "stack_products": false,
         "show_progress_bar": false,
-        "products_count": 2,
+        "products_count": 4,
         "products_per_row_mobile": "1",
-        "products_per_row_desktop": 2,
+        "products_per_row_desktop": 4,
         "subheading": "",
         "title": "YOU MAY ALSO LIKE",
         "content": "",
         "link_url": "",
-        "link_text": "",
+        "link_text": "View all",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -514,6 +479,7 @@
         "item_39dQtL",
         "item_DQgqnw"
       ],
+      "name": "Impact text",
       "settings": {
         "full_width": true,
         "stack_mobile": true,
@@ -536,15 +502,15 @@
         "image_EBdKg9": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34_091a7a77-f0c8-4616-9453-cd8bea25ce0e.png",
+            "image": "shopify://shop_images/Wake_loop_19.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Made for heavy sleepers. Built for real life.",
-            "content": "<p>Loop One was designed for one mission: wake you up, without chaos.<br/>It works silently, without disturbing your partner or shocking your system.<br/>No screen. No sound. No nonsense. Just clean, reliable wake-ups, every time. All backed by a Lifetime warranty.</p>",
+            "title": "WHERE LUXURY MEETS COMFORT",
+            "content": "<p>From our discreet Loop One wristband to our evolving range of sleep-tech essentials, every product offers: Silent vibration alarms for undisturbed mornings, Secure and comfortable wear, Sleek premium materials — all backed by a 2-year warranty.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -559,6 +525,7 @@
       "block_order": [
         "image_EBdKg9"
       ],
+      "name": "Media with text",
       "settings": {
         "full_width": false,
         "spacing": "small"
@@ -570,15 +537,15 @@
         "image_b83jfB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_15_45_50.png",
+            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-end text-end",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Tired of waking up late?",
-            "content": "<p>Oversleeping doesn’t make you lazy, your alarm just isn’t working.<br/><br/>Loop One wakes you through powerful, silent vibration right on your wrist. No more noise, no more snoozing, no more missed mornings.<br/><br/>Finally get up on time, even if you’re a heavy sleeper</p>",
+            "title": "FREE TRAVEL CASE WITH EVERY ORDER",
+            "content": "<p>Take your Loop One anywhere. Every order includes a sleek, protective travel case—perfect for keeping your device safe and charged on the go. Compact, durable, and designed to match your lifestyle.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -593,6 +560,7 @@
       "block_order": [
         "image_b83jfB"
       ],
+      "name": "Media with text",
       "settings": {
         "full_width": false,
         "spacing": "small"
@@ -604,7 +572,7 @@
         "image_BeRG6y": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
+            "image": "shopify://shop_images/Wake_loop_10.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -627,6 +595,7 @@
       "block_order": [
         "image_BeRG6y"
       ],
+      "name": "Media with text",
       "settings": {
         "full_width": false,
         "spacing": "small"
@@ -653,8 +622,9 @@
         "heading_8J66CN",
         "richtext_p3DdtX"
       ],
+      "name": "Image with text overlay",
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
@@ -674,14 +644,7 @@
           "type": "item",
           "settings": {
             "title": "How does the Loop One wake me up?",
-            "content": "<p>Loop One works by sending vibration signals directly through your wrist at your set wake-up time. Unlike sound, which your brain can learn to ignore, these physical impulses are processed by your nervous system and trigger your body to wake up automatically. That’s why vibration is far more reliable than noise-based alarms, especially for heavy sleepers.</p>"
-          }
-        },
-        "item_rM6fJG": {
-          "type": "item",
-          "settings": {
-            "title": "How many alarms can i set?",
-            "content": "<p>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</p>"
+            "content": "<p>Loop One uses gentle vibrations on your wrist to wake you silently. It’s ideal for light sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</p>"
           }
         },
         "item_iRJA9i": {
@@ -691,18 +654,11 @@
             "content": "<p>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</p>"
           }
         },
-        "item_zWWkrA": {
-          "type": "item",
-          "settings": {
-            "title": "Will it fit my wrist?",
-            "content": "<p>Yes! We made sure that the Loop One is adjustable for every wrist size.</p>"
-          }
-        },
         "item_DtQ8eq": {
           "type": "item",
           "settings": {
             "title": "How long does the battery last?",
-            "content": "<p>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the USB connector.</p>"
+            "content": "<p>The battery lasts up to 7 days on a single charge, depending on usage. It fully recharges in under 2 hours using the included USB-C cable.</p>"
           }
         },
         "item_U6KDJp": {
@@ -729,14 +685,14 @@
       },
       "block_order": [
         "item_U6DEYw",
-        "item_rM6fJG",
         "item_iRJA9i",
-        "item_zWWkrA",
         "item_DtQ8eq",
         "item_U6KDJp",
         "item_JUMQzY",
         "item_ztDECz"
       ],
+      "disabled": true,
+      "name": "FAQ",
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -761,18 +717,7 @@
     },
     "1747885505688c5a92": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_wqhP7N": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_wqhP7N"
-      ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -781,7 +726,7 @@
         "background_gradient": "",
         "text_color": "",
         "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
@@ -790,10 +735,8 @@
   },
   "order": [
     "main",
-    "rich_text_qEWyed",
-    "image_link_blocks_Ne6xbk",
     "trust_badges_L7QLMF",
-    "video_M8X7BP",
+    "product_vids_QHCtJC",
     "featured_collection_jizWxD",
     "impact_text_4r9Pem",
     "media_with_text_WPkVK7",
