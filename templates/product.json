@@ -25,12 +25,6 @@
             "heading_tag": "h1"
           }
         },
-        "liquid_E7eJQV": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
-          }
-        },
         "liquid_BKpiFw": {
           "type": "liquid",
           "settings": {
@@ -126,6 +120,12 @@
             "text": "<p><strong>Trusted by workers, athletes & parents tired of battling shoe stink.</strong><br/>Long shifts, sweaty shoes, or kids’ cleats that could clear a room? Dr. Odoro’s high-adsorption formula pulls out moisture and odor overnight. No chemicals, no effort, no more throwing out shoes.</p>"
           }
         },
+        "liquid_E7eJQV": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
+          }
+        },
         "liquid_pffKr4": {
           "type": "liquid",
           "settings": {
@@ -170,7 +170,6 @@
       "block_order": [
         "liquid_rMgCr4",
         "title",
-        "liquid_E7eJQV",
         "liquid_BKpiFw",
         "liquid_iGWWXt",
         "badges",
@@ -186,6 +185,7 @@
         "liquid_AkedpE",
         "liquid_NW8JBb",
         "text_KgLHUK",
+        "liquid_E7eJQV",
         "liquid_pffKr4",
         "collapsible_text_TntdzM",
         "collapsible_text_RFpbJU",
