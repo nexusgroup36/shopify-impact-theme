@@ -110,7 +110,7 @@
         "liquid_AkedpE": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"margin: 0 !important; padding: 0 !important;\">\n  <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin: 0 !important; padding: 0 !important;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/warranty-term.svg?v=1760648046\" alt=\"Return Icon\" style=\"width: 20px; height: 20px; margin: 0 !important; padding: 0 !important;\" />\n    <span style=\"margin: 0 !important; padding: 0 !important;\">60-day hassle-free returns</span>\n  </div>\n</div>"
+            "liquid": "<div style=\"margin: 0 !important; padding: 0 !important;\">\n  <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin: 0 !important; padding: 0 !important;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/warranty-term.svg?v=1760648046\" alt=\"Return Icon\" style=\"width: 20px; height: 20px; margin: 0 !important; padding: 0 !important;\" />\n    <span style=\"margin: 0 !important; padding: 0 !important;\">60-day money-back guarantee</span>\n  </div>\n</div>"
           }
         },
         "liquid_NW8JBb": {
