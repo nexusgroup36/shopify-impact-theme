@@ -1,0 +1,168 @@
+<section id="ctabs-{{ section.id }}" class="ctabs"
+  style="
+    --row-pad: {{ section.settings.row_pad }}px;
+    --icon-size: {{ section.settings.icon_size }}px;
+    --title-size: {{ section.settings.title_size }}px;
+    --text: {{ section.settings.text }};
+    --muted: {{ section.settings.muted }};
+    --border: {{ section.settings.border }};
+    --chev-bg: {{ section.settings.chev_bg }};
+    --chev-color: {{ section.settings.chev_color }};
+    --maxw: {{ section.settings.maxw }}px;
+    --pad-top: {{ section.settings.pad_top }}px;
+    --pad-bottom: {{ section.settings.pad_bottom }}px;
+  ">
+  <div class="ctabs__container">
+    {% if section.settings.heading != blank %}
+      <h2 class="ctabs__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="ctabs__list">
+      {% for block in section.blocks %}
+        {% if block.type == 'item' %}
+          <details class="ctabs__item" {% if block.settings.open_default %}open{% endif %} {{ block.shopify_attributes }}>
+            <summary class="ctabs__summary">
+              <div class="ctabs__left">
+                {% if block.settings.icon != blank %}
+                  {{ block.settings.icon
+                    | image_url: width: 128
+                    | image_tag: loading: 'lazy', alt: '', sizes: section.settings.icon_size | append: 'px', style: '--image-max-width: var(--icon-size);' }}
+                {% endif %}
+                <span class="ctabs__title">{{ block.settings.title }}</span>
+              </div>
+              <span class="ctabs__chev" aria-hidden="true">
+                <svg width="8" height="6" viewBox="0 0 8 6" class="chev-svg" focusable="false" role="presentation">
+                  <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                </svg>
+              </span>
+            </summary>
+
+            <div class="ctabs__content">
+              <div class="ctabs__inner rte">
+                {{ block.settings.content }}
+              </div>
+            </div>
+          </details>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <style>
+    #ctabs-{{ section.id }}{ color:var(--text); padding:var(--pad-top) 16px var(--pad-bottom); }
+    #ctabs-{{ section.id }} .ctabs__container{ max-width:var(--maxw); margin:0 auto; }
+
+    .ctabs__heading{
+      text-align:center; font-weight:800; letter-spacing:-.01em;
+      margin:0 0 10px; font-size:clamp(20px, 5vw, 36px);
+    }
+
+    /* List + rows */
+    .ctabs__list{ border-top:1px solid var(--border); }
+    .ctabs__item{ border-bottom:1px solid var(--border); overflow:visible; }
+
+    .ctabs__summary{
+      list-style:none; display:flex; align-items:center; justify-content:space-between;
+      padding:var(--row-pad) 8px; cursor:pointer;
+    }
+    .ctabs__summary::-webkit-details-marker{ display:none; }
+
+    .ctabs__left{ display:flex; gap:16px; align-items:center; }
+    .ctabs__left img{ width:var(--icon-size); height:var(--icon-size); object-fit:contain; }
+    .ctabs__title{ font-weight:700; font-size:var(--title-size); }
+
+    .ctabs__chev{
+      width:40px; height:40px; border-radius:50%;
+      background:var(--chev-bg); color:var(--chev-color);
+      display:inline-flex; align-items:center; justify-content:center;
+      transition: transform .25s ease, color .25s ease, background .25s ease;
+      flex:0 0 40px;
+    }
+    .ctabs__item[open] .ctabs__chev{ transform:rotate(180deg); }
+
+    /* Smooth slide */
+    .ctabs__content{ max-height:0; overflow:hidden; transition:max-height .32s ease, opacity .28s ease, transform .28s ease; opacity:0; transform:translateY(-4px); }
+    .ctabs__item[open] .ctabs__content{ opacity:1; transform:translateY(0); }
+    .ctabs__inner{ padding:0 8px var(--row-pad); color:var(--muted); line-height:1.65; }
+
+    @media (max-width: 640px){
+      .ctabs__chev{ width:36px; height:36px; }
+    }
+  </style>
+
+  <script>
+    // Height animation for details
+    document.addEventListener('DOMContentLoaded', function(){
+      var root = document.getElementById('ctabs-{{ section.id }}');
+      if(!root) return;
+
+      root.querySelectorAll('.ctabs__item').forEach(function(d){
+        var content = d.querySelector('.ctabs__content');
+        function setHeight(opening){
+          if(opening){
+            // set to natural height for animation
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }else{
+            content.style.maxHeight = content.scrollHeight + 'px';
+            // force reflow then collapse
+            content.offsetHeight; // eslint-disable-line no-unused-expressions
+            content.style.maxHeight = 0;
+          }
+        }
+        // init from current state
+        if(d.hasAttribute('open')){ content.style.maxHeight = content.scrollHeight + 'px'; }
+
+        d.addEventListener('toggle', function(){
+          setHeight(d.open);
+        });
+      });
+    });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Collapsible Tabs",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Optional heading" },
+
+    { "type": "color", "id": "text", "label": "Text color", "default": "#1A1A1A" },
+    { "type": "color", "id": "muted", "label": "Muted text", "default": "#555555" },
+    { "type": "color", "id": "border", "label": "Divider color", "default": "#E6E6E6" },
+    { "type": "color", "id": "chev_bg", "label": "Chevron circle bg", "default": "#EEEEEE" },
+    { "type": "color", "id": "chev_color", "label": "Chevron color", "default": "#1A1A1A" },
+
+    { "type": "range", "id": "icon_size", "label": "Icon size (px)", "min": 16, "max": 40, "step": 1, "default": 24 },
+    { "type": "range", "id": "title_size", "label": "Title size (px)", "min": 16, "max": 32, "step": 1, "default": 24 },
+    { "type": "range", "id": "row_pad", "label": "Row vertical padding (px)", "min": 10, "max": 30, "step": 1, "default": 22 },
+
+    { "type": "range", "id": "maxw", "label": "Container max width (px)", "min": 700, "max": 1400, "step": 10, "default": 1200 },
+    { "type": "range", "id": "pad_top", "label": "Section padding top (px)", "min": 0, "max": 100, "step": 2, "default": 0 },
+    { "type": "range", "id": "pad_bottom", "label": "Section padding bottom (px)", "min": 0, "max": 100, "step": 2, "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Tab",
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Left icon (SVG/PNG)" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Benefits" },
+        { "type": "richtext", "id": "content", "label": "Content", "default": "<p>Describe the content here.</p>" },
+        { "type": "checkbox", "id": "open_default", "label": "Open by default", "default": false }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collapsible Tabs",
+      "blocks": [
+        { "type": "item", "settings": { "title": "Benefits" } },
+        { "type": "item", "settings": { "title": "How It Works" } },
+        { "type": "item", "settings": { "title": "What's In The Box?" } },
+        { "type": "item", "settings": { "title": "Shipping & Returns" } },
+        { "type": "item", "settings": { "title": "FAQ" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
