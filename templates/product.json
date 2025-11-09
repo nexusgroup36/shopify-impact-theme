@@ -326,7 +326,7 @@
         "usp_defFXm": {
           "type": "usp",
           "settings": {
-            "text": "Lifetime Warranty",
+            "text": "Limited Time Offer",
             "svg_icon": "",
             "icon_width": 32
           }
@@ -334,7 +334,7 @@
         "usp_czBit3": {
           "type": "usp",
           "settings": {
-            "text": "Free Shipping From $50",
+            "text": "Free Shipping",
             "svg_icon": "",
             "icon_width": 32
           }
