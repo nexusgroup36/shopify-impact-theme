@@ -845,6 +845,7 @@
         "image_t6cTcb": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/TERRA_IFOURAS_6.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
