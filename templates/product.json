@@ -810,14 +810,14 @@
         "image_Cq7BER": {
           "type": "image",
           "settings": {
-            "media_width": 60,
+            "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Made for heavy sleepers. Built for real life.",
-            "content": "<p>Loop One was designed for one mission: wake you up, without chaos.<br/>It works silently, without disturbing your partner or shocking your system.<br/>No screen. No sound. No nonsense. Just clean, reliable wake-ups, every time. All backed by a Lifetime warranty.</p>",
+            "title": "Discover the natural power of real freshness",
+            "content": "<p>With <strong>Dr. Odoro</strong>, you're choosing confidence, cleanliness, and comfort, every time you slip off your shoes.<br/><br/>Our technology doesn’t mask odor; it removes it at the source, giving your shoes and spaces a clean, breathable feel that lasts.</p><p>Each Neutralizer is powered by <strong>natural Zeolite</strong>, a mineral known for trapping odor molecules and moisture inside its microscopic pores. This keeps your shoes dry, bacteria-free, and always ready for your next step.</p><p>Dr. Odoro is designed to work naturally; no harsh chemicals, no fake scents, and no effort.<br/><br/>Just pure, lasting freshness that restores balance to your shoes, your home, and your routine.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#2e3a29",
