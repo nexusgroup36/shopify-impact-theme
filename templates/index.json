@@ -147,7 +147,7 @@
             "text_position": "place-self-end-start text-start",
             "text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_hLPfqc": {
@@ -161,7 +161,7 @@
             "text_position": "place-self-end-start text-start",
             "text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
