@@ -504,7 +504,8 @@
         "image_xYngAW": {
           "type": "image",
           "settings": {
-            "media_width": 50,
+            "image": "shopify://shop_images/TERRA_IFOURAS_2_346e1172-747e-46bf-bf61-22e4eb0f5844.png",
+            "media_width": 45,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
