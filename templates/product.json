@@ -377,7 +377,7 @@
         "img_height_desktop": 350,
         "img_height_mobile": 280,
         "img_radius": 8,
-        "gap": 16,
+        "gap": 20,
         "speed_px": 300
       }
     },

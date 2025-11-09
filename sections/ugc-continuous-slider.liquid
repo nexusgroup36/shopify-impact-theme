@@ -59,8 +59,7 @@
             {% endif %}
           {% endfor %}
         </div>
-
-        <!-- Group B (will be cloned from A in JS for pixel-perfect loop) -->
+        <!-- Group B (cloned from A in JS) -->
         <div class="ugc__group ugc__group--b"></div>
       </div>
     </div>
@@ -73,29 +72,42 @@
   .ugc__title { font-size: var(--h); font-weight: 600; margin: 0 0 12px; color: #000; }
 
   .ugc-continuous__viewport { position: relative; overflow: hidden; }
+
+  /* CRITICAL: no wrapping and no default figure margins */
   .ugc-continuous__track {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     gap: var(--gap);
     will-change: transform;
-    animation-name: ugc-marquee-x;      /* duration set via JS */
+    animation-name: ugc-marquee-x;  /* duration set via JS */
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-  .ugc__group { display: inline-flex; align-items: center; gap: var(--gap); }
-  .ugc-continuous__card { flex: 0 0 auto; }
+  .ugc__group {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: var(--gap);
+  }
+  .ugc-continuous__card {
+    flex: 0 0 auto;
+    margin: 0;                /* kill UA default figure margins */
+  }
   .ugc-continuous__card img {
+    display: block;
     height: var(--hd);
     width: auto;
+    max-width: none;          /* ignore theme-wide img { max-width:100% } */
     border-radius: var(--r);
     object-fit: cover;
-    display: block;
+    flex: 0 0 auto;
   }
   @media (max-width: 768px) {
     .ugc-continuous__card img { height: var(--hm); }
   }
 
-  /* Edge fades like Hike’s padding */
+  /* Edge fades */
   .ugc-continuous__fade {
     position: absolute; top: 0; bottom: 0; width: 48px; pointer-events: none; z-index: 2;
   }
