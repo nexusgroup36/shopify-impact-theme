@@ -27,7 +27,7 @@
         "liquid_BKpiFw": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
+            "liquid": ""
           }
         },
         "liquid_iGWWXt": {
@@ -119,7 +119,6 @@
         },
         "liquid_E7eJQV": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
             "liquid": "<div id='ss-trust-badges-3'></div>"
           }
