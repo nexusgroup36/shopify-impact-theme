@@ -24,6 +24,12 @@
             "heading_tag": "h1"
           }
         },
+        "liquid_BKpiFw": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
+          }
+        },
         "liquid_iGWWXt": {
           "type": "liquid",
           "disabled": true,
@@ -168,6 +174,7 @@
       "block_order": [
         "liquid_rMgCr4",
         "title",
+        "liquid_BKpiFw",
         "liquid_iGWWXt",
         "badges",
         "price",
@@ -1146,6 +1153,72 @@
         "padding_horizontal_mobile": 0,
         "border_thickness": 0
       }
+    },
+    "trust_badges_rkgPmx": {
+      "type": "trust-badges",
+      "blocks": {
+        "item_MfpNkN": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Secure checkout, your data protected.</p>"
+          }
+        },
+        "item_bPihix": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Quality assured, satisfaction guaranteed.</p>"
+          }
+        },
+        "item_cV4MfH": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Hassle-free returns, shop with confidence.</p>"
+          }
+        },
+        "item_CwKAN4": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "text": "<p>Real reviews, verified customer feedback.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_MfpNkN",
+        "item_bPihix",
+        "item_cV4MfH",
+        "item_CwKAN4"
+      ],
+      "name": "SS - Trust badges #3",
+      "settings": {
+        "trust_position": "below_title",
+        "item_gap": 10,
+        "item_gap_mobile": 10,
+        "item_mt": 16,
+        "item_mt_mobile": 16,
+        "image_icon_size": 22,
+        "image_icon_size_mobile": 20,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 150,
+        "icon_color": "#121212",
+        "text_color": "#121212",
+        "background_color": "",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0
+      }
     }
   },
   "order": [
@@ -1165,6 +1238,7 @@
     "image_with_text_overlay_fQCCHJ",
     "faq_Uafwhm",
     "175892445484482174",
-    "ss_product_variant_RLRRgm"
+    "ss_product_variant_RLRRgm",
+    "trust_badges_rkgPmx"
   ]
 }
