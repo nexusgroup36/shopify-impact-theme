@@ -22,7 +22,7 @@
         {%- if section.settings.subheading != blank or section.settings.title != blank -%}
           <div class="prose text-center">
             {%- if section.settings.subheading != blank -%}
-              <p class="bold">{{ section.settings.subheading | escape }}</p>
+              <p class="subheading">{{ section.settings.subheading | escape }}</p>
             {%- endif -%}
 
             {%- if section.settings.title != blank -%}
@@ -34,8 +34,15 @@
         <div class="tabs-container">
           <div class="sm:hidden">
             {%- for block in section.blocks -%}
-              {%- assign title = block.settings.title | default: block.settings.page.title -%}
-              {%- assign content = block.settings.page.content | default: block.settings.content -%}
+              {%- liquid
+                assign title = block.settings.title | default: block.settings.page.title
+
+                if block.type == 'tab'
+                  assign content = block.settings.page.content | default: block.settings.content
+                elsif block.type == 'liquid'
+                  assign content = block.settings.liquid
+                endif
+              -%}
 
               {%- if title and content -%}
                 {%- assign open = false -%}
@@ -53,15 +60,22 @@
             {%- endfor -%}
           </div>
 
-          <x-tabs class="tabs-inner">
+          <x-tabs class="tabs-inner sm:text-{{ section.settings.text_alignment | replace: 'left', 'start' | replace: 'right', 'end' }}">
             <template shadowrootmode="open">
               <slot role="tablist" part="tab-list" name="title"></slot>
               <slot part="tab-panels" name="content"></slot>
             </template>
 
             {%- for block in section.blocks -%}
-              {%- assign title = block.settings.title | default: block.settings.page.title -%}
-              {%- assign content = block.settings.page.content | default: block.settings.content -%}
+              {%- liquid
+                assign title = block.settings.title | default: block.settings.page.title
+
+                if block.type == 'tab'
+                  assign content = block.settings.page.content | default: block.settings.content
+                elsif block.type == 'liquid'
+                  assign content = block.settings.liquid
+                endif
+              -%}
 
               {%- if title != blank and content != blank -%}
                 <button type="button" slot="title" class="tabs-nav__button bold text-subdued text-center" {{ block.shopify_attributes }}>{{ title | escape }}</button>
@@ -129,6 +143,12 @@
       "default": "Heading"
     },
     {
+      "type": "text_alignment",
+      "id": "text_alignment",
+      "label": "Desktop text alignment",
+      "default": "center"
+    },
+    {
       "type": "checkbox",
       "id": "first_tab_open",
       "label": "Open first tab on mobile"
@@ -167,7 +187,7 @@
   "blocks": [
     {
       "type": "tab",
-      "name": "Tab",
+      "name": "Rich-text content",
       "settings": [
         {
           "type": "text",
@@ -188,11 +208,30 @@
           "info": "Replaces inline content if specified."
         }
       ]
+    },
+    {
+      "type": "liquid",
+      "name": "Liquid code",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Tab"
+        },
+        {
+          "type": "liquid",
+          "id": "liquid",
+          "label": "Liquid code",
+          "default": "<p>Write Liquid code to create advanced customizations.</p>"
+        }
+      ]
     }
   ],
   "presets": [
     {
       "name": "Tabs",
+      "category": "Content",
       "blocks": [
         {
           "type": "tab",
