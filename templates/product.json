@@ -810,14 +810,15 @@
         "image_Cq7BER": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/TERRA_IFOURAS_4.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
-            "icon_width": 48,
+            "icon_width": 32,
             "subheading": "",
             "title": "Discover the natural power of real freshness",
-            "content": "<p>With <strong>Dr. Odoro</strong>, you're choosing confidence, cleanliness, and comfort, every time you slip off your shoes.<br/><br/>Our technology doesn’t mask odor; it removes it at the source, giving your shoes and spaces a clean, breathable feel that lasts.</p><p>Each Neutralizer is powered by <strong>natural Zeolite</strong>, a mineral known for trapping odor molecules and moisture inside its microscopic pores. This keeps your shoes dry, bacteria-free, and always ready for your next step.</p><p>Dr. Odoro is designed to work naturally; no harsh chemicals, no fake scents, and no effort.<br/><br/>Just pure, lasting freshness that restores balance to your shoes, your home, and your routine.</p>",
+            "content": "<p>With <strong>Dr. Odoro</strong>, you're choosing confidence, cleanliness, and comfort, every time you slip off your shoes. Our technology doesn’t mask odor; it removes it at the source, leaving your shoes and spaces clean and breathable.<br/><br/>Each Neutralizer is powered by <strong>natural Zeolite</strong>, a mineral that traps odor and moisture deep inside its microscopic pores, keeping your shoes dry, bacteria-free, and ready for your next step. No harsh chemicals. No fake scents. No effort. Just pure, lasting freshness that restores balance to your shoes, your home, and your routine.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#2e3a29",
