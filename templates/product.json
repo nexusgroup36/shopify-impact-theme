@@ -24,6 +24,12 @@
             "heading_tag": "h1"
           }
         },
+        "liquid_E7eJQV": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
+          }
+        },
         "liquid_BKpiFw": {
           "type": "liquid",
           "settings": {
@@ -118,12 +124,6 @@
             "text": "<p><strong>Join thousands taking control of their mornings - without the noise.</strong><br/>Heavy sleeper? Chronic snoozer? Partner tired of your alarms? Loop One’s silent wrist vibrations cut through even the deepest sleep without waking anyone else.</p>"
           }
         },
-        "liquid_E7eJQV": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
-          }
-        },
         "liquid_pffKr4": {
           "type": "liquid",
           "settings": {
@@ -175,6 +175,7 @@
       "block_order": [
         "liquid_rMgCr4",
         "title",
+        "liquid_E7eJQV",
         "liquid_BKpiFw",
         "liquid_iGWWXt",
         "badges",
@@ -190,7 +191,6 @@
         "liquid_AkedpE",
         "liquid_NW8JBb",
         "text_KgLHUK",
-        "liquid_E7eJQV",
         "liquid_pffKr4",
         "collapsible_text_TntdzM",
         "collapsible_text_RFpbJU",
@@ -441,20 +441,12 @@
             "icon": "tick",
             "text": "<p><strong>Silent, partner-friendly,</strong> powerful vibrations that wake you, not the whole house.</p>"
           }
-        },
-        "item_pQeYE7": {
-          "type": "item",
-          "settings": {
-            "icon": "tick",
-            "text": "<p><strong>All-night comfort,</strong> so light, you’ll forget you’re wearing it until it wakes you.</p>"
-          }
         }
       },
       "block_order": [
         "item_r3eBai",
         "item_BMrVgC",
-        "item_zAxCHF",
-        "item_pQeYE7"
+        "item_zAxCHF"
       ],
       "name": "SS - Trust badges #3",
       "settings": {
