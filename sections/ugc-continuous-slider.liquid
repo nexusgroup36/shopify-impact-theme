@@ -1,171 +1,149 @@
 {% schema %}
 {
-  "name": "Customer Gallery Slider",
+  "name": "UGC Continuous Slider",
   "settings": [
+    { "type": "text", "id": "headline", "label": "Headline", "default": "Customers love Dr. Odoro!" },
     {
-      "type": "text",
-      "id": "headline",
-      "label": "Headline",
-      "default": "Customers love The Neutralizer!"
+      "type": "range", "id": "headline_size", "label": "Headline font size",
+      "min": 16, "max": 56, "step": 1, "unit": "px", "default": 28
+    },
+    { "type": "color", "id": "bg", "label": "Background color", "default": "#ffffff" },
+
+    {
+      "type": "range", "id": "img_height_desktop", "label": "Image height desktop",
+      "min": 160, "max": 480, "step": 10, "unit": "px", "default": 350
     },
     {
-      "type": "range",
-      "id": "headline_size",
-      "label": "Headline Font Size",
-      "default": 28,
-      "min": 16,
-      "max": 60,
-      "step": 1,
-      "unit": "px"
+      "type": "range", "id": "img_height_mobile", "label": "Image height mobile",
+      "min": 120, "max": 360, "step": 10, "unit": "px", "default": 250
     },
     {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background Color",
-      "default": "#f8fafc"
+      "type": "range", "id": "img_radius", "label": "Image corner radius",
+      "min": 0, "max": 36, "step": 2, "unit": "px", "default": 10
     },
     {
-      "type": "range",
-      "id": "image_width",
-      "label": "Image Width (px)",
-      "default": 220,
-      "min": 150,
-      "max": 400,
-      "step": 10,
-      "unit": "px"
+      "type": "range", "id": "gap", "label": "Gap between images",
+      "min": 6, "max": 28, "step": 2, "unit": "px", "default": 16
     },
     {
-      "type": "range",
-      "id": "image_radius",
-      "label": "Image Corner Radius (px)",
-      "default": 20,
-      "min": 0,
-      "max": 60,
-      "step": 2,
-      "unit": "px"
+      "type": "range", "id": "speed", "label": "Scroll duration (lower = faster)",
+      "min": 6, "max": 60, "step": 1, "unit": "s", "default": 20
     }
   ],
   "blocks": [
     {
       "type": "image",
-      "name": "Customer Image",
+      "name": "Image",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Customer Image"
-        },
-        {
-          "type": "text",
-          "id": "alt",
-          "label": "Alt Text",
-          "default": "Customer photo"
-        }
+        { "type": "image_picker", "id": "img", "label": "Image" },
+        { "type": "text", "id": "alt", "label": "Alt text", "default": "Customer photo" }
       ]
     }
   ],
-  "presets": [
-    {
-      "name": "Customer Gallery Slider",
-      "category": "Media"
-    }
-  ]
+  "presets": [{ "name": "UGC Continuous Slider", "category": "Media" }]
 }
 {% endschema %}
 
-<section
-  class="customer-gallery"
-  style="background-color: {{ section.settings.background_color }};"
->
-  <div class="customer-gallery__inner">
-    <h2
-      class="customer-gallery__headline"
-      style="font-size: {{ section.settings.headline_size }}px;"
-    >
-      {{ section.settings.headline }}
-    </h2>
+<section class="ugc-continuous" style="--bg: {{ section.settings.bg }}; --h-size: {{ section.settings.headline_size }}px; --gap: {{ section.settings.gap }}px; --r: {{ section.settings.img_radius }}px; --h-d: {{ section.settings.img_height_desktop }}px; --h-m: {{ section.settings.img_height_mobile }}px; --speed: {{ section.settings.speed }}s;">
+  <div class="ugc-continuous__inner">
+    <h2 class="ugc-continuous__title">{{ section.settings.headline }}</h2>
 
-    <div class="customer-gallery__slider">
-      {% for block in section.blocks %}
-        {% if block.settings.image != blank %}
-          <div class="customer-gallery__slide">
-            <img
-              src="{{ block.settings.image | image_url: width: 800 }}"
-              alt="{{ block.settings.alt | escape }}"
-              style="border-radius: {{ section.settings.image_radius }}px; width: {{ section.settings.image_width }}px;"
-              loading="lazy"
-            >
-          </div>
-        {% endif %}
-      {% endfor %}
+    <div class="ugc-continuous__viewport">
+      <div class="ugc-continuous__fade ugc-continuous__fade--left"></div>
+      <div class="ugc-continuous__fade ugc-continuous__fade--right"></div>
+
+      <!-- Track duplicated for seamless loop -->
+      <div class="ugc-continuous__track">
+        {% for block in section.blocks %}
+          {% if block.settings.img != blank %}
+            <figure class="ugc-continuous__card">
+              <img src="{{ block.settings.img | image_url: width: 800 }}" alt="{{ block.settings.alt | escape }}" loading="lazy">
+            </figure>
+          {% endif %}
+        {% endfor %}
+        {% for block in section.blocks %}
+          {% if block.settings.img != blank %}
+            <figure class="ugc-continuous__card">
+              <img src="{{ block.settings.img | image_url: width: 800 }}" alt="{{ block.settings.alt | escape }}" loading="lazy">
+            </figure>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
 
 <style>
-  .customer-gallery {
-    padding: 40px 0;
+  .ugc-continuous {
+    background: var(--bg);
+    padding: 20px 0;
   }
-
-  .customer-gallery__inner {
+  .ugc-continuous__inner {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 12px;
     text-align: center;
+  }
+  .ugc-continuous__title {
+    font-size: var(--h-size);
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: #000;
+  }
+
+  .ugc-continuous__viewport {
+    position: relative;
     overflow: hidden;
   }
 
-  .customer-gallery__headline {
-    font-weight: 700;
-    margin-bottom: 25px;
-  }
-
-  .customer-gallery__slider {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+  .ugc-continuous__track {
+    display: inline-flex;
     align-items: center;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 0 10px;
+    gap: var(--gap);
+    /* Continuous movement */
+    animation: ugc-marquee var(--speed) linear infinite;
+    will-change: transform;
   }
 
-  .customer-gallery__slide {
+  .ugc-continuous__card {
     flex: 0 0 auto;
-    scroll-snap-align: center;
-    transition: transform 0.3s ease;
+    width: auto;
   }
-
-  .customer-gallery__slide:hover {
-    transform: scale(1.03);
-  }
-
-  .customer-gallery__slide img {
-    height: auto;
+  .ugc-continuous__card img {
+    height: var(--h-d);
+    width: auto;
+    border-radius: var(--r);
     object-fit: cover;
     display: block;
   }
 
-  /* Hide scrollbar on WebKit */
-  .customer-gallery__slider::-webkit-scrollbar {
-    display: none;
+  /* Edge fades like Slick's side padding */
+  .ugc-continuous__fade {
+    position: absolute;
+    top: 0; bottom: 0; width: 48px; pointer-events: none;
+    z-index: 2;
   }
+  .ugc-continuous__fade--left {
+    left: 0;
+    background: linear-gradient(to right, var(--bg), rgba(255,255,255,0));
+  }
+  .ugc-continuous__fade--right {
+    right: 0;
+    background: linear-gradient(to left, var(--bg), rgba(255,255,255,0));
+  }
+
+  /* Mobile sizing like your Hike example */
+  @media (max-width: 768px) {
+    .ugc-continuous__inner { padding: 0 8px; }
+    .ugc-continuous__card img { height: var(--h-m); }
+  }
+
+  /* Keyframes: move left by half the track since we duplicated items */
+  @keyframes ugc-marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Pause on hover (optional, remove if you want constant movement always) */
+  .ugc-continuous__viewport:hover .ugc-continuous__track { animation-play-state: paused; }
 </style>
-
-<script>
-  // Optional: simple auto-scroll
-  document.addEventListener('DOMContentLoaded', () => {
-    const slider = document.querySelector('.customer-gallery__slider');
-    if (!slider) return;
-
-    let scrollAmount = 0;
-    setInterval(() => {
-      if (slider.scrollWidth - slider.clientWidth <= scrollAmount) {
-        scrollAmount = 0;
-      } else {
-        scrollAmount += 240;
-      }
-      slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
-    }, 1000);
-  });
-</script>
