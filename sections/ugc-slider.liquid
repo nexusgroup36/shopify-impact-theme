@@ -1,240 +1,171 @@
-<!-- Sliding Image Section: Dr. Odoro UGC / Gallery -->
+{% schema %}
+{
+  "name": "Customer Gallery Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Customers love The Neutralizer!"
+    },
+    {
+      "type": "range",
+      "id": "headline_size",
+      "label": "Headline Font Size",
+      "default": 28,
+      "min": 16,
+      "max": 60,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f8fafc"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Image Width (px)",
+      "default": 220,
+      "min": 150,
+      "max": 400,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "label": "Image Corner Radius (px)",
+      "default": 20,
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Customer Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Customer Image"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt Text",
+          "default": "Customer photo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Gallery Slider",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}
+
 <section
-  class="ugc-slider"
-  style="
-    --slider-bg: #f8fafc;          /* background color */
-    --headline-font-size: 28px;    /* headline font size */
-    --image-width: 220px;          /* image width on desktop */
-    --image-radius: 24px;          /* image corner radius */
-  "
+  class="customer-gallery"
+  style="background-color: {{ section.settings.background_color }};"
 >
-  <div class="ugc-slider-inner">
-    <!-- Headline (change text as needed) -->
-    <h2 class="ugc-slider-heading">
-      Customers love The Neutralizer
+  <div class="customer-gallery__inner">
+    <h2
+      class="customer-gallery__headline"
+      style="font-size: {{ section.settings.headline_size }}px;"
+    >
+      {{ section.settings.headline }}
     </h2>
 
-    <!-- Slider wrapper -->
-    <div class="ugc-slider-frame">
-      <button class="ugc-slider-arrow ugc-prev" type="button" aria-label="Previous">
-        &#8249;
-      </button>
-
-      <div class="ugc-slider-viewport">
-        <div class="ugc-slider-track">
-          <!-- Slide 1 -->
-          <div class="ugc-slide">
+    <div class="customer-gallery__slider">
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank %}
+          <div class="customer-gallery__slide">
             <img
-              src="https://via.placeholder.com/400x500?text=Photo+1"
-              alt="Customer using The Neutralizer in their shoes"
-            />
+              src="{{ block.settings.image | image_url: width: 800 }}"
+              alt="{{ block.settings.alt | escape }}"
+              style="border-radius: {{ section.settings.image_radius }}px; width: {{ section.settings.image_width }}px;"
+              loading="lazy"
+            >
           </div>
-
-          <!-- Slide 2 -->
-          <div class="ugc-slide">
-            <img
-              src="https://via.placeholder.com/400x500?text=Photo+2"
-              alt="Customer holding The Neutralizer bags"
-            />
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="ugc-slide">
-            <img
-              src="https://via.placeholder.com/400x500?text=Photo+3"
-              alt="The Neutralizer shown in a gym bag"
-            />
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="ugc-slide">
-            <img
-              src="https://via.placeholder.com/400x500?text=Photo+4"
-              alt="Before and after shoe freshness"
-            />
-          </div>
-        </div>
-      </div>
-
-      <button class="ugc-slider-arrow ugc-next" type="button" aria-label="Next">
-        &#8250;
-      </button>
-    </div>
-
-    <!-- Dots (optional) -->
-    <div class="ugc-slider-dots">
-      <button class="ugc-dot is-active" type="button" aria-label="Slide 1"></button>
-      <button class="ugc-dot" type="button" aria-label="Slide 2"></button>
-      <button class="ugc-dot" type="button" aria-label="Slide 3"></button>
-      <button class="ugc-dot" type="button" aria-label="Slide 4"></button>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
 
 <style>
-  .ugc-slider {
-    background: var(--slider-bg);
-    padding: 32px 16px 40px;
+  .customer-gallery {
+    padding: 40px 0;
   }
 
-  .ugc-slider-inner {
-    max-width: 1100px;
+  .customer-gallery__inner {
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  }
-
-  .ugc-slider-heading {
-    font-size: var(--headline-font-size);
-    font-weight: 700;
-    margin: 0 0 24px;
-  }
-
-  .ugc-slider-frame {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .ugc-slider-viewport {
     overflow: hidden;
-    width: 100%;
   }
 
-  .ugc-slider-track {
+  .customer-gallery__headline {
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .customer-gallery__slider {
     display: flex;
     gap: 16px;
-    transition: transform 0.4s ease;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 10px;
   }
 
-  .ugc-slide {
+  .customer-gallery__slide {
     flex: 0 0 auto;
-    width: var(--image-width);
+    scroll-snap-align: center;
+    transition: transform 0.3s ease;
   }
 
-  .ugc-slide img {
-    width: 100%;
+  .customer-gallery__slide:hover {
+    transform: scale(1.03);
+  }
+
+  .customer-gallery__slide img {
     height: auto;
-    border-radius: var(--image-radius);
     object-fit: cover;
     display: block;
   }
 
-  .ugc-slider-arrow {
-    background: white;
-    border: 1px solid #e2e8f0;
-    border-radius: 999px;
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 22px;
-    line-height: 1;
-    color: #0f172a;
-    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
-    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-  }
-
-  .ugc-slider-arrow:hover {
-    background: #f1f5f9;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
-  }
-
-  .ugc-slider-dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 18px;
-  }
-
-  .ugc-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 999px;
-    background: #cbd5f5;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: width 0.2s ease, background 0.2s ease;
-  }
-
-  .ugc-dot.is-active {
-    width: 18px;
-    background: #0f172a;
-  }
-
-  /* Responsive tweaks */
-  @media (max-width: 768px) {
-    .ugc-slider-heading {
-      font-size: calc(var(--headline-font-size) - 4px);
-    }
-
-    .ugc-slide {
-      width: 70%;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .ugc-slide {
-      width: 80%;
-    }
-
-    .ugc-slider-frame {
-      gap: 4px;
-    }
-
-    .ugc-slider-arrow {
-      width: 30px;
-      height: 30px;
-      font-size: 18px;
-    }
+  /* Hide scrollbar on WebKit */
+  .customer-gallery__slider::-webkit-scrollbar {
+    display: none;
   }
 </style>
 
 <script>
-  (function () {
-    const track = document.querySelector(".ugc-slider-track");
-    const slides = Array.from(document.querySelectorAll(".ugc-slide"));
-    const prevBtn = document.querySelector(".ugc-prev");
-    const nextBtn = document.querySelector(".ugc-next");
-    const dots = Array.from(document.querySelectorAll(".ugc-dot"));
+  // Optional: simple auto-scroll
+  document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.customer-gallery__slider');
+    if (!slider) return;
 
-    if (!track || slides.length === 0) return;
-
-    let currentIndex = 0;
-
-    function updateSlider(index) {
-      const slideWidth = slides[0].getBoundingClientRect().width + 16; // width + gap
-      track.style.transform = "translateX(" + index * -slideWidth + "px)";
-      currentIndex = index;
-
-      dots.forEach((dot, i) => {
-        dot.classList.toggle("is-active", i === currentIndex);
-      });
-    }
-
-    function goNext() {
-      const next = currentIndex + 1 >= slides.length ? 0 : currentIndex + 1;
-      updateSlider(next);
-    }
-
-    function goPrev() {
-      const prev = currentIndex - 1 < 0 ? slides.length - 1 : currentIndex - 1;
-      updateSlider(prev);
-    }
-
-    nextBtn.addEventListener("click", goNext);
-    prevBtn.addEventListener("click", goPrev);
-
-    dots.forEach((dot, i) => {
-      dot.addEventListener("click", () => updateSlider(i));
-    });
-
-    // Auto-slide (optional)
-    setInterval(goNext, 6000);
-  })();
+    let scrollAmount = 0;
+    setInterval(() => {
+      if (slider.scrollWidth - slider.clientWidth <= scrollAmount) {
+        scrollAmount = 0;
+      } else {
+        scrollAmount += 240;
+      }
+      slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+    }, 4000);
+  });
 </script>
