@@ -268,10 +268,82 @@
             "image": "shopify://shop_images/TERRA_IFOURAS_3.png",
             "alt": "Customer photo"
           }
+        },
+        "image_E4mMBU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TERRA_IFOURAS_1.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_UxXAxi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TERRA_IFOURAS_2.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_3VBUXa": {
+          "type": "image",
+          "settings": {
+            "alt": "Customer photo"
+          }
+        },
+        "image_NPBUrw": {
+          "type": "image",
+          "settings": {
+            "alt": "Customer photo"
+          }
+        },
+        "image_ijE3Tr": {
+          "type": "image",
+          "settings": {
+            "alt": "Customer photo"
+          }
+        },
+        "image_TAjchF": {
+          "type": "image",
+          "settings": {
+            "alt": "Customer photo"
+          }
+        },
+        "image_8UUpe7": {
+          "type": "image",
+          "settings": {
+            "alt": "Customer photo"
+          }
+        },
+        "image_DRX38F": {
+          "type": "image",
+          "settings": {
+            "alt": "Customer photo"
+          }
+        },
+        "image_brDbtx": {
+          "type": "image",
+          "settings": {
+            "alt": "Customer photo"
+          }
+        },
+        "image_T3EBgB": {
+          "type": "image",
+          "settings": {
+            "alt": "Customer photo"
+          }
         }
       },
       "block_order": [
-        "image_JM6CfH"
+        "image_JM6CfH",
+        "image_E4mMBU",
+        "image_UxXAxi",
+        "image_3VBUXa",
+        "image_NPBUrw",
+        "image_ijE3Tr",
+        "image_TAjchF",
+        "image_8UUpe7",
+        "image_DRX38F",
+        "image_brDbtx",
+        "image_T3EBgB"
       ],
       "name": "Customer Gallery Slider",
       "settings": {
