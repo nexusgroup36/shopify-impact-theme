@@ -1,0 +1,177 @@
+<section id="faq-{{ section.id }}" class="faq"
+  style="
+    --bg: {{ section.settings.bg }};
+    --text: {{ section.settings.text }};
+    --muted: {{ section.settings.muted }};
+    --border: {{ section.settings.border }};
+    --btn-bg: {{ section.settings.btn_bg }};
+    --btn-text: {{ section.settings.btn_text }};
+    --h1: {{ section.settings.title_size }}px;
+    --pad-top: {{ section.settings.pad_top }}px;
+    --pad-bottom: {{ section.settings.pad_bottom }}px;
+  ">
+  <div class="faq__container">
+    {% if section.settings.title != blank %}
+      <h2 class="faq__title">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    <div class="faq__list" role="list">
+      {% for block in section.blocks %}
+        {% if block.type == 'item' %}
+          <div class="faq__item" {{ block.shopify_attributes }}>
+            <button class="faq__trigger" aria-expanded="false" aria-controls="faq-a-{{ section.id }}-{{ forloop.index }}">
+              <span class="faq__q">{{ block.settings.question }}</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div id="faq-a-{{ section.id }}-{{ forloop.index }}" class="faq__answer">
+              <div class="faq__answer-inner rte">
+                {{ block.settings.answer }}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if section.settings.cta_label != blank %}
+      {% assign url = section.settings.cta_link | default: '#' %}
+      <div class="faq__cta-wrap">
+        <a class="faq__cta" href="{{ url }}">{{ section.settings.cta_label }}</a>
+      </div>
+    {% endif %}
+  </div>
+
+  {% style %}
+  #faq-{{ section.id }}{ background:var(--bg); color:var(--text); padding:var(--pad-top) 16px var(--pad-bottom); }
+  #faq-{{ section.id }} .faq__container{ max-width:1080px; margin:0 auto; }
+
+  /* Title like in reference */
+  .faq__title{
+    text-align:center; font-weight:800; letter-spacing:-.01em;
+    line-height:1.15; font-size:var(--h1); margin:0 0 18px;
+  }
+
+  /* List + rows */
+  .faq__list{ border-top:1px solid var(--border); }
+  .faq__item{ border-bottom:1px solid var(--border); }
+
+  .faq__trigger{
+    appearance:none; border:0; background:transparent; width:100%;
+    padding:18px 12px; text-align:left; display:flex; align-items:center; justify-content:space-between;
+    cursor:pointer; font: inherit; color: var(--text);
+  }
+  .faq__q{ font-weight:600; }
+  .faq__icon{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:20px; height:20px; border-radius:50%;
+    color: var(--text); transition: transform .25s ease, opacity .25s ease;
+  }
+  .faq__trigger[aria-expanded="true"] .faq__icon{ transform: rotate(45deg); opacity:.7; } /* + -> x */
+
+  /* Smooth accordion (max-height animation) */
+  .faq__answer{ overflow:hidden; max-height:0; transition: max-height .35s ease; }
+  .faq__answer-inner{ padding:0 12px 18px; color:var(--muted); }
+
+  /* Bottom CTA: 60% width pill like screenshot */
+  .faq__cta-wrap{ display:flex; justify-content:center; margin-top:22px; }
+  .faq__cta{
+    width:60%; text-align:center; display:inline-block; padding:16px 20px; border-radius:999px;
+    background:var(--btn-bg); color:var(--btn-text); text-decoration:none; font-weight:800; letter-spacing:.02em;
+  }
+
+  @media (max-width: 749px){
+    .faq__cta{ width:90%; }
+  }
+  {% endstyle %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var root = document.getElementById('faq-{{ section.id }}');
+      if(!root) return;
+
+      var items = root.querySelectorAll('.faq__item');
+      items.forEach(function(item){
+        var btn = item.querySelector('.faq__trigger');
+        var panel = item.querySelector('.faq__answer');
+
+        function closeOthers(current){
+          items.forEach(function(it){
+            if(it !== current){
+              var b = it.querySelector('.faq__trigger');
+              var p = it.querySelector('.faq__answer');
+              b.setAttribute('aria-expanded','false');
+              p.style.maxHeight = 0;
+            }
+          });
+        }
+
+        btn.addEventListener('click', function(){
+          var expanded = btn.getAttribute('aria-expanded') === 'true';
+          if(expanded){
+            btn.setAttribute('aria-expanded','false');
+            panel.style.maxHeight = 0;
+          }else{
+            closeOthers(item);
+            btn.setAttribute('aria-expanded','true');
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+          }
+        });
+
+        // Allow smooth open on load if you pre-set an active item later
+        if(btn.getAttribute('aria-expanded') === 'true'){
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Veelgestelde Vragen",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Titel", "default": "Frequently Asked Questions" },
+
+    { "type": "color", "id": "bg", "label": "Achtergrondkleur", "default": "#FFFFFF" },
+    { "type": "color", "id": "text", "label": "Tekstkleur", "default": "#111111" },
+    { "type": "color", "id": "muted", "label": "Secundaire tekstkleur", "default": "#666666" },
+    { "type": "color", "id": "border", "label": "Lijnkleur", "default": "#EAEAEA" },
+
+    { "type": "color", "id": "btn_bg", "label": "Knop achtergrond", "default": "#111111" },
+    { "type": "color", "id": "btn_text", "label": "Knop tekstkleur", "default": "#FFFFFF" },
+
+    { "type": "range", "id": "title_size", "label": "Titelgrootte (px)", "min": 20, "max": 56, "step": 1, "default": 36 },
+
+    { "type": "text", "id": "cta_label", "label": "Knop label", "default": "NEED HELP?" },
+    { "type": "url", "id": "cta_link", "label": "Knop link" },
+
+    { "type": "range", "id": "pad_top", "label": "Padding boven (px)", "min": 0, "max": 120, "step": 2, "default": 28 },
+    { "type": "range", "id": "pad_bottom", "label": "Padding onder (px)", "min": 0, "max": 120, "step": 2, "default": 28 }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Vraag",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Vraag", "default": "Where are MommysHomes products made?" },
+        { "type": "richtext", "id": "answer", "label": "Antwoord", "default": "<p>Your answer text goes here.</p>" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Veelgestelde Vragen",
+      "blocks": [
+        { "type": "item", "settings": { "question": "Where are MommysHomes products made?" } },
+        { "type": "item", "settings": { "question": "What payment methods do you accept?" } },
+        { "type": "item", "settings": { "question": "Can I change or cancel my order after placing it?" } },
+        { "type": "item", "settings": { "question": "How can I return or exchange an item?" } },
+        { "type": "item", "settings": { "question": "Which countries do you ship to and what are the shipping costs?" } },
+        { "type": "item", "settings": { "question": "How long does delivery take?" } },
+        { "type": "item", "settings": { "question": "How can I track my order?" } },
+        { "type": "item", "settings": { "question": "What should I do if my order arrives damaged or defective?" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
