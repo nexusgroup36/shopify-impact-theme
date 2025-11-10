@@ -504,7 +504,7 @@
         "image_xYngAW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TERRA_IFOURAS_2_346e1172-747e-46bf-bf61-22e4eb0f5844.png",
+            "image": "shopify://shop_images/2_346e1172-747e-46bf-bf61-22e4eb0f5844.png",
             "media_width": 45,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -741,7 +741,6 @@
           "settings": {
             "name": "Hunter T.",
             "avatar": "shopify://shop_images/mandatory-selfie-with.jpg",
-            "image": "shopify://shop_images/TERRA_IFOURAS_2.png",
             "rating": 5,
             "review_text": "These are so amazing I cannot rave enough about them! I use them for my work shoes every day and I am on my feet for 10hr shifts. My feet sweat a lot! My shoes do not stink at all! I’ve bought these for the past 3 years and right at a year I notice they start to lose their stink blocking abilities. But at less than $20 per year for a new pair I am not complaining!! I will keep buying them forever!"
           }
@@ -751,7 +750,6 @@
           "settings": {
             "name": "Heather P.",
             "avatar": "shopify://shop_images/360_F_443711688_LCPcTeda2wlKFJNTPjTLPVFmuf0nnP1F.jpg",
-            "image": "shopify://shop_images/TERRA_IFOURAS_1.png",
             "rating": 4,
             "review_text": "I’m not even being the slightest bit dramatic when I say these things are the best purchase I’ve ever made! I didn’t care if it was 30degrees outside if my son dared to take his cleats off in the car on the way home from practice, I was putting the windows down because the smell from his cleats would make me nauseous. It smelt like cat pee. And we tried Everything to take the smell away and nothing worked until this product! I recommend these to everyone I talk to that has an athlete or is one."
           }
@@ -810,7 +808,7 @@
         "image_Cq7BER": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TERRA_IFOURAS_4.png",
+            "image": "shopify://shop_images/17374774.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -845,7 +843,7 @@
         "image_t6cTcb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TERRA_IFOURAS_6.png",
+            "image": "shopify://shop_images/73476373.png",
             "media_width": 40,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
@@ -880,7 +878,7 @@
         "image_MtLdzt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TERRA_IFOURAS_12.png",
+            "image": "shopify://shop_images/Aaaaa_12.png",
             "media_width": 40,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
