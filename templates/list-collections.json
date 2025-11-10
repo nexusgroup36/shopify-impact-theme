@@ -17,7 +17,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/TERRA_IFOURAS_1400_x_1750_px_3200_x_1600_px_1.png",
+        "image": "shopify://shop_images/1400_x_1750_px_3200_x_1600_px_1.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
