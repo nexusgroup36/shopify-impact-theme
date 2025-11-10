@@ -362,6 +362,7 @@
       "type": "email-collector",
       "name": "Email Collector",
       "settings": {
+        "bg_image": "shopify://shop_images/13455.png",
         "bg_color": "#000000",
         "overlay_color": "#000000",
         "overlay_opacity": 40,
