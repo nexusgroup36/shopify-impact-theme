@@ -8,534 +8,6 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "image_with_text_overlay_fMmVLy": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_RRh9yL": {
-          "type": "heading",
-          "settings": {
-            "text": "Your shoes called. They want a fresh start.",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_KyP3zd": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Meet the natural odor-killer built for real life, from gym bags to work boots.</p>"
-          }
-        },
-        "button_HGVmHk": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "base",
-            "text": "SHOP NOW",
-            "url": "shopify://collections",
-            "background": "#2e3a29",
-            "text_color": "#ffffff"
-          }
-        },
-        "liquid_G9FtHx": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: flex-start;\n  font-family: Inter, sans-serif;\n  color: #FFFFFF;\n  text-align: left;\n  width: 100%;\n\">\n  <!-- Stars -->\n  <div style=\"color: #00B67A; font-size: 18px; letter-spacing: 2px; margin-bottom: -10px;\">\n    ★★★★★\n  </div>\n\n  <!-- Text -->\n  <div style=\"font-size: 14px;\">\n    Loved by thousands who finally beat the funk\n  </div>\n</div>\n\n<style>\n  @media screen and (max-width: 749px) {\n    div[style*=\"display: flex\"][style*=\"flex-direction: column\"] {\n      align-items: center !important;\n      text-align: center !important;\n    }\n  }\n</style>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_RRh9yL",
-        "richtext_KyP3zd",
-        "button_HGVmHk",
-        "liquid_G9FtHx"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/1400_x_1750_px_3200_x_1600_px.png",
-        "mobile_image": "shopify://shop_images/1400_x_1750_px.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-end-start sm:text-start",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 51
-      }
-    },
-    "custom_liquid_MzYDnf": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": false,
-        "liquid": "</p>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "stats_iCRNxx": {
-      "type": "stats",
-      "blocks": {
-        "stat_jLaRQn": {
-          "type": "stat",
-          "settings": {
-            "icon": "shopify://shop_images/shoes-9-svgrepo-com_1.svg",
-            "stat": "500000",
-            "label": "Shoes saved from odor"
-          }
-        },
-        "stat_DLGqax": {
-          "type": "stat",
-          "settings": {
-            "icon": "shopify://shop_images/clock-circle-svgrepo-com.svg",
-            "stat": "180000",
-            "label": "Hours of freshness restored"
-          }
-        },
-        "stat_rLVeQn": {
-          "type": "stat",
-          "settings": {
-            "icon": "shopify://shop_images/eco-friendly-svgrepo-com_1.svg",
-            "stat": "220000",
-            "label": "Plastic spray bottles avoided"
-          }
-        }
-      },
-      "block_order": [
-        "stat_jLaRQn",
-        "stat_DLGqax",
-        "stat_rLVeQn"
-      ],
-      "name": "Stats",
-      "settings": {
-        "bg_color": "#2e3a29",
-        "text_color": "#ffffff",
-        "icon_size": 40,
-        "number_size": 24,
-        "label_size": 14
-      }
-    },
-    "collection-list": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_eQGEAF": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-neutralizer",
-            "subheading": "",
-            "title": "",
-            "url": "shopify://products/the-neutralizer",
-            "heading_tag": "h4",
-            "text_position": "place-self-end-start text-start",
-            "text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "collection_gGmDFt": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-closet-fresh-bag",
-            "subheading": "",
-            "title": "",
-            "url": "shopify://products/test",
-            "heading_tag": "h4",
-            "text_position": "place-self-end-start text-start",
-            "text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "collection_hLPfqc": {
-          "type": "collection",
-          "settings": {
-            "collection": "bundles",
-            "subheading": "",
-            "title": "",
-            "url": "shopify://collections/bundles",
-            "heading_tag": "h4",
-            "text_position": "place-self-end-start text-start",
-            "text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "collection_eQGEAF",
-        "collection_gGmDFt",
-        "collection_hLPfqc"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_collections": false,
-        "collections_per_row": 3,
-        "show_progress_bar": true,
-        "subheading": "",
-        "title": "Shop Our Bestsellers",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "how_we_help_NrU4qk": {
-      "type": "how-we-help",
-      "blocks": {
-        "tab_gGgznx": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Work",
-            "image": "shopify://shop_images/2023-work-america-report-hero_tcm7-318106.jpg",
-            "content_title": "For workers, nurses, chefs, delivery drivers, etc.",
-            "content_paragraph": "After 10-hour shifts, your feet and shoes trap sweat, heat, and bacteria, especially in work boots or sneakers.",
-            "bullets": "Neutralizes odor-causing bacteria overnight\n\nKeeps shoes dry and breathable even after long shifts\n\nExtends shoe lifespan: no more throwing away $150 boots",
-            "cta_label": "",
-            "cta_link": ""
-          }
-        },
-        "tab_mJrVxK": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Active",
-            "image": "shopify://shop_images/Athlete-Well-Being-903x602.jpg",
-            "content_title": "For athletes, gym-goers, and fitness enthusiasts.",
-            "content_paragraph": "Sweaty sneakers, gym bags, and cleats don’t just smell: they trap odor in the materials.",
-            "bullets": "Absorbs sweat and odor molecules trapped in foam\n\nPerfect for gym shoes, cleats, and lockers\n\nKeeps your gear fresh between workouts. No sprays, no effort",
-            "cta_label": "Learn More",
-            "cta_link": ""
-          }
-        },
-        "tab_QhPczY": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Family",
-            "image": "shopify://shop_images/family-plays-laughs-living-room.jpg",
-            "content_title": "For parents, students, and households.",
-            "content_paragraph": "Kids’ sneakers, school shoes, and everyday footwear can make your hallway smell like a locker room.\nDr. Odoro keeps your home (and your family’s shoes) fresh, naturally. No chemicals, no hassle.",
-            "bullets": "Safe and non-toxic for kids and pets\n\nWorks in shoes, closets, and gym bags\n\nCreates a fresh, odor-free home environment",
-            "cta_label": "Learn More",
-            "cta_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "tab_gGgznx",
-        "tab_mJrVxK",
-        "tab_QhPczY"
-      ],
-      "name": "How We Help",
-      "settings": {
-        "heading": "How We Help",
-        "subheading": "We fix the hidden causes behind odor, moisture, and shoe frustration, so your life (and your shoes) finally feel fresh again.",
-        "bg_color": "#ffffff",
-        "text_color": "#1c1c1c",
-        "title_size": 36,
-        "subtitle_size": 16,
-        "content_title_size": 20,
-        "paragraph_size": 16,
-        "bullet_size": 16,
-        "chip_border": "#e5e5e5",
-        "chip_active_bg": "#2e3a29",
-        "chip_active_text": "#ffffff",
-        "chip_radius": 20,
-        "image_ratio": "16-9",
-        "image_radius": 16,
-        "pad_top": 48,
-        "pad_bottom": 48
-      }
-    },
-    "bundle_card_V7CgHe": {
-      "type": "bundle-card",
-      "name": "Bundle Card",
-      "settings": {
-        "top_label": "Dr. Odoro's Bundle",
-        "bg_color": "#2e3a29",
-        "card_bg": "#ffffff",
-        "text_color": "#2a2220",
-        "muted_color": "#000000",
-        "accent_color": "#e9dfd6",
-        "radius": 18,
-        "title_size": 17,
-        "price_size": 18,
-        "body_size": 14,
-        "btn_radius": 24,
-        "bundle_title": "The Ultimate Freshness Bundle",
-        "bundle_price": "$35,94",
-        "bundle_compare_at": "",
-        "stars": 5,
-        "review_count": "18274",
-        "bundle_description": "<p>Everything you need to destroy odor, absorb moisture, and keep every pair fresh, all in one smart bundle.</p>",
-        "bundle_product": "the-ultimate-freshness-bundle",
-        "view_label": "View Bundle",
-        "get_label": "Get This Bundle",
-        "p1_image": "shopify://shop_images/7eaa3595-3495-49b2-ad2d-f4e09c15273e.png",
-        "p1_title": "The Neutralizer (2-Pack)",
-        "p1_price": "$19,95",
-        "p1_compare_at": "",
-        "p1_desc": "Removes 99% of odor and moisture, restores lasting freshness, and keeps your shoes clean, dry, and ready for anything.",
-        "p2_image": "shopify://shop_images/7eaa3595-3495-49b2-ad2d-f4e09c15273e.png",
-        "p2_title": "The Closet Fresh Bag",
-        "p2_price": "$15,99",
-        "p2_compare_at": "",
-        "p2_desc": "Made for your closet: removes trapped air odors, absorbs excess moisture, and keeps your closets and rooms naturally fresh 24/7."
-      }
-    },
-    "loop_reviews_aVW8Jy": {
-      "type": "loop-reviews",
-      "blocks": {
-        "review_UGJVbi": {
-          "type": "review",
-          "settings": {
-            "name": "Hunter T.",
-            "avatar": "shopify://shop_images/mandatory-selfie-with.jpg",
-            "image": "shopify://shop_images/12.png",
-            "rating": 5,
-            "review_text": "These are so amazing I cannot rave enough about them! I use them for my work shoes every day and I am on my feet for 10hr shifts. My feet sweat a lot! My shoes do not stink at all! I’ve bought these for the past 3 years and right at a year I notice they start to lose their stink blocking abilities. But at less than $20 per year for a new pair I am not complaining!! I will keep buying them forever!"
-          }
-        },
-        "review_epmKxJ": {
-          "type": "review",
-          "settings": {
-            "name": "Heather P.",
-            "avatar": "shopify://shop_images/360_F_443711688_LCPcTeda2wlKFJNTPjTLPVFmuf0nnP1F.jpg",
-            "image": "shopify://shop_images/13.png",
-            "rating": 5,
-            "review_text": "I’m not even being the slightest bit dramatic when I say these things are the best purchase I’ve ever made! I didn’t care if it was 30degrees outside if my son dared to take his cleats off in the car on the way home from practice, I was putting the windows down because the smell from his cleats would make me nauseous. It smelt like cat pee. And we tried Everything to take the smell away and nothing worked until this product! I recommend these to everyone I talk to that has an athlete or is one."
-          }
-        },
-        "review_PXYrHM": {
-          "type": "review",
-          "settings": {
-            "name": "Margareth S.",
-            "avatar": "shopify://shop_images/050a511d3d5a5ba0d66aec2a8e7e9ad0.jpg",
-            "image": "shopify://shop_images/6.png",
-            "rating": 5,
-            "review_text": "I am an older female and recently got puppies that I walk often. I have been battling smelly shoe syndrome for months. I have bought sprays and the little shoe scent balls, I’ve stuffed dryer sheets in my shoes. None of that worked until now….These are a decent size to take up a good amount of the shoe. The have almost a pool/chlorine smell, but not overpowering, it just smells fresh. Buying my second pair now because I want them in all my shoes regardless of how much I use the use the shoes!!!!"
-          }
-        },
-        "review_PhD6zC": {
-          "type": "review",
-          "settings": {
-            "name": "Jim K.",
-            "avatar": "shopify://shop_images/98c86590ecbd01b8eeba712290595ff7.jpg",
-            "image": "shopify://shop_images/61hmHgVNONL.jpg",
-            "rating": 5,
-            "review_text": "My bicycling shoes reeked after a few weeks of wet fall riding. These eliminated the odor over night. Would highly recommend."
-          }
-        },
-        "review_aAHzkP": {
-          "type": "review",
-          "settings": {
-            "name": "Mariane J.",
-            "avatar": "shopify://shop_images/ann.jpg",
-            "image": "shopify://shop_images/71qspCxg4ZL.jpg",
-            "rating": 5,
-            "review_text": "I own a pair of $120 Red Wind boots that I've owned and are still in working order after 12 years. Needless to say, they smelled horrid. I have never deodorizer them until I bought these and man let me tell you after just sitting 15 minutes the odor was a third of what it was. After a few hours they smelled like the leather they were made of. Amazing. They have a slightly strong chlorine odor smell to them if you put them up to your nose so I wouldn't suggest sniffing them too hard... But they are \"odor free\""
-          }
-        }
-      },
-      "block_order": [
-        "review_UGJVbi",
-        "review_epmKxJ",
-        "review_PXYrHM",
-        "review_PhD6zC",
-        "review_aAHzkP"
-      ],
-      "name": "Wake Loop Reviews",
-      "settings": {
-        "title": "What They Say:",
-        "marquee_speed": 2,
-        "bg_color": "#ffffff",
-        "text_color": "#1a1a1a",
-        "slider_track": "#e9e9e9",
-        "slider_thumb": "#bdbdbd"
-      }
-    },
-    "email_collector_eKreVy": {
-      "type": "email-collector",
-      "name": "Email Collector",
-      "settings": {
-        "bg_image": "shopify://shop_images/13455.png",
-        "bg_color": "#000000",
-        "overlay_color": "#000000",
-        "overlay_opacity": 40,
-        "kicker": "Dr. Odoro",
-        "title": "Join the Fresh Side",
-        "subtitle": "Join our community and discover how to create a healthier, happier home environment for you and your family.",
-        "title_size": 72,
-        "subtitle_size": 18,
-        "email_placeholder": "Email",
-        "button_label": "Join the Fresh Side",
-        "success_text": "Thanks! Please check your inbox to confirm.",
-        "note": "Members get exclusive discounts and early access to new products.",
-        "text_color": "#ffffff",
-        "pill_bg": "#ffffff40",
-        "pill_text": "#ffffff",
-        "button_bg": "#ffffff",
-        "button_text": "#000000",
-        "pad_top": 80,
-        "pad_bottom": 80
-      }
-    },
-    "experts_DhVnW6": {
-      "type": "experts",
-      "blocks": {
-        "expert_NQ7PXJ": {
-          "type": "expert",
-          "settings": {
-            "image": "shopify://shop_images/woman-working-as-doctor_23-2148827830.avif",
-            "name": "Dr. Sarah Lopez",
-            "role": "Foot-Care & Wellness Specialist",
-            "quote": "Foot odor isn’t about cleanliness. It’s about moisture. When sweat and synthetic fabrics trap bacteria inside shoes, odor builds up fast. The real fix is removing that moisture before it feeds the smell.",
-            "text": "Sarah shares practical insight into how airflow, natural materials, and moisture-absorbing technology like The Neutralizer restore balance and stop odor at the source.",
-            "cta_label": "",
-            "cta_link": ""
-          }
-        },
-        "expert_KjNcw6": {
-          "type": "expert",
-          "settings": {
-            "image": "shopify://shop_images/istockphoto-1371009338-612x612.jpg",
-            "name": "Dr. Marcus Reed",
-            "role": "Occupational Health Advisor",
-            "quote": "Workers who spend 10 hours on their feet often end up throwing away perfectly good shoes just because of odor. It’s not the shoe’s fault: it’s trapped sweat and bacteria that never get a chance to dry.",
-            "text": "Marcus explains why proper shoe-care routines and absorbent materials dramatically extend footwear life and prevent odor recurrence.",
-            "cta_label": "",
-            "cta_link": ""
-          }
-        },
-        "expert_hRGtft": {
-          "type": "expert",
-          "settings": {
-            "image": "shopify://shop_images/DrDevganHeadshot.webp",
-            "name": "Dr. Maya Chen",
-            "role": "Environmental Health Researcher",
-            "quote": "Indoor air carries a mix of moisture and volatile compounds from footwear, fabrics, and everyday life. Zeolite is proven to adsorb these molecules, keeping spaces fresher and more breathable.",
-            "text": "Dr. Chen breaks down the simple science behind The Neutralizer’s bamboo technology: how it naturally captures both odor molecules and humidity to maintain a healthy home environment.",
-            "cta_label": "",
-            "cta_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "expert_NQ7PXJ",
-        "expert_KjNcw6",
-        "expert_hRGtft"
-      ],
-      "name": "Experts",
-      "settings": {
-        "kicker": "EVIDENCE-INFORMED GUIDANCE",
-        "title": "Expert Insights on Freshness, Comfort & Confidence",
-        "subtitle": "Carefully researched guidance from everyday experts who understand what real-life odor, moisture, and comfort challenges feel like. Educational content only; individual results may vary.",
-        "bg": "#ffffff",
-        "text": "#000000",
-        "muted": "#000000",
-        "card": "#5b6e53",
-        "shadow_opacity": 0,
-        "image_ratio": "4-5",
-        "radius": 18,
-        "img_radius": 18,
-        "title_size": 34,
-        "subtitle_size": 14,
-        "name_size": 18,
-        "role_size": 12,
-        "body_size": 14,
-        "button_size": 14,
-        "btn_bg": "#0f0f10",
-        "btn_text": "#ffffff",
-        "disclaimer": "Educational information only and not a substitute for professional medical advice. If you have a specific concern, consult your physician.",
-        "pad_top": 48,
-        "pad_bottom": 48
-      }
-    },
-    "faq_collapsible_xMFQpE": {
-      "type": "faq-collapsible",
-      "blocks": {
-        "item_bj9ert": {
-          "type": "item",
-          "settings": {
-            "question": "How does The Neutralizer actually work?",
-            "answer": "<p>The Neutralizer uses activated Zeolite to absorb both odor molecules and moisture from inside your shoes.<br/><br/>No sprays, perfumes, or chemicals, just natural adsorption that eliminates odor at the source and keeps shoes dry and fresh.</p>"
-          }
-        },
-        "item_e83PGe": {
-          "type": "item",
-          "settings": {
-            "question": "How long does The Neutralizer last?",
-            "answer": "<p>Each Neutralizer lasts up to <strong>2 months</strong> with proper care.<br/><br/>Simply place them in direct sunlight once a month for 2–3 hours to “recharge” the Zeolite and restore full absorption power.</p>"
-          }
-        },
-        "item_tmmEJE": {
-          "type": "item",
-          "settings": {
-            "question": "Can I use The Neutralizer in more than just shoes?",
-            "answer": "<p>The Neutralizer is specifically designed for shoes; it targets deep, trapped odor and moisture where sprays and powders can’t reach.<br/><br/>If you’re looking to keep other spaces fresh, check out our Closet Fresh Bag and Fresh Capsule made for gym bags, closets, cars, and beyond.</p>"
-          }
-        },
-        "item_HrtLQp": {
-          "type": "item",
-          "settings": {
-            "question": "Is it safe for kids and pets?",
-            "answer": "<p>Yes completely.<br/><br/>The Neutralizer is made from 100% Zeolite, sealed in breathable linen.<br/><br/>It contains zero chemicals, synthetic fragrances, or toxins. Safe for every household.</p>"
-          }
-        },
-        "item_qX9M6c": {
-          "type": "item",
-          "settings": {
-            "question": "How quickly will I notice results?",
-            "answer": "<p>Most users smell a difference within <strong>24 hours</strong>, and full freshness returns within <strong>48 hours</strong>.<br/><br/>For shoes with heavy odor buildup, leave The Neutralizer inside for two nights for maximum effect.</p>"
-          }
-        },
-        "item_pqAbgJ": {
-          "type": "item",
-          "settings": {
-            "question": "Do I need to keep buying refills?",
-            "answer": "<p>Not often.<br/><br/>The Neutralizer itself is reusable for up to 3 months.</p>"
-          }
-        },
-        "item_FaGhr8": {
-          "type": "item",
-          "settings": {
-            "question": "What makes Dr. Odoro different from sprays or powders?",
-            "answer": "<p>Sprays only mask odor with fragrance and often add moisture, making the problem worse.<br/><br/>Powders are messy and temporary.<br/><br/>Dr. Odoro solves odor physically, not chemically, by removing the moisture and compounds that cause it in the first place.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_bj9ert",
-        "item_e83PGe",
-        "item_tmmEJE",
-        "item_HrtLQp",
-        "item_qX9M6c",
-        "item_pqAbgJ",
-        "item_FaGhr8"
-      ],
-      "name": "Veelgestelde Vragen",
-      "settings": {
-        "title": "Frequently Asked Questions",
-        "bg": "#ffffff",
-        "text": "#000000",
-        "muted": "#000000",
-        "border": "#eaeaea",
-        "btn_bg": "#2e3a29",
-        "btn_text": "#ffffff",
-        "title_size": 20,
-        "cta_label": "NEED HELP?",
-        "cta_link": "shopify://pages/contact",
-        "pad_top": 28,
-        "pad_bottom": 28
-      }
-    }
-  },
   "order": [
     "image_with_text_overlay_fMmVLy",
     "custom_liquid_MzYDnf",
@@ -547,5 +19,533 @@
     "email_collector_eKreVy",
     "experts_DhVnW6",
     "faq_collapsible_xMFQpE"
-  ]
+  ],
+  "sections": {
+    "bundle_card_V7CgHe": {
+      "name": "Bundle Card",
+      "settings": {
+        "accent_color": "#e9dfd6",
+        "bg_color": "#2e3a29",
+        "body_size": 14,
+        "btn_radius": 24,
+        "bundle_compare_at": "",
+        "bundle_description": "<p>Everything you need to destroy odor, absorb moisture, and keep every pair fresh, all in one smart bundle.</p>",
+        "bundle_price": "$35,94",
+        "bundle_product": "the-ultimate-freshness-bundle",
+        "bundle_title": "The Ultimate Freshness Bundle",
+        "card_bg": "#ffffff",
+        "get_label": "Get This Bundle",
+        "muted_color": "#000000",
+        "p1_compare_at": "",
+        "p1_desc": "Removes 99% of odor and moisture, restores lasting freshness, and keeps your shoes clean, dry, and ready for anything.",
+        "p1_image": "shopify://shop_images/7eaa3595-3495-49b2-ad2d-f4e09c15273e.png",
+        "p1_price": "$19,95",
+        "p1_title": "The Neutralizer (2-Pack)",
+        "p2_compare_at": "",
+        "p2_desc": "Made for your closet: removes trapped air odors, absorbs excess moisture, and keeps your closets and rooms naturally fresh 24/7.",
+        "p2_image": "shopify://shop_images/7eaa3595-3495-49b2-ad2d-f4e09c15273e.png",
+        "p2_price": "$15,99",
+        "p2_title": "The Closet Fresh Bag",
+        "price_size": 18,
+        "radius": 18,
+        "review_count": "18274",
+        "stars": 5,
+        "text_color": "#2a2220",
+        "title_size": 17,
+        "top_label": "Dr. Odoro's Bundle",
+        "view_label": "View Bundle"
+      },
+      "type": "bundle-card"
+    },
+    "collection-list": {
+      "block_order": [
+        "collection_eQGEAF",
+        "collection_gGmDFt",
+        "collection_hLPfqc"
+      ],
+      "blocks": {
+        "collection_eQGEAF": {
+          "settings": {
+            "collection": "the-neutralizer",
+            "heading_tag": "h4",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "subheading": "",
+            "text_color": "#000000",
+            "text_position": "place-self-end-start text-start",
+            "title": "",
+            "url": "shopify://products/the-neutralizer"
+          },
+          "type": "collection"
+        },
+        "collection_gGmDFt": {
+          "settings": {
+            "collection": "the-closet-fresh-bag",
+            "heading_tag": "h4",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "subheading": "",
+            "text_color": "#000000",
+            "text_position": "place-self-end-start text-start",
+            "title": "",
+            "url": "shopify://products/test"
+          },
+          "type": "collection"
+        },
+        "collection_hLPfqc": {
+          "settings": {
+            "collection": "bundles",
+            "heading_tag": "h4",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "subheading": "",
+            "text_color": "#000000",
+            "text_position": "place-self-end-start text-start",
+            "title": "",
+            "url": "shopify://collections/bundles"
+          },
+          "type": "collection"
+        }
+      },
+      "settings": {
+        "background": "#ffffff",
+        "background_gradient": "",
+        "collections_per_row": 3,
+        "content": "",
+        "full_width": true,
+        "heading_color": "",
+        "heading_gradient": "",
+        "link_text": "",
+        "link_url": "",
+        "show_progress_bar": true,
+        "stack_collections": false,
+        "subheading": "",
+        "text_color": "",
+        "title": "Shop Our Bestsellers"
+      },
+      "type": "collection-list"
+    },
+    "custom_liquid_MzYDnf": {
+      "name": "Custom Liquid",
+      "settings": {
+        "background": "",
+        "background_gradient": "",
+        "full_width": true,
+        "liquid": "</p>",
+        "remove_horizontal_spacing": false,
+        "remove_vertical_spacing": true,
+        "text_color": ""
+      },
+      "type": "custom-liquid"
+    },
+    "email_collector_eKreVy": {
+      "name": "Email Collector",
+      "settings": {
+        "bg_color": "#000000",
+        "bg_image": "shopify://shop_images/13455.png",
+        "button_bg": "#ffffff",
+        "button_label": "Join the Fresh Side",
+        "button_text": "#000000",
+        "email_placeholder": "Email",
+        "kicker": "Dr. Odoro",
+        "note": "Members get exclusive discounts and early access to new products.",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40,
+        "pad_bottom": 80,
+        "pad_top": 80,
+        "pill_bg": "#ffffff40",
+        "pill_text": "#ffffff",
+        "subtitle": "Join our community and discover how to create a healthier, happier home environment for you and your family.",
+        "subtitle_size": 18,
+        "success_text": "Thanks! Please check your inbox to confirm.",
+        "text_color": "#ffffff",
+        "title": "Join the Fresh Side",
+        "title_size": 72
+      },
+      "type": "email-collector"
+    },
+    "experts_DhVnW6": {
+      "block_order": [
+        "expert_NQ7PXJ",
+        "expert_KjNcw6",
+        "expert_hRGtft"
+      ],
+      "blocks": {
+        "expert_KjNcw6": {
+          "settings": {
+            "cta_label": "",
+            "cta_link": "",
+            "image": "shopify://shop_images/istockphoto-1371009338-612x612.jpg",
+            "name": "Dr. Marcus Reed",
+            "quote": "Workers who spend 10 hours on their feet often end up throwing away perfectly good shoes just because of odor. It’s not the shoe’s fault: it’s trapped sweat and bacteria that never get a chance to dry.",
+            "role": "Occupational Health Advisor",
+            "text": "Marcus explains why proper shoe-care routines and absorbent materials dramatically extend footwear life and prevent odor recurrence."
+          },
+          "type": "expert"
+        },
+        "expert_NQ7PXJ": {
+          "settings": {
+            "cta_label": "",
+            "cta_link": "",
+            "image": "shopify://shop_images/woman-working-as-doctor_23-2148827830.avif",
+            "name": "Dr. Sarah Lopez",
+            "quote": "Foot odor isn’t about cleanliness. It’s about moisture. When sweat and synthetic fabrics trap bacteria inside shoes, odor builds up fast. The real fix is removing that moisture before it feeds the smell.",
+            "role": "Foot-Care & Wellness Specialist",
+            "text": "Sarah shares practical insight into how airflow, natural materials, and moisture-absorbing technology like The Neutralizer restore balance and stop odor at the source."
+          },
+          "type": "expert"
+        },
+        "expert_hRGtft": {
+          "settings": {
+            "cta_label": "",
+            "cta_link": "",
+            "image": "shopify://shop_images/DrDevganHeadshot.webp",
+            "name": "Dr. Maya Chen",
+            "quote": "Indoor air carries a mix of moisture and volatile compounds from footwear, fabrics, and everyday life. Zeolite is proven to adsorb these molecules, keeping spaces fresher and more breathable.",
+            "role": "Environmental Health Researcher",
+            "text": "Dr. Chen breaks down the simple science behind The Neutralizer’s bamboo technology: how it naturally captures both odor molecules and humidity to maintain a healthy home environment."
+          },
+          "type": "expert"
+        }
+      },
+      "name": "Experts",
+      "settings": {
+        "bg": "#ffffff",
+        "body_size": 14,
+        "btn_bg": "#0f0f10",
+        "btn_text": "#ffffff",
+        "button_size": 14,
+        "card": "#5b6e53",
+        "disclaimer": "Educational information only and not a substitute for professional medical advice. If you have a specific concern, consult your physician.",
+        "image_ratio": "4-5",
+        "img_radius": 18,
+        "kicker": "EVIDENCE-INFORMED GUIDANCE",
+        "muted": "#000000",
+        "name_size": 18,
+        "pad_bottom": 48,
+        "pad_top": 48,
+        "radius": 18,
+        "role_size": 12,
+        "shadow_opacity": 0,
+        "subtitle": "Carefully researched guidance from everyday experts who understand what real-life odor, moisture, and comfort challenges feel like. Educational content only; individual results may vary.",
+        "subtitle_size": 14,
+        "text": "#000000",
+        "title": "Expert Insights on Freshness, Comfort & Confidence",
+        "title_size": 34
+      },
+      "type": "experts"
+    },
+    "faq_collapsible_xMFQpE": {
+      "block_order": [
+        "item_bj9ert",
+        "item_e83PGe",
+        "item_tmmEJE",
+        "item_HrtLQp",
+        "item_qX9M6c",
+        "item_pqAbgJ",
+        "item_FaGhr8"
+      ],
+      "blocks": {
+        "item_FaGhr8": {
+          "settings": {
+            "answer": "<p>Sprays only mask odor with fragrance and often add moisture, making the problem worse.<br/><br/>Powders are messy and temporary.<br/><br/>Dr. Odoro solves odor physically, not chemically, by removing the moisture and compounds that cause it in the first place.</p>",
+            "question": "What makes Dr. Odoro different from sprays or powders?"
+          },
+          "type": "item"
+        },
+        "item_HrtLQp": {
+          "settings": {
+            "answer": "<p>Yes completely.<br/><br/>The Neutralizer is made from 100% Zeolite, sealed in breathable linen.<br/><br/>It contains zero chemicals, synthetic fragrances, or toxins. Safe for every household.</p>",
+            "question": "Is it safe for kids and pets?"
+          },
+          "type": "item"
+        },
+        "item_bj9ert": {
+          "settings": {
+            "answer": "<p>The Neutralizer uses activated Zeolite to absorb both odor molecules and moisture from inside your shoes.<br/><br/>No sprays, perfumes, or chemicals, just natural adsorption that eliminates odor at the source and keeps shoes dry and fresh.</p>",
+            "question": "How does The Neutralizer actually work?"
+          },
+          "type": "item"
+        },
+        "item_e83PGe": {
+          "settings": {
+            "answer": "<p>Each Neutralizer lasts up to <strong>2 months</strong> with proper care.<br/><br/>Simply place them in direct sunlight once a month for 2–3 hours to “recharge” the Zeolite and restore full absorption power.</p>",
+            "question": "How long does The Neutralizer last?"
+          },
+          "type": "item"
+        },
+        "item_pqAbgJ": {
+          "settings": {
+            "answer": "<p>Not often.<br/><br/>The Neutralizer itself is reusable for up to 3 months.</p>",
+            "question": "Do I need to keep buying refills?"
+          },
+          "type": "item"
+        },
+        "item_qX9M6c": {
+          "settings": {
+            "answer": "<p>Most users smell a difference within <strong>24 hours</strong>, and full freshness returns within <strong>48 hours</strong>.<br/><br/>For shoes with heavy odor buildup, leave The Neutralizer inside for two nights for maximum effect.</p>",
+            "question": "How quickly will I notice results?"
+          },
+          "type": "item"
+        },
+        "item_tmmEJE": {
+          "settings": {
+            "answer": "<p>The Neutralizer is specifically designed for shoes; it targets deep, trapped odor and moisture where sprays and powders can’t reach.<br/><br/>If you’re looking to keep other spaces fresh, check out our Closet Fresh Bag and Fresh Capsule made for gym bags, closets, cars, and beyond.</p>",
+            "question": "Can I use The Neutralizer in more than just shoes?"
+          },
+          "type": "item"
+        }
+      },
+      "name": "Veelgestelde Vragen",
+      "settings": {
+        "bg": "#ffffff",
+        "border": "#eaeaea",
+        "btn_bg": "#2e3a29",
+        "btn_text": "#ffffff",
+        "cta_label": "NEED HELP?",
+        "cta_link": "shopify://pages/contact",
+        "muted": "#000000",
+        "pad_bottom": 28,
+        "pad_top": 28,
+        "text": "#000000",
+        "title": "Frequently Asked Questions",
+        "title_size": 20
+      },
+      "type": "faq-collapsible"
+    },
+    "how_we_help_NrU4qk": {
+      "block_order": [
+        "tab_gGgznx",
+        "tab_mJrVxK",
+        "tab_QhPczY"
+      ],
+      "blocks": {
+        "tab_QhPczY": {
+          "settings": {
+            "bullets": "Safe and non-toxic for kids and pets\n\nWorks in shoes, closets, and gym bags\n\nCreates a fresh, odor-free home environment",
+            "content_paragraph": "Kids’ sneakers, school shoes, and everyday footwear can make your hallway smell like a locker room.\nDr. Odoro keeps your home (and your family’s shoes) fresh, naturally. No chemicals, no hassle.",
+            "content_title": "For parents, students, and households.",
+            "cta_label": "Learn More",
+            "cta_link": "",
+            "image": "shopify://shop_images/family-plays-laughs-living-room.jpg",
+            "tab_label": "Family"
+          },
+          "type": "tab"
+        },
+        "tab_gGgznx": {
+          "settings": {
+            "bullets": "Neutralizes odor-causing bacteria overnight\n\nKeeps shoes dry and breathable even after long shifts\n\nExtends shoe lifespan: no more throwing away $150 boots",
+            "content_paragraph": "After 10-hour shifts, your feet and shoes trap sweat, heat, and bacteria, especially in work boots or sneakers.",
+            "content_title": "For workers, nurses, chefs, delivery drivers, etc.",
+            "cta_label": "",
+            "cta_link": "",
+            "image": "shopify://shop_images/2023-work-america-report-hero_tcm7-318106.jpg",
+            "tab_label": "Work"
+          },
+          "type": "tab"
+        },
+        "tab_mJrVxK": {
+          "settings": {
+            "bullets": "Absorbs sweat and odor molecules trapped in foam\n\nPerfect for gym shoes, cleats, and lockers\n\nKeeps your gear fresh between workouts. No sprays, no effort",
+            "content_paragraph": "Sweaty sneakers, gym bags, and cleats don’t just smell: they trap odor in the materials.",
+            "content_title": "For athletes, gym-goers, and fitness enthusiasts.",
+            "cta_label": "Learn More",
+            "cta_link": "",
+            "image": "shopify://shop_images/Athlete-Well-Being-903x602.jpg",
+            "tab_label": "Active"
+          },
+          "type": "tab"
+        }
+      },
+      "name": "How We Help",
+      "settings": {
+        "bg_color": "#ffffff",
+        "bullet_size": 16,
+        "chip_active_bg": "#2e3a29",
+        "chip_active_text": "#ffffff",
+        "chip_border": "#e5e5e5",
+        "chip_radius": 20,
+        "content_title_size": 20,
+        "heading": "How We Help",
+        "image_radius": 16,
+        "image_ratio": "16-9",
+        "pad_bottom": 48,
+        "pad_top": 48,
+        "paragraph_size": 16,
+        "subheading": "We fix the hidden causes behind odor, moisture, and shoe frustration, so your life (and your shoes) finally feel fresh again.",
+        "subtitle_size": 16,
+        "text_color": "#1c1c1c",
+        "title_size": 36
+      },
+      "type": "how-we-help"
+    },
+    "image_with_text_overlay_fMmVLy": {
+      "block_order": [
+        "heading_RRh9yL",
+        "richtext_KyP3zd",
+        "button_HGVmHk",
+        "liquid_G9FtHx"
+      ],
+      "blocks": {
+        "button_HGVmHk": {
+          "settings": {
+            "background": "#2e3a29",
+            "size": "base",
+            "style": "fill",
+            "text": "SHOP NOW",
+            "text_color": "#ffffff",
+            "url": "shopify://collections"
+          },
+          "type": "button"
+        },
+        "heading_RRh9yL": {
+          "settings": {
+            "heading_tag": "h1",
+            "text": "Your shoes called. They want a fresh start."
+          },
+          "type": "heading"
+        },
+        "liquid_G9FtHx": {
+          "settings": {
+            "liquid": "<div style=\"\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: flex-start;\n  font-family: Inter, sans-serif;\n  color: #FFFFFF;\n  text-align: left;\n  width: 100%;\n\">\n  <!-- Stars -->\n  <div style=\"color: #00B67A; font-size: 18px; letter-spacing: 2px; margin-bottom: -10px;\">\n    ★★★★★\n  </div>\n\n  <!-- Text -->\n  <div style=\"font-size: 14px;\">\n    Loved by thousands who finally beat the funk\n  </div>\n</div>\n\n<style>\n  @media screen and (max-width: 749px) {\n    div[style*=\"display: flex\"][style*=\"flex-direction: column\"] {\n      align-items: center !important;\n      text-align: center !important;\n    }\n  }\n</style>"
+          },
+          "type": "liquid"
+        },
+        "richtext_KyP3zd": {
+          "settings": {
+            "content": "<p>Meet the natural odor-killer built for real life, from gym bags to work boots.</p>"
+          },
+          "type": "richtext"
+        }
+      },
+      "name": "Image with text overlay",
+      "settings": {
+        "allow_transparent_header": false,
+        "desktop_text_position": "sm:place-self-end-start sm:text-start",
+        "enable_parallax": false,
+        "full_width": true,
+        "image": "shopify://shop_images/1400_x_1750_px_3200_x_1600_px.png",
+        "image_size": "auto",
+        "mobile_image": "shopify://shop_images/1400_x_1750_px.png",
+        "mobile_text_position": "place-self-center text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 51,
+        "text_color": "#ffffff"
+      },
+      "type": "image-with-text-overlay"
+    },
+    "loop_reviews_aVW8Jy": {
+      "block_order": [
+        "review_UGJVbi",
+        "review_epmKxJ",
+        "review_PXYrHM",
+        "review_PhD6zC",
+        "review_aAHzkP"
+      ],
+      "blocks": {
+        "review_PXYrHM": {
+          "settings": {
+            "avatar": "shopify://shop_images/050a511d3d5a5ba0d66aec2a8e7e9ad0.jpg",
+            "image": "shopify://shop_images/6.png",
+            "name": "Margareth S.",
+            "rating": 5,
+            "review_text": "I am an older female and recently got puppies that I walk often. I have been battling smelly shoe syndrome for months. I have bought sprays and the little shoe scent balls, I’ve stuffed dryer sheets in my shoes. None of that worked until now….These are a decent size to take up a good amount of the shoe. The have almost a pool/chlorine smell, but not overpowering, it just smells fresh. Buying my second pair now because I want them in all my shoes regardless of how much I use the use the shoes!!!!"
+          },
+          "type": "review"
+        },
+        "review_PhD6zC": {
+          "settings": {
+            "avatar": "shopify://shop_images/98c86590ecbd01b8eeba712290595ff7.jpg",
+            "image": "shopify://shop_images/61hmHgVNONL.jpg",
+            "name": "Jim K.",
+            "rating": 5,
+            "review_text": "My bicycling shoes reeked after a few weeks of wet fall riding. These eliminated the odor over night. Would highly recommend."
+          },
+          "type": "review"
+        },
+        "review_UGJVbi": {
+          "settings": {
+            "avatar": "shopify://shop_images/mandatory-selfie-with.jpg",
+            "image": "shopify://shop_images/12.png",
+            "name": "Hunter T.",
+            "rating": 5,
+            "review_text": "These are so amazing I cannot rave enough about them! I use them for my work shoes every day and I am on my feet for 10hr shifts. My feet sweat a lot! My shoes do not stink at all! I’ve bought these for the past 3 years and right at a year I notice they start to lose their stink blocking abilities. But at less than $20 per year for a new pair I am not complaining!! I will keep buying them forever!"
+          },
+          "type": "review"
+        },
+        "review_aAHzkP": {
+          "settings": {
+            "avatar": "shopify://shop_images/ann.jpg",
+            "image": "shopify://shop_images/71qspCxg4ZL.jpg",
+            "name": "Mariane J.",
+            "rating": 5,
+            "review_text": "I own a pair of $120 Red Wind boots that I've owned and are still in working order after 12 years. Needless to say, they smelled horrid. I have never deodorizer them until I bought these and man let me tell you after just sitting 15 minutes the odor was a third of what it was. After a few hours they smelled like the leather they were made of. Amazing. They have a slightly strong chlorine odor smell to them if you put them up to your nose so I wouldn't suggest sniffing them too hard... But they are \"odor free\""
+          },
+          "type": "review"
+        },
+        "review_epmKxJ": {
+          "settings": {
+            "avatar": "shopify://shop_images/360_F_443711688_LCPcTeda2wlKFJNTPjTLPVFmuf0nnP1F.jpg",
+            "image": "shopify://shop_images/13.png",
+            "name": "Heather P.",
+            "rating": 5,
+            "review_text": "I’m not even being the slightest bit dramatic when I say these things are the best purchase I’ve ever made! I didn’t care if it was 30degrees outside if my son dared to take his cleats off in the car on the way home from practice, I was putting the windows down because the smell from his cleats would make me nauseous. It smelt like cat pee. And we tried Everything to take the smell away and nothing worked until this product! I recommend these to everyone I talk to that has an athlete or is one."
+          },
+          "type": "review"
+        }
+      },
+      "name": "Wake Loop Reviews",
+      "settings": {
+        "bg_color": "#ffffff",
+        "marquee_speed": 2,
+        "slider_thumb": "#bdbdbd",
+        "slider_track": "#e9e9e9",
+        "text_color": "#1a1a1a",
+        "title": "What They Say:"
+      },
+      "type": "loop-reviews"
+    },
+    "stats_iCRNxx": {
+      "block_order": [
+        "stat_jLaRQn",
+        "stat_DLGqax",
+        "stat_rLVeQn"
+      ],
+      "blocks": {
+        "stat_DLGqax": {
+          "settings": {
+            "icon": "shopify://shop_images/clock-circle-svgrepo-com.svg",
+            "label": "Hours of freshness restored",
+            "stat": "180000"
+          },
+          "type": "stat"
+        },
+        "stat_jLaRQn": {
+          "settings": {
+            "icon": "shopify://shop_images/shoes-9-svgrepo-com_1.svg",
+            "label": "Shoes saved from odor",
+            "stat": "500000"
+          },
+          "type": "stat"
+        },
+        "stat_rLVeQn": {
+          "settings": {
+            "icon": "shopify://shop_images/eco-friendly-svgrepo-com_1.svg",
+            "label": "Plastic spray bottles avoided",
+            "stat": "220000"
+          },
+          "type": "stat"
+        }
+      },
+      "name": "Stats",
+      "settings": {
+        "bg_color": "#2e3a29",
+        "icon_size": 40,
+        "label_size": 14,
+        "number_size": 24,
+        "text_color": "#ffffff"
+      },
+      "type": "stats"
+    }
+  }
 }
