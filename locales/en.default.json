@@ -275,6 +275,14 @@
     },
     "Breadcrumb": {
       "home": "Home"
+    },
+    "CarouselV3": {
+      "no_slider": "No Slider"
+    },
+    "ProductListV3": {
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
     }
   },
   "general": {

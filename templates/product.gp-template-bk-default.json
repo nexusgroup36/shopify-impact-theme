@@ -8,800 +8,1076 @@
  * ------------------------------------------------------------
  */
 {
-  "order": [
-    "main",
-    "rich_text_qEWyed",
-    "image_link_blocks_Ne6xbk",
-    "trust_badges_L7QLMF",
-    "video_M8X7BP",
-    "featured_collection_jizWxD",
-    "impact_text_4r9Pem",
-    "media_with_text_WPkVK7",
-    "media_with_text_LtprTE",
-    "media_with_text_AwCX3C",
-    "image_with_text_overlay_UKfeC3",
-    "faq_B3Ytat",
-    "1747885505688c5a92"
-  ],
   "sections": {
-    "1747885505688c5a92": {
-      "block_order": [
-        "judge_me_reviews_review_widget_wqhP7N"
-      ],
-      "blocks": {
-        "judge_me_reviews_review_widget_wqhP7N": {
-          "settings": {
-            "max_width": 1200,
-            "review_data": "sample_data"
-          },
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8"
-        }
-      },
-      "settings": {
-        "background": "",
-        "background_gradient": "",
-        "enable_review_integration": true,
-        "full_width": true,
-        "remove_horizontal_spacing": false,
-        "remove_vertical_spacing": false,
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff",
-        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
-        "review_header_text_color": "#000000",
-        "text_color": ""
-      },
-      "type": "apps"
-    },
-    "faq_B3Ytat": {
-      "block_order": [
-        "item_U6DEYw",
-        "item_rM6fJG",
-        "item_iRJA9i",
-        "item_zWWkrA",
-        "item_DtQ8eq",
-        "item_U6KDJp",
-        "item_JUMQzY",
-        "item_ztDECz"
-      ],
-      "blocks": {
-        "item_DtQ8eq": {
-          "settings": {
-            "content": "<p>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the USB connector.</p>",
-            "title": "How long does the battery last?"
-          },
-          "type": "item"
-        },
-        "item_JUMQzY": {
-          "settings": {
-            "content": "<p>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</p>",
-            "title": "What if I sleep through the vibration?"
-          },
-          "type": "item"
-        },
-        "item_U6DEYw": {
-          "settings": {
-            "content": "<p>Loop One works by sending vibration signals directly through your wrist at your set wake-up time. Unlike sound, which your brain can learn to ignore, these physical impulses are processed by your nervous system and trigger your body to wake up automatically. That’s why vibration is far more reliable than noise-based alarms, especially for heavy sleepers.</p>",
-            "title": "How does the Loop One wake me up?"
-          },
-          "type": "item"
-        },
-        "item_U6KDJp": {
-          "settings": {
-            "content": "<p>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</p>",
-            "title": "Is it compatible with my phone or alarm app?"
-          },
-          "type": "item"
-        },
-        "item_iRJA9i": {
-          "settings": {
-            "content": "<p>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</p>",
-            "title": "Can I wear it all night comfortably?"
-          },
-          "type": "item"
-        },
-        "item_rM6fJG": {
-          "settings": {
-            "content": "<p>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</p>",
-            "title": "How many alarms can i set?"
-          },
-          "type": "item"
-        },
-        "item_zWWkrA": {
-          "settings": {
-            "content": "<p>Yes! We made sure that the Loop One is adjustable for every wrist size.</p>",
-            "title": "Will it fit my wrist?"
-          },
-          "type": "item"
-        },
-        "item_ztDECz": {
-          "settings": {
-            "content": "<p>We offer a 60-day money-back guarantee. If Loop One isn’t right for you, return it—no questions asked. Plus, you’re covered with our lifetime warranty.</p>",
-            "title": "What’s your return policy?"
-          },
-          "type": "item"
-        }
-      },
-      "settings": {
-        "accordion_background": "",
-        "accordion_text_color": "",
-        "answer_time": "",
-        "background": "",
-        "background_gradient": "",
-        "button_background": "",
-        "button_text": "",
-        "button_text_color": "",
-        "button_url": "",
-        "content": "",
-        "full_width": true,
-        "heading_color": "",
-        "heading_gradient": "",
-        "subheading": "",
-        "support_hours": "",
-        "team_avatar_width": 160,
-        "text_color": "",
-        "text_position": "center",
-        "title": "FREQUENTLY ASKED QUESTIONS"
-      },
-      "type": "faq"
-    },
-    "featured_collection_jizWxD": {
-      "disabled": true,
-      "settings": {
-        "background": "",
-        "background_gradient": "",
-        "collection": "",
-        "content": "",
-        "full_width": true,
-        "heading_color": "",
-        "heading_gradient": "",
-        "link_text": "",
-        "link_url": "",
-        "product_card_background": "",
-        "product_card_text_color": "",
-        "products": [
-          "uv-glasses"
-        ],
-        "products_count": 2,
-        "products_per_row_desktop": 2,
-        "products_per_row_mobile": "1",
-        "show_progress_bar": false,
-        "stack_products": true,
-        "subheading": "",
-        "text_color": "",
-        "title": "YOU MAY ALSO LIKE"
-      },
-      "type": "featured-collection"
-    },
-    "image_link_blocks_Ne6xbk": {
-      "block_order": [
-        "item_c7jGaW",
-        "item_hrz9cM",
-        "item_Ty8AMJ",
-        "item_bKWtRC",
-        "item_F3XRBi",
-        "item_74UQYW",
-        "item_hE9izx"
-      ],
-      "blocks": {
-        "item_74UQYW": {
-          "settings": {
-            "background": "",
-            "image": "shopify://shop_images/f2a4f936-24ab-479a-a4e2-7f61f52c9a24.webp",
-            "link_text": "",
-            "link_url": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "stretch_image": true,
-            "text_color": "#ffffff"
-          },
-          "type": "item"
-        },
-        "item_F3XRBi": {
-          "settings": {
-            "background": "",
-            "image": "shopify://shop_images/IMG_7976_2.webp",
-            "link_text": "",
-            "link_url": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "stretch_image": true,
-            "text_color": "#ffffff"
-          },
-          "type": "item"
-        },
-        "item_Ty8AMJ": {
-          "settings": {
-            "background": "",
-            "image": "shopify://shop_images/7811d604-2add-458b-a7d9-8a9105865620.webp",
-            "link_text": "",
-            "link_url": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "stretch_image": true,
-            "text_color": "#ffffff"
-          },
-          "type": "item"
-        },
-        "item_bKWtRC": {
-          "settings": {
-            "background": "",
-            "image": "shopify://shop_images/WhatsApp_Image_2025-05-24_at_03.18.40.jpg",
-            "link_text": "",
-            "link_url": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "stretch_image": true,
-            "text_color": "#ffffff"
-          },
-          "type": "item"
-        },
-        "item_c7jGaW": {
-          "settings": {
-            "background": "",
-            "image": "shopify://shop_images/67eb955d-355f-48b5-a3ac-2c946d38ec0f.webp",
-            "link_text": "",
-            "link_url": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "stretch_image": true,
-            "text_color": "#ffffff"
-          },
-          "type": "item"
-        },
-        "item_hE9izx": {
-          "settings": {
-            "background": "",
-            "image": "shopify://shop_images/a24fceb0-41ba-4b9f-be5b-2041aef030bd.webp",
-            "link_text": "",
-            "link_url": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "stretch_image": true,
-            "text_color": "#ffffff"
-          },
-          "type": "item"
-        },
-        "item_hrz9cM": {
-          "settings": {
-            "background": "",
-            "image": "shopify://shop_images/Wake_loop_21.png",
-            "link_text": "",
-            "link_url": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "stretch_image": true,
-            "text_color": "#ffffff"
-          },
-          "type": "item"
-        }
-      },
-      "settings": {
-        "background": "",
-        "background_gradient": "",
-        "block_size": "large",
-        "content": "",
-        "full_width": false,
-        "heading_color": "",
-        "heading_gradient": "",
-        "link_text": "",
-        "link_url": "",
-        "subheading": "",
-        "text_color": "",
-        "title": ""
-      },
-      "type": "image-link-blocks"
-    },
-    "image_with_text_overlay_UKfeC3": {
-      "block_order": [
-        "heading_8J66CN",
-        "richtext_p3DdtX"
-      ],
-      "blocks": {
-        "heading_8J66CN": {
-          "settings": {
-            "heading_tag": "h1",
-            "text": "LIFETIME WARRANTY"
-          },
-          "type": "heading"
-        },
-        "richtext_p3DdtX": {
-          "settings": {
-            "content": "<p>We stand behind the quality of our products. Your Loop One is covered for life—because peace of mind should last as long as your sleep does. Durable, dependable, and guaranteed.</p>"
-          },
-          "type": "richtext"
-        }
-      },
-      "settings": {
-        "allow_transparent_header": false,
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "enable_parallax": false,
-        "full_width": true,
-        "image": "shopify://shop_images/Wake_loop_3200_x_1600_px_3.png",
-        "image_size": "auto",
-        "mobile_image": "shopify://shop_images/Wake_loop_13.png",
-        "mobile_text_position": "place-self-center text-center",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30,
-        "text_color": "#ffffff"
-      },
-      "type": "image-with-text-overlay"
-    },
-    "impact_text_4r9Pem": {
-      "block_order": [
-        "item_39dQtL",
-        "item_DQgqnw"
-      ],
-      "blocks": {
-        "item_39dQtL": {
-          "settings": {
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2,
-            "button_text": "",
-            "button_url": "",
-            "content": "",
-            "subheading": "HAPPY CUSTOMERS",
-            "title": "50.000+"
-          },
-          "type": "item"
-        },
-        "item_DQgqnw": {
-          "settings": {
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2,
-            "button_text": "",
-            "button_url": "",
-            "content": "",
-            "subheading": "5 STAR REVIEWS",
-            "title": "30.000+"
-          },
-          "type": "item"
-        }
-      },
-      "settings": {
-        "background": "",
-        "background_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "full_width": true,
-        "heading_gradient": "",
-        "heading_text_color": "",
-        "impact_text_size_ratio": 0.8,
-        "impact_text_style": "fill",
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "text_color": "",
-        "text_divider": "none"
-      },
-      "type": "impact-text"
-    },
     "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_rMgCr4": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"loopone-block\" aria-hidden=\"true\">\n  <span class=\"loopone-label\">Dr. odoro</span>\n</div>\n\n<style>\n  .loopone-label{\n    display:inline-block;\n    color:#90939a;\n    font-size:14px;\n    letter-spacing:.06em;\n    text-transform:uppercase;\n    font-weight:400;\n    line-height:1;\n    margin:0;\n  }\n\n  /* Reduce the built-in vertical spacing of the block that contains this custom liquid */\n  .product-info__block-item:has(.loopone-block){\n    margin-block: 4px !important;   /* was var(--product-info-block-spacing) */\n    padding: 0 !important;\n  }\n\n  /* Also reduce the gap before the next block (the title) and kill its top margin */\n  .product-info__block-item:has(.loopone-block) + .product-info__block-item{\n    margin-top: 4px !important;\n  }\n  .product-info__block-item:has(.loopone-block) + .product-info__block-item .product-info__title{\n    margin-top: 0 !important;\n  }\n\n  @media (max-width:768px){\n    .loopone-label{ font-size:14px; }\n  }\n</style>\n\n<script>\n  // Fallback for browsers that don't support :has() or if another stylesheet wins\n  (function(){\n    const label = document.currentScript.previousElementSibling;\n    const wrap  = label.closest('.product-info__block-item');\n    if(!wrap) return;\n\n    wrap.style.marginTop = '4px';\n    wrap.style.marginBottom = '4px';\n    wrap.style.padding = '0';\n\n    const next = wrap.nextElementSibling;\n    if(next){\n      next.style.marginTop = '4px';\n      const h = next.querySelector('.product-info__title');\n      if(h) h.style.marginTop = '0';\n    }\n  })();\n</script>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h1"
+          }
+        },
+        "liquid_E7eJQV": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-trust-badges-3'></div>"
+          }
+        },
+        "liquid_BKpiFw": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
+        "liquid_iGWWXt": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<!-- Subtitle under product title -->\n<p class=\"wl-usecases\" data-wl-usecases>\n  For Heavy Sleepers, Couples, and Early Risers\n</p>\n\n<style>\n  /* Visual style only (spacing is handled by JS below) */\n  .wl-usecases{\n    margin:0;                       /* we control gap via JS */\n    color:#000000;\n    font-size:14px;                 /* desktop */\n    line-height:1.6;\n    font-weight:400;\n    letter-spacing:0;\n    font-family: Helvetica, Arial, sans-serif;\n  }\n  @media (max-width:768px){\n    .wl-usecases{ font-size:15px; }\n  }\n</style>\n\n<script>\n  (function () {\n    // Find this subtitle node(s)\n    document.querySelectorAll('[data-wl-usecases]').forEach(function(node){\n      // Our block wrapper in most OS 2.0 themes\n      var thisBlock = node.closest('.product-info__block-item') || node.parentElement;\n      if (!thisBlock) return;\n\n      // The previous block should be the product title\n      var prev = thisBlock.previousElementSibling;\n\n      // Desktop: 0px gap. Mobile: 2px gap.\n      var mobile = window.matchMedia('(max-width: 768px)').matches;\n      var desiredTop = mobile ? '10px' : '10px';\n\n      // Apply inline styles so they win everything\n      thisBlock.style.marginTop = desiredTop;\n      thisBlock.style.marginBottom = '0px';\n      thisBlock.style.padding = '0';\n\n      if (prev) {\n        prev.style.marginBottom = '0px';\n        // Also nuke any top margin on the actual title element, if present\n        var title = prev.querySelector('.product-info__title, h1, .product__title');\n        if (title) title.style.marginTop = '0px';\n      }\n    });\n  })();\n</script>"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "liquid_VTj3M9": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div id='ss-product-variants'></div>"
+          }
+        },
+        "liquid_RJaNd4": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<style>\n  .info-wrapper {\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n    font-family: inherit;\n  }\n\n  .info-row {\n    display: flex;\n    align-items: center;\n    font-size: 15px;\n    font-weight: 400;\n    line-height: 1.2;\n  }\n\n  .info-icon {\n    width: 16px;\n    height: 16px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-right: 6px;\n    flex-shrink: 0;\n  }\n\n  .stock-dot {\n    width: 10px;\n    height: 10px;\n    background-color: orange;\n    border-radius: 50%;\n    box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15);\n    animation: pulse 2s infinite;\n  }\n\n  @keyframes pulse {\n    0% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n    50% { box-shadow: 0 0 0 6px rgba(255, 165, 0, 0.1); }\n    100% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n  }\n</style>\n\n<div class=\"info-wrapper\">\n  <div class=\"info-row\">\n    <div class=\"info-icon\"><div class=\"stock-dot\"></div></div>\n    <span id=\"stock-text\" style=\"color: orange;\">Live Stock Updates: 12 left in stock</span>\n  </div>\n  <div class=\"info-row\">\n    <div class=\"info-icon\">\n      <svg width=\"14\" height=\"14\" viewBox=\"0 0 640 512\" fill=\"black\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z\"/>\n      </svg>\n    </div>\n    <span>Free shipping from $50</span>\n  </div>\n</div>\n\n<script>\n  let stockCount = 12; // Starting stock number\n  const stockText = document.getElementById(\"stock-text\");\n\n  function updateStock() {\n    if (stockCount > 1) {\n      // Drop size: mostly 1, sometimes 2 or 3\n      let drop = Math.random() < 0.7 ? 1 : Math.floor(Math.random() * 3) + 1;\n      if (stockCount - drop < 1) drop = stockCount - 1;\n\n      stockCount -= drop;\n      stockText.textContent = `Live Stock Updates: ${stockCount} left in stock`;\n\n      scheduleNextUpdate();\n    }\n  }\n\n  function scheduleNextUpdate() {\n    let randomDelay;\n    if (stockCount > 5) {\n      randomDelay = Math.floor(Math.random() * (25000 - 5000 + 1)) + 5000;\n    } else {\n      randomDelay = Math.floor(Math.random() * (8000 - 2000 + 1)) + 2000;\n    }\n    setTimeout(updateStock, randomDelay);\n  }\n\n  scheduleNextUpdate();\n</script>"
+          }
+        },
+        "liquid_9WePai": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  .info-wrapper {\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n    font-family: inherit;\n  }\n\n  .info-row {\n    display: flex;\n    align-items: center;\n    font-size: 15px;\n    font-weight: 400;\n    line-height: 1.2;\n  }\n\n  .info-icon {\n    width: 16px;\n    height: 16px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-right: 6px;\n    flex-shrink: 0;\n  }\n\n  .stock-dot {\n    width: 10px;\n    height: 10px;\n    background-color: orange;\n    border-radius: 50%;\n    box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15);\n    animation: pulse 2s infinite; /* remove this line if you don't want pulsing */\n  }\n\n  .stock-text {\n    color: orange;\n    font-weight: 400;\n  }\n\n  @keyframes pulse {\n    0% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n    50% { box-shadow: 0 0 0 6px rgba(255, 165, 0, 0.10); }\n    100% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n  }\n</style>\n\n<div class=\"info-wrapper\">\n  <div class=\"info-row\">\n    <div class=\"info-icon\"><div class=\"stock-dot\"></div></div>\n    <span class=\"stock-text\">Limited stock available during our <em>Early</em> Black Friday Sale</span>\n  </div>\n</div>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_AkedpE": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"margin: 0 !important; padding: 0 !important;\">\n  <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin: 0 !important; padding: 0 !important;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/warranty-term.svg?v=1760648046\" alt=\"Return Icon\" style=\"width: 20px; height: 20px; margin: 0 !important; padding: 0 !important;\" />\n    <span style=\"margin: 0 !important; padding: 0 !important;\">60-day money-back guarantee</span>\n  </div>\n</div>"
+          }
+        },
+        "liquid_NW8JBb": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"offer offer--center bg-custom text-custom\"\n     style=\"--background: 241 241 241; --text-color: 0 0 0;\">\n  <div class=\"text-with-icon\">\n    <span class=\"h6\" style=\"font-family: Helvetica, Arial, sans-serif !important;\">Pre-Black Friday Sale 🖤</span>\n  </div>\n  <div class=\"prose text-sm\">\n    <p>Our biggest sale of the year just opened early. Benefit from never-before-seen deals while stock lasts.</p>\n  </div>\n</div>\n\n<style>\n  /* Force Helvetica for the whole banner */\n  .offer,\n  .offer *{\n    font-family: Helvetica, Arial, sans-serif !important;\n  }\n\n  .offer{\n    --radius: 8px;\n    --pad-y: 10px;\n    --pad-x: 12px;\n    --gap: 6px;\n\n    max-width: 840px;\n    margin: 10px auto;\n    padding: var(--pad-y) var(--pad-x);\n    background: rgb(var(--background));\n    color: rgb(var(--text-color));\n    border-radius: var(--radius);\n\n    display: grid;\n    gap: var(--gap);\n    justify-items: center;\n    align-items: center;\n  }\n  .offer--center{ text-align: center; }\n\n  .offer .h6{\n    margin: 0;\n    font-size: 16px;\n    line-height: 1.1;\n    font-weight: 700;\n  }\n  .offer .prose{ margin: 0; }\n  .offer .prose p{\n    margin: 0;\n    font-size: 13px;\n    line-height: 1.35;\n    font-weight: 500;\n  }\n\n  .bg-custom{ background: rgb(var(--background)) !important; }\n  .text-custom{ color: rgb(var(--text-color)) !important; }\n\n  @media (min-width: 768px){\n    .offer{ --pad-y: 12px; --pad-x: 14px; --gap: 8px; }\n    .offer .h6{ font-size: 15px; }\n    .offer .prose p{ font-size: 15px; }\n  }\n</style>"
+          }
+        },
+        "text_KgLHUK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Trusted by workers, athletes & parents tired of battling shoe stink.</strong><br/>Long shifts, sweaty shoes, or kids’ cleats that could clear a room? Dr. Odoro’s high-adsorption formula pulls out moisture and odor overnight. No chemicals, no effort, no more throwing out shoes.</p>"
+          }
+        },
+        "liquid_pffKr4": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 5px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/payment.webp?v=1747967871\">\n  </div>\n</div>"
+          }
+        },
+        "collapsible_text_TntdzM": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>No more shoe shame:</strong> eliminate odor for good and step out confidently.</li><li><strong>Works while you rest:</strong> insert, forget, and wake up to freshness.</li><li><strong>Zero effort:</strong> no sprays, no washing, no chemicals.</li><li><strong>Protects your investment: </strong>keeps shoes, gloves & bags smelling new.</li><li><strong>Safe for everyone:</strong> natural, non-toxic, and gentle on skin and materials</li><li><strong>Lasting freshness:</strong> reusable for months, not hours.<br/></li></ul>"
+          }
+        },
+        "collapsible_text_RFpbJU": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "How It Works",
+            "content": "<p>Most deodorizers hide smell with perfume: mixing with sweat and making it worse. </p><p><strong>Dr. Odoro works while you rest. </strong>Each bag pulls out sweat, moisture, and bad smells from your shoes overnight. No sprays, no fake scents - just real freshness that lasts. It doesn’t hide the stink. It removes it.</p><p><strong>How to Use Dr. Odoro:</strong><br/><strong>1. Insert:</strong> Put one bag in each shoe, glove, or bag after use.<br/><strong>2. Wait:</strong> Leave overnight so the Zeolite can absorb moisture and odor.<br/><strong>3.</strong> <strong>Refresh:</strong> Every few weeks, place the bags in sunlight for a few hours to recharge them.<br/><strong>4.</strong> <strong>Repeat:</strong> Reuse for up to 3 months.</p><p>No chemicals. No effort. No smell ever again.</p>"
+          }
+        },
+        "collapsible_text_ziLp8p": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Shipping & Returns",
+            "content": "<p><strong>Free Shipping on all orders. </strong>All orders processed and dispatched within 24-48 hours.<br/><br/>*Duties and taxes are included.<br/><br/><strong>Returns: </strong>We offer a 60-day return policy on all orders. To initiate a return, please contact our customer service team at support@drodoro.com</p><p><strong>Lifetime Warranty</strong> We stand behind the exceptional quality of every Dr. Odoro product. Our commitment is simple: if your product ever fails to function as designed, we'll make it right. No fine print, no complications – just our unwavering dedication to your satisfaction.</p>"
+          }
+        },
+        "collapsible_text_p3BDAF": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "FAQ",
+            "content": "<ul><li><strong>How does Dr. Odoro actually work?</strong><br/>Dr. Odoro uses activated Zeolite to absorb both odor molecules and moisture from inside your shoes.</li><li><strong>How long does Dr. Odoro last?</strong><br/>Each set lasts up to 3 months with proper care.<br/>Place them in direct sunlight for 2 to 3 hours every few weeks to recharge the Zeolite and restore full absorption power.</li><li><strong>Can I use The Neutralizer in more than just shoes?</strong><br/>The Neutralizer is specifically designed for shoes; it targets deep, trapped odor and moisture where sprays and powders can’t reach. If you’re looking to keep other spaces fresh, check out our Closet Fresh Bag and Fresh Capsule made for gym bags, closets, cars, and beyond.</li><li><strong>Is it safe for kids and pets? </strong>Yes completely. The Neutralizer is made from Zeolite, sealed in breathable linen. It contains zero chemicals, synthetic fragrances, or toxins. Safe for every household.</li><li><strong>How quickly will I notice results? </strong>Most users smell a difference within <strong>24 hours</strong>, and full freshness returns within <strong>48 hours</strong>. For shoes with heavy odor buildup, leave The Neutralizer inside for two nights for maximum effect.</li><li><strong>Do I need to keep buying refills? </strong>Not often. The Neutralizer itself is reusable for up to 3 months.</li><li><strong>What makes Dr. Odoro different from sprays or powders?</strong>                                  Sprays only mask odor with fragrance and often add moisture, making the problem worse. Powders are messy and temporary. Dr. Odoro solves odor physically, not chemically, by removing the moisture and compounds that cause it in the first place.</li></ul>"
+          }
+        },
+        "liquid_abLY8w": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- Dr. Odoro Reviews -->\n<div id=\"review1\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My son's cleats no longer smell like cat pee</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Soccer days used to make the whole car stink. One night with Dr. Odoro in his cleats and the smell was just gone.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Sarah K, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review2\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Work boots do not clear the room anymore</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I wear the same steel toe boots 10 hours a day. They used to reek. Now they just smell like nothing which is perfect.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Mike R, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review3\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Saved a pair of shoes I was about to throw away</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I tried sprays, baking soda and washing. Nothing worked. One night with Dr. Odoro in my running shoes and the rotten smell was gone.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Elena V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review4\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">The hockey bag no one wanted to open is fixed</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My teen's gear smelled like something died in there. Two Dr. Odoro bags in the bag and now I am not scared to bring it in the house.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Marcus T, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review5\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">I am not embarrassed to take my shoes off anymore</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to avoid visiting friends because of my feet. After a week of using Dr. Odoro my shoes just smell neutral. Huge relief.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Grace B, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review6\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Great for long shifts on your feet</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I am a nurse and my sneakers used to stink up the locker. Now I pop these in after work and they smell fresh by morning.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Toby W, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review7\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My climbing shoes no longer smell like death</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Climbing shoes are bare feet and sweat. These bags pulled the smell out in two nights. Now I use them after every session.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Nina V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review8\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">The soccer bag no longer poisons the car</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">We used to drive with the windows down in winter because of my daughter’s gear. Two Dr. Odoro bags and the smell is gone.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ben H, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review9\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">No more fake perfume smell</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Sprays just made my shoes smell like flowers and sweat. Dr. Odoro has zero scent and somehow the stink is just not there anymore.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lena M, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review10\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Best thing I bought for my gym routine</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I keep a pair in my training sneakers and another in my gym bag. Everything stays dry and there is zero funk.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Olivia R, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review11\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My hallway no longer smells like a locker room</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Four kids and a pile of shoes by the door was rough. Since using Dr. Odoro the smell is gone and guests do not get hit by a wall of funk.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Laura P, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review12\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My partner stopped complaining about my shoes</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">He used to leave my sneakers on the balcony because of the smell. Now they live in the closet again and no one notices a thing.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Chloe M, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review13\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Actually fixed the smell not just covered it</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I have tried every spray and powder. This is the only thing where the stink was gone in the morning and did not come back the next day.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Noah F, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review14\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Great for boxing gloves and pads</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My gloves used to smell awful even after airing out. I keep a Neutralizer in each glove and they stay dry and almost scent free.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Isabel R, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review15\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Perfect travel hack for re wearing clothes</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I travel with a carry on only. I toss Dr. Odoro in my shoes and near worn shirts in the hotel closet and everything stays fresh enough to reuse.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ethan S, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review16\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">The kids room smells normal again</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Between sports and play their shoes made the whole room sour. A few of these bags in the shoes and closet fixed it in a weekend.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Hannah G, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review17\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Worth it just for the confidence boost</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to worry people could smell my shoes at work. Now I know they cannot and I feel way more relaxed around others.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Sophie D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review18\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Smelly locker problem solved</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My locker at the gym used to smell like wet dog. I leave my shoes with Dr. Odoro inside and the locker does not smell at all now.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">William N, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review19\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Tiny bags huge difference</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I did not expect much from a small fabric bag. But it pulled months of stink out of my sneakers in one night.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Amelia J, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review20\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Best odor product I have ever tried</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Oversmelling shoes were just part of my life. With Dr. Odoro my shoes, bag and closet all smell normal again and it stays that way.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lucas K, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<script>\n  let currentReview = 1;\n  const totalReviews = 20;\n\n  function showReview(index) {\n    for (let i = 1; i <= totalReviews; i++) {\n      const el = document.getElementById('review' + i);\n      if (el) el.style.display = 'none';\n    }\n    const showEl = document.getElementById('review' + index);\n    if (showEl) showEl.style.display = 'flex';\n    currentReview = index;\n  }\n\n  function showNextReview() {\n    const nextReview = currentReview === totalReviews ? 1 : currentReview + 1;\n    showReview(nextReview);\n  }\n\n  function showPreviousReview() {\n    const prevReview = currentReview === 1 ? totalReviews : currentReview - 1;\n    showReview(prevReview);\n  }\n\n  showReview(currentReview);\n</script>\n<script>\n  setInterval(() => {\n    showNextReview();\n  }, 5000); // 7000 ms = 3 seconden, pas aan indien nodig\n</script>"
+          }
+        }
+      },
       "block_order": [
-        "judge_me_reviews_preview_badge_cwjVnx",
+        "liquid_rMgCr4",
         "title",
+        "liquid_E7eJQV",
+        "liquid_BKpiFw",
+        "liquid_iGWWXt",
         "badges",
         "price",
         "rating",
         "payment_terms",
         "separator",
         "description",
-        "variant_picker",
-        "liquid_LGGtrV",
-        "liquid_gf9BP7",
+        "liquid_VTj3M9",
+        "liquid_RJaNd4",
+        "liquid_9WePai",
         "buy_buttons",
-        "liquid_E8GGN4",
-        "liquid_AYf8qa",
-        "image_BGxTTA",
-        "liquid_KfQga7",
-        "text_q6yyHR",
-        "liquid_p7Bxfh",
-        "liquid_fYCN9X",
-        "collapsible_text_DwAeq6",
-        "collapsible_text_EHrPjY",
-        "collapsible_text_WwBkVq",
-        "collapsible_text_Rgj4JB",
-        "collapsible_text_qreJ9J",
-        "collapsible_text_8Ykkwf",
-        "liquid_c9t3mH"
+        "liquid_AkedpE",
+        "liquid_NW8JBb",
+        "text_KgLHUK",
+        "liquid_pffKr4",
+        "collapsible_text_TntdzM",
+        "collapsible_text_RFpbJU",
+        "collapsible_text_ziLp8p",
+        "collapsible_text_p3BDAF",
+        "liquid_abLY8w"
       ],
-      "blocks": {
-        "badges": {
-          "settings": {},
-          "type": "badges"
-        },
-        "buy_buttons": {
-          "settings": {
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": "",
-            "show_gift_card_recipient": false,
-            "show_payment_button": false
-          },
-          "type": "buy_buttons"
-        },
-        "collapsible_text_8Ykkwf": {
-          "settings": {
-            "content": "<ul><li><strong>How does the Loop One wake me up? </strong>Loop One uses vibrations on your wrist to wake you. It’s ideal for deep sleepers, couples, and anyone wanting a peaceful start to the day—without disturbing others.</li><li><strong>How many alarms can I set?             </strong>You can set a total of 3 separate alarms. You can also adjust the vibration strengt of the alarm.</li><li><strong>Can I wear it all night comfortably?</strong>Yes. Loop One is designed to be ultra-lightweight and breathable, so you can wear it all night without discomfort.</li><li><strong>How long does the battery last? </strong>The battery lasts up to 14 days on a single charge, depending on usage. It fully recharges in under 2 hours using the USB charger.</li><li><strong>Is it compatible with my phone or alarm app? </strong>Loop One works independently and doesn’t require syncing with any app. Simply set your wake-up time directly on the device.</li><li><strong>What if I sleep through the vibration?</strong>Loop One’s vibration intensity has been carefully tested to ensure it’s strong enough to wake most users. You can adjust the settings if needed for deeper sleepers.</li><li><strong>Will it fit my wrist?   </strong>                                  Yes! We made sure that the Loop One is adjustable for every wrist size.</li></ul>",
-            "title": "FAQ"
-          },
-          "type": "collapsible_text"
-        },
-        "collapsible_text_DwAeq6": {
-          "settings": {
-            "content": "<ul><li><strong>Never oversleep again</strong> — beat snoozing for good and wake up in control.</li><li><strong>Wake without waking others</strong> — your alarm, your peace.</li><li><strong>Zero hassle</strong> — no apps, no syncing, just simple and effective.</li><li><strong>Stress-free mornings</strong> — no jolts, panic, or racing heart.</li><li><strong>Failsafe for heavy sleepers</strong> — vibration strong enough to break through the heaviest sleep.</li><li><strong>Lifetime peace of mind</strong> — backed forever, no alarm stress again.</li></ul><p></p>",
-            "title": "BENEFITS"
-          },
-          "type": "collapsible_text"
-        },
-        "collapsible_text_EHrPjY": {
-          "settings": {
-            "content": "<p>Loop One <strong>works</strong> by <strong>sending</strong> vibration <strong>signals</strong> directly through your wrist at your set wake-up time. Unlike sound, which your <strong>brain</strong> can learn to ignore, these <strong>physical</strong> impulses are <strong>processed</strong> by your nervous <strong>system</strong> and trigger your body to wake up <strong>automatically</strong>. That’s why <strong>vibration</strong> is far more <strong>reliable</strong> than noise-based alarms, <strong>especially</strong> for <strong>heavy</strong> sleepers.</p><p></p><p><strong>How to Set Up Your Loop One (In Under 2 Minutes)</strong></p><p><strong>1. Turn it on</strong><br/>Press the button once. That’s it.</p><p><strong>2. Set Alarm 1</strong><br/>Press 5 times → hold 3 seconds to edit → set hours/minutes with short presses → hold again to save.<br/><br/><em>Your alarm repeats daily until you turn it off.</em></p><p><strong>3. Add more alarms</strong><br/>Press 6 or 7 times for other alarm groups — same quick steps as Alarm 1.</p><p><strong>4. Check your battery</strong><br/>From standby, hold 3 seconds.</p><p><strong>Bonus:</strong> Prefer watching instead of reading? </p><p>[<a href=\"/pages/quick-start\" title=\"Quick Start\">Watch the 60-second setup video here</a>]</p>",
-            "title": "HOW DOES IT WORK?"
-          },
-          "type": "collapsible_text"
-        },
-        "collapsible_text_Rgj4JB": {
-          "settings": {
-            "content": "<p>All orders processed and dispatched within 24-48 hours.</p><p><strong>Free Shipping on orders over $50 </strong>Duties and taxes are included.</p>",
-            "title": "SHIPPING"
-          },
-          "type": "collapsible_text"
-        },
-        "collapsible_text_WwBkVq": {
-          "settings": {
-            "content": "<p>We like to keep things simple. Every order of the Loop One contains the following:</p><ul><li><strong>The Loop One Wristband</strong></li><li><strong>Lifetime Warranty</strong></li></ul>",
-            "title": "WHAT'S IN THE BOX?"
-          },
-          "type": "collapsible_text"
-        },
-        "collapsible_text_qreJ9J": {
-          "settings": {
-            "content": "<p><strong>Lifetime Warranty</strong> We stand behind the exceptional quality of every Wake Loop product. Our commitment is simple: if your product ever fails to function as designed, we'll make it right. No fine print, no complications – just our unwavering dedication to your satisfaction.</p><p><strong>Hassle-Free Returns</strong> • 60-Day Money-Back Guarantee • Full refund provided • No questions asked • Simple email process</p><p>Not completely satisfied? Simply email us at info@wakeloop.com within 60 days of purchase.</p>",
-            "title": "WARRANTY & RETURNS"
-          },
-          "type": "collapsible_text"
-        },
-        "description": {
-          "settings": {
-            "collapse_content": false
-          },
-          "type": "description"
-        },
-        "image_BGxTTA": {
-          "disabled": true,
-          "settings": {
-            "alignment": "center",
-            "image": "shopify://shop_images/1.webp",
-            "max_width": 500
-          },
-          "type": "image"
-        },
-        "judge_me_reviews_preview_badge_cwjVnx": {
-          "settings": {},
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8"
-        },
-        "liquid_AYf8qa": {
-          "disabled": true,
-          "settings": {
-            "liquid": "<div class=\"offer\" style=\"--background: 242 242 242; --text-color: 0 0 0;\">\n  <div class=\"text-with-icon\">\n    <span class=\"offer-heading\">Buy 2 For $99.90 — Save $20 Today</span>\n  </div>\n  <div class=\"offer-body\">\n    </p><strong>Treat Your Loved Ones:</strong><p>\nTo take advantage of our <strong>temporary</strong> Buy 2, <strong>Save $20</strong> sale, add at least 2 Loop One wristbands to your cart and the discount will be applied <strong>automatically</strong>.\n</p> \n</div>\n</div>\n\n\n<style>\n  .offer {\n    box-sizing: border-box;\n    gap: 0.5rem; /* matches var(--spacing-2) */\n    padding: 1.25rem; /* matches var(--spacing-5) */\n    border-radius: 0.375rem; /* matches var(--rounded-sm) */\n    display: grid;\n    text-align: center;\n    justify-items: center;\n    margin-block-start: 1.5rem; /* matches var(--spacing-6) */\n    margin-block-end: 1.5rem; /* matches var(--spacing-6) */\n    color: rgb(var(--text-color));\n    background: rgb(var(--background));\n    width: 100%;\n  }\n\n  .offer-heading {\n    font-family: HearsBold, Helvetica, Arial, sans-serif !important;\n    font-weight: 700;\n    font-size: 1rem; /* matches var(--text-h6) */\n    line-height: 1.4;\n    display: block;\n  }\n\n  .offer-body {\n    font-family: Helvetica, Arial, sans-serif;\n    font-size: 0.875rem; /* matches var(--text-sm) */\n    line-height: 1.6;\n    max-width: 60ch;\n  }\n\n  .offer-body p {\n    margin: 0;\n  }\n</style>"
-          },
-          "type": "liquid"
-        },
-        "liquid_E8GGN4": {
-          "settings": {
-            "liquid": "<div style=\"margin: 0 !important; padding: 0 !important;\">\n  <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-family: inherit; margin: 0 !important; padding: 0 !important;\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0726/8165/2548/files/left-and-right-arrows.svg?v=1709739432\" alt=\"Return Icon\" style=\"width: 20px; height: 20px; margin: 0 !important; padding: 0 !important;\" />\n    <span style=\"margin: 0 !important; padding: 0 !important;\">60 day hassle-free returns</span>\n  </div>\n</div>"
-          },
-          "type": "liquid"
-        },
-        "liquid_KfQga7": {
-          "disabled": true,
-          "settings": {
-            "liquid": "<style>\n    .stock-update-banner {\n        background-color: #000;\n        border: 1.5px dashed #fff;\n        border-radius: 12px;\n        padding: 8px 16px; /* Reduced padding for smaller height */\n        color: #fff;\n        font-family: QUANTICO;\n        font-size: 13px;\n        max-width: 100%;\n        box-sizing: border-box;\n        text-align: center;\n    }\n\n    .stock-update-content {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 8px;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n\n    .stock-update-bullet {\n        color: #fff;\n        font-size: 10px; /* Smaller dot */\n    }\n\n    .stock-update-text {\n        margin: 0;\n        color: #fff;\n        font-weight: 400;\n    }\n\n    .stock-update-progress-container {\n        background-color: #333;\n        height: 5px; /* Smaller bar height */\n        margin-top: 6px; /* Less spacing */\n        border-radius: 4px;\n        overflow: hidden;\n    }\n\n    .stock-update-progress-bar {\n        background-color: #fff;\n        height: 100%;\n        transition: width 0.4s ease;\n    }\n\n    @media (max-width: 480px) {\n        .stock-update-banner {\n            font-size: 12px;\n        }\n        .stock-update-content {\n            flex-wrap: nowrap;\n        }\n    }\n</style>\n\n<section class=\"stock-update-banner\">\n    <div class=\"stock-update-content\">\n        <span class=\"stock-update-bullet\" aria-hidden=\"true\">●</span>\n        <p class=\"stock-update-text\">LIVE STOCK UPDATES: <span id=\"stock-count\">78</span> units left in stock</p>\n    </div>\n    <div class=\"stock-update-progress-container\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n        <div class=\"stock-update-progress-bar\" id=\"progress-bar\" style=\"width: 80%;\"></div>\n    </div>\n</section>\n\n<script>\n    let voorraad = 78;\n    let maxVoorraad = 78;\n    let progressPercentage = 80;\n\n    function updateStock() {\n        voorraad -= 6;\n        if (voorraad < 0) voorraad = 0;\n        document.getElementById(\"stock-count\").textContent = voorraad;\n        progressPercentage = (voorraad / maxVoorraad) * 80;\n        document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n        document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n    }\n\n    setInterval(updateStock, 10000);\n    document.getElementById(\"stock-count\").textContent = voorraad;\n    document.getElementById(\"progress-bar\").style.width = progressPercentage + '%';\n    document.querySelector('[aria-valuenow]').setAttribute('aria-valuenow', progressPercentage);\n</script>"
-          },
-          "type": "liquid"
-        },
-        "liquid_LGGtrV": {
-          "settings": {
-            "liquid": "<style>\n  .info-wrapper {\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n    font-family: inherit;\n  }\n\n  .info-row {\n    display: flex;\n    align-items: center;\n    font-size: 15px;\n    font-weight: 400;\n    line-height: 1.2;\n  }\n\n  .info-icon {\n    width: 16px;\n    height: 16px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-right: 6px;\n    flex-shrink: 0;\n  }\n\n  .stock-dot {\n    width: 10px;\n    height: 10px;\n    background-color: orange;\n    border-radius: 50%;\n    box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15);\n    animation: pulse 2s infinite;\n  }\n\n  @keyframes pulse {\n    0% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n    50% { box-shadow: 0 0 0 6px rgba(255, 165, 0, 0.1); }\n    100% { box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15); }\n  }\n</style>\n\n<div class=\"info-wrapper\">\n  <div class=\"info-row\">\n    <div class=\"info-icon\"><div class=\"stock-dot\"></div></div>\n    <span id=\"stock-text\" style=\"color: orange;\">Live Stock Updates: 12 left in stock</span>\n  </div>\n  <div class=\"info-row\">\n    <div class=\"info-icon\">\n      <svg width=\"14\" height=\"14\" viewBox=\"0 0 640 512\" fill=\"black\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z\"/>\n      </svg>\n    </div>\n    <span>Free shipping from $50</span>\n  </div>\n</div>\n\n<script>\n  let stockCount = 12; // Starting stock number\n  const stockText = document.getElementById(\"stock-text\");\n\n  function updateStock() {\n    if (stockCount > 1) {\n      // Drop size: mostly 1, sometimes 2 or 3\n      let drop = Math.random() < 0.7 ? 1 : Math.floor(Math.random() * 3) + 1;\n      if (stockCount - drop < 1) drop = stockCount - 1;\n\n      stockCount -= drop;\n      stockText.textContent = `Live Stock Updates: ${stockCount} left in stock`;\n\n      scheduleNextUpdate();\n    }\n  }\n\n  function scheduleNextUpdate() {\n    let randomDelay;\n    if (stockCount > 5) {\n      randomDelay = Math.floor(Math.random() * (25000 - 5000 + 1)) + 5000;\n    } else {\n      randomDelay = Math.floor(Math.random() * (8000 - 2000 + 1)) + 2000;\n    }\n    setTimeout(updateStock, randomDelay);\n  }\n\n  scheduleNextUpdate();\n</script>"
-          },
-          "type": "liquid"
-        },
-        "liquid_c9t3mH": {
-          "settings": {
-            "liquid": "<!-- Wake Loop Reviews -->\n<div id=\"review1\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Waking up has never felt this natural</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to snooze like 5 alarms and still wake up late. This thing legit got me back on track.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Samantha L, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review2\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Finally, I don't wake up my partner</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to oversleep at least 3 times a week. Since switching to this, not once.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">James D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review3\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">I wake up feeling clear and calm</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My phone alarm just wasn’t cutting it. I’d sleep through it or hit snooze. This changed everything.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Elena V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review4\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">No more groggy mornings</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Loop One actually helped me stop oversleeping — and I’ve tried everything before this.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Marcus T, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review5\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My sleep anxiety is gone</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I used to stay up worrying I’d miss my alarm. Now I just relax. I trust the Loop to wake me, and it always does.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Grace B, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n<div id=\"review6\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">The Loop just works</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Oversleeping made me late for work more times than I can count. Haven’t been late once since using Loop One.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Toby W, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review7\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Feels like the future</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">For real, I don’t know how it works so well, but I don’t oversleep anymore. At all.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Nina V, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review8\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Great for shared bedrooms</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Every morning used to be chaos — late, stressed, rushing. Now I wake up on time, no problem.”</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ben H, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review9\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Gentle but reliable</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">It’s amazing how I can wake up with just a soft vibration. Never thought I’d prefer this to my phone alarm, but here we are.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lena M, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review10\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Best gift I gave myself</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I’ve always had trouble hearing alarms. I thought I just had bad sleep habits — turns out I needed this.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Olivia R, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n<div id=\"review11\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Peaceful mornings again</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">This is the first thing that actually got me out of bed consistently. Oversleeping was ruining my mornings.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Laura P, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review12\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Saves my relationship 😂</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">My partner used to hate my alarms. With Loop One, I wake up and he sleeps in. We both win.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Chloe M, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review13\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Subtle but powerful</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I’ve overslept through every alarm app, sunrise clock, you name it. Loop One is the only thing that works.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Noah F, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review14\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Wakes me every time</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Was oversleeping so bad I set 6 alarms. Now I just use Loop One and wake up instantly.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Isabel R, 4 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review15\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Sleep quality improved</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">It felt weird wearing it at first but now it’s the reason I haven’t overslept in weeks.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Ethan S, 5 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review16\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">My kids stay asleep!</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">I don’t worry about waking the baby anymore. That alone is worth every cent of this thing.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Hannah G, 6 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review17\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">I actually feel rested</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Used to sleep right through the loudest iPhone alarm. This little wristband wakes me up every time.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Sophie D, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review18\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Silent but effective</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Oversleeping made me feel lazy and behind. Now I’m up, focused, and on time.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">William N, 3 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review19\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">Tiny product, big impact</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Didn’t believe vibration could actually wake me. But it does. And I haven’t overslept once.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Amelia J, 1 hour ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<div id=\"review20\" style=\"display: none; justify-content: space-between; align-items: center; margin-bottom: 20px;\">\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showPreviousReview()\">&#8249;</div>\n  <div style=\"width: 80%;\">\n    <div style=\"color: #00b67a; font-size: 18px;\">★★★★★<span style=\"color: #00b67a; font-size: 12px; margin-left: 5px;\">Verified</span></div>\n    <div style=\"font-weight: bold; margin-top: 5px;\">This actually changed my life</div>\n    <div style=\"margin-top: 10px; font-size: 14px; color: #333;\">Even after 4 hours of sleep, this still wakes me up. I don’t oversleep anymore, period.</div>\n    <div style=\"margin-top: 10px; font-size: 12px; color: #999;\">Lucas K, 2 hours ago</div>\n  </div>\n  <div style=\"cursor: pointer; color: #00b67a; font-size: 30px;\" onclick=\"showNextReview()\">&#8250;</div>\n</div>\n\n<script>\n  let currentReview = 1;\n  const totalReviews = 20;\n\n  function showReview(index) {\n    for (let i = 1; i <= totalReviews; i++) {\n      const el = document.getElementById('review' + i);\n      if (el) el.style.display = 'none';\n    }\n    const showEl = document.getElementById('review' + index);\n    if (showEl) showEl.style.display = 'flex';\n    currentReview = index;\n  }\n\n  function showNextReview() {\n    const nextReview = currentReview === totalReviews ? 1 : currentReview + 1;\n    showReview(nextReview);\n  }\n\n  function showPreviousReview() {\n    const prevReview = currentReview === 1 ? totalReviews : currentReview - 1;\n    showReview(prevReview);\n  }\n\n  showReview(currentReview);\n</script>\n<script>\n  setInterval(() => {\n    showNextReview();\n  }, 5000); // 7000 ms = 3 seconden, pas aan indien nodig\n</script>"
-          },
-          "type": "liquid"
-        },
-        "liquid_fYCN9X": {
-          "settings": {
-            "liquid": "<div class=\"order-info-and-payments\" style=\"margin-top: 0px; padding-top: 5px; margin-bottom: 0.5cm;\"> <!-- Ruimte bovenaan minimaliseren -->\n  <div class=\"payment-icons\">\n    <img loading=\"lazy\" width=\"100%\" height=\"100%\" src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/payment.webp?v=1747967871\">\n  </div>\n</div>"
-          },
-          "type": "liquid"
-        },
-        "liquid_gf9BP7": {
-          "disabled": true,
-          "settings": {
-            "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');\n\n  .bogo-banner {\n    display: flex;\n    align-items: center;\n    border: 1px dotted #000;\n    background-color: #f9fbfc;\n    padding: 8px 12px;\n    border-radius: 6px;\n    font-family: 'Quantico', sans-serif;\n    max-width: 540px;\n    margin: 10px auto;\n    gap: 12px;\n  }\n\n  .bogo-banner img {\n    max-width: 65px;\n    height: auto;\n    border-radius: 4px;\n  }\n\n  .bogo-text h2 {\n    font-size: 15px;\n    margin: 0 0 2px;\n    color: #000;\n  }\n\n  .price-line {\n    display: flex;\n    align-items: center;\n    font-size: 13px;\n    margin: 2px 0;\n  }\n\n  .original-price {\n    text-decoration: line-through;\n    color: #888;\n    margin-right: 6px;\n  }\n\n  .timer {\n    color: #0078F0;\n    font-weight: bold;\n  }\n\n  .bogo-text p {\n    font-size: 12px;\n    margin: 1px 0;\n    color: #333;\n  }\n</style>\n\n<div class=\"bogo-banner\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0938/4601/2235/files/Wakeloop_11_101c183a-d59c-4db4-ba52-58f35fa58ce3.png?v=1749941152\" alt=\"Free Blue Light Glasses\">\n  <div class=\"bogo-text\">\n    <h2>FREE Blue Light Blocking Glasses Included</h2>\n    <div class=\"price-line\">\n      <span class=\"original-price\">£30.00</span>\n      <span class=\"timer\" id=\"countdown\">FREE for 10:00</span>\n    </div>\n    <p>Applies automatically in your cart.</p>\n  </div>\n</div>\n\n<script>\n  let countdown = 600; // 10 minutes in seconds\n  const el = document.getElementById('countdown');\n\n  function updateTimer() {\n    if (countdown > 0) {\n      const minutes = Math.floor(countdown / 60);\n      const seconds = countdown % 60;\n      el.textContent = `FREE for ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;\n      countdown--;\n    } else {\n      el.textContent = \"Offer expired\";\n    }\n  }\n\n  updateTimer();\n  const timerInterval = setInterval(updateTimer, 1000);\n</script>"
-          },
-          "type": "liquid"
-        },
-        "liquid_p7Bxfh": {
-          "settings": {
-            "liquid": "<div id='ss-trust-badges-3'></div>"
-          },
-          "type": "liquid"
-        },
-        "payment_terms": {
-          "settings": {},
-          "type": "payment_terms"
-        },
-        "price": {
-          "settings": {
-            "show_taxes_notice": false
-          },
-          "type": "price"
-        },
-        "rating": {
-          "disabled": true,
-          "settings": {
-            "show_empty": false
-          },
-          "type": "rating"
-        },
-        "separator": {
-          "disabled": true,
-          "settings": {},
-          "type": "separator"
-        },
-        "text_q6yyHR": {
-          "settings": {
-            "text": "<p><strong>Join thousands taking control of their mornings—without the noise.</strong><br/>Heavy sleeper? Chronic snoozer? Partner tired of your alarms? Loop One’s silent wrist vibrations cut through even the deepest sleep—without waking anyone else.</p>"
-          },
-          "type": "text"
-        },
-        "title": {
-          "settings": {
-            "heading_tag": "h3"
-          },
-          "type": "title"
-        },
-        "variant_picker": {
-          "settings": {
-            "color_mode": "variant",
-            "hide_sold_out_variants": false,
-            "selector_mode": "block",
-            "size_chart_page": "",
-            "stack_blocks": true
-          },
-          "type": "variant_picker"
-        }
-      },
       "settings": {
-        "background": "",
-        "background_gradient": "",
-        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "full_width": false,
+        "show_fixed_add_to_cart": true,
         "desktop_media_width": 55,
-        "enable_image_zoom": true,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
-        "full_width": false,
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": "",
+        "enable_image_zoom": false,
         "max_image_zoom_level": 3,
-        "mobile_carousel_control": "thumbnails",
-        "mobile_media_size": "expanded",
-        "show_fixed_add_to_cart": true,
-        "text_color": ""
-      },
-      "type": "main-product"
-    },
-    "media_with_text_AwCX3C": {
-      "block_order": [
-        "image_BeRG6y"
-      ],
-      "blocks": {
-        "image_BeRG6y": {
-          "settings": {
-            "background": "#000000",
-            "background_gradient": "",
-            "button_background": "",
-            "button_text_color": "",
-            "content": "<p>Try Loop One risk-free. If you’re not completely satisfied within 60 days, contact our lovely support team for a full compensation. Your sleep, your terms.</p>",
-            "icon": "none",
-            "icon_width": 48,
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_17_00_26.png",
-            "link_text": "",
-            "link_url": "",
-            "media_position": "end",
-            "media_width": 40,
-            "subheading": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "text_position": "place-self-center-start text-start",
-            "title": "60 DAYS MONEY BACK GUARANTEE"
-          },
-          "type": "image"
-        }
-      },
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
-      },
-      "type": "media-with-text"
-    },
-    "media_with_text_LtprTE": {
-      "block_order": [
-        "image_b83jfB"
-      ],
-      "blocks": {
-        "image_b83jfB": {
-          "settings": {
-            "background": "#000000",
-            "background_gradient": "",
-            "button_background": "",
-            "button_text_color": "",
-            "content": "<p>Oversleeping doesn’t make you lazy, your alarm just isn’t working.<br/><br/>Loop One wakes you through powerful, silent vibration right on your wrist. No more noise, no more snoozing, no more missed mornings.<br/><br/>Finally get up on time, even if you’re a heavy sleeper</p>",
-            "icon": "none",
-            "icon_width": 48,
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_15_45_50.png",
-            "link_text": "",
-            "link_url": "",
-            "media_position": "start",
-            "media_width": 40,
-            "subheading": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "text_position": "place-self-center-end text-end",
-            "title": "Tired of waking up late?"
-          },
-          "type": "image"
-        }
-      },
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
-      },
-      "type": "media-with-text"
-    },
-    "media_with_text_WPkVK7": {
-      "block_order": [
-        "image_EBdKg9"
-      ],
-      "blocks": {
-        "image_EBdKg9": {
-          "settings": {
-            "background": "#000000",
-            "background_gradient": "",
-            "button_background": "",
-            "button_text_color": "",
-            "content": "<p>Loop One was designed for one mission: wake you up, without chaos.<br/>It works silently, without disturbing your partner or shocking your system.<br/>No screen. No sound. No nonsense. Just clean, reliable wake-ups, every time. All backed by a Lifetime warranty.</p>",
-            "icon": "none",
-            "icon_width": 48,
-            "image": "shopify://shop_images/ChatGPT_Image_22_mei_2025_16_18_34_091a7a77-f0c8-4616-9453-cd8bea25ce0e.png",
-            "link_text": "",
-            "link_url": "",
-            "media_position": "end",
-            "media_width": 40,
-            "subheading": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "text_position": "place-self-center-start text-start",
-            "title": "Made for heavy sleepers. Built for real life."
-          },
-          "type": "image"
-        }
-      },
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
-      },
-      "type": "media-with-text"
-    },
-    "rich_text_qEWyed": {
-      "block_order": [
-        "heading_fwWHJV"
-      ],
-      "blocks": {
-        "heading_fwWHJV": {
-          "settings": {
-            "gradient": "",
-            "heading_tag": "h6",
-            "text": "LOVED BY 100.000+ HAPPY CUSTOMERS.",
-            "text_color": ""
-          },
-          "type": "heading"
-        }
-      },
-      "name": "Rich text",
-      "settings": {
         "background": "",
         "background_gradient": "",
-        "content_width": "small",
-        "full_width": true,
         "text_color": "",
-        "text_position": "center"
-      },
-      "type": "rich-text"
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
     },
-    "trust_badges_L7QLMF": {
-      "block_order": [
-        "item_8KFyJn",
-        "item_PghVGq",
-        "item_gkeBNp",
-        "item_QnH7zr"
-      ],
+    "add_ons_7JfizX": {
+      "type": "add-ons",
       "blocks": {
-        "item_8KFyJn": {
+        "add_on_iJfGQE": {
+          "type": "add_on",
           "settings": {
-            "icon": "tick",
-            "text": "<p><strong>Finally wake up on time,</strong> even if you’ve slept through every alarm you’ve <strong>ever</strong> set.</p>"
-          },
-          "type": "item"
+            "product": "test",
+            "variant_id": "",
+            "title": "",
+            "badge_text": "",
+            "price": 2000,
+            "compare_price": 2500
+          }
         },
-        "item_PghVGq": {
+        "add_on_VkKPiD": {
+          "type": "add_on",
           "settings": {
-            "icon": "tick",
-            "text": "<p><strong>No more “sorry I’m late” texts,</strong> stop snoozing and start owning your mornings.</p>"
-          },
-          "type": "item"
+            "product": "shoe-care-brush",
+            "variant_id": "",
+            "title": "",
+            "badge_text": ""
+          }
         },
-        "item_QnH7zr": {
-          "disabled": true,
+        "add_on_PmfqGX": {
+          "type": "add_on",
           "settings": {
-            "icon": "tick",
-            "text": "<p><strong>All-night comfort,</strong> so light, you’ll forget you’re wearing it until it wakes you.</p>"
-          },
-          "type": "item"
-        },
-        "item_gkeBNp": {
-          "settings": {
-            "icon": "tick",
-            "text": "<p><strong>Silent, partner-friendly,</strong> powerful vibrations that wake you, not the whole house.</p>"
-          },
-          "type": "item"
+            "product": "the-neutralizer-boxing-gloves",
+            "variant_id": "",
+            "title": "",
+            "badge_text": "",
+            "price": 1200,
+            "compare_price": 1500
+          }
         }
       },
+      "block_order": [
+        "add_on_iJfGQE",
+        "add_on_VkKPiD",
+        "add_on_PmfqGX"
+      ],
+      "name": "Popular add-ons",
       "settings": {
+        "title": "Exclusive offers",
+        "subtitle": "Bundle these essentials with The Neutralizer and complete your odor-free routine",
+        "visible_count": 1,
+        "show_all_label": "All add-ons",
+        "show_less_label": "Show less"
+      }
+    },
+    "ugc_continuous_slider_3GpwE8": {
+      "type": "ugc-continuous-slider",
+      "blocks": {
+        "image_3tQVFa": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/1.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_4txXpM": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/12.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_3XEKeW": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/9.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_D4YfQ7": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/11.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_k9Fjpx": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/14.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_MyFhFV": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/2.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_fNQAVd": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/8.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_T4CXLG": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/3.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_Qgritt": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/7.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_ecxrWj": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/15.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_H788aT": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/4.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_TL7XNX": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/23.png",
+            "alt": "Customer photo"
+          }
+        },
+        "image_RKRXWf": {
+          "type": "image",
+          "settings": {
+            "img": "shopify://shop_images/25.png",
+            "alt": "Customer photo"
+          }
+        }
+      },
+      "block_order": [
+        "image_3tQVFa",
+        "image_4txXpM",
+        "image_3XEKeW",
+        "image_D4YfQ7",
+        "image_k9Fjpx",
+        "image_MyFhFV",
+        "image_fNQAVd",
+        "image_T4CXLG",
+        "image_Qgritt",
+        "image_ecxrWj",
+        "image_H788aT",
+        "image_TL7XNX",
+        "image_RKRXWf"
+      ],
+      "name": "UGC Continuous Slider",
+      "settings": {
+        "headline": "Customers Love Dr. Odoro!",
+        "headline_size": 20,
+        "bg": "#ffffff",
+        "img_height_desktop": 350,
+        "img_height_mobile": 280,
+        "img_radius": 8,
+        "gap": 20,
+        "speed_px": 40
+      }
+    },
+    "trust_badges_U4tFfA": {
+      "type": "trust-badges",
+      "blocks": {
+        "item_r3eBai": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "image": "shopify://shop_images/Screenshot_2023-09-10_at_08.55.44_3dd651f4-c7eb-4f9e-9bb1-cba8b76413e0.webp",
+            "text": "<p>Eliminates embedded shoe-odor overnight</p>"
+          }
+        },
+        "item_BMrVgC": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "image": "shopify://shop_images/Screenshot_2023-09-10_at_08.55.44_3dd651f4-c7eb-4f9e-9bb1-cba8b76413e0.webp",
+            "text": "<p>Trusted by workers, athletes & parents who’ve tried everything</p>"
+          }
+        },
+        "item_B8bcdD": {
+          "type": "item",
+          "settings": {
+            "icon": "tick",
+            "image": "shopify://shop_images/truck-svgrepo-com_1.svg",
+            "text": "<p>Free Shipping</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_r3eBai",
+        "item_BMrVgC",
+        "item_B8bcdD"
+      ],
+      "name": "SS - Trust badges #3",
+      "settings": {
+        "trust_position": "below_title",
+        "item_gap": 10,
+        "item_gap_mobile": 10,
+        "item_mt": 8,
+        "item_mt_mobile": 8,
+        "image_icon_size": 22,
+        "image_icon_size_mobile": 20,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 150,
+        "icon_color": "#121212",
+        "text_color": "#121212",
         "background_color": "",
         "background_gradient": "",
         "border_color": "#000000",
-        "border_thickness": 0,
-        "icon_color": "#121212",
-        "image_icon_size": 22,
-        "image_icon_size_mobile": 20,
-        "item_gap": 10,
-        "item_gap_mobile": 10,
-        "item_mt": 16,
-        "item_mt_mobile": 16,
-        "margin_bottom": 0,
         "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
         "padding_bottom": 0,
         "padding_horizontal": 0,
         "padding_horizontal_mobile": 0,
-        "padding_top": 0,
-        "text_color": "#121212",
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_height": 150,
-        "text_size": 14,
-        "text_size_mobile": 14,
-        "trust_position": "below_title"
-      },
-      "type": "trust-badges"
+        "border_thickness": 0
+      }
     },
-    "video_M8X7BP": {
-      "settings": {
-        "allow_transparent_header": false,
-        "autoplay": true,
-        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "full_width": false,
-        "overlay_color": "#000000",
-        "overlay_opacity": 30,
-        "text_color": "#ffffff",
-        "video": "shopify://files/videos/instructie vid.mp4",
-        "video_size": "md"
+    "marquee_loop_xaMLUL": {
+      "type": "marquee-loop",
+      "blocks": {
+        "usp_defFXm": {
+          "type": "usp",
+          "settings": {
+            "text": "Limited Time Offer",
+            "svg_icon": "",
+            "icon_width": 32
+          }
+        },
+        "usp_czBit3": {
+          "type": "usp",
+          "settings": {
+            "text": "Free Shipping",
+            "svg_icon": "",
+            "icon_width": 32
+          }
+        },
+        "usp_xcgtjq": {
+          "type": "usp",
+          "settings": {
+            "text": "60-Day Money Back Guarantee",
+            "svg_icon": "",
+            "icon_width": 32
+          }
+        }
       },
-      "type": "video"
+      "block_order": [
+        "usp_defFXm",
+        "usp_czBit3",
+        "usp_xcgtjq"
+      ],
+      "name": "Scrolling USP Marquee",
+      "settings": {
+        "full_width": true,
+        "max_width": 1200,
+        "gap": 60,
+        "gap_mobile": 32,
+        "speed": 22,
+        "font_size": 18,
+        "font_size_mobile": 18,
+        "icon_size": 24,
+        "icon_size_mobile": 22,
+        "text_weight": 400,
+        "use_gradient": true,
+        "grad_from": "#c0c71e",
+        "grad_to": "#61633a",
+        "solid_color": "#1a1a1a",
+        "fade_edges": true,
+        "pad_y": 0,
+        "pad_x": 0,
+        "pad_y_mobile": 16,
+        "pad_x_mobile": 16
+      }
+    },
+    "media_with_text_xw8qh8": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_xYngAW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_346e1172-747e-46bf-bf61-22e4eb0f5844.png",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Put an end to stinky, bacteria-filled shoes!",
+            "content": "<p>Trapped sweat and poor airflow turn your shoes into the perfect breeding ground for odor-causing bacteria. Sprays and powders only hide the smell: they don’t stop what’s actually causing it. <strong>The most effective way to eliminate odor is to remove it at the source.</strong></p><p>The Neutralizer’s mineral-based Zeolite core captures odor molecules and moisture directly from your shoes, destroying the bacteria that create smell in the first place. This keeps your shoes dry, clean, and fresh; no chemicals, no fragrance, no effort.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#2e3a29",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_xYngAW"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "wl_media_with_features_xCgfw9": {
+      "type": "wl-media-with-features",
+      "blocks": {
+        "feature_FQFCzJ": {
+          "type": "feature",
+          "settings": {
+            "title": "Powerful Vibration Technology",
+            "text": "Engineered to wake even the heaviest sleepers through your body’s natural response system."
+          }
+        },
+        "feature_xQe9cm": {
+          "type": "feature",
+          "settings": {
+            "title": "Silent Wake-Up Design",
+            "text": "No blaring sounds, no angry mornings. Wake up quietly while your partner keeps sleeping."
+          }
+        },
+        "feature_eh9CTy": {
+          "type": "feature",
+          "settings": {
+            "title": "Certified to Wake Heavy Sleepers",
+            "text": "Proven performance and reliability, so you’ll never oversleep again."
+          }
+        }
+      },
+      "block_order": [
+        "feature_FQFCzJ",
+        "feature_xQe9cm",
+        "feature_eh9CTy"
+      ],
+      "disabled": true,
+      "name": "Media with Features",
+      "settings": {
+        "heading": "Wake Up Calm. Stay in Control.",
+        "body": "<p>Loop One’s wrist vibrations cut through even the deepest sleep without noise, stress, or disruption. That means you can wake up peacefully, stay on schedule, and keep your mornings (and your partner) calm.</p>",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/8803789b44614db18f59d75a7f19e09f.mp4",
+        "media_ratio": 1.9,
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "shadow": true,
+        "radius": 20,
+        "border": 0,
+        "pad": 28,
+        "gap": 28,
+        "icon_size": 42,
+        "max_width": 1400,
+        "inner_max": 700
+      }
+    },
+    "multi_column_pQJG6K": {
+      "type": "multi-column",
+      "blocks": {
+        "item_EAGpyG": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2023-work-america-report-hero_tcm7-318106.jpg",
+            "column_size": "3",
+            "title": "Workers",
+            "heading_tag": "h3",
+            "content": "<p><strong>93% of workers</strong> said The Neutralizer kept their boots fresh and dry through long shifts, no more throwing away perfectly good shoes because of odor.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KiyTfD": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Athlete-Well-Being-903x602.jpg",
+            "column_size": "3",
+            "title": "Athletes & Gym-Goers",
+            "heading_tag": "h3",
+            "content": "<p><strong>91% of active users</strong> noticed their shoes and gym bags stayed fresh even after intense workouts. The Neutralizer kills odor at the source; no sprays, no excuses.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_rB6pmL": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/family-plays-laughs-living-room.jpg",
+            "column_size": "3",
+            "title": "Parents & Families",
+            "heading_tag": "h3",
+            "content": "<p><strong>89% of parents</strong> said their home and hallway finally smell clean again. One Neutralizer per pair; fresh shoes, fresh house, happy family.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_EAGpyG",
+        "item_KiyTfD",
+        "item_rB6pmL"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Used By",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "hears_comparison_3DejWC": {
+      "type": "hears-comparison",
+      "blocks": {
+        "row_zU8Mtj": {
+          "type": "row",
+          "settings": {
+            "feature": "Works instantly",
+            "other_has": true,
+            "foam_has": true
+          }
+        },
+        "row_4ECzMV": {
+          "type": "row",
+          "settings": {
+            "feature": "Easy to use",
+            "other_has": true,
+            "foam_has": true
+          }
+        },
+        "row_3iW8ir": {
+          "type": "row",
+          "settings": {
+            "feature": "Safe for daily use",
+            "other_has": true,
+            "foam_has": false
+          }
+        },
+        "row_YUqm7z": {
+          "type": "row",
+          "settings": {
+            "feature": "Long-lasting results",
+            "other_has": false,
+            "foam_has": false
+          }
+        },
+        "row_G3Nayk": {
+          "type": "row",
+          "settings": {
+            "feature": "Eliminates odor at the source",
+            "other_has": false,
+            "foam_has": false
+          }
+        },
+        "row_cWYfYd": {
+          "type": "row",
+          "settings": {
+            "feature": "Absorbs moisture & bacteria",
+            "other_has": false,
+            "foam_has": false
+          }
+        },
+        "row_8mKRLV": {
+          "type": "row",
+          "settings": {
+            "feature": "Fragrance-free & non-toxic",
+            "other_has": false,
+            "foam_has": false
+          }
+        }
+      },
+      "block_order": [
+        "row_zU8Mtj",
+        "row_4ECzMV",
+        "row_3iW8ir",
+        "row_YUqm7z",
+        "row_G3Nayk",
+        "row_cWYfYd",
+        "row_8mKRLV"
+      ],
+      "name": "Hears – Comparison",
+      "settings": {
+        "title": "Why Dr. Odoro is",
+        "highlight": "perfect choice.",
+        "subtitle": "Others mask the smell. Dr. Odoro ends it.",
+        "title_size": 28,
+        "title_size_mobile": 32,
+        "hears_logo": "shopify://shop_images/Jouw_alineatekst_d8813015-0db8-4748-9dda-125b8ae2361e.png",
+        "other_label": "Sprays",
+        "foam_label": "Baking Soda",
+        "text_color": "#000000",
+        "accent_color": "#475c3e",
+        "col1_bg_start": "#f7f7f7",
+        "col1_bg_end": "#f7f7f7",
+        "col1_text": "#1a1a1a",
+        "hears_bg_start": "#475c3e",
+        "hears_bg_end": "#a0a61c",
+        "hears_text": "#ffffff"
+      }
+    },
+    "loop_reviews_yTJzf6": {
+      "type": "loop-reviews",
+      "blocks": {
+        "review_4kk6LX": {
+          "type": "review",
+          "settings": {
+            "name": "Hunter T.",
+            "avatar": "shopify://shop_images/mandatory-selfie-with.jpg",
+            "rating": 5,
+            "review_text": "These are so amazing I cannot rave enough about them! I use them for my work shoes every day and I am on my feet for 10hr shifts. My feet sweat a lot! My shoes do not stink at all! I’ve bought these for the past 3 years and right at a year I notice they start to lose their stink blocking abilities. But at less than $20 per year for a new pair I am not complaining!! I will keep buying them forever!"
+          }
+        },
+        "review_gDAiMq": {
+          "type": "review",
+          "settings": {
+            "name": "Heather P.",
+            "avatar": "shopify://shop_images/360_F_443711688_LCPcTeda2wlKFJNTPjTLPVFmuf0nnP1F.jpg",
+            "rating": 4,
+            "review_text": "I’m not even being the slightest bit dramatic when I say these things are the best purchase I’ve ever made! I didn’t care if it was 30degrees outside if my son dared to take his cleats off in the car on the way home from practice, I was putting the windows down because the smell from his cleats would make me nauseous. It smelt like cat pee. And we tried Everything to take the smell away and nothing worked until this product! I recommend these to everyone I talk to that has an athlete or is one."
+          }
+        },
+        "review_KwzRk6": {
+          "type": "review",
+          "settings": {
+            "name": "Margareth S.",
+            "avatar": "shopify://shop_images/050a511d3d5a5ba0d66aec2a8e7e9ad0.jpg",
+            "image": "shopify://shop_images/6.png",
+            "rating": 5,
+            "review_text": "I am an older female and recently got puppies that I walk often. I have been battling smelly shoe syndrome for months. I have bought sprays and the little shoe scent balls, I’ve stuffed dryer sheets in my shoes. None of that worked until now….These are a decent size to take up a good amount of the shoe. The have almost a pool/chlorine smell, but not overpowering, it just smells fresh. Buying my second pair now because I want them in all my shoes regardless of how much I use the use the shoes!!!!"
+          }
+        },
+        "review_Q84AFx": {
+          "type": "review",
+          "settings": {
+            "name": "Jim K.",
+            "avatar": "shopify://shop_images/98c86590ecbd01b8eeba712290595ff7.jpg",
+            "image": "shopify://shop_images/61hmHgVNONL.jpg",
+            "rating": 4,
+            "review_text": "My bicycling shoes reeked after a few weeks of wet fall riding. These eliminated the odor over night. Would highly recommend."
+          }
+        },
+        "review_MRiw8r": {
+          "type": "review",
+          "settings": {
+            "name": "Mariane J.",
+            "avatar": "shopify://shop_images/ann.jpg",
+            "image": "shopify://shop_images/71qspCxg4ZL.jpg",
+            "rating": 5,
+            "review_text": "I own a pair of $120 Red Wind boots that I've owned and are still in working order after 12 years. Needless to say, they smelled horrid. I have never deodorizer them until I bought these and man let me tell you after just sitting 15 minutes the odor was a third of what it was. After a few hours they smelled like the leather they were made of. Amazing. They have a slightly strong chlorine odor smell to them if you put them up to your nose so I wouldn't suggest sniffing them too hard... But they are \"odor free\""
+          }
+        }
+      },
+      "block_order": [
+        "review_4kk6LX",
+        "review_gDAiMq",
+        "review_KwzRk6",
+        "review_Q84AFx",
+        "review_MRiw8r"
+      ],
+      "name": "Wake Loop Reviews",
+      "settings": {
+        "title": "",
+        "marquee_speed": 2,
+        "bg_color": "#ffffff",
+        "text_color": "#1a1a1a",
+        "slider_track": "#e9e9e9",
+        "slider_thumb": "#bdbdbd"
+      }
+    },
+    "media_with_text_iMy4BQ": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_Cq7BER": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/17374774.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 32,
+            "subheading": "",
+            "title": "Discover the natural power of real freshness",
+            "content": "<p>With <strong>Dr. Odoro</strong>, you're choosing confidence, cleanliness, and comfort, every time you slip off your shoes. Our technology doesn’t mask odor; it removes it at the source, leaving your shoes and spaces clean and breathable.<br/><br/>Each Neutralizer is powered by <strong>natural Zeolite</strong>, a mineral that traps odor and moisture deep inside its microscopic pores, keeping your shoes dry, bacteria-free, and ready for your next step. No harsh chemicals. No fake scents. No effort. Just pure, lasting freshness that restores balance to your shoes, your home, and your routine.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#2e3a29",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Cq7BER"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_gBNKCh": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_t6cTcb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/73476373.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Trusted by Hygiene Experts",
+            "content": "<p>Dr. Odoro’s technology is developed in collaboration with specialists in environmental health and material science who understand how bacteria and moisture cause persistent odor.<br/><br/>With extensive experience in indoor air quality and safe purification methods, our experts value natural minerals like Zeolite for their proven ability to trap and neutralize odor molecules.<br/><br/>Engineered with scientific precision and tested for everyday use, Dr. Odoro delivers lasting freshness and safety — so you can feel confident every time you step out.</p><p></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#2e3a29",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_t6cTcb"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_tAFiaj": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_MtLdzt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aaaaa_12.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 24,
+            "subheading": "",
+            "title": "Pure Freshness – Every Step, Every Day",
+            "content": "<p>✔ <strong>Breathe Again</strong> – The Neutralizer removes hidden moisture and odor overnight, leaving every pair dry, clean, and fresh by morning.</p><p>✔ <strong>Stops Odor at the Source</strong> – Destroys odor-causing bacteria instead of masking the smell — pure, lasting freshness.</p><p>✔ <strong>Safe & Effortless</strong> – Natural Zeolite works silently while you rest. No chemicals, no scents, no effort.</p><p>✔ <strong>Long-Lasting Power</strong> – One small bag keeps shoes odor-free for up to 3 months. Just place, forget, and stay fresh.</p><p>✔ <strong>Confidence You Can Feel</strong> – From work boots to gym shoes — always clean, always ready.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#2e3a29",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_MtLdzt"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "faq_collapsible_Ph8rMB": {
+      "type": "faq-collapsible",
+      "blocks": {
+        "item_XMmYJk": {
+          "type": "item",
+          "settings": {
+            "question": "How does The Neutralizer actually work?",
+            "answer": "<p>The Neutralizer uses activated Zeolite to absorb both odor molecules and moisture from inside your shoes.<br/><br/>No sprays, perfumes, or chemicals, just natural adsorption that eliminates odor at the source and keeps shoes dry and fresh.</p>"
+          }
+        },
+        "item_zmt9zF": {
+          "type": "item",
+          "settings": {
+            "question": "How long does The Neutralizer last?",
+            "answer": "<p>Each Neutralizer lasts up to <strong>2 months</strong> with proper care.<br/><br/>Simply place them in direct sunlight once a month for 2–3 hours to “recharge” the Zeolite and restore full absorption power.</p>"
+          }
+        },
+        "item_P3LrJx": {
+          "type": "item",
+          "settings": {
+            "question": "Can I use The Neutralizer in more than just shoes?",
+            "answer": "<p>The Neutralizer is specifically designed for shoes; it targets deep, trapped odor and moisture where sprays and powders can’t reach.<br/><br/>If you’re looking to keep other spaces fresh, check out our Closet Fresh Bag and Fresh Capsule made for gym bags, closets, cars, and beyond.</p>"
+          }
+        },
+        "item_HTRKDa": {
+          "type": "item",
+          "settings": {
+            "question": "Is it safe for kids and pets?",
+            "answer": "<p>Yes completely.<br/><br/>The Neutralizer is made from 100% Zeolite, sealed in breathable linen.<br/><br/>It contains zero chemicals, synthetic fragrances, or toxins. Safe for every household.</p>"
+          }
+        },
+        "item_Ykrhzn": {
+          "type": "item",
+          "settings": {
+            "question": "How quickly will I notice results?",
+            "answer": "<p>Most users smell a difference within <strong>24 hours</strong>, and full freshness returns within <strong>48 hours</strong>.<br/><br/>For shoes with heavy odor buildup, leave The Neutralizer inside for two nights for maximum effect.</p>"
+          }
+        },
+        "item_yCdDzD": {
+          "type": "item",
+          "settings": {
+            "question": "Do I need to keep buying refills?",
+            "answer": "<p>Not often.<br/><br/>The Neutralizer itself is reusable for up to 3 months.</p>"
+          }
+        },
+        "item_grpn9L": {
+          "type": "item",
+          "settings": {
+            "question": "What makes Dr. Odoro different from sprays or powders?",
+            "answer": "<p>Sprays only mask odor with fragrance and often add moisture, making the problem worse.<br/><br/>Powders are messy and temporary.<br/><br/>Dr. Odoro solves odor physically, not chemically, by removing the moisture and compounds that cause it in the first place.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_XMmYJk",
+        "item_zmt9zF",
+        "item_P3LrJx",
+        "item_HTRKDa",
+        "item_Ykrhzn",
+        "item_yCdDzD",
+        "item_grpn9L"
+      ],
+      "name": "Veelgestelde Vragen",
+      "settings": {
+        "title": "QUESTIONS?",
+        "bg": "#ffffff",
+        "text": "#111111",
+        "muted": "#666666",
+        "border": "#eaeaea",
+        "btn_bg": "#111111",
+        "btn_text": "#ffffff",
+        "title_size": 20,
+        "cta_label": "NEED HELP?",
+        "cta_link": "shopify://pages/contact",
+        "pad_top": 28,
+        "pad_bottom": 28
+      }
+    },
+    "175892445484482174": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "ss_product_variant_RLRRgm": {
+      "type": "ss-product-variant",
+      "blocks": {
+        "item_te3iMN": {
+          "type": "item",
+          "settings": {
+            "url": "https://wakeloop.com/products/obsidian-black"
+          }
+        },
+        "item_FnqbVM": {
+          "type": "item",
+          "settings": {
+            "url": "https://wakeloop.com/products/artic-pearl"
+          }
+        },
+        "item_mKfqYL": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "url": "https://wakeloop.com/products/silver-night"
+          }
+        }
+      },
+      "block_order": [
+        "item_te3iMN",
+        "item_FnqbVM",
+        "item_mKfqYL"
+      ],
+      "name": "SS - Product variants",
+      "settings": {
+        "variants_position": "below_price",
+        "use_blocks": true,
+        "layout": "grid",
+        "layout_row": 4,
+        "layout_row_mobile": 5,
+        "layout_gap": 8,
+        "layout_gap_mobile": 8,
+        "item_padding": 2,
+        "item_padding_mobile": 0,
+        "item_radius": 200,
+        "item_border_thickness": 2,
+        "item_ratio": "square",
+        "item_ratio_mobile": "square",
+        "item_bg_color": "#ffffff",
+        "item_border_color": "#ebebed",
+        "item_border_active_color": "#000000",
+        "button_icon_color": "#000000",
+        "button_icon_hover_color": "#000000",
+        "background_color": "",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0
+      }
     }
-  }
+  },
+  "order": [
+    "main",
+    "add_ons_7JfizX",
+    "ugc_continuous_slider_3GpwE8",
+    "trust_badges_U4tFfA",
+    "marquee_loop_xaMLUL",
+    "media_with_text_xw8qh8",
+    "wl_media_with_features_xCgfw9",
+    "multi_column_pQJG6K",
+    "hears_comparison_3DejWC",
+    "loop_reviews_yTJzf6",
+    "media_with_text_iMy4BQ",
+    "media_with_text_gBNKCh",
+    "media_with_text_tAFiaj",
+    "faq_collapsible_Ph8rMB",
+    "175892445484482174",
+    "ss_product_variant_RLRRgm"
+  ]
 }
