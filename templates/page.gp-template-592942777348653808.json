@@ -1,0 +1,102 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_592942777382208240": {
+      "settings": {
+        "checksum": "53a84c5a7f8be488a8594a5227f6026eab89c6cfc8267174a1cd13af7a53c04d_1_1_1_0__1",
+        "gg0MAupBOmg_label": "<p>CHECK AVAILABILITY</p>",
+        "ggJoHlAPrY0_dayLabel": "Day",
+        "ggJoHlAPrY0_hourLabel": "Hr",
+        "ggJoHlAPrY0_minuteLabel": "Min",
+        "ggJoHlAPrY0_secondLabel": "Sec",
+        "ggJoHlAPrY0_weekLabel": "Weeks",
+        "ggLHS9UPsPU_text": "<p><span style=\"color:#FFFFFF;\">Rated 4.58 out of 5</span></p>",
+        "ggO5vdXk084_text": "<p><span style=\"color:#FFFFFF;\">For a limited time, we’re offering a special discount on <strong>The Neutralizer</strong>.</span></p><p><br><span style=\"color:#FFFFFF;\">This offer <strong>won’t</strong> last long. Once the timer hits zero, the price goes back up.</span></p>",
+        "ggWEvq6EgO0_text": "<span style=\"color:#FFFFFF;\">Secure Yours Today &amp;</span><span style=\"color:#0A0A0A;\"> </span><span style=\"color:#008D5C;\">Save 33%</span>",
+        "ggbcMuN5jjh_text": "<p>⏳ <strong>Time Remaining:</strong></p>",
+        "ggiBtnLlOZ6_text": "<p><span style=\"color:#008D5C;\">Risk-Free Guarantee</span></p>",
+        "ggqevMjrof3_text": "<p>We want you to feel completely confident trying The Neutralizer.</p><p>&nbsp;</p><p>That’s why every order is covered by our <strong>60-Day Money-Back Promise</strong>.&nbsp;</p><p>&nbsp;</p><p><span style=\"font-size:14px;\">If your shoes don’t smell brand new again</span>, simply reach out, we’ll make it right.</p><p>&nbsp;</p>",
+        "ggw8I0VcYfU_label": "<p>CHECK AVAILABILITY</p>"
+      },
+      "type": "gp-section-592942777382208240"
+    },
+    "gp_section_592942777382273776": {
+      "settings": {
+        "checksum": "2ff96b1f0d508b6db6dbe082580374ce66e600e4dbcd2a0096f682b62567ad22_1_1_1_0__1",
+        "gg-ArZo_F19_text": "<p><span style=\"color:#FFFFFF;\"><strong>Kenneth T.</strong></span></p><p><i>Verified Customer&nbsp;</i></p>",
+        "gg11cRuTdvo_text": "<p><span style=\"font-size:19px;\"><strong>Made for Real Life</strong></span></p><p>&nbsp;</p><p>Each pair lasts up to 3 months.<br>Every few weeks, you can recharge them by placing them in the sun for a few hours.</p><p><br>That heat clears out the trapped moisture and restores full power.</p><p>&nbsp;</p><p>No sprays, no refills, no plastic waste.<br>Just a simple, natural fix that works while you rest.</p><p>&nbsp;</p>",
+        "gg4KAbqk5NM_text": "<p><span style=\"font-size:19px;\"><strong>The Offer</strong></span></p><p>&nbsp;</p><p>For a limited time, The Neutralizer is available at <strong>33% off</strong>, with <strong>free shipping</strong>.</p><p><br>You can try The Neutralizer with a <strong>60-day money-back guarantee.</strong><br>If your shoes don’t smell brand new again, you get a full refund, no questions asked.</p><p>&nbsp;</p><p>Thousands of shift workers, nurses, and everyday people have already made the switch.<br>Most say they wish they’d found it sooner.</p><p>&nbsp;</p><p><i>“I don’t even think about it anymore. My shoes just… don’t smell.” — <strong>Emma D.</strong></i></p>",
+        "ggEqqqY0LSG_text": "<p><span style=\"color:#FFFFFF;\"><strong>Sarah M.</strong></span></p><p><i>Verified Customer&nbsp;</i></p>",
+        "ggG34C5PnKZ_text": "<p><span style=\"color:#000000;font-size:19px;\"><strong>Final Thoughts</strong></span></p><p>&nbsp;</p><p>When you think about it, this isn’t really about shoes at all.<br>It’s about finally getting to come home, kick them off, and not feel embarrassed or disgusted by the smell that used to hit you every night.</p><p><br>The Neutralizer makes that possible in the simplest way, quietly, while you rest.</p><p>For anyone who spends long hours on their feet, it’s one small change that makes a big difference.</p><p><br>No sprays. No scrubbing. No guessing.<br>Just clean air, dry shoes, and the relief of knowing the problem’s actually gone.</p>",
+        "ggHbAGpprMT_text": "<p>Heavy Boots, Long Days</p>",
+        "ggIszS5ai8I_text": "<p>Hot Days, Closed Shoes</p>",
+        "ggLh4uh02eL_childItem_0": "<p>Eliminates odor completely overnight</p>",
+        "ggLh4uh02eL_childItem_1": "<p>Works automatically while you sleep</p>",
+        "ggLh4uh02eL_childItem_2": "<p>Keeps shoes dry and fresh every morning</p><p>&nbsp;</p>",
+        "ggLh4uh02eL_childItem_3": "<p>100% natural bamboo charcoal</p><p><br data-cke-filler=\"true\"></p>",
+        "ggLh4uh02eL_childItem_4": "<p>Reusable for up to 3 months</p>",
+        "ggO4Hswpy18_text": "<p><span style=\"color:#FFFFFF;\"><strong>Ronald L.</strong></span></p><p><i>Verified Customer&nbsp;</i></p>",
+        "ggRKLS_R2Jk_text": "<p><span style=\"font-size:19px;\"><strong>The Difference Is Obvious the Next Day</strong></span></p><p>&nbsp;</p><p>Most people say they notice a change after the first night.<br>The air smells cleaner. Their shoes feel drier.</p><p><br>After a few uses, even older pairs that were “too far gone” start to smell normal again.</p>",
+        "ggRwCSVvv5L_childItem_0": "<p>Only hides the smell for a few hours</p>",
+        "ggRwCSVvv5L_childItem_1": "<p>Needs daily spraying or reapplying</p>",
+        "ggRwCSVvv5L_childItem_2": "<p>Leaves shoes damp or sticky</p>",
+        "ggRwCSVvv5L_childItem_3": "<p>Filled with chemicals or fake scents</p>",
+        "ggRwCSVvv5L_childItem_4": "<p>Runs out fast and costs more over time</p>",
+        "ggV8AKNJFLp_text": "<p>The Neutralizer</p>",
+        "ggX0sAULqnr_text": "<p>“I’m on my feet 12 hours a day, and my shoes used to smell awful no matter what I tried. I dropped these little bags in overnight and couldn’t believe it, the smell was just gone. Now my shoes stay fresh all week, and I don’t have to be embarrassed changing in the locker room anymore.”</p>",
+        "ggZBhEhma_T_text": "<p><span style=\"font-size:19px;\"><strong>What Makes It Work So Well</strong></span></p><p>&nbsp;</p><p>The key is <strong>adsorption</strong>, not absorption.<br>That’s what bamboo charcoal does differently.</p><p>&nbsp;</p><p>Instead of soaking up moisture like a sponge, it <i>pulls and traps</i> odor and humidity inside its micro-pores.<br>It’s the same process used in air purifiers and dehumidifiers, just scaled down to fit inside your shoes.</p><p>&nbsp;</p><p>Because it removes moisture, it stops the bacteria that cause odor from coming back.<br>And because it traps gases, it removes that chemical “old shoe” smell completely.</p><p>&nbsp;</p><p>No masking. No chemicals. No scent.<br>Just clean air. Every morning.</p><p>&nbsp;</p>",
+        "ggc1ICWIHn8_text": "<p>Long Shifts, Constant Movement</p>",
+        "ggdPwBiX35a_text": "<p>“I drive all day, sweating in the same shoes, and my car used to smell like a locker room. Threw these in my sneakers at night and the difference was crazy after one use. Haven’t smelled a thing since. Even my wife noticed.”</p>",
+        "ggdYS3c8rSf_text": "<p><span style=\"font-size:19px;\"><strong>The Quiet Relief People Don’t Expect</strong></span></p><p>&nbsp;</p><p>It’s not something you brag about, but it’s something that makes every day feel better.</p><p><br>You come home, take off your shoes, and for once… there’s no smell.<br>No awkward glances. No air freshener. No guilt.</p><p>&nbsp;</p><p>Just clean air, dry shoes, and one less thing to deal with.</p><p>For people who spend all day on their feet, it’s a small change that feels surprisingly good.</p><p>&nbsp;</p>",
+        "ggdaIVzs8vZ_label": "<p>CHECK AVAILABILITY</p>",
+        "ggfqXGAsCji_text": "<p>Shoe Deodorizers</p>",
+        "gggGQ-J3FX3_text": "<p>“My work boots would stink up my whole truck by the end of the week. Tried sprays for years, nothing worked. These things actually pulled the smell out completely, now my boots smell like <i>nothing</i>, even after a full shift in the sun.”</p>",
+        "gghT4lmZnp8_text": "<p><span style=\"font-size:19px;\"><strong>Everything Else vs. The Neutralizer</strong></span></p>"
+      },
+      "type": "gp-section-592942777382273776"
+    },
+    "gp_section_592942777382339312": {
+      "settings": {
+        "checksum": "c370c652dd98e810203b66c8174d4a580399565f090768b1ba95201c0863c2fe_1_1_1_0__1",
+        "ggNGvm1tsY9_text": "<p><span style=\"font-size:19px;\"><strong>Discovery #2: It’s Not Just Bacteria. It’s Chemistry.</strong></span></p><p>&nbsp;</p><p>Most people assume the smell is just from sweat.<br>But there’s more going on.</p><p>&nbsp;</p><p>When sweat mixes with synthetic shoe materials like glue, foam, and rubber, it creates something called VOCs: tiny chemical gases.</p><p><br>Those gases bind with moisture and amplify the odor.<br>That’s what gives old work boots and sneakers that thick, sour smell that never really goes away.</p><p>&nbsp;</p><p>So even if you clean your shoes, those gases keep releasing every time they heat up again.</p><p><br>To actually stop the smell, you have to remove both the <i>moisture</i> and the <i>gases.</i></p>",
+        "ggR8t2l4U-E_text": "<p><span style=\"font-size:19px;\"><strong>Discovery #1: The Hidden Odor Factory Beneath Your Feet</strong></span></p><p>&nbsp;</p><p>When you’re on your feet all day, your shoes trap sweat and heat.<br>That moisture seeps into the fabric and foam where air can’t reach.</p><p><br>By the time you get home, that damp, warm environment has become the perfect breeding ground for odor-causing bacteria.&nbsp;</p><p>Even if you let your shoes “air out,” most of the moisture stays trapped deep inside.<br>That’s why the smell always seems to come back stronger the next day.</p><p>&nbsp;</p><p>It’s not surface dirt, it’s a problem growing <i>inside</i> the shoe.<br>&nbsp;</p>",
+        "ggTTa7QGXNt_text": "<p><span style=\"font-size:19px;\"><strong>Discovery #3: The Overnight Fix That Targets Both</strong></span></p><p>&nbsp;</p><p>A few years ago, a small company created something surprisingly simple that does exactly that: <strong>The Neutralizer.</strong></p><p>&nbsp;</p><p>It’s a pair of small, soft bags filled with zeolite and activated bamboo charcoal: natural minerals used in air and water filtration.</p><p><br>Each piece contains millions of tiny pores that act like sponges for moisture and odor.</p><p>You just drop one bag in each shoe before bed.<br>While you sleep, the charcoal pulls out the humidity and traps the smell molecules inside.</p><p>&nbsp;</p><p>By morning, your shoes are dry, fresh, and for the first time... smell like nothing</p>",
+        "ggVtMp41KuX_text": "<p>November 11, 2025 By Emily Anderson</p>",
+        "ggYrz6-tdGo_text": "<p><span style=\"font-size:18px;\"><strong>It Always Starts the Same Way…</strong></span></p><p>&nbsp;</p><p>You know that moment when you finally kick your shoes off after a long workday and the smell hits you before you even sit down?<br>It’s thick, sour, and somehow gets worse the longer your shoes sit.<br>You try to ignore it, but it’s impossible.</p><p>&nbsp;</p><p>For people who spend all day on their feet; nurses, construction workers, warehouse workers, delivery drivers.... it’s just part of the routine.<br>You come home tired, your feet ache, and the last thing you want to deal with is that smell creeping out of your shoes again.</p><p>&nbsp;</p><p>Most think it’s just sweat or bad luck with cheap work shoes.<br>But it’s not.<br>The real reason is something hiding <i>deep inside</i> your shoes... and that’s where the problem actually begins.</p>",
+        "gg_AuCInMG7_text": "<span style=\"font-size:22px;\"><strong>12-Hour Shift Workers Are Finally Ending the Shoe Odor Nightmare.</strong></span><br><span style=\"font-size:22px;\"><strong>Here’s the Simple Overnight Fix They Swear By.</strong></span>",
+        "ggdiFJX6An1_text": "<p><span style=\"color:#FF0000;\">If you’ve ever pulled off your shoes after a long shift and been hit by that sour, trapped smell... you know how nasty it gets. Now there’s a simple overnight fix that makes it vanish by morning.</span></p>"
+      },
+      "type": "gp-section-592942777382339312"
+    },
+    "gp_section_592942777382404848": {
+      "settings": {
+        "checksum": "6e668069be3e3a279208a217febf8f4489efcf8a554e8dcb500385d1adc1a41b_1_1_1_0__1",
+        "ggjXFnobsuy_text": "<p>Shoes &gt; Odor &gt; <strong>Trending Today</strong></p>"
+      },
+      "type": "gp-section-592942777382404848"
+    },
+    "gp_section_592942777382470384": {
+      "settings": {
+        "checksum": "275a05acc654899d09ab16f54fa35aae4b9b1b0c66f35d41897804c395a11ed6_1_1_1_0__1",
+        "section_preload": "true"
+      },
+      "type": "gp-section-592942777382470384"
+    }
+  },
+  "order": [
+    "gp_section_592942777382470384",
+    "gp_section_592942777382404848",
+    "gp_section_592942777382339312",
+    "gp_section_592942777382273776",
+    "gp_section_592942777382208240"
+  ],
+  "layout": "theme.gempages.blank"
+}
